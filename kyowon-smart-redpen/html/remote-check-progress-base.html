@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <title>교원 스마트 빨간펜 화상관리</title>
+    <meta charset="UTF-8">
+<!-- 페이지 저자 정의 -->
+<meta name="author" content="inyoung">
+<!-- SEO : 검색엔진최적화 -->
+<meta name="description" content="교원">
+<meta name="keywords" content="교원, 빨간펜, 스마트 빨간펜 화상관리">
+    <!-- MSIE 호환성 보기 (최신 브라우저) -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!-- MOBILE : 모바일 최적화 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- 안드로이드 홈화면 추가시 상단 주소창 제거 -->
+<meta name="mobile-web-app-capable" content="yes">
+<!-- ios 홈화면 추가시 상단 주소창 제거 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Styles : Reset CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+<!-- Styles : CSS & SASS Sorcemap -->
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<!-- 임시 배경 설정 : class="bg-color" 이 부분 제거 후 개발 진행 -->
+<body class="bg-color">
+    <!-- [Stert] Container Area -->
+    <section class="remote wrap check-progress-base">
+        <div class="header">
+            <div class="fl year-month">
+                <button class="btn-prev"><span>이전 달</span></button>
+                <button class="btn-next"><span>다음 달</span></button>
+                <p>2017년 4월</p>
+            </div>
+            <nav class="fr tab-menu">
+                <ul>
+                    <li><a href=""><span>전체</span></a></li>
+                    <li class="selected"><a href=""><span>기본/선택</span></a></li>
+                    <li><a href=""><span>교과서 단짝</span></a></li>
+                    <li><a href=""><span>주간 진단</span></a></li>
+                    <li><a href=""><span>모의고사</span></a></li>
+                    <li><a href=""><span>디지털 첨삭</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="progress-set">
+
+                    <!-- [Stert] 기본 학습 진척도 -->
+                    <div class="progress-basic">
+                        <div class="wrap">
+                            <div class="item-box">
+                                <p class="title">기본 학습 진척도</p>
+                                <p class="percent">50%</p>
+                                <div class="progress">
+                                    <div class="icon-percent w50"></div>
+                                    <progress max="100" value="50"><span class="w50"></span></progress>
+                                </div>
+                                <div class="text-percent w50">표준 50%</div>
+                            </div>
+                            <div class="item-list">
+                                <ul>
+                                    <li>국어</li>
+                                    <li>
+                                        <div class="progress korean">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                                <ul>
+                                    <li>수학</li>
+                                    <li>
+                                        <div class="progress math">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                                <ul>
+                                    <li>사회</li>
+                                    <li>
+                                        <div class="progress social">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                                <ul>
+                                    <li>과학</li>
+                                    <li>
+                                        <div class="progress science">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- [End] 기본 학습 진척도 -->
+
+                    <!-- [Stert] 선택 학습 진척도 -->
+                    <div class="progress-select">
+                        <div class="wrap">
+                            <div class="item-box">
+                                <p class="title">선택 학습 진척도</p>
+                                <p class="percent">80%</p>
+                                <div class="progress">
+                                    <div class="icon-percent w80"></div>
+                                    <progress max="100" value="80"><span class="w80"></span></progress>
+                                </div>
+                                <div class="text-percent w80">표준 80%</div>
+                            </div>
+
+                            <div class="item-list">
+                                <ul>
+                                    <li>국어</li>
+                                    <li>
+                                        <div class="progress korean">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                                <ul>
+                                    <li>수학</li>
+                                    <li>
+                                        <div class="progress math">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                                <ul>
+                                    <li>사회</li>
+                                    <li>
+                                        <div class="progress social">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                                <ul>
+                                    <li>과학</li>
+                                    <li>
+                                        <div class="progress science">
+                                            <div class="icon-percent w50"></div>
+                                            <progress max="100" value="50"><span class="w50"></span></progress>
+                                        </div>
+                                        <div class="text-percent w50">50%</div>
+                                    </li>
+                                    <li>50%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [End] 선택 학습 진척도 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [End] Container Area -->
+</body>
+
+</html>

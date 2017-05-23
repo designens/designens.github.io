@@ -1,0 +1,21 @@
+<PUBLIC:COMPONENT lightWeight="true">
+<PUBLIC:ATTACH EVENT="oncontentready" ONEVENT="iconfontInliner()" />
+<script type="text/javascript">
+function iconfontInliner()
+{
+	// Retreive element and unicode hex
+	var e = element,
+			icon = e.currentStyle.icon;
+			unicode = icon.match(/([A-Z]{1}[0-9A-Z]+)/g)[0];
+	// If unicode found...
+	if(unicode)
+	{
+		// Hide pseudo-element
+		e.className = e.className + ' hide-pseudo-element';
+		// Convert HEX to Decimal, CharCode to String
+		e.innerHTML = String.fromCharCode(parseInt(unicode, 16));
+	}
+	
+}
+</script>
+</PUBLIC:COMPONENT>

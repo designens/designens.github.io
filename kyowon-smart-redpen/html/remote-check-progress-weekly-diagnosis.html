@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <title>교원 스마트 빨간펜 화상관리</title>
+    <meta charset="UTF-8">
+<!-- 페이지 저자 정의 -->
+<meta name="author" content="inyoung">
+<!-- SEO : 검색엔진최적화 -->
+<meta name="description" content="교원">
+<meta name="keywords" content="교원, 빨간펜, 스마트 빨간펜 화상관리">
+    <!-- MSIE 호환성 보기 (최신 브라우저) -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!-- MOBILE : 모바일 최적화 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- 안드로이드 홈화면 추가시 상단 주소창 제거 -->
+<meta name="mobile-web-app-capable" content="yes">
+<!-- ios 홈화면 추가시 상단 주소창 제거 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Styles : Reset CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+<!-- Styles : CSS & SASS Sorcemap -->
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<!-- 임시 배경 설정 : class="bg-color" 이 부분 제거 후 개발 진행 -->
+<body class="bg-color">
+    <!-- [Stert] Container Area -->
+    <section class="remote wrap check-progress-weekly-diagnosis">
+        <div class="header">
+            <div class="fl year-month">
+                <button class="btn-prev"><span>이전 달</span></button>
+                <button class="btn-next"><span>다음 달</span></button>
+                <p>2017년 4월</p>
+            </div>
+            <nav class="fr tab-menu">
+                <ul>
+                    <li><a href=""><span>전체</span></a></li>
+                    <li><a href=""><span>기본/선택</span></a></li>
+                    <li><a href=""><span>교과서 단짝</span></a></li>
+                    <li class="selected"><a href=""><span>주간 진단</span></a></li>
+                    <li><a href=""><span>모의고사</span></a></li>
+                    <li><a href=""><span>디지털 첨삭</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="content">
+
+                <!-- [Stert] 1주~ 4주, 칭찬 딱지 모아보기 탭 메뉴 -->
+                <div class="week-tab-menu">
+                    <ul>
+                        <li class="selected"><a href="">1주</a></li>
+                        <li><a href="">2주</a></li>
+                        <li><a href="">3주</a></li>
+                        <li><a href="">4주</a></li>
+                        <li><a href="">칭찬 딱지 모아보기</a></li>
+                    </ul>
+                </div>
+                <!-- [End] 1주~ 4주, 칭찬 딱지 모아보기 탭 메뉴 -->
+
+                <!-- [Stert] 03_웹공유_01진척도점검_04주간진단_01저학년 -->
+                <!-- <h2 class="table-title"><span class="icon"></span><span>이번 주 목표</span><span>4과목 모두 학습하기</span></h2>
+                <table class="table-type">
+                    <thead>
+                        <tr>
+                            <th>과목</th>
+                            <th>학습일</th>
+                            <th>학습 시간</th>
+                            <th>나의<br>소요 시간</th>
+                            <th>권장<br>소요 시간</th>
+                            <th>회원 평균<br>소요 시간 </th>
+                            <th>나의 점수<br><span>(정답 / 총 문항)</span></th>
+                            <th>회원 평균 점수<br><span>(정답 / 총 문항)</span></th>
+                            <th>칭찬 딱지</th>
+                            <th class="full">채점 결과</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="row-title">국어<button class="btn-scoring-results-on">채점<br>결과</button></th>
+                            <td>2017년<br>4월 15일</td>
+                            <td>오후 6:00:00<br>~<br>오후 6:13:11</td>
+                            <td>8분 11초</td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span class="badge-praise-sticker">참 잘했어요!</span></td>
+                            <td class="full"><button class="btn-scoring-results-full-on">채점 결과</button></td>
+                        </tr>
+                        <tr>
+                            <th class="row-title">수학<button class="btn-scoring-results-on">채점<br>결과</button></th>
+                            <td>2017년<br>4월 15일</td>
+                            <td>오후 6:00:00<br>~<br>오후 6:13:11</td>
+                            <td>8분 11초</td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span class="badge-praise-sticker">참 잘했어요!</span></td>
+                            <td class="full"><button class="btn-scoring-results-full-on">채점 결과</button></td>
+                        </tr>
+                        <tr>
+                            <th class="row-title">바슬즐<button class="btn-scoring-results-off">채점<br>결과</button></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td></td>
+                            <td><span>8</span> / 10</td>
+                            <td></td>
+                            <td class="full"><button class="btn-scoring-results-full-off">채점 결과</button></td>
+                        </tr>
+                    </tbody>
+                </table> -->
+                <!-- [End] 03_웹공유_01진척도점검_04주간진단_01저학년 -->
+
+                <!-- [Stert] 03_웹공유_01진척도점검_04주간진단_02고학년 -->
+                <h2 class="table-title"><span class="icon"></span><span>이번 주 목표</span><span class="gray">화상 관리 수업 전에 주간 진단 학습하기 </span></h2>
+                <table class="table-type">
+                    <thead>
+                        <tr>
+                            <th>과목</th>
+                            <th>학습일</th>
+                            <th>학습 시간</th>
+                            <th>나의<br>소요 시간</th>
+                            <th>권장<br>소요 시간</th>
+                            <th>회원 평균<br>소요 시간 </th>
+                            <th>나의 점수<br><span>(정답 / 총 문항)</span></th>
+                            <th>회원 평균 점수<br><span>(정답 / 총 문항)</span></th>
+                            <th>칭찬 딱지</th>
+                            <th class="full">채점 결과</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="row-title">국어<button class="btn-scoring-results-on">채점<br>결과</button></th>
+                            <td>2017년<br>4월 15일</td>
+                            <td>오후 6:00:00<br>~<br>오후 6:13:11</td>
+                            <td>8분 11초</td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span class="badge-praise-sticker">참 잘했어요!</span></td>
+                            <td class="full"><button class="btn-scoring-results-full-on">채점 결과</button></td>
+                        </tr>
+                        <tr>
+                            <th class="row-title">수학<button class="btn-scoring-results-on">채점<br>결과</button></th>
+                            <td>2017년<br>4월 15일</td>
+                            <td>오후 6:00:00<br>~<br>오후 6:13:11</td>
+                            <td>8분 11초</td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span class="badge-praise-sticker">참 잘했어요!</span></td>
+                            <td class="full"><button class="btn-scoring-results-full-on">채점 결과</button></td>
+                        </tr>
+                        <tr>
+                            <th class="row-title">사회<button class="btn-scoring-results-on">채점<br>결과</button></th>
+                            <td>2017년<br>4월 15일</td>
+                            <td>오후 6:00:00<br>~<br>오후 6:13:11</td>
+                            <td>8분 11초</td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span>8</span> / 10</td>
+                            <td><span class="badge-praise-sticker">참 잘했어요!</span></td>
+                            <td class="full"><button class="btn-scoring-results-full-on">채점 결과</button></td>
+                        </tr>
+                        <tr>
+                            <th class="row-title">과학<button class="btn-scoring-results-off">채점<br>결과</button></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>15분</td>
+                            <td>10분 20초</td>
+                            <td></td>
+                            <td><span>8</span> / 10</td>
+                            <td></td>
+                            <td class="full"><button class="btn-scoring-results-full-off">채점 결과</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- [End] 03_웹공유_01진척도점검_04주간진단_02고학년 -->
+            </div>
+
+        </div>
+    </section>
+    <!-- [End] Container Area -->
+</body>
+
+</html>
