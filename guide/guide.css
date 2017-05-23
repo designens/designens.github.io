@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*! style.css v1.0.0 © inyoung524@naver.com */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, legend, input, textarea, button, p, blockquote, th, td, form, fieldset, blockquote, iframe { margin: 0; padding: 0; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
+
+article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+command, datalist, keygen, mark, meter, progress, rp, rt, ruby, time, wbr { display: inline; }
+
+img { vertical-align: top; border: 0; }
+
+fieldset { border: 0; }
+
+ul, ol, li { list-style: none; }
+
+hr { display: none; }
+
+legend, caption { display: none; clear: both; }
+
+a { color: #4a4a4a; }
+
+a:visited { color: #4a4a4a; }
+
+a:link { text-decoration: none; }
+
+a:hover, a:active { color: #4a4a4a; text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; word-break: keep-all; }
+
+em, i, address, cite { font-style: normal; font-weight: normal; }
+
+input, textarea, select, button, table { font-size: inherit; font-family: inherit; *font-size: inherit; border: 0; background-color: transparent; }
+
+textarea, input, select { -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; -webkit-border-radius: 0; -ms-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: 0; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+
+textarea { resize: none; color: #4a4a4a; }
+
+label { cursor: pointer; }
+
+table { table-layout: fixed; border-collapse: collapse; border-spacing: 0; }
+
+th, td { border-collapse: collapse; }
+
+input[type="button"], input[type="text"], input[type="image"], input[type="submit"] { -webkit-appearance: none; -webkit-border-radius: 0; }
+
+input:checked[type="checkbox"] { background-color: #fff; -webkit-appearance: checkbox; }
+
+input[type="reset"], input[type="button"], input[type="submit"] { line-height: normal !important; }
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { -webkit-text-fill-color: inherit; -webkit-box-shadow: 0 0 0px 1000px white inset; }
+
+input::-webkit-input-placeholder { color: #4a4a4a; }
+
+input::-moz-placeholder { color: #4a4a4a; }
+
+input:-ms-input-placeholder { color: #4a4a4a; }
+
+input:-moz-placeholder { color: #4a4a4a; }
+
+html { font-family: "Nanum Gothic", sans-serif; font-size: 10px; }
+
+html body { font-size: 1.6rem; color: #4a4a4a; line-height: 1.5; }
+
+html body * { box-sizing: border-box; word-wrap: break-word; }
+
+body { background: #ededed !important; font-size: 1.6rem !important; height: 100vh; }
+
+.guide { margin-bottom: 0; }
+
+.guide h1, .guide h2, .guide h3, .guide h4, .guide h5, .guide h6 { margin-bottom: 2rem; }
+
+.wrap { max-width: 100%; margin-left: auto; margin-right: auto; padding: 2.4rem; }
+
+.wrap:after { content: " "; display: block; clear: both; }
+
+.wrap article .title { font-size: 3rem; font-weight: bold; color: #1566c1; }
+
+.wrap article .title:before { content: "\f013"; font-family: FontAwesome; font-size: 2.4rem; color: #1566c1; padding-right: 1rem; }
+
+.wrap .all-link { width: 100%; float: left; margin-left: 0; margin-right: 0; margin-top: 2.4rem; }
+
+.wrap .all-link .location { padding: 2.3rem 2.4rem; border: 1px solid #ddd; margin-bottom: 2.4rem; background: #fff; }
+
+.wrap .all-link .location p { line-height: 2.4rem; }
+
+.wrap .all-link .location p.check:before { content: "\f00c"; color: #e51d68; }
+
+.wrap .all-link .location p:before { content: "\f0c1"; font-family: FontAwesome; font-size: 1rem; color: #ccc; padding-right: 0.5rem; vertical-align: top; }
+
+.wrap .all-link .location p a { color: #333; display: inline-block; }
+
+.wrap .all-link .location p a > span { display: inline-block; color: #e51d68; margin-left: 4px; }
+
+.wrap .all-link .location p span { font-size: 1.2rem; color: #aaa; display: block; margin-left: 20px; margin-bottom: 10px; }
+
+.wrap .all-link .location p span:before { content: "("; }
+
+.wrap .all-link .location p span:after { content: ")"; }
+
+/*# sourceMappingURL=map/guide.css.map */
