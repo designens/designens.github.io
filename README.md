@@ -1,2 +1,2 @@
 # designens.github.io
-포트폴리오
+사이트맵 공유 페이지 입니다.
