@@ -37,7 +37,7 @@
     var $popups = $('.popup').a11y_popup();
 
     // 버튼 컨트롤
-    $('.btn-popup-login').on('click', function(e) {
+    $('.btn-popup-test').on('click', function(e) {
       e.preventDefault();
       // 팝업 찾아 열기 (id)
       $.popupId($popups, 'login-area').open();
@@ -58,6 +58,7 @@
        $('#gnb-all-menu').toggleClass('open');
     });
 
+    // LNB 메뉴
     $(function() {
         var Accordion = function(el, active) {
             this.el = el || {};
@@ -73,7 +74,7 @@
                links.eq(active - 1).trigger('click');     
             }
         }
-
+        // 아코디언 설정
         Accordion.prototype.dropdown = function(e) {
             e.preventDefault();
             var $this = e.data.link;
