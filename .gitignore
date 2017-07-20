@@ -1,4 +1,4 @@
-# Windows image file caches
+﻿# Windows image file caches
 Thumbs.db
 ehthumbs.db
 
@@ -42,14 +42,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# 가이드스타일
+# css map
 kyowon-encyclopedia/assets/css/map
-kyowon-encyclopedia/assets/css/guide.css
+kyowon-encyclopedia/assets/guide/map
 kyowon-smart-redpen/assets/css/map
-kyowon-smart-redpen/assets/css/guide.css
-
-# 아이콘폰트
-kyowon-smart-redpen/assets/fonts
-
-# 자바스크립트
-kyowon-smart-redpen/assets/js
+kyowon-smart-redpen/assets/guide/map
+north-korea-support/assets/css/map
+north-korea-support/assets/guide/map
