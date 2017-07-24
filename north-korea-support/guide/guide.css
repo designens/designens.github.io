@@ -31,7 +31,7 @@ input, textarea, select, button, table { font-size: inherit; font-family: inheri
 
 button, select { cursor: pointer; }
 
-textarea, input, select { -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; -webkit-border-radius: 0; -ms-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: 0; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
+textarea, input, select { -webkit-border-radius: 0; -ms-border-radius: 0; -moz-border-radius: 0; border-radius: 0; border: 0; outline-color: -moz-use-text-color; outline-style: none; outline-width: medium; }
 
 textarea { resize: none; }
 

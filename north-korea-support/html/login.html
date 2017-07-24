@@ -164,17 +164,34 @@
             </div>
         </nav>
         <!-- [End] GNB 전체 메뉴 -->
-        
-        <!-- [Start] Visual Banner -->
-        <p class="sub-visual">남북이 하나되기 위한 대북지원 - 대북지원정보시스템에서 함께 합니다.</p>
-        <!-- [End] Visual Banner -->
     </header>
     <!-- [End] Header -->
 
     <!-- [Start] Container Area -->
-    <div id="container" class="wrap">
-        <main class="content-area">
-            
+    <div id="container" class="login-bg">
+        <main class="login-area">
+            <h2 class="login-title">회원 로그인</h2>
+            <section class="login-content">
+                <div class="form-group">
+                    <div class="input-text-type">
+                        <input type="text" id="username" name="username" required="required" />
+                        <label for="username">아이디 입력</label>
+                        <br/>
+                        <input type="password" id="password" name="password" required="required" />
+                        <label for="password">비밀번호 입력</label>
+                    </div>
+                    <button class="btn-login">로그인</button>
+                </div>
+                <div class="checkbox-type">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">아이디 저장</label>
+                </div>
+                <div class="btn-link-set">
+                    <a class="btn-main" href="/">메인화면으로 이동</a>
+                    <a class="btn-join" href="sign-up-write.html">회원가입</a>
+                </div>
+                <div class="information">아이디나 비밀번호를 잊어버리신 경우 <span>1577-1365 (야간 02-2100-5799)</span>로 문의주시기 바랍니다.</div>
+            </section>
         </main>
     </div>
     <!-- [End] Container Area -->

@@ -175,7 +175,7 @@
     <div id="container" class="wrap">
         <nav class="lnb">
             <h3>제목</h3>
-            <ul id="accordion" class="accordion">
+            <ul class="accordion-lnb">
                 <li>
                     <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="submenu">
@@ -221,6 +221,40 @@
             <hr class="sub-title-bar"/>
             <section class="content">
             이 곳에 컨텐츠 작성하시면 됩니다.
+
+                <ul class="accordion-faq">
+                    <li>
+                        <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        <ul class="submenu">
+                            <!-- 선택된 중분류 a태그에 class="ative" 삽입 -->
+                            <li><a class="ative" href="#">중분류 1</a>
+                                <ul>
+                                    <!-- 선택된 세분류 a태그에 class="ative" 삽입 -->
+                                     <li><a href="">세분류 1</a></li>
+                                     <li><a href="">세분류 2</a></li>
+                                     <li><a href="">세분류 3</a></li>
+                                 </ul> 
+                            </li>
+                            <li><a href="#">중분류 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        <ul class="submenu">
+                            <li><a href="#">중분류 1</a></li>
+                            <li><a href="#">중분류 2</a></li>
+                            <li><a href="#">중분류 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="lnb-link" role="button">대분류 3</a>
+                        <!-- 대분류만 있을 경우 ul요소 class="hidden" & aria-hidden="true" 삽입 -->
+                        <ul class="submenu hidden" aria-hidden="true">
+                            <li><a href="#">대분류 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
             </section>
         </main>
     </div>
