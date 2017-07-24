@@ -59,7 +59,7 @@
     });
 
     // 아코디언 설정
-    var accordion = new $.Accordion($('.accordion-lnb'), 1), // LNB 메뉴
+    var accordion = new $.Accordion($('.accordion-lnb')), // LNB 메뉴
         accordion_faq = new $.Accordion($('.accordion-faq'), 1); // QnA 메뉴
 
 
