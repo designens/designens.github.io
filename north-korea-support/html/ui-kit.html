@@ -11,12 +11,12 @@
     <!-- MSIE 호환성 보기 (최신 브라우저) -->
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 <!-- MOBILE : 모바일 최적화 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 
     <!-- Styles : Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-<!-- Styles : CSS & SASS Sorcemap -->
-<link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <!-- Styles : Guide Style -->
+    <link rel="stylesheet" href="../guide/ui-kit.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -168,45 +168,109 @@
     <!-- [End] Header -->
 
     <!-- [Start] Container Area -->
-    <div id="container" class="login-bg">
-        
-        <!-- Input 공통 -->
-        <div class="form-group">
-            <div class="input-text-type">
-                <input type="text" id="username" name="username" required="required" />
-                <label for="username">아이디 입력</label>
-            </div>
-            <div class="input-text-type">
-                <input type="password" id="password" name="password" required="required" />
-                <label for="password">비밀번호 입력</label>
-            </div>
-            <button class="btn-login">로그인</button>
-        </div>
+    <main id="container" class="wrap">
+        <nav class="lnb">
+            <h3>제목</h3>
+            <ul class="accordion-lnb">
+                <li>
+                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#">중분류 1</a>
+                            <ul>
+                                 <li><a href="">세분류 1</a></li>
+                                 <li><a href="">세분류 2</a></li>
+                                 <li><a href="">세분류 3</a></li>
+                             </ul> 
+                        </li>
+                        <li><a href="#">중분류 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#">중분류 1</a></li>
+                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">중분류 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="content-area">
+            <!-- Input 공통 -->
+            <article class="ui-kit">
+                <h2>Input</h2>
+                <div class="form-group">
+                    <div class="input-type">
+                        <label for="username">아이디</label>
+                        <input type="text" id="username" name="username" required="required" />
+                    </div>
+                    <div class="input-type">
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password" name="password" required="required" />
+                    </div>
+                </div>
+                <br/>
+                <div class="input-type">
+                    <label class="keyword">
+                        <span>입력폼</span>
+                        <input type="text"/>
+                    </label>
+                </div>
+            </article>
 
-        <!-- 체크박스 공통 -->
-        <div class="checkbox-type">
-            <input type="checkbox" id="checkbox-01" name="test-01">
-            <label for="checkbox-01">Checkbox Test 01</label>
-            <input type="checkbox" id="checkbox-02" name="test-02">
-            <label for="checkbox-02">Checkbox Test 02</label>
-            <input type="checkbox" id="checkbox-03" name="test-03">
-            <label for="checkbox-03">Checkbox Test 03</label>
-        </div>
-        
-        <!-- 라디오버튼 공통 -->
-        <div class="radio-type">
-            <input type="radio" id="radio1" name="test">
-            <label for="radio1">Radio Button Test 01</label>
-            <input type="radio" id="radio2" name="test">
-            <label for="radio2">Radio Button Test 02</label>
-        </div>
+            <!-- Select Box 공통 -->
+            <article class="ui-kit">
+                <h2>Select Box</h2>
+                <div class="select-box">
+                    <label for="search">검색</label>
+                    <select id="search" name="search-item">
+                        <option selected="selected">검색</option>
+                        <option>키워드01</option>
+                        <option>키워드02</option>
+                        <option>키워드03</option>
+                        <option>키워드04</option>
+                        <option>키워드05</option>
+                    </select>
+                </div>
+            </article>
 
-        <div class="btn-link-set">
-            <a class="btn-test" href="">메인화면으로 이동</a>
-            <a class="btn-test" href="">회원가입</a>
-        </div>
+            <!-- 체크박스 공통 -->
+           <article class="ui-kit">
+                <h2>Check box</h2>
+               <div class="checkbox-type">
+                   <input type="checkbox" id="checkbox-01" name="test-01">
+                   <label for="checkbox-01">Checkbox Test 01</label>
+                   <input type="checkbox" id="checkbox-02" name="test-02">
+                   <label for="checkbox-02">Checkbox Test 02</label>
+                   <input type="checkbox" id="checkbox-03" name="test-03">
+                   <label for="checkbox-03">Checkbox Test 03</label>
+               </div>
+           </article>
+            
+            <!-- 라디오버튼 공통 -->
+            <article class="ui-kit">
+                <h2>Radio Button</h2>
+                <div class="radio-type">
+                    <input type="radio" id="radio1" name="test">
+                    <label for="radio1">Radio Button Test 01</label>
+                    <input type="radio" id="radio2" name="test">
+                    <label for="radio2">Radio Button Test 02</label>
+                </div>
+            </article>
 
-    </div>
+            <!-- 버튼 스타일 공통 -->
+            <article class="ui-kit">
+                <h2>Button Style</h2>
+                <div class="btn-type">
+                    <button class="btn-test" href="">메인화면으로 이동</button>
+                    <button class="btn-test" href="">회원가입</button>
+                </div>
+            </article>
+        </section>
+    </main>
     <!-- [End] Container Area -->
 
     <!-- [Start] Footer Area -->
@@ -227,7 +291,7 @@
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
 <!-- javascript : 공통사용 -->
-<script type="text/javascript" src="../assets/js/common.js"></script>
+<script type="text/javascript" src="../assets/js/jiy-common.js"></script>
 </body>
 
 </html>

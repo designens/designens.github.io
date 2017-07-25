@@ -11,12 +11,13 @@
     <!-- MSIE 호환성 보기 (최신 브라우저) -->
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 <!-- MOBILE : 모바일 최적화 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 
     <!-- Styles : Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
 <!-- Styles : CSS & SASS Sorcemap -->
-<link rel="stylesheet" href="../assets/css/style.css"/>
+<link rel="stylesheet" href="../assets/css/jiy-style.css"/>
+<link rel="stylesheet" href="../assets/css/khj-style.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -168,12 +169,12 @@
     <!-- [End] Header -->
 
     <!-- [Start] Container Area -->
-    <div id="container" class="login-bg">
-        <main class="login-area">
+    <main id="container" class="login-bg">
+        <section class="login-area">
             <h2 class="login-title">회원 로그인</h2>
-            <section class="login-content">
+            <div class="login-content">
                 <div class="form-group">
-                    <div class="input-text-type">
+                    <div class="input-area">
                         <input type="text" id="username" name="username" required="required" />
                         <label for="username">아이디 입력</label>
                         <br/>
@@ -191,9 +192,9 @@
                     <a class="btn-join" href="sign-up-write.html">회원가입</a>
                 </div>
                 <div class="information">아이디나 비밀번호를 잊어버리신 경우 <span>1577-1365 (야간 02-2100-5799)</span>로 문의주시기 바랍니다.</div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
     <!-- [End] Container Area -->
 
     <!-- [Start] Footer Area -->
@@ -214,7 +215,7 @@
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
 <!-- javascript : 공통사용 -->
-<script type="text/javascript" src="../assets/js/common.js"></script>
+<script type="text/javascript" src="../assets/js/jiy-common.js"></script>
 </body>
 
 </html>
