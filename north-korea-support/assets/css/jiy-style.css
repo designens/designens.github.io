@@ -1897,17 +1897,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .login-content .form-group .input-area { float: left; }
 
+.login-content .form-group .input-area input { width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
+
+.login-content .form-group .input-area input::-webkit-input-placeholder { color: #fff; }
+
+.login-content .form-group .input-area input::-moz-placeholder { color: #fff; }
+
+.login-content .form-group .input-area input:-ms-input-placeholder { color: #fff !important; }
+
+.login-content .form-group .input-area input:-moz-placeholder { color: #fff; }
+
 .login-content .form-group .input-area input { float: right; margin-bottom: 8px; }
-
-.login-content .form-group .input-area input input { width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
-
-.login-content .form-group .input-area input input::-webkit-input-placeholder { color: #fff; }
-
-.login-content .form-group .input-area input input::-moz-placeholder { color: #fff; }
-
-.login-content .form-group .input-area input input:-ms-input-placeholder { color: #fff !important; }
-
-.login-content .form-group .input-area input input:-moz-placeholder { color: #fff; }
 
 .login-content .form-group .input-area label { float: left; line-height: 34px; font-weight: bold; letter-spacing: -0.04em; color: #002644; margin-right: 10px; }
 
