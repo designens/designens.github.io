@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"> -->
+<!DOCTYPE html>
+<html lang="ko-KR">
 <head>
     <title>대북지원정보시스템</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -19,8 +21,9 @@
     <link rel="stylesheet" href="../guide/ui-kit.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
 <![endif]-->
 
 <!-- IE 9 버전 이상 지원 -->
@@ -266,6 +269,38 @@
                     <div class="arrow-bottom"></div>
                     <div class="arrow-left"></div>
                     <div class="arrow-right"></div>
+                </div>
+            </article>
+
+            <!-- 탭 스타일 공통 -->
+            <article>
+                <h2>Tab Style</h2>
+                <!-- 탭의 갯수 만큼 tab과 panel 마크업 작성
+                     탭의 갯수에 따라 class="t(n)" 설정 (max:8)
+                     ex) tab 갯수가 5개일 경우 class="t5" 설정 -->
+                <div class="tablist t5" role="tablist">
+                    <a href="#" id="tab1" aria-controls="panel1" aria-selected="true" tabindex="0" role="tab"><span class="tab-item">tab1</span></a>
+                    <a href="#" id="tab2" aria-controls="panel2" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab2</span></a>
+                    <a href="#" id="tab3" aria-controls="panel3" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab3</span></a>
+                    <a href="#" id="tab4" aria-controls="panel4" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab4</span></a>
+                    <a href="#" id="tab5" aria-controls="panel5" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab5</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" class="tab-panel" aria-labelledby="tab1" aria-hidden="false" role="tabpanel" tabindex="0">
+                        tab1 영역 입니다.
+                    </div>
+                    <div id="panel2" class="tab-panel" aria-labelledby="tab2" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab2 영역 입니다.
+                    </div>
+                    <div id="panel3" class="tab-panel" aria-labelledby="tab3" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab3 영역 입니다.
+                    </div>
+                    <div id="panel4" class="tab-panel" aria-labelledby="tab4" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab4 영역 입니다.
+                    </div>
+                    <div id="panel5" class="tab-panel" aria-labelledby="tab5" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab5 영역 입니다.
+                    </div>
                 </div>
             </article>
         </section>

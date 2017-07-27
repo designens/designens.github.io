@@ -1617,11 +1617,11 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.header, #container, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group { *zoom: 1; }
+.header, #container, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group { *zoom: 1; }
 
-.header:before, #container:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .header:after, #container:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after { content: ""; display: table; }
+.header:before, #container:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .header:after, #container:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after { content: ""; display: table; }
 
-.header:after, #container:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after { clear: both; }
+.header:after, #container:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after { clear: both; }
 
 .gnb-area .gnb .btn-gnb-all, #gnb-all-menu .wrap .btn-gnb-close, .popup .popup-headline .popup-close, .login-bg .login-area .login-title { text-indent: -9999px; }
 
@@ -1737,13 +1737,41 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .search-area .input-type label span { position: absolute; height: 1px; overflow: hidden; }
 
-.tabs li { float: left; width: 20%; }
+.tablist.t1 a { float: left; width: calc(100% / 1); }
 
-.tabs a { display: block; text-align: center; text-decoration: none; text-transform: uppercase; color: #888; padding: 20px 0; border-bottom: 2px solid #888; background: #f7f7f7; }
+.tablist.t2 a { float: left; width: calc(100% / 2); }
 
-.tabs a:hover, .tabs a.active { background: #ddd; }
+.tablist.t3 a { float: left; width: calc(100% / 3); }
 
-.tabgroup div { padding: 30px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
+.tablist.t4 a { float: left; width: calc(100% / 4); }
+
+.tablist.t5 a { float: left; width: calc(100% / 5); }
+
+.tablist.t6 a { float: left; width: calc(100% / 6); }
+
+.tablist.t7 a { float: left; width: calc(100% / 7); }
+
+.tablist.t8 a { float: left; width: calc(100% / 8); }
+
+.tablist a { padding-right: 2px; }
+
+.tablist a:first-child span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.tablist a:last-child { padding-right: 0; }
+
+.tablist a:last-child span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+.tablist a span { display: block; text-align: center; height: 40px; line-height: 36px; background: #f5dfd7; border: 2px solid #f1c7b7; }
+
+.tablist a[aria-selected='true'], .tablist a:focus { outline: 0; }
+
+.tablist a[aria-selected='true'] span, .tablist a:focus span { position: relative; font-weight: bold; color: #fff; line-height: 35px; background: #d14411; border: 0; box-shadow: 1px 1px 4px 3px rgba(209, 68, 17, 0.3) inset; }
+
+.tablist a[aria-selected='true'] span:before, .tablist a:focus span:before { position: absolute; bottom: 0; left: 50%; margin-left: -5px; display: block; width: 0; height: 0; border-color: transparent; border-width: 6px; border-style: solid; border-bottom-color: #fff; content: ""; }
+
+.tab-panel { display: block; width: 100%; margin-top: 12px; }
+
+.tab-panel[aria-hidden='true'] { display: none; }
 
 .table-type { width: 100%; }
 

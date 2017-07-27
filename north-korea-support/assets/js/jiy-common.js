@@ -36,13 +36,6 @@
     // 팝업 플러그인 연결
     var $popups = $('.popup').a11y_popup();
 
-    // 버튼 컨트롤
-    $('.btn-popup-test').on('click', function(e) {
-      e.preventDefault();
-      // 팝업 찾아 열기 (id)
-      $.popupId($popups, 'login-area').open();
-    });
-
     // 공지사항 상세 팝업
     $('.btn-popup-notices').on('click', function(e) {
       e.preventDefault();
