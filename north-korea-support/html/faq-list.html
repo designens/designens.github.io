@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"> -->
+<!DOCTYPE html>
+<html lang="ko-KR">
 <head>
     <title>대북지원정보시스템</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -20,8 +22,9 @@
 <link rel="stylesheet" href="../assets/css/khj-style.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
 <![endif]-->
 
 <!-- IE 9 버전 이상 지원 -->
@@ -199,6 +202,8 @@
             </header>
             <hr class="sub-title-bar"/>
             <div class="content">
+
+                <!-- [Start] 검색 영역 -->
                 <ul class="search-area">
                     <li class="search-title"><span>검색</span></li>
                     <li class="select-box">
@@ -219,31 +224,35 @@
                         <button class="btn-lookup">조회</button>
                     </li>
                 </ul>
-                <ul class="accordion-faq">
-                    <li>
-                        <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                        <ul class="submenu">
-                            <li><a class="ative" href="#">중분류 1</a>
-                                <ul>
-                                     <li><a href="">세분류 1</a></li>
-                                 </ul> 
-                            </li>
-                            <li><a href="#">중분류 2</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                        <ul class="submenu">
-                            <li><a href="#">중분류 1</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                        <ul class="submenu">
-                            <li><a href="#">중분류 1</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- [End] 검색 영역 -->
+
+                <!-- [Start] 탭 영역 -->
+                <!-- 탭의 갯수에 따라 t1~t8 까지 class 설정 -->
+                <div class="tablist t5" role="tablist">
+                    <a href="" id="tab1" aria-controls="panel1" aria-selected="true" role="tab"><span class="tab-item">전체</span></a>
+                    <a href="" id="tab2" aria-controls="panel2" aria-selected="false" role="tab"><span class="tab-item">회원서비스</span></a>
+                    <a href="" id="tab3" aria-controls="panel3" aria-selected="false" role="tab"><span class="tab-item">기금사업신청</span></a>
+                    <a href="" id="tab4" aria-controls="panel4" aria-selected="false" role="tab"><span class="tab-item">통계</span></a>
+                    <a href="" id="tab5" aria-controls="panel5" aria-selected="false" role="tab"><span class="tab-item">북한현황지표</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" class="tab-panel" aria-labelledby="tab1" aria-hidden="false" role="tabpanel" tabindex="0">
+                        tab1 영역 입니다.
+                    </div>
+                    <div id="panel2" class="tab-panel" aria-labelledby="tab2" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab2 영역 입니다.
+                    </div>
+                    <div id="panel3" class="tab-panel" aria-labelledby="tab3" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab3 영역 입니다.
+                    </div>
+                    <div id="panel4" class="tab-panel" aria-labelledby="tab4" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab4 영역 입니다.
+                    </div>
+                    <div id="panel5" class="tab-panel" aria-labelledby="tab5" aria-hidden="true" role="tabpanel" tabindex="0">
+                        tab5 영역 입니다.
+                    </div>
+                </div>
+                <!-- [End] 탭 영역 -->
             </div>
         </section>
     </main>
