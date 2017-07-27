@@ -1,5 +1,3 @@
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"> -->
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
@@ -269,6 +267,71 @@
                     <div class="arrow-bottom"></div>
                     <div class="arrow-left"></div>
                     <div class="arrow-right"></div>
+                    <div class="arrow-top-left"></div>
+                    <div class="arrow-top-right"></div>
+                    <div class="arrow-bottom-left"></div>
+                    <div class="arrow-bottom-right"></div>
+                </div>
+            </article>
+
+            <!-- 아코디언 스타일 공통 -->
+            <article>
+                <h2>Accordion Style</h2>
+                <div class="accordion-test">
+                    <h3><span class="fa fa-list-ul"></span>아코디언 전체 패널 닫힘</h3>
+                    <ul class="aco-base">
+                        <li>
+                            <a href="#" class="name-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                            <ul class="sub-name">
+                                <li><a href="#">중분류 1</a>
+                                    <ul>
+                                         <li><a href="">세분류 1</a></li>
+                                         <li><a href="">세분류 2</a></li>
+                                         <li><a href="">세분류 3</a></li>
+                                     </ul> 
+                                </li>
+                                <li><a href="#">중분류 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="name-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                            <ul class="sub-name">
+                                <li><a href="#">중분류 1</a></li>
+                                <li><a href="#">중분류 2</a></li>
+                                <li><a href="#">중분류 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="name-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        </li>
+                    </ul>
+                    <h3><span class="fa fa-list-ul"></span>아코디언 첫번째 패널 펼침</h3>
+                    <ul class="aco-open">
+                        <li>
+                            <a href="#" class="name-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                            <ul class="sub-name">
+                                <li><a href="#">중분류 1</a>
+                                    <ul>
+                                         <li><a href="">세분류 1</a></li>
+                                         <li><a href="">세분류 2</a></li>
+                                         <li><a href="">세분류 3</a></li>
+                                     </ul> 
+                                </li>
+                                <li><a href="#">중분류 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="name-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                            <ul class="sub-name">
+                                <li><a href="#">중분류 1</a></li>
+                                <li><a href="#">중분류 2</a></li>
+                                <li><a href="#">중분류 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="name-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        </li>
+                    </ul>
                 </div>
             </article>
 
@@ -279,26 +342,26 @@
                      탭의 갯수에 따라 class="t(n)" 설정 (max:8)
                      ex) tab 갯수가 5개일 경우 class="t5" 설정 -->
                 <div class="tablist t5" role="tablist">
-                    <a href="#" id="tab1" aria-controls="panel1" aria-selected="true" tabindex="0" role="tab"><span class="tab-item">tab1</span></a>
-                    <a href="#" id="tab2" aria-controls="panel2" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab2</span></a>
-                    <a href="#" id="tab3" aria-controls="panel3" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab3</span></a>
-                    <a href="#" id="tab4" aria-controls="panel4" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab4</span></a>
-                    <a href="#" id="tab5" aria-controls="panel5" aria-selected="false" tabindex="-1" role="tab"><span class="tab-item">tab5</span></a>
+                    <button id="tab1" aria-controls="panel1" role="tab" href=""><span>tab1</span></button>
+                    <button id="tab2" aria-controls="panel2" role="tab" href=""><span>tab2</span></button>
+                    <button id="tab3" aria-controls="panel3" role="tab" href=""><span>tab3</span></button>
+                    <button id="tab4" aria-controls="panel4" role="tab" href=""><span>tab4</span></button>
+                    <button id="tab5" aria-controls="panel5" role="tab" href=""><span>tab5</span></button>
                 </div>
                 <div class="panel-group">
-                    <div id="panel1" class="tab-panel" aria-labelledby="tab1" aria-hidden="false" role="tabpanel" tabindex="0">
+                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
                         tab1 영역 입니다.
                     </div>
-                    <div id="panel2" class="tab-panel" aria-labelledby="tab2" aria-hidden="true" role="tabpanel" tabindex="0">
+                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
                         tab2 영역 입니다.
                     </div>
-                    <div id="panel3" class="tab-panel" aria-labelledby="tab3" aria-hidden="true" role="tabpanel" tabindex="0">
+                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
                         tab3 영역 입니다.
                     </div>
-                    <div id="panel4" class="tab-panel" aria-labelledby="tab4" aria-hidden="true" role="tabpanel" tabindex="0">
+                    <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
                         tab4 영역 입니다.
                     </div>
-                    <div id="panel5" class="tab-panel" aria-labelledby="tab5" aria-hidden="true" role="tabpanel" tabindex="0">
+                    <div id="panel5" aria-labelledby="tab5" role="tabpanel" tabindex="0">
                         tab5 영역 입니다.
                     </div>
                 </div>
