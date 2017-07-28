@@ -1604,13 +1604,15 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
-.checkbox-type input + label:before, .radio-type input + label:before { display: inline-block; content: ''; text-align: center; vertical-align: -2px; width: 14px; height: 14px; border: 1px solid #002847; margin-right: 8px; background: #fff; }
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 22px; }
+
+.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 14px; height: 14px; border: 1px solid #002847; background: #fff; }
 
 .checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; border-color: #002847; }
 
-.checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.15s ease; }
+.checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
 
-.checkbox-type input[type="checkbox"]:checked + label:before, .radio-type input[type="checkbox"]:checked + label:before { font-size: 13px; font-family: 'FontAwesome'; content: "\f00c"; color: #002847; }
+.checkbox-type input[type="checkbox"]:checked + label:before, .radio-type input[type="checkbox"]:checked + label:before { font-size: 13px; line-height: 1.2; font-family: 'FontAwesome'; content: "\f00c"; color: #002847; }
 
 .radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
 
