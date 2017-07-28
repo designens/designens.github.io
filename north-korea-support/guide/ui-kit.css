@@ -1663,7 +1663,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 .sub-visual { width: 100%; min-width: 1248px; height: 140px; text-indent: -9999px; background: url("../../assets/images/bg/sub-banner.png") center; }
 
-#container { min-height: 730px; padding-top: 50px; padding-bottom: 30px; /* Content 영역 */ }
+#container { display: block; min-height: 670px; padding-top: 50px; padding-bottom: 30px; /* Content 영역 */ }
 
 #container .content-area { float: left; margin-left: 24px; width: 950px; }
 
@@ -1909,7 +1909,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 팝업 영역 */
 .popup { width: 870px; min-height: 500px; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; /* 팝업 헤드라인 */ /* 팝업 콘텐츠 */ }
 
-.popup.is-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.popup.is-center { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .popup .popup-headline { height: 50px; line-height: 50px; padding: 0 30px; background: url("../../assets/images/bg/popup-title.png") center no-repeat; }
 
@@ -1928,13 +1928,13 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /*  -------------------------------- 메인 > 로그인 > 외부로그인 (html/login.html) -------------------------------- */
 .login-bg { position: relative; background: #fafafa; }
 
-.login-bg .login-area { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 740px; }
+.login-bg .login-area { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 740px; }
 
 .login-bg .login-area .login-title { height: 50px; margin-bottom: 40px; background: url("../../assets/images/sub/member-login.png") center no-repeat; }
 
 .login-content { position: relative; height: 356px; border-radius: 7px; border: 1px solid #afc0cc; box-shadow: 0 0 6px 6px #fdfdfd; background: #fff; }
 
-.login-content .form-group { position: absolute; left: 50%; transform: translateX(-50%); top: 50px; width: 406px; }
+.login-content .form-group { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 50px; width: 406px; }
 
 .login-content .form-group .input-area { float: left; }
 
@@ -1948,7 +1948,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .login-content .form-group .input-area input:-moz-placeholder { color: #fff; }
 
-.login-content .form-group .input-area input { float: right; margin-bottom: 8px; }
+.login-content .form-group .input-area input { float: right; margin-bottom: 8px; clear: both; }
 
 .login-content .form-group .input-area label { float: left; line-height: 34px; font-weight: bold; letter-spacing: -0.04em; color: #002644; margin-right: 10px; }
 
@@ -1956,11 +1956,11 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .login-content .form-group .btn-login:hover, .login-content .form-group .btn-login:focus, .login-content .form-group .btn-login:active { background: rgba(0, 55, 97, 0.9); transition: background .3s ease; }
 
-.login-content .checkbox-type, .login-content .radio-type { position: absolute; left: 50%; transform: translateX(-50%); top: 147px; width: 208px; }
+.login-content .checkbox-type, .login-content .radio-type { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 147px; width: 208px; }
 
 .login-content .checkbox-type label, .login-content .radio-type label { letter-spacing: -0.04em; }
 
-.login-content .btn-link-set { position: absolute; left: 50%; transform: translateX(-50%); top: 190px; width: 406px; }
+.login-content .btn-link-set { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 190px; width: 406px; }
 
 .login-content .btn-link-set [class*='btn-'] { display: inline-block; min-width: 200px; height: 40px; line-height: 38px; text-align: center; padding: 0 10px; border-radius: 3px; letter-spacing: -0.01em; }
 
@@ -1993,6 +1993,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .accordion-faq > li [class*="link"]:before, .accordion-test .aco-open > li [class*="link"]:before { position: absolute; top: 30px; right: 30px; width: 17px; height: 1px; background: #333; content: ""; }
 
+.accordion-faq > li [class*="link"]:after, .accordion-test .aco-open > li [class*="link"]:after { position: absolute; top: 22px; right: 38px; width: 1px; height: 17px; background: #333; content: ""; transform: rotate(-90deg); }
+
 .accordion-faq > li.open, .accordion-test .aco-open > li.open { border-bottom: 0; }
 
 .accordion-faq > li.open:first-child, .accordion-test .aco-open > li.open:first-child { border-top: 2px solid #45494d; }
@@ -2001,7 +2003,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .accordion-faq > li.open [class*="link"] [class^="title-"], .accordion-test .aco-open > li.open [class*="link"] [class^="title-"] { color: #003761; }
 
-.accordion-faq > li.open [class*="link"]:after, .accordion-test .aco-open > li.open [class*="link"]:after { position: absolute; top: 22px; right: 38px; width: 1px; height: 17px; background: #333; content: ""; }
+.accordion-faq > li.open [class*="link"]:after, .accordion-test .aco-open > li.open [class*="link"]:after { transform: rotate(0deg); transition: transform 0.25s ease; }
 
 .accordion-faq > li.open [class*="sub"], .accordion-test .aco-open > li.open [class*="sub"] { border-bottom: 1px solid #45494d; }
 
