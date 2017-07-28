@@ -1732,8 +1732,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .search-area .select-box select:focus { border: 1px solid #002847; }
 
-.search-area .select-box:focus, .search-area .select-box:hover { border: 1px solid #000; }
-
 .search-area .input-type input { width: 360px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
 .search-area .input-type input::-webkit-input-placeholder { color: #fff; }
