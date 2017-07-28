@@ -1863,43 +1863,43 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .lnb h3 { display: block; height: 100px; line-height: 100px; color: #fff; text-align: center; letter-spacing: -0.03em; background: url("../../assets/images/bg/lnb_title.png") no-repeat; }
 
-.accordion-lnb, .accordion-test .aco-base, .accordion-test .aco-open { border: 1px solid #cad7e0; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.accordion-lnb, .accordion-test .aco-base { border: 1px solid #cad7e0; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
-.accordion-lnb > li, .accordion-test .aco-base > li, .accordion-test .aco-open > li { border-bottom: 1px solid #cad7e0; font-size: 16px; color: #333; font-weight: bold; }
+.accordion-lnb > li, .accordion-test .aco-base > li { border-bottom: 1px solid #cad7e0; font-size: 16px; color: #333; font-weight: bold; }
 
-.accordion-lnb > li [class*="link"], .accordion-test .aco-base > li [class*="link"], .accordion-test .aco-open > li [class*="link"] { position: relative; color: #4D4D4D; font-size: 16px; font-weight: bold; padding: 15px 20px; border-bottom: 1px solid #CCC; }
+.accordion-lnb > li [class*="link"], .accordion-test .aco-base > li [class*="link"] { position: relative; color: #4D4D4D; font-size: 16px; font-weight: bold; padding: 15px 20px; border-bottom: 1px solid #CCC; }
 
-.accordion-lnb > li [class*="link"] .fa-angle-down, .accordion-test .aco-base > li [class*="link"] .fa-angle-down, .accordion-test .aco-open > li [class*="link"] .fa-angle-down { position: absolute; display: block; top: 18px; right: 18px; font-size: 18px; color: #333; transform: rotate(0deg); }
+.accordion-lnb > li [class*="link"] .fa-angle-down, .accordion-test .aco-base > li [class*="link"] .fa-angle-down { position: absolute; display: block; top: 18px; right: 18px; font-size: 18px; color: #333; transform: rotate(0deg); }
 
-.accordion-lnb > li:last-child, .accordion-test .aco-base > li:last-child, .accordion-test .aco-open > li:last-child, .accordion-lnb > li [class*="link"], .accordion-test .aco-base > li [class*="link"], .accordion-test .aco-open > li [class*="link"] { border-bottom: 0; }
+.accordion-lnb > li:last-child, .accordion-test .aco-base > li:last-child, .accordion-lnb > li [class*="link"], .accordion-test .aco-base > li [class*="link"] { border-bottom: 0; }
 
-.accordion-lnb > li:last-child ul, .accordion-test .aco-base > li:last-child ul, .accordion-test .aco-open > li:last-child ul, .accordion-lnb > li [class*="link"] ul, .accordion-test .aco-base > li [class*="link"] ul, .accordion-test .aco-open > li [class*="link"] ul { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.accordion-lnb > li:last-child ul, .accordion-test .aco-base > li:last-child ul, .accordion-lnb > li [class*="link"] ul, .accordion-test .aco-base > li [class*="link"] ul { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
-.accordion-lnb > li.open [class*="link"], .accordion-test .aco-base > li.open [class*="link"], .accordion-test .aco-open > li.open [class*="link"] { position: relative; color: #003761; padding-left: 33px; background: #cee4f5; }
+.accordion-lnb > li.open [class*="link"], .accordion-test .aco-base > li.open [class*="link"] { position: relative; color: #003761; padding-left: 33px; background: #cee4f5; }
 
-.accordion-lnb > li.open [class*="link"]:before, .accordion-test .aco-base > li.open [class*="link"]:before, .accordion-test .aco-open > li.open [class*="link"]:before { position: absolute; left: 20px; bottom: 16px; width: 6px; height: 2px; background: #003761; content: ""; }
+.accordion-lnb > li.open [class*="link"]:before, .accordion-test .aco-base > li.open [class*="link"]:before { position: absolute; left: 20px; bottom: 16px; width: 6px; height: 2px; background: #003761; content: ""; }
 
-.accordion-lnb > li.open [class*="link"] .fa-angle-down, .accordion-test .aco-base > li.open [class*="link"] .fa-angle-down, .accordion-test .aco-open > li.open [class*="link"] .fa-angle-down { color: #003761; transform: rotate(180deg); transition: transform 0.25s ease; }
+.accordion-lnb > li.open [class*="link"] .fa-angle-down, .accordion-test .aco-base > li.open [class*="link"] .fa-angle-down { color: #003761; transform: rotate(180deg); transition: transform 0.25s ease; }
 
-.accordion-lnb > li.open:last-child [class*="link"], .accordion-test .aco-base > li.open:last-child [class*="link"], .accordion-test .aco-open > li.open:last-child [class*="link"] { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.accordion-lnb > li.open:last-child [class*="link"], .accordion-test .aco-base > li.open:last-child [class*="link"] { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
-.accordion-lnb [class*="sub"], .accordion-test .aco-base [class*="sub"], .accordion-test .aco-open [class*="sub"] { background: #f0f8ff; padding: 9px 0; }
+.accordion-lnb [class*="sub"], .accordion-test .aco-base [class*="sub"] { background: #f0f8ff; padding: 9px 0; }
 
-.accordion-lnb [class*="sub"] > li, .accordion-test .aco-base [class*="sub"] > li, .accordion-test .aco-open [class*="sub"] > li { font-weight: normal; padding: 9px 24px; }
+.accordion-lnb [class*="sub"] > li, .accordion-test .aco-base [class*="sub"] > li { font-weight: normal; padding: 9px 24px; }
 
-.accordion-lnb [class*="sub"] > li a, .accordion-test .aco-base [class*="sub"] > li a, .accordion-test .aco-open [class*="sub"] > li a { position: relative; display: block; padding-left: 11px; letter-spacing: -0.04em; }
+.accordion-lnb [class*="sub"] > li a, .accordion-test .aco-base [class*="sub"] > li a { position: relative; display: block; padding-left: 11px; letter-spacing: -0.04em; }
 
-.accordion-lnb [class*="sub"] > li a:before, .accordion-test .aco-base [class*="sub"] > li a:before, .accordion-test .aco-open [class*="sub"] > li a:before { position: absolute; left: 0; }
+.accordion-lnb [class*="sub"] > li a:before, .accordion-test .aco-base [class*="sub"] > li a:before { position: absolute; left: 0; }
 
-.accordion-lnb [class*="sub"] > li a:hover, .accordion-test .aco-base [class*="sub"] > li a:hover, .accordion-test .aco-open [class*="sub"] > li a:hover, .accordion-lnb [class*="sub"] > li a:focus, .accordion-test .aco-base [class*="sub"] > li a:focus, .accordion-test .aco-open [class*="sub"] > li a:focus, .accordion-lnb [class*="sub"] > li a.ative, .accordion-test .aco-base [class*="sub"] > li a.ative, .accordion-test .aco-open [class*="sub"] > li a.ative { font-weight: bold; color: #003761; text-decoration: underline; }
+.accordion-lnb [class*="sub"] > li a:hover, .accordion-test .aco-base [class*="sub"] > li a:hover, .accordion-lnb [class*="sub"] > li a:focus, .accordion-test .aco-base [class*="sub"] > li a:focus, .accordion-lnb [class*="sub"] > li a.ative, .accordion-test .aco-base [class*="sub"] > li a.ative { font-weight: bold; color: #003761; text-decoration: underline; }
 
-.accordion-lnb [class*="sub"] > li > a:before, .accordion-test .aco-base [class*="sub"] > li > a:before, .accordion-test .aco-open [class*="sub"] > li > a:before { top: 11px; display: block; width: 3px; height: 3px; background: #757575; content: ""; }
+.accordion-lnb [class*="sub"] > li > a:before, .accordion-test .aco-base [class*="sub"] > li > a:before { top: 11px; display: block; width: 3px; height: 3px; background: #757575; content: ""; }
 
-.accordion-lnb [class*="sub"] > li > a:hover:before, .accordion-test .aco-base [class*="sub"] > li > a:hover:before, .accordion-test .aco-open [class*="sub"] > li > a:hover:before, .accordion-lnb [class*="sub"] > li > a:focus:before, .accordion-test .aco-base [class*="sub"] > li > a:focus:before, .accordion-test .aco-open [class*="sub"] > li > a:focus:before, .accordion-lnb [class*="sub"] > li > a.ative:before, .accordion-test .aco-base [class*="sub"] > li > a.ative:before, .accordion-test .aco-open [class*="sub"] > li > a.ative:before { background: #003761; }
+.accordion-lnb [class*="sub"] > li > a:hover:before, .accordion-test .aco-base [class*="sub"] > li > a:hover:before, .accordion-lnb [class*="sub"] > li > a:focus:before, .accordion-test .aco-base [class*="sub"] > li > a:focus:before, .accordion-lnb [class*="sub"] > li > a.ative:before, .accordion-test .aco-base [class*="sub"] > li > a.ative:before { background: #003761; }
 
-.accordion-lnb [class*="sub"] > li > ul li, .accordion-test .aco-base [class*="sub"] > li > ul li, .accordion-test .aco-open [class*="sub"] > li > ul li { padding-top: 9px; padding-left: 10px; }
+.accordion-lnb [class*="sub"] > li > ul li, .accordion-test .aco-base [class*="sub"] > li > ul li { padding-top: 9px; padding-left: 10px; }
 
-.accordion-lnb [class*="sub"] > li > ul li a:before, .accordion-test .aco-base [class*="sub"] > li > ul li a:before, .accordion-test .aco-open [class*="sub"] > li > ul li a:before { top: -3px; background: transparent; color: #757575; content: "-"; }
+.accordion-lnb [class*="sub"] > li > ul li a:before, .accordion-test .aco-base [class*="sub"] > li > ul li a:before { top: -3px; background: transparent; color: #757575; content: "-"; }
 
 /* 팝업 컨테이너 */
 .popup-container { position: fixed; top: 0; right: 0; bottom: 0; left: 0; /* 팝업 딤 (Dim) */ }
@@ -1977,39 +1977,39 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .login-content .information span { color: #0c314c; }
 
 /*  -------------------------------- 커뮤니티 > FAQ 조회진행중 (html/faq-list.html) -------------------------------- */
-.accordion-faq > li { border-bottom: 1px solid #d2d4d6; }
+.accordion-faq > li, .accordion-test .aco-open > li { border-bottom: 1px solid #d2d4d6; }
 
-.accordion-faq > li:first-child { border-top: 1px solid #d2d4d6; }
+.accordion-faq > li:first-child, .accordion-test .aco-open > li:first-child { border-top: 1px solid #d2d4d6; }
 
-.accordion-faq > li [class*="link"] { position: relative; height: 60px; line-height: 60px; padding: 0 30px; }
+.accordion-faq > li [class*="link"], .accordion-test .aco-open > li [class*="link"] { position: relative; height: 60px; line-height: 60px; padding: 0 30px; }
 
-.accordion-faq > li [class*="link"] [class^="title-"] { float: left; font-size: 16px; color: #333; vertical-align: top; }
+.accordion-faq > li [class*="link"] [class^="title-"], .accordion-test .aco-open > li [class*="link"] [class^="title-"] { float: left; font-size: 16px; color: #333; vertical-align: top; }
 
-.accordion-faq > li [class*="link"] .title-type { font-weight: bold; width: 200px; }
+.accordion-faq > li [class*="link"] .title-type, .accordion-test .aco-open > li [class*="link"] .title-type { font-weight: bold; width: 200px; }
 
-.accordion-faq > li [class*="link"] .title-type:before { display: inline-block; content: "Q."; padding-right: 14px; }
+.accordion-faq > li [class*="link"] .title-type:before, .accordion-test .aco-open > li [class*="link"] .title-type:before { display: inline-block; content: "Q."; padding-right: 14px; }
 
-.accordion-faq > li [class*="link"] .title-name { width: -webkit-calc( 100% - 240px); width: -moz-calc( 100% - 240px); width: calc( 100% - 240px); height: inherit; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
+.accordion-faq > li [class*="link"] .title-name, .accordion-test .aco-open > li [class*="link"] .title-name { width: -webkit-calc( 100% - 240px); width: -moz-calc( 100% - 240px); width: calc( 100% - 240px); height: inherit; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
 
-.accordion-faq > li [class*="link"]:before { position: absolute; top: 30px; right: 30px; width: 17px; height: 1px; background: #333; content: ""; }
+.accordion-faq > li [class*="link"]:before, .accordion-test .aco-open > li [class*="link"]:before { position: absolute; top: 30px; right: 30px; width: 17px; height: 1px; background: #333; content: ""; }
 
-.accordion-faq > li.open { border-bottom: 0; }
+.accordion-faq > li.open, .accordion-test .aco-open > li.open { border-bottom: 0; }
 
-.accordion-faq > li.open:first-child { border-top: 2px solid #45494d; }
+.accordion-faq > li.open:first-child, .accordion-test .aco-open > li.open:first-child { border-top: 2px solid #45494d; }
 
-.accordion-faq > li.open [class*="link"] { background: #faf6f5; border-bottom: 1px solid #d2d4d6; }
+.accordion-faq > li.open [class*="link"], .accordion-test .aco-open > li.open [class*="link"] { background: #faf6f5; border-bottom: 1px solid #d2d4d6; }
 
-.accordion-faq > li.open [class*="link"] [class^="title-"] { color: #003761; }
+.accordion-faq > li.open [class*="link"] [class^="title-"], .accordion-test .aco-open > li.open [class*="link"] [class^="title-"] { color: #003761; }
 
-.accordion-faq > li.open [class*="link"]:after { position: absolute; top: 22px; right: 38px; width: 1px; height: 17px; background: #333; content: ""; }
+.accordion-faq > li.open [class*="link"]:after, .accordion-test .aco-open > li.open [class*="link"]:after { position: absolute; top: 22px; right: 38px; width: 1px; height: 17px; background: #333; content: ""; }
 
-.accordion-faq > li.open [class*="sub"] { border-bottom: 1px solid #45494d; }
+.accordion-faq > li.open [class*="sub"], .accordion-test .aco-open > li.open [class*="sub"] { border-bottom: 1px solid #45494d; }
 
-.accordion-faq [class*="sub"] { position: relative; padding: 16px 30px 16px 60px; }
+.accordion-faq [class*="sub"], .accordion-test .aco-open [class*="sub"] { position: relative; padding: 16px 30px 16px 60px; }
 
-.accordion-faq [class*="sub"]:before { position: absolute; left: 30px; display: inline-block; content: "A."; font-weight: bold; }
+.accordion-faq [class*="sub"]:before, .accordion-test .aco-open [class*="sub"]:before { position: absolute; left: 30px; display: inline-block; content: "A."; font-weight: bold; }
 
-.accordion-faq [class*="sub"] p { line-height: 1.6; }
+.accordion-faq [class*="sub"] p, .accordion-test .aco-open [class*="sub"] p { line-height: 1.6; }
 
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) { .test { position: absolute; top: 0; left: 0; display: inline-block !important; }
   .test.w1 { width: 1%; }
@@ -2197,6 +2197,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .accordion-test h3 .fa { font-size: 16px; margin-right: 10px; vertical-align: 2px; }
 
-.accordion-test .aco-base, .accordion-test .aco-open { margin-bottom: 20px; }
+.accordion-test .aco-base { margin-bottom: 20px; }
 
 /*# sourceMappingURL=map/ui-kit.css.map */
