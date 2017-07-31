@@ -36,25 +36,31 @@
     // 팝업 플러그인 연결
     var $popups = $('.popup').a11y_popup();
 
+    // 테스트 팝업
+    $('.btn-popup-test').on('click', function(e) {
+      e.preventDefault();
+      // 팝업 찾아 열기 (id)
+      $.popupId($popups, 'test-area').open();
+    });
+
+    // Q&ampA 팝업
+    $('.btn-popup-qna').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-qna').open();
+    });
+
     // 공지사항 상세 팝업
     $('.btn-popup-notices').on('click', function(e) {
       e.preventDefault();
-      // 팝업 찾아 열기 (id)
       $.popupId($popups, 'popup-notices').open();
     });
 
     // 자료실 상세 팝업
     $('.btn-popup-resources').on('click', function(e) {
       e.preventDefault();
-      // 팝업 찾아 열기 (id)
       $.popupId($popups, 'popup-resources').open();
     });
-
-    // 팝업 컨트롤 범위 지정
-    $('.popup').draggable({
-        containment: "body" //지정된 영역안에서만 이동
-    });
-
+    
     // GNB 전체메뉴
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈
     $('.btn-gnb-all').click(function() {
