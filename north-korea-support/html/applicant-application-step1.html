@@ -222,7 +222,20 @@
                             <tbody>
                                 <tr>
                                     <th>공고명</th>
-                                    <td colspan="3"></td>
+                                    <td colspan="3">
+                                        <div class="select-box">
+                                            <label for="search">선택</label>
+                                            <select id="search" name="search-item">
+                                                <option selected="selected">선택</option>
+                                                <option>공고명 01</option>
+                                                <option>공고명 02</option>
+                                                <option>공고명 03</option>
+                                                <option>공고명 04</option>
+                                                <option>공고명 05</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn-type-1-02">공고내용 상세보기</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>단체명</th>
@@ -232,13 +245,97 @@
                                 </tr>
                                 <tr>
                                     <th>지원분야</th>
-                                    <td class="lines checkbox-type" colspan="3">
-                                        <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                                        <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                                    <td class="lines" colspan="3">
+                                        <ul class="checkbox-type">
+                                            <li>
+                                                <input type="checkbox" id="field-01" name="식량차관">
+                                                <label for="field-01">식량차관</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="field-02" name="일반구호">
+                                                <label for="field-02">일반구호</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="field-03" name="사회복지">
+                                                <label for="field-03">사회복지</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="field-04" name="보건의료">
+                                                <label for="field-04">보건의료</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="field-05" name="농업">
+                                                <label for="field-05">농업</label>
+                                            </div>
+                                            <li>
+                                                <input type="checkbox" id="field-06" name="산림">
+                                                <label for="field-06">산림</label>
+                                            </div>
+                                            <li>
+                                                <input type="checkbox" id="field-07" name="생활개선/에너지">
+                                                <label for="field-07">생활개선/에너지</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="field-08" name="환경">
+                                                <label for="field-08">환경</label>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>사업명</th>
+                                    <td colspan="3">
+                                        <div class="input-type w100p">
+                                            <label>
+                                                <span>사업명 작성</span>
+                                                <input type="text"/>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>사업상대자</th>
+                                    <td colspan="3">
+                                        <div class="input-type w100p">
+                                            <label>
+                                                <span>사업 상대자 작성</span>
+                                                <input type="text"/>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기금신청금액</th>
+                                    <td colspan="3" class="input-price">
+                                        <div class="input-type">
+                                            <label>
+                                                <span>총소요자금</span>
+                                                <input type="number"/>
+                                                <span>원</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-type">
+                                            <label>
+                                                <span>자페재원확보액</span>
+                                                <input type="number"/>
+                                                <span>원</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-type">
+                                            <label>
+                                                <span>기금지원신청액</span>
+                                                <input type="number" placeholder="기금지원신청액 작성" />
+                                                <span>원</span>
+                                            </label>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="table-btn-set">
+                            <button class="btn-type-2-01">다음단계</button>
+                            <button class="btn-type-2-04">저장하기</button>
+                        </div>
                     </div>
                     <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
                     </div>

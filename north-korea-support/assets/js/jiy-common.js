@@ -72,8 +72,18 @@
     });
 
     // 아코디언 설정
-    var accordion = new $.Accordion($('.aco-base')), // 기본 설정
-        accordion_open = new $.Accordion($(".aco-open"), 1); // 첫번째 패널 오픈
+    var aco_bases = $(".aco-base");
+    var aco_opens = $(".aco-open");
+    // 기본 설정 (패널 닫힘)
+    $.each(aco_bases,function(index) {
+        var aco_base = aco_bases.eq(index);
+        new $.Accordion(aco_base);
+    });
+    // 첫번째 패널 오픈
+    $.each(aco_opens,function(index) {
+        var aco_open = aco_opens.eq(index);
+        new $.Accordion(aco_open, 1);
+    });
 
     // SelectBox Option 선택 설정
     var selectbox = $("select");
