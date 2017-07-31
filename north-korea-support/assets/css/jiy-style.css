@@ -1864,21 +1864,21 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-type-02 { width: 100%; }
 
-.table-type-02 tr th { background: #f0f3f5; color: #2e3a42; }
-
-.table-type-02 tr th, .table-type-02 tr td { height: 38px; text-align: left; vertical-align: middle; padding-left: 20px; padding-right: 20px; border: 1px solid #d1d1d1; }
+.table-type-02 tr th, .table-type-02 tr td { height: 42px; text-align: left; vertical-align: middle; padding: 6px 20px; border: 1px solid #d1d1d1; }
 
 .table-type-02 tr th a, .table-type-02 tr td a { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
+
+.table-type-02 tr th { background: #f0f3f5; color: #2e3a42; border-right: 0; }
 
 .table-type-02 tr .lines { padding-top: 12px; padding-bottom: 12px; }
 
 .table-li { display: table; width: 100%; border: 1px solid #d1d1d1; }
 
-.table-li li { display: table-cell; vertical-align: middle; height: 38px; padding: 0 20px; border-right: 1px solid #d1d1d1; }
+.table-li li { display: table-cell; vertical-align: middle; height: 42px; padding: 0 20px; border-right: 1px solid #d1d1d1; }
 
 .table-li li.title { font-weight: bold; color: #2e3a42; background: #f0f3f5; }
 
-.table-li li.lines { padding-top: 12px; padding-bottom: 12px; }
+.table-li li.lines { padding-top: 6px; padding-bottom: 6px; }
 
 .table-li li:last-child { border-right: 0; }
 
@@ -1888,9 +1888,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-dt-dd dt:last-child, .table-dt-dd dd:last-child { border-bottom: 0; }
 
-.table-dt-dd dt { height: 38px; line-height: 38px; font-weight: bold; text-align: center; color: #2e3a42; background: #f0f3f5; }
+.table-dt-dd dt { height: 42px; line-height: 42px; font-weight: bold; text-align: center; color: #2e3a42; background: #f0f3f5; }
 
-.table-dt-dd .lines { padding-top: 9px; padding-bottom: 8px; }
+.table-dt-dd .lines { padding-top: 10px; padding-bottom: 10px; }
 
 /* GNB 영역 */
 .gnb-area .logo { float: left; margin-top: 10px; }
@@ -2154,6 +2154,13 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .notices-content td span { color: #003761; }
 
 .notices-content td:nth-child(2) { text-align: left; padding-left: 20px; }
+
+/*  --------------------------------------------- 회원서비스 > 법인.단체 > 사업자신청 Step 1 조회 (html/applicant-application-step1.html) --------------------------------------------- */
+.applicant-application-step1 .panel-group [aria-labelledby="tab1"] colgroup col:nth-child(1), .applicant-application-step1 .panel-group [aria-labelledby="tab1"] colgroup col:nth-child(3) { width: 200px; }
+
+.applicant-application-step1 .panel-group [aria-labelledby="tab2"] colgroup col:nth-child(1), .applicant-application-step1 .panel-group [aria-labelledby="tab2"] colgroup col:nth-child(3) { width: 200px; }
+
+.applicant-application-step1 .panel-group [aria-labelledby="tab3"] colgroup col:nth-child(1), .applicant-application-step1 .panel-group [aria-labelledby="tab3"] colgroup col:nth-child(3) { width: 200px; }
 
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) { .test { position: absolute; top: 0; left: 0; display: inline-block !important; }
   .test.w1 { width: 1%; }
