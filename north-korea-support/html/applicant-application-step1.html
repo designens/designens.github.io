@@ -234,7 +234,7 @@
                                                 <option>공고명 05</option>
                                             </select>
                                         </div>
-                                        <button class="btn-type-1-02">공고내용 상세보기</button>
+                                        <a class="btn-type-1-02 btn-popup-business-application" role="button" href>공고내용 상세보기</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -362,6 +362,136 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 공고내용 상세보기 Popup -->
+    <div class="popup" data-id="popup-business-application">
+
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>기금사업공고 상세 내용</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-business-application">
+    
+        <table class="table-type-02 table-name">
+            <caption>기금사업공고 상세 내용 테이블의 공고명, 지원분야 작성일, 개요, 제출서류, 신청기간, 신청방법, 접수 및 문의처, 심사 및 통보 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>공고명</th>
+                    <td>북녘동포 의약품 및 각종 생필품 보내기 사업<a href="" class="btn-type-1-03" role="button">기금사업 신청하기</a></td>
+                </tr>
+                <tr>
+                    <th>지원분야</th>
+                    <td>
+                        <ul class="checkbox-type">
+                            <li>
+                                <input type="checkbox" id="field-01" name="식량차관">
+                                <label for="field-01">식량차관</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-02" name="일반구호">
+                                <label for="field-02">일반구호</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-03" name="사회복지">
+                                <label for="field-03">사회복지</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-04" name="보건의료">
+                                <label for="field-04">보건의료</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-05" name="농업">
+                                <label for="field-05">농업</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-06" name="산림">
+                                <label for="field-06">산림</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-07" name="생활개선/에너지">
+                                <label for="field-07">생활개선/에너지</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-08" name="환경">
+                                <label for="field-08">환경</label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>2017-11-11</td>
+                </tr>
+                <tr>
+                    <th>개요</th>
+                    <td>
+                        <ul class="summary">
+                            <li><strong>- 지원 대상 사업</strong>
+                                <ol>
+                                    <li>1. 진료소 지원 사업</li>
+                                    <li>2. 온실 지원 사업</li>
+                                    <li>3. 낙농 지원 사업</li>
+                                </ol>
+                            </li>
+                            <li><strong>- 신청자격</strong> : 대북 지원 사업자로 지정된 비영리법인 또는 단체</li>
+                            <li><strong>- 지원 규모</strong> : 3개 부문 총 30억원(1개 부분당 10억원)</li>
+                            <li>* 각 부문 중복지원 가능, 부문 당 복수 단체 선정</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>제출서류</th>
+                    <td class="download">
+                        <p><span>- 남북협력기금 지원 신청서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 대북지원 사업 계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 남북협력기금 사용계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 분배 투명성 확보 계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 단체 관련 자료 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>신청기간</th>
+                    <td>2017-11-11 ~ 2018-11-11</td>
+                </tr>
+                <tr>
+                    <th>신청방법</th>
+                    <td>이메일 또는 등기우편(접수 마감일 18:00 도착분에 한함)</td>
+                </tr>
+                <tr>
+                    <th>접수 및 문의처</th>
+                    <td>
+                        <p>통일부 교류 협력국 인도 지원과</p>
+                        <p><strong>주소</strong></p>
+                        <p><strong>전화</strong> </p>
+                        <p><strong>이메일</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>심사 및 통보</th>
+                    <td>심사평가단 심사 후 선정</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+
+</div>
+    <!-- [End] 공고내용 상세보기 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>

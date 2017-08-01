@@ -60,6 +60,12 @@
       e.preventDefault();
       $.popupId($popups, 'popup-resources').open();
     });
+
+    // 공고내용 상세보기 팝업
+    $('.btn-popup-business-application').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-business-application').open();
+    });
     
     // GNB 전체메뉴
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈
