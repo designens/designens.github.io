@@ -43,10 +43,15 @@
       $.popupId($popups, 'test-area').open();
     });
 
-    // Q&ampA 팝업
-    $('.btn-popup-qna').on('click', function(e) {
+    // Q&ampA 상세 조회 팝업
+    $('.btn-popup-qna-list').on('click', function(e) {
       e.preventDefault();
-      $.popupId($popups, 'popup-qna').open();
+      $.popupId($popups, 'popup-qna-list').open();
+    });
+    // Q&ampA 상세 입력 팝업
+    $('.btn-popup-qna-write').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-qna-write').open();
     });
 
     // 공지사항 상세 팝업
@@ -97,5 +102,15 @@
         var select_name = $(this).children("option:selected").text();
         $(this).siblings("label").text(select_name);
     });
+
+    // -------------------------------------------------------------------
+    //다운로드 파일 말풍선 설정
+    // -------------------------------------------------------------------
+
+    // downloadWidget 객체 생성
+    // (필수) 첫번째 인자: 객체 지향 자바스크립트 클래스를 연결할 대상 선택자
+    // (옵션) 두번째 인자: 활성화 CSS 클래스 이름 (기본 값: 'show-widget')
+    // (옵션) 세번째 인자: 다운로드 파일 클래스 이름 (기본 값: 'download-file')
+    new global.downloadWidget('.download-type-02');
 
 })(window, document, window.jQuery);

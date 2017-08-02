@@ -1,79 +1,3 @@
-/**
- * SVGInjector v1.1.2 - Fast, caching, dynamic inline SVG DOM injection library
- * https://github.com/iconic/SVGInjector
- *
- * Copyright (c) 2014 Waybury <hello@waybury.com>
- * @license MIT
- */
-!function(t,e){"use strict";function r(t){t=t.split(" ");for(var e={},r=t.length,n=[];r--;)e.hasOwnProperty(t[r])||(e[t[r]]=1,n.unshift(t[r]));return n.join(" ")}var n="file:"===t.location.protocol,i=e.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure","1.1"),o=Array.prototype.forEach||function(t,e){if(void 0===this||null===this||"function"!=typeof t)throw new TypeError;var r,n=this.length>>>0;for(r=0;n>r;++r)r in this&&t.call(e,this[r],r,this)},a={},s=0,l=[],u=[],c={},f=function(t){return t.cloneNode(!0)},p=function(t,e){u[t]=u[t]||[],u[t].push(e)},d=function(t){for(var e=0,r=u[t].length;r>e;e++)!function(e){setTimeout(function(){u[t][e](f(a[t]))},0)}(e)},h=function(e,r){if(void 0!==a[e])a[e]instanceof SVGSVGElement?r(f(a[e])):p(e,r);else{if(!t.XMLHttpRequest)return r("Browser does not support XMLHttpRequest"),!1;a[e]={},p(e,r);var i=new XMLHttpRequest;i.onreadystatechange=function(){if(4===i.readyState){if(404===i.status||null===i.responseXML)return r("Unable to load SVG file: "+e),n&&r("Note: SVG injection ajax calls do not work locally without adjusting security setting in your browser. Or consider using a local webserver."),r(),!1;if(!(200===i.status||n&&0===i.status))return r("There was a problem injecting the SVG: "+i.status+" "+i.statusText),!1;if(i.responseXML instanceof Document)a[e]=i.responseXML.documentElement;else if(DOMParser&&DOMParser instanceof Function){var t;try{var o=new DOMParser;t=o.parseFromString(i.responseText,"text/xml")}catch(s){t=void 0}if(!t||t.getElementsByTagName("parsererror").length)return r("Unable to parse SVG file: "+e),!1;a[e]=t.documentElement}d(e)}},i.open("GET",e),i.overrideMimeType&&i.overrideMimeType("text/xml"),i.send()}},v=function(e,n,a,u){var f=e.getAttribute("data-src")||e.getAttribute("src");if(!/\.svg/i.test(f))return void u("Attempted to inject a file with a non-svg extension: "+f);if(!i){var p=e.getAttribute("data-fallback")||e.getAttribute("data-png");return void(p?(e.setAttribute("src",p),u(null)):a?(e.setAttribute("src",a+"/"+f.split("/").pop().replace(".svg",".png")),u(null)):u("This browser does not support SVG and no PNG fallback was defined."))}-1===l.indexOf(e)&&(l.push(e),e.setAttribute("src",""),h(f,function(i){if("undefined"==typeof i||"string"==typeof i)return u(i),!1;var a=e.getAttribute("id");a&&i.setAttribute("id",a);var p=e.getAttribute("title");p&&i.setAttribute("title",p);var d=[].concat(i.getAttribute("class")||[],"injected-svg",e.getAttribute("class")||[]).join(" ");i.setAttribute("class",r(d));var h=e.getAttribute("style");h&&i.setAttribute("style",h);var v=[].filter.call(e.attributes,function(t){return/^data-\w[\w\-]*$/.test(t.name)});o.call(v,function(t){t.name&&t.value&&i.setAttribute(t.name,t.value)});for(var g,b=i.querySelectorAll("defs clipPath[id]"),m=0,y=b.length;y>m;m++){g=b[m].id+"-"+s;for(var A=i.querySelectorAll('[clip-path*="'+b[m].id+'"]'),w=0,S=A.length;S>w;w++)A[w].setAttribute("clip-path","url(#"+g+")");b[m].id=g}for(var x,j=i.querySelectorAll("defs mask[id]"),T=0,G=j.length;G>T;T++){x=j[T].id+"-"+s;for(var M=i.querySelectorAll('[mask*="'+j[T].id+'"]'),V=0,q=M.length;q>V;V++)M[V].setAttribute("mask","url(#"+x+")");j[T].id=x}i.removeAttribute("xmlns:a");for(var k,E,O=i.querySelectorAll("script"),L=[],P=0,X=O.length;X>P;P++)E=O[P].getAttribute("type"),E&&"application/ecmascript"!==E&&"application/javascript"!==E||(k=O[P].innerText||O[P].textContent,L.push(k),i.removeChild(O[P]));if(L.length>0&&("always"===n||"once"===n&&!c[f])){for(var F=0,N=L.length;N>F;F++)new Function(L[F])(t);c[f]=!0}e.parentNode.replaceChild(i,e),delete l[l.indexOf(e)],e=null,s++,u(i)}))},g=function(t,e,r){e=e||{};var n=e.evalScripts||"always",i=e.pngFallback||!1,a=e.each;if(void 0!==t.length){var s=0;o.call(t,function(e){v(e,n,i,function(e){a&&"function"==typeof a&&a(e),r&&t.length===++s&&r(s)})})}else t?v(t,n,i,function(e){a&&"function"==typeof a&&a(e),r&&r(1),t=null}):r&&r(0)};"object"==typeof module&&"object"==typeof module.exports?module.exports=exports=g:"function"==typeof define&&define.amd?define(function(){return g}):"object"==typeof t&&(t.SVGInjector=g)}(window,document);
-//# sourceMappingURL=svg-injector.map.js
-(function(global, $){
-  'use strict';
-
-  $.popupId = function($popups, id) {
-    return $popups.filter(function(index, el) {
-      return $popups.eq(index).attr('data-id') === id;
-    })[0].$popup;
-  };
-
-  var init = function(o){
-    o.$el.addClass('is-center').attr('role', 'dialog');
-    o.$el.find('.popup-close').last().addClass('loop-focus');
-    o.$el.wrapAll('<div class="popup-container">');
-    o.$el.parent().hide();
-    o.$el.after('<div class="popup-dim"></div');
-    bind(o);
-    return o;
-  };
-  var bind = function(o){
-    var $close_els = o.$el.parent().find('.popup-dim').add(o.$el.find('.popup-close'));
-    $close_els.on('click', $.proxy(o.close, o));
-    o.$el.find('.loop-focus')
-      .on({
-        'focus': $.proxy(createLoop, o),
-        'blur': $.proxy(focusMoveWrapper, o),
-      });
-  };
-  var createLoop = function(){
-    $('<a class="_temp" href>').insertAfter(this.$el.find('.loop-focus'));
-  };
-  var focusMoveWrapper = function(){
-    this.$el.focus();
-    this.$el.find('._temp').remove();
-  };
-
-  $.fn.a11y_popup = function(){
-
-    var $this = this;
-
-    function A11yPopup($el, time) {
-      this.$el = $el;
-      this.$pre_focus_el = null;
-      this.time = time || 300;
-      return init(this);
-    }
-
-    A11yPopup.prototype = {
-      constructor: A11yPopup,
-      open: function(){
-        this.$pre_focus_el = global.document.activeElement;
-        this.$el.attr('tabindex', -1).parent().animate({opacity: 'show'},this.time).addBack().focus();
-      },
-      close: function(){
-        this.$el.removeAttr('tabindex').parent().animate({opacity: 'hide'},this.time);
-        this.$pre_focus_el.focus();
-      }
-    };
-
-    return $.each($this, function(index, el){
-      var $el = $this.eq(index);
-      el.$popup = new A11yPopup($el);
-      return $el;
-    });
-
-  };
-
-})(window, window.jQuery);
 /* =============================================================
 
 	Smooth Scroll v4.5
@@ -298,6 +222,82 @@ window.smoothScroll = (function (window, document, undefined) {
 	};
 
 })(window, document);
+/**
+ * SVGInjector v1.1.2 - Fast, caching, dynamic inline SVG DOM injection library
+ * https://github.com/iconic/SVGInjector
+ *
+ * Copyright (c) 2014 Waybury <hello@waybury.com>
+ * @license MIT
+ */
+!function(t,e){"use strict";function r(t){t=t.split(" ");for(var e={},r=t.length,n=[];r--;)e.hasOwnProperty(t[r])||(e[t[r]]=1,n.unshift(t[r]));return n.join(" ")}var n="file:"===t.location.protocol,i=e.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure","1.1"),o=Array.prototype.forEach||function(t,e){if(void 0===this||null===this||"function"!=typeof t)throw new TypeError;var r,n=this.length>>>0;for(r=0;n>r;++r)r in this&&t.call(e,this[r],r,this)},a={},s=0,l=[],u=[],c={},f=function(t){return t.cloneNode(!0)},p=function(t,e){u[t]=u[t]||[],u[t].push(e)},d=function(t){for(var e=0,r=u[t].length;r>e;e++)!function(e){setTimeout(function(){u[t][e](f(a[t]))},0)}(e)},h=function(e,r){if(void 0!==a[e])a[e]instanceof SVGSVGElement?r(f(a[e])):p(e,r);else{if(!t.XMLHttpRequest)return r("Browser does not support XMLHttpRequest"),!1;a[e]={},p(e,r);var i=new XMLHttpRequest;i.onreadystatechange=function(){if(4===i.readyState){if(404===i.status||null===i.responseXML)return r("Unable to load SVG file: "+e),n&&r("Note: SVG injection ajax calls do not work locally without adjusting security setting in your browser. Or consider using a local webserver."),r(),!1;if(!(200===i.status||n&&0===i.status))return r("There was a problem injecting the SVG: "+i.status+" "+i.statusText),!1;if(i.responseXML instanceof Document)a[e]=i.responseXML.documentElement;else if(DOMParser&&DOMParser instanceof Function){var t;try{var o=new DOMParser;t=o.parseFromString(i.responseText,"text/xml")}catch(s){t=void 0}if(!t||t.getElementsByTagName("parsererror").length)return r("Unable to parse SVG file: "+e),!1;a[e]=t.documentElement}d(e)}},i.open("GET",e),i.overrideMimeType&&i.overrideMimeType("text/xml"),i.send()}},v=function(e,n,a,u){var f=e.getAttribute("data-src")||e.getAttribute("src");if(!/\.svg/i.test(f))return void u("Attempted to inject a file with a non-svg extension: "+f);if(!i){var p=e.getAttribute("data-fallback")||e.getAttribute("data-png");return void(p?(e.setAttribute("src",p),u(null)):a?(e.setAttribute("src",a+"/"+f.split("/").pop().replace(".svg",".png")),u(null)):u("This browser does not support SVG and no PNG fallback was defined."))}-1===l.indexOf(e)&&(l.push(e),e.setAttribute("src",""),h(f,function(i){if("undefined"==typeof i||"string"==typeof i)return u(i),!1;var a=e.getAttribute("id");a&&i.setAttribute("id",a);var p=e.getAttribute("title");p&&i.setAttribute("title",p);var d=[].concat(i.getAttribute("class")||[],"injected-svg",e.getAttribute("class")||[]).join(" ");i.setAttribute("class",r(d));var h=e.getAttribute("style");h&&i.setAttribute("style",h);var v=[].filter.call(e.attributes,function(t){return/^data-\w[\w\-]*$/.test(t.name)});o.call(v,function(t){t.name&&t.value&&i.setAttribute(t.name,t.value)});for(var g,b=i.querySelectorAll("defs clipPath[id]"),m=0,y=b.length;y>m;m++){g=b[m].id+"-"+s;for(var A=i.querySelectorAll('[clip-path*="'+b[m].id+'"]'),w=0,S=A.length;S>w;w++)A[w].setAttribute("clip-path","url(#"+g+")");b[m].id=g}for(var x,j=i.querySelectorAll("defs mask[id]"),T=0,G=j.length;G>T;T++){x=j[T].id+"-"+s;for(var M=i.querySelectorAll('[mask*="'+j[T].id+'"]'),V=0,q=M.length;q>V;V++)M[V].setAttribute("mask","url(#"+x+")");j[T].id=x}i.removeAttribute("xmlns:a");for(var k,E,O=i.querySelectorAll("script"),L=[],P=0,X=O.length;X>P;P++)E=O[P].getAttribute("type"),E&&"application/ecmascript"!==E&&"application/javascript"!==E||(k=O[P].innerText||O[P].textContent,L.push(k),i.removeChild(O[P]));if(L.length>0&&("always"===n||"once"===n&&!c[f])){for(var F=0,N=L.length;N>F;F++)new Function(L[F])(t);c[f]=!0}e.parentNode.replaceChild(i,e),delete l[l.indexOf(e)],e=null,s++,u(i)}))},g=function(t,e,r){e=e||{};var n=e.evalScripts||"always",i=e.pngFallback||!1,a=e.each;if(void 0!==t.length){var s=0;o.call(t,function(e){v(e,n,i,function(e){a&&"function"==typeof a&&a(e),r&&t.length===++s&&r(s)})})}else t?v(t,n,i,function(e){a&&"function"==typeof a&&a(e),r&&r(1),t=null}):r&&r(0)};"object"==typeof module&&"object"==typeof module.exports?module.exports=exports=g:"function"==typeof define&&define.amd?define(function(){return g}):"object"==typeof t&&(t.SVGInjector=g)}(window,document);
+//# sourceMappingURL=svg-injector.map.js
+(function(global, $){
+  'use strict';
+
+  $.popupId = function($popups, id) {
+    return $popups.filter(function(index, el) {
+      return $popups.eq(index).attr('data-id') === id;
+    })[0].$popup;
+  };
+
+  var init = function(o){
+    o.$el.addClass('is-center').attr('role', 'dialog');
+    o.$el.find('.popup-close').last().addClass('loop-focus');
+    o.$el.wrapAll('<div class="popup-container">');
+    o.$el.parent().hide();
+    o.$el.after('<div class="popup-dim"></div');
+    bind(o);
+    return o;
+  };
+  var bind = function(o){
+    var $close_els = o.$el.parent().find('.popup-dim').add(o.$el.find('.popup-close'));
+    $close_els.on('click', $.proxy(o.close, o));
+    o.$el.find('.loop-focus')
+      .on({
+        'focus': $.proxy(createLoop, o),
+        'blur': $.proxy(focusMoveWrapper, o),
+      });
+  };
+  var createLoop = function(){
+    $('<a class="_temp" href>').insertAfter(this.$el.find('.loop-focus'));
+  };
+  var focusMoveWrapper = function(){
+    this.$el.focus();
+    this.$el.find('._temp').remove();
+  };
+
+  $.fn.a11y_popup = function(){
+
+    var $this = this;
+
+    function A11yPopup($el, time) {
+      this.$el = $el;
+      this.$pre_focus_el = null;
+      this.time = time || 300;
+      return init(this);
+    }
+
+    A11yPopup.prototype = {
+      constructor: A11yPopup,
+      open: function(){
+        this.$pre_focus_el = global.document.activeElement;
+        this.$el.attr('tabindex', -1).parent().animate({opacity: 'show'},this.time).addBack().focus();
+      },
+      close: function(){
+        this.$el.removeAttr('tabindex').parent().animate({opacity: 'hide'},this.time);
+        this.$pre_focus_el.focus();
+      }
+    };
+
+    return $.each($this, function(index, el){
+      var $el = $this.eq(index);
+      el.$popup = new A11yPopup($el);
+      return $el;
+    });
+
+  };
+
+})(window, window.jQuery);
 ;(function($) {
 
     $.Accordion = function(el, active) {
@@ -387,3 +387,58 @@ window.smoothScroll = (function (window, document, undefined) {
     });
     
 }(window.jQuery));
+;(function(global, document, $){
+    'use strict';
+
+    var doc = $(document);
+
+    function downloadWidget(selector, active, download){
+        if ( this === undefined ) {
+            return new downloadWidget(selector, active);
+        }
+        this.download_areas = $(selector);
+        this.active = active || 'show-widget';
+        this.download = download || 'download-file';
+        this.activated = null;
+        this.init();
+    }
+
+    downloadWidget.prototype = {
+        constructor: downloadWidget,
+        init: function(){
+            var _this = this;
+            $.each(_this.download_areas, function(index){
+                var area = _this.download_areas.eq(index);
+                area.attr({
+                    'tabindex': 0,
+                    'aria-label': '첨부파일 다운로드 팝업 보기'
+                });
+                area.children('.'+_this.download).attr('aria-hidden', true);
+                area.on('focus click', _this.showDownloadWidget.bind(_this, area));
+            });
+            doc.on('click', function(e){
+                var target = e.target;
+                _this.activated = _this.download_areas.filter('.'+_this.active);
+                if ( _this.activated.length > 0 ) {
+                    if (_this.activated.is(target)) { return; }
+                    _this.hideDownloadWidget.call(_this, _this.activated);
+                }
+            });
+        },
+        showDownloadWidget: function(area){
+            area.addClass(this.active);
+            var file = area.children('.'+this.download);
+            if ( file.length > 0 ) {
+                file.attr('aria-hidden', false);
+                file.children('a:last').on('focusout', this.hideDownloadWidget.bind(this, area));
+            }
+        },
+        hideDownloadWidget: function(area){
+            area.removeClass(this.active);
+            area.children('.'+this.download).attr('aria-hidden', true);
+        }
+    };
+
+    global.downloadWidget = downloadWidget;
+
+})(window, document, window.jQuery);
