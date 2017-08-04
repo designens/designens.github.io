@@ -1620,23 +1620,23 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.header, #container, .all-pages-view, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .popup-qna-content table tbody td .add-file-sherch, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
+.header, #container, .all-pages-view, .footer, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .relation-site .panel-group [role="tabpanel"] .gallery, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
 
-.header:before, #container:before, .all-pages-view:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .popup-qna-content table tbody td .add-file-sherch:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .header:after, #container:after, .all-pages-view:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
+.header:before, #container:before, .all-pages-view:before, .footer:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .relation-site .panel-group [role="tabpanel"] .gallery:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .header:after, #container:after, .all-pages-view:after, .footer:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .relation-site .panel-group [role="tabpanel"] .gallery:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
 
-.header:after, #container:after, .all-pages-view:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
+.header:after, #container:after, .all-pages-view:after, .footer:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .relation-site .panel-group [role="tabpanel"] .gallery:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
 
 .search-area .input-type label span, .login-bg .login-area .login-title { position: absolute; left: -9999px; visibility: hidden; }
 
-.btn-type-1-01, .popup .popup-content .popup-btn-set .popup-close, .btn-type-1-02, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-business-application table td.download p .btn-download, .btn-type-1-03, .popup .popup-content .popup-btn-set .popup-save { display: inline-block; min-width: 66px; height: 30px; line-height: 28px; text-align: center; padding: 0 10px; border-radius: 3px; }
+.btn-type-1-01, .popup .popup-content .popup-btn-set .popup-close, .btn-type-1-02, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-notices-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-resources-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-business-application table td.download p .btn-download, .btn-type-1-03, .popup .popup-content .popup-btn-set .popup-save { display: inline-block; min-width: 66px; height: 30px; line-height: 28px; text-align: center; padding: 0 10px; border-radius: 3px; }
 
 .btn-type-1-01, .popup .popup-content .popup-btn-set .popup-close { font-size: 14px; color: #333; text-shadow: 0 0 1px #adc0ce; border: 1px solid #bcd1e0; background: #bcd1e0; }
 
 .btn-type-1-01:hover, .popup .popup-content .popup-btn-set .popup-close:hover, .btn-type-1-01:focus, .popup .popup-content .popup-btn-set .popup-close:focus, .btn-type-1-01:active, .popup .popup-content .popup-btn-set .popup-close:active { border-color: #a9bcca; background: #a9bcca; transition: all .3s ease; }
 
-.btn-type-1-02, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-business-application table td.download p .btn-download { font-size: 14px; color: #fff; text-shadow: 0 0 1px #344450; border: 1px solid #394a57; background: #394a57; }
+.btn-type-1-02, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-notices-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-resources-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-business-application table td.download p .btn-download { font-size: 14px; color: #fff; text-shadow: 0 0 1px #344450; border: 1px solid #394a57; background: #394a57; }
 
-.btn-type-1-02:hover, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:hover, .popup-business-application table td.download p .btn-download:hover, .btn-type-1-02:focus, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:focus, .popup-business-application table td.download p .btn-download:focus, .btn-type-1-02:active, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:active, .popup-business-application table td.download p .btn-download:active { border-color: #33434e; background: #33434e; transition: all .3s ease; }
+.btn-type-1-02:hover, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:hover, .popup-notices-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:hover, .popup-resources-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:hover, .popup-business-application table td.download p .btn-download:hover, .btn-type-1-02:focus, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:focus, .popup-notices-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:focus, .popup-resources-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:focus, .popup-business-application table td.download p .btn-download:focus, .btn-type-1-02:active, .popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:active, .popup-notices-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:active, .popup-resources-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch:active, .popup-business-application table td.download p .btn-download:active { border-color: #33434e; background: #33434e; transition: all .3s ease; }
 
 .btn-type-1-03, .popup .popup-content .popup-btn-set .popup-save { font-size: 14px; color: #fff; text-shadow: 0 0 1px #003359; border: 1px solid #003761; background: #003761; }
 
@@ -1704,7 +1704,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 /* =======================================*/
 .icon-hwp, .icon-doc, .icon-pdf, .icon-jpg { position: relative; padding-left: 20px; }
 
-.icon-hwp:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before { position: absolute; top: 2px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("../../assets/images/icon/icon-hwp.png") no-repeat; }
+.icon-hwp:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before { position: absolute; top: 3px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("../../assets/images/icon/icon-hwp.png") no-repeat; }
 
 .icon-doc:before { background: url("../../assets/images/icon/icon-doc.png") no-repeat; }
 
@@ -1837,17 +1837,29 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .search-area .search-title { font-weight: bold; color: #2e3a42; }
 
-.search-area .select-box { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+.search-area .select-box:nth-of-type(1) { position: relative; width: 130px; height: 30px; vertical-align: -1px; }
 
-.search-area .select-box:before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+.search-area .select-box:nth-of-type(1):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
-.search-area .select-box label { position: absolute; top: 4px; left: 10px; color: transparent; }
+.search-area .select-box:nth-of-type(1) label { position: absolute; top: 4px; left: 10px; color: transparent; }
 
-.search-area .select-box select { width: 100%; height: 30px; min-height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+.search-area .select-box:nth-of-type(1) select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
 
-.search-area .select-box select:focus { border: 1px solid #002847; }
+.search-area .select-box:nth-of-type(1) select:focus { border: 1px solid #002847; }
 
-.search-area .select-box select::-ms-expand { display: none; }
+.search-area .select-box:nth-of-type(1) select::-ms-expand { display: none; }
+
+.search-area .select-box:nth-of-type(2) { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+
+.search-area .select-box:nth-of-type(2):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+
+.search-area .select-box:nth-of-type(2) label { position: absolute; top: 4px; left: 10px; color: transparent; }
+
+.search-area .select-box:nth-of-type(2) select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+
+.search-area .select-box:nth-of-type(2) select:focus { border: 1px solid #002847; }
+
+.search-area .select-box:nth-of-type(2) select::-ms-expand { display: none; }
 
 .search-area .input-type { width: 360px; }
 
@@ -1930,7 +1942,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .select-box label { position: absolute; top: 4px; left: 10px; color: transparent; }
 
-.select-box select { width: 100%; height: 30px; min-height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+.select-box select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
 
 .select-box select:focus { border: 1px solid #002847; }
 
@@ -2002,11 +2014,11 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 [class^="table-type-"] { /* 팝업 테이블 내부 다운로드 아이콘 */ /* 컨텐츠 테이블 내부 다운로드 아이콘 */ }
 
-[class^="table-type-"] .download-type-01 [class^="icon-"] { display: block; margin-bottom: 5px; color: #003761; font-weight: bold; }
+[class^="table-type-"] .download-type-01 [class^="icon-"] { display: block; margin-bottom: 5px; color: #003761; }
 
 [class^="table-type-"] .download-type-01 [class^="icon-"]:last-child { margin-bottom: 0; }
 
-[class^="table-type-"] .download-type-02 { position: relative; cursor: pointer; /* 말풍선 다운로드 위젯 적용 */ }
+[class^="table-type-"] .download-type-02 { position: relative; cursor: pointer; outline: none; /* 말풍선 다운로드 위젯 적용 */ }
 
 [class^="table-type-"] .download-type-02 [class^="icon-"] { display: inline-block; width: 14px; height: 16px; }
 
@@ -2039,11 +2051,13 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-type-01 tr th { background: #f0f3f5; color: #2e3a42; }
 
-.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; vertical-align: middle; padding: 0 10px; }
+.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; vertical-align: middle; padding: 0 10px; /* 제목 - 팝업 링크 */ /* 제목 - 전체 조회수 */ }
 
 .table-type-01 tr th .view-link, .table-type-01 tr td .view-link { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
 
 .table-type-01 tr th .view-link:focus, .table-type-01 tr th .view-link:hover, .table-type-01 tr td .view-link:focus, .table-type-01 tr td .view-link:hover { color: #002847; text-decoration: underline; }
+
+.table-type-01 tr th .total-number, .table-type-01 tr td .total-number { color: #003761; font-weight: bold; margin-left: 4px; text-decoration: none; }
 
 .table-type-01 tr th:last-child, .table-type-01 tr td:last-child { border-right: 0; }
 
@@ -2335,17 +2349,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 커뮤니티 > Q&A조회
 /* (html/qna-list.html)
 /* =======================================*/
-.qna-content thead th:first-child { width: 54px; }
+.qna-content colgroup col:first-child { width: 54px; }
 
-.qna-content thead th:nth-child(2) { width: 140px; }
+.qna-content colgroup col:nth-child(2) { width: 140px; }
 
-.qna-content thead th:nth-child(3) { width: 341px; }
+.qna-content colgroup col:nth-child(3) { width: 341px; }
 
-.qna-content thead th:nth-child(4) { width: 110px; }
+.qna-content colgroup col:nth-child(4) { width: 110px; }
 
-.qna-content thead th:nth-child(5) { width: 140px; }
+.qna-content colgroup col:nth-child(5) { width: 140px; }
 
-.qna-content thead th:last-child { width: 140px; }
+.qna-content colgroup col:last-child { width: 140px; }
 
 .qna-content tbody td:nth-child(3) { text-align: left; }
 
@@ -2353,95 +2367,181 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 커뮤니티 > Q&A 상세 조회 > 팝업
 /* (html/qna-list.html)
 /* =======================================*/
-.popup-qna-content table colgroup col:nth-child(1), .popup-qna-content table colgroup col:nth-child(3) { width: 140px; }
+.popup-qna-content table colgroup col:nth-child(1), .popup-notices-content table colgroup col:nth-child(1), .popup-resources-content table colgroup col:nth-child(1), .popup-qna-content table colgroup col:nth-child(3), .popup-notices-content table colgroup col:nth-child(3), .popup-resources-content table colgroup col:nth-child(3) { width: 140px; }
 
-.popup-qna-content table tbody td { padding-top: 6px; padding-bottom: 6px; }
+.popup-qna-content table tbody td, .popup-notices-content table tbody td, .popup-resources-content table tbody td { padding-top: 6px; padding-bottom: 6px; }
 
-.popup-qna-content table tbody td .input-type { width: 100%; }
+.popup-qna-content table tbody td .input-type, .popup-notices-content table tbody td .input-type, .popup-resources-content table tbody td .input-type { width: 100%; }
 
-.popup-qna-content table tbody td .input-type input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.popup-qna-content table tbody td .input-type input, .popup-notices-content table tbody td .input-type input, .popup-resources-content table tbody td .input-type input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
-.popup-qna-content table tbody td .input-type input::-webkit-input-placeholder { color: #fff; }
+.popup-qna-content table tbody td .input-type input::-webkit-input-placeholder, .popup-notices-content table tbody td .input-type input::-webkit-input-placeholder, .popup-resources-content table tbody td .input-type input::-webkit-input-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td .input-type input::-moz-placeholder { color: #fff; }
+.popup-qna-content table tbody td .input-type input::-moz-placeholder, .popup-notices-content table tbody td .input-type input::-moz-placeholder, .popup-resources-content table tbody td .input-type input::-moz-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td .input-type input:-ms-input-placeholder { color: #fff !important; }
+.popup-qna-content table tbody td .input-type input:-ms-input-placeholder, .popup-notices-content table tbody td .input-type input:-ms-input-placeholder, .popup-resources-content table tbody td .input-type input:-ms-input-placeholder { color: #fff !important; }
 
-.popup-qna-content table tbody td .input-type input:-moz-placeholder { color: #fff; }
+.popup-qna-content table tbody td .input-type input:-moz-placeholder, .popup-notices-content table tbody td .input-type input:-moz-placeholder, .popup-resources-content table tbody td .input-type input:-moz-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td .input-type input:focus { border: 1px solid #002847; }
+.popup-qna-content table tbody td .input-type input:focus, .popup-notices-content table tbody td .input-type input:focus, .popup-resources-content table tbody td .input-type input:focus { border: 1px solid #002847; }
 
-.popup-qna-content table tbody td .secret-article { margin-top: 7px; margin-bottom: 3px; }
+.popup-qna-content table tbody td .secret-article, .popup-notices-content table tbody td .secret-article, .popup-resources-content table tbody td .secret-article { margin-top: 7px; margin-bottom: 3px; }
 
-.popup-qna-content table tbody td.security-text-area * { float: left; }
+.popup-qna-content table tbody td.security-text-area *, .popup-notices-content table tbody td.security-text-area *, .popup-resources-content table tbody td.security-text-area * { float: left; }
 
-.popup-qna-content table tbody td.security-text-area .input-type { width: 140px; }
+.popup-qna-content table tbody td.security-text-area .input-type, .popup-notices-content table tbody td.security-text-area .input-type, .popup-resources-content table tbody td.security-text-area .input-type { width: 140px; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input { width: 140px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.popup-qna-content table tbody td.security-text-area .input-type input, .popup-notices-content table tbody td.security-text-area .input-type input, .popup-resources-content table tbody td.security-text-area .input-type input { width: 140px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input::-webkit-input-placeholder { color: #fff; }
+.popup-qna-content table tbody td.security-text-area .input-type input::-webkit-input-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input::-webkit-input-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input::-webkit-input-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input::-moz-placeholder { color: #fff; }
+.popup-qna-content table tbody td.security-text-area .input-type input::-moz-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input::-moz-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input::-moz-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:-ms-input-placeholder { color: #fff !important; }
+.popup-qna-content table tbody td.security-text-area .input-type input:-ms-input-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input:-ms-input-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input:-ms-input-placeholder { color: #fff !important; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:-moz-placeholder { color: #fff; }
+.popup-qna-content table tbody td.security-text-area .input-type input:-moz-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input:-moz-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input:-moz-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:focus { border: 1px solid #002847; }
+.popup-qna-content table tbody td.security-text-area .input-type input:focus, .popup-notices-content table tbody td.security-text-area .input-type input:focus, .popup-resources-content table tbody td.security-text-area .input-type input:focus { border: 1px solid #002847; }
 
-.popup-qna-content table tbody td.security-text-area .security-text { width: 154px; height: 30px; line-height: 30px; text-align: center; margin: 0 6px; background: #d5d5d5; }
+.popup-qna-content table tbody td.security-text-area .security-text, .popup-notices-content table tbody td.security-text-area .security-text, .popup-resources-content table tbody td.security-text-area .security-text { width: 154px; height: 30px; line-height: 30px; text-align: center; margin: 0 6px; background: #d5d5d5; }
 
-.popup-qna-content table tbody td.security-text-area strong { color: #333; line-height: 30px; }
+.popup-qna-content table tbody td.security-text-area strong, .popup-notices-content table tbody td.security-text-area strong, .popup-resources-content table tbody td.security-text-area strong { color: #333; line-height: 30px; }
 
-.popup-qna-content table tbody td .add-file-sherch { margin-bottom: 10px; }
+.popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch { margin-bottom: 10px; }
 
-.popup-qna-content table tbody td .add-file-sherch span { line-height: 30px; }
+.popup-qna-content table tbody td .add-file-sherch span, .popup-notices-content table tbody td .add-file-sherch span, .popup-resources-content table tbody td .add-file-sherch span { line-height: 30px; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch { float: right; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch, .popup-notices-content table tbody td .add-file-sherch .file-sherch, .popup-resources-content table tbody td .add-file-sherch .file-sherch { float: right; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type { width: 470px; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type { width: 470px; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input { width: 470px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input { width: 470px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input::-webkit-input-placeholder { color: #fff; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input::-webkit-input-placeholder, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input::-webkit-input-placeholder, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input::-webkit-input-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input::-moz-placeholder { color: #fff; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input::-moz-placeholder, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input::-moz-placeholder, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input::-moz-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input:-ms-input-placeholder { color: #fff !important; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input:-ms-input-placeholder, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input:-ms-input-placeholder, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input:-ms-input-placeholder { color: #fff !important; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input:-moz-placeholder { color: #fff; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input:-moz-placeholder, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input:-moz-placeholder, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input:-moz-placeholder { color: #fff; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input:focus { border: 1px solid #002847; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input:focus, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input:focus, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input:focus { border: 1px solid #002847; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch { width: 100px; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-notices-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch, .popup-resources-content table tbody td .add-file-sherch .file-sherch .btn-file-sherch { width: 100px; }
 
-.popup-qna-content table tbody td .add-file-area { padding-left: 73px; }
+.popup-qna-content table tbody td .add-file-area, .popup-notices-content table tbody td .add-file-area, .popup-resources-content table tbody td .add-file-area { padding-left: 73px; }
 
-.popup-qna-content table tbody td .add-file-area .file a[class^="icon-"] { display: inline-block; margin-right: 20px; }
+.popup-qna-content table tbody td .add-file-area .file a[class^="icon-"], .popup-notices-content table tbody td .add-file-area .file a[class^="icon-"], .popup-resources-content table tbody td .add-file-area .file a[class^="icon-"] { display: inline-block; margin-right: 20px; }
 
-.popup-qna-content table tbody td .add-file-area .file .btn-file-remove { text-decoration: underline; }
+.popup-qna-content table tbody td .add-file-area .file .btn-file-remove, .popup-notices-content table tbody td .add-file-area .file .btn-file-remove, .popup-resources-content table tbody td .add-file-area .file .btn-file-remove { text-decoration: underline; }
 
-.popup-qna-content dl { margin-top: 10px; }
+.popup-qna-content dl, .popup-notices-content dl, .popup-resources-content dl { margin-top: 10px; }
 
-.popup-qna-content dl dd p span.admin { font-weight: bold; margin-right: 4px; }
+.popup-qna-content dl dd p span.admin, .popup-notices-content dl dd p span.admin, .popup-resources-content dl dd p span.admin { font-weight: bold; margin-right: 4px; }
 
-.popup-qna-content dl dd p span.date { color: #757575; }
+.popup-qna-content dl dd p span.date, .popup-notices-content dl dd p span.date, .popup-resources-content dl dd p span.date { color: #757575; }
 
 /* =======================================*/
 /* 자료마당 > 공지사항
 /* (html/notices.html)
 /* =======================================*/
-.notices-content thead th:first-child { width: 54px; }
+.notices-content colgroup col:first-child { width: 54px; }
 
-.notices-content thead th:nth-child(2) { width: 502px; }
+.notices-content colgroup col:nth-child(2) { width: 502px; }
 
-.notices-content thead th:nth-child(3), .notices-content thead th:nth-child(4) { width: 140px; }
+.notices-content colgroup col:nth-child(3), .notices-content colgroup col:nth-child(4) { width: 140px; }
 
-.notices-content thead th:last-child { width: 70px; }
+.notices-content colgroup col:last-child { width: 70px; }
 
-.notices-content td span { color: #003761; }
+.notices-content td:nth-child(2) { text-align: left; }
 
-.notices-content td:nth-child(2) { text-align: left; padding-left: 20px; }
+.notices-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; vertical-align: -1px; }
+
+.notices-content .search-area li:nth-of-type(2):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+
+.notices-content .search-area li:nth-of-type(2) label { position: absolute; top: 4px; left: 10px; color: transparent; }
+
+.notices-content .search-area li:nth-of-type(2) select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+
+.notices-content .search-area li:nth-of-type(2) select:focus { border: 1px solid #002847; }
+
+.notices-content .search-area li:nth-of-type(2) select::-ms-expand { display: none; }
+
+.notices-content .search-area li:nth-of-type(3) { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+
+.notices-content .search-area li:nth-of-type(3):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+
+.notices-content .search-area li:nth-of-type(3) label { position: absolute; top: 4px; left: 10px; color: transparent; }
+
+.notices-content .search-area li:nth-of-type(3) select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+
+.notices-content .search-area li:nth-of-type(3) select:focus { border: 1px solid #002847; }
+
+.notices-content .search-area li:nth-of-type(3) select::-ms-expand { display: none; }
+
+/* =======================================*/
+/* 자료마당 > 공지사항 > 공지사항 상세 팝업완료
+/* (html/notices.html)
+/* =======================================*/
+.popup-notices-content .table-dt-dd, .popup-resources-content .table-dt-dd { margin-top: -1px; }
+
+.popup-notices-content .table-dt-dd dd, .popup-resources-content .table-dt-dd dd { min-height: 210px; }
+
+/* =======================================*/
+/* 자료마당 > 자료실
+/* (html/resources.html)
+/* =======================================*/
+.resources-content colgroup col:first-child { width: 54px; }
+
+.resources-content colgroup col:nth-child(2) { width: 140px; }
+
+.resources-content colgroup col:nth-child(3) { width: 341px; }
+
+.resources-content colgroup col:nth-child(4) { width: 110px; }
+
+.resources-content colgroup col:nth-child(5) { width: 140px; }
+
+.resources-content colgroup col:last-child { width: 140px; }
+
+.resources-content td:nth-child(3) { text-align: left; }
+
+.resources-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; vertical-align: -1px; }
+
+.resources-content .search-area li:nth-of-type(2):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+
+.resources-content .search-area li:nth-of-type(2) label { position: absolute; top: 4px; left: 10px; color: transparent; }
+
+.resources-content .search-area li:nth-of-type(2) select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+
+.resources-content .search-area li:nth-of-type(2) select:focus { border: 1px solid #002847; }
+
+.resources-content .search-area li:nth-of-type(2) select::-ms-expand { display: none; }
+
+.resources-content .search-area li:nth-of-type(3) { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+
+.resources-content .search-area li:nth-of-type(3):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+
+.resources-content .search-area li:nth-of-type(3) label { position: absolute; top: 4px; left: 10px; color: transparent; }
+
+.resources-content .search-area li:nth-of-type(3) select { width: 100%; height: 30px; min-height: 30px; line-height: 28px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; }
+
+.resources-content .search-area li:nth-of-type(3) select:focus { border: 1px solid #002847; }
+
+.resources-content .search-area li:nth-of-type(3) select::-ms-expand { display: none; }
+
+/* =======================================*/
+/* 자료마당 > 자료마당 > 팝업
+/* (html/resources.html)
+/* =======================================*/
+/* =======================================*/
+/* 자료마당 > 관련사이트
+/* (html/relation-site.html)
+/* =======================================*/
+.relation-site .panel-group [role="tabpanel"] .gallery { width: 100%; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li { float: left; width: 25%; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li:nth-of-type(4n) { margin-bottom: 20px; }
 
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회

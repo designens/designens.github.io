@@ -172,7 +172,8 @@
     <main class="ui-kit">
         <section class="content-area wrap">
             <h1><span class="fa fa-paperclip"></span> UI Kit 정의</h1>
-            <!-- Input 공통 -->
+            
+            <!-- [Start] Input 공통 -->
             <article>
                 <h2>Input</h2>
                 <div class="form-group">
@@ -193,8 +194,9 @@
                     </label>
                 </div>
             </article>
+            <!-- [End] Input 공통 -->
 
-            <!-- Select Box 공통 -->
+            <!-- [Start] Select Box 공통 -->
             <article>
                 <h2>Select Box</h2>
                 <div class="select-box">
@@ -209,8 +211,9 @@
                     </select>
                 </div>
             </article>
+            <!-- [End] Select Box 공통 -->
 
-            <!-- 체크박스 공통 -->
+            <!-- [Start] 체크박스 공통 -->
            <article>
                 <h2>Check box</h2>
                <div class="checkbox-type">
@@ -222,8 +225,9 @@
                    <label for="checkbox-03">Checkbox Test 03</label>
                </div>
            </article>
+            <!-- [End] 체크박스 공통 -->
             
-            <!-- 라디오버튼 공통 -->
+            <!-- [Start] 라디오버튼 공통 -->
             <article>
                 <h2>Radio Button</h2>
                 <div class="radio-type">
@@ -233,8 +237,9 @@
                     <label for="radio2">Radio Button Test 02</label>
                 </div>
             </article>
+            <!-- [End] 라디오버튼 공통 -->
 
-            <!-- 버튼 스타일 공통 -->
+            <!-- [Start] 버튼 스타일 공통 -->
             <article>
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
@@ -270,8 +275,9 @@
                     <a href class="btn-type-2-04" role="button">버튼</a>
                 </div>
             </article>
+            <!-- [End] 버튼 스타일 공통 -->
 
-            <!-- 버튼 스타일 공통 -->
+            <!-- [Start] 버튼 스타일 공통 -->
             <article>
                 <h2>Arrow Style</h2>
                 <div class="arrow-box">
@@ -285,8 +291,9 @@
                     <div class="arrow-bottom-right"></div>
                 </div>
             </article>
+            <!-- [End] 버튼 스타일 공통 -->
 
-            <!-- 파일 아이콘 스타일 공통 -->
+            <!-- [Start] 파일 아이콘 스타일 공통 -->
             <article>
                 <h2>File Icon Style</h2>
                 <ul class="file-icon-box">
@@ -296,8 +303,9 @@
                     <li class="icon-jpg">.icon-jpg 파일 아이콘</li>
                 </ul>
             </article>
+            <!-- [End] 파일 아이콘 스타일 공통 -->
 
-            <!-- 아코디언 스타일 공통 -->
+            <!-- [Start] 아코디언 스타일 공통 -->
             <article>
                 <h2>Accordion Style</h2>
                 <div class="accordion-test">
@@ -357,8 +365,9 @@
                         </ul>
                 </div>
             </article>
+            <!-- [End] 아코디언 스타일 공통 -->
 
-            <!-- 서브 검색 영역 공통 -->
+            <!-- [Start] 서브 검색 영역 공통 -->
             <article>
                 <h2>Seb Search Style</h2>
                 <ul class="search-area">
@@ -382,8 +391,9 @@
                     </li>
                 </ul>
             </article>
+            <!-- [End] 서브 검색 영역 공통 -->
 
-            <!-- 서브 전체 페이지 선택 영역 -->
+            <!-- [Start] 서브 전체 페이지 선택 영역 -->
             <article>
                 <h2>All Pages Style</h2>
                 <div class="all-pages-view">
@@ -402,8 +412,9 @@
                     </div>
                 </div>
             </article>
+            <!-- [End] 서브 전체 페이지 선택 영역 -->
 
-            <!-- 탭 스타일 공통 -->
+            <!-- [Start] 탭 스타일 공통 -->
             <article>
                 <h2>Tab Style</h2>
                 <!-- 탭의 갯수 만큼 tab과 panel 마크업 작성
@@ -434,8 +445,9 @@
                     </div>
                 </div>
             </article>
+            <!-- [End] 탭 스타일 공통 -->
 
-            <!-- 테이블 스타일 공통 -->
+            <!-- [Start] 테이블 스타일 공통 -->
             <article>
                 <h2>Table Style</h2>
                 <!-- 컬럼 width 값 설정 시 추가 class 삽입 후 스타일 지정 -->
@@ -454,12 +466,12 @@
                         </colgroup>
                         <thead>
                             <tr>
-                                <th scope="col">번호</th>
-                                <th scope="col">분야</th>
-                                <th scope="col">제목</th>
-                                <th scope="col">작성자</th>
-                                <th scope="col">첨부파일</th>
-                                <th scope="col">등록일</th>
+                                <th>번호</th>
+                                <th>분야</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>첨부파일</th>
+                                <th>등록일</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -570,6 +582,10 @@
                             </tr>
                         </tbody>
                     </table>
+                    <!-- 테이블 버튼 사용 시 오른쪾 버튼일 경우 class="in-right", 왼쪽 버튼일 경우 class="in-left" 적용 -->
+                    <div class="table-btn-set in-right">
+                        <a href class="btn-popup-qna-write" role="button">글쓰기</a>
+                    </div>
                     <h3><span class="fa fa-table"></span>table-type-02</h3>
                     <table class="table-type-02 table-name">
                         <caption>qna 팝업</caption>
@@ -626,29 +642,8 @@
                     </ul>
                 </div>
             </article>
+            <!-- [End] 테이블 스타일 공통 -->
 
-            <!-- 페이징 스타일 공통 -->
-            <article>
-                <h2>Paging Style</h2>
-                <div class="paging">
-                    <button class="first-prev" aria-label="처음으로 이동"></button>
-                    <button class="prev" aria-label="이전 페이지"></button>
-                    <a href role="button">1</a>
-                    <a href role="button">2</a>
-                    <a href role="button">3</a>
-                    <a href role="button">4</a>
-                    <!-- 선택된 버튼 class="selected"로 제어 -->
-                    <a class="selected" href role="button">5</a>
-                    <a href role="button">6</a>
-                    <a href role="button">7</a>
-                    <a href role="button">8</a>
-                    <a href role="button">9</a>
-                    <a href role="button">10</a>
-                    <button class="next" " aria-label="다음 페이지"></button>
-                    <button class="last-next" aria-label="끝으로 이동"></button>
-                </div>
-            </article>
-            
             <!-- [Start] 팝업 기본 스타일 -->
             <article>
                 <h2>Popup Base Style</h2>
@@ -676,6 +671,29 @@
                 </div>
             </article>
             <!-- [End] 팝업 기본 스타일 -->
+
+            <!-- [Start] 페이징 스타일 공통 -->
+            <article>
+                <h2>Paging Style</h2>
+                <div class="paging">
+                    <button class="first-prev" aria-label="처음으로 이동"></button>
+                    <button class="prev" aria-label="이전 페이지"></button>
+                    <a href role="button">1</a>
+                    <a href role="button">2</a>
+                    <a href role="button">3</a>
+                    <a href role="button">4</a>
+                    <!-- 선택된 버튼 class="selected"로 제어 -->
+                    <a class="selected" href role="button">5</a>
+                    <a href role="button">6</a>
+                    <a href role="button">7</a>
+                    <a href role="button">8</a>
+                    <a href role="button">9</a>
+                    <a href role="button">10</a>
+                    <button class="next" " aria-label="다음 페이지"></button>
+                    <button class="last-next" aria-label="끝으로 이동"></button>
+                </div>
+            </article>
+            <!-- [End] 페이징 스타일 공통 -->
 
         </section>
     </main>

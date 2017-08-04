@@ -175,50 +175,867 @@
 
     <!-- [Start] Container Area -->
     <main id="container" class="wrap">
+
+        <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>자료마당</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
-                            <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
-                        </li>
-                        <li><a href="#">중분류 2</a></li>
-                    </ul>
+                    <a href="#" class="lnb-link" role="button">공지사항<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li class="open">
+                    <a href="#" class="lnb-link" role="button">자료실<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">관련사이트<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
+        <!-- [End] LNB 메뉴 -->
+
+        <!-- [Start] Content Area -->
         <section class="content-area">
+
+            <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">자료실</h2>
                 <div class="site-location">
-                    <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home" /></a>
+                    <a href="#">자료마당</a>
+                    <a href="#">공지사항</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <!-- [End] 컨텐츠 타이틀 -->
+
+            <!-- [Start] 컨텐츠 상세  -->
+            <div class="content resources-content">
+                <!-- [Start] 검색 영역 -->
+                <ul class="search-area">
+                    <li class="search-title"><span>검색</span></li>
+                    <li class="select-box">
+                        <label for="search">말머리:전체</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">말머리:전체</option>
+                            <option>내용</option>
+                            <option>단어</option>
+                        </select>
+                    </li>
+                    <li class="select-box">
+                        <label for="search">제목</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">제목</option>
+                            <option>내용</option>
+                            <option>단어</option>
+                        </select>
+                    </li>
+                    <li class="input-type">
+                        <label class="search-keyword">
+                            <span>검색 키워드 입력하세요.</span>
+                            <input type="text" />
+                        </label>
+                    </li>
+                    <li>
+                        <button class="btn-lookup">조회</button>
+                    </li>
+                </ul>
+                <!-- [End] 검색 영역 -->
+                <!-- [Start] 탭 영역 -->
+                <div class="tablist t5" role="tablist">
+                    <a id="tab1" aria-controls="panel1" role="tab" href><span>전체</span></a>
+                    <a id="tab2" aria-controls="panel2" role="tab" href><span>국내외 언론동향</span></a>
+                    <a id="tab3" aria-controls="panel3" role="tab" href><span>북한동향</span></a>
+                    <a id="tab4" aria-controls="panel4" role="tab" href><span>행사정보</span></a>
+                    <a id="tab5" aria-controls="panel5" role="tab" href><span>기타</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
+                        <!-- [Start] 전체 페이지 단위 선택 영역 -->
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
+                            <div class="select-box">
+                                <label for="search">10개씩보기</label>
+                                <select id="search" name="search-item">
+                                    <option selected="selected">10개씩보기</option>
+                                    <option>20개씩보기</option>
+                                    <option>30개씩보기</option>
+                                    <option>40개씩보기</option>
+                                    <option>50개씩보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- [End] 전체 페이지 단위 선택 영역 -->
+                        <!-- [Start] 테이블 영역 -->
+                        <table class="table-type-01">
+                            <caption>자료마당 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>분야</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>첨부파일</th>
+                                    <th>등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td class="download-type-02">
+                                        <span class="icon-hwp"></span>
+                                        <span class="icon-doc"></span>
+                                        <span class="icon-pdf"></span>
+                                        <span class="icon-jpg"></span>
+                                        <div class="download-file">
+                                            <strong>파일명 :</strong>
+                                            <a href="">대북지원사업신청서.hwp</a>
+                                            <a href="">남북협력기금지원신청서.doc</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                        </div>
+                                    </td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 테이블 영역 -->
+                        <!-- [Start] 페이징 영역 -->
+                        <div class="paging">
+                            <button class="first-prev" aria-label="처음으로 이동"></button>
+                            <button class="prev" aria-label="이전 페이지"></button>
+                            <a href role="button">1</a>
+                            <a href role="button">2</a>
+                            <a href role="button">3</a>
+                            <a href role="button">4</a>
+                            <!-- 선택된 버튼 class="selected"로 제어 -->
+                            <a class="selected" href role="button">5</a>
+                            <a href role="button">6</a>
+                            <a href role="button">7</a>
+                            <a href role="button">8</a>
+                            <a href role="button">9</a>
+                            <a href role="button">10</a>
+                            <button class="next" " aria-label="다음 페이지 "></button>
+                            <button class="last-next " aria-label="끝으로 이동 "></button>
+                        </div>
+                        <!-- [End] 페이징 영역 -->
+                    </div>
+                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 전체 페이지 단위 선택 영역 -->
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
+                            <div class="select-box">
+                                <label for="search">10개씩보기</label>
+                                <select id="search" name="search-item">
+                                    <option selected="selected">10개씩보기</option>
+                                    <option>20개씩보기</option>
+                                    <option>30개씩보기</option>
+                                    <option>40개씩보기</option>
+                                    <option>50개씩보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- [End] 전체 페이지 단위 선택 영역 -->
+                        <!-- [Start] 테이블 영역 -->
+                        <table class="table-type-01">
+                            <caption>자료마당 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>분야</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>첨부파일</th>
+                                    <th>등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td class="download-type-02">
+                                        <span class="icon-hwp"></span>
+                                        <span class="icon-doc"></span>
+                                        <span class="icon-pdf"></span>
+                                        <span class="icon-jpg"></span>
+                                        <div class="download-file">
+                                            <strong>파일명 :</strong>
+                                            <a href="">대북지원사업신청서.hwp</a>
+                                            <a href="">남북협력기금지원신청서.doc</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                        </div>
+                                    </td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 테이블 영역 -->
+                        <!-- [Start] 페이징 영역 -->
+                        <div class="paging">
+                            <button class="first-prev" aria-label="처음으로 이동"></button>
+                            <button class="prev" aria-label="이전 페이지"></button>
+                            <a href role="button">1</a>
+                            <a href role="button">2</a>
+                            <a href role="button">3</a>
+                            <a href role="button">4</a>
+                            <!-- 선택된 버튼 class="selected"로 제어 -->
+                            <a class="selected" href role="button">5</a>
+                            <a href role="button">6</a>
+                            <a href role="button">7</a>
+                            <a href role="button">8</a>
+                            <a href role="button">9</a>
+                            <a href role="button">10</a>
+                            <button class="next" " aria-label="다음 페이지 "></button>
+                            <button class="last-next " aria-label="끝으로 이동 "></button>
+                        </div>
+                        <!-- [End] 페이징 영역 -->
+                    </div>
+                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 전체 페이지 단위 선택 영역 -->
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
+                            <div class="select-box">
+                                <label for="search">10개씩보기</label>
+                                <select id="search" name="search-item">
+                                    <option selected="selected">10개씩보기</option>
+                                    <option>20개씩보기</option>
+                                    <option>30개씩보기</option>
+                                    <option>40개씩보기</option>
+                                    <option>50개씩보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- [End] 전체 페이지 단위 선택 영역 -->
+                        <!-- [Start] 테이블 영역 -->
+                        <table class="table-type-01">
+                            <caption>자료마당 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>분야</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>첨부파일</th>
+                                    <th>등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td class="download-type-02">
+                                        <span class="icon-hwp"></span>
+                                        <span class="icon-doc"></span>
+                                        <span class="icon-pdf"></span>
+                                        <span class="icon-jpg"></span>
+                                        <div class="download-file">
+                                            <strong>파일명 :</strong>
+                                            <a href="">대북지원사업신청서.hwp</a>
+                                            <a href="">남북협력기금지원신청서.doc</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                        </div>
+                                    </td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 테이블 영역 -->
+                        <!-- [Start] 페이징 영역 -->
+                        <div class="paging">
+                            <button class="first-prev" aria-label="처음으로 이동"></button>
+                            <button class="prev" aria-label="이전 페이지"></button>
+                            <a href role="button">1</a>
+                            <a href role="button">2</a>
+                            <a href role="button">3</a>
+                            <a href role="button">4</a>
+                            <!-- 선택된 버튼 class="selected"로 제어 -->
+                            <a class="selected" href role="button">5</a>
+                            <a href role="button">6</a>
+                            <a href role="button">7</a>
+                            <a href role="button">8</a>
+                            <a href role="button">9</a>
+                            <a href role="button">10</a>
+                            <button class="next" " aria-label="다음 페이지 "></button>
+                            <button class="last-next " aria-label="끝으로 이동 "></button>
+                        </div>
+                        <!-- [End] 페이징 영역 -->
+                    </div>
+                    <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 전체 페이지 단위 선택 영역 -->
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
+                            <div class="select-box">
+                                <label for="search">10개씩보기</label>
+                                <select id="search" name="search-item">
+                                    <option selected="selected">10개씩보기</option>
+                                    <option>20개씩보기</option>
+                                    <option>30개씩보기</option>
+                                    <option>40개씩보기</option>
+                                    <option>50개씩보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- [End] 전체 페이지 단위 선택 영역 -->
+                        <!-- [Start] 테이블 영역 -->
+                        <table class="table-type-01">
+                            <caption>자료마당 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>분야</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>첨부파일</th>
+                                    <th>등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td class="download-type-02">
+                                        <span class="icon-hwp"></span>
+                                        <span class="icon-doc"></span>
+                                        <span class="icon-pdf"></span>
+                                        <span class="icon-jpg"></span>
+                                        <div class="download-file">
+                                            <strong>파일명 :</strong>
+                                            <a href="">대북지원사업신청서.hwp</a>
+                                            <a href="">남북협력기금지원신청서.doc</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                        </div>
+                                    </td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 테이블 영역 -->
+                        <!-- [Start] 페이징 영역 -->
+                        <div class="paging">
+                            <button class="first-prev" aria-label="처음으로 이동"></button>
+                            <button class="prev" aria-label="이전 페이지"></button>
+                            <a href role="button">1</a>
+                            <a href role="button">2</a>
+                            <a href role="button">3</a>
+                            <a href role="button">4</a>
+                            <!-- 선택된 버튼 class="selected"로 제어 -->
+                            <a class="selected" href role="button">5</a>
+                            <a href role="button">6</a>
+                            <a href role="button">7</a>
+                            <a href role="button">8</a>
+                            <a href role="button">9</a>
+                            <a href role="button">10</a>
+                            <button class="next" " aria-label="다음 페이지 "></button>
+                            <button class="last-next " aria-label="끝으로 이동 "></button>
+                        </div>
+                        <!-- [End] 페이징 영역 -->
+                    </div>
+                    <div id="panel5" aria-labelledby="tab5" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 전체 페이지 단위 선택 영역 -->
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
+                            <div class="select-box">
+                                <label for="search">10개씩보기</label>
+                                <select id="search" name="search-item">
+                                    <option selected="selected">10개씩보기</option>
+                                    <option>20개씩보기</option>
+                                    <option>30개씩보기</option>
+                                    <option>40개씩보기</option>
+                                    <option>50개씩보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- [End] 전체 페이지 단위 선택 영역 -->
+                        <!-- [Start] 테이블 영역 -->
+                        <table class="table-type-01">
+                            <caption>자료마당 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>분야</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>첨부파일</th>
+                                    <th>등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td class="download-type-02">
+                                        <span class="icon-hwp"></span>
+                                        <span class="icon-doc"></span>
+                                        <span class="icon-pdf"></span>
+                                        <span class="icon-jpg"></span>
+                                        <div class="download-file">
+                                            <strong>파일명 :</strong>
+                                            <a href="">대북지원사업신청서.hwp</a>
+                                            <a href="">남북협력기금지원신청서.doc</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                            <a href="">대북지원사업자 지정신청서.pdf</a>
+                                        </div>
+                                    </td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>북한동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>행사정보</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>국내외 언론동향</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>기타</td>
+                                    <td><a href="" class="btn-popup-resources view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                    <td>id****</td>
+                                    <td></td>
+                                    <td>2017-12-11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 테이블 영역 -->
+                        <!-- [Start] 페이징 영역 -->
+                        <div class="paging">
+                            <button class="first-prev" aria-label="처음으로 이동"></button>
+                            <button class="prev" aria-label="이전 페이지"></button>
+                            <a href role="button">1</a>
+                            <a href role="button">2</a>
+                            <a href role="button">3</a>
+                            <a href role="button">4</a>
+                            <!-- 선택된 버튼 class="selected"로 제어 -->
+                            <a class="selected" href role="button">5</a>
+                            <a href role="button">6</a>
+                            <a href role="button">7</a>
+                            <a href role="button">8</a>
+                            <a href role="button">9</a>
+                            <a href role="button">10</a>
+                            <button class="next" " aria-label="다음 페이지 "></button>
+                            <button class="last-next " aria-label="끝으로 이동 "></button>
+                        </div>
+                        <!-- [End] 페이징 영역 -->
+                    </div>
+                </div>
+                <!-- [End] 탭 영역 -->
             </div>
+            <!-- [End] 컨텐츠 상세  -->
+            
         </section>
+        <!-- [End] Content Area -->
+
     </main>
     <!-- [End] Container Area -->
 
@@ -236,6 +1053,64 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 자료실 Popup -->
+    <div class="popup" data-id="popup-resources">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>자료실</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-resources-content">
+        <table class="table-type-02">
+            <caption>자료실 상세 내용 테이블의 분야, 제목, 작성자, 작성일, 조회수, 첨부파일, 제안내용 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>분야</th>
+                    <td>국내외 언론동향</td>
+                    <th>작성자</th>
+                    <td>id****</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">이런 저런 내용으로 제안합니다</td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>2017-11-12</td>
+                    <th>조회수</th>
+                    <td>999</td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td class="download-type-01" colspan="3">
+                        <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                        <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <dl class="table-dt-dd">
+            <dt>제안내용</dt>
+            <dd>이런 저런 내용으로 제안합니다. 잘 검토하시고 답변주세요.</dd>
+        </dl>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 자료실 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>

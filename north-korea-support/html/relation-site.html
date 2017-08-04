@@ -175,50 +175,118 @@
 
     <!-- [Start] Container Area -->
     <main id="container" class="wrap">
+
+        <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>자료마당</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
-                            <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
-                        </li>
-                        <li><a href="#">중분류 2</a></li>
-                    </ul>
+                    <a href="#" class="lnb-link" role="button">공지사항<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <!-- 메뉴 펼침 class="open"으로 제어 -->
+                <li class="open">
+                    <a href="#" class="lnb-link" role="button">자료실<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">관련사이트<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
+        <!-- [End] LNB 메뉴 -->
+        
+        <!-- [Start] Content Area -->
         <section class="content-area">
+
+            <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">관련사이트</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">자료마당</a>
+                    <a href="#">관련사이트</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <!-- [End] 컨텐츠 타이틀 -->
+            
+            <!-- [Start] 컨텐츠 상세  -->
+            <div class="content relation-site">
+                <div class="tablist t4" role="tablist">
+                    <a href id="tab1" aria-controls="panel1" role="tab"><span>언론</span></a>
+                    <a href id="tab2" aria-controls="panel2" role="tab"><span>유관기관</span></a>
+                    <a href id="tab3" aria-controls="panel3" role="tab"><span>국제기구</span></a>
+                    <a href id="tab4" aria-controls="panel4" role="tab"><span>NGO</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
+                        <ul class="gallery">
+                            <li>
+                                <p class="panel-tit">노컷뉴스</p>
+                                <div>
+                                    <a href="#" class="relation-logo1"><img src="../assets/images/sub/relation-logo1.gif" alt="노컷뉴스" /></a>
+                                    <p class="site"><a href="#">www.nocutnews.co.kr</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="panel-tit">연합뉴스</p>
+                                <div>
+                                <a href="#" class="relation-logo2"><img src="../assets/images/sub/relation-logo2.gif" alt="연합뉴스" /></a>
+                                <p class="site"><a href="#">www.yonhapnews.co.kr</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="panel-tit">한겨레</p>
+                                <div>
+                                <a href="#" class="relation-logo3"><img src="../assets/images/sub/relation-logo3.gif" alt="한겨레" /></a>
+                                <p class="site"><a href="#">www.hani.co.kr</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="panel-tit">경향신문</p>
+                                <div>
+                                <a href="#" class="relation-logo4"><img src="../assets/images/sub/relation-logo4.gif" alt="경향신문" /></a>
+                                <p class="site"><a href="#">www.khan.co.kr</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="panel-tit">한국경제</p>
+                                <div>
+                                <a href="#" class="relation-logo5"><img src="../assets/images/sub/relation-logo5.gif" alt="한국경제" /></a>
+                                <p class="site"><a href="#">www.hankyung.com</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="panel-tit">서울신문</p>
+                                <div>
+                                <a href="#" class="relation-logo6"><img src="../assets/images/sub/relation-logo6.gif" alt="서울신문" /></a>
+                                <p class="site"><a href="#">www.seoul.co.kr</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="panel-tit">매일경제</p>
+                                <div>
+                                <a href="#" class="relation-logo7"><img src="../assets/images/sub/relation-logo7.gif" alt="매일경제" /></a>
+                                <p class="site"><a href="#">www.mk.co.kr</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
+
+                    </div>
+                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
+
+                    </div>
+                    <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
+
+                    </div>
+                </div>
             </div>
+            <!-- [End] 컨텐츠 상세  -->
+
         </section>
+        <!-- [End] Content Area -->
+
     </main>
     <!-- [End] Container Area -->
 

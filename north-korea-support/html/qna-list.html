@@ -175,6 +175,8 @@
 
     <!-- [Start] Container Area -->
     <main id="container" class="wrap">
+
+        <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
             <h3>커뮤니티</h3>
             <ul class="aco-base accordion-lnb">
@@ -189,7 +191,12 @@
                 </li>
             </ul>
         </nav>
+        <!-- [End] LNB 메뉴 -->
+
+        <!-- [Start] Content Area -->
         <section class="content-area">
+
+            <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
                 <h2 class="sub-title">Q&amp;A</h2>
                 <div class="site-location">
@@ -199,6 +206,9 @@
                 </div>
             </header>
             <hr class="sub-title-bar"/>
+            <!-- [End] 컨텐츠 타이틀 -->
+
+            <!-- [Start] 컨텐츠 상세  -->
             <div class="content qna-content">
 
                 <!-- [Start] 검색 영역 -->
@@ -255,12 +265,12 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">번호</th>
-                            <th scope="col">분야</th>
-                            <th scope="col">제목</th>
-                            <th scope="col">작성자</th>
-                            <th scope="col">첨부파일</th>
-                            <th scope="col">등록일</th>
+                            <th>번호</th>
+                            <th>분야</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>첨부파일</th>
+                            <th>등록일</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -373,7 +383,6 @@
                 <!-- [End] Q&ampA 테이블 -->
                 
                 <!-- [Start] Q&ampA 테이블 버튼 -->
-                <!-- 테이블 버튼 사용 시 오른쪾 버튼일 경우 class="in-right", 왼쪽 버튼일 경우 class="in-left" 적용 -->
                 <div class="table-btn-set in-right">
                     <a href class="btn-popup-qna-write" role="button">글쓰기</a>
                 </div>
@@ -398,7 +407,11 @@
                 </div>
                 <!-- [End] Paging Area -->
             </div>
+            <!-- [End] 컨텐츠 상세  -->
+
         </section>
+        <!-- [End] Content Area -->
+        
     </main>
     <!-- [End] Container Area -->
 
@@ -419,180 +432,167 @@
 
     <!-- [Start] Q&ampA 상세 조회 Popup -->
     <div class="popup" data-id="popup-qna-list">
-
     <!-- [Start] 팝업 헤드라인 -->
-        <header class="popup-headline">
-            <h4>Q&amp;A</h4>
-            <button class="popup-close">창 닫기</button>
-        </header>
-        <!-- [End] 팝업 헤드라인 -->
-
-        <!-- [Start] 팝업 콘텐츠 -->
-        <div class="popup-content popup-qna-content">
-            <div class="btn-tr-set">
-                <button class="btn-type-1-02">수정</button>
-                <button class="btn-type-1-02">삭제</button>
-            </div>
-            <!-- 첫번째 테이블 (제목,작성자,패스워드,첨부파일) -->
-            <table class="table-type-02">
-                <caption>qna 팝업</caption>
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <th>제목</th>
-                        <td colspan="3">이런 저런 내용으로 제안합니다.</td>
-                    </tr>
-                    <tr>
-                        <th>작성자</th>
-                        <td>홍길동</td>
-                        <th>패스워드</th>
-                        <td>****</td>
-                    </tr>
-                    <tr>
-                        <th>첨부파일</th>
-                        <td class="download-type-01" colspan="3">
-                            <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                            <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- ul,li (질문,답변) -->
-            <dl class="table-dt-dd">
-                <dt>질문</dt>
-                <dd>
-                    이런저런 내용으로 제안합니다.<br>
-                    잘 검토하시고 답변 바랍니다.<br>
-                    이런저런 내용으로 제안합니다.<br>
-                    잘 검토하시고 답변 바랍니다.
-                </dd>
-                <dt>답변</dt>
-                <dd>
-                    <p><span class="admin">관리자</span><span class="date">(2017-05-04)</span></p>
-                    이런저런 내용으로 제안합니다.
-                </dd>
-            </dl>
-            <!-- [Start] 팝업 버튼 -->
-            <div class="popup-btn-set">
-                <button class="popup-save">저장하기</button>
-                <button class="popup-close">닫기</button>
-            </div>
-            <!-- [End] 팝업 버튼 -->
-
+    <header class="popup-headline">
+        <h4>Q&amp;A</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-qna-content">
+        <div class="btn-tr-set">
+            <button class="btn-type-1-02">수정</button>
+            <button class="btn-type-1-02">삭제</button>
         </div>
-        <!-- [End] 팝업 콘텐츠 -->
-
+        <table class="table-type-02">
+            <caption>Q&amp;A 상세 내용 테이블의 제목, 작성자, 패스워드, 첨부파일 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">이런 저런 내용으로 제안합니다.</td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td>홍길동</td>
+                    <th>패스워드</th>
+                    <td>****</td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td class="download-type-01" colspan="3">
+                        <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                        <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <dl class="table-dt-dd">
+            <dt>질문</dt>
+            <dd>
+                이런저런 내용으로 제안합니다.<br>
+                잘 검토하시고 답변 바랍니다.<br>
+                이런저런 내용으로 제안합니다.<br>
+                잘 검토하시고 답변 바랍니다.
+            </dd>
+            <dt>답변</dt>
+            <dd>
+                <p><span class="admin">관리자</span><span class="date">(2017-05-04)</span></p>
+                이런저런 내용으로 제안합니다.
+            </dd>
+        </dl>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-save">저장하기</button>
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
     </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
     <!-- [End] Q&ampA 상세 조회 Popup -->
 
 
     <!-- [Start] Q&ampA 상세 입력 Popup -->
     <div class="popup" data-id="popup-qna-write">
-
     <!-- [Start] 팝업 헤드라인 -->
-        <header class="popup-headline">
-            <h4>Q&amp;A</h4>
-            <button class="popup-close">창 닫기</button>
-        </header>
-        <!-- [End] 팝업 헤드라인 -->
-
-        <!-- [Start] 팝업 콘텐츠 -->
-        <div class="popup-content popup-qna-content">
-            <!-- 첫번째 테이블 (제목,작성자,패스워드,첨부파일) -->
-            <table class="table-type-02">
-                <caption>qna 팝업</caption>
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <th>제목</th>
-                        <td colspan="3">
-                            <label class="input-type w100p">
-                                <input type="text"/>
-                            </label>
-                            <div class="checkbox-type secret-article">
-                                <input type="checkbox" id="secretArticle" name="secretArticle">
-                                <label for="secretArticle">비밀글 (체크시 작성자만 내용을 확인할 수 있습니다.)</label>
+    <header class="popup-headline">
+        <h4>Q&amp;A</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-qna-content">
+        <table class="table-type-02">
+            <caption>Q&amp;A 입력 내용 테이블의 제목, 작성자, 패스워드, 보안문자, 첨부파일 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">
+                        <label class="input-type w100p">
+                            <input type="text"/>
+                        </label>
+                        <div class="checkbox-type secret-article">
+                            <input type="checkbox" id="secretArticle" name="secretArticle">
+                            <label for="secretArticle">비밀글 (체크시 작성자만 내용을 확인할 수 있습니다.)</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th for="username">작성자</th>
+                    <td>
+                        <label class="input-type">
+                            <input type="text" id="username" name="username" required="required" />
+                        </label>
+                    </td>
+                    <th for="password">패스워드</th>
+                    <td>
+                        <label class="input-type">
+                            <input type="password" id="password" name="password" required="required"/>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>보안문자</th>
+                    <td class="security-text-area" colspan="3">
+                        <label class="input-type">
+                            <input type="text"/>
+                        </label>
+                        <div class="security-text">보안문자 영역</div>
+                        <strong>* 보안문자를 확인하시고 입력해주세요.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td class="download-type-01" colspan="3">
+                        <div class="add-file-sherch">
+                            <span>파일추가 : </span>
+                            <div class="file-sherch">
+                                <label class="input-type">
+                                    <input type="text"/>
+                                </label>
+                                <button class="btn-file-sherch">파일 검색</button>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th for="username">작성자</th>
-                        <td>
-                            <label class="input-type">
-                                <input type="text" id="username" name="username" required="required" />
-                            </label>
-                        </td>
-                        <th for="password">패스워드</th>
-                        <td>
-                            <label class="input-type">
-                                <input type="password" id="password" name="password" required="required"/>
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>보안문자</th>
-                        <td class="security-text-area" colspan="3">
-                            <label class="input-type">
-                                <input type="text"/>
-                            </label>
-                            <div class="security-text">보안문자 영역</div>
-                            <strong>* 보안문자를 확인하시고 입력해주세요.</strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>첨부파일</th>
-                        <td class="download-type-01" colspan="3">
-                            <div class="add-file-sherch">
-                                <span>파일추가 : </span>
-                                <div class="file-sherch">
-                                    <label class="input-type">
-                                        <input type="text"/>
-                                    </label>
-                                    <button class="btn-file-sherch">파일 검색</button>
-                                </div>
+                        </div>
+                        <div class="add-file-area">
+                            <div class="file">
+                                <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                                <button class="btn-file-remove">파일삭제</button>
                             </div>
-                            <div class="add-file-area">
-                                <div class="file">
-                                    <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                                    <button class="btn-file-remove">파일삭제</button>
-                                </div>
-                                <div class="file">
-                                    <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
-                                    <button class="btn-file-remove">파일삭제</button>
-                                </div>
+                            <div class="file">
+                                <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                                <button class="btn-file-remove">파일삭제</button>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- [Start] 웹 에디터 영역 -->
-            <div class="web-edit-area">
-                <p>웹에디터 영역</p>
-            </div>
-            <!-- [End] 웹 에디터 영역 -->
-
-            <!-- [Start] 팝업 버튼 -->
-            <div class="popup-btn-set">
-                <button class="popup-save">저장하기</button>
-                <button class="popup-close">닫기</button>
-            </div>
-            <!-- [End] 팝업 버튼 -->
-
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- [Start] 웹 에디터 영역 -->
+        <div class="web-edit-area">
+            <p>웹에디터 영역</p>
         </div>
-        <!-- [End] 팝업 콘텐츠 -->
-
+        <!-- [End] 웹 에디터 영역 -->
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-save">저장하기</button>
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
     </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
     <!-- [End] Q&ampA 상세 입력 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
