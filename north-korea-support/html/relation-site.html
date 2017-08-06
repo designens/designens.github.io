@@ -72,7 +72,7 @@
                     <li><a href="#">커뮤니티</a></li>
                 </ul>
                 <!-- [End] 즐겨찾는 메뉴 -->
-                <button class="btn-gnb-all" aria-labelledby="gnb-all-menu">전체메뉴</button>
+                <button type="button" class="btn-gnb-all" aria-labelledby="gnb-all-menu">전체메뉴</button>
             </nav>
             <!-- [End] GNB 영역 -->
 
@@ -183,11 +183,10 @@
                 <li>
                     <a href="#" class="lnb-link" role="button">공지사항<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
-                <!-- 메뉴 펼침 class="open"으로 제어 -->
-                <li class="open">
+                <li>
                     <a href="#" class="lnb-link" role="button">자료실<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
-                <li>
+                <li class="open">
                     <a href="#" class="lnb-link" role="button">관련사이트<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
@@ -221,64 +220,270 @@
                     <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
                         <ul class="gallery">
                             <li>
-                                <p class="panel-tit">노컷뉴스</p>
-                                <div>
-                                    <a href="#" class="relation-logo1"><img src="../assets/images/sub/relation-logo1.gif" alt="노컷뉴스" /></a>
-                                    <p class="site"><a href="#">www.nocutnews.co.kr</a></p>
-                                </div>
+                                <h6>노컷뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo1.gif" alt="" /></div>
+                                        <figcaption>www.nocutnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                             <li>
-                                <p class="panel-tit">연합뉴스</p>
-                                <div>
-                                <a href="#" class="relation-logo2"><img src="../assets/images/sub/relation-logo2.gif" alt="연합뉴스" /></a>
-                                <p class="site"><a href="#">www.yonhapnews.co.kr</a></p>
-                                </div>
+                                <h6>연합뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo2.gif" alt="연합뉴스" /></div>
+                                        <figcaption>www.yonhapnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                             <li>
-                                <p class="panel-tit">한겨레</p>
-                                <div>
-                                <a href="#" class="relation-logo3"><img src="../assets/images/sub/relation-logo3.gif" alt="한겨레" /></a>
-                                <p class="site"><a href="#">www.hani.co.kr</a></p>
-                                </div>
+                                <h6>한겨레</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo3.gif" alt="한겨레" /></div>
+                                        <figcaption>www.hani.co.kr</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                             <li>
-                                <p class="panel-tit">경향신문</p>
-                                <div>
-                                <a href="#" class="relation-logo4"><img src="../assets/images/sub/relation-logo4.gif" alt="경향신문" /></a>
-                                <p class="site"><a href="#">www.khan.co.kr</a></p>
-                                </div>
+                                <h6>경향신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo4.gif" alt="경향신문" /></div>
+                                        <figcaption>www.khan.co.kr</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                             <li>
-                                <p class="panel-tit">한국경제</p>
-                                <div>
-                                <a href="#" class="relation-logo5"><img src="../assets/images/sub/relation-logo5.gif" alt="한국경제" /></a>
-                                <p class="site"><a href="#">www.hankyung.com</a></p>
-                                </div>
+                                <h6>한국경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo5.gif" alt="한국경제" /></div>
+                                        <figcaption>www.hankyung.com</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                             <li>
-                                <p class="panel-tit">서울신문</p>
-                                <div>
-                                <a href="#" class="relation-logo6"><img src="../assets/images/sub/relation-logo6.gif" alt="서울신문" /></a>
-                                <p class="site"><a href="#">www.seoul.co.kr</a></p>
-                                </div>
+                                <h6>서울신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo6.gif" alt="서울신문" /></div>
+                                        <figcaption>www.seoul.co.kr</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                             <li>
-                                <p class="panel-tit">매일경제</p>
-                                <div>
-                                <a href="#" class="relation-logo7"><img src="../assets/images/sub/relation-logo7.gif" alt="매일경제" /></a>
-                                <p class="site"><a href="#">www.mk.co.kr</a></p>
-                                </div>
+                                <h6>매일경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo7.gif" alt="매일경제" /></div>
+                                        <figcaption>www.mk.co.kr</figcaption>
+                                    </figure>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
-
+                        <ul class="gallery">
+                            <li>
+                                <h6>한겨레</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo3.gif" alt="한겨레" /></div>
+                                        <figcaption>www.hani.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>노컷뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo1.gif" alt="" /></div>
+                                        <figcaption>www.nocutnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>연합뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo2.gif" alt="연합뉴스" /></div>
+                                        <figcaption>www.yonhapnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>한국경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo5.gif" alt="한국경제" /></div>
+                                        <figcaption>www.hankyung.com</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>경향신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo4.gif" alt="경향신문" /></div>
+                                        <figcaption>www.khan.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>매일경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo7.gif" alt="매일경제" /></div>
+                                        <figcaption>www.mk.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>서울신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo6.gif" alt="서울신문" /></div>
+                                        <figcaption>www.seoul.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
-
+                        <ul class="gallery">
+                            <li>
+                                <h6>연합뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo2.gif" alt="연합뉴스" /></div>
+                                        <figcaption>www.yonhapnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>노컷뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo1.gif" alt="" /></div>
+                                        <figcaption>www.nocutnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>한겨레</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo3.gif" alt="한겨레" /></div>
+                                        <figcaption>www.hani.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>한국경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo5.gif" alt="한국경제" /></div>
+                                        <figcaption>www.hankyung.com</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>경향신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo4.gif" alt="경향신문" /></div>
+                                        <figcaption>www.khan.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>매일경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo7.gif" alt="매일경제" /></div>
+                                        <figcaption>www.mk.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>서울신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo6.gif" alt="서울신문" /></div>
+                                        <figcaption>www.seoul.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
-
+                        <ul class="gallery">
+                            <li>
+                                <h6>서울신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo6.gif" alt="서울신문" /></div>
+                                        <figcaption>www.seoul.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>노컷뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo1.gif" alt="" /></div>
+                                        <figcaption>www.nocutnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>한겨레</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo3.gif" alt="한겨레" /></div>
+                                        <figcaption>www.hani.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>경향신문</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo4.gif" alt="경향신문" /></div>
+                                        <figcaption>www.khan.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>연합뉴스</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo2.gif" alt="연합뉴스" /></div>
+                                        <figcaption>www.yonhapnews.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>한국경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo5.gif" alt="한국경제" /></div>
+                                        <figcaption>www.hankyung.com</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <h6>매일경제</h6>
+                                <a href="#">
+                                    <figure>
+                                        <div><img src="../assets/images/sub/relation-logo7.gif" alt="매일경제" /></div>
+                                        <figcaption>www.mk.co.kr</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

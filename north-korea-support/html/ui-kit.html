@@ -582,10 +582,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!-- 테이블 버튼 사용 시 오른쪾 버튼일 경우 class="in-right", 왼쪽 버튼일 경우 class="in-left" 적용 -->
-                    <div class="table-btn-set in-right">
-                        <a href class="btn-popup-qna-write" role="button">글쓰기</a>
-                    </div>
                     <h3><span class="fa fa-table"></span>table-type-02</h3>
                     <table class="table-type-02 table-name">
                         <caption>qna 팝업</caption>
@@ -649,26 +645,6 @@
                 <h2>Popup Base Style</h2>
                 <!-- 팝업 버튼 class 설정 -->
                 <a class="btn-popup-test" role="button" href>팝업 띄우기 <= 클릭</a>
-                <!-- 팝업 창 data-id 설정 -->
-                <div class="popup" data-id="test-area">
-                    <!-- [Start] 팝업 헤드라인 -->
-                    <header class="popup-headline">
-                        <h4>팝업 제목</h4>
-                        <button class="popup-close">창 닫기</button>
-                    </header>
-                    <!-- [End] 팝업 헤드라인 -->
-                    <!-- [Start] 팝업 콘텐츠 -->
-                    <div class="popup-content">
-                        <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
-                        <!-- [Start] 팝업 버튼 -->
-                        <div class="popup-btn-set">
-                            <!-- 닫기 버튼 필수 (접근성) -->
-                            <button class="popup-close">닫기</button>
-                        </div>
-                        <!-- [End] 팝업 버튼 -->
-                    </div>
-                    <!-- [End] 팝업 콘텐츠 -->
-                </div>
             </article>
             <!-- [End] 팝업 기본 스타일 -->
 
@@ -676,21 +652,21 @@
             <article>
                 <h2>Paging Style</h2>
                 <div class="paging">
-                    <button class="first-prev" aria-label="처음으로 이동"></button>
-                    <button class="prev" aria-label="이전 페이지"></button>
+                    <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
+                    <button type="button" class="prev" aria-label="이전 페이지"></button>
                     <a href role="button">1</a>
                     <a href role="button">2</a>
                     <a href role="button">3</a>
                     <a href role="button">4</a>
                     <!-- 선택된 버튼 class="selected"로 제어 -->
-                    <a class="selected" href role="button">5</a>
+                    <a href role="button" class="selected">5</a>
                     <a href role="button">6</a>
                     <a href role="button">7</a>
                     <a href role="button">8</a>
                     <a href role="button">9</a>
                     <a href role="button">10</a>
-                    <button class="next" " aria-label="다음 페이지"></button>
-                    <button class="last-next" aria-label="끝으로 이동"></button>
+                    <button type="button" class="next" " aria-label="다음 페이지"></button>
+                    <button type="button" class="last-next" aria-label="끝으로 이동"></button>
                 </div>
             </article>
             <!-- [End] 페이징 스타일 공통 -->
@@ -713,6 +689,29 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] Popup Base Style Area -->
+    <!-- 팝업 창 data-id 설정 -->
+<div class="popup" data-id="test-area">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>팝업 제목</h4>
+        <button type="button" class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content">
+        <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <!-- 닫기 버튼 필수 (접근성) -->
+            <button type="button" class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] Popup Base Style Area -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
