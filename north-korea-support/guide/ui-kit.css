@@ -1621,11 +1621,11 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.header, #container, .all-pages-view, .footer, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .relation-site .panel-group [role="tabpanel"] .gallery, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
+.header, #container, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
 
-.header:before, #container:before, .all-pages-view:before, .footer:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .relation-site .panel-group [role="tabpanel"] .gallery:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .header:after, #container:after, .all-pages-view:after, .footer:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .relation-site .panel-group [role="tabpanel"] .gallery:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
+.header:before, #container:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .header:after, #container:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
 
-.header:after, #container:after, .all-pages-view:after, .footer:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .relation-site .panel-group [role="tabpanel"] .gallery:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
+.header:after, #container:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
 
 .search-area .input-type label span, .login-bg .login-area .login-title { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -1950,7 +1950,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .select-box select::-ms-expand { display: none; }
 
 /* =======================================*/
-/* 아코디언 스타일*/
+/* 아코디언 스타일
 /* =======================================*/
 .aco-base, .aco-open { /* 아코디언 메뉴*/ /* 아코디언 패널*/ }
 
@@ -1961,7 +1961,36 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .aco-base [class*="sub"], .aco-open [class*="sub"] { display: none; }
 
 /* =======================================*/
-/* 탭 스타일*/
+/* 갤러리 스타일
+/* =======================================*/
+.gallery { /* 컬럼의 갯수 col1~col6 까지 class 생성*/ width: 100%; }
+
+.gallery.col1 li { float: left; width: 100%; padding: 0 5px; }
+
+.gallery.col1 li:nth-of-type(2n) { clear: both; }
+
+.gallery.col2 li { float: left; width: 50%; padding: 0 5px; }
+
+.gallery.col2 li:nth-of-type(3n) { clear: both; }
+
+.gallery.col3 li { float: left; width: 33.33333%; padding: 0 5px; }
+
+.gallery.col3 li:nth-of-type(4n) { clear: both; }
+
+.gallery.col4 li { float: left; width: 25%; padding: 0 5px; }
+
+.gallery.col4 li:nth-of-type(5n) { clear: both; }
+
+.gallery.col5 li { float: left; width: 20%; padding: 0 5px; }
+
+.gallery.col5 li:nth-of-type(6n) { clear: both; }
+
+.gallery.col6 li { float: left; width: 16.66667%; padding: 0 5px; }
+
+.gallery.col6 li:nth-of-type(7n) { clear: both; }
+
+/* =======================================*/
+/* 탭 스타일
 /* =======================================*/
 .tablist { /* 탭의 갯수 t1~t8 까지 class 생성*/ width: 100%; }
 
@@ -2188,7 +2217,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .accordion-lnb > li:last-child ul, .accordion-test .aco-base > li:last-child ul, .accordion-lnb > li [class*="link"] ul, .accordion-test .aco-base > li [class*="link"] ul { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
-.accordion-lnb > li.open [class*="link"], .accordion-test .aco-base > li.open [class*="link"] { position: relative; color: #003761; padding-left: 33px; background: #cee4f5; }
+.accordion-lnb > li.open, .accordion-test .aco-base > li.open { background: #cee4f5; }
+
+.accordion-lnb > li.open [class*="link"], .accordion-test .aco-base > li.open [class*="link"] { position: relative; color: #003761; padding-left: 33px; }
 
 .accordion-lnb > li.open [class*="link"]:before, .accordion-test .aco-base > li.open [class*="link"]:before { position: absolute; left: 20px; bottom: 16px; width: 6px; height: 2px; background: #003761; content: ""; }
 
@@ -2538,11 +2569,21 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 자료마당 > 관련사이트
 /* (html/relation-site.html)
 /* =======================================*/
-.relation-site .panel-group [role="tabpanel"] .gallery { width: 100%; }
+.relation-site .panel-group [role="tabpanel"] .gallery li { margin-top: 20px; }
 
-.relation-site .panel-group [role="tabpanel"] .gallery li { float: left; width: 25%; }
+.relation-site .panel-group [role="tabpanel"] .gallery li h6 { position: relative; font-size: 14px; font-weight: bold; padding-left: 10px; margin-bottom: 4px; color: #333; }
 
-.relation-site .panel-group [role="tabpanel"] .gallery li:nth-of-type(4n) { margin-bottom: 20px; }
+.relation-site .panel-group [role="tabpanel"] .gallery li h6:before { position: absolute; top: 8px; left: 0; display: block; width: 3px; height: 3px; background: #333; content: ""; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li a { display: block; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li a figure { text-align: center; border: 1px solid #e6e6e6; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li a figure div { height: 100px; line-height: 100px; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li a figure div img { vertical-align: middle; }
+
+.relation-site .panel-group [role="tabpanel"] .gallery li a figure figcaption { margin-bottom: -1px; background: #e6e6e6; line-height: 34px; }
 
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회
