@@ -1621,11 +1621,11 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.header, #container, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .support-application-status .content-box .form-area .form-group, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
+.header, #container, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .support-application-status .content-box-area .form-area .form-group, .unsubscribe .content-box-area .form-area .form-group, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
 
-.header:before, #container:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .support-application-status .content-box .form-area .form-group:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .header:after, #container:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box .form-area .form-group:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
+.header:before, #container:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .support-application-status .content-box-area .form-area .form-group:before, .unsubscribe .content-box-area .form-area .form-group:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .header:after, #container:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .form-area .form-group:after, .unsubscribe .content-box-area .form-area .form-group:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
 
-.header:after, #container:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box .form-area .form-group:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
+.header:after, #container:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .form-area .form-group:after, .unsubscribe .content-box-area .form-area .form-group:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -1830,11 +1830,19 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 .login-bg .login-area h2, .completion-of-business-application .list-form h3 { font-size: 30px; font-weight: normal; color: #003761; letter-spacing: -0.03em; text-align: center; }
 
+.content-box-area h3 { position: relative; font-size: 16px; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
+
+.content-box-area h3:before { position: absolute; top: 4px; left: 0; display: inline-block; width: 3px; height: 16px; background: #003761; content: ""; }
+
+.content-box-area:first-child { position: relative; }
+
+.content-box-area:first-child h3 { margin-top: 0; }
+
 /* =======================================*/
 /* Sub Page : Content Box 스타일
 /* =======================================*/
 /* =======================================*/
-/* Sub Page : 신청완료 스타일
+/* Sub Page : 등록 완료 스타일
 /* =======================================*/
 .sub-completed { text-align: center; margin-top: 30px; margin-bottom: 90px; }
 
@@ -1845,6 +1853,11 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .sub-completed .message span { font-weight: bold; color: #003761; }
 
 .sub-completed .btn-completed { margin-top: 50px; }
+
+/* =======================================*/
+/* Sub Page : 하단 버튼 영역 스타일
+/* =======================================*/
+.sub-bottom-btn-area { text-align: center; margin-top: 50px; margin-bottom: 90px; }
 
 /* =======================================*/
 /* 검색 영역 스타일
@@ -2704,47 +2717,63 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 법인.단체 > 지원접수현황 조회
 /* (html/support-application-status.html)
 /* =======================================*/
-.support-application-status { padding-left: 10px; padding-right: 10px; }
+.support-application-status, .unsubscribe { padding-left: 10px; padding-right: 10px; }
 
-.support-application-status .content-box h3 { position: relative; font-size: 16px; padding-left: 10px; margin-top: 60px; margin-bottom: 10px; }
+.support-application-status .content-box-area .form-area, .unsubscribe .content-box-area .form-area { position: relative; height: 178px; border-radius: 7px; border: 1px solid #afc0cc; box-shadow: 0 0 6px 6px #fdfdfd; background: #fff; }
 
-.support-application-status .content-box h3:before { position: absolute; top: 4px; left: 0; display: inline-block; width: 3px; height: 16px; background: #003761; content: ""; }
+.support-application-status .content-box-area .form-area .form-group, .unsubscribe .content-box-area .form-area .form-group { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 50px; width: 406px; height: 76px; }
 
-.support-application-status .content-box:first-child { position: relative; }
+.support-application-status .content-box-area .form-area .form-group .input-area, .unsubscribe .content-box-area .form-area .form-group .input-area { float: left; width: 316px; }
 
-.support-application-status .content-box:first-child h3 { margin-top: 0; }
+.support-application-status .content-box-area .form-area .form-group .input-area input, .unsubscribe .content-box-area .form-area .form-group .input-area input { width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
 
-.support-application-status .content-box .form-area { position: relative; height: 178px; border-radius: 7px; border: 1px solid #afc0cc; box-shadow: 0 0 6px 6px #fdfdfd; background: #fff; }
+.support-application-status .content-box-area .form-area .form-group .input-area input::-webkit-input-placeholder, .unsubscribe .content-box-area .form-area .form-group .input-area input::-webkit-input-placeholder { color: #fff; }
 
-.support-application-status .content-box .form-area .form-group { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 50px; width: 406px; height: 76px; }
+.support-application-status .content-box-area .form-area .form-group .input-area input::-moz-placeholder, .unsubscribe .content-box-area .form-area .form-group .input-area input::-moz-placeholder { color: #fff; }
 
-.support-application-status .content-box .form-area .form-group .input-area { float: left; width: 316px; }
+.support-application-status .content-box-area .form-area .form-group .input-area input:-ms-input-placeholder, .unsubscribe .content-box-area .form-area .form-group .input-area input:-ms-input-placeholder { color: #fff !important; }
 
-.support-application-status .content-box .form-area .form-group .input-area input { width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
+.support-application-status .content-box-area .form-area .form-group .input-area input:-moz-placeholder, .unsubscribe .content-box-area .form-area .form-group .input-area input:-moz-placeholder { color: #fff; }
 
-.support-application-status .content-box .form-area .form-group .input-area input::-webkit-input-placeholder { color: #fff; }
+.support-application-status .content-box-area .form-area .form-group .input-area input:focus, .unsubscribe .content-box-area .form-area .form-group .input-area input:focus { border: 1px solid #002847; }
 
-.support-application-status .content-box .form-area .form-group .input-area input::-moz-placeholder { color: #fff; }
+.support-application-status .content-box-area .form-area .form-group .input-area label, .unsubscribe .content-box-area .form-area .form-group .input-area label { line-height: 34px; }
 
-.support-application-status .content-box .form-area .form-group .input-area input:-ms-input-placeholder { color: #fff !important; }
+.support-application-status .content-box-area .form-area .form-group .input-area input, .unsubscribe .content-box-area .form-area .form-group .input-area input { float: right; margin-bottom: 8px; }
 
-.support-application-status .content-box .form-area .form-group .input-area input:-moz-placeholder { color: #fff; }
+.support-application-status .content-box-area .form-area .form-group .input-area label, .unsubscribe .content-box-area .form-area .form-group .input-area label { float: left; font-weight: bold; letter-spacing: -0.04em; color: #002644; }
 
-.support-application-status .content-box .form-area .form-group .input-area input:focus { border: 1px solid #002847; }
+.support-application-status .content-box-area .form-area .form-group .btn-search, .unsubscribe .content-box-area .form-area .form-group .btn-search { float: right; letter-spacing: -0.01em; background: #003761; border-bottom: 3px solid #002644; display: inline-block; min-width: 76px; height: 76px; line-height: 74px; text-align: center; padding: 0 10px; border-radius: 3px; color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
 
-.support-application-status .content-box .form-area .form-group .input-area label { line-height: 34px; }
+.support-application-status .content-box-area .form-area .form-group .btn-search:hover, .unsubscribe .content-box-area .form-area .form-group .btn-search:hover, .support-application-status .content-box-area .form-area .form-group .btn-search:focus, .unsubscribe .content-box-area .form-area .form-group .btn-search:focus, .support-application-status .content-box-area .form-area .form-group .btn-search:active, .unsubscribe .content-box-area .form-area .form-group .btn-search:active { border-bottom: 3px solid #002c4e; background: #003257; transition: all .3s ease; }
 
-.support-application-status .content-box .form-area .form-group .input-area input { float: right; margin-bottom: 8px; }
+.support-application-status .content-box-area .table-type-02 colgroup col:nth-child(1), .unsubscribe .content-box-area .table-type-02 colgroup col:nth-child(1) { width: 62px; }
 
-.support-application-status .content-box .form-area .form-group .input-area label { float: left; font-weight: bold; letter-spacing: -0.04em; color: #002644; }
+.support-application-status .content-box-area .table-type-02 th, .unsubscribe .content-box-area .table-type-02 th { text-align: center; }
 
-.support-application-status .content-box .form-area .form-group .btn-search { float: right; letter-spacing: -0.01em; background: #003761; border-bottom: 3px solid #002644; display: inline-block; min-width: 76px; height: 76px; line-height: 74px; text-align: center; padding: 0 10px; border-radius: 3px; color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
+/* =======================================*/
+/* 회원서비스 > 회원가입안내 > 약관동의 조회
+/* (html/accept-terms.html)
+/* =======================================*/
+.accept-terms .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; }
 
-.support-application-status .content-box .form-area .form-group .btn-search:hover, .support-application-status .content-box .form-area .form-group .btn-search:focus, .support-application-status .content-box .form-area .form-group .btn-search:active { border-bottom: 3px solid #002c4e; background: #003257; transition: all .3s ease; }
+.accept-terms .content-box-area .text-area h5 { font-size: 16px; }
 
-.support-application-status .content-box .table-type-02 colgroup col:nth-child(1) { width: 62px; }
+.accept-terms .content-box-area .text-area ul li h6 { font-size: 15px; margin: 10px 0; }
 
-.support-application-status .content-box .table-type-02 th { text-align: center; }
+.accept-terms .content-box-area .text-area ol { margin: 10px 0; }
+
+.accept-terms .content-box-area .text-area ol li { list-style: decimal; list-style-position: inside; }
+
+.accept-terms .content-box-area .checkbox-type, .accept-terms .content-box-area .radio-type { margin-top: 7px; }
+
+/* =======================================*/
+/* 회원서비스 > 회원가입안내 > 가입탈퇴 조회
+/* (html/unsubscribe.html)
+/* =======================================*/
+.unsubscribe .content-box-area .form-area .btn-secession { float: right; letter-spacing: -0.01em; background: #003761; border-bottom: 3px solid #002644; display: inline-block; min-width: 76px; height: 76px; line-height: 74px; text-align: center; padding: 0 10px; border-radius: 3px; color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
+
+.unsubscribe .content-box-area .form-area .btn-secession:hover, .unsubscribe .content-box-area .form-area .btn-secession:focus, .unsubscribe .content-box-area .form-area .btn-secession:active { border-bottom: 3px solid #002c4e; background: #003257; transition: all .3s ease; }
 
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회
@@ -2914,9 +2943,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .ui-kit h1 .fa { font-size: 30px; vertical-align: 4px; }
 
-.ui-kit article { background: #fff; padding: 20px; margin-bottom: 20px; border: 1px solid #e2e2e2; }
+.ui-kit section > article { background: #fff; padding: 20px; margin-bottom: 20px; border: 1px solid #e2e2e2; }
 
-.ui-kit article h2 { color: #002847; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #e2e2e2; }
+.ui-kit section > article h2 { color: #002847; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #e2e2e2; }
 
 .btn-type-sample p { font-size: 12px; margin-top: 20px; margin-bottom: 10px; }
 
