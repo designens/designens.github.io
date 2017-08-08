@@ -72,6 +72,12 @@
       $.popupId($popups, 'popup-business-application').open();
     });
     
+    // 구비서류 올리기 팝업
+    $('.btn-popup-applicant-application').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-applicant-application').open();
+    });
+    
     // GNB 전체메뉴
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈
     $('.btn-gnb-all').click(function() {
