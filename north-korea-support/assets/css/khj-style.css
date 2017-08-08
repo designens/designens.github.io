@@ -1,2 +1,28 @@
+@charset "UTF-8";
+/* 회원서비스 > 회원가입안내 > 가입탈퇴 조회
+html/unsubscribe-list.html */
+.unsubscribe-list-content { width: 930px; margin: 0 auto; }
+
+.unsubscribe-list-content .unsubscribe-list-title { border-left: 3px solid #003761; font-size: 16px; font-weight: bold; padding-left: 7px; line-height: 16px; margin-bottom: 18px; }
+
+.unsubscribe-list-form { position: relative; height: 178px; border-radius: 7px; border: 1px solid #afc0cc; box-shadow: 0 0 6px 6px #fdfdfd; background: #fff; }
+
+.unsubscribe-list-content .form-group { width: 406px; height: 76px; margin: 50px auto; }
+
+.unsubscribe-list-content .form-group .input-area { float: left; }
+
+.unsubscribe-list-content .form-group .input-area label { float: left; line-height: 34px; font-weight: bold; letter-spacing: -0.04em; color: #2e3a42; margin-right: 34px; }
+
+.unsubscribe-list-content .form-group .input-area input { float: right; margin-bottom: 8px; clear: both; cursor: auto; width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
+
+.unsubscribe-list-check { width: 300px; margin: 30px auto; }
+
+.unsubscribe-list-check img { width: 40px; margin-right: 20px; vertical-align: middle; }
+
+.unsubscribe-list-confirm { display: inline-block; font-size: 20px; letter-spacing: -0.1em; vertical-align: middle; }
+
+.unsubscribe-list-content .btn-search { float: right; letter-spacing: -0.01em; background: #003761; border-bottom: 3px solid #002644; display: inline-block; min-width: 76px; height: 76px; line-height: 74px; text-align: center; padding: 0 10px; border-radius: 3px; color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
+
+.unsubscribe-list-btn { width: 200px; margin: 50px auto; }
 
 /*# sourceMappingURL=map/khj-style.css.map */
