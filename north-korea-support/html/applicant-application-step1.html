@@ -175,176 +175,147 @@
 
     <!-- [Start] Container Area -->
     <main id="container" class="wrap">
+
+        <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>기금사업신청</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
-                <li class="open">
-                    <a href="#" class="lnb-link" role="button">신청절차<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <li>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">법인·단체</a>
+                            <ul>
+                                 <li><a href="">사업자 가입안내</a></li>
+                                 <li><a href="">사업자 신청</a></li>
+                                 <li><a href="">지원접수현황</a></li>
+                             </ul> 
+                        </li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                 <li><a href="">약관 동의</a></li>
+                                 <li><a href="">가입 신청</a></li>
+                                 <li><a href="">가입 승인 확인</a></li>
+                                 <li><a href="">가입 탈퇴</a></li>
+                             </ul> 
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">사업 신청<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">결과 조회<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">자금 사용보고서 등록<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
+        <!-- [End] LNB 메뉴 -->
+        
+        <!-- [Start] Content Area -->
         <section class="content-area">
+
+            <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">사업 신청</h2>
+                <h2 class="sub-title">약관 동의</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">기금사업신청</a>
-                    <a href="#">사업 신청</a>
+                    <a href="#">회원서비스</a>
+                    <a href="#">회원가입안내</a>
+                    <a href="#">담당자</a>
+                    <a href="#">약관 동의</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
-            <div class="content applicant-application-step1">
-                <!-- [Start] 탭 영역 -->
-                <div class="tablist t3" role="tablist">
-                    <a id="tab1" aria-controls="panel1" role="tab" href><span>신청정보</span></a>
-                    <a id="tab2" aria-controls="panel2" role="tab" href><span>사업정보</span></a>
-                    <a id="tab3" aria-controls="panel3" role="tab" href><span>구비서류</span></a>
+            <!-- [End] 컨텐츠 타이틀 -->
+            
+            <!-- [Start] 컨텐츠 상세  -->
+            <div class="content accept-terms">
+            
+                <!-- [Start] 회원 이용약관 -->
+                <article class="content-box-area">
+                    <h3>회원 이용약관</h3>
+                    <div class="text-area">
+                        <h5>제 1 장 총칙</h5>
+                        <ul>
+                            <li>
+                                <h6>제 1 조 (목적)</h6>
+                                본약관은 통일부 <span>대북지원정보시스템</span> (통일부 사이트, 이하 ‘통일부’)에서 제공하는 모든 서비스(이하 ‘서비스’)의 이용조건 및 책임사항과 기타 필요한 사항을 규정함을 목적으로 한다.
+                            </li>
+                            <li>
+                                <h6>제 2 조 (약관과 법률과의 관계)</h6>
+                                본약관은 통일부 대북지원정보시스템 (통일부 사이트, 이하 ‘통일부’)에서 제공하는 모든 서비스(이하 ‘서비스’)의 이용조건 및 책임사항과 기타 필요한 사항을 규정함을 목적으로 한다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="checkbox-type">
+                        <input type="checkbox" id="terms-of-use" name="terms-of-use">
+                        <label for="terms-of-use">회원 이용약관에 동의합니다.</label>
+                    </div>
+                </article>
+                <!-- [End] 회원 이용약관 -->
+            
+                <!-- [Start] 개인정보 수집 · 이용에 대한 안내 -->
+                <article class="content-box-area">
+                    <h3>개인정보 수집 · 이용에 대한 안내</h3>
+                    <div class="text-area">
+                        <p>
+                            통일부 <span>대북지원정보시스템</span>은 이용자들의 개인정보보호를 매우 중요시하며, 이용자가 <span>대북지원정보시스템</span>의 서비스(이하 ‘서비스’라 함)를 이용함과 동시에 온라인상에서 <span>대북지원정보시스템</span>에 제공한 개인정보가 보호 받을 수있도록 최선을 다하고 있습니다.<br>
+                        </p>
+                        <p>
+                            이에 <span>대북지원정보시스템</span>은 ‘남북교류협력에 관한 법률’을 기반으로 개인정보보호법, 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보 보호 등에 관한 법률 등 정보 통신서비스제공자가 준수하여야 할 관련 법규상의 개인정보 보호 규정 및 개인정보보호지침을 준수하고 있습니다.<br>
+                        </p>
+                       <p>
+                            대북지원정보시스템은 개인정보처리방침을 통하여 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취
+                        </p>
+                    </div>
+                    <div class="checkbox-type">
+                        <input type="checkbox" id="collection-agreement" name="collection-agreement">
+                        <label for="collection-agreement">개인정보 수집 · 이용에 동의합니다.</label>
+                    </div>
+                </article>
+                <!-- [End] 개인정보 수집 · 이용에 대한 안내 -->
+
+
+                <!-- [Start] 개인정보 처리방침에 대한 안내 -->
+                <article class="content-box-area">
+                    <h3>개인정보 처리방침에 대한 안내</h3>
+                    <div class="text-area">
+                        <p>통일부는 원칙적으로 정보주체의 개인정보를 수집 · 이용 목적으로 명시한 범위 내에서 처리하며, 다음의 경우를 제외하고는 정보주체의 사전동의 없이는 본래의 목적 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.</p>
+                        <ol>
+                            <li>정보주제로부터 별도의 통의를 받는 경우</li>
+                            <li>법률에 특별한 규정이 있는 경우</li>
+                            <li>정보주체 또는 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박하나 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</li>
+                        </ol>
+                    </div>
+                    <div class="checkbox-type">
+                        <input type="checkbox" id="processing-policy" name="processing-policy">
+                        <label for="processing-policy">개인정보 처리방침에 동의합니다.</label>
+                    </div>
+                </article>
+                <!-- [End] 개인정보 처리방침에 대한 안내 -->
+                
+                <!-- [Start] 하단 버튼 영역 -->
+                <div class="sub-bottom-btn-area">
+                    <a href="" class="btn-type-2-04" role="button">동의</a>
+                    <a href="" class="btn-type-2-01" role="button">취소</a>
                 </div>
-                <div class="panel-group">
-                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
-                        <table class="table-type-02">
-                            <caption>신청정보 테이블의 공고명, 단체명, 대표자, 지원분야, 사업명, 사업상대자, 기금신청금액 항목을 작성합니다.</caption>
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>공고명</th>
-                                    <td colspan="3">
-                                        <div class="select-box">
-                                            <label for="search">선택</label>
-                                            <select id="search" name="search-item">
-                                                <option selected="selected">선택</option>
-                                                <option>공고명 01</option>
-                                                <option>공고명 02</option>
-                                                <option>공고명 03</option>
-                                                <option>공고명 04</option>
-                                                <option>공고명 05</option>
-                                            </select>
-                                        </div>
-                                        <a class="btn-type-1-02 btn-popup-business-application" role="button" href>공고내용 상세보기</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>단체명</th>
-                                    <td><strong>대북지원단체1</strong></td>
-                                    <th>대표자</th>
-                                    <td><strong>홍길동</strong></td>
-                                </tr>
-                                <tr>
-                                    <th>지원분야</th>
-                                    <td class="lines" colspan="3">
-                                        <ul class="checkbox-type">
-                                            <li>
-                                                <input type="checkbox" id="field-01" name="식량차관">
-                                                <label for="field-01">식량차관</label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="field-02" name="일반구호">
-                                                <label for="field-02">일반구호</label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="field-03" name="사회복지">
-                                                <label for="field-03">사회복지</label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="field-04" name="보건의료">
-                                                <label for="field-04">보건의료</label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="field-05" name="농업">
-                                                <label for="field-05">농업</label>
-                                            </div>
-                                            <li>
-                                                <input type="checkbox" id="field-06" name="산림">
-                                                <label for="field-06">산림</label>
-                                            </div>
-                                            <li>
-                                                <input type="checkbox" id="field-07" name="생활개선/에너지">
-                                                <label for="field-07">생활개선/에너지</label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" id="field-08" name="환경">
-                                                <label for="field-08">환경</label>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>사업명</th>
-                                    <td colspan="3">
-                                        <div class="input-type w100p">
-                                            <label>
-                                                <span>사업명 작성</span>
-                                                <input type="text"/>
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>사업상대자</th>
-                                    <td colspan="3">
-                                        <div class="input-type w100p">
-                                            <label>
-                                                <span>사업 상대자 작성</span>
-                                                <input type="text"/>
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>기금신청금액</th>
-                                    <td colspan="3" class="input-price">
-                                        <div class="input-type">
-                                            <label>
-                                                <span>총소요자금</span>
-                                                <input type="number"/>
-                                                <span>원</span>
-                                            </label>
-                                        </div>
-                                        <div class="input-type">
-                                            <label>
-                                                <span>자페재원확보액</span>
-                                                <input type="number"/>
-                                                <span>원</span>
-                                            </label>
-                                        </div>
-                                        <div class="input-type">
-                                            <label>
-                                                <span>기금지원신청액</span>
-                                                <input type="number" placeholder="기금지원신청액 작성" />
-                                                <span>원</span>
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="table-btn-set">
-                            <button class="btn-type-2-01">다음단계</button>
-                            <button class="btn-type-2-04">저장하기</button>
-                        </div>
-                    </div>
-                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
-                    </div>
-                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
-                    </div>
-                </div>
-                <!-- [End] 탭 영역 -->
+                <!-- [End] 하단 버튼 영역 -->
+
             </div>
+            <!-- [End] 컨텐츠 상세  -->
+
         </section>
+        <!-- [End] Content Area -->
+
     </main>
     <!-- [End] Container Area -->
 
@@ -362,130 +333,6 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
-
-    <!-- [Start] 공고내용 상세보기 Popup -->
-    <div class="popup" data-id="popup-business-application">
-    <!-- [Start] 팝업 헤드라인 -->
-    <header class="popup-headline">
-        <h4>기금사업공고 상세 내용</h4>
-        <button class="popup-close">창 닫기</button>
-    </header>
-    <!-- [End] 팝업 헤드라인 -->
-    <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-business-application">
-        <table class="table-type-02 table-name">
-            <caption>기금사업공고 상세 내용 테이블의 공고명, 지원분야 작성일, 개요, 제출서류, 신청기간, 신청방법, 접수 및 문의처, 심사 및 통보 항목이 있습니다.</caption>
-            <colgroup>
-                <col>
-                <col>
-            </colgroup>
-            <tbody>
-                <tr>
-                    <th>공고명</th>
-                    <td>북녘동포 의약품 및 각종 생필품 보내기 사업<a href="" class="btn-type-1-03" role="button">기금사업 신청하기</a></td>
-                </tr>
-                <tr>
-                    <th>지원분야</th>
-                    <td>
-                        <ul class="checkbox-type">
-                            <li>
-                                <input type="checkbox" id="field-01" name="식량차관">
-                                <label for="field-01">식량차관</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-02" name="일반구호">
-                                <label for="field-02">일반구호</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-03" name="사회복지">
-                                <label for="field-03">사회복지</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-04" name="보건의료">
-                                <label for="field-04">보건의료</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-05" name="농업">
-                                <label for="field-05">농업</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-06" name="산림">
-                                <label for="field-06">산림</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-07" name="생활개선/에너지">
-                                <label for="field-07">생활개선/에너지</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="field-08" name="환경">
-                                <label for="field-08">환경</label>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>작성일</th>
-                    <td>2017-11-11</td>
-                </tr>
-                <tr>
-                    <th>개요</th>
-                    <td>
-                        <ul class="summary">
-                            <li><strong>- 지원 대상 사업</strong>
-                                <ol>
-                                    <li>1. 진료소 지원 사업</li>
-                                    <li>2. 온실 지원 사업</li>
-                                    <li>3. 낙농 지원 사업</li>
-                                </ol>
-                            </li>
-                            <li><strong>- 신청자격</strong> : 대북 지원 사업자로 지정된 비영리법인 또는 단체</li>
-                            <li><strong>- 지원 규모</strong> : 3개 부문 총 30억원(1개 부분당 10억원)</li>
-                            <li>* 각 부문 중복지원 가능, 부문 당 복수 단체 선정</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>제출서류</th>
-                    <td class="download">
-                        <p><span>- 남북협력기금 지원 신청서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
-                        <p><span>- 대북지원 사업 계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
-                        <p><span>- 남북협력기금 사용계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
-                        <p><span>- 분배 투명성 확보 계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
-                        <p><span>- 단체 관련 자료 1부</span><a class="btn-download">양식 다운로드하기</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>신청기간</th>
-                    <td>2017-11-11 ~ 2018-11-11</td>
-                </tr>
-                <tr>
-                    <th>신청방법</th>
-                    <td>이메일 또는 등기우편(접수 마감일 18:00 도착분에 한함)</td>
-                </tr>
-                <tr>
-                    <th>접수 및 문의처</th>
-                    <td>
-                        <p>통일부 교류 협력국 인도 지원과</p>
-                        <p><strong>주소</strong></p>
-                        <p><strong>전화</strong> </p>
-                        <p><strong>이메일</strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>심사 및 통보</th>
-                    <td>심사평가단 심사 후 선정</td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- [Start] 팝업 버튼 -->
-        <div class="popup-btn-set">
-            <button class="popup-close">닫기</button>
-        </div>
-        <!-- [End] 팝업 버튼 -->
-    </div>
-    <!-- [End] 팝업 콘텐츠 -->
-</div>
-    <!-- [End] 공고내용 상세보기 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
