@@ -1831,7 +1831,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 .login-bg .login-area h2, .completion-of-business-application .list-form h3 { font-size: 30px; font-weight: normal; color: #003761; letter-spacing: -0.03em; text-align: center; }
 
-.content-box-area h3 { position: relative; font-size: 16px; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
+.content-box-area h3 { position: relative; font-size: 16px; letter-spacing: -0.04em; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
 
 .content-box-area h3:before { position: absolute; top: 4px; left: 0; display: inline-block; width: 3px; height: 16px; background: #003761; content: ""; }
 
@@ -1858,7 +1858,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 /* Sub Page : 하단 버튼 영역 스타일
 /* =======================================*/
-.sub-bottom-btn-area { text-align: center; margin-top: 50px; margin-bottom: 90px; }
+.sub-bottom-btn-area { text-align: center; margin-top: 30px; margin-bottom: 90px; }
 
 /* =======================================*/
 /* 검색 영역 스타일
@@ -2756,11 +2756,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 회원가입안내 > 약관동의 조회
 /* (html/accept-terms.html)
 /* =======================================*/
-.accept-terms .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; }
+.accept-terms .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; font-size: 13px; color: #666; }
 
-.accept-terms .content-box-area .text-area h5 { font-size: 16px; }
+.accept-terms .content-box-area .text-area h5 { font-size: 13px; }
 
-.accept-terms .content-box-area .text-area ul li h6 { font-size: 15px; margin: 10px 0; }
+.accept-terms .content-box-area .text-area span { font-weight: bold; }
+
+.accept-terms .content-box-area .text-area p { padding-bottom: 22px; }
+
+.accept-terms .content-box-area .text-area p:last-child { padding-bottom: 0; }
+
+.accept-terms .content-box-area .text-area ul li h6 { font-size: 13px; margin: 13px 0; }
 
 .accept-terms .content-box-area .text-area ol { margin: 10px 0; }
 
