@@ -1628,11 +1628,11 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.add-file-area .file, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .support-application-status .content-box-area .tracking-progress ul, .unsubscribe .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
+.add-file-area .file, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .support-application-status .content-box-area .tracking-progress ul, .unsubscribe .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
 
-.add-file-area .file:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .support-application-status .content-box-area .tracking-progress ul:before, .unsubscribe .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .add-file-area .file:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
+.add-file-area .file:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .support-application-status .content-box-area .tracking-progress ul:before, .unsubscribe .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .add-file-area .file:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
 
-.add-file-area .file:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
+.add-file-area .file:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -1741,17 +1741,21 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 /* =======================================*/
 /* 페이징 스타일 /* =======================================*/
-.paging { text-align: center; margin-top: 30px; }
+.paging { display: inline-block; text-align: center; margin-top: 30px; position: relative; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
-.paging button { position: relative; display: inline-block; width: 36px; height: 36px; vertical-align: top; padding: 0 4px; border: 1px solid #c2c2c2; }
+.paging button { float: left; position: relative; display: inline-block; width: 36px; height: 36px; vertical-align: top; padding: 0 4px; border-top: 1px solid #c2c2c2; border-left: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2; }
 
 .paging button:before, .paging button:after { position: absolute; top: 12px; }
+
+.paging button.first-prev { margin-left: 0; }
 
 .paging button.first-prev:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
 .paging button.first-prev:after { right: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
 .paging button.prev:before { left: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+
+.paging button.last-next { border-right: 1px solid #c2c2c2; }
 
 .paging button.last-next:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
@@ -1763,7 +1767,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 .paging button:focus:before, .paging button:focus:after, .paging button:active:before, .paging button:active:after, .paging button.selected:before, .paging button.selected:after { color: #003761; }
 
-.paging a { display: inline-block; width: 36px; height: 36px; line-height: 34px; padding: 0 4px; border: 1px solid #c2c2c2; }
+.paging a { float: left; display: inline-block; width: 36px; height: 36px; line-height: 34px; padding: 0 4px; border-top: 1px solid #c2c2c2; border-left: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2; }
 
 .paging a:focus, .paging a:active, .paging a.selected { font-weight: bold; color: #003761; border-bottom: 3px solid #112a3d; }
 
@@ -2271,6 +2275,14 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .table-li li:last-child { border-right: 0; }
 
 /* dl, dt, dd 테이블 형태 */
+.table-dl { width: 100%; display: table; border: 1px solid #d1d1d1; }
+
+.table-dl dt, .table-dl dd { display: table-cell; height: 42px; line-height: 42px; }
+
+.table-dl dt { font-weight: bold; color: #2e3a42; padding: 0 20px; background: #f0f3f5; border-right: 1px solid #d1d1d1; }
+
+.table-dl dd { padding: 0 10px; }
+
 .table-dt-dd { width: 100%; border: 1px solid #d1d1d1; }
 
 .table-dt-dd dt, .table-dt-dd dd { border-bottom: 1px solid #d1d1d1; }
@@ -2861,6 +2873,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* (html/accept-terms.html)
 /* =======================================*/
 .accept-terms { padding: 0 10px; }
+
+.accept-terms .table-li .title { width: 200px; }
 
 .accept-terms .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; font-size: 13px; color: #666; }
 
