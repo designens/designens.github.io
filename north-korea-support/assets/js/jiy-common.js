@@ -117,6 +117,6 @@
     // (필수) 첫번째 인자: 객체 지향 자바스크립트 클래스를 연결할 대상 선택자
     // (옵션) 두번째 인자: 활성화 CSS 클래스 이름 (기본 값: 'show-widget')
     // (옵션) 세번째 인자: 다운로드 파일 클래스 이름 (기본 값: 'download-file')
-    new global.downloadWidget('.download-type-02');
+    new global.downloadWidget('.table-download');
 
 })(window, document, window.jQuery);

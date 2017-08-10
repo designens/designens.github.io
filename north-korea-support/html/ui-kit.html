@@ -177,6 +177,9 @@
             <article>
                 <h2>Input</h2>
                 <div class="form-group">
+
+                    <h3>설명이 있는 인풋 스타일</h3>
+                    <!-- [Start] 설명이 있는 인풋 스타일 -->
                     <div class="input-type">
                         <label for="username">아이디</label>
                         <input type="text" id="username" name="username" required="required" />
@@ -185,13 +188,26 @@
                         <label for="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
-                </div>
-                <br>
-                <div class="input-type">
-                    <label>
-                        <span>입력폼</span>
-                        <input type="text"/>
-                    </label>
+                    <!-- [End] 설명이 있는 인풋 스타일 -->
+
+                    <h3>설명이 없는 인풋 스타일</h3>
+                    <!-- [Start] 설명이 없는 인풋 스타일 -->
+                    <div class="input-type">
+                        <label aria-label="텍스트 입력">
+                            <input type="text"/>
+                        </label>
+                    </div>
+                    <!-- [End] 설명이 없는 인풋 스타일 -->
+
+                    <h3>Placeholder가 있는 인풋 스타일</h3>
+                    <!-- [Start] Placeholder가 있는 인풋 스타일 -->
+                    <div class="input-type">
+                        <label aria-label="Placeholder 텍스트 입력">
+                            <input type="text" placeholder="Placeholder 사용" />
+                        </label>
+                    </div>
+                    <!-- [End] Placeholder가 있는 인풋 스타일 -->
+
                 </div>
             </article>
             <!-- [End] Input 공통 -->
@@ -296,12 +312,36 @@
             <!-- [Start] 파일 아이콘 스타일 공통 -->
             <article>
                 <h2>File Icon Style</h2>
-                <ul class="file-icon-box">
-                    <li class="icon-hwp">.icon-hwp 파일 아이콘</li>
-                    <li class="icon-doc">.icon-doc 파일 아이콘</li>
-                    <li class="icon-pdf">.icon-pdf 파일 아이콘</li>
-                    <li class="icon-jpg">.icon-jpg 파일 아이콘</li>
-                </ul>
+                <div class="add-file-area">
+                    <div class="file">
+                        <a class="icon-hwp" role="button" href="">hwp-첨부파일.hwp</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-doc" role="button" href="">doc-첨부파일.doc</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-pdf" role="button" href="">pdf-첨부파일.pdf</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-jpg" role="button" href="">jpg-첨부파일.jpg</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-png" role="button" href="">png-첨부파일.png</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-xls" role="button" href="">xls-첨부파일.xls</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-ppt" role="button" href="">ppt-첨부파일.ppt</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                </div>
             </article>
             <!-- [End] 파일 아이콘 스타일 공통 -->
 
@@ -481,7 +521,7 @@
                                 <!-- 한 줄 이상 줄바꿈 없이 말줄임 처리 class="view-link" 적용 -->
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.</a></a></td>
                                 <td>id****</td>
-                                <td class="download-type-02">
+                                <td class="table-download">
                                     <span class="icon-hwp"></span>
                                     <span class="icon-doc"></span>
                                     <span class="icon-pdf"></span>
@@ -501,7 +541,7 @@
                                 <td>북한동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02">
+                                <td class="table-download">
                                     <span class="icon-hwp"></span>
                                     <span class="icon-doc"></span>
                                     <span class="icon-pdf"></span>
@@ -521,7 +561,7 @@
                                 <td>행사정보</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -529,7 +569,7 @@
                                 <td>기타</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -537,7 +577,7 @@
                                 <td>북한동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -545,7 +585,7 @@
                                 <td>행사정보</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -553,7 +593,7 @@
                                 <td>기타</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -561,7 +601,7 @@
                                 <td>국내외 언론동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -569,7 +609,7 @@
                                 <td>국내외 언론동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -577,7 +617,7 @@
                                 <td>기타</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                         </tbody>
@@ -689,6 +729,54 @@
                 </article>
             </article>
             <!-- [End] 서브 컨텐츠 타이틀 공통 -->
+
+            <!-- [Start] 서브 컨텐츠 폼 공통 -->
+            <article>
+                <h2>Sub Content Box Form Style</h2>
+                <div class="content-form-area">
+                    <div class="form-group">
+                        <div class="input-area">
+                            <input type="text" id="username" name="username" required="required" />
+                            <label for="username">담당자 ID</label>
+                            <br>
+                            <input type="password" id="password" name="password" required="required" />
+                            <label for="password">비밀번호</label>
+                        </div>
+                        <button class="btn-input-area">탈퇴</button>
+                    </div>
+                </div>
+            </article>
+            <!-- [End] 서브 컨텐츠 폼 공통 -->
+
+            <!-- [Start] 하단 버튼 영역 공통 -->
+            <article>
+                <h2>Sub Buttom Button Style</h2>
+                <div class="sub-bottom-btn-area">
+                    <a href="" class="btn-type-2-04" role="button">동의</a>
+                    <a href="" class="btn-type-2-01" role="button">취소</a>
+                </div>
+            </article>
+            <!-- [End] 하단 버튼 영역 공통 -->
+
+            <!-- [Start] 하단 버튼 영역 공통 -->
+            <article>
+                <h2>Sub Buttom Button Style</h2>
+                <div class="porgress-area-test">
+                    <p>.porgress-area.bar-step0</p>
+                    <div  class="porgress-area bar-step0"></div>
+                    <p>.porgress-area.bar-step1</p>
+                    <div  class="porgress-area bar-step1"></div>
+                    <p>.porgress-area.bar-step2</p>
+                    <div  class="porgress-area bar-step2"></div>
+                    <p>.porgress-area.bar-step3</p>
+                    <div  class="porgress-area bar-step3"></div>
+                    <p>.porgress-area.bar-step4</p>
+                    <div  class="porgress-area bar-step4"></div>
+                    <p>.porgress-area.bar-step5</p>
+                    <div  class="porgress-area bar-step5"></div>
+                </div>
+            </article>
+            <!-- [End] 하단 버튼 영역 공통 -->
 
         </section>
     </main>

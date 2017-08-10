@@ -279,7 +279,7 @@
                             <td>국내외 언론동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></a></td>
                             <td>id****</td>
-                            <td class="download-type-02">
+                            <td class="table-download">
                                 <span class="icon-hwp"></span>
                                 <span class="icon-doc"></span>
                                 <span class="icon-pdf"></span>
@@ -299,7 +299,7 @@
                             <td>북한동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02">
+                            <td class="table-download">
                                 <span class="icon-hwp"></span>
                                 <span class="icon-doc"></span>
                                 <span class="icon-pdf"></span>
@@ -319,7 +319,7 @@
                             <td>행사정보</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -327,7 +327,7 @@
                             <td>기타</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -335,7 +335,7 @@
                             <td>북한동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -343,7 +343,7 @@
                             <td>행사정보</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -351,7 +351,7 @@
                             <td>기타</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -359,7 +359,7 @@
                             <td>국내외 언론동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -367,7 +367,7 @@
                             <td>국내외 언론동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
@@ -375,7 +375,7 @@
                             <td>기타</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
-                            <td class="download-type-02"></td>
+                            <td class="table-download"></td>
                             <td>2017-12-11</td>
                         </tr>
                     </tbody>
@@ -465,12 +465,16 @@
                 </tr>
                 <tr>
                     <th>첨부파일</th>
-                    <td class="download-type-01" colspan="3">
-                        <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                        <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                    <td class="add-file-area" colspan="3">
+                        <div class="file full-name">
+                            <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                        </div>
+                        <div class="file full-name">
+                            <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                        </div>
                     </td>
                 </tr>
-            </tbody>
+            </tbody>s
         </table>
         <dl class="table-dt-dd">
             <dt>질문</dt>
@@ -520,9 +524,11 @@
                 <tr>
                     <th>제목</th>
                     <td colspan="3">
-                        <label class="input-type w100p">
-                            <input type="text"/>
-                        </label>
+                        <div class="input-type">
+                            <label>
+                                <input type="text"/>
+                            </label>
+                        </div>
                         <div class="checkbox-type secret-article">
                             <input type="checkbox" id="secretArticle" name="secretArticle">
                             <label for="secretArticle">비밀글 (체크시 작성자만 내용을 확인할 수 있습니다.)</label>
@@ -532,36 +538,44 @@
                 <tr>
                     <th for="username">작성자</th>
                     <td>
-                        <label class="input-type">
-                            <input type="text" id="username" name="username" required="required" />
-                        </label>
+                        <div class="input-type">
+                            <label>
+                                <input type="text" id="username" name="username" required="required" />
+                            </label>
+                        </div>
                     </td>
                     <th for="password">패스워드</th>
                     <td>
-                        <label class="input-type">
-                            <input type="password" id="password" name="password" required="required"/>
-                        </label>
+                        <div class="input-type">
+                            <label>
+                                <input type="password" id="password" name="password" required="required"/>
+                            </label>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <th>보안문자</th>
                     <td class="security-text-area" colspan="3">
-                        <label class="input-type">
-                            <input type="text"/>
-                        </label>
+                        <div class="input-type">
+                            <label>
+                                <input type="text"/>
+                            </label>
+                        </div>
                         <div class="security-text">보안문자 영역</div>
                         <strong>* 보안문자를 확인하시고 입력해주세요.</strong>
                     </td>
                 </tr>
                 <tr>
                     <th>첨부파일</th>
-                    <td class="download-type-01" colspan="3">
+                    <td colspan="3">
                         <div class="add-file-sherch">
                             <span>파일추가 : </span>
                             <div class="file-sherch">
-                                <label class="input-type">
-                                    <input type="text"/>
-                                </label>
+                                <div class="input-type">
+                                    <label>
+                                        <input type="text"/>
+                                    </label>
+                                </div>
                                 <button class="btn-file-sherch">파일 검색</button>
                             </div>
                         </div>
