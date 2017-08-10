@@ -1976,15 +1976,15 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 .search-area { width: 100%; padding: 19px 0; font-size: 0; text-align: center; border: 1px solid #c5d2db; margin-bottom: 30px; background: #f5f8fa; }
 
-.search-area li { display: inline-block; font-size: 14px; margin-right: 6px; vertical-align: top; }
+.search-area li { display: inline-block; height: 30px; line-height: 30px; font-size: 14px; margin-right: 6px; }
 
-.search-area li:first-child { margin-right: 10px; vertical-align: -1px; }
+.search-area li:first-child { margin-right: 10px; }
 
 .search-area li:last-child { margin-right: 0; }
 
 .search-area .search-title { font-weight: bold; color: #2e3a42; }
 
-.search-area .select-box:nth-of-type(1) { position: relative; width: 130px; height: 30px; vertical-align: -1px; }
+.search-area .select-box:nth-of-type(1) { position: relative; width: 130px; height: 30px; }
 
 .search-area .select-box:nth-of-type(1):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
@@ -1996,7 +1996,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .search-area .select-box:nth-of-type(1) select::-ms-expand { display: none; }
 
-.search-area .select-box:nth-of-type(2) { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+.search-area .select-box:nth-of-type(2) { position: relative; width: 90px; height: 30px; }
 
 .search-area .select-box:nth-of-type(2):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
@@ -2095,7 +2095,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 /* 셀렉트박스 스타일
 /* =======================================*/
-.select-box { display: inline-block; position: relative; width: 160px; height: 30px; vertical-align: -1px; }
+.select-box { display: inline-block; position: relative; width: 160px; height: 30px; }
 
 .select-box:before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
@@ -2704,7 +2704,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .notices-content td:nth-child(2) { text-align: left; }
 
-.notices-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; vertical-align: -1px; }
+.notices-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; }
 
 .notices-content .search-area li:nth-of-type(2):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
@@ -2716,7 +2716,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .notices-content .search-area li:nth-of-type(2) select::-ms-expand { display: none; }
 
-.notices-content .search-area li:nth-of-type(3) { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+.notices-content .search-area li:nth-of-type(3) { position: relative; width: 90px; height: 30px; }
 
 .notices-content .search-area li:nth-of-type(3):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
@@ -2754,7 +2754,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .resources-content td:nth-child(3) { text-align: left; }
 
-.resources-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; vertical-align: -1px; }
+.resources-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; }
 
 .resources-content .search-area li:nth-of-type(2):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
@@ -2766,7 +2766,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .resources-content .search-area li:nth-of-type(2) select::-ms-expand { display: none; }
 
-.resources-content .search-area li:nth-of-type(3) { position: relative; width: 90px; height: 30px; vertical-align: -1px; }
+.resources-content .search-area li:nth-of-type(3) { position: relative; width: 90px; height: 30px; }
 
 .resources-content .search-area li:nth-of-type(3):before { position: absolute; top: -2px; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
 
