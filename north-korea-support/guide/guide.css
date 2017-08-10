@@ -1876,7 +1876,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .content-form-area .form-group { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 50px; width: 406px; height: 76px; }
 
-.content-form-area .form-group .input-area { float: left; width: 316px !important; width: 220px; }
+.content-form-area .form-group .input-area { float: left; width: 316px !important; min-width: 220px; }
 
 .content-form-area .form-group .input-area input { width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
 
@@ -2008,7 +2008,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .search-area .select-box:nth-of-type(2) select::-ms-expand { display: none; }
 
-.search-area .input-type { width: 360px; }
+.search-area .input-type { min-width: 360px; }
 
 .search-area .input-type input { width: 360px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
@@ -2076,7 +2076,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 /* 인풋 스타일
 /* =======================================*/
-.input-type { display: inline-block; width: 160px; }
+.input-type { display: inline-block; min-width: 160px; }
 
 .input-type input { width: 160px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
@@ -2468,7 +2468,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .login-content .form-group { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 50px; width: 406px; }
 
-.login-content .form-group .input-area { float: left; width: 316px; width: 220px; }
+.login-content .form-group .input-area { float: left; width: 316px; min-width: 220px; }
 
 .login-content .form-group .input-area input { width: 220px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
 
@@ -2618,7 +2618,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup-qna-content table tbody td, .popup-notices-content table tbody td, .popup-resources-content table tbody td { padding-top: 6px; padding-bottom: 6px; }
 
-.popup-qna-content table tbody td .input-type, .popup-notices-content table tbody td .input-type, .popup-resources-content table tbody td .input-type { width: 100%; }
+.popup-qna-content table tbody td .input-type, .popup-notices-content table tbody td .input-type, .popup-resources-content table tbody td .input-type { min-width: 100%; }
 
 .popup-qna-content table tbody td .input-type input, .popup-notices-content table tbody td .input-type input, .popup-resources-content table tbody td .input-type input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
@@ -2638,7 +2638,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup-qna-content table tbody td.security-text-area *, .popup-notices-content table tbody td.security-text-area *, .popup-resources-content table tbody td.security-text-area * { float: left; }
 
-.popup-qna-content table tbody td.security-text-area .input-type, .popup-notices-content table tbody td.security-text-area .input-type, .popup-resources-content table tbody td.security-text-area .input-type { width: 140px; }
+.popup-qna-content table tbody td.security-text-area .input-type, .popup-notices-content table tbody td.security-text-area .input-type, .popup-resources-content table tbody td.security-text-area .input-type { min-width: 140px; }
 
 .popup-qna-content table tbody td.security-text-area .input-type input, .popup-notices-content table tbody td.security-text-area .input-type input, .popup-resources-content table tbody td.security-text-area .input-type input { width: 140px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
@@ -2664,7 +2664,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup-qna-content table tbody td .add-file-sherch .file-sherch, .popup-notices-content table tbody td .add-file-sherch .file-sherch, .popup-resources-content table tbody td .add-file-sherch .file-sherch { float: right; }
 
-.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type { width: 470px; }
+.popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type { min-width: 470px; }
 
 .popup-qna-content table tbody td .add-file-sherch .file-sherch .input-type input, .popup-notices-content table tbody td .add-file-sherch .file-sherch .input-type input, .popup-resources-content table tbody td .add-file-sherch .file-sherch .input-type input { width: 470px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
@@ -2820,7 +2820,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .completion-of-business-application .list-form .form-group { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 120px; width: 406px; }
 
-.completion-of-business-application .list-form .form-group .input-area { width: 316px; }
+.completion-of-business-application .list-form .form-group .input-area { min-width: 316px; }
 
 .completion-of-business-application .list-form .form-group .input-area input { width: 316px; height: 34px; line-height: 34px; padding: 0 10px; border: 1px solid #e6e9eb; background: #fff; }
 
@@ -2875,6 +2875,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* (html/accept-terms.html)
 /* =======================================*/
 .accept-terms { padding: 0 10px; }
+
+.accept-terms .table-li { margin-top: 50px; }
 
 .accept-terms .table-li .title { width: 200px; }
 
