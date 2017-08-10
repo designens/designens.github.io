@@ -1630,11 +1630,11 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.add-file-area .file, .header, #container, .content-form-area .form-group, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .support-application-status .content-box-area .tracking-progress ul, .unsubscribe .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
+.add-file-area .file, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .footer, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .popup-qna-content table tbody td .add-file-sherch, .popup-notices-content table tbody td .add-file-sherch, .popup-resources-content table tbody td .add-file-sherch, .support-application-status .content-box-area .tracking-progress ul, .unsubscribe .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type { *zoom: 1; }
 
-.add-file-area .file:before, .header:before, #container:before, .content-form-area .form-group:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .support-application-status .content-box-area .tracking-progress ul:before, .unsubscribe .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .add-file-area .file:after, .header:after, #container:after, .content-form-area .form-group:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
+.add-file-area .file:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .footer:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .popup-qna-content table tbody td .add-file-sherch:before, .popup-notices-content table tbody td .add-file-sherch:before, .popup-resources-content table tbody td .add-file-sherch:before, .support-application-status .content-box-area .tracking-progress ul:before, .unsubscribe .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .add-file-area .file:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { content: ""; display: table; }
 
-.add-file-area .file:after, .header:after, #container:after, .content-form-area .form-group:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
+.add-file-area .file:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .footer:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .popup-qna-content table tbody td .add-file-sherch:after, .popup-notices-content table tbody td .add-file-sherch:after, .popup-resources-content table tbody td .add-file-sherch:after, .support-application-status .content-box-area .tracking-progress ul:after, .unsubscribe .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -1652,7 +1652,7 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .btn-type-1-03:hover, .popup .popup-content .popup-btn-set .popup-save:hover, .btn-type-1-03:focus, .popup .popup-content .popup-btn-set .popup-save:focus, .btn-type-1-03:active, .popup .popup-content .popup-btn-set .popup-save:active { border-color: #003257; background: #003257; transition: all .3s ease; }
 
-.btn-type-2-01, .btn-type-2-02, .login-content .btn-link-set .btn-main, .completion-of-business-application .list-form .btn-link-set .btn-edit-information, .btn-type-2-03, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status, .btn-type-2-04, .sub-completed .btn-completed { display: inline-block; min-width: 200px; height: 40px; line-height: 38px; text-align: center; padding: 0 10px; border-radius: 3px; }
+.btn-type-2-01, .btn-type-2-02, .login-content .btn-link-set .btn-main, .completion-of-business-application .list-form .btn-link-set .btn-edit-information, .btn-type-2-03, .sub-top-btn-area .btn-file-upload, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status, .btn-type-2-04, .sub-completed .btn-completed { display: inline-block; min-width: 200px; height: 40px; line-height: 38px; text-align: center; padding: 0 10px; border-radius: 3px; }
 
 .btn-type-2-01 { color: #333; text-shadow: 0 0 1px #b5c1c9; border-bottom: 3px solid #a9b4bc; background: #c5d2db; }
 
@@ -1662,9 +1662,9 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .btn-type-2-02:hover, .login-content .btn-link-set .btn-main:hover, .completion-of-business-application .list-form .btn-link-set .btn-edit-information:hover, .btn-type-2-02:focus, .login-content .btn-link-set .btn-main:focus, .completion-of-business-application .list-form .btn-link-set .btn-edit-information:focus, .btn-type-2-02:active, .login-content .btn-link-set .btn-main:active, .completion-of-business-application .list-form .btn-link-set .btn-edit-information:active { border-bottom: 3px solid #7f8f9b; background: #8fa1af; transition: all .3s ease; }
 
-.btn-type-2-03, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status { color: #fff; text-shadow: 0 0 1px #344450; border-bottom: 3px solid #28343d; background: #394a57; }
+.btn-type-2-03, .sub-top-btn-area .btn-file-upload, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status { color: #fff; text-shadow: 0 0 1px #344450; border-bottom: 3px solid #28343d; background: #394a57; }
 
-.btn-type-2-03:hover, .login-content .btn-link-set .btn-join:hover, .completion-of-business-application .list-form .btn-link-set .btn-view-status:hover, .btn-type-2-03:focus, .login-content .btn-link-set .btn-join:focus, .completion-of-business-application .list-form .btn-link-set .btn-view-status:focus, .btn-type-2-03:active, .login-content .btn-link-set .btn-join:active, .completion-of-business-application .list-form .btn-link-set .btn-view-status:active { border-bottom: 3px solid #2e3b46; background: #33434e; transition: all .3s ease; }
+.btn-type-2-03:hover, .sub-top-btn-area .btn-file-upload:hover, .login-content .btn-link-set .btn-join:hover, .completion-of-business-application .list-form .btn-link-set .btn-view-status:hover, .btn-type-2-03:focus, .sub-top-btn-area .btn-file-upload:focus, .login-content .btn-link-set .btn-join:focus, .completion-of-business-application .list-form .btn-link-set .btn-view-status:focus, .btn-type-2-03:active, .sub-top-btn-area .btn-file-upload:active, .login-content .btn-link-set .btn-join:active, .completion-of-business-application .list-form .btn-link-set .btn-view-status:active { border-bottom: 3px solid #2e3b46; background: #33434e; transition: all .3s ease; }
 
 .btn-type-2-04, .sub-completed .btn-completed { color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
 
@@ -1915,23 +1915,57 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .sub-bottom-btn-area { text-align: center; margin-top: 50px; margin-bottom: 90px; }
 
 /* =======================================*/
+/* Sub Page : 상단 버튼 영역 스타일
+/* =======================================*/
+.sub-top-btn-area { text-align: right; margin-top: -20px; margin-bottom: 10px; }
+
+.sub-top-btn-area .btn-file-upload:after { display: inline-block; width: 28px; height: 22px; background: url("../../assets/images/icon/icon-upload.svg") center no-repeat; margin-left: 10px; vertical-align: -6px; content: ""; }
+
+/* =======================================*/
+/* Sub Page : 진행 순서 버튼 영역
+/* =======================================*/
+.step-area { height: 200px; border: 1px solid #a8a8a8; border-radius: 7px; overflow: hidden; }
+
+.step-area ul { display: table; width: 100%; height: 140px; }
+
+.step-area ul li { display: table-cell; width: 20%; text-align: center; letter-spacing: -0.04em; padding-top: 56px; border-right: 1px dashed #c5d2db; }
+
+.step-area ul li:last-child { border-right: 0; }
+
+.step-area ul li .now-step { font-weight: bold; }
+
+.step-area .help-text { height: 58px; line-height: 58px; text-align: center; letter-spacing: -0.03em; background: #faf6f5; border-top: 1px solid #c5d2db; }
+
+.step-area .help-text .icon-help { text-indent: -9999px; display: inline-block; width: 22px; height: 60px; margin-right: 10px; background: url("../../assets/images/icon/icon-help.png") center no-repeat; }
+
+.step-area .help-text .help-email { font-weight: bold; }
+
+.porgress-area li [class^="step-"] .btn-step { display: inline-block; width: 132px; height: 37px; line-height: 37px; text-align: center; letter-spacing: -0.04em; margin-top: 5px; }
+
+.porgress-area li .step-open .btn-step { background: url("../../assets/images/bg/btn-step-open.png") no-repeat; color: #fff; }
+
+.porgress-area li .step-open .btn-step:after { margin-left: 6px; display: inline-block; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; }
+
+.porgress-area li .step-close .btn-step { color: #5c5c5c; background: url("../../assets/images/bg/btn-step-close.png") no-repeat; }
+
+/* =======================================*/
 /* Sub Page : 진행 현황 공통 스타일
 /* =======================================*/
 .porgress-area[class*="bar-step"] { position: relative; }
 
-.porgress-area[class*="bar-step"]:before { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 27px; display: block; width: 716px; height: 16px; background-size: 100%; content: ""; }
+.porgress-area[class*="bar-step"]:before { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 27px; display: block; width: 755px; height: 16px; content: ""; }
 
-.porgress-area.bar-step0:before { background: url("../../assets/images/bg/bar-step0.png") no-repeat; }
+.porgress-area.bar-step0:before { background: url("../../assets/images/bg/bar-step0.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step1:before { background: url("../../assets/images/bg/bar-step1.png") no-repeat; }
+.porgress-area.bar-step1:before { background: url("../../assets/images/bg/bar-step1.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step2:before { background: url("../../assets/images/bg/bar-step2.png") no-repeat; }
+.porgress-area.bar-step2:before { background: url("../../assets/images/bg/bar-step2.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step3:before { background: url("../../assets/images/bg/bar-step3.png") no-repeat; }
+.porgress-area.bar-step3:before { background: url("../../assets/images/bg/bar-step3.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step4:before { background: url("../../assets/images/bg/bar-step4.png") no-repeat; }
+.porgress-area.bar-step4:before { background: url("../../assets/images/bg/bar-step4.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step5:before { background: url("../../assets/images/bg/bar-step5.png") no-repeat; }
+.porgress-area.bar-step5:before { background: url("../../assets/images/bg/bar-step5.png") no-repeat; background-size: 100% 100%; }
 
 /* =======================================*/
 /* 검색 영역 스타일
@@ -2816,6 +2850,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .support-application-status .content-box-area .tracking-progress ul, .unsubscribe .content-box-area .tracking-progress ul { display: table; width: 100%; height: 142px; border: 1px solid #b3b3b3; border-radius: 7px; background: #fff; }
 
+.support-application-status .content-box-area .tracking-progress ul[class*="bar-step"]:before, .unsubscribe .content-box-area .tracking-progress ul[class*="bar-step"]:before { width: 716px; }
+
 .support-application-status .content-box-area .tracking-progress ul li, .unsubscribe .content-box-area .tracking-progress ul li { display: table-cell; width: 20%; text-align: center; letter-spacing: -0.04em; padding-top: 56px; border-right: 1px dashed #e1e4e6; }
 
 .support-application-status .content-box-area .tracking-progress ul li:last-child, .unsubscribe .content-box-area .tracking-progress ul li:last-child { border-right: 0; }
@@ -2826,6 +2862,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 회원가입안내 > 약관동의 조회
 /* (html/accept-terms.html)
 /* =======================================*/
+.accept-terms { padding: 0 10px; }
+
 .accept-terms .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; font-size: 13px; color: #666; }
 
 .accept-terms .content-box-area .text-area h5 { font-size: 13px; }
