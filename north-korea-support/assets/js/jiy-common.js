@@ -73,7 +73,7 @@
     });
     
     // 구비서류 올리기 팝업
-    $('.btn-popup-applicant-application').on('click', function(e) {
+    $('.btn-file-upload').on('click', function(e) {
       e.preventDefault();
       $.popupId($popups, 'popup-applicant-application').open();
     });

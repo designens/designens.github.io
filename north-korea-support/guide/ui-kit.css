@@ -2879,6 +2879,24 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .accept-terms .table-li .title { width: 200px; }
 
+.accept-terms .table-li .input-type { min-width: 250px; }
+
+.accept-terms .table-li .input-type input { width: 250px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+
+.accept-terms .table-li .input-type input:focus { border: 1px solid #002847; }
+
+.accept-terms .table-li .input-type input:focus::-webkit-input-placeholder { /* WebKit browsers */ color: transparent; }
+
+.accept-terms .table-li .input-type input:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: transparent; }
+
+.accept-terms .table-li .input-type input:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color: transparent; }
+
+.accept-terms .table-li .input-type input:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color: transparent; }
+
+.accept-terms .table-li .input-type label { line-height: 30px; }
+
+.accept-terms .table-li .btn-type-1-02 { width: 126px; margin-left: 2px; }
+
 .accept-terms .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; font-size: 13px; color: #666; }
 
 .accept-terms .content-box-area .text-area h5 { font-size: 13px; }
