@@ -1725,19 +1725,19 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 /* =======================================*/
 .icon-hwp, .icon-doc, .icon-pdf, .icon-jpg, .icon-png, .icon-xls, .icon-ppt { position: relative; padding-left: 20px; }
 
-.icon-hwp:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before, .icon-png:before, .icon-xls:before, .icon-ppt:before { position: absolute; top: 3px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("/assets/images/icon/icon-hwp.png") no-repeat; }
+.icon-hwp:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before, .icon-png:before, .icon-xls:before, .icon-ppt:before { position: absolute; top: 3px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("../../assets/images/icon/icon-hwp.png") no-repeat; }
 
-.icon-doc:before { background: url("/assets/images/icon/icon-doc.png") no-repeat; }
+.icon-doc:before { background: url("../../assets/images/icon/icon-doc.png") no-repeat; }
 
-.icon-pdf:before { background: url("/assets/images/icon/icon-pdf.png") no-repeat; }
+.icon-pdf:before { background: url("../../assets/images/icon/icon-pdf.png") no-repeat; }
 
-.icon-jpg:before { background: url("/assets/images/icon/icon-jpg.png") no-repeat; }
+.icon-jpg:before { background: url("../../assets/images/icon/icon-jpg.png") no-repeat; }
 
-.icon-png:before { background: url("/assets/images/icon/icon-jpg.png") no-repeat; }
+.icon-png:before { background: url("../../assets/images/icon/icon-jpg.png") no-repeat; }
 
-.icon-xls:before { background: url("/assets/images/icon/icon-xls.png") no-repeat; }
+.icon-xls:before { background: url("../../assets/images/icon/icon-xls.png") no-repeat; }
 
-.icon-ppt:before { background: url("/assets/images/icon/icon-ppt.png") no-repeat; }
+.icon-ppt:before { background: url("../../assets/images/icon/icon-ppt.png") no-repeat; }
 
 /* =======================================*/
 /* 페이징 스타일 /* =======================================*/
@@ -1815,7 +1815,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 /* =======================================*/
 /* Visual Banner : 상단 공통 배너 /* =======================================*/
-.sub-visual { width: 100%; min-width: 1248px; height: 140px; text-indent: -9999px; background: url("/assets/images/bg/sub-banner.png") center; }
+.sub-visual { width: 100%; min-width: 1248px; height: 140px; text-indent: -9999px; background: url("../../assets/images/bg/sub-banner.png") center; }
 
 /* =======================================*/
 /* Container : 컨테이너 영역
@@ -1849,7 +1849,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 /* =======================================*/
 /* Sub Page : Title 구분선
 /* =======================================*/
-hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; margin-bottom: 30px; background: url("/assets/images/bg/sub-title-bar.png") repeat-x; }
+hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; margin-bottom: 30px; background: url("../../assets/images/bg/sub-title-bar.png") repeat-x; }
 
 /* =======================================*/
 /* Sub Page : Title Font 스타일
@@ -1905,7 +1905,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .sub-completed .message { position: relative; font-size: 20px; letter-spacing: -0.04em; }
 
-.sub-completed .message:before { display: inline-block; width: 40px; height: 40px; margin-right: 20px; margin-bottom: -12px; background: url("/assets/images/icon/icon-confirm.png") no-repeat; content: ""; }
+.sub-completed .message:before { display: inline-block; width: 40px; height: 40px; margin-right: 20px; margin-bottom: -12px; background: url("../../assets/images/icon/icon-confirm.png") no-repeat; content: ""; }
 
 .sub-completed .message span { font-weight: bold; color: #003761; }
 
@@ -1921,7 +1921,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 .sub-top-btn-area { text-align: right; margin-top: -20px; margin-bottom: 10px; }
 
-.sub-top-btn-area .btn-file-upload:after { display: inline-block; width: 28px; height: 22px; background: url("/assets/images/icon/icon-upload.svg") center no-repeat; margin-left: 10px; vertical-align: -6px; content: ""; }
+.sub-top-btn-area .btn-file-upload:after { display: inline-block; width: 28px; height: 22px; background: url("../../assets/images/icon/icon-upload.svg") center no-repeat; margin-left: 10px; vertical-align: -6px; content: ""; }
 
 /* =======================================*/
 /* Sub Page : 진행 순서 버튼 영역
@@ -1938,17 +1938,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .step-area .help-text { height: 58px; line-height: 58px; text-align: center; letter-spacing: -0.03em; background: #faf6f5; border-top: 1px solid #c5d2db; }
 
-.step-area .help-text .icon-help { text-indent: -9999px; display: inline-block; width: 22px; height: 60px; margin-right: 10px; background: url("/assets/images/icon/icon-help.png") center no-repeat; }
+.step-area .help-text .icon-help { text-indent: -9999px; display: inline-block; width: 22px; height: 60px; margin-right: 10px; background: url("../../assets/images/icon/icon-help.png") center no-repeat; }
 
 .step-area .help-text .help-email { font-weight: bold; }
 
 .porgress-area li [class^="step-"] .btn-step { display: inline-block; width: 132px; height: 37px; line-height: 37px; text-align: center; letter-spacing: -0.04em; margin-top: 5px; }
 
-.porgress-area li .step-open .btn-step { background: url("/assets/images/bg/btn-step-open.png") no-repeat; color: #fff; }
+.porgress-area li .step-open .btn-step { background: url("../../assets/images/bg/btn-step-open.png") no-repeat; color: #fff; }
 
 .porgress-area li .step-open .btn-step:after { margin-left: 6px; display: inline-block; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; }
 
-.porgress-area li .step-close .btn-step { color: #5c5c5c; background: url("/assets/images/bg/btn-step-close.png") no-repeat; }
+.porgress-area li .step-close .btn-step { color: #5c5c5c; background: url("../../assets/images/bg/btn-step-close.png") no-repeat; }
 
 /* =======================================*/
 /* Sub Page : 진행 현황 공통 스타일
@@ -1957,17 +1957,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .porgress-area[class*="bar-step"]:before { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 27px; display: block; width: 755px; height: 16px; content: ""; }
 
-.porgress-area.bar-step0:before { background: url("/assets/images/bg/bar-step0.png") no-repeat; background-size: 100% 100%; }
+.porgress-area.bar-step0:before { background: url("../../assets/images/bg/bar-step0.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step1:before { background: url("/assets/images/bg/bar-step1.png") no-repeat; background-size: 100% 100%; }
+.porgress-area.bar-step1:before { background: url("../../assets/images/bg/bar-step1.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step2:before { background: url("/assets/images/bg/bar-step2.png") no-repeat; background-size: 100% 100%; }
+.porgress-area.bar-step2:before { background: url("../../assets/images/bg/bar-step2.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step3:before { background: url("/assets/images/bg/bar-step3.png") no-repeat; background-size: 100% 100%; }
+.porgress-area.bar-step3:before { background: url("../../assets/images/bg/bar-step3.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step4:before { background: url("/assets/images/bg/bar-step4.png") no-repeat; background-size: 100% 100%; }
+.porgress-area.bar-step4:before { background: url("../../assets/images/bg/bar-step4.png") no-repeat; background-size: 100% 100%; }
 
-.porgress-area.bar-step5:before { background: url("/assets/images/bg/bar-step5.png") no-repeat; background-size: 100% 100%; }
+.porgress-area.bar-step5:before { background: url("../../assets/images/bg/bar-step5.png") no-repeat; background-size: 100% 100%; }
 
 /* =======================================*/
 /* 검색 영역 스타일
@@ -2317,7 +2317,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .gnb-area .gnb #gnb-menu li a { display: block; font-size: 16px; font-weight: bold; padding: 0 26px; }
 
-.gnb-area .gnb .btn-gnb-all { float: right; width: 24px; height: 19px; margin-top: 26px; text-indent: -9999px; background: url("/assets/images/common/btn-gnb-all.svg") no-repeat; }
+.gnb-area .gnb .btn-gnb-all { float: right; width: 24px; height: 19px; margin-top: 26px; text-indent: -9999px; background: url("../../assets/images/common/btn-gnb-all.svg") no-repeat; }
 
 #gnb-all-menu { position: absolute; top: 100px; left: 0; right: 0; height: 0; background: linear-gradient(#475b6b 46px, #fff 46px); box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15); visibility: hidden; overflow: hidden; transition: visibility .3s, height .3s; }
 
@@ -2374,7 +2374,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* LNB 영역 */
 .lnb { float: left; width: 226px; margin-bottom: 30px; }
 
-.lnb h3 { display: block; height: 100px; line-height: 100px; color: #fff; text-align: center; letter-spacing: -0.03em; background: url("/assets/images/bg/lnb_title.png") no-repeat; }
+.lnb h3 { display: block; height: 100px; line-height: 100px; color: #fff; text-align: center; letter-spacing: -0.03em; background: url("../../assets/images/bg/lnb_title.png") no-repeat; }
 
 .accordion-lnb { border: 1px solid #cad7e0; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
@@ -2426,7 +2426,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup.is-center { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.popup .popup-headline { height: 50px; line-height: 50px; padding: 0 30px; background: url("/assets/images/bg/popup-title.png") center no-repeat; }
+.popup .popup-headline { height: 50px; line-height: 50px; padding: 0 30px; background: url("../../assets/images/bg/popup-title.png") center no-repeat; }
 
 .popup .popup-headline h4 { float: left; font-size: 18px; color: #fff; letter-spacing: -0.04em; }
 
@@ -2526,9 +2526,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .news-letters .gallery.col3 li:nth-of-type(4n) { clear: both; }
 
-.news-letters .gallery li { position: relative; height: 330px; margin-top: 44px; background: url("/assets/images/sub/news-letters-bg.png") no-repeat; }
+.news-letters .gallery li { position: relative; height: 330px; margin-top: 44px; background: url("../../assets/images/sub/news-letters-bg.png") no-repeat; }
 
-.news-letters .gallery li .vol-area { position: absolute; top: 3px; left: 3px; right: 3px; z-index: 10; height: 60px; color: #fff; background: url("/assets/images/sub/news-letters-title-bg.png") no-repeat; }
+.news-letters .gallery li .vol-area { position: absolute; top: 3px; left: 3px; right: 3px; z-index: 10; height: 60px; color: #fff; background: url("../../assets/images/sub/news-letters-title-bg.png") no-repeat; }
 
 .news-letters .gallery li .vol-area .vol { float: left; min-width: 36px; height: 36px; margin-top: 12px; background: #62b5f5; }
 
@@ -2854,7 +2854,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .support-application-status .content-box-area .tracking-progress h4, .unsubscribe .content-box-area .tracking-progress h4 { position: relative; font-size: 14px; font-weight: normal; letter-spacing: -0.04em; padding-left: 12px; margin-top: 20px; margin-bottom: 10px; }
 
-.support-application-status .content-box-area .tracking-progress h4:before, .unsubscribe .content-box-area .tracking-progress h4:before { position: absolute; top: 6px; left: 0; width: 6px; height: 10px; display: inline-block; background: url("/assets/images/icon/icon-progress-title.png") no-repeat; content: ""; }
+.support-application-status .content-box-area .tracking-progress h4:before, .unsubscribe .content-box-area .tracking-progress h4:before { position: absolute; top: 6px; left: 0; width: 6px; height: 10px; display: inline-block; background: url("../../assets/images/icon/icon-progress-title.png") no-repeat; content: ""; }
 
 .support-application-status .content-box-area .tracking-progress h4:first-child, .unsubscribe .content-box-area .tracking-progress h4:first-child { margin-top: -4px; }
 
