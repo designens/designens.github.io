@@ -1610,6 +1610,8 @@ input:-ms-input-placeholder { /* IE 10+*/ color: inherit !important; }
 
 input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
+.red { color: #bd1313; }
+
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
 .checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 22px; }
@@ -1684,7 +1686,7 @@ input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 html { font-size: 10px; }
 
-html body { font-family: "malgun gothic", "Noto Sans Korean", sans-serif, serif; font-size: 1.4rem; -webkit-font-smoothing: antialiased; color: #4c4c4c; line-height: 1.5; }
+html body { font-family: "malgun gothic", "Noto Sans Korean", sans-serif, serif; font-size: 1.4rem; -webkit-font-smoothing: antialiased; color: #4c4c4c; letter-spacing: -0.03em; line-height: 1.5; }
 
 h2, h3, h4 { font-weight: bold; }
 
@@ -1826,7 +1828,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 #container .content-area .headline { height: 58px; line-height: 58px; /* Sub Page : Title 공통 */ /* Sub Page : Location 공통 */ }
 
-#container .content-area .headline .sub-title { float: left; position: relative; font-weight: bold; letter-spacing: -0.03em; padding-left: 30px; }
+#container .content-area .headline .sub-title { float: left; position: relative; font-weight: bold; padding-left: 30px; }
 
 #container .content-area .headline .sub-title:before, #container .content-area .headline .sub-title:after { position: absolute; top: 1px; }
 
@@ -1836,7 +1838,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 #container .content-area .headline .site-location { float: right; }
 
-#container .content-area .headline .site-location a { font-size: 12px; color: #666; letter-spacing: -0.03em; }
+#container .content-area .headline .site-location a { font-size: 12px; color: #666; }
 
 #container .content-area .headline .site-location a img { vertical-align: text-top; }
 
@@ -1854,9 +1856,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 /* Sub Page : Title Font 스타일
 /* =======================================*/
-.login-bg .login-area h2, .completion-of-business-application .list-form h3 { font-size: 30px; font-weight: normal; color: #003761; letter-spacing: -0.03em; text-align: center; }
+.login-bg .login-area h2, .completion-of-business-application .list-form h3 { font-size: 30px; font-weight: normal; color: #003761; text-align: center; }
 
-.content-box-area h3 { position: relative; font-size: 16px; letter-spacing: -0.04em; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
+.content-box-area h3 { position: relative; font-size: 16px; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
 
 .content-box-area h3:before { position: absolute; top: 4px; left: 0; display: inline-block; width: 3px; height: 16px; background: #003761; content: ""; }
 
@@ -1936,7 +1938,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .step-area ul li .now-step { font-weight: bold; }
 
-.step-area .help-text { height: 58px; line-height: 58px; text-align: center; letter-spacing: -0.03em; background: #faf6f5; border-top: 1px solid #c5d2db; }
+.step-area .help-text { height: 58px; line-height: 58px; text-align: center; background: #faf6f5; border-top: 1px solid #c5d2db; }
 
 .step-area .help-text .icon-help { text-indent: -9999px; display: inline-block; width: 22px; height: 60px; margin-right: 10px; background: url("../../assets/images/icon/icon-help.png") center no-repeat; }
 
@@ -2301,7 +2303,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-type-02 tr th { background: #f0f3f5; color: #2e3a42; border-right: 0; padding: 0 20px; }
 
-.table-type-02 tr td { padding: 10px; }
+.table-type-02 tr td { padding: 0 10px; }
 
 /* ul, li 테이블 형태 */
 .table-li { display: table; width: 100%; border: 1px solid #d1d1d1; }
@@ -2537,7 +2539,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .login-content .btn-link-set { text-align: center; margin-top: 190px; }
 
-.login-content .information { position: absolute; bottom: 0; left: 0; right: 0; color: #4c4c4c; letter-spacing: -0.03em; text-align: center; height: 75px; line-height: 75px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; border-top: 1px solid #afc0cc; background: #e5f4ff; }
+.login-content .information { position: absolute; bottom: 0; left: 0; right: 0; color: #4c4c4c; text-align: center; height: 75px; line-height: 75px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; border-top: 1px solid #afc0cc; background: #e5f4ff; }
 
 .login-content .information span { color: #0c314c; }
 
@@ -2635,26 +2637,12 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 커뮤니티 > Q&A조회
 /* (html/qna-list.html)
 /* =======================================*/
-.qna-content colgroup col:first-child { width: 54px; }
-
-.qna-content colgroup col:nth-child(2) { width: 140px; }
-
-.qna-content colgroup col:nth-child(3) { width: 341px; }
-
-.qna-content colgroup col:nth-child(4) { width: 110px; }
-
-.qna-content colgroup col:nth-child(5) { width: 140px; }
-
-.qna-content colgroup col:last-child { width: 140px; }
-
 .qna-content tbody td:nth-child(3) { text-align: left; }
 
 /* =======================================*/
 /* 커뮤니티 > Q&A 상세 조회 > 팝업
 /* (html/qna-list.html)
 /* =======================================*/
-.popup-qna-content table colgroup col:nth-child(1), .popup-notices-content table colgroup col:nth-child(1), .popup-resources-content table colgroup col:nth-child(1), .popup-qna-content table colgroup col:nth-child(3), .popup-notices-content table colgroup col:nth-child(3), .popup-resources-content table colgroup col:nth-child(3) { width: 140px; }
-
 .popup-qna-content table tbody td, .popup-notices-content table tbody td, .popup-resources-content table tbody td { padding-top: 6px; padding-bottom: 6px; }
 
 .popup-qna-content table tbody td .input-type, .popup-notices-content table tbody td .input-type, .popup-resources-content table tbody td .input-type { min-width: 100%; }
@@ -2733,14 +2721,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 자료마당 > 공지사항
 /* (html/notices.html)
 /* =======================================*/
-.notices-content colgroup col:first-child { width: 54px; }
-
-.notices-content colgroup col:nth-child(2) { width: 502px; }
-
-.notices-content colgroup col:nth-child(3), .notices-content colgroup col:nth-child(4) { width: 140px; }
-
-.notices-content colgroup col:last-child { width: 70px; }
-
 .notices-content td:nth-child(2) { text-align: left; }
 
 /* =======================================*/
@@ -2755,18 +2735,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 자료마당 > 자료실
 /* (html/resources.html)
 /* =======================================*/
-.resources-content colgroup col:first-child { width: 54px; }
-
-.resources-content colgroup col:nth-child(2) { width: 140px; }
-
-.resources-content colgroup col:nth-child(3) { width: 341px; }
-
-.resources-content colgroup col:nth-child(4) { width: 110px; }
-
-.resources-content colgroup col:nth-child(5) { width: 140px; }
-
-.resources-content colgroup col:last-child { width: 140px; }
-
 .resources-content td:nth-child(3) { text-align: left; }
 
 .resources-content .search-area li:nth-of-type(2) { position: relative; width: 130px; height: 30px; }
@@ -2863,8 +2831,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 .support-application-status, .unsubscribe { padding-left: 10px; padding-right: 10px; }
 
-.support-application-status .content-box-area .table-type-02 colgroup col:nth-child(1), .unsubscribe .content-box-area .table-type-02 colgroup col:nth-child(1) { width: 62px; }
-
 .support-application-status .content-box-area .table-type-02 th, .unsubscribe .content-box-area .table-type-02 th { text-align: center; }
 
 .support-application-status .content-box-area .tracking-progress, .unsubscribe .content-box-area .tracking-progress { padding: 30px 20px; background: #faf6f5; }
@@ -2935,16 +2901,20 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 법인.단체 > 사업자신청 구비서류 팝업
 /* html/applicant-application-step1.html
 /* =======================================*/
+.popup-applicant-application-content .table-type-02 tbody tr td { text-align: center; }
+
+.popup-applicant-application-content .table-type-02 tbody tr td button { width: 136px; }
+
+.popup-applicant-application-content .table-type-02 tbody tr td:nth-child(1) { text-align: left; }
+
 /* =======================================*/
 /* 회원서비스 > 회원가입안내 > 가입탈퇴 조회
 /* (html/unsubscribe.html)
 /* =======================================*/
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회
-/* (html/business-application-list.html)
+/* (html/business-application.html)
 /* =======================================*/
-.business-application .panel-group [aria-labelledby="tab1"] colgroup col:nth-child(1), .business-application .panel-group [aria-labelledby="tab1"] colgroup col:nth-child(3) { width: 200px; }
-
 .business-application .panel-group [aria-labelledby="tab1"] table td .select-box { width: 420px; }
 
 .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type li, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type li { float: left; width: 20%; }
@@ -2971,16 +2941,10 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .business-application .panel-group [aria-labelledby="tab1"] table td.input-price .input-type:last-child { margin-bottom: 0; }
 
-.business-application .panel-group [aria-labelledby="tab2"] colgroup col:nth-child(1), .business-application .panel-group [aria-labelledby="tab2"] colgroup col:nth-child(3) { width: 200px; }
-
-.business-application .panel-group [aria-labelledby="tab3"] colgroup col:nth-child(1), .business-application .panel-group [aria-labelledby="tab3"] colgroup col:nth-child(3) { width: 200px; }
-
 /* =======================================*/
 /* 기금사업신청 > 사업신청 상세팝업
 /* (html/business-application-list.html)
 /* =======================================*/
-.popup-business-application table colgroup col:first-child { width: 140px; }
-
 .popup-business-application table td .checkbox-type li, .popup-business-application table td .radio-type li { float: left; width: 25%; }
 
 .popup-business-application table td .checkbox-type li:nth-child(4n), .popup-business-application table td .radio-type li:nth-child(4n) { margin-bottom: 7px; }
