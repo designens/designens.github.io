@@ -193,8 +193,8 @@
                     <h3><div class="fa fa-angle-double-right"></div>설명이 없는 인풋 스타일</h3>
                     <!-- [Start] 설명이 없는 인풋 스타일 -->
                     <div class="input-type">
-                        <label aria-label="텍스트 입력">
-                            <input type="text"/>
+                        <label>
+                            <input type="text" aria-label="텍스트 입력"/>
                         </label>
                     </div>
                     <!-- [End] 설명이 없는 인풋 스타일 -->
@@ -202,12 +202,49 @@
                     <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
                     <!-- [Start] Placeholder가 있는 인풋 스타일 -->
                     <div class="input-type">
-                        <label aria-label="Placeholder 텍스트 입력">
-                            <input type="text" placeholder="Placeholder 사용" />
+                        <label>
+                            <input type="text" placeholder="Placeholder 내용" />
                         </label>
                     </div>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
 
+                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
+                    <!-- [Start] 전화번호 인풋 스타일 -->
+                    <div class="input-type tel">
+                        <label for="dialog-country-code">
+                            <input id="dialog-country-code" type="tel" aria-label="지역번호">
+                        </label>
+                        <label for="dialog-first-number">
+                            <input id="dialog-first-number" type="tel" aria-label="앞번호">
+                        </label>
+                        <label for="dialog-last-number">
+                            <input id="dialog-last-number" type="tel" aria-label="뒷번호">
+                        </label>
+                    </div>
+                    <!-- [End] 전화번호 인풋 스타일 -->
+
+                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
+                    <!-- [Start] 이메일 인풋 스타일 -->
+                    <div class="input-type e-mail">
+                        <label for="email-id">
+                            <input id="email-id" type="text" aria-label="이메일 아이디">
+                        </label>
+                        <label for="email-address">
+                            <input id="email-address" type="text" aria-label="이메일 주소 직접입력">
+                        </label>
+                    </div>
+                    <div class="select-box e-mail">
+                        <label for="email-search">이메일 주소 옵션 선택,</label>
+                        <select id="email-search" name="email-search-item">
+                            <option selected="selected">직접입력</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>nate.com</option>
+                            <option>google.com</option>
+                            <option>yahoo.com</option>
+                        </select>
+                    </div>
+                    <!-- [End] 이메일 인풋 스타일 -->
                 </div>
             </article>
             <!-- [End] Input 공통 -->
@@ -410,25 +447,59 @@
             <!-- [Start] 서브 검색 영역 공통 -->
             <article>
                 <h2>Seb Search Style</h2>
-                <ul class="search-area">
-                    <li class="search-title"><span>검색</span></li>
-                    <li class="select-box">
-                        <label for="search">제목</label>
-                        <select id="search" name="search-item">
-                            <option selected="selected">제목</option>
-                            <option>내용</option>
-                            <option>단어</option>
-                        </select>
-                    </li>
-                    <li class="input-type">
-                        <label class="search-keyword" aria-label="검색 키워드 입력하세요.">
-                            <input type="text"/>
-                        </label>
-                    </li>
-                    <li>
-                        <button class="btn-lookup">조회</button>
-                    </li>
-                </ul>
+                <div class="search-type-area">
+
+                    <!-- [Start] 검색 타입 1. -->
+                    <h3><div class="fa fa-angle-double-right"></div>검색 타입 1.</h3>
+                    <ul class="search-area">
+                        <li><span class="search-title">검색</span></li>
+                        <li class="select-box">
+                            <label for="search">검색</label>
+                            <select id="search" name="search-item">
+                                <option selected="selected">제목</option>
+                                <option>내용</option>
+                                <option>단어</option>
+                            </select>
+                        </li>
+                        <li class="input-type">
+                            <label class="search-keyword">
+                                <input type="text" aria-label="검색 키워드 입력하세요."/>
+                            </label>
+                            <button class="btn-lookup">조회</button>
+                        </li>
+                    </ul>
+                    <!-- [End] 검색 타입 1. -->
+
+                    <!-- [Start] 검색 타입 2. -->
+                    <h3><div class="fa fa-angle-double-right"></div>검색 타입 2.</h3>
+                    <ul class="search-area">
+                        <li class="search-title"><span>검색</span></li>
+                        <li class="select-box all">
+                            <label for="search">말머리:전체</label>
+                            <select id="search" name="search-item">
+                                <option selected="selected">말머리:전체</option>
+                                <option>내용</option>
+                                <option>단어</option>
+                            </select>
+                        </li>
+                        <li class="select-box">
+                            <label for="search">제목</label>
+                            <select id="search" name="search-item">
+                                <option selected="selected">제목</option>
+                                <option>내용</option>
+                                <option>단어</option>
+                            </select>
+                        </li>
+                        <li class="input-type">
+                            <label class="search-keyword">
+                                <input type="text" aria-label="검색 키워드 입력하세요."/>
+                            </label>
+                            <button class="btn-lookup">조회</button>
+                        </li>
+                    </ul>
+                    <!-- [End] 검색 타입 2. -->
+
+                </div>
             </article>
             <!-- [End] 서브 검색 영역 공통 -->
 
@@ -643,10 +714,14 @@
                             </tr>
                             <tr>
                                 <th>첨부파일</th>
-                                <!-- 첨부파일 class="download-type-01" 삽입 -->
-                                <td class="download-type-01" colspan="3">
-                                    <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                                    <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                                <!-- 첨부파일 class="add-file-area" 삽입 -->
+                                <td class="add-file-area" colspan="3">
+                                    <div class="file full-name">
+                                        <a class="icon-hwp" role="button" href="">첨부파일1.hwp</a>
+                                    </div>
+                                    <div class="file full-name">
+                                        <a class="icon-hwp" role="button" href="">첨부파일2.hwp</a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
