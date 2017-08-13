@@ -178,31 +178,43 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
+                        <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
+                                <li><a href="">사업자 가입안내</a></li>
+                                <li><a href="">사업자 신청</a></li>
+                                <li><a href="">지원접수현황</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                <li><a href="">약관 동의</a></li>
+                                <li><a href="">가입 신청</a></li>
+                                <li><a href="">가입 승인 확인</a></li>
+                                <li><a href="">가입 탈퇴</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,20 +225,196 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">회원서비스</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">회원가입안내</a>
+                    <a href="#">법인·단체</a>
+                    <a href="#">사업자 신청</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <div class="content applicant-application-step4">
+                <!-- [Start] 상단 버튼 영역 스타일 -->
+                <div class="sub-top-btn-area">
+                    <a href="" class="btn-file-upload" role="button">구비서류 올리기</a>
+                </div>
+                <!-- [End] 상단 버튼 영역 스타일 -->
+
+                <!-- [Start] 진행 순서 버튼 -->
+                <div class="step-area">
+                    <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                    <ul class="porgress-area bar-step4">
+                        <li>
+                            <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                            <div class="step-open">
+                                <div>Step 1</div>
+                                <a href="applicant-application-step1.html" class="btn-step" role="button">가입여부 확인</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                            <div class="step-close">
+                                <div>Step 2</div>
+                                <a href="applicant-application-step2.html" class="btn-step" role="button">신청자 정보</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-close">
+                                <div>Step 3</div>
+                                <a href="applicant-application-step3.html" class="btn-step" role="button">단체기본 정보</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-close">
+                                <div>Step 4</div>
+                                <a href="applicant-application-step4.html" class="btn-step" role="button">연혁 정보</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-close">
+                                <div>Step 5</div>
+                                <a href="applicant-application-step5.html" class="btn-step" role="button">구비서류</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="help-text">
+                        <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                    </p>
+                </div>
+                <!-- [End] 진행 순서 버튼 -->
+
+                <article class="content-box-area">
+                    <h3>연혁 정보</h3>
+                    <div class="sub-top-btn-area">
+                        <a href="" class="btn-type-1-02">선택 삭제하기</a>
+                        <a href="" class="btn-type-1-02">신규 입력하기</a>
+                        <a href="" class="btn-type-1-02">연혁 엑셀 업로드 양식</a>
+                        <a href="" class="btn-type-1-02">엑셀 업로드</a>
+                    </div>
+
+                    <!-- [Start] 테이블 영역 -->
+                    <table class="table-type-01">
+                        <caption>연혁 정보의 체크박스,번호,연도,월,내용이 있는 테이블 입니다.</caption>
+                        <colgroup>
+                            <col width="38">
+                            <col width="54">
+                            <col width="130">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>번호</th>
+                                <th>연도. 월</th>
+                                <th>내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-01" name="table-checkbox-01">
+                                    <label for="table-checkbox-01"></label>
+                                </td>
+                                <td>175</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-02" name="table-checkbox-02">
+                                    <label for="table-checkbox-02"></label>
+                                </td>
+                                <td>174</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-03" name="table-checkbox-03">
+                                    <label for="table-checkbox-03"></label>
+                                </td>
+                                <td>173</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-04" name="table-checkbox-04">
+                                    <label for="table-checkbox-04"></label>
+                                </td>
+                                <td>172</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-05" name="table-checkbox-05">
+                                    <label for="table-checkbox-05"></label>
+                                </td>
+                                <td>171</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-06" name="table-checkbox-06">
+                                    <label for="table-checkbox-06"></label>
+                                </td>
+                                <td>170</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-07" name="table-checkbox-07">
+                                    <label for="table-checkbox-07"></label>
+                                </td>
+                                <td>169</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-type">
+                                    <input type="checkbox" id="table-checkbox-08" name="table-checkbox-08">
+                                    <label for="table-checkbox-08"></label>
+                                </td>
+                                <td>168</td>
+                                <td>2017.01</td>
+                                <td><a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- [End] 테이블 영역 -->
+
+                    <!-- [Start] Paging Area -->
+                    <div class="paging">
+                        <button class="first-prev" aria-label="처음으로 이동"></button>
+                        <button class="prev" aria-label="이전 페이지"></button>
+                        <a href role="button">1</a>
+                        <a href role="button">2</a>
+                        <a href role="button">3</a>
+                        <a href role="button">4</a>
+                        <a class="selected" href role="button">5</a>
+                        <a href role="button">6</a>
+                        <a href role="button">7</a>
+                        <a href role="button">8</a>
+                        <a href role="button">9</a>
+                        <a href role="button">10</a>
+                        <button class="next" " aria-label="다음 페이지"></button>
+                        <button class="last-next" aria-label="끝으로 이동"></button>
+                    </div>
+                    <!-- [End] Paging Area -->
+
+                     <div class="sub-completed">
+                        <a class="btn-type-2-01" role="button" href>이전단계</a>
+                        <a class="btn-type-2-01" role="button" href>다음단계</a>
+                        <a class="btn-type-2-04" role="button" href>저장하기</a>
+                    </div>
+                </article>
             </div>
             <!-- [End] 컨텐츠 상세  -->
 
@@ -250,6 +438,92 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 구비서류 올리기 Popup -->
+    <div class="popup" data-id="popup-applicant-application">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>구비서류 올리기</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-applicant-application-content">
+        <table class="table-type-02">
+            <caption>2017년 이전 대북지원사업자 양식, 대표자 사진, 법인 · 단체 직인, 사업자 소개서, 대북지원사업 추진계획서, 추진실적 입증 서류, 정관 등기부, 법인 등기부, 대표자 신원증명서, 연혁 엑셀 upload 양식 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col width="180">
+                <col width="180">
+                <col width="100">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>2017년 이전 대북지원사업자 양식</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td></td>
+                    <td><strong>해당없음</strong></td>
+                </tr>
+                <tr>
+                    <th>대표자 사진</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>법인 · 단체 직인</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>사업자 소개서</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>대북지원사업 추진계획서</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>추진실적 입증 서류</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>정관 등기부</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>법인 등기부</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>대표자 신원증명서</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>연혁 엑셀 upload 양식</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td></td>
+                    <td><strong>해당없음</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 구비서류 올리기 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>

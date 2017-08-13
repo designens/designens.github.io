@@ -1,2 +1,56 @@
+@charset "UTF-8";
+/* =======================================*/
+/* 회원서비스 > 회원가입안내 > 가입신청 조회
+/* html/sign-up-list.html
+/* =======================================*/
+.sign-up-content .content-box-area { width: 930px; margin: 0 auto; margin-bottom: 30px; }
+
+.sign-up-content .table-corporate-body col:first-child { width: 200px; }
+
+.sign-up-content .table-corporate-body col:nth-child(2) { width: 264px; }
+
+.sign-up-content .table-corporate-body col:nth-child(3) { width: 200px; }
+
+.sign-up-content .table-corporate-body col:nth-child(4) { width: 264px; }
+
+.sign-up-content .table-corporate-body .input-type input { width: 140px; }
+
+.sign-up-content .table-corporate-body tr:first-child td:last-child { font-weight: bold; }
+
+.sign-up-content .table-contact-information .btn-type-1-02 { width: 126px; }
+
+.sign-up-content .table-contact-information tr:first-child .id-notice { color: #bd1313; letter-spacing: -1px; }
+
+.sign-up-content .table-contact-information tr:nth-child(2) .pwd-figure { letter-spacing: -1px; }
+
+.sign-up-content .table-contact-information tr:nth-child(4) .pwd-confirm { color: #bd1313; letter-spacing: -1px; }
+
+.sign-up-content .table-contact-information tr:nth-child(5) .radio-type label { margin-right: 40px; }
+
+.sign-up-content .table-contact-information tr:nth-child(8) .input-type input { width: 138px; }
+
+.sign-up-content .table-contact-information tr:nth-child(8) span { padding: 0 5px; }
+
+.sign-up-content .table-contact-information h4 { font-size: 14px; margin-bottom: 9px; }
+
+.sign-up-content .table-contact-information .proof-of-employment { border: 1px solid #e6e6e6; padding-top: 6px; padding-left: 9px; padding-right: 9px; padding-bottom: 12px; }
+
+.sign-up-content .table-contact-information tr:nth-child(7) .input-type input { width: 70px; }
+
+.sign-up-content .table-contact-information tr:last-child .icon-hwp { position: relative; padding-left: 20px; }
+
+.sign-up-content .table-contact-information tr:last-child .add-file-area { margin-top: -13px; }
+
+.sign-up-content .table-contact-information tr:last-child .add-file-area .file { width: 176px; }
+
+.sign-up-content .table-contact-information tr:last-child .add-file-area a[class^="icon-"] { width: 110px; }
+
+.sign-up-content .table-contact-information tr:first-child label { color: #bd1313; letter-spacing: -1px; }
+
+.sign-up-content .table-contact-information tr:nth-child(2) label { letter-spacing: -1px; }
+
+.sign-up-content .table-contact-information .input-type.tel label input { position: relative; }
+
+.sign-up-content .table-contact-information .input-type.tel label input::before:nth-of-type(1), .sign-up-content .table-contact-information .input-type.tel label input::before:nth-of-type(2), .sign-up-content .table-contact-information .input-type.tel label input::before:nth-of-type(3) { content: "-"; position: absolute; top: 0; left: 0; padding-left: 20px; display: inline-block; }
 
 /*# sourceMappingURL=map/khj-style.css.map */

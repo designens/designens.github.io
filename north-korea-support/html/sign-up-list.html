@@ -178,31 +178,43 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
+                        <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
+                                <li><a href="">사업자 가입안내</a></li>
+                                <li><a href="">사업자 신청</a></li>
+                                <li><a href="">지원접수현황</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                <li><a href="">약관 동의</a></li>
+                                <li><a href="">가입 신청</a></li>
+                                <li><a href="">가입 승인 확인</a></li>
+                                <li><a href="">가입 탈퇴</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,20 +225,227 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">가입 신청</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">회원서비스</a>
+                    <a href="#">회원가입안내</a>
+                    <a href="#">담당자</a>
+                    <a href="#">가입 신청</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <div class="content sign-up-content">
+                <article class="content-box-area">
+                    <h3>법인·단체</h3>
+                    <table class="table-type-02 table-corporate-body">
+                        <caption>법인단체의 법인단체 ID,법인명,대북지원단체의 테이블 입니다 </caption>
+                        <colgroup>
+                            <col width="200">
+                            <col>
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>법인·단체 ID</th>
+                                <td>
+                                    <div class="input-type">
+                                        <label>
+                                            <input type="text">
+                                        </label>
+                                        <a href="" class="btn-type-1-02" role="button">법인명 체크</a>
+                                    </div>
+                                </td>
+                                <th>법인명</th>
+                                <td>대북지원단체</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="content-box-area ">
+                    <h3>담당자 정보</h3>
+                    <table class="table-type-02 table-contact-information">
+                        <caption>담당자 정보의 담당자 ID,비밀번호,비밀번호 확인,성명,국적,성별,생년월일,부서명,직함,사무실 전화,휴대전화,이메일,재직증명서류의 테이블 입니다</caption>
+                        <colgroup>
+                            <col width="200">
+                            <col>
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>담당자 ID</th>
+                                <td colspan="3 ">
+                                    <div class="input-type">
+                                        <input type="text">
+                                        <a href="" class="btn-type-1-02" role="button">중복 확인</a>
+                                        <label>* 이미 사용중인 ID입니다</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <input type="text">
+                                        <label>* 문자, 숫자, 특수문자 포함 8자리 이상 </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 확인</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <label>
+                                            <input type="text">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>성명</th>
+                                <td>
+                                    <div class="input-type">
+                                        <label>
+                                            <input type="text">
+                                        </label>
+                                    </div>
+                                </td>
+                                <th>국적</th>
+                                <td>
+                                    <div class="select-box">
+                                        <label for="search">대한민국</label>
+                                        <select id="search" name="search-item">
+                                            <option selected="selected ">대한민국</option>
+                                            <option>키워드01</option>
+                                            <option>키워드02</option>
+                                            <option>키워드03</option>
+                                            <option>키워드04</option>
+                                            <option>키워드05</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>
+                                    <div class="radio-type">
+                                        <input type="radio" id="gender-radio1" name="gender-radio">
+                                        <label for="gender-radio1">남</label>
+                                        <input type="radio" id="gender-radio2" name="gender-radio">
+                                        <label for="gender-radio2">여</label>
+                                    </div>
+                                </td>
+                                <th>생년월일</th>
+                                <td>
+                                    <div class="input-type date">
+                                        <input type="date" aria-label="년.월.일" />
+                                        <button class="icon-calender" role="button"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>부서명</th>
+                                <td>
+                                    <div class="input-type">
+                                        <label>
+                                            <input type="text">
+                                        </label>
+                                    </div>
+                                </td>
+                                <th>직함</th>
+                                <td>
+                                    <div class="input-type">
+                                        <label>
+                                            <input type="text">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>사무실 전화</th>
+                                <td>
+                                    <div class="input-type tel">
+                                        <div class="dialog">
+                                            <input class="country-code" type="tel" aria-label="지역번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="first-number" type="tel" aria-label="앞번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="last-number" type="tel" aria-label="뒷번호">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th>휴대전화</th>
+                                <td>
+                                    <div class="input-type tel">
+                                        <div class="dialog">
+                                            <input class="country-code" type="tel" aria-label="통신사번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="first-number" type="tel" aria-label="앞번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="last-number" type="tel" aria-label="뒷번호">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td colspan="3 ">
+                                    <div class="input-type e-mail">
+                                        <div class="email">
+                                            <input class="email-id" type="text" aria-label="이메일 아이디">
+                                        </div>
+                                        <div class="email">
+                                            <input class="email-address" type="text" aria-label="이메일 주소 직접입력">
+                                        </div>
+                                    </div>
+                                    <div class="select-box e-mail">
+                                        <label for="email-search">직접입력</label>
+                                        <select id="email-search" name="email-search-item">
+                                            <option selected="selected">직접입력</option>
+                                            <option>naver.com</option>
+                                            <option>daum.net</option>
+                                            <option>nate.com</option>
+                                            <option>google.com</option>
+                                            <option>yahoo.com</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>재직증명서류</th>
+                                <td colspan="3">
+                                    <h4>4대 보험 가입 증명원 1부</h4>
+                                        <div class="proof-of-employment ">
+                                                <div>
+                                                    <span>서류 등록: </span>
+                                                    <a href="" class="btn-type-1-02" role="button">파일 올리기</a>
+                                                </div>
+                                            <br>
+                                                <div class="add-file-area">
+                                                    <div class="file ">
+                                                        <a class="icon-hwp" role="button" href="">첨부파일.hwp</a>
+                                                        <button class="btn-file-remove">파일삭제</button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="sub-completed">
+                    <!-- [Start] 가입신청 버튼 영역 -->
+                    <a class="btn-type-2-04" role="button" href>가입신청</a>
+                </article>
             </div>
             <!-- [End] 컨텐츠 상세  -->
 

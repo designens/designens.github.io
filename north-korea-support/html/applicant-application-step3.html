@@ -178,31 +178,43 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
+                        <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
+                                <li><a href="">사업자 가입안내</a></li>
+                                <li><a href="">사업자 신청</a></li>
+                                <li><a href="">지원접수현황</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                <li><a href="">약관 동의</a></li>
+                                <li><a href="">가입 신청</a></li>
+                                <li><a href="">가입 승인 확인</a></li>
+                                <li><a href="">가입 탈퇴</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,12 +225,13 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">사업자 신청</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">회원서비스</a>
+                    <a href="#">회원가입안내</a>
+                    <a href="#">법인·단체</a>
+                    <a href="#">사업자 신청</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
@@ -226,7 +239,269 @@
             
             <!-- [Start] 컨텐츠 상세  -->
             <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            
+                <!-- [Start] 상단 버튼 영역 스타일 -->
+                <div class="sub-top-btn-area">
+                    <a href="" class="btn-file-upload" role="button">구비서류 올리기</a>
+                </div>
+                <!-- [End] 상단 버튼 영역 스타일 -->
+
+                <!-- [Start] 진행 순서 버튼 -->
+                <div class="step-area">
+                    <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                    <ul class="porgress-area bar-step3">
+                        <li>
+                            <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                            <div class="step-open">
+                                <div>Step 1</div>
+                                <a href="applicant-application-step1.html" class="btn-step" role="button">가입여부 확인</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                            <div class="step-close">
+                                <div>Step 2</div>
+                                <a href="applicant-application-step2.html" class="btn-step" role="button">신청자 정보</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-close">
+                                <div>Step 3</div>
+                                <a href="applicant-application-step3.html" class="btn-step" role="button">단체기본 정보</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-close">
+                                <div>Step 4</div>
+                                <a href="applicant-application-step4.html" class="btn-step" role="button">연혁 정보</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-close">
+                                <div>Step 5</div>
+                                <a href="applicant-application-step5.html" class="btn-step" role="button">구비서류</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="help-text">
+                        <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                    </p>
+                </div>
+                <!-- [End] 진행 순서 버튼 -->
+
+                <article class="content-box-area">
+                    <h3>단체기본 정보</h3>
+                    <!-- [Start] 테이블 영역 -->
+                    <table class="table-type-02">
+                        <caption>단체기본 정보의 사업자등록번호,법인단체ID,비밀번호,비밀번호 확인,할글 법인명,영문 법인명,직인,대표자 사진,대표자 성명,생년월일,전화번호,팩스번호,주소,홈페이지,법인 설립일자,법인 설립처,주요사업,설립목적,비고의 테이블 입니다.</caption>
+                        <colgroup>
+                            <col>
+                            <col width="265">
+                            <col>
+                            <col width="265">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>사업자등록번호</th>
+                                <td colspan="3">123456789</td>
+                            </tr>
+                            <tr>
+                                <th>법인·단체 ID</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <input type="text" aria-label="ID 중복 확인하세요.">
+                                        <button class="btn-type-1-02">중복 확인</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <input type="text" aria-label="비밀번호 입력하세요.">
+                                        <label class="red">* 문자, 숫자, 특수문자 포함 8자리 이상 </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 확인</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <input type="text" aria-label="비밀번호 재입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>한글 법인명</th>
+                                <td>
+                                    <div class="input-type">
+                                        <input type="text" aria-label="한글 법인명 입력하세요.">
+                                    </div>
+                                </td>
+                                <th>약식 법인명</th>
+                                <td>
+                                    <div class="input-type">
+                                        <input type="text" aria-label="약식 법인명 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>영문 법인명</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <input type="text" aria-label="영문 법인명 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>직인</th>
+                                <td colspan="3">
+                                    <div class="add-file-sherch">
+                                        <button class="btn-type-1-02">파일 올리기</button>
+                                    </div>
+                                    <div class="add-file-area">
+                                        <div class="file">
+                                            <a class="icon-png" role="button" href>첨부파일1.png</a>
+                                            <button class="btn-file-remove">파일삭제</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>대표자 사진</th>
+                                <td colspan="3">
+                                    <div class="add-file-sherch">
+                                        <a class="btn-type-1-02">파일 올리기</a>
+                                    </div>
+                                    <div class="add-file-area">
+                                        <div class="file">
+                                            <a class="icon-png" role="button" href>첨부파일1.png</a>
+                                            <button class="btn-file-remove">파일삭제</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>대표자 성명</th>
+                                <td>
+                                    <div class="input-type">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                                <th>생년월일</th>
+                                <td>
+                                    <div class="input-type date">
+                                        <input type="date" aria-label="년.월.일" />
+                                        <button class="icon-calender" role="button"></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <div class="input-type tel">
+                                        <div class="dialog">
+                                            <input class="country-code" type="tel" aria-label="지역번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="first-number" type="tel" aria-label="앞번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="last-number" type="tel" aria-label="뒷번호">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th>팩스번호</th>
+                                <td>
+                                    <div class="input-type tel">
+                                        <div class="dialog">
+                                            <input class="country-code" type="tel" aria-label="지역번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="first-number" type="tel" aria-label="앞번호">
+                                        </div>
+                                        <div class="dialog">
+                                            <input class="last-number" type="tel" aria-label="뒷번호">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td colspan="3">
+                                    <ul class="address-area">
+                                        <li>
+                                            <div class="input-type">
+                                                <input type="text" aria-label="우편번호">
+                                                <button type="button" class="btn-type-1-02">우편번호 찾기</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="input-type">
+                                                <input type="text" aria-label="기본 주소">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="input-type">
+                                                <input type="text" placeholder="상세 주소 입력">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>홈페이지</th>
+                                <td colspan="3">
+                                    <div class="input-type">
+                                        <input type="text" aria-label="홈페이지 주소 입력하세요.">
+                                        <label class="red">* http:// 또는 http:// 포함하여 입력</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>법인 설립일자</th>
+                                <td class="td-establish-date">
+                                    <div class="input-type date">
+                                        <input type="date" aria-label="년.월.일" />
+                                        <button class="icon-calender" role="button"></button>
+                                    </div>
+                                </td>
+                                <th>법인 설립처</th>
+                                <td>
+                                    <div class="input-type">
+                                        <input type="text" aria-label="법인 설립처 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주요사업</th>
+                                <td colspan="3">
+                                    <textarea class="textarea" aria-label="주요사업 입력하세요."></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>설립목적</th>
+                                <td colspan="3">
+                                    <textarea class="textarea" aria-label="설립목적 입력하세요."></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비고</th>
+                                <td colspan="3">
+                                    <input type="text" aria-label="비고 입력하세요">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- [End] 테이블 영역 -->
+                </article>
+                <div class="sub-completed">
+                    <!-- [Start] 이전/다음 단계,저장하기 버튼 영역 -->
+                    <a class="btn-type-2-01" role="button" href>이전단계</a>
+                    <a class="btn-type-2-01" role="button" href>다음단계</a>
+                    <a class="btn-type-2-04" role="button" href>저장하기</a>
+                </div>
+
             </div>
             <!-- [End] 컨텐츠 상세  -->
 
@@ -250,6 +525,92 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 구비서류 올리기 Popup -->
+    <div class="popup" data-id="popup-applicant-application">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>구비서류 올리기</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-applicant-application-content">
+        <table class="table-type-02">
+            <caption>2017년 이전 대북지원사업자 양식, 대표자 사진, 법인 · 단체 직인, 사업자 소개서, 대북지원사업 추진계획서, 추진실적 입증 서류, 정관 등기부, 법인 등기부, 대표자 신원증명서, 연혁 엑셀 upload 양식 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col width="180">
+                <col width="180">
+                <col width="100">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>2017년 이전 대북지원사업자 양식</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td></td>
+                    <td><strong>해당없음</strong></td>
+                </tr>
+                <tr>
+                    <th>대표자 사진</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>법인 · 단체 직인</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>사업자 소개서</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>대북지원사업 추진계획서</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>추진실적 입증 서류</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>정관 등기부</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>법인 등기부</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>대표자 신원증명서</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>연혁 엑셀 upload 양식</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td></td>
+                    <td><strong>해당없음</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 구비서류 올리기 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>

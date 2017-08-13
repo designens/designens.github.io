@@ -178,8 +178,8 @@
                 <h2>Input</h2>
                 <div class="form-group">
 
-                    <h3><div class="fa fa-angle-double-right"></div>설명이 있는 인풋 스타일</h3>
                     <!-- [Start] 설명이 있는 인풋 스타일 -->
+                    <h3><div class="fa fa-angle-double-right"></div>설명이 있는 인풋 스타일</h3>
                     <div class="input-type">
                         <label for="username">아이디</label>
                         <input type="text" id="username" name="username" required="required" />
@@ -190,17 +190,15 @@
                     </div>
                     <!-- [End] 설명이 있는 인풋 스타일 -->
 
-                    <h3><div class="fa fa-angle-double-right"></div>설명이 없는 인풋 스타일</h3>
                     <!-- [Start] 설명이 없는 인풋 스타일 -->
+                    <h3><div class="fa fa-angle-double-right"></div>설명이 없는 인풋 스타일</h3>
                     <div class="input-type">
-                        <label>
-                            <input type="text" aria-label="텍스트 입력"/>
-                        </label>
+                        <input type="text" aria-label="텍스트 입력"/>
                     </div>
                     <!-- [End] 설명이 없는 인풋 스타일 -->
 
-                    <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
                     <!-- [Start] Placeholder가 있는 인풋 스타일 -->
+                    <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
                     <div class="input-type">
                         <label>
                             <input type="text" placeholder="Placeholder 내용" />
@@ -208,33 +206,33 @@
                     </div>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
 
-                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
                     <!-- [Start] 전화번호 인풋 스타일 -->
+                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
                     <div class="input-type tel">
-                        <label for="dialog-country-code">
-                            <input id="dialog-country-code" type="tel" aria-label="지역번호">
-                        </label>
-                        <label for="dialog-first-number">
-                            <input id="dialog-first-number" type="tel" aria-label="앞번호">
-                        </label>
-                        <label for="dialog-last-number">
-                            <input id="dialog-last-number" type="tel" aria-label="뒷번호">
-                        </label>
+                        <div class="dialog">
+                            <input class="country-code" type="tel" aria-label="지역번호">
+                        </div>
+                        <div class="dialog">
+                            <input class="first-number" type="tel" aria-label="앞번호">
+                        </div>
+                        <div class="dialog">
+                            <input class="last-number" type="tel" aria-label="뒷번호">
+                        </div>
                     </div>
                     <!-- [End] 전화번호 인풋 스타일 -->
 
-                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
                     <!-- [Start] 이메일 인풋 스타일 -->
+                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
                     <div class="input-type e-mail">
-                        <label for="email-id">
-                            <input id="email-id" type="text" aria-label="이메일 아이디">
-                        </label>
-                        <label for="email-address">
-                            <input id="email-address" type="text" aria-label="이메일 주소 직접입력">
-                        </label>
+                        <div class="email">
+                            <input class="email-id" type="text" aria-label="이메일 아이디">
+                        </div>
+                        <div class="email">
+                            <input class="email-address" type="text" aria-label="이메일 주소 직접입력">
+                        </div>
                     </div>
                     <div class="select-box e-mail">
-                        <label for="email-search">이메일 주소 옵션 선택,</label>
+                        <label for="email-search">직접입력</label>
                         <select id="email-search" name="email-search-item">
                             <option selected="selected">직접입력</option>
                             <option>naver.com</option>
@@ -245,6 +243,11 @@
                         </select>
                     </div>
                     <!-- [End] 이메일 인풋 스타일 -->
+
+                    <!-- [Start] 텍스트박스 스타일 -->
+                    <h3><div class="fa fa-angle-double-right"></div>텍스트박스 스타일</h3>
+                    <textarea class="textarea" placeholder="텍스트 입력하세요."></textarea>
+                    <!-- [End] 텍스트박스 스타일 -->
                 </div>
             </article>
             <!-- [End] Input 공통 -->
@@ -462,9 +465,7 @@
                             </select>
                         </li>
                         <li class="input-type">
-                            <label class="search-keyword">
-                                <input type="text" aria-label="검색 키워드 입력하세요."/>
-                            </label>
+                            <input type="text" aria-label="검색 키워드 입력하세요."/>
                             <button class="btn-lookup">조회</button>
                         </li>
                     </ul>
@@ -491,9 +492,7 @@
                             </select>
                         </li>
                         <li class="input-type">
-                            <label class="search-keyword">
-                                <input type="text" aria-label="검색 키워드 입력하세요."/>
-                            </label>
+                            <input type="text" aria-label="검색 키워드 입력하세요."/>
                             <button class="btn-lookup">조회</button>
                         </li>
                     </ul>
