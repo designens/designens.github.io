@@ -238,30 +238,37 @@
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content sign-up-content">
-                
-                <!-- [Start] 담당자 가입 승인 조회 -->
-                <article class="content-box-area">
-                    <h3>담당자 가입 승인 조회</h3>
-                    <div class="content-form-area">
-                        <div class="form-group">
-                            <div class="input-area">
-                                <input type="text" id="username" name="username" required="required" />
-                                <label for="username">담당자 ID</label>
-                                <br>
-                                <input type="password" id="password" name="password" required="required" />
-                                <label for="password">비밀번호</label>
-                            </div>
-                            <button class="btn-input-area">조회</button>
-                        </div>
-                    </div>
-                </article>
-                <!-- [End] 담당자 가입 승인 조회 -->
+            <div class="content sign-up-write">
 
                 <!-- [Start] 신청 완료 -->
                 <div class="sub-completed">
-                    <p class="message">회원가입 승인이 되었습니다.</p>
-                    <a class="btn-completed" role="button" href>로그인</a>
+                    <p class="message">회원가입 신청 접수가 되었습니다.</p>
+                    <table class="table-type-02">
+                        <caption>법인 · 단체명, ID, 성명, 이메일 항목이 있습니다.</caption>
+                        <colgroup>
+                            <col width="200">
+                            <col>
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>법인 · 단체명</th>
+                                <td colspan="3">대북지원단체1</td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>abc</td>
+                                <th>성명</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td colspan="3">abc@daum.net</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-completed" role="button" href>가입 신청</a>
                 </div>
                 <!-- [End] 신청 완료 -->
 

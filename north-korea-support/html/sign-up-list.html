@@ -238,7 +238,7 @@
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content sign-up-content">
+            <div class="content sign-up-list">
                 <article class="content-box-area">
                     <h3>법인·단체</h3>
                     <table class="table-type-02 table-corporate-body">
@@ -281,9 +281,9 @@
                                 <th>담당자 ID</th>
                                 <td colspan="3 ">
                                     <div class="input-type">
-                                        <input type="text">
+                                        <input type="text" aria-label="ID 입력하세요.">
                                         <a href="" class="btn-type-1-02" role="button">중복 확인</a>
-                                        <label>* 이미 사용중인 ID입니다</label>
+                                        <span class="red">* 이미 사용중인 ID입니다</span>
                                     </div>
                                 </td>
                             </tr>
@@ -291,8 +291,8 @@
                                 <th>비밀번호</th>
                                 <td colspan="3">
                                     <div class="input-type">
-                                        <input type="text">
-                                        <label>* 문자, 숫자, 특수문자 포함 8자리 이상 </label>
+                                        <input type="text" aria-label="비밀번호 입력하세요.">
+                                        <span class="red">* 문자, 숫자, 특수문자 포함 8자리 이상 </span>
                                     </div>
                                 </td>
                             </tr>
@@ -300,9 +300,7 @@
                                 <th>비밀번호 확인</th>
                                 <td colspan="3">
                                     <div class="input-type">
-                                        <label>
-                                            <input type="text">
-                                        </label>
+                                        <input type="text" aria-label="비밀번호 재입력하세요.">
                                     </div>
                                 </td>
                             </tr>
@@ -310,9 +308,7 @@
                                 <th>성명</th>
                                 <td>
                                     <div class="input-type">
-                                        <label>
-                                            <input type="text">
-                                        </label>
+                                        <input type="text" aria-label="성명 입력하세요.">
                                     </div>
                                 </td>
                                 <th>국적</th>
@@ -334,10 +330,10 @@
                                 <th>성별</th>
                                 <td>
                                     <div class="radio-type">
-                                        <input type="radio" id="gender-radio1" name="gender-radio">
-                                        <label for="gender-radio1">남</label>
-                                        <input type="radio" id="gender-radio2" name="gender-radio">
-                                        <label for="gender-radio2">여</label>
+                                        <input type="radio" id="gender-male" name="gender">
+                                        <label for="gender-male">남</label>
+                                        <input type="radio" id="gender-female" name="gender">
+                                        <label for="gender-female">여</label>
                                     </div>
                                 </td>
                                 <th>생년월일</th>
@@ -424,19 +420,18 @@
                                 <th>재직증명서류</th>
                                 <td colspan="3">
                                     <h4>4대 보험 가입 증명원 1부</h4>
-                                        <div class="proof-of-employment ">
-                                                <div>
-                                                    <span>서류 등록: </span>
-                                                    <a href="" class="btn-type-1-02" role="button">파일 올리기</a>
-                                                </div>
-                                            <br>
-                                                <div class="add-file-area">
-                                                    <div class="file ">
-                                                        <a class="icon-hwp" role="button" href="">첨부파일.hwp</a>
-                                                        <button class="btn-file-remove">파일삭제</button>
-                                                    </div>
-                                                </div>
+                                    <div class="add-file-upload">
+                                        <div class="add-file-sherch">
+                                            <span>서류 등록 :</span>
+                                            <button class="btn-type-1-02">파일 올리기</button>
                                         </div>
+                                        <div class="add-file-area">
+                                            <div class="file">
+                                                <a class="icon-png" role="button" href>첨부파일1.png</a>
+                                                <button class="btn-file-remove">파일삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
