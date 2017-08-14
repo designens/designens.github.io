@@ -37,4 +37,36 @@
 
 .sign-up-list .table-contact-information .input-type.tel label input::before:nth-of-type(1), .sign-up-list .table-contact-information .input-type.tel label input::before:nth-of-type(2), .sign-up-list .table-contact-information .input-type.tel label input::before:nth-of-type(3) { content: "-"; position: absolute; top: 0; left: 0; padding-left: 20px; display: inline-block; }
 
+.information-inquiry-content .sub-top-button-area { float: right; }
+
+.information-inquiry-content .sub-top-button-area button:first-child { width: 190px; }
+
+.information-inquiry-content .sub-top-button-area button:nth-child(2) { width: 100px; }
+
+.information-inquiry-content .sub-top-button-area button:nth-child(3), .information-inquiry-content .sub-top-button-area button:nth-child(4) { width: 110px; }
+
+.information-inquiry-content .sub-top-button-area button:last-child { width: 150px; }
+
+.information-inquiry-content .table-type-01 { letter-spacing: -1px; }
+
+.information-inquiry-content .table-type-02 tr:first-child .td-pwd-number { color: #bd1313; }
+
+.information-inquiry-content .table-type-02 tr:nth-child(9) textarea, .information-inquiry-content .table-type-02 tr:nth-child(10) textarea, .information-inquiry-content .table-type-02 tr:last-child textarea { width: 708px; height: 54px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+
+.information-inquiry-content .table-type-02 tr:nth-child(7) .btn-type-1-02 { width: 126px; }
+
+.information-inquiry-content .table-type-02 tr:nth-child(7) .td-address .input-type input { width: 708px; margin-top: 4px; margin-bottom: 4px; }
+
+.information-inquiry-content .table-type-02 tr:nth-child(7) .td-address .input-type:first-child input:first-child { width: 244px; }
+
+.information-inquiry-content .table-type-02 tr:nth-child(7) .td-address .input-type:nth-child(2) input { width: 708px; }
+
+.information-inquiry-content #panel3 p { color: #003761; float: right; margin-bottom: 11px; }
+
+.information-inquiry-content #panel3 p strong { font-weight: bold; }
+
+.information-inquiry-content #panel3 .table-type-01 tr td:nth-child(4) { text-align: left; }
+
+.information-inquiry-content #panel4 .table-type-01 tr td:nth-child(3) { text-align: left; }
+
 /*# sourceMappingURL=map/khj-style.css.map */

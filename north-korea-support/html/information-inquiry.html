@@ -178,31 +178,43 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
+                        <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
+                                <li><a href="">사업자 가입안내</a></li>
+                                <li><a href="">사업자 신청</a></li>
+                                <li><a href="">지원접수현황</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                <li><a href="">약관 동의</a></li>
+                                <li><a href="">가입 신청</a></li>
+                                <li><a href="">가입 승인 확인</a></li>
+                                <li><a href="">가입 탈퇴</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,12 +225,12 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">정보 조회</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">회원서비스</a>
+                    <a href="#">단체정보 관리</a>
+                    <a href="#">정보 조회</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
@@ -226,7 +238,495 @@
             
             <!-- [Start] 컨텐츠 상세  -->
             <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+                <!-- [Start] 탭 영역 -->
+                <div class="tablist t4" role="tablist">
+                    <a id="tab1" aria-controls="panel1" role="tab" href><span>단체정보</span></a>
+                    <a id="tab2" aria-controls="panel2" role="tab" href><span>회원명부</span></a>
+                    <a id="tab3" aria-controls="panel3" role="tab" href><span>연혁</span></a>
+                    <a id="tab4" aria-controls="panel4" role="tab" href><span>예산정보</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
+                        <!-- [Start] 단체정보 컨텐츠 영역 -->
+                        <table class="table-type-02 table-name">
+                            <caption>단체정보 테이블의 사업자등록번호,패스워드,한글 법인명,약식 법인명,영문 법인명,대표자 성명,생년월일,전화번호,주소,홈페이지,법인 설립일자,법인 설립처,주요사업,설립목적,비고의 항목을 작성 합니다.</caption>
+                            <colgroup>
+                                <col width="200">
+                                <col>
+                                <col width="200">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사업자등록번호</th>
+                                    <td>123-45-678</td>
+                                    <th>패스워드</th>
+                                    <td class="td-pwd-number">1234</td>
+                                </tr>
+                                <tr>
+                                    <th>한글 법인명</th>
+                                    <td>FAO(식량농업기구)</td>
+                                    <th>약식 법인명</th>
+                                    <td>식량농업</td>
+                                </tr>
+                                <tr>
+                                    <th>영문 법인명</th>
+                                    <td colspan="3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>대표자 성명</th>
+                                    <td colspan="3">홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>생년월일</th>
+                                    <td colspan="3">1977-01-01</td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td colspan="3">02-2168-8710</td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td colspan="3" class="td-address">
+                                        <div class="input-type">
+                                            <label>
+                                                <input type="text">
+                                            </label>
+                                            <a class="btn-type-1-02">우편번호 찾기</a>
+                                        </div>
+                                        <div class="input-type">
+                                            <label>
+                                                <input type="text">
+                                                <br>
+                                            </label>
+                                            <label>
+                                                <input type="text" placeholder="상세 주소 입력">
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>홈페이지</th>
+                                    <td>http://media.daum.net</td>
+                                    <th>법인 설립처</th>
+                                    <td>남북지원단체</td>
+                                </tr>
+                                <tr>
+                                    <th>주요사업</th>
+                                    <td colspan="3">
+                                        <textarea></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>설립목적</th>
+                                    <td colspan="3">
+                                        <textarea class="textarea"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비고</th>
+                                    <td colspan="3">
+                                        <textarea class="textarea"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-btn-set">
+                            <button class="btn-type-2-04">변경사항 요청하기</button>
+                        </div>
+                    </div>
+                    <!-- [End] 단체정보 컨텐츠 영역 -->
+                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0" aria-hidden="true">
+                        <!-- [Start] 회원명부 컨텐츠 영역 -->
+                        <div class="all-page">
+                            <span>총 <strong>199</strong>명 검색</span>
+                        </div>
+                        <table class="table-type-01 table-name">
+                            <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
+                            <colgroup>
+                                <col width="54">
+                                <col width="84">
+                                <col width="64">
+                                <col width="56">
+                                <col width="86">
+                                <col width="120">
+                                <col width="150">
+                                <col width="120">
+                                <col width="120">
+                                <col width="67">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>상태</th>
+                                    <th>등급</th>
+                                    <th>성명</th>
+                                    <th>직함</th>
+                                    <th>부서명</th>
+                                    <th>전화번호</th>
+                                    <th>이메일</th>
+                                    <th>휴대폰</th>
+                                    <th>팩스</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>신청</td>
+                                    <td>실무담당자</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>승인</td>
+                                    <td>책임자</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>반려</td>
+                                    <td>대표자</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>승인</td>
+                                    <td>일반회원</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>승인</td>
+                                    <td>일반회원</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>승인</td>
+                                    <td>일반회원</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>승인</td>
+                                    <td>일반회원</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>대북홍보부</td>
+                                    <td>010-1234-5678</td>
+                                    <td>abcd@email.com</td>
+                                    <td>010-1234-5678</td>
+                                    <td>010-1234-5678</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 회원명부 컨텐츠 영역 -->
+                    </div>
+                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0" aria-hidden="true">
+                        <!-- [Start] 연혁 컨텐츠 영역 -->
+                        <p>* 그리드 셀을 더블 클릭시 <strong>수정 가능</strong></p>
+                        <div class="all-page">
+                            <span>총 <strong>199</strong>개 검색</span>
+                        </div>
+                        <div class="sub-top-button-area">
+                            <button href="" class="btn-type-1-02">표준 Excel 양식 다운받기</button>
+                            <button href="" class="btn-type-1-02">추가하기</button>
+                            <button href="" class="btn-type-1-02">새로 만들기</button>
+                            <button href="" class="btn-type-1-02">엑셀 업로드</button>
+                            <button href="" class="btn-type-1-02">신규 항목 입력하기</button>
+                        </div>
+                        <!-- [Start] 테이블 컨텐츠 영역 -->
+                        <table class="table-type-01 table-name">
+                            <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
+                            <colgroup>
+                                <col width="38">
+                                <col width="54">
+                                <col width="130">
+                                <col width="493">
+                                <col width="130">
+                                <col width="80">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>번호</th>
+                                    <th>연도</th>
+                                    <th>내용</th>
+                                    <th>작성일</th>
+                                    <th>작성자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-01" name="table-checkbox-01">
+                                        <label for="table-checkbox-01"></label>
+                                    </td>
+                                    <td>175</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-02" name="table-checkbox-02">
+                                        <label for="table-checkbox-02"></label>
+                                    </td>
+                                    <td>174</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>888</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-03" name="table-checkbox-03">
+                                        <label for="table-checkbox-03"></label>
+                                    </td>
+                                    <td>173</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>677</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-04" name="table-checkbox-04">
+                                        <label for="table-checkbox-04"></label>
+                                    </td>
+                                    <td>172</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-05" name="table-checkbox-05">
+                                        <label for="table-checkbox-05"></label>
+                                    </td>
+                                    <td>171</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>888</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-06" name="table-checkbox-06">
+                                        <label for="table-checkbox-06"></label>
+                                    </td>
+                                    <td>170</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>677</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-07" name="table-checkbox-07">
+                                        <label for="table-checkbox-07"></label>
+                                    </td>
+                                    <td>169</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-08" name="table-checkbox-08">
+                                        <label for="table-checkbox-08"></label>
+                                    </td>
+                                    <td>168</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>888</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-08" name="table-checkbox-08">
+                                        <label for="table-checkbox-08"></label>
+                                    </td>
+                                    <td>168</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>888</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-type">
+                                        <input type="checkbox" id="table-checkbox-08" name="table-checkbox-08">
+                                        <label for="table-checkbox-08"></label>
+                                    </td>
+                                    <td>168</td>
+                                    <td>2017.01</td>
+                                    <td>
+                                        <a href="" class="view-link" role="button">무주택 "전후납북피해자" 공공임대주택특별공급신청 안내[시흥장현지구] 입니다.</a>
+                                    </td>
+                                    <td>2017-11-12</td>
+                                    <td>888</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 테이블 컨텐츠 영역 -->
+                        <!-- [Start] 선택항목 삭제,저장하기 버튼 영역 -->
+                        <div class="sub-completed">
+                            <button class="btn-type-2-01">선택항목 삭제하기</button>
+                            <button class="btn-type-2-04">저장하기</button>
+                        </div>
+                        <!-- [End] 선택항목 삭제,저장하기 버튼 영역 -->
+                        <!-- [End] 연혁 컨텐츠 영역 -->
+                    </div>
+                    <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0" aria-hidden="true">
+                        <!-- [Start] 예산정보 컨텐츠 영역 -->
+                        <div class="all-page">
+                            <span>총 <strong>199</strong>개 검색</span>
+                        </div>
+                        <table class="table-type-01 table-name">
+                            <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
+                            <colgroup>
+                                <col width="54">
+                                <col width="130">
+                                <col width="532">
+                                <col width="130">
+                                <col width="80">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>연도</th>
+                                    <th>내용</th>
+                                    <th>작성일</th>
+                                    <th>작성자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td>175</td>
+                                    <td>2017</td>
+                                    <td><a href="" class="view-link" role="button">무주택 “전후납북피해자” 공공임대주택특별공급신청 안내[시흥장현지구입니다]</a></td>
+                                    <td>2017-11-12</td>
+                                    <td>999</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- [End] 예산정보 컨텐츠 영역 -->
+                        <!-- [Start] 선택항목 삭제,저장하기 버튼 영역 -->
+                        <div class="sub-completed">
+                            <button class="btn-type-2-01">선택항목 삭제하기</button>
+                            <button class="btn-type-2-04">저장하기</button>
+                        </div>
+                        <!-- [End] 선택항목 삭제,저장하기 버튼 영역 -->
+                    </div>
+                </div>
+                <!-- [End] 탭 영역 -->
             </div>
             <!-- [End] 컨텐츠 상세  -->
 

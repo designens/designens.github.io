@@ -1694,10 +1694,6 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-type-3-03:hover, .btn-type-3-03:focus, .btn-type-3-03:active { border-color: #003257; background: #003257; transition: all .3s ease; }
 
-.icon-comment { display: inline-block; min-width: 80px; height: 33px; line-height: 31px; text-align: center; padding: 0 10px; border-radius: 3px; text-shadow: 0 0 1px #a3a3a3; border: 1px solid #a3a3a3; background: #fff; }
-
-.icon-comment:before { display: inline-block; width: 22px; height: 20px; background: url("../../assets/images/icon/icon-comment.png") center no-repeat; margin-right: 10px; vertical-align: -6px; content: ""; }
-
 html { font-size: 10px; }
 
 html body { font-family: "malgun gothic", "Noto Sans Korean", sans-serif, serif; font-size: 1.4rem; -webkit-font-smoothing: antialiased; color: #4c4c4c; letter-spacing: -0.03em; line-height: 1.5; }
@@ -1833,6 +1829,10 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 /* =======================================*/
 /* 버튼 공통 스타일
 /* =======================================*/
+.icon-comment { display: inline-block; min-width: 80px; height: 33px; line-height: 31px; text-align: center; padding: 0 10px; border-radius: 3px; text-shadow: 0 0 1px #a3a3a3; border: 1px solid #a3a3a3; background: #fff; }
+
+.icon-comment:before { display: inline-block; width: 22px; height: 20px; background: url("../../assets/images/icon/icon-comment.png") center no-repeat; margin-right: 10px; vertical-align: -6px; content: ""; }
+
 /* =======================================*/
 /* 화살표 아이콘 기본 스타일
 /* =======================================*/
@@ -2083,6 +2083,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .all-pages-view .all-page span { font-size: 16px; line-height: 34px; }
 
 .all-pages-view .all-page span strong { color: #333; }
+
+.all-pages-view .all-page span:before { display: inline-block; width: 8px; height: 14px; vertical-align: -5px; margin-right: 5px; background: url("../../assets/images/icon/icon-all-page.png") no-repeat; content: ""; }
 
 .all-pages-view .select-box { float: right; position: relative; width: 150px; height: 34px; }
 
