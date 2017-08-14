@@ -49,17 +49,7 @@
 
 .information-inquiry-content .table-type-01 { letter-spacing: -1px; }
 
-.information-inquiry-content .table-type-02 tr:first-child .td-pwd-number { color: #bd1313; }
-
 .information-inquiry-content .table-type-02 tr:nth-child(9) textarea, .information-inquiry-content .table-type-02 tr:nth-child(10) textarea, .information-inquiry-content .table-type-02 tr:last-child textarea { width: 708px; height: 54px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
-
-.information-inquiry-content .table-type-02 tr:nth-child(7) .btn-type-1-02 { width: 126px; }
-
-.information-inquiry-content .table-type-02 tr:nth-child(7) .td-address .input-type input { width: 708px; margin-top: 4px; margin-bottom: 4px; }
-
-.information-inquiry-content .table-type-02 tr:nth-child(7) .td-address .input-type:first-child input:first-child { width: 244px; }
-
-.information-inquiry-content .table-type-02 tr:nth-child(7) .td-address .input-type:nth-child(2) input { width: 708px; }
 
 .information-inquiry-content #panel3 p { color: #003761; float: right; margin-bottom: 11px; }
 

@@ -261,7 +261,7 @@
                                     <th>사업자등록번호</th>
                                     <td>123-45-678</td>
                                     <th>패스워드</th>
-                                    <td class="td-pwd-number">1234</td>
+                                    <td class="red">1234</td>
                                 </tr>
                                 <tr>
                                     <th>한글 법인명</th>
@@ -288,22 +288,25 @@
                                 </tr>
                                 <tr>
                                     <th>주소</th>
-                                    <td colspan="3" class="td-address">
-                                        <div class="input-type">
-                                            <label>
-                                                <input type="text">
-                                            </label>
-                                            <a class="btn-type-1-02">우편번호 찾기</a>
-                                        </div>
-                                        <div class="input-type">
-                                            <label>
-                                                <input type="text">
-                                                <br>
-                                            </label>
-                                            <label>
-                                                <input type="text" placeholder="상세 주소 입력">
-                                            </label>
-                                        </div>
+                                    <td colspan="3">
+                                        <ul class="address-area">
+                                            <li>
+                                                <div class="input-type">
+                                                    <input type="text" aria-label="우편번호">
+                                                    <button type="button" class="btn-type-1-02">우편번호 찾기</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-type">
+                                                    <input type="text" aria-label="기본 주소">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-type">
+                                                    <input type="text" placeholder="상세 주소 입력">
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
@@ -315,19 +318,21 @@
                                 <tr>
                                     <th>주요사업</th>
                                     <td colspan="3">
-                                        <textarea></textarea>
+                                        <textarea class="textarea" aria-label="주요사업 입력하세요."></textarea>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>설립목적</th>
                                     <td colspan="3">
-                                        <textarea class="textarea"></textarea>
+                                        <textarea class="textarea" aria-label="설립목적 입력하세요."></textarea>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>비고</th>
                                     <td colspan="3">
-                                        <textarea class="textarea"></textarea>
+                                        <div class="input-type full">
+                                            <input type="text" aria-label="비고 입력하세요">
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -339,22 +344,24 @@
                     <!-- [End] 단체정보 컨텐츠 영역 -->
                     <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0" aria-hidden="true">
                         <!-- [Start] 회원명부 컨텐츠 영역 -->
-                        <div class="all-page">
-                            <span>총 <strong>199</strong>명 검색</span>
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
                         </div>
                         <table class="table-type-01 table-name">
                             <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
                             <colgroup>
                                 <col width="54">
-                                <col width="84">
+                                <col width="90">
                                 <col width="64">
                                 <col width="56">
-                                <col width="86">
+                                <col width="90">
                                 <col width="120">
-                                <col width="150">
+                                <col width="140">
                                 <col width="120">
                                 <col width="120">
-                                <col width="67">
+                                <col width="">
                             </colgroup>
                             <thead>
                                 <tr>
