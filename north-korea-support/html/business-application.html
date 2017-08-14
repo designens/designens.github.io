@@ -1,21 +1,56 @@
-<!--#include file="../_inc/_doctype.html"-->
+<!DOCTYPE html>
+<html lang="ko-KR">
 <head>
-    <!--#include file="../_inc/_page-title.html"-->
-    <!--#include file="../_inc/_meta-information.html"-->
-    <!--#include file="../_inc/_meta-settings.html"-->
-    <!--#include file="../_inc/_css-settings.html"-->
-    <!--#include file="../_inc/_js-top-settings.html"-->
+    <title>대북지원정보시스템</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<!-- 페이지 저자 정의 -->
+<meta name="author" content="inyoung"/>
+<!-- SEO : 검색엔진최적화 -->
+<meta name="description" content="대북지원정보시스템"/>
+<meta name="keywords" content="대북지원정보시스템"/>
+    <!-- MSIE 호환성 보기 (최신 브라우저) -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<!-- MOBILE : 모바일 최적화 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+
+    <!-- Styles : Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+<!-- Styles : CSS & SASS Sorcemap -->
+<link rel="stylesheet" href="../assets/css/jiy-style.css"/>
+<link rel="stylesheet" href="../assets/css/khj-style.css"/>
+    <!-- IE 9 버전 이하 지원 -->
+<!--[if lt IE 9]>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+
+<!-- IE 9 버전 이상 지원 -->
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<![endif]-->
+
+<!-- jQuery : jquery-ui -->
+<script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
 </head>
 
 <body>
     <!-- [Start] skip navigation -->
-    <!--#include file="../_inc/_skip-navigation.html"-->
+    <a class="skip-link" href="#gnb-menu" data-scroll data-target="#gnb-menu" role="button">즐겨찾는 메뉴 바로가기</a>
+    <a class="skip-link" href="#gnb-all-menu" data-scroll data-target="#gnb-all-menu" role="button">전체메뉴 바로가기</a>
+    <a class="skip-link" href="#container" data-scroll data-target="#container" role="button">컨텐츠 바로가기</a>
     <!-- [End] skip navigation -->
     
     <!-- [Start] Header -->
     <header class="header">
         <!-- [Start] Top menu -->
-        <!--#include file="../_inc/_top-menu.html"-->
+        <div class="top-menu">
+            <div class="wrap">
+                <a href="login.html">로그인</a>
+                <a href="apply-to-north-korea.html">대북지원사업자 신청</a>
+                <a href="support-application-status-list.html">사업자 지원접수현황</a>
+            </div>
+        </div>
         <!-- [End] Top menu -->
         
         <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
@@ -314,14 +349,148 @@
     <!-- [End] Container Area -->
 
     <!-- [Start] Footer Area -->
-    <!--#include file="../_inc/_site-info.html"-->
+    <footer class="footer">
+        <div class="site-info">
+            <a href="#"><span>이용약관</span></a>
+            <a href="#"><span>개인정보처리방법</span></a>
+            <a href="#"><span>이메일무단수집거부</span></a>
+            <a href="#"><span>저작권보호 및 이용정책</span></a>
+        </div>
+        <p>
+            03171 서울특별시 종로구 세종대로 209 (세종로) 정부서울청사 6,7층 TEL : 1577-1365 (야간 2100-5799)<br/>
+            <small class="copyright">COPYRIGHT&copy;MINISTRY OF UNIFICATION .ALL RIGHTS RESERVED.</small>
+        </p>
+    </footer>
     <!-- [End] Footer Area -->
 
     <!-- [Start] 공고내용 상세보기 Popup -->
-    <!--#include file="../_popup/_popup-business-application.html"-->
+    <div class="popup" data-id="popup-business-application">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>기금사업공고 상세 내용</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-business-application">
+        <table class="table-type-02 table-name">
+            <caption>기금사업공고 상세 내용 테이블의 공고명, 지원분야 작성일, 개요, 제출서류, 신청기간, 신청방법, 접수 및 문의처, 심사 및 통보 항목이 있습니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>공고명</th>
+                    <td>북녘동포 의약품 및 각종 생필품 보내기 사업<a href="" class="btn-type-1-03" role="button">기금사업 신청하기</a></td>
+                </tr>
+                <tr>
+                    <th>지원분야</th>
+                    <td>
+                        <ul class="checkbox-type">
+                            <li>
+                                <input type="checkbox" id="field-01" name="식량차관">
+                                <label for="field-01">식량차관</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-02" name="일반구호">
+                                <label for="field-02">일반구호</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-03" name="사회복지">
+                                <label for="field-03">사회복지</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-04" name="보건의료">
+                                <label for="field-04">보건의료</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-05" name="농업">
+                                <label for="field-05">농업</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-06" name="산림">
+                                <label for="field-06">산림</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-07" name="생활개선/에너지">
+                                <label for="field-07">생활개선/에너지</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="field-08" name="환경">
+                                <label for="field-08">환경</label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>2017-11-11</td>
+                </tr>
+                <tr>
+                    <th>개요</th>
+                    <td>
+                        <ul class="summary">
+                            <li><strong>- 지원 대상 사업</strong>
+                                <ol>
+                                    <li>1. 진료소 지원 사업</li>
+                                    <li>2. 온실 지원 사업</li>
+                                    <li>3. 낙농 지원 사업</li>
+                                </ol>
+                            </li>
+                            <li><strong>- 신청자격</strong> : 대북 지원 사업자로 지정된 비영리법인 또는 단체</li>
+                            <li><strong>- 지원 규모</strong> : 3개 부문 총 30억원(1개 부분당 10억원)</li>
+                            <li>* 각 부문 중복지원 가능, 부문 당 복수 단체 선정</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>제출서류</th>
+                    <td class="download">
+                        <p><span>- 남북협력기금 지원 신청서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 대북지원 사업 계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 남북협력기금 사용계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 분배 투명성 확보 계획서 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                        <p><span>- 단체 관련 자료 1부</span><a class="btn-download">양식 다운로드하기</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>신청기간</th>
+                    <td>2017-11-11 ~ 2018-11-11</td>
+                </tr>
+                <tr>
+                    <th>신청방법</th>
+                    <td>이메일 또는 등기우편(접수 마감일 18:00 도착분에 한함)</td>
+                </tr>
+                <tr>
+                    <th>접수 및 문의처</th>
+                    <td>
+                        <p>통일부 교류 협력국 인도 지원과</p>
+                        <p><strong>주소</strong></p>
+                        <p><strong>전화</strong> </p>
+                        <p><strong>이메일</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>심사 및 통보</th>
+                    <td>심사평가단 심사 후 선정</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
     <!-- [End] 공고내용 상세보기 Popup -->
 
-    <!--#include file="../_inc/_js-bottom-settings.html"-->
+    <!-- javascript : 라이브러리 플러그인 -->
+<script type="text/javascript" src="../assets/js/lib-js.js"></script>
+<!-- javascript : 공통사용 -->
+<script type="text/javascript" src="../assets/js/jiy-common.js"></script>
 </body>
 
 </html>
