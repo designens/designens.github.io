@@ -481,12 +481,51 @@
                 이런저런 내용으로 제안합니다.<br>
                 잘 검토하시고 답변 바랍니다.
             </dd>
-            <dt>답변</dt>
+            <dt>답변 <button class="icon-comment" type="button">덧글</button></dt>
             <dd>
                 <p><span class="admin">관리자</span><span class="date">(2017-05-04)</span></p>
                 이런저런 내용으로 제안합니다.
+                <div class="comment-edit-area">
+                    <div class="input-type">
+                        <label for="comment-password">비밀번호</label>
+                        <input type="password" id="comment-password" name="comment-password" required="required" />
+                    </div>
+                    <button class="comment-edit" type="button">수정</button>
+                    <button class="comment-delete" type="button">삭제</button>
+                </div>
             </dd>
         </dl>
+        <table class="table-type-02 qna-comments">
+            <caption>qna 덧글</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">
+                        <textarea class="textarea"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td>
+                        <div class="input-type">
+                            <input type="text" name="" aria-label="작성자명 입력하세요.">
+                        </div>
+                    </td>
+                    <th>비밀번호</th>
+                    <td>
+                        <div class="input-type">
+                            <input type="text" name="" aria-label="비밀번호 입력하세요.">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <!-- [Start] 팝업 버튼 -->
         <div class="popup-btn-set">
             <button class="popup-save">저장하기</button>
