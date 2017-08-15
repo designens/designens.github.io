@@ -237,7 +237,7 @@
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
+            <div class="content information-inquiry">
                 <!-- [Start] 탭 영역 -->
                 <div class="tablist t4" role="tablist">
                     <a id="tab1" aria-controls="panel1" role="tab" href><span>단체정보</span></a>
@@ -246,9 +246,9 @@
                     <a id="tab4" aria-controls="panel4" role="tab" href><span>예산정보</span></a>
                 </div>
                 <div class="panel-group">
+                    <!-- [Start] 단체정보 영역 -->
                     <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
-                        <!-- [Start] 단체정보 컨텐츠 영역 -->
-                        <table class="table-type-02 table-name">
+                        <table class="table-type-02">
                             <caption>단체정보 테이블의 사업자등록번호,패스워드,한글 법인명,약식 법인명,영문 법인명,대표자 성명,생년월일,전화번호,주소,홈페이지,법인 설립일자,법인 설립처,주요사업,설립목적,비고의 항목을 작성 합니다.</caption>
                             <colgroup>
                                 <col width="200">
@@ -261,7 +261,7 @@
                                     <th>사업자등록번호</th>
                                     <td>123-45-678</td>
                                     <th>패스워드</th>
-                                    <td class="red">1234</td>
+                                    <td><strong class="red">1234</strong></td>
                                 </tr>
                                 <tr>
                                     <th>한글 법인명</th>
@@ -341,15 +341,15 @@
                             <button class="btn-type-2-04">변경사항 요청하기</button>
                         </div>
                     </div>
-                    <!-- [End] 단체정보 컨텐츠 영역 -->
+                    <!-- [End] 단체정보 영역 -->
+                    <!-- [Start] 회원명부 영역 -->
                     <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0" aria-hidden="true">
-                        <!-- [Start] 회원명부 컨텐츠 영역 -->
                         <div class="all-pages-view">
                             <div class="all-page">
                                 <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
                             </div>
                         </div>
-                        <table class="table-type-01 table-name">
+                        <table class="table-type-01">
                             <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
                             <colgroup>
                                 <col width="54">
@@ -464,15 +464,17 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- [End] 회원명부 컨텐츠 영역 -->
                     </div>
+                    <!-- [End] 회원명부 영역 -->
+                    <!-- [Start] 연혁 영역 -->
                     <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0" aria-hidden="true">
-                        <!-- [Start] 연혁 컨텐츠 영역 -->
-                        <p>* 그리드 셀을 더블 클릭시 <strong>수정 가능</strong></p>
-                        <div class="all-page">
-                            <span>총 <strong>199</strong>개 검색</span>
+                        <p class="blue">* 그리드 셀을 더블 클릭시 <strong>수정 가능</strong></p>
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
                         </div>
-                        <div class="sub-top-button-area">
+                        <div class="sub-top-btn-area">
                             <button href="" class="btn-type-1-02">표준 Excel 양식 다운받기</button>
                             <button href="" class="btn-type-1-02">추가하기</button>
                             <button href="" class="btn-type-1-02">새로 만들기</button>
@@ -480,13 +482,13 @@
                             <button href="" class="btn-type-1-02">신규 항목 입력하기</button>
                         </div>
                         <!-- [Start] 테이블 컨텐츠 영역 -->
-                        <table class="table-type-01 table-name">
+                        <table class="table-type-01">
                             <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
                             <colgroup>
                                 <col width="38">
                                 <col width="54">
                                 <col width="130">
-                                <col width="493">
+                                <col>
                                 <col width="130">
                                 <col width="80">
                             </colgroup>
@@ -633,26 +635,25 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- [End] 테이블 컨텐츠 영역 -->
-                        <!-- [Start] 선택항목 삭제,저장하기 버튼 영역 -->
                         <div class="sub-completed">
                             <button class="btn-type-2-01">선택항목 삭제하기</button>
                             <button class="btn-type-2-04">저장하기</button>
                         </div>
-                        <!-- [End] 선택항목 삭제,저장하기 버튼 영역 -->
-                        <!-- [End] 연혁 컨텐츠 영역 -->
                     </div>
+                    <!-- [End] 연혁 영역 -->
+                    <!-- [Start] 예산정보 영역 -->
                     <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0" aria-hidden="true">
-                        <!-- [Start] 예산정보 컨텐츠 영역 -->
-                        <div class="all-page">
-                            <span>총 <strong>199</strong>개 검색</span>
+                        <div class="all-pages-view">
+                            <div class="all-page">
+                                <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                            </div>
                         </div>
-                        <table class="table-type-01 table-name">
+                        <table class="table-type-01">
                             <caption>회원명부 테이블의 상태,등급,성명,직함,부서명,전화번호,이메일,휴대폰,팩스,비고를 작성 합니다.</caption>
                             <colgroup>
                                 <col width="54">
                                 <col width="130">
-                                <col width="532">
+                                <col>
                                 <col width="130">
                                 <col width="80">
                             </colgroup>
@@ -732,6 +733,7 @@
                         </div>
                         <!-- [End] 선택항목 삭제,저장하기 버튼 영역 -->
                     </div>
+                    <!-- [End] 예산정보 영역 -->
                 </div>
                 <!-- [End] 탭 영역 -->
             </div>
