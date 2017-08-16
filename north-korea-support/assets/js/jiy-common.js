@@ -73,9 +73,15 @@
     });
     
     // 구비서류 올리기 팝업
-    $('.btn-file-upload').on('click', function(e) {
+    $('.btn-popup-applicant-application').on('click', function(e) {
       e.preventDefault();
       $.popupId($popups, 'popup-applicant-application').open();
+    });
+
+    // 회원명부 인물정보 팝업
+    $('.btn-popup-information-inquiry').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-information-inquiry').open();
     });
     
     // GNB 전체메뉴

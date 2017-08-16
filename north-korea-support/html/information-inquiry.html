@@ -361,7 +361,7 @@
                                 <col width="140">
                                 <col width="120">
                                 <col width="120">
-                                <col width="">
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
@@ -381,7 +381,7 @@
                                 <tr>
                                     <td>신청</td>
                                     <td>실무담당자</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -393,7 +393,7 @@
                                 <tr>
                                     <td>승인</td>
                                     <td>책임자</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -405,7 +405,7 @@
                                 <tr>
                                     <td>반려</td>
                                     <td>대표자</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -417,7 +417,7 @@
                                 <tr>
                                     <td>승인</td>
                                     <td>일반회원</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -429,7 +429,7 @@
                                 <tr>
                                     <td>승인</td>
                                     <td>일반회원</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -441,7 +441,7 @@
                                 <tr>
                                     <td>승인</td>
                                     <td>일반회원</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -453,7 +453,7 @@
                                 <tr>
                                     <td>승인</td>
                                     <td>일반회원</td>
-                                    <td>홍길동</td>
+                                    <td><a class="view-link btn-popup-information-inquiry" role="button" href>홍길동</a></td>
                                     <td>부장</td>
                                     <td>대북홍보부</td>
                                     <td>010-1234-5678</td>
@@ -759,6 +759,85 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 회원명부 인물정보 Popup -->
+    <div class="popup" data-id="popup-information-inquiry">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>인물정보</h4>
+        <button type="button" class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-information-inquiry">
+        <table class="table-type-02">
+            <caption>성명, 상태, 성별, 생년월일, 등급, 가입일, 사용 유무, 국적, 직함, 전화번호, 휴대전화, 이메일 항목이 있습니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>성명</th>
+                    <td>홍길동</td>
+                    <th>상태</th>
+                    <td>승인</td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>남성</td>
+                    <th>생년월일</th>
+                    <td>1966-01-01</td>
+                </tr>
+                <tr>
+                    <th>등급</th>
+                    <td>일반회원</td>
+                    <th>가입일</th>
+                    <td>1966-01-01</td>
+                </tr>
+                <tr>
+                    <th>사용 유무</th>
+                    <td>
+                        <div class="radio-type">
+                            <input type="radio" id="use-yes" name="test">
+                            <label for="use-yes">YES</label>
+                            <input type="radio" id="use-no" name="test">
+                            <label for="use-no">NO</label>
+                        </div>
+                    </td>
+                    <th>국적</th>
+                    <td>대한민국</td>
+                </tr>
+                <tr>
+                    <th>부서명</th>
+                    <td>대북지원홍보부</td>
+                    <th>직함</th>
+                    <td>대표</td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td>032-1234-1234</td>
+                    <th>휴대전화</th>
+                    <td>032-1234-1234</td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td colspan="3">abcd@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <!-- 닫기 버튼 필수 (접근성) -->
+            <button type="button" class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 회원명부 인물정보 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
