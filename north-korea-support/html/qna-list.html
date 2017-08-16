@@ -226,7 +226,7 @@
                         <label class="search-keyword">
                             <input type="text" aria-label="검색 키워드 입력하세요."/>
                         </label>
-                        <button class="btn-lookup">조회</button>
+                        <button type="button" class="btn-lookup">조회</button>
                     </li>
                 </ul>
                 <!-- [End] 검색 영역 -->
@@ -464,12 +464,14 @@
                 </tr>
                 <tr>
                     <th>첨부파일</th>
-                    <td class="add-file-area" colspan="3">
-                        <div class="file full-name">
-                            <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                        </div>
-                        <div class="file full-name">
-                            <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                    <td colspan="3">
+                        <div class="add-file-area">
+                            <div class="file full-name">
+                                <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                            </div>
+                            <div class="file full-name">
+                                <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -515,13 +517,13 @@
                 <tr>
                     <th>작성자</th>
                     <td>
-                        <div class="input-type">
+                        <div class="input-type full">
                             <input type="text" name="" aria-label="작성자명 입력하세요.">
                         </div>
                     </td>
                     <th>비밀번호</th>
                     <td>
-                        <div class="input-type">
+                        <div class="input-type full">
                             <input type="text" name="" aria-label="비밀번호 입력하세요.">
                         </div>
                     </td>
@@ -549,7 +551,7 @@
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-qna-content">
+    <div class="popup-content popup-qna-write">
         <table class="table-type-02">
             <caption>Q&amp;A 입력 내용 테이블의 제목, 작성자, 패스워드, 보안문자, 첨부파일 항목이 있습니다.</caption>
             <colgroup>
@@ -562,25 +564,25 @@
                 <tr>
                     <th>제목</th>
                     <td colspan="3">
-                        <div class="input-type">
+                        <div class="input-type full">
                             <input type="text" aria-label="제목 입력하세요."/>
                         </div>
                         <div class="checkbox-type secret-article">
                             <input type="checkbox" id="secretArticle" name="secretArticle">
-                            <label for="secretArticle">비밀글 (체크시 작성자만 내용을 확인할 수 있습니다.)</label>
+                            <label for="secretArticle">비밀글 <span>(체크시 작성자만 내용을 확인할 수 있습니다.)</span></label>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <th for="username">작성자</th>
                     <td>
-                        <div class="input-type">
+                        <div class="input-type full">
                             <input type="text" id="username" name="username" required="required" aria-label="작성자명 입력하세요." />
                         </div>
                     </td>
                     <th for="password">패스워드</th>
                     <td>
-                        <div class="input-type">
+                        <div class="input-type full">
                             <input type="password" id="password" name="password" required="required" aria-label="패스워드 입력하세요."/>
                         </div>
                     </td>

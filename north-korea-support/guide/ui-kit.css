@@ -1660,7 +1660,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-type-1-03:hover, .popup .popup-content .popup-btn-set .popup-save:hover, .btn-type-1-03:focus, .popup .popup-content .popup-btn-set .popup-save:focus, .btn-type-1-03:active, .popup .popup-content .popup-btn-set .popup-save:active { border-color: #003257; background: #003257; transition: all .3s ease; }
 
-.btn-type-2-01, .btn-type-2-02, .login-content .btn-link-set .btn-main, .completion-of-business-application .list-form .btn-link-set .btn-edit-information, .btn-type-2-03, .sub-top-btn-area .btn-file-upload, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status, .btn-type-2-04, .sub-completed .btn-completed { display: inline-block; min-width: 200px; height: 40px; line-height: 38px; text-align: center; padding: 0 10px; border-radius: 3px; }
+.btn-type-2-01, .btn-type-2-02, .login-content .btn-link-set .btn-main, .completion-of-business-application .list-form .btn-link-set .btn-edit-information, .btn-type-2-03, .sub-top-btn-area .btn-popup-applicant-application, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status, .btn-type-2-04 { display: inline-block; min-width: 200px; height: 40px; line-height: 38px; text-align: center; padding: 0 10px; border-radius: 3px; }
 
 .btn-type-2-01 { color: #333; text-shadow: 0 0 1px #b5c1c9; border-bottom: 3px solid #a9b4bc; background: #c5d2db; }
 
@@ -1670,23 +1670,23 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-type-2-02:hover, .login-content .btn-link-set .btn-main:hover, .completion-of-business-application .list-form .btn-link-set .btn-edit-information:hover, .btn-type-2-02:focus, .login-content .btn-link-set .btn-main:focus, .completion-of-business-application .list-form .btn-link-set .btn-edit-information:focus, .btn-type-2-02:active, .login-content .btn-link-set .btn-main:active, .completion-of-business-application .list-form .btn-link-set .btn-edit-information:active { border-bottom: 3px solid #7f8f9b; background: #8fa1af; transition: all .3s ease; }
 
-.btn-type-2-03, .sub-top-btn-area .btn-file-upload, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status { color: #fff; text-shadow: 0 0 1px #344450; border-bottom: 3px solid #28343d; background: #394a57; }
+.btn-type-2-03, .sub-top-btn-area .btn-popup-applicant-application, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status { color: #fff; text-shadow: 0 0 1px #344450; border-bottom: 3px solid #28343d; background: #394a57; }
 
-.btn-type-2-03:hover, .sub-top-btn-area .btn-file-upload:hover, .login-content .btn-link-set .btn-join:hover, .completion-of-business-application .list-form .btn-link-set .btn-view-status:hover, .btn-type-2-03:focus, .sub-top-btn-area .btn-file-upload:focus, .login-content .btn-link-set .btn-join:focus, .completion-of-business-application .list-form .btn-link-set .btn-view-status:focus, .btn-type-2-03:active, .sub-top-btn-area .btn-file-upload:active, .login-content .btn-link-set .btn-join:active, .completion-of-business-application .list-form .btn-link-set .btn-view-status:active { border-bottom: 3px solid #2e3b46; background: #33434e; transition: all .3s ease; }
+.btn-type-2-03:hover, .sub-top-btn-area .btn-popup-applicant-application:hover, .login-content .btn-link-set .btn-join:hover, .completion-of-business-application .list-form .btn-link-set .btn-view-status:hover, .btn-type-2-03:focus, .sub-top-btn-area .btn-popup-applicant-application:focus, .login-content .btn-link-set .btn-join:focus, .completion-of-business-application .list-form .btn-link-set .btn-view-status:focus, .btn-type-2-03:active, .sub-top-btn-area .btn-popup-applicant-application:active, .login-content .btn-link-set .btn-join:active, .completion-of-business-application .list-form .btn-link-set .btn-view-status:active { border-bottom: 3px solid #2e3b46; background: #33434e; transition: all .3s ease; }
 
-.btn-type-2-04, .sub-completed .btn-completed { color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
+.btn-type-2-04 { color: #fff; text-shadow: 0 0 1px #003359; border-bottom: 3px solid #002644; background: #003761; }
 
-.btn-type-2-04:hover, .sub-completed .btn-completed:hover, .btn-type-2-04:focus, .sub-completed .btn-completed:focus, .btn-type-2-04:active, .sub-completed .btn-completed:active { border-bottom: 3px solid #002c4e; background: #003257; transition: all .3s ease; }
+.btn-type-2-04:hover, .btn-type-2-04:focus, .btn-type-2-04:active { border-bottom: 3px solid #002c4e; background: #003257; transition: all .3s ease; }
 
-.btn-type-3-01, .btn-type-3-02, .qna-content .table-btn-set .btn-popup-qna-write, .btn-type-3-03 { display: inline-block; min-width: 106px; height: 34px; line-height: 32px; text-align: center; padding: 0 10px; border-radius: 3px; }
+.btn-type-3-01, .btn-type-3-02, .policy-proposal .table-btn-set .btn-popup-policy-proposal-write, .notice-board .panel-group [role="tabpanel"] .table-btn-set .btn-popup-notice-board-write, .qna-content .table-btn-set .btn-popup-qna-write, .btn-type-3-03 { display: inline-block; min-width: 106px; height: 34px; line-height: 32px; text-align: center; padding: 0 10px; border-radius: 3px; }
 
 .btn-type-3-01 { font-size: 14px; color: #333; text-shadow: 0 0 1px #adc0ce; border: 1px solid #bcd1e0; background: #bcd1e0; }
 
 .btn-type-3-01:hover, .btn-type-3-01:focus, .btn-type-3-01:active { border-color: #a9bcca; background: #a9bcca; transition: all .3s ease; }
 
-.btn-type-3-02, .qna-content .table-btn-set .btn-popup-qna-write { font-size: 14px; color: #fff; text-shadow: 0 0 1px #344450; border: 1px solid #394a57; background: #394a57; }
+.btn-type-3-02, .policy-proposal .table-btn-set .btn-popup-policy-proposal-write, .notice-board .panel-group [role="tabpanel"] .table-btn-set .btn-popup-notice-board-write, .qna-content .table-btn-set .btn-popup-qna-write { font-size: 14px; color: #fff; text-shadow: 0 0 1px #344450; border: 1px solid #394a57; background: #394a57; }
 
-.btn-type-3-02:hover, .qna-content .table-btn-set .btn-popup-qna-write:hover, .btn-type-3-02:focus, .qna-content .table-btn-set .btn-popup-qna-write:focus, .btn-type-3-02:active, .qna-content .table-btn-set .btn-popup-qna-write:active { border-color: #33434e; background: #33434e; transition: all .3s ease; }
+.btn-type-3-02:hover, .policy-proposal .table-btn-set .btn-popup-policy-proposal-write:hover, .notice-board .panel-group [role="tabpanel"] .table-btn-set .btn-popup-notice-board-write:hover, .qna-content .table-btn-set .btn-popup-qna-write:hover, .btn-type-3-02:focus, .policy-proposal .table-btn-set .btn-popup-policy-proposal-write:focus, .notice-board .panel-group [role="tabpanel"] .table-btn-set .btn-popup-notice-board-write:focus, .qna-content .table-btn-set .btn-popup-qna-write:focus, .btn-type-3-02:active, .policy-proposal .table-btn-set .btn-popup-policy-proposal-write:active, .notice-board .panel-group [role="tabpanel"] .table-btn-set .btn-popup-notice-board-write:active, .qna-content .table-btn-set .btn-popup-qna-write:active { border-color: #33434e; background: #33434e; transition: all .3s ease; }
 
 .btn-type-3-03 { font-size: 14px; color: #fff; text-shadow: 0 0 1px #003359; border: 1px solid #003761; background: #003761; }
 
@@ -1960,7 +1960,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 /* Sub Page : 등록 완료 스타일
 /* =======================================*/
-.sub-completed { text-align: center; margin-top: 30px; margin-bottom: 90px; }
+.sub-completed { text-align: center; margin-top: 30px; margin-bottom: 50px; }
 
 .sub-completed .message { position: relative; font-size: 20px; letter-spacing: -0.04em; }
 
@@ -1968,19 +1968,25 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .sub-completed .message span { font-weight: bold; color: #003761; }
 
-.sub-completed .btn-completed { margin-top: 50px; }
+.sub-completed-big { text-align: center; margin: 60px 0; }
+
+.sub-completed-big .message { position: relative; display: inline-block; font-size: 20px; color: #333; text-align: left; letter-spacing: -0.04em; padding-left: 86px; }
+
+.sub-completed-big .message span { color: #003761; font-weight: bold; }
+
+.sub-completed-big .message:before { position: absolute; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 0; width: 66px; height: 66px; background: url("../assets/images/icon/icon-status-check.png") no-repeat; content: ""; }
 
 /* =======================================*/
 /* Sub Page : 하단 버튼 영역 스타일
 /* =======================================*/
-.sub-bottom-btn-area { text-align: center; margin-top: 50px; margin-bottom: 90px; }
+.sub-bottom-btn-area { text-align: center; margin-top: 30px; margin-bottom: 90px; }
 
 /* =======================================*/
 /* Sub Page : 상단 버튼 영역 스타일
 /* =======================================*/
 .sub-top-btn-area { text-align: right; margin-top: -20px; margin-bottom: 10px; }
 
-.sub-top-btn-area .btn-file-upload:after { display: inline-block; width: 28px; height: 22px; background: url("../assets/images/icon/icon-upload.svg") center no-repeat; margin-left: 10px; vertical-align: -6px; content: ""; }
+.sub-top-btn-area .btn-popup-applicant-application:after { display: inline-block; width: 28px; height: 22px; background: url("../assets/images/icon/icon-upload.svg") center no-repeat; margin-left: 10px; vertical-align: -6px; content: ""; }
 
 /* =======================================*/
 /* Sub Page : 진행 순서 버튼 영역
@@ -2417,7 +2423,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 컨텐츠 테이블 내부 다운로드 아이콘 */
 [class^="table-type-"] .table-download { position: relative; cursor: pointer; outline: none; /* 말풍선 다운로드 위젯 적용 */ }
 
-[class^="table-type-"] .table-download [class^="icon-"] { display: inline-block; width: 14px; height: 16px; }
+[class^="table-type-"] .table-download [class^="icon-"] { display: inline-block; width: 14px; height: 16px; padding-left: 0; margin: 0 3px; vertical-align: -2px; }
+
+[class^="table-type-"] .table-download [class^="icon-"]:before { top: 0; }
 
 [class^="table-type-"] .table-download .download-file { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 43px; width: 250px; text-align: left; margin-left: -5px; letter-spacing: -0.03em; padding: 16px 20px; border: 1px solid #8aa3b7; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); visibility: hidden; z-index: 9999; }
 
@@ -2632,7 +2640,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .popup-container .popup-dim { height: 100%; background: rgba(0, 0, 0, 0.1); }
 
 /* 팝업 영역 */
-.popup { width: 870px; min-height: 500px; max-height: 700px; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; /* 팝업 헤드라인 */ /* 팝업 콘텐츠 */ }
+.popup { width: 870px; min-height: 460px; max-height: 700px; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; /* 팝업 헤드라인 */ /* 팝업 콘텐츠 */ }
 
 .popup.is-center { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
@@ -2810,94 +2818,84 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .qna-content tbody td:nth-child(3) { text-align: left; }
 
 /* =======================================*/
-/* 커뮤니티 > Q&A 상세 조회 > 팝업
+/* 커뮤니티 > Q&A 상세 조회 팝업
 /* (html/qna-list.html)
 /* =======================================*/
-.popup-qna-content table tbody td .input-type, .popup-notices-content table tbody td .input-type, .popup-resources-content table tbody td .input-type { min-width: 100%; }
+.popup-qna-list .qna-comments { margin-top: 10px; }
 
-.popup-qna-content table tbody td .input-type input, .popup-notices-content table tbody td .input-type input, .popup-resources-content table tbody td .input-type input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.popup-qna-list dl { margin-top: 10px; }
 
-.popup-qna-content table tbody td .input-type input:focus, .popup-notices-content table tbody td .input-type input:focus, .popup-resources-content table tbody td .input-type input:focus { border: 1px solid #002847; }
+.popup-qna-list dl dt { position: relative; }
 
-.popup-qna-content table tbody td .input-type input:focus::-webkit-input-placeholder, .popup-notices-content table tbody td .input-type input:focus::-webkit-input-placeholder, .popup-resources-content table tbody td .input-type input:focus::-webkit-input-placeholder { color: transparent; }
+.popup-qna-list dl dt .icon-comment { position: absolute; top: 4px; right: 10px; }
 
-.popup-qna-content table tbody td .input-type input:focus:-moz-placeholder, .popup-notices-content table tbody td .input-type input:focus:-moz-placeholder, .popup-resources-content table tbody td .input-type input:focus:-moz-placeholder { color: transparent; }
+.popup-qna-list dl dd { position: relative; }
 
-.popup-qna-content table tbody td .input-type input:focus::-moz-placeholder, .popup-notices-content table tbody td .input-type input:focus::-moz-placeholder, .popup-resources-content table tbody td .input-type input:focus::-moz-placeholder { color: transparent; }
+.popup-qna-list dl dd p span.admin { font-weight: bold; margin-right: 4px; }
 
-.popup-qna-content table tbody td .input-type input:focus:-ms-input-placeholder, .popup-notices-content table tbody td .input-type input:focus:-ms-input-placeholder, .popup-resources-content table tbody td .input-type input:focus:-ms-input-placeholder { color: transparent; }
+.popup-qna-list dl dd p span.date { color: #757575; }
 
-.popup-qna-content table tbody td .input-type label, .popup-notices-content table tbody td .input-type label, .popup-resources-content table tbody td .input-type label { line-height: 30px; }
+.popup-qna-list dl dd .comment-edit-area { position: absolute; top: 6px; right: 10px; }
 
-.popup-qna-content table tbody td .secret-article, .popup-notices-content table tbody td .secret-article, .popup-resources-content table tbody td .secret-article { margin-top: 7px; margin-bottom: 3px; }
+.popup-qna-list dl dd .comment-edit-area .input-type { margin-right: 20px; min-width: 100px; }
 
-.popup-qna-content table tbody td.security-text-area *, .popup-notices-content table tbody td.security-text-area *, .popup-resources-content table tbody td.security-text-area * { float: left; }
+.popup-qna-list dl dd .comment-edit-area .input-type input { width: 100px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
-.popup-qna-content table tbody td.security-text-area .input-type, .popup-notices-content table tbody td.security-text-area .input-type, .popup-resources-content table tbody td.security-text-area .input-type { min-width: 140px; }
+.popup-qna-list dl dd .comment-edit-area .input-type input:focus { border: 1px solid #002847; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input, .popup-notices-content table tbody td.security-text-area .input-type input, .popup-resources-content table tbody td.security-text-area .input-type input { width: 140px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.popup-qna-list dl dd .comment-edit-area .input-type input:focus::-webkit-input-placeholder { color: transparent; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:focus, .popup-notices-content table tbody td.security-text-area .input-type input:focus, .popup-resources-content table tbody td.security-text-area .input-type input:focus { border: 1px solid #002847; }
+.popup-qna-list dl dd .comment-edit-area .input-type input:focus:-moz-placeholder { color: transparent; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:focus::-webkit-input-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input:focus::-webkit-input-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input:focus::-webkit-input-placeholder { color: transparent; }
+.popup-qna-list dl dd .comment-edit-area .input-type input:focus::-moz-placeholder { color: transparent; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:focus:-moz-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input:focus:-moz-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input:focus:-moz-placeholder { color: transparent; }
+.popup-qna-list dl dd .comment-edit-area .input-type input:focus:-ms-input-placeholder { color: transparent; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:focus::-moz-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input:focus::-moz-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input:focus::-moz-placeholder { color: transparent; }
+.popup-qna-list dl dd .comment-edit-area .input-type label { line-height: 30px; }
 
-.popup-qna-content table tbody td.security-text-area .input-type input:focus:-ms-input-placeholder, .popup-notices-content table tbody td.security-text-area .input-type input:focus:-ms-input-placeholder, .popup-resources-content table tbody td.security-text-area .input-type input:focus:-ms-input-placeholder { color: transparent; }
+.popup-qna-list dl dd .comment-edit-area .input-type label { margin-right: 6px; }
 
-.popup-qna-content table tbody td.security-text-area .input-type label, .popup-notices-content table tbody td.security-text-area .input-type label, .popup-resources-content table tbody td.security-text-area .input-type label { line-height: 30px; }
+.popup-qna-list dl dd .comment-edit-area button[class^="comment-"] { position: relative; height: 30px; line-height: 30px; margin-right: 10px; }
 
-.popup-qna-content table tbody td.security-text-area .security-text, .popup-notices-content table tbody td.security-text-area .security-text, .popup-resources-content table tbody td.security-text-area .security-text { width: 154px; height: 30px; line-height: 30px; text-align: center; margin: 0 6px; background: #d5d5d5; }
+.popup-qna-list dl dd .comment-edit-area button[class^="comment-"]:before { display: inline-block; width: 16px; height: 16px; content: ""; border: 1px solid #a3a3a3; margin-right: 4px; vertical-align: text-bottom; }
 
-.popup-qna-content table tbody td.security-text-area strong, .popup-notices-content table tbody td.security-text-area strong, .popup-resources-content table tbody td.security-text-area strong { color: #333; line-height: 30px; }
+.popup-qna-list dl dd .comment-edit-area button[class^="comment-"]:last-child { margin-right: 0; }
 
-.popup-qna-content table tbody td .add-file-area, .popup-notices-content table tbody td .add-file-area, .popup-resources-content table tbody td .add-file-area { padding-left: 73px; }
+.popup-qna-list dl dd .comment-edit-area .comment-edit:after { position: absolute; top: 0; left: 4px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #4d4d4d; }
 
-.popup-qna-content table.qna-comments, .popup-notices-content table.qna-comments, .popup-resources-content table.qna-comments { margin-top: 10px; }
+.popup-qna-list dl dd .comment-edit-area .comment-delete:after { position: absolute; top: 0; left: 3px; font-family: 'FontAwesome'; content: ""; font-size: 13px; font-size: 1.3rem; color: #4d4d4d; }
 
-.popup-qna-content dl, .popup-notices-content dl, .popup-resources-content dl { margin-top: 10px; }
+/* =======================================*/
+/* 커뮤니티 > Q&A 상세 입력 팝업
+/* (html/qna-list.html)
+/* =======================================*/
+.popup-qna-write table tbody td .secret-article, .popup-policy-proposal-write table tbody td .secret-article, .popup-notice-board-write table tbody td .secret-article { margin-top: 7px; margin-bottom: 3px; }
 
-.popup-qna-content dl dt, .popup-notices-content dl dt, .popup-resources-content dl dt { position: relative; }
+.popup-qna-write table tbody td .secret-article label span, .popup-policy-proposal-write table tbody td .secret-article label span, .popup-notice-board-write table tbody td .secret-article label span { color: #757575; }
 
-.popup-qna-content dl dt .icon-comment, .popup-notices-content dl dt .icon-comment, .popup-resources-content dl dt .icon-comment { position: absolute; top: 4px; right: 10px; }
+.popup-qna-write table tbody td.security-text-area *, .popup-policy-proposal-write table tbody td.security-text-area *, .popup-notice-board-write table tbody td.security-text-area * { float: left; }
 
-.popup-qna-content dl dd, .popup-notices-content dl dd, .popup-resources-content dl dd { position: relative; }
+.popup-qna-write table tbody td.security-text-area .input-type, .popup-policy-proposal-write table tbody td.security-text-area .input-type, .popup-notice-board-write table tbody td.security-text-area .input-type { min-width: 140px; }
 
-.popup-qna-content dl dd p span.admin, .popup-notices-content dl dd p span.admin, .popup-resources-content dl dd p span.admin { font-weight: bold; margin-right: 4px; }
+.popup-qna-write table tbody td.security-text-area .input-type input, .popup-policy-proposal-write table tbody td.security-text-area .input-type input, .popup-notice-board-write table tbody td.security-text-area .input-type input { width: 140px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
 
-.popup-qna-content dl dd p span.date, .popup-notices-content dl dd p span.date, .popup-resources-content dl dd p span.date { color: #757575; }
+.popup-qna-write table tbody td.security-text-area .input-type input:focus, .popup-policy-proposal-write table tbody td.security-text-area .input-type input:focus, .popup-notice-board-write table tbody td.security-text-area .input-type input:focus { border: 1px solid #002847; }
 
-.popup-qna-content dl dd .comment-edit-area, .popup-notices-content dl dd .comment-edit-area, .popup-resources-content dl dd .comment-edit-area { position: absolute; top: 6px; right: 10px; }
+.popup-qna-write table tbody td.security-text-area .input-type input:focus::-webkit-input-placeholder, .popup-policy-proposal-write table tbody td.security-text-area .input-type input:focus::-webkit-input-placeholder, .popup-notice-board-write table tbody td.security-text-area .input-type input:focus::-webkit-input-placeholder { color: transparent; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type, .popup-notices-content dl dd .comment-edit-area .input-type, .popup-resources-content dl dd .comment-edit-area .input-type { margin-right: 20px; min-width: 100px; }
+.popup-qna-write table tbody td.security-text-area .input-type input:focus:-moz-placeholder, .popup-policy-proposal-write table tbody td.security-text-area .input-type input:focus:-moz-placeholder, .popup-notice-board-write table tbody td.security-text-area .input-type input:focus:-moz-placeholder { color: transparent; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type input, .popup-notices-content dl dd .comment-edit-area .input-type input, .popup-resources-content dl dd .comment-edit-area .input-type input { width: 100px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.popup-qna-write table tbody td.security-text-area .input-type input:focus::-moz-placeholder, .popup-policy-proposal-write table tbody td.security-text-area .input-type input:focus::-moz-placeholder, .popup-notice-board-write table tbody td.security-text-area .input-type input:focus::-moz-placeholder { color: transparent; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type input:focus, .popup-notices-content dl dd .comment-edit-area .input-type input:focus, .popup-resources-content dl dd .comment-edit-area .input-type input:focus { border: 1px solid #002847; }
+.popup-qna-write table tbody td.security-text-area .input-type input:focus:-ms-input-placeholder, .popup-policy-proposal-write table tbody td.security-text-area .input-type input:focus:-ms-input-placeholder, .popup-notice-board-write table tbody td.security-text-area .input-type input:focus:-ms-input-placeholder { color: transparent; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type input:focus::-webkit-input-placeholder, .popup-notices-content dl dd .comment-edit-area .input-type input:focus::-webkit-input-placeholder, .popup-resources-content dl dd .comment-edit-area .input-type input:focus::-webkit-input-placeholder { color: transparent; }
+.popup-qna-write table tbody td.security-text-area .input-type label, .popup-policy-proposal-write table tbody td.security-text-area .input-type label, .popup-notice-board-write table tbody td.security-text-area .input-type label { line-height: 30px; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type input:focus:-moz-placeholder, .popup-notices-content dl dd .comment-edit-area .input-type input:focus:-moz-placeholder, .popup-resources-content dl dd .comment-edit-area .input-type input:focus:-moz-placeholder { color: transparent; }
+.popup-qna-write table tbody td.security-text-area .security-text, .popup-policy-proposal-write table tbody td.security-text-area .security-text, .popup-notice-board-write table tbody td.security-text-area .security-text { width: 154px; height: 30px; line-height: 30px; text-align: center; margin: 0 6px; background: #d5d5d5; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type input:focus::-moz-placeholder, .popup-notices-content dl dd .comment-edit-area .input-type input:focus::-moz-placeholder, .popup-resources-content dl dd .comment-edit-area .input-type input:focus::-moz-placeholder { color: transparent; }
+.popup-qna-write table tbody td.security-text-area strong, .popup-policy-proposal-write table tbody td.security-text-area strong, .popup-notice-board-write table tbody td.security-text-area strong { color: #333; line-height: 30px; }
 
-.popup-qna-content dl dd .comment-edit-area .input-type input:focus:-ms-input-placeholder, .popup-notices-content dl dd .comment-edit-area .input-type input:focus:-ms-input-placeholder, .popup-resources-content dl dd .comment-edit-area .input-type input:focus:-ms-input-placeholder { color: transparent; }
-
-.popup-qna-content dl dd .comment-edit-area .input-type label, .popup-notices-content dl dd .comment-edit-area .input-type label, .popup-resources-content dl dd .comment-edit-area .input-type label { line-height: 30px; }
-
-.popup-qna-content dl dd .comment-edit-area .input-type label, .popup-notices-content dl dd .comment-edit-area .input-type label, .popup-resources-content dl dd .comment-edit-area .input-type label { margin-right: 6px; }
-
-.popup-qna-content dl dd .comment-edit-area button[class^="comment-"], .popup-notices-content dl dd .comment-edit-area button[class^="comment-"], .popup-resources-content dl dd .comment-edit-area button[class^="comment-"] { position: relative; height: 30px; line-height: 30px; margin-right: 10px; }
-
-.popup-qna-content dl dd .comment-edit-area button[class^="comment-"]:before, .popup-notices-content dl dd .comment-edit-area button[class^="comment-"]:before, .popup-resources-content dl dd .comment-edit-area button[class^="comment-"]:before { display: inline-block; width: 16px; height: 16px; content: ""; border: 1px solid #a3a3a3; margin-right: 4px; vertical-align: text-bottom; }
-
-.popup-qna-content dl dd .comment-edit-area button[class^="comment-"]:last-child, .popup-notices-content dl dd .comment-edit-area button[class^="comment-"]:last-child, .popup-resources-content dl dd .comment-edit-area button[class^="comment-"]:last-child { margin-right: 0; }
-
-.popup-qna-content dl dd .comment-edit-area .comment-edit:after, .popup-notices-content dl dd .comment-edit-area .comment-edit:after, .popup-resources-content dl dd .comment-edit-area .comment-edit:after { position: absolute; top: 0; left: 4px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #4d4d4d; }
-
-.popup-qna-content dl dd .comment-edit-area .comment-delete:after, .popup-notices-content dl dd .comment-edit-area .comment-delete:after, .popup-resources-content dl dd .comment-edit-area .comment-delete:after { position: absolute; top: 0; left: 3px; font-family: 'FontAwesome'; content: ""; font-size: 13px; font-size: 1.3rem; color: #4d4d4d; }
+.popup-qna-write table tbody td .add-file-area, .popup-policy-proposal-write table tbody td .add-file-area, .popup-notice-board-write table tbody td .add-file-area { padding-left: 73px; }
 
 /* =======================================*/
 /* 자료마당 > 공지사항
@@ -2909,9 +2907,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 자료마당 > 공지사항 > 공지사항 상세 팝업완료
 /* (html/notices.html)
 /* =======================================*/
-.popup-notices-content .table-dt-dd, .popup-resources-content .table-dt-dd { margin-top: 0; border-top: 1px solid #f0f3f5; }
+.popup-notices .table-dt-dd, .popup-resources .table-dt-dd { margin-top: 0; border-top: 1px solid #f0f3f5; }
 
-.popup-notices-content .table-dt-dd dd, .popup-resources-content .table-dt-dd dd { min-height: 210px; }
+.popup-notices .table-dt-dd dd, .popup-resources .table-dt-dd dd { min-height: 210px; }
 
 /* =======================================*/
 /* 자료마당 > 자료실
@@ -2971,14 +2969,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 법인.단체 > 사업자신청 완료
 /* (html/completion-of-business-application.html)
 /* =======================================*/
-.completion-of-business-application .list-check { width: 560px; height: 66px; margin: 60px auto; }
-
-.completion-of-business-application .list-check img { width: 66px; margin-right: 20px; vertical-align: middle; }
-
-.completion-of-business-application .list-check .notice { display: inline-block; text-align: center; font-size: 16px; vertical-align: middle; letter-spacing: -0.14em; }
-
-.completion-of-business-application .list-check .notice span { color: #003761; font-weight: bold; }
-
 .completion-of-business-application .list-form { position: relative; height: 317px; border-radius: 7px; border: 1px solid #afc0cc; box-shadow: 0 0 6px 6px #fdfdfd; background: #fff; }
 
 .completion-of-business-application .list-form h3 { margin-top: 50px; }
@@ -3135,10 +3125,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 회원가입안내 > 가입신청완료진행중
 /* (html/sign-up-write.html)
 /* =======================================*/
-.sign-up-write .sub-completed { margin-top: 60px; }
-
-.sign-up-write .sub-completed .message { margin-bottom: 65px; }
-
 /* =======================================*/
 /* 회원서비스 > 단체정보관리 > 정보조회
 /* (html/information-inquiry.html)
@@ -3158,6 +3144,36 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .information-inquiry .panel-group #panel3 .table-type-01 tbody td:nth-child(4) { text-align: left; }
 
 .information-inquiry .panel-group #panel4 .table-type-01 tbody td:nth-child(3) { text-align: left; }
+
+/* =======================================*/
+/* 회원서비스 > 단체정보관리 > 정보조회 인물정보 팝업
+/* (html/information-inquiry.html)
+/* =======================================*/
+.popup-information-inquiry .table-type-02 tbody td .radio-type label { margin-right: 30px; }
+
+/* =======================================*/
+/* 회원서비스 > 정책제안 조회
+/* (html/policy-proposal.html)
+/* =======================================*/
+.policy-proposal .table-type-01 tbody td:nth-child(2) { text-align: left; }
+
+/* =======================================*/
+/* 회원서비스 > 정책제안 상세 내용 팝업
+/* (html/policy-proposal.html)
+/* =======================================*/
+.popup-policy-proposal-list .table-dt-dd, .popup-notice-board-list .table-dt-dd { margin-top: 10px; }
+
+.popup-policy-proposal-list .table-dt-dd dd, .popup-notice-board-list .table-dt-dd dd { min-height: 350px; }
+
+/* =======================================*/
+/* 회원서비스 > 정책제안 글쓰기 팝업
+/* (html/policy-proposal.html)
+/* =======================================*/
+/* =======================================*/
+/* 회원서비스 > 게시판 조회
+/* (html/notice-board.html)
+/* =======================================*/
+.notice-board .panel-group [role="tabpanel"] .table-type-01 tbody td:nth-child(3) { text-align: left; }
 
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회

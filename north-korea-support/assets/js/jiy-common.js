@@ -83,6 +83,28 @@
       e.preventDefault();
       $.popupId($popups, 'popup-information-inquiry').open();
     });
+
+    // 정책제안 상세 조회 팝업
+    $('.btn-popup-policy-proposal-list').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-policy-proposal-list').open();
+    });
+    // 정책제안 상세 입력 팝업
+    $('.btn-popup-policy-proposal-write').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-policy-proposal-write').open();
+    });
+
+    // 게시판 상세 조회 팝업
+    $('.btn-popup-notice-board-list').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-notice-board-list').open();
+    });
+    // 게시판 상세 입력 팝업
+    $('.btn-popup-notice-board-write').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-notice-board-write').open();
+    });
     
     // GNB 전체메뉴
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈

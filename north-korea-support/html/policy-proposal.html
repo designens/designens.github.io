@@ -178,31 +178,43 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
+                        <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
+                                <li><a href="">사업자 가입안내</a></li>
+                                <li><a href="">사업자 신청</a></li>
+                                <li><a href="">지원접수현황</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                <li><a href="">약관 동의</a></li>
+                                <li><a href="">가입 신청</a></li>
+                                <li><a href="">가입 승인 확인</a></li>
+                                <li><a href="">가입 탈퇴</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,20 +225,202 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">정책제안</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">회원서비스</a>
+                    <a href="#">정책제안</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <div class="content policy-proposal">
+
+                <!-- [Start] 검색 영역 -->
+                <ul class="search-area">
+                    <li class="search-title"><span>검색</span></li>
+                    <li class="select-box">
+                        <label for="search">제목</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">제목</option>
+                            <option>내용</option>
+                            <option>단어</option>
+                        </select>
+                    </li>
+                    <li class="input-type">
+                        <label class="search-keyword">
+                            <input type="text" aria-label="검색 키워드 입력하세요."/>
+                        </label>
+                        <button type="button" class="btn-lookup">조회</button>
+                        <button type="button" class="btn-type-1-03">나의 정책제안보기</button>
+                    </li>
+                </ul>
+                <!-- [End] 검색 영역 -->
+
+                <!-- [Start] 전체 페이지 단위 선택 영역 -->
+                <div class="all-pages-view">
+                    <div class="all-page">
+                        <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                    </div>
+                    <div class="select-box">
+                        <label for="search">10개씩보기</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">10개씩보기</option>
+                            <option>20개씩보기</option>
+                            <option>30개씩보기</option>
+                            <option>40개씩보기</option>
+                            <option>50개씩보기</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- [End] 전체 페이지 단위 선택 영역 -->
+
+                <!-- [Start] 정책제안 테이블 -->
+                <table class="table-type-01">
+                    <caption>정책제안 테이블의 번호, 제목, 작성자, 첨부파일, 등록일 항목 입니다</caption>
+                    <colgroup>
+                        <col width="54">
+                        <col>
+                        <col width="110">
+                        <col width="142">
+                        <col width="142">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>첨부파일</th>
+                            <th>등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></a></td>
+                            <td>id****</td>
+                            <td class="table-download">
+                                <span class="icon-hwp"></span>
+                                <span class="icon-doc"></span>
+                                <span class="icon-pdf"></span>
+                                <span class="icon-jpg"></span>
+                                <div class="download-file">
+                                    <strong>파일명 :</strong>
+                                    <a href="">대북지원사업신청서.hwp</a>
+                                    <a href="">남북협력기금지원신청서.doc</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <button type="button" class="btn-download-close">다운로드 팝업 닫기</button>
+                                </div>
+                            </td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download">
+                                <span class="icon-hwp"></span>
+                                <span class="icon-doc"></span>
+                                <span class="icon-pdf"></span>
+                                <span class="icon-jpg"></span>
+                                <div class="download-file">
+                                    <strong>파일명 :</strong>
+                                    <a href="">대북지원사업신청서.hwp</a>
+                                    <a href="">남북협력기금지원신청서.doc</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <button type="button" class="btn-download-close">다운로드 팝업 닫기</button>
+                                </div>
+                            </td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td><a href class="btn-popup-policy-proposal-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>id****</td>
+                            <td class="table-download"></td>
+                            <td>2017-12-11</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- [End] 정책제안 테이블 -->
+                
+                <!-- [Start] 정책제안 테이블 버튼 -->
+                <div class="table-btn-set in-right">
+                    <a href class="btn-popup-policy-proposal-write" role="button">글쓰기</a>
+                </div>
+                <!-- [End] 정책제안 테이블 버튼 -->
+
+                <!-- [Start] Paging Area -->
+                <div class="paging">
+                    <button class="first-prev" aria-label="처음으로 이동"></button>
+                    <button class="prev" aria-label="이전 페이지"></button>
+                    <a href role="button">1</a>
+                    <a href role="button">2</a>
+                    <a href role="button">3</a>
+                    <a href role="button">4</a>
+                    <a class="selected" href role="button">5</a>
+                    <a href role="button">6</a>
+                    <a href role="button">7</a>
+                    <a href role="button">8</a>
+                    <a href role="button">9</a>
+                    <a href role="button">10</a>
+                    <button class="next" " aria-label="다음 페이지"></button>
+                    <button class="last-next" aria-label="끝으로 이동"></button>
+                </div>
+                <!-- [End] Paging Area -->
             </div>
             <!-- [End] 컨텐츠 상세  -->
 
@@ -250,6 +444,156 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 정책제안 상세 조회 Popup -->
+    <div class="popup" data-id="popup-policy-proposal-list">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>정책제안</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-policy-proposal-list">
+        <div class="btn-tr-set">
+            <button class="btn-type-1-02">수정</button>
+            <button class="btn-type-1-02">삭제</button>
+        </div>
+        <table class="table-type-02">
+            <caption>정책제안 상세 내용 테이블의 제목, 작성자, 작성일, 조회수, 첨부파일 항목 입니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">이런 저런 내용으로 제안합니다.</td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td colspan="3">id＊＊＊＊</td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>2017-11-12</td>
+                    <th>조회수</th>
+                    <td>999</td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td colspan="3">
+                        <div class="add-file-area">
+                            <div class="file">
+                                <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                                <button type="button" class="btn-file-remove">파일삭제</button>
+                            </div>
+                            <div class="file">
+                                <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                                <button type="button" class="btn-file-remove">파일삭제</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <dl class="table-dt-dd">
+            <dt>제안내용</dt>
+            <dd>
+                이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다.<br>
+                잘 검토하시고 답변 바랍니다. 잘 검토하시고 답변 바랍니다. 잘 검토하시고 답변 바랍니다.<br>
+                이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다.<br>
+                잘 검토하시고 답변 바랍니다.
+            </dd>
+        </dl>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-save">저장하기</button>
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 정책제안 상세 조회 Popup -->
+
+
+    <!-- [Start] 정책제안 상세 입력 Popup -->
+    <div class="popup" data-id="popup-policy-proposal-write">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>정책제안</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-policy-proposal-write">
+        <table class="table-type-02">
+            <caption>정책제안 상세 내용 테이블의 작성자, 제목, 첨부파일 항목 입니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>작성자</th>
+                    <td>홍길동</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>
+                        <div class="input-type full">
+                            <input type="text" aria-label="제목 입력하세요."/>
+                        </div>
+                        <div class="checkbox-type secret-article">
+                            <input type="checkbox" id="secretArticle" name="secretArticle">
+                            <label for="secretArticle">비밀글 <span>(체크시 작성자만 내용을 확인할 수 있습니다.)</span></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td>
+                        <div class="add-file-search">
+                            <span>파일추가 : </span>
+                            <div class="file-search">
+                                <div class="input-type">
+                                    <input type="text" aria-label="파일추가 되었습니다."/>
+                                </div>
+                                <button class="btn-file-search">파일 검색</button>
+                            </div>
+                        </div>
+                        <div class="add-file-area">
+                            <div class="file">
+                                <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                                <button type="button" class="btn-file-remove">파일삭제</button>
+                            </div>
+                            <div class="file">
+                                <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                                <button type="button" class="btn-file-remove">파일삭제</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- [Start] 웹 에디터 영역 -->
+        <div class="web-edit-area">
+            <p>웹에디터 영역</p>
+        </div>
+        <!-- [End] 웹 에디터 영역 -->
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-save">저장하기</button>
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 정책제안 상세 입력 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
