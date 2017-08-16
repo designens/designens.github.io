@@ -2419,7 +2419,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 [class^="table-type-"] .table-download [class^="icon-"] { display: inline-block; width: 14px; height: 16px; }
 
-[class^="table-type-"] .table-download .download-file { visibility: hidden; position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 43px; width: 250px; text-align: left; margin-left: -5px; letter-spacing: -0.03em; padding: 16px 20px; border: 1px solid #8aa3b7; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); z-index: 9999; }
+[class^="table-type-"] .table-download .download-file { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 43px; width: 250px; text-align: left; margin-left: -5px; letter-spacing: -0.03em; padding: 16px 20px; border: 1px solid #8aa3b7; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); visibility: hidden; z-index: 9999; }
 
 [class^="table-type-"] .table-download .download-file:after { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: -5px; width: 8px; height: 8px; border: 1px solid #8aa3b7; border-bottom: 0; border-right: 0; background: #fff; transform: rotate(45deg); content: ""; }
 
@@ -2434,6 +2434,12 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 [class^="table-type-"] .table-download .download-file a:last-child { padding-bottom: 0; }
 
 [class^="table-type-"] .table-download .download-file a:after { display: inline-block; position: absolute; top: -3px; left: 0; content: "-"; }
+
+[class^="table-type-"] .table-download .download-file .btn-download-close { position: absolute; top: 15px; right: 15px; width: 20px; height: 20px; text-indent: -9999px; }
+
+[class^="table-type-"] .table-download .download-file .btn-download-close:before { position: absolute; top: 9px; left: 0; display: block; width: 20px; height: 1px; background: #8aa3b7; transform: rotate(45deg); content: ""; }
+
+[class^="table-type-"] .table-download .download-file .btn-download-close:after { position: absolute; top: 9px; left: 0; display: block; width: 20px; height: 1px; background: #8aa3b7; transform: rotate(-45deg); content: ""; }
 
 [class^="table-type-"] .table-download:focus .download-file, [class^="table-type-"] .table-download.show-widget .download-file { visibility: inherit; }
 
