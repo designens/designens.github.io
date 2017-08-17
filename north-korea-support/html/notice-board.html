@@ -1738,7 +1738,7 @@
             <button class="btn-type-1-02">삭제</button>
         </div>
         <table class="table-type-02">
-            <caption>게시판 상세 내용 테이블의 제목, 작성자, 작성일, 조회수, 첨부파일 항목 입니다.</caption>
+            <caption>게시판 상세 내용 테이블의 분야, 작성자, 제목, 작성일, 조회수, 첨부파일 항목 입니다.</caption>
             <colgroup>
                 <col width="140">
                 <col>
@@ -1747,12 +1747,14 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th>제목</th>
-                    <td colspan="3">이런 저런 내용으로 제안합니다.</td>
+                    <th>분야</th>
+                    <td>식량차관</td>
+                    <th>작성자</th>
+                    <td>id＊＊＊＊</td>
                 </tr>
                 <tr>
-                    <th>작성자</th>
-                    <td colspan="3">id＊＊＊＊</td>
+                    <th>제목</th>
+                    <td colspan="3">이런저런 내용으로 제안합니다.</td>
                 </tr>
                 <tr>
                     <th>작성일</th>
@@ -1766,24 +1768,68 @@
                         <div class="add-file-area">
                             <div class="file">
                                 <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                                <button type="button" class="btn-file-remove">파일삭제</button>
                             </div>
                             <div class="file">
                                 <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
-                                <button type="button" class="btn-file-remove">파일삭제</button>
                             </div>
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <dl class="table-dt-dd">
-            <dt>제안내용</dt>
+        <table class="table-type-02">
+            <caption>제안내용 테이블의 덧글쓰기, 작성자, 비밀번호 항목이 있습니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th colspan="4">제안내용</th>
+                </tr>
+                <tr>
+                    <td colspan="4">이런저런 내용으로 제안합니다.<br>
+                    잘 컴토하시고 답변주세요.<br>
+                    이런저런 내용으로 제안합니다.<br>
+                    잘 컴토하시고 답변주세요.</td>
+                </tr>
+                <tr>
+                    <th>덧글쓰기</th>
+                    <td colspan="3">
+                        <textarea class="textarea" placeholder="이런저런 내용으로 제안합니다."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td>
+                        <div class="input-type full">
+                            <input type="text" placeholder="홍길동" aria-label="작성자명 입력하세요">
+                        </div>
+                    </td>
+                    <th>비밀번호</th>
+                    <td>
+                        <div class="input-type full">
+                            <input type="text" placeholder="****" aria-label="비밀번호 입력하세요">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <dl class="table-dt-dd comment-upload">
+            <dt>답변 <button class="icon-comment" type="button">덧글</button></dt>
             <dd>
-                이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다.<br>
-                잘 검토하시고 답변 바랍니다. 잘 검토하시고 답변 바랍니다. 잘 검토하시고 답변 바랍니다.<br>
-                이런저런 내용으로 제안합니다. 이런저런 내용으로 제안합니다.<br>
-                잘 검토하시고 답변 바랍니다.
+                <p><span class="admin">관리자</span><span class="date">(2017-05-04)</span></p>
+                이런저런 내용으로 제안합니다.
+                <div class="comment-edit-area">
+                    <div class="input-type">
+                        <label for="comment-password">비밀번호</label>
+                        <input type="password" id="comment-password" name="comment-password" required="required" />
+                    </div>
+                    <button class="comment-edit" type="button">수정</button>
+                    <button class="comment-delete" type="button">삭제</button>
+                </div>
             </dd>
         </dl>
         <!-- [Start] 팝업 버튼 -->
@@ -1802,14 +1848,14 @@
     <div class="popup" data-id="popup-notice-board-write">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">
-        <h4>Q&amp;A</h4>
+        <h4>게시판</h4>
         <button class="popup-close">창 닫기</button>
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
     <div class="popup-content popup-notice-board-write">
         <table class="table-type-02">
-            <caption>Q&amp;A 입력 내용 테이블의 제목, 작성자, 패스워드, 보안문자, 첨부파일 항목이 있습니다.</caption>
+            <caption>게시판 입력 내용 테이블의 분야, 작성자, 제목, 첨부파일 항목이 있습니다.</caption>
             <colgroup>
                 <col width="140">
                 <col>
@@ -1817,6 +1863,24 @@
                 <col>
             </colgroup>
             <tbody>
+                <tr>
+                    <th>분야</th>
+                    <td>
+                        <div class="select-box full">
+                            <label for="field">검색</label>
+                            <select id="field" name="field-item">
+                                <option selected="selected">검색</option>
+                                <option>키워드01</option>
+                                <option>키워드02</option>
+                                <option>키워드03</option>
+                                <option>키워드04</option>
+                                <option>키워드05</option>
+                            </select>
+                        </div>
+                    </td>
+                    <th>작성자</th>
+                    <td>홍길동</td>
+                </tr>
                 <tr>
                     <th>제목</th>
                     <td colspan="3">
@@ -1827,30 +1891,6 @@
                             <input type="checkbox" id="secretArticle" name="secretArticle">
                             <label for="secretArticle">비밀글 <span>(체크시 작성자만 내용을 확인할 수 있습니다.)</span></label>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th for="username">작성자</th>
-                    <td>
-                        <div class="input-type full">
-                            <input type="text" id="username" name="username" required="required" aria-label="작성자명 입력하세요." />
-                        </div>
-                    </td>
-                    <th for="password">패스워드</th>
-                    <td>
-                        <div class="input-type full">
-                            <input type="password" id="password" name="password" required="required" aria-label="패스워드 입력하세요."/>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th>보안문자</th>
-                    <td class="security-text-area" colspan="3">
-                        <div class="input-type">
-                            <input type="text" aria-label="보안문자 입력하세요."/>
-                        </div>
-                        <div class="security-text">보안문자 영역</div>
-                        <strong>* 보안문자를 확인하시고 입력해주세요.</strong>
                     </td>
                 </tr>
                 <tr>
