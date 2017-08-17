@@ -754,6 +754,44 @@ or
                         </li>
                     </ul>
                 </div>
+<pre><code class="language-html">&lt;!-- 아코디언 설정 시 class=&quot;accordion-name&quot; 에서 name 변경 후 스타일 지정 --&gt;
+&lt;div class=&quot;accordion-name&quot;&gt;
+    &lt;!-- 닫힌 상태 class=&quot;aco-base&quot; 적용, 첫번째 메뉴 열린 상태 class=&quot;aco-open&quot; 적용 --&gt;
+    &lt;ul class=&quot;aco-base&quot;&gt;
+
+        &lt;!-- [Start] 대분류, 중분류, 세분류 작성 시 --&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;name-link&quot; role=&quot;button&quot;&gt;대분류 1&lt;span class=&quot;fa fa-angle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;!-- 중분류 설정 시 class=&quot;sub-name&quot; 에서 name 변경 후 스타일 지정 --&gt;
+            &lt;ul class=&quot;sub-name&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;중분류 1&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;세분류 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;세분류 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;세분류 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;중분류 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;중분류 3&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;!-- [End] 대분류, 중분류, 세분류 작성 시 --&gt;
+
+        &lt;!-- [Start] 대분류만 작성 시 --&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;name-link&quot; role=&quot;button&quot;&gt;대분류 2&lt;span class=&quot;fa fa-angle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;!-- [End] 대분류만 작성 시 --&gt;
+
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                <p class="ui-kit-comment">
+                    아코디언 메뉴 제작 시 <strong>class="accordion-<span class="red">name</span>"</strong>의 <strong class="red">name</strong> 을 지정하고 아코디언 스타일을 설정합니다.<br>
+                    아코디언의 ul요소에 <strong>class="<span class="red">aco-base</span>"</strong> 적용 시 <strong>전체 패널이 닫힌 상태</strong>로 처리됩니다.<br>
+                    아코디언의 &lt;ul&gt;요소에 <strong>class="<span class="red">aco-open</span>"</strong> 적용 시 <strong>첫번째 패널 펼친 상태</strong>로 처리됩니다.<br>
+                    아코디언 대분류 &lt;a&gt;요소의 <strong>class="<span class="red">name</span>-link"</strong> <strong class="red">name</strong> 을 지정하고 대분류 스타일을 설정합니다.<br>
+                    아코디언 중분류 &lt;a&gt;요소의 <strong>class="sub-<span class="red">name</span>"</strong> <strong class="red">name</strong> 을 지정하고 중분류 스타일을 설정합니다.
+                </p>
             </article>
             <!-- [End] 아코디언 스타일 공통 -->
             <!-- [Start] 탭 스타일 공통 -->
@@ -783,14 +821,18 @@ or
                         tab5 영역 입니다.
                     </div>
                 </div>
-<pre><code class="language-html">&lt;div class=&quot;tablist t5&quot; role=&quot;tablist&quot;&gt;
+<pre><code class="language-html">&lt;!-- 탭의 갯수에 따라 t1~t8 까지 class 설정 가능 --&gt;
+&lt;div class=&quot;tablist t5&quot; role=&quot;tablist&quot;&gt;
+    &lt;!-- [Start] 탭 메뉴 5개 생성 --&gt;
     &lt;a href id=&quot;tab1&quot; aria-controls=&quot;panel1&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab1&lt;/span&gt;&lt;/a&gt;
     &lt;a href id=&quot;tab2&quot; aria-controls=&quot;panel2&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab2&lt;/span&gt;&lt;/a&gt;
     &lt;a href id=&quot;tab3&quot; aria-controls=&quot;panel3&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab3&lt;/span&gt;&lt;/a&gt;
     &lt;a href id=&quot;tab4&quot; aria-controls=&quot;panel4&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab4&lt;/span&gt;&lt;/a&gt;
     &lt;a href id=&quot;tab5&quot; aria-controls=&quot;panel5&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab5&lt;/span&gt;&lt;/a&gt;
+    &lt;!-- [End] 탭 메뉴 5개 생성 --&gt;
 &lt;/div&gt;
 &lt;div class=&quot;panel-group&quot;&gt;
+    &lt;!-- [Start] 탭 패널 5개 생성 --&gt;
     &lt;div id=&quot;panel1&quot; aria-labelledby=&quot;tab1&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
         tab1 영역 입니다.
     &lt;/div&gt;
@@ -806,6 +848,7 @@ or
     &lt;div id=&quot;panel5&quot; aria-labelledby=&quot;tab5&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
         tab5 영역 입니다.
     &lt;/div&gt;
+    &lt;!-- [End] 탭 패널 5개 생성 --&gt;
 &lt;/div&gt;</code></pre>
                 <p class="ui-kit-comment">탭의 갯수 만큼 <strong>tab</strong>과 <strong>panel</strong> 마크업 작성<br>
                 탭의 갯수에 따라 <strong>class="t<span class="red">(n)</span>"</strong> 설정 (max:8)<br>
