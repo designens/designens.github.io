@@ -179,26 +179,53 @@
                         <label for="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
+<pre>
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;label for=&quot;username&quot;&gt;아이디&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; required=&quot;required&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;label for=&quot;password&quot;&gt;비밀번호&lt;/label&gt;
+    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required=&quot;required&quot; /&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 설명이 있는 기본 인풋 스타일 -->
                     <!-- [Start] 설명이 없는 기본 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>설명이 없는 기본 인풋 스타일</h3>
                     <div class="input-type">
-                        <input type="text" aria-label="텍스트 입력" />
+                        <input type="text" aria-label="내용 설명" />
                     </div>
+<pre>
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 설명이 없는 기본 인풋 스타일 -->
                     <!-- [Start] 설명이 없는 너비 100% 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>설명이 없는 너비 100% 인풋 스타일</h3>
                     <div class="input-type full">
-                        <input type="text" aria-label="텍스트 입력" />
+                        <input type="text" aria-label="내용 설명" />
                     </div>
+<pre>
+&lt;div class=&quot;input-type full&quot;&gt;
+    &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 설명이 없는 너비 100% 인풋 스타일 -->
                     <!-- [Start] Placeholder가 있는 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
                     <div class="input-type">
                         <label>
-                            <input type="text" placeholder="Placeholder 내용" />
+                            <input type="text" placeholder="Placeholder 내용 설명" />
                         </label>
                     </div>
+<pre>
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용 설명&quot; /&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
                     <!-- [Start] 전화번호 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
@@ -213,9 +240,22 @@
                             <input class="last-number" type="tel" aria-label="뒷번호">
                         </div>
                     </div>
+<pre>
+&lt;div class=&quot;input-type tel&quot;&gt;
+    &lt;div class=&quot;dialog&quot;&gt;
+        &lt;input class=&quot;country-code&quot; type=&quot;tel&quot; aria-label=&quot;지역번호&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dialog&quot;&gt;
+        &lt;input class=&quot;first-number&quot; type=&quot;tel&quot; aria-label=&quot;앞번호&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dialog&quot;&gt;
+        &lt;input class=&quot;last-number&quot; type=&quot;tel&quot; aria-label=&quot;뒷번호&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 전화번호 인풋 스타일 -->
                     <!-- [Start] 이메일 인풋 스타일 -->
-                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
+                    <h3><div class="fa fa-angle-double-right"></div>이메일 인풋 스타일</h3>
                     <div class="input-type e-mail">
                         <div class="email">
                             <input class="email-id" type="text" aria-label="이메일 아이디">
@@ -235,10 +275,34 @@
                             <option>yahoo.com</option>
                         </select>
                     </div>
+<pre>
+&lt;div class=&quot;input-type e-mail&quot;&gt;
+    &lt;div class=&quot;email&quot;&gt;
+        &lt;input class=&quot;email-id&quot; type=&quot;text&quot; aria-label=&quot;이메일 아이디&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;email&quot;&gt;
+        &lt;input class=&quot;email-address&quot; type=&quot;text&quot; aria-label=&quot;이메일 주소 직접입력&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;select-box e-mail&quot;&gt;
+    &lt;label for=&quot;email-search&quot;&gt;직접입력&lt;/label&gt;
+    &lt;select id=&quot;email-search&quot; name=&quot;email-search-item&quot;&gt;
+        &lt;option selected=&quot;selected&quot;&gt;직접입력&lt;/option&gt;
+        &lt;option&gt;naver.com&lt;/option&gt;
+        &lt;option&gt;daum.net&lt;/option&gt;
+        &lt;option&gt;nate.com&lt;/option&gt;
+        &lt;option&gt;google.com&lt;/option&gt;
+        &lt;option&gt;yahoo.com&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 이메일 인풋 스타일 -->
                     <!-- [Start] 텍스트박스 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>텍스트박스 스타일</h3>
-                    <textarea class="textarea" placeholder="텍스트 입력하세요."></textarea>
+                    <textarea class="textarea" placeholder="Placeholder 내용 설명"></textarea>
+<pre>
+&lt;textarea class=&quot;textarea&quot; placeholder=&quot;Placeholder 내용 설명&quot;&gt;&lt;/textarea&gt;
+</pre>
                     <!-- [End] 텍스트박스 스타일 -->
                     <!-- [Start] 주소 영역 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>주소 영역 스타일</h3>
@@ -260,6 +324,26 @@
                             </div>
                         </li>
                     </ul>
+<pre>
+&lt;ul class=&quot;address-area&quot;&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; aria-label=&quot;우편번호&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn-type-1-02&quot;&gt;우편번호 찾기&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; aria-label=&quot;기본 주소&quot;&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;상세 주소 입력&quot;&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
                     <!-- [End] 주소 영역 스타일 -->
                 </div>
             </article>
@@ -278,6 +362,19 @@
                         <option>키워드05</option>
                     </select>
                 </div>
+<pre>
+&lt;div class=&quot;select-box&quot;&gt;
+    &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
+    &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+        &lt;option selected=&quot;selected&quot;&gt;검색&lt;/option&gt;
+        &lt;option&gt;키워드01&lt;/option&gt;
+        &lt;option&gt;키워드02&lt;/option&gt;
+        &lt;option&gt;키워드03&lt;/option&gt;
+        &lt;option&gt;키워드04&lt;/option&gt;
+        &lt;option&gt;키워드05&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] Select Box 공통 -->
             <!-- [Start] 서브 검색 영역 공통 -->
@@ -301,6 +398,23 @@
                             <button type="button" class="btn-lookup">조회</button>
                         </li>
                     </ul>
+<pre>
+&lt;ul class=&quot;search-area&quot;&gt;
+    &lt;li&gt;&lt;span class=&quot;search-title&quot;&gt;검색&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&quot;select-box&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;제목&lt;/option&gt;
+            &lt;option&gt;내용&lt;/option&gt;
+            &lt;option&gt;단어&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;input-type&quot;&gt;
+        &lt;input type=&quot;text&quot; aria-label=&quot;검색 키워드 입력하세요.&quot; /&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-lookup&quot;&gt;조회&lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
                     <!-- [End] 검색 타입 1. -->
                     <!-- [Start] 검색 타입 2. -->
                     <h3><div class="fa fa-angle-double-right"></div>검색 타입 2.</h3>
@@ -327,6 +441,31 @@
                             <button type="button" class="btn-lookup">조회</button>
                         </li>
                     </ul>
+<pre>
+&lt;ul class=&quot;search-area&quot;&gt;
+    &lt;li class=&quot;search-title&quot;&gt;&lt;span&gt;검색&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&quot;select-box all&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;말머리:전체&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;말머리:전체&lt;/option&gt;
+            &lt;option&gt;내용&lt;/option&gt;
+            &lt;option&gt;단어&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;select-box&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;제목&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;제목&lt;/option&gt;
+            &lt;option&gt;내용&lt;/option&gt;
+            &lt;option&gt;단어&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;input-type&quot;&gt;
+        &lt;input type=&quot;text&quot; aria-label=&quot;검색 키워드 입력하세요.&quot; /&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-lookup&quot;&gt;조회&lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
                     <!-- [End] 검색 타입 2. -->
                 </div>
             </article>
@@ -342,6 +481,20 @@
                     <input type="checkbox" id="checkbox-03" name="test-03">
                     <label for="checkbox-03">Checkbox Test 03</label>
                 </div>
+<pre>
+&lt;div class=&quot;checkbox-type&quot;&gt;
+
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-01&quot; name=&quot;test-01&quot;&gt;
+    &lt;label for=&quot;checkbox-01&quot;&gt;Checkbox Test 01&lt;/label&gt;
+
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-02&quot; name=&quot;test-02&quot;&gt;
+    &lt;label for=&quot;checkbox-02&quot;&gt;Checkbox Test 02&lt;/label&gt;
+
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-03&quot; name=&quot;test-03&quot;&gt;
+    &lt;label for=&quot;checkbox-03&quot;&gt;Checkbox Test 03&lt;/label&gt;
+
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 체크박스 공통 -->
             <!-- [Start] 라디오버튼 공통 -->
@@ -353,6 +506,17 @@
                     <input type="radio" id="radio2" name="test">
                     <label for="radio2">Radio Button Test 02</label>
                 </div>
+<pre>
+&lt;div class=&quot;radio-type&quot;&gt;
+
+    &lt;input type=&quot;radio&quot; id=&quot;radio1&quot; name=&quot;test&quot;&gt;
+    &lt;label for=&quot;radio1&quot;&gt;Radio Button Test 01&lt;/label&gt;
+
+    &lt;input type=&quot;radio&quot; id=&quot;radio2&quot; name=&quot;test&quot;&gt;
+    &lt;label for=&quot;radio2&quot;&gt;Radio Button Test 02&lt;/label&gt;
+
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 라디오버튼 공통 -->
             <!-- [Start] 버튼 스타일 공통 -->
@@ -368,44 +532,86 @@
                     <div class="arrow-bottom-left"></div>
                     <div class="arrow-bottom-right"></div>
                 </div>
+<pre>
+&lt;div class=&quot;arrow-top&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-bottom&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-top-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-top-right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-bottom-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-bottom-right&quot;&gt;&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
             <!-- [Start] 버튼 스타일 공통 -->
             <article>
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
-                    <p>.btn-type-1-01</p>
-                    <button class="btn-type-1-01">버튼</button>
+                    <button type="button" class="btn-type-1-01">버튼</button>
                     <a href class="btn-type-1-01" role="button">버튼</a>
-                    <p>.btn-type-1-02</p>
-                    <button class="btn-type-1-02">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-1-02">버튼</button>
                     <a href class="btn-type-1-02" role="button">버튼</a>
-                    <p>.btn-type-1-03</p>
-                    <button class="btn-type-1-03">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-1-02&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-1-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-1-03">버튼</button>
                     <a href class="btn-type-1-03" role="button">버튼</a>
-                    <p>.btn-type-3-01</p>
-                    <button class="btn-type-3-01">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-1-03&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-1-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;3
+</pre>
+                    <button type="button" class="btn-type-3-01">버튼</button>
                     <a href class="btn-type-3-01" role="button">버튼</a>
-                    <p>.btn-type-3-02</p>
-                    <button class="btn-type-3-02">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-3-01&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-3-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-3-02">버튼</button>
                     <a href class="btn-type-3-02" role="button">버튼</a>
-                    <p>.btn-type-3-03</p>
-                    <button class="btn-type-3-03">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-3-02&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-3-03">버튼</button>
                     <a href class="btn-type-3-03" role="button">버튼</a>
-                    <p>.btn-type-2-01</p>
-                    <button class="btn-type-2-01">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-3-03&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-3-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-01">버튼</button>
                     <a href class="btn-type-2-01" role="button">버튼</a>
-                    <p>.btn-type-2-02</p>
-                    <button class="btn-type-2-02">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-2-01&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-02">버튼</button>
                     <a href class="btn-type-2-02" role="button">버튼</a>
-                    <p>.btn-type-2-03</p>
-                    <button class="btn-type-2-03">버튼</button>
+<pre>
+button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-03">버튼</button>
                     <a href class="btn-type-2-03" role="button">버튼</a>
-                    <p>.btn-type-2-04</p>
-                    <button class="btn-type-2-04">버튼</button>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-2-03&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-04">버튼</button>
                     <a href class="btn-type-2-04" role="button">버튼</a>
-                    <p>.icon-comment</p>
+<pre>
+&lt;button type=&quot;button&quot; class=&quot;btn-type-2-04&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-04&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
                     <button class="icon-comment">덧글</button>
+<pre>
+&lt;button class=&quot;icon-comment&quot;&gt;덧글&lt;/button&gt;
+</pre>
                 </div>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
@@ -445,6 +651,38 @@
                         </div>
                     </div>
                 </div>
+<pre>
+&lt;div class=&quot;add-file-area&quot;&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;hwp-첨부파일.hwp&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-doc&quot; role=&quot;button&quot; href=&quot;&quot;&gt;doc-첨부파일.doc&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-pdf&quot; role=&quot;button&quot; href=&quot;&quot;&gt;pdf-첨부파일.pdf&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-jpg&quot; role=&quot;button&quot; href=&quot;&quot;&gt;jpg-첨부파일.jpg&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href=&quot;&quot;&gt;png-첨부파일.png&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-xls&quot; role=&quot;button&quot; href=&quot;&quot;&gt;xls-첨부파일.xls&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-ppt&quot; role=&quot;button&quot; href=&quot;&quot;&gt;ppt-첨부파일.ppt&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <div class="file-area-test">
                     <h3><div class="fa fa-angle-double-right"></div>첨부파일 Type 2</h3>
                     <div class="add-file-upload">
@@ -460,6 +698,20 @@
                         </div>
                     </div>
                 </div>
+<pre>
+&lt;div class=&quot;add-file-upload&quot;&gt;
+    &lt;div class=&quot;add-file-search&quot;&gt;
+        &lt;span&gt;서류 등록 :&lt;/span&gt;
+        &lt;button class=&quot;btn-type-1-02&quot;&gt;파일 올리기&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;add-file-area&quot;&gt;
+        &lt;div class=&quot;file&quot;&gt;
+            &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href&gt;첨부파일1.png&lt;/a&gt;
+            &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 파일 아이콘 스타일 공통 -->
             <!-- [Start] 아코디언 스타일 공통 -->
@@ -555,6 +807,7 @@
                 </div>
             </article>
             <!-- [End] 탭 스타일 공통 -->
+
             <!-- [Start] 서브 전체 페이지 선택 영역 -->
             <article>
                 <h2>All Pages Style</h2>
@@ -573,8 +826,26 @@
                         </select>
                     </div>
                 </div>
+<pre>
+&lt;div class=&quot;all-pages-view&quot;&gt;
+    &lt;div class=&quot;all-page&quot;&gt;
+        &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;select-box&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;10개씩보기&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;10개씩보기&lt;/option&gt;
+            &lt;option&gt;20개씩보기&lt;/option&gt;
+            &lt;option&gt;30개씩보기&lt;/option&gt;
+            &lt;option&gt;40개씩보기&lt;/option&gt;
+            &lt;option&gt;50개씩보기&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 서브 전체 페이지 선택 영역 -->
+
             <!-- [Start] 테이블 스타일 공통 -->
             <article>
                 <h2>Table Style</h2>
@@ -582,6 +853,7 @@
                 <!-- ex) class를 추가 후 컬럼 width 설정 -->
                 <div class="table-type">
                     <h3><span class="fa fa-table"></span>table-type-01</h3>
+                    <!-- [Start] table-type-01 -->
                     <table class="table-type-01">
                         <caption>Q&amp;A의 카테고리 번호,분야,제목,작성자,첨부파일,등록일 테이블 입니다</caption>
                         <colgroup>
@@ -714,7 +986,81 @@
                             </tr>
                         </tbody>
                     </table>
+                    <!-- [End] table-type-01 -->
+
+                    <!-- [Start] 테이블 하단 버튼 -->
+                    <h2>Table bottom button</h2>
+                    <!-- 버튼 가운데 위치 -->
+                    <div class="table-btn-set">
+                        <a href="" class="btn-type-3-02" role="button">버튼</a>
+                    </div>
+<pre>
+&lt;div class=&quot;table-btn-set&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- 버튼 좌측 위치 -->
+                    <div class="table-btn-set in-left">
+                        <a href="" class="btn-type-3-02" role="button">버튼</a>
+                    </div>
+<pre>
+&lt;div class=&quot;table-btn-set in-left&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- 버튼 우측 위치 -->
+                    <div class="table-btn-set in-right">
+                        <a href="" class="btn-type-3-02" role="button">버튼</a>
+                    </div>
+<pre>
+&lt;div class=&quot;table-btn-set in-right&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- [End] 테이블 하단 버튼 -->
+
+                    <!-- [Start] 페이징 스타일 공통 -->
+                    <h2>Paging Style</h2>
+                    <div class="paging">
+                        <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
+                        <button type="button" class="prev" aria-label="이전 페이지"></button>
+                        <a href role="button">1</a>
+                        <a href role="button">2</a>
+                        <a href role="button">3</a>
+                        <a href role="button">4</a>
+                        <!-- 선택된 버튼 class="selected"로 제어 -->
+                        <a href role="button" class="selected">5</a>
+                        <a href role="button">6</a>
+                        <a href role="button">7</a>
+                        <a href role="button">8</a>
+                        <a href role="button">9</a>
+                        <a href role="button">10</a>
+                        <button type="button" class="next" " aria-label="다음 페이지 "></button>
+                        <button type="button " class="last-next " aria-label="끝으로 이동 "></button>
+                    </div>
+<pre>
+&lt;div class=&quot;paging&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot;&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot;&gt;&lt;/button&gt;
+    &lt;a href role=&quot;button&quot;&gt;1&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;2&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;3&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;4&lt;/a&gt;
+    &lt;!-- 선택된 버튼 class=&quot;selected&quot;로 제어 --&gt;
+    &lt;a href role=&quot;button&quot; class=&quot;selected&quot;&gt;5&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;6&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;7&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;8&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;9&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;10&lt;/a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;next&quot; &quot; aria-label=&quot;다음 페이지 &quot;&gt;&lt;/button&gt;
+    &lt;button type=&quot;button &quot; class=&quot;last-next &quot; aria-label=&quot;끝으로 이동 &quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- [End] 페이징 스타일 공통 -->
+
                     <h3><span class="fa fa-table"></span>table-type-02</h3>
+                    <!-- [Start] table-type-02 -->
                     <table class="table-type-02">
                         <caption>qna 팝업</caption>
                         <colgroup>
@@ -748,7 +1094,18 @@
                             </tr>
                         </tbody>
                     </table>
+                    <!-- [End] table-type-02 -->
+                    
+                    <!-- [Start] 하단 버튼 영역 공통 -->
+                    <h2>Sub Bottom Button Style</h2>
+                    <div class="sub-bottom-btn-area ">
+                        <a href=" " class="btn-type-2-04 " role="button ">동의</a>
+                        <a href=" " class="btn-type-2-01 " role="button ">취소</a>
+                    </div>
+                    <!-- [End] 하단 버튼 영역 공통 -->
+
                     <h3><span class="fa fa-table"></span>table-dt-dd</h3>
+                    <!-- [Start] table-dt-dd -->
                     <dl class="table-dt-dd">
                         <dt>질문</dt>
                         <dd>
@@ -760,12 +1117,18 @@
                         <dt>답변</dt>
                         <dd>이런저런 내용으로 제안합니다.</dd>
                     </dl>
+                    <!-- [End] table-dt-dd -->
+
                     <h3><span class="fa fa-table"></span>table-dl</h3>
+                    <!-- [Start] table-dl -->
                     <dl class="table-dl">
                         <dt>제목</dt>
                         <dd>이런저런 내용입니다.</dd>
                     </dl>
+                    <!-- [End] table-dl -->
+
                     <h3><span class="fa fa-table"></span>table-li</h3>
+                    <!-- [Start] table-li -->
                     <ul class="table-li">
                         <li class="title">질문</li>
                         <li>
@@ -777,31 +1140,19 @@
                         <li class="title">답변</li>
                         <li>이런저런 내용으로 제안합니다.</li>
                     </ul>
+                    <!-- [End] table-li -->
+
                     <h3><span class="fa fa-table"></span>table-li</h3>
+                    <!-- [Start] table-li -->
                     <ul class="table-li">
                         <li class="title">제목</li>
                         <li>이런저런 내용입니다.</li>
                     </ul>
+                    <!-- [End] table-li -->
                 </div>
             </article>
             <!-- [End] 테이블 스타일 공통 -->
-            <!-- [Start] 테이블 하단 버튼 -->
-            <article>
-                <h2>Table bottom button</h2>
-                <!-- 버튼 가운데 위치 -->
-                <div class="table-btn-set">
-                    <a href="" class="btn-type-3-02" role="button">버튼</a>
-                </div>
-                <!-- 버튼 좌측 위치 -->
-                <div class="table-btn-set in-left">
-                    <a href="" class="btn-type-3-02" role="button">버튼</a>
-                </div>
-                <!-- 버튼 우측 위치 -->
-                <div class="table-btn-set in-right">
-                    <a href="" class="btn-type-3-02" role="button">버튼</a>
-                </div>
-            </article>
-            <!-- [End] 테이블 하단 버튼 -->
+            
             <!-- [Start] 팝업 기본 스타일 -->
             <article>
                 <h2>Popup Base Style</h2>
@@ -809,28 +1160,6 @@
                 <a class="btn-popup-test" role="button" href>팝업 띄우기 <= 클릭</a>
             </article>
             <!-- [End] 팝업 기본 스타일 -->
-            <!-- [Start] 페이징 스타일 공통 -->
-            <article>
-                <h2>Paging Style</h2>
-                <div class="paging">
-                    <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
-                    <button type="button" class="prev" aria-label="이전 페이지"></button>
-                    <a href role="button">1</a>
-                    <a href role="button">2</a>
-                    <a href role="button">3</a>
-                    <a href role="button">4</a>
-                    <!-- 선택된 버튼 class="selected"로 제어 -->
-                    <a href role="button" class="selected">5</a>
-                    <a href role="button">6</a>
-                    <a href role="button">7</a>
-                    <a href role="button">8</a>
-                    <a href role="button">9</a>
-                    <a href role="button">10</a>
-                    <button type="button" class="next" " aria-label="다음 페이지 "></button>
-                    <button type="button " class="last-next " aria-label="끝으로 이동 "></button>
-                </div>
-            </article>
-            <!-- [End] 페이징 스타일 공통 -->
 
             <!-- [Start] 등록 완료 스타일 공통 -->
             <article>
@@ -839,49 +1168,70 @@
                 <div class="sub-completed ">
                     <p class="message ">등록이 <span>완료</span> 되었습니다.</p>
                 </div>
+<pre>
+&lt;div class=&quot;sub-completed &quot;&gt;
+    &lt;p class=&quot;message &quot;&gt;등록이 &lt;span&gt;완료&lt;/span&gt; 되었습니다.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
                 <!-- 등록완료 Type 2 -->
                 <div class="sub-completed-big ">
                     <p class="message ">등록이 <span>완료</span> 되었습니다.</p>
                 </div>
+<pre>
+&lt;div class=&quot;sub-completed-big &quot;&gt;
+    &lt;p class=&quot;message &quot;&gt;등록이 &lt;span&gt;완료&lt;/span&gt; 되었습니다.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 등록 완료 스타일 공통 -->
 
-            <!-- [Start] 서브 컨텐츠 타이틀 공통 -->
             <article>
-                <h2>Sub Content Box Title Style</h2>
-                <article class="content-box-area ">
-                    <h3>담당자 조회</h3>
-                </article>
-            </article>
-            <!-- [End] 서브 컨텐츠 타이틀 공통 -->
+                <h2>Sub Content Box Title &amp; Form Style</h2>
 
-            <!-- [Start] 서브 컨텐츠 폼 공통 -->
-            <article>
-                <h2>Sub Content Box Form Style</h2>
-                <div class="content-form-area ">
-                    <div class="form-group ">
-                        <div class="input-area ">
-                            <input type="text " id="username " name="username " required="required " />
-                            <label for="username ">담당자 ID</label>
-                            <br>
-                            <input type="password " id="password " name="password " required="required " />
-                            <label for="password ">비밀번호</label>
+                <!-- [Start] 서브 컨텐츠 타이틀 공통 -->
+                <article class="content-box-area">
+                    <h3>서브 컨텐츠 타이틀</h3>
+
+                    <!-- [Start] 서브 컨텐츠 폼 공통 -->
+                    <div class="content-form-area">
+                        <div class="form-group ">
+                            <div class="input-area ">
+                                <input type="text " id="username " name="username " required="required " />
+                                <label for="username ">담당자 ID</label>
+                                <br>
+                                <input type="password " id="password " name="password " required="required " />
+                                <label for="password ">비밀번호</label>
+                            </div>
+                            <button class="btn-input-area ">탈퇴</button>
                         </div>
-                        <button class="btn-input-area ">탈퇴</button>
                     </div>
-                </div>
-            </article>
-            <!-- [End] 서브 컨텐츠 폼 공통 -->
+                    <!-- [End] 서브 컨텐츠 폼 공통 -->
 
-            <!-- [Start] 하단 버튼 영역 공통 -->
-            <article>
-                <h2>Sub Bottom Button Style</h2>
-                <div class="sub-bottom-btn-area ">
-                    <a href=" " class="btn-type-2-04 " role="button ">동의</a>
-                    <a href=" " class="btn-type-2-01 " role="button ">취소</a>
-                </div>
+                </article>
+                <!-- [End] 서브 컨텐츠 타이틀 공통 -->
+
+<pre>
+&lt;article class=&quot;content-box-area&quot;&gt;
+    &lt;h3&gt;서브 컨텐츠 타이틀&lt;/h3&gt;
+    &lt;p&gt;서브 컨텐츠 타이틀의 내용을 작성합니다.&lt;/p&gt;
+&lt;/article&gt;
+</pre>
+<pre>
+&lt;div class=&quot;content-form-area&quot;&gt;
+    &lt;div class=&quot;form-group &quot;&gt;
+        &lt;div class=&quot;input-area &quot;&gt;
+            &lt;input type=&quot;text &quot; id=&quot;username &quot; name=&quot;username &quot; required=&quot;required &quot; /&gt;
+            &lt;label for=&quot;username &quot;&gt;담당자 ID&lt;/label&gt;
+            &lt;br&gt;
+            &lt;input type=&quot;password &quot; id=&quot;password &quot; name=&quot;password &quot; required=&quot;required &quot; /&gt;
+            &lt;label for=&quot;password &quot;&gt;비밀번호&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn-input-area &quot;&gt;탈퇴&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
             </article>
-            <!-- [End] 하단 버튼 영역 공통 -->
 
             <!-- [Start] 서브 신청 절차 영역 공통 -->
             <article>

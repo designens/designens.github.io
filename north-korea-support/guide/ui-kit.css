@@ -3339,11 +3339,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .ui-kit section > article h2 { color: #002847; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #e2e2e2; }
 
+.ui-kit pre { font-family: "malgun gothic", "Noto Sans Korean", sans-serif, serif; background: #f3f3f3; padding: 60px 30px 30px 30px; margin-top: 30px; position: relative; }
+
+.ui-kit pre:before { position: absolute; top: 20px; left: 30px; font-size: 20px; font-weight: bold; color: #002847; content: "HTML"; }
+
 .btn-type-sample p { font-size: 12px; margin-top: 20px; margin-bottom: 10px; }
 
 .btn-type-sample p:first-child { margin-top: 0; }
 
-.btn-type-sample button { margin-right: 10px; }
+.btn-type-sample button { margin-top: 30px; margin-right: 10px; }
+
+.btn-type-sample button:first-child { margin-top: 10px; }
 
 .btn-type-sample button:last-child { margin-right: 0; }
 
@@ -3371,13 +3377,15 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .form-group h3 .fa, .file-area-test h3 .fa, .table-type h3 .fa { font-size: 16px; margin-right: 6px; vertical-align: 2px; }
 
-.file-area-test { margin-bottom: 20px; }
+.file-area-test { margin-top: 20px; margin-bottom: 20px; }
 
 .file-area-test:last-child { margin-bottom: 0; }
 
 .file-area-test h3 .fa { margin-right: 10px; vertical-align: -1px; }
 
 .tablist { width: 100%; }
+
+.table-type h2 { margin-top: 20px; }
 
 .table-type h3 .fa { margin-right: 10px; vertical-align: -1px; }
 
