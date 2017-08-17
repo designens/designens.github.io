@@ -1776,9 +1776,13 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 /* =======================================*/
 /* 아이콘 공통 스타일
 /* =======================================*/
-.icon-hwp, .icon-doc, .icon-pdf, .icon-jpg, .icon-png, .icon-xls, .icon-ppt { position: relative; padding-left: 20px; }
+.icon-hwp, .icon-secret, .icon-doc, .icon-pdf, .icon-jpg, .icon-png, .icon-xls, .icon-ppt { position: relative; }
 
-.icon-hwp:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before, .icon-png:before, .icon-xls:before, .icon-ppt:before { position: absolute; top: 5px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("../assets/images/icon/icon-hwp.png") no-repeat; }
+.icon-hwp:before, .icon-secret:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before, .icon-png:before, .icon-xls:before, .icon-ppt:before { position: absolute; top: 5px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("../assets/images/icon/icon-hwp.png") no-repeat; }
+
+.icon-secret:before { display: inline-block; top: 7px; left: 10px; width: 19px; height: 24px; background: url("../assets/images/icon/icon-secret.png") no-repeat; }
+
+.icon-secret .view-link { padding-left: 27px; }
 
 .icon-doc:before { background: url("../assets/images/icon/icon-doc.png") no-repeat; }
 
@@ -2815,7 +2819,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 커뮤니티 > Q&A조회
 /* (html/qna-list.html)
 /* =======================================*/
-.qna-content tbody td:nth-child(3) { text-align: left; }
+.qna-content tbody td:nth-child(2) { text-align: left; }
 
 /* =======================================*/
 /* 커뮤니티 > Q&A 상세 조회 팝업
@@ -3125,21 +3129,21 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 단체정보관리 > 정보조회
 /* (html/information-inquiry.html)
 /* =======================================*/
-.information-inquiry .panel-group #panel3 .blue { text-align: right; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .blue { text-align: right; }
 
-.information-inquiry .panel-group #panel3 .sub-top-btn-area { margin-top: -38px; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area { margin-top: -38px; }
 
-.information-inquiry .panel-group #panel3 .sub-top-btn-area button:first-child { width: 190px; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area button:first-child { width: 190px; }
 
-.information-inquiry .panel-group #panel3 .sub-top-btn-area button:nth-child(2) { width: 100px; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area button:nth-child(2) { width: 100px; }
 
-.information-inquiry .panel-group #panel3 .sub-top-btn-area button:nth-child(3), .information-inquiry .panel-group #panel3 .sub-top-btn-area button:nth-child(4) { width: 110px; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area button:nth-child(3), .information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area button:nth-child(4) { width: 110px; }
 
-.information-inquiry .panel-group #panel3 .sub-top-btn-area button:last-child { width: 150px; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area button:last-child { width: 150px; }
 
-.information-inquiry .panel-group #panel3 .table-type-01 tbody td:nth-child(4) { text-align: left; }
+.information-inquiry .panel-group [aria-labelledby="tab3"] .table-type-01 tbody td:nth-child(4) { text-align: left; }
 
-.information-inquiry .panel-group #panel4 .table-type-01 tbody td:nth-child(3) { text-align: left; }
+.information-inquiry .panel-group [aria-labelledby="tab4"] .table-type-01 tbody td:nth-child(3) { text-align: left; }
 
 /* =======================================*/
 /* 회원서비스 > 단체정보관리 > 정보조회 인물정보 팝업
