@@ -1778,7 +1778,7 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 /* =======================================*/
 /* 아이콘 공통 스타일
 /* =======================================*/
-.icon-hwp, .icon-secret, .icon-doc, .icon-pdf, .icon-jpg, .icon-png, .icon-xls, .icon-ppt { position: relative; }
+.icon-hwp, .icon-secret, .icon-doc, .icon-pdf, .icon-jpg, .icon-png, .icon-xls, .icon-ppt { position: relative; padding-left: 20px; }
 
 .icon-hwp:before, .icon-secret:before, .icon-doc:before, .icon-pdf:before, .icon-jpg:before, .icon-png:before, .icon-xls:before, .icon-ppt:before { position: absolute; top: 5px; left: 0; display: inline-block; width: 14px; height: 16px; content: ""; background: url("../../assets/images/icon/icon-hwp.png") no-repeat; }
 
