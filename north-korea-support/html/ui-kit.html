@@ -818,9 +818,6 @@ button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/but
             <!-- [Start] 탭 스타일 공통 -->
             <article>
                 <h2>Tab Style</h2>
-                <!-- 탭의 갯수 만큼 tab과 panel 마크업 작성
-                     탭의 갯수에 따라 class="t(n)" 설정 (max:8)
-                     ex) tab 갯수가 5개일 경우 class="t5" 설정 -->
                 <div class="tablist t5" role="tablist">
                     <a href id="tab1" aria-controls="panel1" role="tab"><span>tab1</span></a>
                     <a href id="tab2" aria-controls="panel2" role="tab"><span>tab2</span></a>
@@ -845,6 +842,35 @@ button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/but
                         tab5 영역 입니다.
                     </div>
                 </div>
+<pre class="html">
+&lt;div class=&quot;tablist t5&quot; role=&quot;tablist&quot;&gt;
+    &lt;a href id=&quot;tab1&quot; aria-controls=&quot;panel1&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab1&lt;/span&gt;&lt;/a&gt;
+    &lt;a href id=&quot;tab2&quot; aria-controls=&quot;panel2&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab2&lt;/span&gt;&lt;/a&gt;
+    &lt;a href id=&quot;tab3&quot; aria-controls=&quot;panel3&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab3&lt;/span&gt;&lt;/a&gt;
+    &lt;a href id=&quot;tab4&quot; aria-controls=&quot;panel4&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab4&lt;/span&gt;&lt;/a&gt;
+    &lt;a href id=&quot;tab5&quot; aria-controls=&quot;panel5&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab5&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-group&quot;&gt;
+    &lt;div id=&quot;panel1&quot; aria-labelledby=&quot;tab1&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
+        tab1 영역 입니다.
+    &lt;/div&gt;
+    &lt;div id=&quot;panel2&quot; aria-labelledby=&quot;tab2&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
+        tab2 영역 입니다.
+    &lt;/div&gt;
+    &lt;div id=&quot;panel3&quot; aria-labelledby=&quot;tab3&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
+        tab3 영역 입니다.
+    &lt;/div&gt;
+    &lt;div id=&quot;panel4&quot; aria-labelledby=&quot;tab4&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
+        tab4 영역 입니다.
+    &lt;/div&gt;
+    &lt;div id=&quot;panel5&quot; aria-labelledby=&quot;tab5&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
+        tab5 영역 입니다.
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                <p class="comment">탭의 갯수 만큼 <strong>tab</strong>과 <strong>panel</strong> 마크업 작성<br>
+                탭의 갯수에 따라 <strong>class="t<span class="red">(n)</span>"</strong> 설정 (max:8)<br>
+                ex) tab 갯수가 5개일 경우 <strong>class="t<span class="red">5</span>"</strong> 설정</p>
             </article>
             <!-- [End] 탭 스타일 공통 -->
 
@@ -1357,9 +1383,9 @@ button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/but
 <pre class="html">
 &lt;a class=&quot;btn-popup-name&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;
 </pre>
-                <p class="popup-name">팝업버튼의 <strong>class="btn-<span class="red">popup-name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="<span class="red">popup-name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
-                빨간색 글자의 <strong class="red">popup-name</strong> 은 파일 네이밍을 동일하게 규칙적으로 사용합니다.</p>
-                <strong class="red">name</strong>은 파일명과 동일하게 작성합니다.
+                <p class="comment">팝업버튼의 <strong>class="btn-<span class="red">popup-name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="<span class="red">popup-name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
+                빨간색 글자의 <strong class="red">popup-name</strong> 은 파일 네이밍을 동일하게 규칙적으로 사용합니다.<br>
+                <strong class="red">name</strong>은 파일명과 동일하게 작성합니다.</p>
             </article>
             <article>
                 <h2>Popup Base Style</h2>
