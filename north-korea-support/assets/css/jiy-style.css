@@ -1721,6 +1721,8 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 .blue { color: #003761 !important; }
 
+.skyblue { color: #07a !important; }
+
 /* =======================================*/
 /* 팝업 테이블 내부 다운로드 아이콘
 /* =======================================*/
@@ -1762,6 +1764,8 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 .add-file-search .file-search .input-type input { width: 100%; }
 
 .add-file-search .file-search .btn-file-search { width: 100px; float: right; }
+
+.add-file-area.popup-type { padding-left: 73px; }
 
 .add-file-area .file { width: 244px; height: 26px; line-height: 26px; }
 
@@ -2598,7 +2602,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .gnb-area .gnb #gnb-menu li a { display: block; font-size: 16px; font-weight: bold; padding: 0 26px; }
 
-.gnb-area .gnb .btn-gnb-all { float: right; width: 24px; height: 19px; margin-top: 26px; text-indent: -9999px; background: url("../../assets/images/common/btn-gnb-all.svg") no-repeat; }
+.gnb-area .gnb .btn-gnb-all { float: right; width: 24px; height: 19px; margin-top: 26px; text-indent: -9999px; background: url("../../assets/images/common/btn-gnb-all.svg") no-repeat; outline: 0; }
 
 #gnb-all-menu { position: absolute; top: 100px; left: 0; right: 0; height: 0; background: linear-gradient(#475b6b 46px, #fff 46px); box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15); visibility: hidden; overflow: hidden; transition: visibility .3s, height .3s; }
 

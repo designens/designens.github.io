@@ -193,10 +193,11 @@ CSS 내용 작성</code></pre>
 <pre><code class="language-js">// =======================================
 // JS 플러그인명 (URL 제공)
 // =======================================
-
+JS 내용 작성
 or
 
-// 한줄라인 주석 사용 시</code></pre>
+// 한줄라인 주석 사용 시
+JS 내용 작성</code></pre>
             </article>
             <!-- [End] JS 주석 기본 사용 -->
 
@@ -204,8 +205,8 @@ or
             <article>
                 <h2>Input</h2>
                 <div class="form-group">
+                    <h3><div class="fa fa-angle-double-right"></div>설명이 있는 기본 인풋 스타일</h3>
                     <!-- [Start] 설명이 있는 인풋 스타일 -->
-                    <h3><div class="fa fa-angle-double-right"></div>설명이 있는 인풋 스타일</h3>
                     <div class="input-type">
                         <label for="username">아이디</label>
                         <input type="text" id="username" name="username" required="required" />
@@ -215,12 +216,8 @@ or
                         <input type="password" id="password" name="password" required="required" />
                     </div>
 <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
-    &lt;label for=&quot;username&quot;&gt;아이디&lt;/label&gt;
-    &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; required=&quot;required&quot; /&gt;
-&lt;/div&gt;
-&lt;div class=&quot;input-type&quot;&gt;
-    &lt;label for=&quot;password&quot;&gt;비밀번호&lt;/label&gt;
-    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required=&quot;required&quot; /&gt;
+    &lt;label for=&quot;label-name&quot;&gt;내용 설명&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;label-name&quot; name=&quot;label-name&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] 설명이 있는 기본 인풋 스타일 -->
                     <!-- [Start] 설명이 없는 기본 인풋 스타일 -->
@@ -232,30 +229,30 @@ or
     &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] 설명이 없는 기본 인풋 스타일 -->
-                    <!-- [Start] 설명이 없는 너비 100% 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>설명이 없는 너비 100% 인풋 스타일</h3>
+                    <!-- [Start] 설명이 없는 너비 100% 인풋 스타일 -->
                     <div class="input-type full">
                         <input type="text" aria-label="내용 설명" />
                     </div>
 <pre><code class="language-html">&lt;div class=&quot;input-type full&quot;&gt;
     &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        input-type 클래스의 형재요소 클래스로 <strong class="red">full</strong> 을 추가해준다.<br>
+                        ex) <span class="skyblue">&lt;div class="input-type <strong class="red">full</strong>"&gt;</span>
+                    </p>
                     <!-- [End] 설명이 없는 너비 100% 인풋 스타일 -->
-                    <!-- [Start] Placeholder가 있는 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
+                    <!-- [Start] Placeholder가 있는 인풋 스타일 -->
                     <div class="input-type">
-                        <label>
-                            <input type="text" placeholder="Placeholder 내용 설명" />
-                        </label>
+                        <input type="text" placeholder="Placeholder 내용"  aria-label="내용 설명"/>
                     </div>
 <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
-    &lt;label&gt;
-        &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용 설명&quot; /&gt;
-    &lt;/label&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
-                    <!-- [Start] 전화번호 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
+                    <!-- [Start] 전화번호 인풋 스타일 -->
                     <div class="input-type tel">
                         <div class="dialog">
                             <input class="country-code" type="tel" aria-label="지역번호">
@@ -279,8 +276,8 @@ or
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] 전화번호 인풋 스타일 -->
-                    <!-- [Start] 이메일 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>이메일 인풋 스타일</h3>
+                    <!-- [Start] 이메일 인풋 스타일 -->
                     <div class="input-type e-mail">
                         <div class="email">
                             <input class="email-id" type="text" aria-label="이메일 아이디">
@@ -325,8 +322,8 @@ or
                     <textarea class="textarea" placeholder="Placeholder 내용 설명"></textarea>
 <pre><code class="language-html">&lt;textarea class=&quot;textarea&quot; placeholder=&quot;Placeholder 내용 설명&quot;&gt;&lt;/textarea&gt;</code></pre>
                     <!-- [End] 텍스트박스 스타일 -->
-                    <!-- [Start] 주소 영역 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>주소 영역 스타일</h3>
+                    <!-- [Start] 주소 영역 스타일 -->
                     <ul class="address-area">
                         <li>
                             <div class="input-type">
@@ -370,17 +367,21 @@ or
             <!-- [Start] Select Box 공통 -->
             <article>
                 <h2>Select Box</h2>
-                <div class="select-box">
-                    <label for="search">검색</label>
-                    <select id="search" name="search-item">
-                        <option selected="selected">검색</option>
-                        <option>키워드01</option>
-                        <option>키워드02</option>
-                        <option>키워드03</option>
-                        <option>키워드04</option>
-                        <option>키워드05</option>
-                    </select>
-                </div>
+                <div class="select-box-group">
+                    <h3><div class="fa fa-angle-double-right"></div>셀렉트 박스 기본 스타일</h3>
+                    <!-- [Start] 셀렉트 박스 기본 스타일 -->
+                    <div class="select-box">
+                        <label for="search">검색</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">검색</option>
+                            <option>키워드01</option>
+                            <option>키워드02</option>
+                            <option>키워드03</option>
+                            <option>키워드04</option>
+                            <option>키워드05</option>
+                        </select>
+                    </div>
+                    <!-- [End] 셀렉트 박스 기본 스타일 -->
 <pre><code class="language-html">&lt;div class=&quot;select-box&quot;&gt;
     &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
     &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
@@ -392,14 +393,46 @@ or
         &lt;option&gt;키워드05&lt;/option&gt;
     &lt;/select&gt;
 &lt;/div&gt;</code></pre>
+                    
+                    <h3><div class="fa fa-angle-double-right"></div>너비 100% 셀렉트 박스 기본 스타일</h3>
+                    <!-- [Start] 너비 100% 셀렉트 박스 기본 스타일 -->
+                    <div class="select-box full">
+                        <label for="search">검색</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">검색</option>
+                            <option>키워드01</option>
+                            <option>키워드02</option>
+                            <option>키워드03</option>
+                            <option>키워드04</option>
+                            <option>키워드05</option>
+                        </select>
+                    </div>
+                    <!-- [End] 너비 100% 셀렉트 박스 기본 스타일 -->
+<pre><code class="language-html">&lt;div class=&quot;select-box full&quot;&gt;
+    &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
+    &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+        &lt;option selected=&quot;selected&quot;&gt;검색&lt;/option&gt;
+        &lt;option&gt;키워드01&lt;/option&gt;
+        &lt;option&gt;키워드02&lt;/option&gt;
+        &lt;option&gt;키워드03&lt;/option&gt;
+        &lt;option&gt;키워드04&lt;/option&gt;
+        &lt;option&gt;키워드05&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        select-box 클래스의 형재요소 클래스로 <strong class="red">full</strong> 을 추가해준다.<br>
+                        ex) <span class="skyblue">&lt;div class="select-box <strong class="red">full</strong>"&gt;</span>
+                    </p>
+                </div>
             </article>
             <!-- [End] Select Box 공통 -->
+
             <!-- [Start] 서브 검색 영역 공통 -->
             <article>
                 <h2>Seb Search Style</h2>
                 <div class="search-type-area">
-                    <!-- [Start] 검색 타입 1. -->
                     <h3><div class="fa fa-angle-double-right"></div>검색 타입 1.</h3>
+                    <!-- [Start] 검색 타입 1. -->
                     <ul class="search-area">
                         <li><span class="search-title">검색</span></li>
                         <li class="select-box">
@@ -415,6 +448,7 @@ or
                             <button type="button" class="btn-lookup">조회</button>
                         </li>
                     </ul>
+                    <!-- [End] 검색 타입 1. -->
 <pre><code class="language-html">&lt;ul class=&quot;search-area&quot;&gt;
     &lt;li&gt;&lt;span class=&quot;search-title&quot;&gt;검색&lt;/span&gt;&lt;/li&gt;
     &lt;li class=&quot;select-box&quot;&gt;
@@ -430,9 +464,8 @@ or
         &lt;button type=&quot;button&quot; class=&quot;btn-lookup&quot;&gt;조회&lt;/button&gt;
     &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                    <!-- [End] 검색 타입 1. -->
-                    <!-- [Start] 검색 타입 2. -->
                     <h3><div class="fa fa-angle-double-right"></div>검색 타입 2.</h3>
+                    <!-- [Start] 검색 타입 2. -->
                     <ul class="search-area">
                         <li class="search-title"><span>검색</span></li>
                         <li class="select-box all">
@@ -456,6 +489,7 @@ or
                             <button type="button" class="btn-lookup">조회</button>
                         </li>
                     </ul>
+                    <!-- [End] 검색 타입 2. -->
 <pre><code class="language-html">&lt;ul class=&quot;search-area&quot;&gt;
     &lt;li class=&quot;search-title&quot;&gt;&lt;span&gt;검색&lt;/span&gt;&lt;/li&gt;
     &lt;li class=&quot;select-box all&quot;&gt;
@@ -479,7 +513,6 @@ or
         &lt;button type=&quot;button&quot; class=&quot;btn-lookup&quot;&gt;조회&lt;/button&gt;
     &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                    <!-- [End] 검색 타입 2. -->
                 </div>
             </article>
             <!-- [End] 서브 검색 영역 공통 -->
@@ -495,16 +528,8 @@ or
                     <label for="checkbox-03">Checkbox Test 03</label>
                 </div>
 <pre><code class="language-html">&lt;div class=&quot;checkbox-type&quot;&gt;
-
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-01&quot; name=&quot;test-01&quot;&gt;
-    &lt;label for=&quot;checkbox-01&quot;&gt;Checkbox Test 01&lt;/label&gt;
-
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-02&quot; name=&quot;test-02&quot;&gt;
-    &lt;label for=&quot;checkbox-02&quot;&gt;Checkbox Test 02&lt;/label&gt;
-
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-03&quot; name=&quot;test-03&quot;&gt;
-    &lt;label for=&quot;checkbox-03&quot;&gt;Checkbox Test 03&lt;/label&gt;
-
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-id&quot; name=&quot;test-name&quot;&gt;
+    &lt;label for=&quot;checkbox-id&quot;&gt;Checkbox Test&lt;/label&gt;
 &lt;/div&gt;</code></pre>
             </article>
             <!-- [End] 체크박스 공통 -->
@@ -518,13 +543,10 @@ or
                     <label for="radio2">Radio Button Test 02</label>
                 </div>
 <pre><code class="language-html">&lt;div class=&quot;radio-type&quot;&gt;
-
-    &lt;input type=&quot;radio&quot; id=&quot;radio1&quot; name=&quot;test&quot;&gt;
-    &lt;label for=&quot;radio1&quot;&gt;Radio Button Test 01&lt;/label&gt;
-
-    &lt;input type=&quot;radio&quot; id=&quot;radio2&quot; name=&quot;test&quot;&gt;
-    &lt;label for=&quot;radio2&quot;&gt;Radio Button Test 02&lt;/label&gt;
-
+    &lt;input type=&quot;radio&quot; id=&quot;radio-id-01&quot; name=&quot;test-name&quot;&gt;
+    &lt;label for=&quot;radio-id-01&quot;&gt;Radio Button Test 01&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;radio-id-02&quot; name=&quot;test-name&quot;&gt;
+    &lt;label for=&quot;radio-id-02&quot;&gt;Radio Button Test 02&lt;/label&gt;
 &lt;/div&gt;</code></pre>
             </article>
             <!-- [End] 라디오버튼 공통 -->
@@ -556,47 +578,39 @@ or
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
                     <button type="button" class="btn-type-1-01">버튼</button>
-                    <a href class="btn-type-1-01" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<div class="ui-kit-comment">저장, 삭제, 닫기 등의 <strong class="red">전송 역할 버튼</strong>의 경우 <span class="skyblue">&lt;button&gt;</span> 요소로 사용합니다.</div>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<div class="ui-kit-comment">페이지 이동 or 팝업 띄우기 등의 <strong class="red">링크 역할 버튼</strong>의 경우 <span class="skyblue">&lt;a&gt;</span> 요소로 사용합니다.</div>
                     <button type="button" class="btn-type-1-02">버튼</button>
-                    <a href class="btn-type-1-02" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-02&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-1-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-02&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-1-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-1-03">버튼</button>
-                    <a href class="btn-type-1-03" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-03&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-1-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-03&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-1-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-3-01">버튼</button>
-                    <a href class="btn-type-3-01" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-3-01&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-3-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-3-01&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-3-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-3-02">버튼</button>
-                    <a href class="btn-type-3-02" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-3-02&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-3-02&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-3-03">버튼</button>
-                    <a href class="btn-type-3-03" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-3-03&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-3-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-3-03&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-3-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-2-01">버튼</button>
-                    <a href class="btn-type-2-01" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-01&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-2-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-01&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-2-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-2-02">버튼</button>
-                    <a href class="btn-type-2-02" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-2-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-2-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-2-03">버튼</button>
-                    <a href class="btn-type-2-03" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-03&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-2-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-03&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-2-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
                     <button type="button" class="btn-type-2-04">버튼</button>
-                    <a href class="btn-type-2-04" role="button">버튼</a>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-04&quot;&gt;버튼&lt;/button&gt;
-&lt;a href class=&quot;btn-type-2-04&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
-                    <button class="icon-comment">덧글</button>
-<pre><code class="language-html">&lt;button class=&quot;icon-comment&quot;&gt;덧글&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-2-04&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;a href class=&quot;btn-type-2-04&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+                    <button type="button" class="icon-comment">덧글</button>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;icon-comment&quot;&gt;덧글&lt;/button&gt;</code></pre>
                 </div>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
@@ -604,7 +618,9 @@ or
             <article>
                 <h2>File Icon Style</h2>
                 <div class="file-area-test">
-                    <h3><div class="fa fa-angle-double-right"></div>첨부파일 Type 1</h3>
+                
+                    <h3><div class="fa fa-angle-double-right"></div>첨부파일 기본 타입</h3>
+                    <!-- [Start] 첨부파일 기본 타입 -->
                     <div class="add-file-area">
                         <div class="file">
                             <a class="icon-hwp" role="button" href="">hwp-첨부파일.hwp</a>
@@ -618,56 +634,52 @@ or
                             <a class="icon-pdf" role="button" href="">pdf-첨부파일.pdf</a>
                             <button class="btn-file-remove">파일삭제</button>
                         </div>
-                        <div class="file">
-                            <a class="icon-jpg" role="button" href="">jpg-첨부파일.jpg</a>
-                            <button class="btn-file-remove">파일삭제</button>
-                        </div>
-                        <div class="file">
-                            <a class="icon-png" role="button" href="">png-첨부파일.png</a>
-                            <button class="btn-file-remove">파일삭제</button>
-                        </div>
-                        <div class="file">
-                            <a class="icon-xls" role="button" href="">xls-첨부파일.xls</a>
-                            <button class="btn-file-remove">파일삭제</button>
-                        </div>
-                        <div class="file">
-                            <a class="icon-ppt" role="button" href="">ppt-첨부파일.ppt</a>
-                            <button class="btn-file-remove">파일삭제</button>
-                        </div>
                     </div>
-                </div>
+                    <!-- [End] 첨부파일 기본 타입 -->
 <pre><code class="language-html">&lt;div class=&quot;add-file-area&quot;&gt;
     &lt;div class=&quot;file&quot;&gt;
         &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;hwp-첨부파일.hwp&lt;/a&gt;
         &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;file&quot;&gt;
-        &lt;a class=&quot;icon-doc&quot; role=&quot;button&quot; href=&quot;&quot;&gt;doc-첨부파일.doc&lt;/a&gt;
-        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;file&quot;&gt;
-        &lt;a class=&quot;icon-pdf&quot; role=&quot;button&quot; href=&quot;&quot;&gt;pdf-첨부파일.pdf&lt;/a&gt;
-        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;file&quot;&gt;
-        &lt;a class=&quot;icon-jpg&quot; role=&quot;button&quot; href=&quot;&quot;&gt;jpg-첨부파일.jpg&lt;/a&gt;
-        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;file&quot;&gt;
-        &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href=&quot;&quot;&gt;png-첨부파일.png&lt;/a&gt;
-        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;file&quot;&gt;
-        &lt;a class=&quot;icon-xls&quot; role=&quot;button&quot; href=&quot;&quot;&gt;xls-첨부파일.xls&lt;/a&gt;
-        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;file&quot;&gt;
-        &lt;a class=&quot;icon-ppt&quot; role=&quot;button&quot; href=&quot;&quot;&gt;ppt-첨부파일.ppt&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        파일 확장자에 따라서 <span class="skyblue">&lt;a&gt;</span> 요소의 클래스명을 "<strong>icon-<span class="red">hwp</span>, icon-<span class="red">doc</span>, icon-<span class="red">pdf</span>, icon-<span class="red">jpg</span>, icon-<span class="red">png</span>, icon-<span class="red">xls</span>, icon-<span class="red">ppt</span></strong>" 로 변경합니다.
+                    </p>
+
+                    <h3><div class="fa fa-angle-double-right"></div>첨부파일 너비 100% 사용 타입</h3>
+                    <!-- [Start] 첨부파일 너비 100% 사용 타입 -->
+                    <div class="add-file-area">
+                        <div class="file full-name">
+                            <a class="icon-jpg" role="button" href="">jpg-첨부파일.jpg</a>
+                            <button class="btn-file-remove">파일삭제</button>
+                        </div>
+                        <div class="file full-name">
+                            <a class="icon-png" role="button" href="">png-첨부파일.png</a>
+                            <button class="btn-file-remove">파일삭제</button>
+                        </div>
+                        <div class="file full-name">
+                            <a class="icon-xls" role="button" href="">xls-첨부파일.xls</a>
+                            <button class="btn-file-remove">파일삭제</button>
+                        </div>
+                        <div class="file full-name">
+                            <a class="icon-ppt" role="button" href="">ppt-첨부파일.ppt</a>
+                            <button class="btn-file-remove">파일삭제</button>
+                        </div>
+                    </div>
+                    <!-- [End] 첨부파일 너비 100% 사용 타입 -->
+<pre><code class="language-html">&lt;div class=&quot;add-file-area&quot;&gt;
+    &lt;div class=&quot;file full-name&quot;&gt;
+        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;hwp-첨부파일.hwp&lt;/a&gt;
         &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                <div class="file-area-test">
-                    <h3><div class="fa fa-angle-double-right"></div>첨부파일 Type 2</h3>
+                    <p class="ui-kit-comment">
+                        file 클래스의 형재요소 클래스로 <strong class="red">full-name</strong> 을 추가해준다.<br>
+                        ex) <span class="skyblue">&lt;div class="file <strong class="red">full-name</strong>"&gt;</span>
+                    </p>
+
+                    <h3><div class="fa fa-angle-double-right"></div>서브 테이블 내부 첨부파일 타입</h3>
+                    <!-- [Start] 서브 테이블 내부 첨부파일 타입 -->
                     <div class="add-file-upload">
                         <div class="add-file-search">
                             <span>서류 등록 :</span>
@@ -680,7 +692,7 @@ or
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!-- [End] 서브 테이블 내부 첨부파일 타입 -->
 <pre><code class="language-html">&lt;div class=&quot;add-file-upload&quot;&gt;
     &lt;div class=&quot;add-file-search&quot;&gt;
         &lt;span&gt;서류 등록 :&lt;/span&gt;
@@ -693,6 +705,50 @@ or
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+
+                    <h3><div class="fa fa-angle-double-right"></div>팝업 테이블 내부 첨부파일 타입</h3>
+                    <!-- [Start] 팝업 테이블 내부 첨부파일 타입 -->
+                    <div class="add-file-search">
+                        <span>파일 추가 :</span>
+                        <div class="file-search">
+                            <div class="input-type">
+                                <input type="text" aria-label="파일추가 되었습니다.">
+                            </div>
+                            <button class="btn-file-search">파일 검색</button>
+                        </div>
+                    </div>
+                    <div class="add-file-area popup-type">
+                        <div class="file">
+                            <a class="icon-png" role="button" href>첨부파일1.png</a>
+                            <button class="btn-file-remove">파일삭제</button>
+                        </div>
+                        <div class="file">
+                            <a class="icon-png" role="button" href>첨부파일1.png</a>
+                            <button class="btn-file-remove">파일삭제</button>
+                        </div>
+                    </div>
+                    <!-- [End] 팝업 테이블 내부 첨부파일 타입-->
+                </div>
+<pre><code class="language-html">&lt;div class=&quot;add-file-search&quot;&gt;
+    &lt;span&gt;파일 추가 :&lt;/span&gt;
+    &lt;div class=&quot;file-search&quot;&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; aria-label=&quot;파일추가 되었습니다.&quot;&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn-file-search&quot;&gt;파일 검색&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;add-file-area popup-type&quot;&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href&gt;첨부파일1.png&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href&gt;첨부파일1.png&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
             </article>
             <!-- [End] 파일 아이콘 스타일 공통 -->
             <!-- [Start] 아코디언 스타일 공통 -->
@@ -850,30 +906,51 @@ or
     &lt;/div&gt;
     &lt;!-- [End] 탭 패널 5개 생성 --&gt;
 &lt;/div&gt;</code></pre>
-                <p class="ui-kit-comment">탭의 갯수 만큼 <strong>tab</strong>과 <strong>panel</strong> 마크업 작성<br>
-                탭의 갯수에 따라 <strong>class="t<span class="red">(n)</span>"</strong> 설정 (max:8)<br>
-                ex) tab 갯수가 5개일 경우 <strong>class="t<span class="red">5</span>"</strong> 설정</p>
+                <p class="ui-kit-comment">
+                    탭의 갯수 만큼 <strong>tab</strong>과 <strong>panel</strong> 마크업 작성<br>
+                    탭의 갯수에 따라 <strong>class="t<span class="red">(n)</span>"</strong> 설정 (max:8)<br>
+                    ex) tab 갯수가 5개일 경우 <strong>class="t<span class="red">5</span>"</strong> 설정
+                </p>
             </article>
             <!-- [End] 탭 스타일 공통 -->
 
             <!-- [Start] 서브 전체 페이지 선택 영역 -->
             <article>
                 <h2>All Pages Style</h2>
-                <div class="all-pages-view">
-                    <div class="all-page">
-                        <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                <div class="all-pages-view-area">
+
+                    <h3><div class="fa fa-angle-double-right"></div>서브 전체 페이지 영역</h3>
+                    <!-- [Start] 서브 전체 페이지 영역 -->
+                    <div class="all-pages-view">
+                        <div class="all-page">
+                            <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                        </div>
                     </div>
-                    <div class="select-box">
-                        <label for="search">10개씩보기</label>
-                        <select id="search" name="search-item">
-                            <option selected="selected">10개씩보기</option>
-                            <option>20개씩보기</option>
-                            <option>30개씩보기</option>
-                            <option>40개씩보기</option>
-                            <option>50개씩보기</option>
-                        </select>
+                    <!-- [End] 서브 전체 페이지 영역 -->
+<pre><code class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
+    &lt;div class=&quot;all-page&quot;&gt;
+        &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h3><div class="fa fa-angle-double-right"></div>서브 전체 페이지 선택 영역</h3>
+                    <!-- [Start] 서브 전체 페이지 선택 영역 -->
+                    <div class="all-pages-view">
+                        <div class="all-page">
+                            <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                        </div>
+                        <div class="select-box">
+                            <label for="search">10개씩보기</label>
+                            <select id="search" name="search-item">
+                                <option selected="selected">10개씩보기</option>
+                                <option>20개씩보기</option>
+                                <option>30개씩보기</option>
+                                <option>40개씩보기</option>
+                                <option>50개씩보기</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
+                    <!-- [End] 서브 전체 페이지 선택 영역 -->
 <pre><code class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
     &lt;div class=&quot;all-page&quot;&gt;
         &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
@@ -889,6 +966,7 @@ or
         &lt;/select&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+                </div>
             </article>
             <!-- [End] 서브 전체 페이지 선택 영역 -->
 
@@ -1157,7 +1235,6 @@ or
     &lt;a href role=&quot;button&quot;&gt;2&lt;/a&gt;
     &lt;a href role=&quot;button&quot;&gt;3&lt;/a&gt;
     &lt;a href role=&quot;button&quot;&gt;4&lt;/a&gt;
-    &lt;!-- 선택된 버튼 class=&quot;selected&quot;로 제어 --&gt;
     &lt;a href role=&quot;button&quot; class=&quot;selected&quot;&gt;5&lt;/a&gt;
     &lt;a href role=&quot;button&quot;&gt;6&lt;/a&gt;
     &lt;a href role=&quot;button&quot;&gt;7&lt;/a&gt;
@@ -1167,6 +1244,10 @@ or
     &lt;button type=&quot;button&quot; class=&quot;next&quot;&quot; aria-label=&quot;다음 페이지&quot;&gt;&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;last-next&quot; aria-label=&quot;끝으로 이동&quot;&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        선택된 버튼은 <span class="skyblue">&lt;a&gt;</span> 요소에 <strong class="red">selected</strong> 클래스를 적용합니다.<br>
+                        ex) <span class="skyblue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>
+                    </p>
                     <!-- [End] 페이징 스타일 공통 -->
 
                     <h3><span class="fa fa-table"></span>table-type-02</h3>
@@ -1328,8 +1409,10 @@ or
                 <!-- 팝업 버튼 class 설정 -->
                 <a class="btn-popup-test btn-type-3-02" role="button" href>팝업버튼 클릭</a>
 <pre><code class="language-html">&lt;a class=&quot;btn-popup-name&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;</code></pre>
-                <p class="ui-kit-comment">팝업버튼의 <strong>class="btn-popup-<span class="red">name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="popup-<span class="red">name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
-                클래스의 <strong>popup-<span class="red">name</span></strong> 은 파일 네이밍과 동일하게 규칙적으로 사용합니다.</p>
+                <p class="ui-kit-comment">
+                    팝업버튼의 <strong>class="btn-popup-<span class="red">name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="popup-<span class="red">name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
+                    클래스의 <strong>popup-<span class="red">name</span></strong> 은 파일 네이밍과 동일하게 규칙적으로 사용합니다.
+                </p>
             </article>
             <article>
                 <h2>Popup Base Style</h2>
