@@ -208,11 +208,11 @@ JS 내용 작성</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>설명이 있는 기본 인풋 스타일</h3>
                     <!-- [Start] 설명이 있는 인풋 스타일 -->
                     <div class="input-type">
-                        <label for="username">아이디</label>
+                        <label for="username" aria-describedby="username">아이디</label>
                         <input type="text" id="username" name="username" required="required" />
                     </div>
                     <div class="input-type">
-                        <label for="password">비밀번호</label>
+                        <label for="password" aria-describedby="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
 <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
@@ -1228,7 +1228,8 @@ JS 내용 작성</code></pre>
                         <button type="button" class="next" " aria-label="다음 페이지"></button>
                         <button type="button " class="last-next " aria-label="끝으로 이동"></button>
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;paging&quot;&gt;
+<pre><code class="language-html">&lt;!-- [Start] Paging Area --&gt;
+&lt;div class=&quot;paging&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot;&gt;&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot;&gt;&lt;/button&gt;
     &lt;a href role=&quot;button&quot;&gt;1&lt;/a&gt;
@@ -1243,7 +1244,8 @@ JS 내용 작성</code></pre>
     &lt;a href role=&quot;button&quot;&gt;10&lt;/a&gt;
     &lt;button type=&quot;button&quot; class=&quot;next&quot;&quot; aria-label=&quot;다음 페이지&quot;&gt;&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;last-next&quot; aria-label=&quot;끝으로 이동&quot;&gt;&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+&lt;!-- [End] Paging Area --&gt;</code></pre>
                     <p class="ui-kit-comment">
                         선택된 버튼은 <span class="skyblue">&lt;a&gt;</span> 요소에 <strong class="red">selected</strong> 클래스를 적용합니다.<br>
                         ex) <span class="skyblue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>

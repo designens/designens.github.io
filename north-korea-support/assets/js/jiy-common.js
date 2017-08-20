@@ -105,6 +105,24 @@
       e.preventDefault();
       $.popupId($popups, 'popup-notice-board-write').open();
     });
+
+    // 변경사항 요청 글쓰기 팝업
+    $('.btn-popup-request-change').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-request-change').open();
+    });
+
+    // 결과조회 공고명 조회 팝업
+    $('.btn-popup-view-results-announcement').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-view-results-announcement').open();
+    });
+
+    // 결과조회 사업명 조회 팝업
+    $('.btn-popup-view-results-business').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-view-results-business').open();
+    });
     
     // GNB 전체메뉴
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈

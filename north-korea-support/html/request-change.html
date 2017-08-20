@@ -178,25 +178,25 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-           <h3>회원서비스</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
                     <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
                         <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">사업자 가입안내</a></li>
-                                 <li><a href="">사업자 신청</a></li>
-                                 <li><a href="">지원접수현황</a></li>
-                             </ul> 
+                                <li><a href="">사업자 가입안내</a></li>
+                                <li><a href="">사업자 신청</a></li>
+                                <li><a href="">지원접수현황</a></li>
+                            </ul>
                         </li>
                         <li><a href="#">담당자</a>
                             <ul>
-                                 <li><a href="">약관 동의</a></li>
-                                 <li><a href="">가입 신청</a></li>
-                                 <li><a href="">가입 승인 확인</a></li>
-                                 <li><a href="">가입 탈퇴</a></li>
-                             </ul> 
+                                <li><a href="">약관 동의</a></li>
+                                <li><a href="">가입 신청</a></li>
+                                <li><a href="">가입 승인 확인</a></li>
+                                <li><a href="">가입 탈퇴</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
@@ -237,7 +237,7 @@
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
+            <div class="content request-change">
                 <div class="all-pages-view">
                     <div class="all-page">
                         <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
@@ -321,8 +321,27 @@
                     </tbody>
                 </table>
                 <div class="table-btn-set in-right">
-                    <a href="" class="btn-type-3-02" role="button">글쓰기</a>
+                    <a href="" class="btn-popup-request-change btn-type-3-02" role="button">글쓰기</a>
                 </div>
+                <!-- [Start] 페이징 영역 -->
+                <div class="paging">
+                    <button class="first-prev" aria-label="처음으로 이동"></button>
+                    <button class="prev" aria-label="이전 페이지"></button>
+                    <a href role="button">1</a>
+                    <a href role="button">2</a>
+                    <a href role="button">3</a>
+                    <a href role="button">4</a>
+                    <!-- 선택된 버튼 class="selected"로 제어 -->
+                    <a class="selected" href role="button">5</a>
+                    <a href role="button">6</a>
+                    <a href role="button">7</a>
+                    <a href role="button">8</a>
+                    <a href role="button">9</a>
+                    <a href role="button">10</a>
+                    <button class="next" " aria-label="다음 페이지 "></button>
+                    <button class="last-next " aria-label="끝으로 이동 "></button>
+                </div>
+                <!-- [End] 페이징 영역 -->
             </div>
             <!-- [End] 컨텐츠 상세  -->
 
@@ -346,6 +365,68 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 변경사항 요청 글쓰기 Popup -->
+    <!-- 팝업 창 data-id 설정 -->
+<div class="popup" data-id="popup-request-change">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>변경사항 요청</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content">
+        <table class="table-type-02">
+            <caption>변경사항 요청 상세 내용 테이블의 작성자,제목,첨부문서가 있습니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>작성자</th>
+                    <td colspan="3">홍길동</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">
+                    <div class="input-type full"  class="td-title full">
+                            <input type="text" aria-label="제목 입력하세요.">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>첨부문서</th>
+                    <td colspan="3">
+                        <div class="add-file-search">
+                            <span>파일추가 : </span>
+                            <div class="file-search">
+                                <div class="input-type">
+                                    <label>
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <button class="btn-file-search">파일 검색</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="web-edit-area">
+            <p>웹 에디터 영역</p>
+        </div>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-save">저장하기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 변경사항 요청 글쓰기 Popup -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
