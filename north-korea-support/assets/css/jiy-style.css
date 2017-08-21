@@ -1526,7 +1526,7 @@
 
 .GMCell, .GMCellPanel, .GMCellFilter, .GMHeaderDrag, .GMHeaderGroup { border-right: 1px solid #d1d1d1 !important; border-bottom: 1px solid #c2c2c2 !important; color: #4c4c4c !important; }
 
-.GMMainTable { border-top: 2px solid #45494d !important; }
+.GMMainTable { border-top: 2px solid #45494d !important; border-left-color: transparent !important; border-right-color: transparent !important; margin-bottom: 30px !important; }
 
 .GMCellHeader, .GMCell { height: 38px !important; }
 
