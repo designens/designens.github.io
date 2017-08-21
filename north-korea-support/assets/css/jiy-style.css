@@ -1524,6 +1524,14 @@
 
 .slideOutUp { -webkit-animation-name: slideOutUp; animation-name: slideOutUp; }
 
+.GMCell, .GMCellPanel, .GMCellFilter, .GMHeaderDrag, .GMHeaderGroup { border-right: 1px solid #d1d1d1 !important; border-bottom: 1px solid #c2c2c2 !important; color: #4c4c4c !important; }
+
+.GMMainTable { border-top: 2px solid #45494d !important; }
+
+.GMCellHeader, .GMCell { height: 38px !important; }
+
+.GMCellHeader, .GMCellHeaderEmpty { color: #2e3a42 !important; padding-top: 0 !important; padding-bottom: 0 !important; border-right: 1px solid #d1d1d1 !important; border-bottom: 1px solid #c2c2c2 !important; background-color: #f0f3f5 !important; }
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, legend, input, textarea, button, p, blockquote, th, td, form, fieldset, blockquote, iframe { margin: 0; padding: 0; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
 
 article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
