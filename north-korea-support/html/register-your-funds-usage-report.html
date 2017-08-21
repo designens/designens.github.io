@@ -386,7 +386,7 @@
     <!-- [Start] 팝업 콘텐츠 -->
     <div class="popup-content popup-register-your-funds-usage-report-announcement">
         <table class="table-type-02">
-            <caption>공지사항 상세 내용 테이블의 제목, 작성자, 작성일, 첨부파일, 제안내용 항목이 있습니다.</caption>
+            <caption>자금 사용 보고서 등록 상세 내용 테이블의 제목, 작성자, 작성일, 첨부파일, 제안내용 항목이 있습니다.</caption>
             <colgroup>
                 <col width="140">
                 <col>
@@ -440,62 +440,109 @@
 <div class="popup" data-id="popup-register-your-funds-usage-report-business">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">
-            <h4>기금 사업 신청 상세내용</h4>
+            <h4>자금 사용 보고서 등록 상세내용</h4>
             <button class="popup-close">창 닫기</button>
         </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
     <div class="popup-content popup-register-your-funds-usage-report-business">
         <table class="table-type-02">
-            <caption>기금 사업 신청 상세 내용 테이블의 공고명,지원분야,단체명,대표자,사업명,사업상대자,기금신청액 항목이 있습니다.</caption>
+            <caption>자금 사용 보고서 등록 상세 내용 테이블의 사업자 정보 항목의 단체명, 대표자, 주소, 연락처(TEL), 연락처(FAX), 협력사업자 승인번호, 협력사업자 승인(변경)번호 항목이 있고, 사업 대상자 항목의 단체명(성명), 대표자, 주소, 연락처(TEL), 연락처(FAX) 항목이 있습니다.</caption>
             <colgroup>
-                <col width="140">
+                <col width="142">
                 <col width="120">
-                <col width="145">
-                <col width="70">
-                <col width="70">
+                <col width="134">
+                <col width="60">
+                <col width="82">
                 <col width="50">
                 <col>
             </colgroup>
             <tbody>
                 <tr>
                     <th rowspan="4" colspan="1">사업자 정보</th>
-                    <td>단체명</td>
+                    <th class="sub-title">단체명</th>
                     <td colspan="2">대북지원단체1</td>
-                    <td colspan="2">대표자</td>
+                    <th class="sub-title" colspan="2">대표자</th>
                     <td>홍길동</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th class="sub-title">주소</th>
+                    <td colspan="5">서울특별시 송파구 문정2동 644 문정현대지식산업단체1 A동 612호</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th class="sub-title">연락처(TEL)</th>
+                    <td colspan="2">031-1234-1234</td>
+                    <th class="sub-title" colspan="2">연락처(FAX)</th>
+                    <td>031-1234-1234</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th class="sub-title">협력사업자<br>승인번호</th>
+                    <td colspan="2">13331313</td>
+                    <th class="sub-title" colspan="2">협력사업자<br>승인(변경)번호</th>
+                    <td>13331313</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" colspan="1">사업 상대자</th>
+                    <th class="sub-title">단체명(성명)</th>
+                    <td colspan="2">남북협력합의회</td>
+                    <th class="sub-title" colspan="2">대표자</th>
+                    <td>홍길동</td>
+                </tr>
+                <tr>
+                    <th class="sub-title">주소</th>
+                    <td colspan="5">서울특별시 송파구 문정2동 644 문정현대지식산업단체1 A동 612호</td>
+                </tr>
+                <tr>
+                    <th class="sub-title">연락처(TEL)</th>
+                    <td colspan="2">031-1234-1234</td>
+                    <th class="sub-title" colspan="2">연락처(FAX)</th>
+                    <td>031-1234-1234</td>
                 </tr>
                 <tr>
                     <th>사업기간</th>
-                    <td colspan="6"></td>
+                    <td colspan="6">2017-11-11 ~ 2017-11-11</td>
                 </tr>
                 <tr>
                     <th>사업주요실적</th>
-                    <td colspan="6"></td>
+                    <td colspan="6">
+                        <textarea class="textarea" aria-label="사업주요실적을 작성하세요."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>자금사용총액</th>
+                    <td colspan="2">
+                        <div class="input-type">
+                            <input type="text" aria-label="자금사용총액을 입력하세요."> 원
+                        </div>
+                    </td>
+                    <th colspan="2">자체재원확보액</th>
+                    <td colspan="2">
+                        <div class="input-type">
+                            <input type="text" aria-label="자체재원확보액을 입력하세요."> 원
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>지원자금 수령액</th>
+                    <td colspan="6">
+                        <div class="input-type">
+                            <input type="text" aria-label="지원자금 수령액을 입력하세요."> 원
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>지원자금 사용액</th>
+                    <td colspan="2">
+                        <div class="input-type">
+                            <input type="text" aria-label="지원자금 사용액을 입력하세요."> 원
+                        </div>
+                    </td>
+                    <th colspan="2">지원자금 불용액</th>
+                    <td colspan="2">
+                        <div class="input-type">
+                            <input type="text" aria-label="지원자금 불용액을 입력하세요."> 원
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
