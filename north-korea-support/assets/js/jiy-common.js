@@ -123,6 +123,18 @@
       e.preventDefault();
       $.popupId($popups, 'popup-view-results-business').open();
     });
+
+    // 자금 사용 보고서 등록 공고명 조회 팝업
+    $('.btn-popup-register-your-funds-usage-report-announcement').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-register-your-funds-usage-report-announcement').open();
+    });
+
+    // 자금 사용 보고서 등록 사업명 조회 팝업
+    $('.btn-popup-register-your-funds-usage-report-business').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-register-your-funds-usage-report-business').open();
+    });
     
     // GNB 전체메뉴
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈

@@ -1640,27 +1640,31 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul { *zoom: 1; }
+.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul { *zoom: 1; }
 
-.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after { content: ""; display: table; }
+.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after { content: ""; display: table; }
 
-.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after { clear: both; }
+.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
-.btn-type-1-01, .popup .popup-content .popup-btn-set .popup-close, .add-file-search .file-search .btn-file-search, .btn-type-1-02, .search-area li .btn-lookup, .popup-business-application table td.download p .btn-download, .btn-type-1-03, .popup .popup-content .popup-btn-set .popup-save { display: inline-block; min-width: 66px; height: 30px; line-height: 28px; text-align: center; padding: 0 10px; border-radius: 3px; }
+.btn-type-1-01, .popup .popup-content .popup-btn-set .popup-close, .add-file-search .file-search .btn-file-search, .btn-type-1-02, .add-file-area .file .btn-file-upload, .search-area li .btn-lookup, .popup-business-application table td.download p .btn-download, .btn-type-1-03, .popup .popup-content .popup-btn-set .popup-save, .btn-type-1-04 { display: inline-block; min-width: 66px; height: 30px; line-height: 28px; text-align: center; padding: 0 10px; border-radius: 3px; }
 
 .btn-type-1-01, .popup .popup-content .popup-btn-set .popup-close { font-size: 14px; color: #333; text-shadow: 0 0 1px #adc0ce; border: 1px solid #bcd1e0; background: #bcd1e0; }
 
 .btn-type-1-01:hover, .popup .popup-content .popup-btn-set .popup-close:hover, .btn-type-1-01:focus, .popup .popup-content .popup-btn-set .popup-close:focus, .btn-type-1-01:active, .popup .popup-content .popup-btn-set .popup-close:active { border-color: #a9bcca; background: #a9bcca; transition: all .3s ease; }
 
-.add-file-search .file-search .btn-file-search, .btn-type-1-02, .search-area li .btn-lookup, .popup-business-application table td.download p .btn-download { font-size: 14px; color: #fff; text-shadow: 0 0 1px #344450; border: 1px solid #394a57; background: #394a57; }
+.add-file-search .file-search .btn-file-search, .btn-type-1-02, .add-file-area .file .btn-file-upload, .search-area li .btn-lookup, .popup-business-application table td.download p .btn-download { font-size: 14px; color: #fff; text-shadow: 0 0 1px #344450; border: 1px solid #394a57; background: #394a57; }
 
-.add-file-search .file-search .btn-file-search:hover, .btn-type-1-02:hover, .search-area li .btn-lookup:hover, .popup-business-application table td.download p .btn-download:hover, .add-file-search .file-search .btn-file-search:focus, .btn-type-1-02:focus, .search-area li .btn-lookup:focus, .popup-business-application table td.download p .btn-download:focus, .add-file-search .file-search .btn-file-search:active, .btn-type-1-02:active, .search-area li .btn-lookup:active, .popup-business-application table td.download p .btn-download:active { border-color: #33434e; background: #33434e; transition: all .3s ease; }
+.add-file-search .file-search .btn-file-search:hover, .btn-type-1-02:hover, .add-file-area .file .btn-file-upload:hover, .search-area li .btn-lookup:hover, .popup-business-application table td.download p .btn-download:hover, .add-file-search .file-search .btn-file-search:focus, .btn-type-1-02:focus, .add-file-area .file .btn-file-upload:focus, .search-area li .btn-lookup:focus, .popup-business-application table td.download p .btn-download:focus, .add-file-search .file-search .btn-file-search:active, .btn-type-1-02:active, .add-file-area .file .btn-file-upload:active, .search-area li .btn-lookup:active, .popup-business-application table td.download p .btn-download:active { border-color: #33434e; background: #33434e; transition: all .3s ease; }
 
 .btn-type-1-03, .popup .popup-content .popup-btn-set .popup-save { font-size: 14px; color: #fff; text-shadow: 0 0 1px #003359; border: 1px solid #003761; background: #003761; }
 
 .btn-type-1-03:hover, .popup .popup-content .popup-btn-set .popup-save:hover, .btn-type-1-03:focus, .popup .popup-content .popup-btn-set .popup-save:focus, .btn-type-1-03:active, .popup .popup-content .popup-btn-set .popup-save:active { border-color: #003257; background: #003257; transition: all .3s ease; }
+
+.btn-type-1-04 { font-size: 14px; color: #fff; text-shadow: 0 0 1px #c03f10; border: 1px solid #d14411; background: #d14411; }
+
+.btn-type-1-04:hover, .btn-type-1-04:focus, .btn-type-1-04:active { border-color: #bc3d0f; background: #bc3d0f; transition: all .3s ease; }
 
 .btn-type-2-01, .btn-type-2-02, .login-content .btn-link-set .btn-main, .completion-of-business-application .list-form .btn-link-set .btn-edit-information, .btn-type-2-03, .sub-top-btn-area .btn-popup-applicant-application, .login-content .btn-link-set .btn-join, .completion-of-business-application .list-form .btn-link-set .btn-view-status, .btn-type-2-04, .sub-bottom-btn-area .btn-completed { display: inline-block; min-width: 200px; height: 40px; line-height: 38px; text-align: center; padding: 0 10px; border-radius: 3px; }
 
@@ -1778,6 +1782,8 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 .add-file-area .file.full-name a { width: 100%; width: calc(100% - 60px); }
 
 .add-file-area .file .btn-file-remove { float: right; height: 26px; line-height: 26px; text-decoration: underline; }
+
+.add-file-area .file .btn-file-upload { float: right; height: 26px; line-height: 26px; }
 
 /* =======================================*/
 /* 아이콘 공통 스타일
@@ -2531,7 +2537,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-type-01 tr th { background: #f0f3f5; color: #2e3a42; }
 
-.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; padding: 0 10px; padding-top: 1px; /* 제목 - 팝업 링크 */ /* 제목 - 전체 조회수 */ }
+.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; padding: 1px 10px; /* 제목 - 팝업 링크 */ /* 제목 - 전체 조회수 */ }
 
 .table-type-01 tr th .view-link, .table-type-01 tr td .view-link { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
 
@@ -2934,9 +2940,9 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 자료마당 > 공지사항 > 공지사항 상세 팝업완료
 /* (html/notices.html)
 /* =======================================*/
-.popup-notices .table-dt-dd, .popup-resources .table-dt-dd { margin-top: 0; border-top: 1px solid #f0f3f5; }
+.popup-notices .table-dt-dd, .popup-resources .table-dt-dd, .popup-view-results-announcement .table-dt-dd, .popup-register-your-funds-usage-report-announcement .table-dt-dd { margin-top: 0; border-top: 1px solid #f0f3f5; }
 
-.popup-notices .table-dt-dd dd, .popup-resources .table-dt-dd dd { min-height: 210px; }
+.popup-notices .table-dt-dd dd, .popup-resources .table-dt-dd dd, .popup-view-results-announcement .table-dt-dd dd, .popup-register-your-funds-usage-report-announcement .table-dt-dd dd { min-height: 210px; }
 
 /* =======================================*/
 /* 자료마당 > 자료실
@@ -3072,7 +3078,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .accept-terms .table-li .input-type label, .applicant-application-step1 .table-li .input-type label { line-height: 30px; }
 
-.accept-terms .table-li .btn-type-1-02, .applicant-application-step1 .table-li .btn-type-1-02 { width: 126px; margin-left: 2px; }
+.accept-terms .table-li .btn-type-1-02, .applicant-application-step1 .table-li .btn-type-1-02, .accept-terms .table-li .add-file-area .file .btn-file-upload, .add-file-area .file .accept-terms .table-li .btn-file-upload, .applicant-application-step1 .table-li .add-file-area .file .btn-file-upload, .add-file-area .file .applicant-application-step1 .table-li .btn-file-upload { width: 126px; margin-left: 2px; }
 
 .accept-terms .content-box-area .text-area, .applicant-application-step1 .content-box-area .text-area { height: 140px; border: solid 1px #d2d4d6; padding: 10px; overflow-y: scroll; font-size: 13px; color: #666; }
 
@@ -3228,7 +3234,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .business-application .panel-group [aria-labelledby="tab3"] table tbody td .add-file-area { float: left; width: calc(100% - 106px); margin-top: 3px; }
 
-.business-application .panel-group [aria-labelledby="tab3"] table tbody td > .btn-type-1-02 { float: right; }
+.business-application .panel-group [aria-labelledby="tab3"] table tbody td > .btn-type-1-02, .business-application .panel-group [aria-labelledby="tab3"] table tbody .add-file-area .file td > .btn-file-upload, .add-file-area .file .business-application .panel-group [aria-labelledby="tab3"] table tbody td > .btn-file-upload { float: right; }
 
 /* =======================================*/
 /* 기금사업신청 > 사업신청 상세팝업
@@ -3256,31 +3262,53 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 기금사업신청 > 결과조회
 /* (html/view-results.html)
 /* =======================================*/
-.view-results .table-type-01 tbody td:nth-child(2) { text-align: left; }
+.view-results .table-type-01 tbody td:nth-child(5) [class^="btn-"], .register-your-funds-usage-report .table-type-01 tbody td:nth-child(5) [class^="btn-"] { width: 90px; padding: 0; }
 
 /* =======================================*/
 /* 기금사업신청 > 결과조회 상세 내용 팝업
 /* (html/view-results.html)
 /* =======================================*/
-.popup-view-results-business table { margin-bottom: 10px; }
+.popup-view-results-business table, .popup-register-your-funds-usage-report-business table { margin-bottom: 10px; }
 
-.popup-view-results-business table td .checkbox-type li, .popup-view-results-business table td .radio-type li { float: left; width: 25%; }
+.popup-view-results-business table td .checkbox-type li, .popup-register-your-funds-usage-report-business table td .checkbox-type li, .popup-view-results-business table td .radio-type li, .popup-register-your-funds-usage-report-business table td .radio-type li { float: left; width: 25%; }
 
-.popup-view-results-business table td .checkbox-type li:nth-child(4n), .popup-view-results-business table td .radio-type li:nth-child(4n) { margin-bottom: 7px; }
+.popup-view-results-business table td .checkbox-type li:nth-child(4n), .popup-register-your-funds-usage-report-business table td .checkbox-type li:nth-child(4n), .popup-view-results-business table td .radio-type li:nth-child(4n), .popup-register-your-funds-usage-report-business table td .radio-type li:nth-child(4n) { margin-bottom: 7px; }
 
-.popup-view-results-business table td .checkbox-type li:nth-child(4n):last-child, .popup-view-results-business table td .radio-type li:nth-child(4n):last-child { margin-bottom: 0; }
+.popup-view-results-business table td .checkbox-type li:nth-child(4n):last-child, .popup-register-your-funds-usage-report-business table td .checkbox-type li:nth-child(4n):last-child, .popup-view-results-business table td .radio-type li:nth-child(4n):last-child, .popup-register-your-funds-usage-report-business table td .radio-type li:nth-child(4n):last-child { margin-bottom: 0; }
 
-.popup-view-results-business .table-dl dt { line-height: 32px; }
+.popup-view-results-business .table-dl dt, .popup-register-your-funds-usage-report-business .table-dl dt { line-height: 1.5; }
 
-.popup-view-results-business .table-dl .add-file-area ul li { height: 32px; line-height: 32px; }
+.popup-view-results-business .table-dl .add-file-area, .popup-register-your-funds-usage-report-business .table-dl .add-file-area { padding: 10px; }
 
-.popup-view-results-business .table-dl .add-file-area ul:nth-child(1) { float: left; width: calc(100% - 220px); }
+.popup-view-results-business .table-dl .add-file-area ul li, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul li { height: 26px; line-height: 26px; }
 
-.popup-view-results-business .table-dl .add-file-area ul:nth-child(1) li { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
+.popup-view-results-business .table-dl .add-file-area ul:nth-child(1), .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(1) { float: left; width: calc(100% - 220px); }
 
-.popup-view-results-business .table-dl .add-file-area ul:nth-child(2) { float: right; width: 210px; }
+.popup-view-results-business .table-dl .add-file-area ul:nth-child(1) li, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(1) li { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
 
-.popup-view-results-business .table-dl .add-file-area ul:nth-child(2) [class^="icon-"] { width: 100%; }
+.popup-view-results-business .table-dl .add-file-area ul:nth-child(2), .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) { float: right; width: 210px; }
+
+/* =======================================*/
+/* 기금사업신청 > 자금사용보고서등록 조회
+/* (html/register-your-funds-usage-report.html)
+/* =======================================*/
+/* =======================================*/
+/* 기금사업신청 > 자금사용보고서등록 상세 내용 팝업
+/* (html/register-your-funds-usage-report.html)
+/* =======================================*/
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul li { height: 34px; line-height: 34px; }
+
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(1) { float: left; width: calc(100% - 370px); }
+
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(1) li { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
+
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) { float: right; width: 360px; }
+
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) .file { width: 100%; }
+
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) .file [class^="icon-"] { width: calc(100% - 107px); margin-top: 3px; }
+
+.popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) .file [class^="btn-"] { height: 30px; line-height: 28px; margin-top: 1px; }
 
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) { .test { position: absolute; top: 0; left: 0; display: inline-block !important; }
   .test.w1 { width: 1%; }
