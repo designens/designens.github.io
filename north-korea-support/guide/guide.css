@@ -1526,6 +1526,14 @@
 
 .slideOutUp { -webkit-animation-name: slideOutUp; animation-name: slideOutUp; }
 
+.GMCell, .GMCellPanel, .GMCellFilter, .GMHeaderDrag, .GMHeaderGroup { border-right: 1px solid #d1d1d1 !important; border-bottom: 1px solid #c2c2c2 !important; color: #4c4c4c !important; }
+
+.GMMainTable { border-top: 2px solid #45494d !important; border-left-color: transparent !important; border-right-color: transparent !important; margin-bottom: 30px !important; }
+
+.GMCellHeader, .GMCell { height: 38px !important; }
+
+.GMCellHeader, .GMCellHeaderEmpty { color: #2e3a42 !important; padding-top: 0 !important; padding-bottom: 0 !important; border-right: 1px solid #d1d1d1 !important; border-bottom: 1px solid #c2c2c2 !important; background-color: #f0f3f5 !important; }
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, legend, input, textarea, button, p, blockquote, th, td, form, fieldset, blockquote, iframe { margin: 0; padding: 0; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
 
 article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
@@ -1621,6 +1629,9 @@ input[type="date"]::-webkit-calendar-picker-indicator { color: #343434; backgrou
 input[type="date"] { appearance: none; -webkit-appearance: none; display: inline-block !important; visibility: visible !important; }
 
 input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; }
+
+@media print { code[class*="language-"], pre[class*="language-"] { text-shadow: none; }
+  html * { color: #000; background: #fff; } }
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
@@ -1818,19 +1829,19 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 .paging button.first-prev { margin-left: 0; }
 
-.paging button.first-prev:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.first-prev:before { left: 9px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.first-prev:after { right: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.first-prev:after { right: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.prev:before { left: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.prev:before { left: 12px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
 .paging button.last-next { border-right: 1px solid #c2c2c2; }
 
 .paging button.last-next:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.last-next:after { right: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.last-next:after { right: 9px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.next:before { right: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.next:before { right: 12px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
 .paging button:focus, .paging button:active, .paging button.selected { border-bottom: 3px solid #112a3d; }
 
@@ -2051,6 +2062,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .porgress-area.bar-step4:before { background: url("../../assets/images/bg/bar-step4.png") no-repeat; background-size: 100% 100%; }
 
 .porgress-area.bar-step5:before { background: url("../../assets/images/bg/bar-step5.png") no-repeat; background-size: 100% 100%; }
+
+.porgress-area.bar-step-all:before { background: url("../../assets/images/bg/bar-step-all.png") no-repeat; background-size: 100% 100%; }
 
 /* =======================================*/
 /* 검색 영역 스타일
@@ -2537,6 +2550,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-type-01 tr th { background: #f0f3f5; color: #2e3a42; }
 
+.table-type-01 tr th.sub-title { font-weight: normal; }
+
 .table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; padding: 1px 10px; /* 제목 - 팝업 링크 */ /* 제목 - 전체 조회수 */ }
 
 .table-type-01 tr th .view-link, .table-type-01 tr td .view-link { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
@@ -2555,6 +2570,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .table-type-02 tr th .view-link, .table-type-02 tr td .view-link { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
 
 .table-type-02 tr th { background: #f0f3f5; color: #2e3a42; padding: 0 20px; }
+
+.table-type-02 tr th.sub-title { font-weight: normal; }
 
 .table-type-02 tr td { padding: 6px 10px; }
 
@@ -3154,6 +3171,12 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 단체정보관리 > 정보조회
 /* (html/information-inquiry.html)
 /* =======================================*/
+.information-inquiry .panel-group [aria-labelledby="tab1"] .table-type-02 tbody tr:nth-child(4) td:nth-child(3) { padding: 10px; }
+
+.information-inquiry .panel-group [aria-labelledby="tab1"] .table-type-02 tbody tr:nth-child(4) td:nth-child(3) .ceo-photo { width: 100px; height: 107px; border: 1px solid #d1d1d1; }
+
+.information-inquiry .panel-group [aria-labelledby="tab1"] .table-type-02 tbody td .btn-type-1-02, .information-inquiry .panel-group [aria-labelledby="tab1"] .table-type-02 tbody td .add-file-area .file .btn-file-upload, .add-file-area .file .information-inquiry .panel-group [aria-labelledby="tab1"] .table-type-02 tbody td .btn-file-upload { float: right; }
+
 .information-inquiry .panel-group [aria-labelledby="tab3"] .blue { text-align: right; }
 
 .information-inquiry .panel-group [aria-labelledby="tab3"] .sub-top-btn-area { margin-top: -38px; }
@@ -3296,6 +3319,24 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 기금사업신청 > 자금사용보고서등록 상세 내용 팝업
 /* (html/register-your-funds-usage-report.html)
 /* =======================================*/
+.popup-register-your-funds-usage-report-business .table-type-02 tbody tr:nth-child(4) th { padding-top: 10px; padding-bottom: 10px; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type { min-width: 210px; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type input { width: 210px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type input:focus { border: 1px solid #002847; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type input:focus::-webkit-input-placeholder { color: transparent; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type input:focus:-moz-placeholder { color: transparent; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type input:focus::-moz-placeholder { color: transparent; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type input:focus:-ms-input-placeholder { color: transparent; }
+
+.popup-register-your-funds-usage-report-business .table-type-02 tbody td .input-type label { line-height: 30px; }
+
 .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul li { height: 34px; line-height: 34px; }
 
 .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(1) { float: left; width: calc(100% - 370px); }

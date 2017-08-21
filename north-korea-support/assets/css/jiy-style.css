@@ -1827,19 +1827,19 @@ body .wrap { width: 1248px; padding: 0 24px; margin: 0 auto; }
 
 .paging button.first-prev { margin-left: 0; }
 
-.paging button.first-prev:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.first-prev:before { left: 9px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.first-prev:after { right: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.first-prev:after { right: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.prev:before { left: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.prev:before { left: 12px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
 .paging button.last-next { border-right: 1px solid #c2c2c2; }
 
 .paging button.last-next:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.last-next:after { right: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.last-next:after { right: 9px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
-.paging button.next:before { right: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button.next:before { right: 12px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
 
 .paging button:focus, .paging button:active, .paging button.selected { border-bottom: 3px solid #112a3d; }
 
