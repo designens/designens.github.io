@@ -1651,11 +1651,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul { *zoom: 1; }
+.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul, .footer-link-banner .wrap, .footer-link-banner .wrap .ui-carousel ul { *zoom: 1; }
 
-.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after { content: ""; display: table; }
+.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .footer-link-banner .wrap:before, .footer-link-banner .wrap .ui-carousel ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .ui-carousel ul:after { content: ""; display: table; }
 
-.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after { clear: both; }
+.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .ui-carousel ul:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -2765,6 +2765,56 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 @media only screen and (max-height: 699px) { .popup { min-height: 100vh; max-height: 100vh; }
   .popup .popup-content { max-height: calc(100vh - 50px); } }
 
+.readable-hidden { overflow: hidden; position: absolute; top: auto; left: -100000px; width: 1px; height: 1px; }
+
+.ui-carousel { position: relative; width: 100%; height: 400px; overflow: hidden; }
+
+.ui-carousel .ui-carousel__tablist--wrapper { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: 20px; z-index: 100; }
+
+.ui-carousel .ui-carousel__tablist--wrapper .ui-carousel__indicators { float: left; }
+
+.ui-carousel .ui-carousel__tablist--wrapper .ui-carousel__indicators li { float: left; }
+
+.ui-carousel .ui-carousel__tabpanel-wrapper { position: relative; width: 100vw; height: 400px; }
+
+.ui-carousel .ui-carousel__tabpanel-wrapper:after { content: ''; display: block; clear: both; }
+
+.ui-carousel__tabpanel { position: relative; float: left; width: 100vw; height: 400px; overflow: hidden; }
+
+.ui-carousel__tabpanel a { display: block; text-align: center; }
+
+.ui-carousel__tabpanel a img { width: 100vw; height: 400px; vertical-align: middle; object-fit: cover; }
+
+.ui-carousel__toggle--animate { float: left; width: 18px; height: 18px; font-size: 10px; color: #333; margin-top: -5px; margin-right: 5px; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6); }
+
+.ui-carousel__toggle--animate::before { display: block; font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; padding-left: 4px; }
+
+.ui-carousel__toggle--animate.is-play::before { display: block; font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; padding-left: 0; }
+
+.ui-carousel__tab { display: block; width: 10px; height: 10px; margin-left: 5px; margin-right: 5px; border-radius: 5px; background: #fff; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3); transition: all 0.2s cubic-bezier(0.01, 0.35, 0, 1.01); }
+
+.ui-carousel__tab:hover { background: #eaeaea; transform: scale(1.2); }
+
+.ui-carousel__tab:focus { background: #eaeaea; transform: scale(1.2); }
+
+.ui-carousel__tab.active { background: #003964; width: 24px; }
+
+.ui-carousel__tab.active:hover { cursor: default; }
+
+.ui-carousel__tab.active:focus { background: #003964; }
+
+.ui-carousel__button { position: absolute; top: 50%; width: 24px; height: 46px; margin-top: -23px; transition: all 0.2s ease; cursor: pointer; }
+
+.ui-carousel__button:hover, .ui-carousel__button:focus { -webkit-filter: drop-shadow(0 0 5px #fff); filter: drop-shadow(0 0 5px #fff); }
+
+.ui-carousel__button.ui-carousel__button--prev { left: 24px; }
+
+.ui-carousel__button.ui-carousel__button--prev:before { display: block; content: ""; width: 24px; height: 46px; background: url("../../assets/images/carousel/btn-arrow-left.svg") left center no-repeat; }
+
+.ui-carousel__button.ui-carousel__button--next { right: 24px; }
+
+.ui-carousel__button.ui-carousel__button--next:before { display: block; content: ""; width: 24px; height: 46px; background: url("../../assets/images/carousel/btn-arrow-right.svg") right center no-repeat; }
+
 /* =======================================*/
 /* 메인 > 로그인 > 외부로그인
 /* (html/login.html)
@@ -3350,6 +3400,120 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) .file [class^="icon-"] { width: calc(100% - 107px); margin-top: 3px; }
 
 .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:nth-child(2) .file [class^="btn-"] { height: 30px; line-height: 28px; margin-top: 1px; }
+
+/* =======================================*/
+/* 메인 > 외부 메인
+/* (html/main.html)
+/* =======================================*/
+.user-main article h2 { font-size: 20px; height: 40px; line-height: 40px; text-align: left; }
+
+.user-main article:first-child { width: 49%; float: left; margin-right: 2%; }
+
+.user-main article:first-child .tablist { width: 100%; margin-left: 0; border: 1px solid #dbdbdb; border-bottom-width: 0; }
+
+.user-main article:first-child .tablist [role="tab"] { padding: 0; }
+
+.user-main article:first-child .tablist [role="tab"] span { font-size: 16px; height: 44px; line-height: 42px; background: #fff; border: 0; border-right: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; }
+
+.user-main article:first-child .tablist [role="tab"] span:hover, .user-main article:first-child .tablist [role="tab"] span:focus { background: #d14411; border: 0; }
+
+.user-main article:first-child .tablist [role="tab"]:first-child span { border-left-width: 1px; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.user-main article:first-child .tablist [role="tab"]:last-child span { border-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.user-main article:first-child .tablist [role="tab"][aria-selected='true'] span { background: #d14411; border: 0; }
+
+.user-main article:first-child .panel-group { height: 634px; padding: 30px; border: 1px solid #dbdbdb; border-top-width: 0; margin-top: 0; clear: both; }
+
+.user-main article:last-child { width: 49%; float: right; margin-right: 0; }
+
+.user-main article:last-child .link-item-box { position: relative; height: 210px; width: 47.95918%; float: left; margin-right: 4.08163%; }
+
+.user-main article:last-child .link-item-box:nth-of-type(2n) { float: right; margin-right: 0; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1) { background: #e6f0c0 url("../../assets/images/bg/link-item-01.png") center 44px no-repeat; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1) .btn-item-more { background: #d2e48e; }
+
+.user-main article:last-child .link-item-box:nth-of-type(2) { background: #d6faff url("../../assets/images/bg/link-item-02.png") center 46px no-repeat; }
+
+.user-main article:last-child .link-item-box:nth-of-type(2) .btn-item-more { background: #b5f6ff; }
+
+.user-main article:last-child .link-item-box:nth-of-type(3) { background: #ede1f5 url("../../assets/images/bg/link-item-03.png") center 49px no-repeat; }
+
+.user-main article:last-child .link-item-box:nth-of-type(3) .btn-item-more { background: #dfc9ed; }
+
+.user-main article:last-child .link-item-box:nth-of-type(4) { background: #ffeb9a url("../../assets/images/bg/link-item-04.png") center 44px no-repeat; }
+
+.user-main article:last-child .link-item-box:nth-of-type(4) .btn-item-more { background: #ffdb49; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) { background: url("../../assets/images/bg/link-item-05.png") 186px 135px no-repeat; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel { height: 154px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__button { position: absolute; top: -9999px; visibility: hidden; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper { width: 222px; height: 154px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel { width: 222px; height: 154px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a { text-align: left; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a .notice-text { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap: break-word; padding-top: 12px; clear: both; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a .notice-date { display: block; font-weight: bold; color: #666; margin-top: 12px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(6) { background: url("../../assets/images/bg/link-item-06.png") 197px 121px no-repeat; }
+
+.user-main article:last-child .link-item-box:nth-of-type(6) .resource-text { position: relative; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; padding-top: 12px; padding-left: 10px; clear: both; }
+
+.user-main article:last-child .link-item-box:nth-of-type(6) .resource-text:before { position: absolute; top: 22px; left: 0; display: block; width: 3px; height: 3px; background: #4d4d4d; content: ""; }
+
+.user-main article:last-child .link-item-box:nth-of-type(6) .resource-date { display: block; font-weight: bold; color: #666; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1), .user-main article:last-child .link-item-box:nth-of-type(2), .user-main article:last-child .link-item-box:nth-of-type(3), .user-main article:last-child .link-item-box:nth-of-type(4) { margin-bottom: 24px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1) h3, .user-main article:last-child .link-item-box:nth-of-type(2) h3, .user-main article:last-child .link-item-box:nth-of-type(3) h3, .user-main article:last-child .link-item-box:nth-of-type(4) h3 { font-size: 18px; font-weight: normal; color: #333; text-align: center; letter-spacing: -0.04em; margin-top: 147px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1) .btn-item-more, .user-main article:last-child .link-item-box:nth-of-type(2) .btn-item-more, .user-main article:last-child .link-item-box:nth-of-type(3) .btn-item-more, .user-main article:last-child .link-item-box:nth-of-type(4) .btn-item-more { position: absolute; right: 0; bottom: 0; width: 50px; height: 50px; text-indent: -9999px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1) .btn-item-more:before, .user-main article:last-child .link-item-box:nth-of-type(2) .btn-item-more:before, .user-main article:last-child .link-item-box:nth-of-type(3) .btn-item-more:before, .user-main article:last-child .link-item-box:nth-of-type(4) .btn-item-more:before { position: absolute; top: 23px; left: 11px; width: 28px; height: 4px; background: #fff; content: ""; }
+
+.user-main article:last-child .link-item-box:nth-of-type(1) .btn-item-more:after, .user-main article:last-child .link-item-box:nth-of-type(2) .btn-item-more:after, .user-main article:last-child .link-item-box:nth-of-type(3) .btn-item-more:after, .user-main article:last-child .link-item-box:nth-of-type(4) .btn-item-more:after { position: absolute; top: 11px; left: 23px; width: 4px; height: 28px; background: #fff; content: ""; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5), .user-main article:last-child .link-item-box:nth-of-type(6) { padding: 26px 30px; background-color: #f0f3f5; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) h3, .user-main article:last-child .link-item-box:nth-of-type(6) h3 { float: left; font-size: 20px; color: #003a66; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .btn-item-more, .user-main article:last-child .link-item-box:nth-of-type(6) .btn-item-more { float: right; font-weight: bold; line-height: 1; border-bottom: 1px solid #4c4c4c; margin-top: 5px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .btn-item-more:after, .user-main article:last-child .link-item-box:nth-of-type(6) .btn-item-more:after { display: inline-block; font-family: 'FontAwesome'; content: ""; font-size: 18px; font-size: 1.8rem; padding-left: 5px; }
+
+.footer-link-banner { background: #f5f8fa; border-top: 1px solid #d9dee2; padding: 24px 0; }
+
+.footer-link-banner .wrap h4 { font-size: 14px; color: #333; line-height: 46px; width: 6.5%; float: left; margin-right: 2%; }
+
+.footer-link-banner .wrap .ui-carousel { width: 91.5%; float: right; margin-right: 0; position: relative; padding: 0 23px; }
+
+.footer-link-banner .wrap .ui-carousel .ui-carousel__button { position: absolute; top: -9999px; visibility: hidden; }
+
+.footer-link-banner .wrap .ui-carousel ul { width: 1054px; height: 46px; border: 1px solid #dbdbdb; background: #fff; overflow: hidden; }
+
+.footer-link-banner .wrap .ui-carousel ul li { float: left; width: 20%; height: 46px; line-height: 46px; text-align: center; border-right: 1px solid #dbdbdb; }
+
+.footer-link-banner .wrap .ui-carousel ul li:last-child { border-right: 0; }
+
+.footer-link-banner .wrap .ui-carousel ul li img { vertical-align: -9px; margin-right: 10px; }
+
+.footer-link-banner .wrap .ui-carousel ul li:nth-child(4) img { vertical-align: -11px; }
+
+.footer-link-banner .wrap .ui-carousel .ui-carousel__button { position: absolute; top: 0; width: 24px; height: 46px; font-size: 10px; color: #676767; line-height: 46px; border: 1px solid #ccc; background: #fff; }
+
+.footer-link-banner .wrap .ui-carousel .ui-carousel__button span { position: absolute; top: -9999px; }
+
+.footer-link-banner .wrap .ui-carousel .ui-carousel__button .btn-prev { left: 0; }
+
+.footer-link-banner .wrap .ui-carousel .ui-carousel__button .btn-next { right: 0; }
 
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) { .test { position: absolute; top: 0; left: 0; display: inline-block !important; }
   .test.w1 { width: 1%; }
