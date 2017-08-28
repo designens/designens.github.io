@@ -1,2 +1,142 @@
+@charset "UTF-8";
+/* =======================================*/
+/* 회원서비스 > 설문조사 조회
+/* (html/service-survey.html)
+/* =======================================*/
+.service-survey .service-survey-box { display: inline-block; width: 930px; margin: 0 auto; margin-bottom: 60px; text-align: center; }
+
+.service-survey .service-survey-box > div { display: inline-block; width: 300px; background-color: #e6e6e6; height: 233px; margin-right: 10px; vertical-align: top; text-align: center; border: 1px solid #c8cacc; border-radius: 7px; padding: 50px 27px 30px 30px; z-index: 1; position: relative; box-shadow: 0 1px 0 #c8cacc; }
+
+.service-survey .service-survey-box > div::after { content: ""; display: block; width: 280px; height: 212px; position: absolute; top: 10px; left: 10px; background: #fff url(../../assets/images/bg/bg-service-survey.png) no-repeat; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); z-index: -1; }
+
+.service-survey .service-survey-box > div:last-child { margin-right: 0; }
+
+.service-survey .service-survey-box div div { margin-top: 13px; }
+
+.service-survey .service-survey-box .btn-type-1-04 { width: 117px; }
+
+.service-survey .service-survey-box .btn-type-1-02 { width: 117px; margin-left: 2px; }
+
+.service-survey .service-survey-box h4 { color: #003761; font-size: 16px; display: inline-block; vertical-align: middle; text-align: center; border: 2px solid #e1e4e6; width: 240px; height: 72px; line-height: 70px; }
+
+.service-survey .service-survey-box p { width: 240px; height: 44px; line-height: 44px; vertical-align: middle; display: inline-block; border-bottom: 1px solid #d6d6d6; text-align: center; }
+
+.service-survey .content-box-area:first-child h3 { margin-bottom: 0; }
+
+.service-survey .table-type-01 tr td:nth-child(2) { text-align: left; padding-left: 20px; }
+
+.service-survey .table-type-01 .btn-type-1-02 { width: 100px; }
+
+/* =======================================*/
+/* 통계 > 국내 > 당국차원 조회
+/* (html/domestic-authority-level-list.html)
+/* =======================================*/
+.domestic-authority-level .table-overflow-x { overflow-x: auto; margin-bottom: 30px; }
+
+.domestic-authority-level .table-overflow-x .table-type-01 { margin-bottom: 0; }
+
+.domestic-authority-level div:last-child table { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 통계 > 국제 > 주체별 조회 (통계, 시계열, 차트)
+/* (html/international-field-list.html)
+/* =======================================*/
+.international-by-subject-list .panel-group [role="tabpanel"] .web-graph-area { margin-bottom: 0; }
+
+/* =======================================*/
+/* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
+/* (html/international-field-list.html)
+/* =======================================*/
+.international-field-list .panel-group [role="tabpanel"] .web-graph-area { margin-bottom: 0; }
+
+/* =======================================*/
+/* 통계 > 국제 > 지원채널별 조회 (통계, 시계열, 차트)
+/* (html/international-by-support-channel-list.html)
+/* =======================================*/
+.international-by-support-channel-list .panel-group [role="tabpanel"] .web-graph-area { margin-bottom: 0; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 전체인구
+/* (html/total-population.html)
+/* =======================================*/
+.total-population .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 기대수명
+(html/life-expectancy.html)
+/* =======================================*/
+.life-expectancy .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 영양부족 인구
+/* (html/an-undernourished-population.html)
+/* =======================================*/
+.an-undernourished-population .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 5세 미만 아동 사망률
+/* (html/child-mortality-rate.html)
+/* =======================================*/
+.child-mortality-rate .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 5세 미만 아동 만성영양실조
+/* (html/chronic-malnutrition-in-children.html)
+/* =======================================*/
+.chronic-malnutrition-in-children .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 결핵 유병률
+/* (html/tuberculosis-prevalence.html)
+/* =======================================*/
+.tuberculosis-prevalence .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 말라리아 유병률
+/* (html/malaria-prevalence.html)
+/* =======================================*/
+.malaria-prevalence .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 연간 인구 성장률(%)
+/* html/annual-population-growth-rate.html
+/* =======================================*/
+.annual-population-growth-rate .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 65세 이상 인구 비율
+/* (html/65-year-old-population-ratio.html)
+/* =======================================*/
+.year-old-population-ratio .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 인구 당 ODA 수원액
+/* (html/oda-water-per-population.html)
+/* =======================================*/
+.oda-water-per-population .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 재난의 영향을 받은 인구수
+/* (html/impact-of-disaster-population.html)
+/* =======================================*/
+.impact-of-disaster-population .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 15-19세 소녀 1천명 당 출산율
+/* (html/girls-birth-rate.html)
+/* =======================================*/
+.girls-birth-rate .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 출생 1천명 당 영아 사망률
+/* (html/infant-mortality-rate.html)
+/* =======================================*/
+.infant-mortality-rate .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 출생 1천명 당 5세 미만 아동 사망률
+/* (html/birth-child-mortality.html)
+/* =======================================*/
+.birth-child-mortality .table-type-02 { margin-bottom: 120px; }
 
 /*# sourceMappingURL=map/khj-style.css.map */

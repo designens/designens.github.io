@@ -1651,11 +1651,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul, .footer-link-banner .wrap, .footer-link-banner .wrap .ui-carousel ul { *zoom: 1; }
+.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .popup .popup-content, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul, .footer-link-banner .wrap, .footer-link-banner .wrap .link-banner-area ul { *zoom: 1; }
 
-.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .footer-link-banner .wrap:before, .footer-link-banner .wrap .ui-carousel ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .ui-carousel ul:after { content: ""; display: table; }
+.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .popup .popup-content:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .footer-link-banner .wrap:before, .footer-link-banner .wrap .link-banner-area ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .popup .popup-content:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .link-banner-area ul:after { content: ""; display: table; }
 
-.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .ui-carousel ul:after { clear: both; }
+.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .popup .popup-content:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .link-banner-area ul:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -2294,7 +2294,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 /* 텍스트박스 스타일
 /* =======================================*/
-.textarea { width: 100%; padding: 6px 10px; border: 1px solid #dbdbdb; margin-bottom: -5px; background: #fff; overflow-y: scroll; }
+.textarea { display: block; width: 100%; padding: 6px 10px; border: 1px solid #dbdbdb; background: #fff; overflow-y: scroll; }
 
 .textarea:focus { border: 1px solid #002847; }
 
@@ -2746,7 +2746,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup .popup-headline .popup-close:after { position: absolute; top: 10px; left: -4px; display: block; width: 135%; height: 1px; background: #fff; transform: rotate(-45deg); content: ""; }
 
-.popup .popup-content { padding: 20px 30px 30px 30px; max-height: calc(650px - 50px); overflow: auto; }
+.popup .popup-content { padding: 20px 30px 0 30px; max-height: calc(650px - 50px); overflow: auto; }
 
 .popup .popup-content [class$="l-set"] { text-align: left; }
 
@@ -2756,7 +2756,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup .popup-content .btn-cl-set, .popup .popup-content .btn-cr-set { margin-top: 10px; margin-bottom: 10px; }
 
-.popup .popup-content .popup-btn-set { width: 100%; text-align: center; margin-top: 30px; }
+.popup .popup-content .popup-btn-set { width: 100%; text-align: center; padding: 30px; }
 
 .popup .popup-content .popup-btn-set button { width: 104px; margin-right: 1px; }
 
@@ -2779,13 +2779,15 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .ui-carousel .ui-carousel__tabpanel-wrapper:after { content: ''; display: block; clear: both; }
 
-.ui-carousel__tabpanel { position: relative; float: left; width: 100vw; height: 400px; overflow: hidden; }
+.ui-carousel__tabpanel { position: relative; float: left; width: 100vw; overflow: hidden; }
 
-.ui-carousel__tabpanel a { display: block; text-align: center; }
+.ui-carousel__tabpanel > a { display: block; }
 
-.ui-carousel__tabpanel a img { width: 100vw; height: 400px; vertical-align: middle; object-fit: cover; }
+.ui-carousel__tabpanel > a img { vertical-align: middle; object-fit: cover; }
 
 .ui-carousel__toggle--animate { position: relative; float: left; width: 18px; height: 18px; color: #333; margin-top: -5px; margin-right: 5px; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6); }
+
+.ui-carousel__toggle--animate:hover, .ui-carousel__toggle--animate:focus { background: #eaeaea; transform: scale(1.3); }
 
 .ui-carousel__toggle--animate::before { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; padding-left: 2px; }
 
@@ -2793,9 +2795,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .ui-carousel__tab { display: block; width: 10px; height: 10px; margin-left: 5px; margin-right: 5px; border-radius: 5px; background: #fff; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3); transition: all 0.2s cubic-bezier(0.01, 0.35, 0, 1.01); }
 
-.ui-carousel__tab:hover { background: #eaeaea; transform: scale(1.2); }
-
-.ui-carousel__tab:focus { background: #eaeaea; transform: scale(1.2); }
+.ui-carousel__tab:hover, .ui-carousel__tab:focus { background: #eaeaea; transform: scale(1.3); }
 
 .ui-carousel__tab.active { background: #003964; width: 24px; }
 
@@ -2805,15 +2805,15 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .ui-carousel__button { position: absolute; top: 50%; width: 24px; height: 46px; margin-top: -23px; transition: all 0.2s ease; cursor: pointer; }
 
-.ui-carousel__button:hover, .ui-carousel__button:focus { -webkit-filter: drop-shadow(0 0 5px #fff); filter: drop-shadow(0 0 5px #fff); }
+.ui-carousel__button:hover, .ui-carousel__button:focus { text-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.8); }
 
-.ui-carousel__button.ui-carousel__button--prev { left: 24px; }
+.ui-carousel__button.ui-carousel__button--prev { left: 0; }
 
-.ui-carousel__button.ui-carousel__button--prev:before { display: block; content: ""; width: 24px; height: 46px; background: url("../../assets/images/carousel/btn-arrow-left.svg") left center no-repeat; }
+.ui-carousel__button.ui-carousel__button--prev:before { font-family: 'FontAwesome'; content: ""; font-size: 16px; font-size: 1.6rem; }
 
-.ui-carousel__button.ui-carousel__button--next { right: 24px; }
+.ui-carousel__button.ui-carousel__button--next { right: 0; }
 
-.ui-carousel__button.ui-carousel__button--next:before { display: block; content: ""; width: 24px; height: 46px; background: url("../../assets/images/carousel/btn-arrow-right.svg") right center no-repeat; }
+.ui-carousel__button.ui-carousel__button--next:before { font-family: 'FontAwesome'; content: ""; font-size: 16px; font-size: 1.6rem; }
 
 /* =======================================*/
 /* 메인 > 로그인 > 외부로그인
@@ -3405,6 +3405,52 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 메인 > 외부 메인
 /* (html/main.html)
 /* =======================================*/
+.main-carousel-slider { height: 400px; }
+
+.main-carousel-slider article { position: relative; height: 400px; }
+
+.main-carousel-slider article > img { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 100%; height: 100%; object-fit: cover; }
+
+.main-carousel-slider article .wrap { position: relative; position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.main-carousel-slider article .wrap .slider-slogan-banner { position: absolute; left: 50%; top: 140px; display: block; width: 478px; margin-left: -404px; text-align: left; }
+
+.main-carousel-slider article .wrap .slider-slogan-banner p { display: block; text-align: center; }
+
+.main-carousel-slider article .wrap .slider-slogan-banner p:first-child { font-size: 50px; font-weight: bold; letter-spacing: -0.05em; line-height: 1.2; padding: 0 25px; margin-bottom: 25px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; }
+
+.main-carousel-slider article .wrap .slider-slogan-banner p:last-child { font-size: 18px; color: #fff; letter-spacing: -0.05em; height: 40px; line-height: 40px; padding: 0 15px; background: #8ab1e6; border-top-left-radius: 20px; border-bottom-right-radius: 20px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
+
+.main-carousel-slider article .wrap .slider-menu-banner { position: absolute; top: 53px; left: 50%; margin-left: 225px; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a { position: relative; display: inline-block; float: left; width: 142px; height: 142px; font-size: 16px; margin-right: 10px; box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2); }
+
+.main-carousel-slider article .wrap .slider-menu-banner a p { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; padding-top: 40px; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a:nth-child(1) { background: #c5daeb url("../../assets/images/carousel/link-box-01.png") -4px -12px no-repeat; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a:nth-child(2) { background: #c5daeb url("../../assets/images/carousel/link-box-02.png") -4px -12px no-repeat; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a:nth-child(3) { background: #c5daeb url("../../assets/images/carousel/link-box-03.png") -4px -12px no-repeat; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a:nth-child(4) { background: #c5daeb url("../../assets/images/carousel/link-box-04.png") -4px -12px no-repeat; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a:nth-child(3n) { clear: both; }
+
+.main-carousel-slider article .wrap .slider-menu-banner a:nth-child(even) { margin-right: 0; margin-bottom: 10px; }
+
+.main-carousel-slider .ui-carousel__button:before { display: block; content: ""; width: 24px; height: 46px; }
+
+.main-carousel-slider .ui-carousel__button:hover, .main-carousel-slider .ui-carousel__button:focus { -webkit-filter: drop-shadow(0 0 5px #fff); filter: drop-shadow(0 0 5px #fff); }
+
+.main-carousel-slider .ui-carousel__button.ui-carousel__button--prev { left: 50%; margin-left: -600px; }
+
+.main-carousel-slider .ui-carousel__button.ui-carousel__button--prev:before { background: url("../../assets/images/carousel/btn-arrow-left.svg") left center no-repeat; }
+
+.main-carousel-slider .ui-carousel__button.ui-carousel__button--next { right: 50%; margin-right: -600px; }
+
+.main-carousel-slider .ui-carousel__button.ui-carousel__button--next:before { background: url("../../assets/images/carousel/btn-arrow-right.svg") right center no-repeat; }
+
 .user-main article h2 { font-size: 20px; height: 40px; line-height: 40px; text-align: left; }
 
 .user-main article:first-child { width: 49%; float: left; margin-right: 2%; }
@@ -3449,17 +3495,29 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .user-main article:last-child .link-item-box:nth-of-type(5) { background: url("../../assets/images/bg/link-item-05.png") 186px 135px no-repeat; }
 
-.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel { height: 154px; }
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list { height: 154px; }
 
-.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper { width: 222px; height: 154px; }
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__toggle--animate { background: #b3b3b3; color: #fff; }
 
-.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel { width: 222px; height: 154px; }
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__toggle--animate:hover, .user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__toggle--animate:focus { background: #777; }
 
-.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a { text-align: left; }
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__indicators .ui-carousel__tab { background: #b3b3b3; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3); transition: all 0.2s cubic-bezier(0.01, 0.35, 0, 1.01); }
 
-.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a .notice-text { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap: break-word; padding-top: 12px; clear: both; }
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__indicators .ui-carousel__tab:hover, .user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__indicators .ui-carousel__tab:focus { background: #777; }
 
-.user-main article:last-child .link-item-box:nth-of-type(5) .ui-carousel .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a .notice-date { display: block; font-weight: bold; color: #666; margin-top: 12px; }
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__indicators .ui-carousel__tab.active { background: #0065b3; width: 24px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tablist--wrapper .ui-carousel__indicators .ui-carousel__tab.active:focus { background: #0065b3; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tabpanel-wrapper { width: 222px; height: 154px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel { width: 222px; height: 154px; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a { text-align: left; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a .notice-text { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap: break-word; padding-top: 12px; clear: both; }
+
+.user-main article:last-child .link-item-box:nth-of-type(5) .notices-list .ui-carousel__tabpanel-wrapper .ui-carousel__tabpanel a .notice-date { display: block; font-weight: bold; color: #666; margin-top: 12px; }
 
 .user-main article:last-child .link-item-box:nth-of-type(6) { background: url("../../assets/images/bg/link-item-06.png") 197px 121px no-repeat; }
 
@@ -3491,29 +3549,27 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .footer-link-banner .wrap h4 { font-size: 14px; color: #333; line-height: 46px; width: 6.5%; float: left; margin-right: 2%; }
 
-.footer-link-banner .wrap .ui-carousel { position: relative; width: 91.5%; float: right; margin-right: 0; padding: 0 23px; height: 46px; border: 1px solid #dbdbdb; overflow: hidden; }
+.footer-link-banner .wrap .link-banner-area { position: relative; width: 91.5%; float: right; margin-right: 0; padding: 0 23px; height: 46px; border: 1px solid #dbdbdb; overflow: hidden; }
 
-.footer-link-banner .wrap .ui-carousel .ui-carousel__tabpanel-wrapper { width: 100%; height: 46px; background: #fff; }
+.footer-link-banner .wrap .link-banner-area .ui-carousel__tabpanel-wrapper { width: 100%; height: 46px; background: #fff; }
 
-.footer-link-banner .wrap .ui-carousel ul { float: left; width: 1054px; overflow: hidden; }
+.footer-link-banner .wrap .link-banner-area ul { float: left; width: 1054px; overflow: hidden; }
 
-.footer-link-banner .wrap .ui-carousel ul li { float: left; width: 20%; height: 46px; line-height: 46px; text-align: center; border-right: 1px solid #dbdbdb; }
+.footer-link-banner .wrap .link-banner-area ul li { float: left; width: 20%; height: 46px; line-height: 46px; text-align: center; border-right: 1px solid #dbdbdb; }
 
-.footer-link-banner .wrap .ui-carousel ul li:last-child { border-right: 0; }
+.footer-link-banner .wrap .link-banner-area ul li:last-child { border-right: 0; }
 
-.footer-link-banner .wrap .ui-carousel ul li img { width: auto; height: auto; vertical-align: -9px; margin-right: 10px; }
+.footer-link-banner .wrap .link-banner-area ul li img { vertical-align: -9px; margin-right: 10px; }
 
-.footer-link-banner .wrap .ui-carousel ul li:nth-child(4) img { vertical-align: -11px; }
+.footer-link-banner .wrap .link-banner-area .ui-carousel__button { position: absolute; top: 0; width: 24px; height: 44px; line-height: 44px; margin-top: 0; background: #fff; }
 
-.footer-link-banner .wrap .ui-carousel .ui-carousel__button { position: absolute; top: 0; width: 24px; height: 46px; line-height: 46px; margin-top: 0; background: #fff; }
+.footer-link-banner .wrap .link-banner-area .ui-carousel__button.ui-carousel__button--prev { left: 0; border-right: 1px solid #ccc; }
 
-.footer-link-banner .wrap .ui-carousel .ui-carousel__button.ui-carousel__button--prev { left: 0; border-right: 1px solid #ccc; }
+.footer-link-banner .wrap .link-banner-area .ui-carousel__button.ui-carousel__button--prev:before { font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; color: #676767; background: transparent; }
 
-.footer-link-banner .wrap .ui-carousel .ui-carousel__button.ui-carousel__button--prev:before { font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; color: #676767; background: transparent; }
+.footer-link-banner .wrap .link-banner-area .ui-carousel__button.ui-carousel__button--next { right: 0; border-left: 1px solid #ccc; }
 
-.footer-link-banner .wrap .ui-carousel .ui-carousel__button.ui-carousel__button--next { right: 0; border-left: 1px solid #ccc; }
-
-.footer-link-banner .wrap .ui-carousel .ui-carousel__button.ui-carousel__button--next:before { font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; color: #676767; background: transparent; }
+.footer-link-banner .wrap .link-banner-area .ui-carousel__button.ui-carousel__button--next:before { font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; color: #676767; background: transparent; }
 
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) { .test { position: absolute; top: 0; left: 0; display: inline-block !important; }
   .test.w1 { width: 1%; }

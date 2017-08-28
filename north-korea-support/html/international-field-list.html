@@ -178,31 +178,24 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>통계</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">국내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
-                            <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
-                             </ul> 
-                        </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">총괄</a></li>
+                        <li><a href="#">당국차원</a></li>
+                        <li><a href="#">국제기구 등을 통한 지원</a></li>
+                        <li><a href="#">민간차원</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">국제<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">주체별</a></li>
+                        <li><a href="#">분야별</a></li>
+                        <li><a href="#">지원채널별</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,20 +206,41 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">분야별</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">통계</a>
+                    <a href="#">국제</a>
+                    <a href="#">분야별</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <div class="content international-field-list">
+                <div class="tablist t3" role="tablist">
+                    <a href id="tab1" aria-controls="panel1" role="tab"><span>통계</span></a>
+                    <a href id="tab2" aria-controls="panel2" role="tab"><span>시계열</span></a>
+                    <a href id="tab3" aria-controls="panel3" role="tab"><span>차트</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
+                        <div class="web-table-area">
+                            <p>테이블 영역 입니다</p>
+                        </div>
+                    </div>
+                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
+                        <div class="web-graph-area">
+                            <p>graph</p>
+                        </div>
+                    </div>
+                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
+                        <div class="web-graph-area">
+                            <p>graph</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- [End] 컨텐츠 상세  -->
 
