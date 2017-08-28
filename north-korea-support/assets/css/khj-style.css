@@ -99,9 +99,17 @@
 
 /* =======================================*/
 /* 북한현황지표 > 보건의료 > 연간 인구 성장률(%)
-/* html/annual-population-growth-rate.html
+/* (html/annual-population-growth-rate.html)
 /* =======================================*/
 .annual-population-growth-rate .table-type-02 { margin-bottom: 120px; }
+
+/* =======================================*/
+/* 북한현황지표 > 보건의료 > 0-14세 인구 비율
+/* (html/0-14-years-old-ratio.html)
+/* 북한현황지표 > 보건의료 > 15-64세 인구 비율
+/ * (html/15-64-year-old-ratio.html)
+/* =======================================*/
+.years-old-ratio .table-type-02 { margin-bottom: 120px; }
 
 /* =======================================*/
 /* 북한현황지표 > 보건의료 > 65세 이상 인구 비율
