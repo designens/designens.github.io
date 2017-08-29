@@ -235,33 +235,27 @@
             
             <!-- [Start] 컨텐츠 상세  -->
             <div class="content service-survey">
-                <article class="content-box-area">
-                    <div class="service-survey-box">
-                        <div>
-                            <h4>사전정보공개제도관련</h4>
-                            <p>기간 : 2017-01-01~2017-01-31</p>
-                            <div>
-                                <a href class="btn-type-1-04" role="button">참여하기</a>
-                                <a href class="btn-type-1-02" role="button">결과보기</a>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>사전정보공개제도관련</h4>
-                            <p>기간 : 2017-01-01~2017-01-31</p>
-                            <div>
-                                <a href class="btn-type-1-04" role="button">참여하기</a>
-                                <a href class="btn-type-1-02" role="button">결과보기</a>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>사전정보공개제도관련</h4>
-                            <p>기간 : 2017-01-01~2017-01-31</p>
-                            <div>
-                                <a href class="btn-type-1-04" role="button">참여하기</a>
-                                <a href class="btn-type-1-02" role="button">결과보기</a>
-                            </div>
-                        </div>
+                <div class="service-survey-box">
+                    <div>
+                        <h4>사전정보공개제도관련</h4>
+                        <p>기간 : 2017-01-01~2017-01-31</p>
+                        <a href class="btn-type-1-04 btn-popup-service-survey-list" role="button">참여하기</a>
+                        <a href class="btn-type-1-02 btn-popup-service-survey-result" role="button">결과보기</a>
                     </div>
+                    <div>
+                        <h4>사전정보공개제도관련</h4>
+                        <p>기간 : 2017-01-01~2017-01-31</p>
+                        <a href class="btn-type-1-04 btn-popup-service-survey-write" role="button">참여하기</a>
+                        <a href class="btn-type-1-02 btn-popup-service-survey-result" role="button">결과보기</a>
+                    </div>
+                    <div>
+                        <h4>사전정보공개제도관련</h4>
+                        <p>기간 : 2017-01-01~2017-01-31</p>
+                        <a href class="btn-type-1-04" role="button">참여하기</a>
+                        <a href class="btn-type-1-02 btn-popup-service-survey-result" role="button">결과보기</a>
+                    </div>
+                </div>
+                <article class="content-box-area">
                     <h3>지난 설문조사</h3>
                     <!-- [Start] 전체 페이지 단위 선택 영역 -->
                     <div class="all-pages-view">
@@ -296,7 +290,7 @@
                                 <td>설문제목 : 사전정보공개제도관련</td>
                                 <td>2017-12-11~2017-12-31</td>
                                 <td>참여</td>
-                                <td><a href class="btn-type-1-02" role="button">결과보기</a></td>
+                                <td><a href class="btn-type-1-02 btn-popup-service-survey-result" role="button">결과보기</a></td>
                                 <td>10</td>
                             </tr>
                             <tr>
@@ -304,7 +298,7 @@
                                 <td>설문제목 : 사전정보공개제도관련</td>
                                 <td>2017-12-11~2017-12-31</td>
                                 <td>미참여</td>
-                                <td><a href class="btn-type-1-02" role="button">결과보기</a></td>
+                                <td><a href class="btn-type-1-02 btn-popup-service-survey-result" role="button">결과보기</a></td>
                                 <td>100</td>
                             </tr>
                             <tr>
@@ -312,7 +306,7 @@
                                 <td>설문제목 : 사전정보공개제도관련</td>
                                 <td>2017-12-11~2017-12-31</td>
                                 <td>미참여</td>
-                                <td><a href class="btn-type-1-02" role="button">결과보기</a></td>
+                                <td><a href class="btn-type-1-02 btn-popup-service-survey-result" role="button">결과보기</a></td>
                                 <td>200</td>
                             </tr>
                         </tbody>
@@ -359,6 +353,79 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] 설문조사 상세 내용 팝업 -->
+    <!-- 팝업 창 data-id 설정 -->
+<div class="popup mobile" data-id="popup-service-survey-list">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>설문조사</h4>
+        <button type="button" class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-service-survey-list">
+
+        <p>안녕하십니까?<br>
+        통일부 남북교류협력지원협회입니다.<br>
+        저희는 급증하는 정보공개 수요에 부응하고, 보다 질 높은 정보를 국민 여러분께 제공하고자 홈페이지를 통해 ‘사전정보공개제도’를 운영하고 있으며, 작년에 이어 이에 대한 여러분들의 의견을 듣고자 설문조사를 진행하고자 합니다.<br>
+        (작년에 여러분들께서 주신 의견은 제도운영 및 개선에 큰 도움이 되었습니다. 여러분들의 의견을 반영한 개선사항들을 별첨파일로 첨부해 드리니 확인 바랍니다.)</p>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <!-- 닫기 버튼 필수 (접근성) -->
+            <button type="button" class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 설문조사 상세 내용 팝업 -->
+
+    <!-- [Start] 설문조사 상세 입력 팝업 -->
+    <!-- 팝업 창 data-id 설정 -->
+<div class="popup" data-id="popup-service-survey-write">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>설문조사</h4>
+        <button type="button" class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content">
+        <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <!-- 닫기 버튼 필수 (접근성) -->
+            <button type="button" class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 설문조사 상세 입력 팝업 -->
+
+    <!-- [Start] 설문조사 결과보기 팝업 -->
+    <!-- 팝업 창 data-id 설정 -->
+<div class="popup" data-id="popup-service-survey-result">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>설문조사</h4>
+        <button type="button" class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content">
+        <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <!-- 닫기 버튼 필수 (접근성) -->
+            <button type="button" class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 설문조사 결과보기 팝업 -->
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>

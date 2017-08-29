@@ -153,6 +153,24 @@
       $.popupId($popups, 'popup-register-your-funds-usage-report-business').open();
     });
 
+    // 설문조사 상세 내용 팝업
+    $('.btn-popup-service-survey-list').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-service-survey-list').open();
+    });
+
+    // 설문조사 상세 입력 팝업
+    $('.btn-popup-service-survey-write').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-service-survey-write').open();
+    });
+
+    // 설문조사 결과보기 팝업
+    $('.btn-popup-service-survey-result').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-service-survey-result').open();
+    });
+
 })(window, window.jQuery);
 
 // =======================================
