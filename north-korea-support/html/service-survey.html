@@ -355,7 +355,7 @@
     <!-- [End] Footer Area -->
 
     <!-- [Start] 설문조사 상세 내용 팝업 -->
-    <!-- 팝업 창 data-id 설정 -->
+    <!-- 모바일 & 테블릿으로 접속 시 mobile 클래스 삽입 -->
 <div class="popup mobile" data-id="popup-service-survey-list">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">
@@ -365,17 +365,25 @@
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
     <div class="popup-content popup-service-survey-list">
-
-        <p>안녕하십니까?<br>
-        통일부 남북교류협력지원협회입니다.<br>
-        저희는 급증하는 정보공개 수요에 부응하고, 보다 질 높은 정보를 국민 여러분께 제공하고자 홈페이지를 통해 ‘사전정보공개제도’를 운영하고 있으며, 작년에 이어 이에 대한 여러분들의 의견을 듣고자 설문조사를 진행하고자 합니다.<br>
-        (작년에 여러분들께서 주신 의견은 제도운영 및 개선에 큰 도움이 되었습니다. 여러분들의 의견을 반영한 개선사항들을 별첨파일로 첨부해 드리니 확인 바랍니다.)</p>
-        <!-- [Start] 팝업 버튼 -->
-        <div class="popup-btn-set">
-            <!-- 닫기 버튼 필수 (접근성) -->
-            <button type="button" class="popup-close">닫기</button>
+        <div class="title-area">
+            <dl class="table-dl">
+                <dt>제목</dt>
+                <dd>우리 단체는 이렇게 사업운영합니다.</dd>
+            </dl>
+            <button type="button" class="btn-type-2-03">설문 문항 전체 보기</button>
         </div>
-        <!-- [End] 팝업 버튼 -->
+        <div class="text-area">
+            <p>안녕하십니까?<br>
+            통일부 남북교류협력지원협회입니다.<br>
+            저희는 급증하는 정보공개 수요에 부응하고, 보다 질 높은 정보를 국민 여러분께 제공하고자 홈페이지를 통해 ‘사전정보공개제도’를 운영하고 있으며, 작년에 이어 이에 대한 여러분들의 의견을 듣고자 설문조사를 진행하고자 합니다.<br>
+            (작년에 여러분들께서 주신 의견은 제도운영 및 개선에 큰 도움이 되었습니다. 여러분들의 의견을 반영한 개선사항들을 별첨파일로 첨부해 드리니 확인 바랍니다.)</p>
+            <!-- [Start] 팝업 버튼 -->
+            <div class="popup-btn-set">
+                <button type="button" class="btn-type-1-04">설문시작</button>
+                <button type="button" class="popup-close">닫기</button>
+            </div>
+            <!-- [End] 팝업 버튼 -->
+        </div>
     </div>
     <!-- [End] 팝업 콘텐츠 -->
 </div>
@@ -383,7 +391,7 @@
 
     <!-- [Start] 설문조사 상세 입력 팝업 -->
     <!-- 팝업 창 data-id 설정 -->
-<div class="popup" data-id="popup-service-survey-write">
+<div class="popup mobile" data-id="popup-service-survey-write">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">
         <h4>설문조사</h4>
@@ -391,21 +399,71 @@
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content">
-        <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
-        <!-- [Start] 팝업 버튼 -->
-        <div class="popup-btn-set">
-            <!-- 닫기 버튼 필수 (접근성) -->
-            <button type="button" class="popup-close">닫기</button>
+    <div class="popup-content popup-service-survey-write">
+        <div class="title-area">
+            <dl class="table-dl">
+                <dt>제목</dt>
+                <dd>우리 단체는 이렇게 사업운영합니다.</dd>
+            </dl>
+            <button type="button" class="btn-type-2-03">설문 문항 전체 보기</button>
         </div>
-        <!-- [End] 팝업 버튼 -->
+        <div class="text-area">
+            <p>안녕하십니까?<br>
+            통일부 남북교류협력지원협회입니다.<br>
+            저희는 급증하는 정보공개 수요에 부응하고, 보다 질 높은 정보를 국민 여러분께 제공하고자 홈페이지를 통해 ‘사전정보공개제도’를 운영하고 있으며, 작년에 이어 이에 대한 여러분들의 의견을 듣고자 설문조사를 진행하고자 합니다.<br>
+            (작년에 여러분들께서 주신 의견은 제도운영 및 개선에 큰 도움이 되었습니다. 여러분들의 의견을 반영한 개선사항들을 별첨파일로 첨부해 드리니 확인 바랍니다.)</p>
+            <!-- [Start] 팝업 버튼 -->
+            <div class="survey-question">
+                <h5>1. 사전정보공개에 대해 건의할 게 있습니까? <span>(복수선택 가능)</span></h5>
+                <ul class="survey-result">
+                    <li>
+                        <div class="checkbox-type">
+                            <input type="checkbox" id="result-01" name="result">
+                            <label for="result-01">없다</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-type">
+                            <input type="checkbox" id="result-02" name="result">
+                            <label for="result-02">잘 모르겠다</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-type">
+                            <input type="checkbox" id="result-03" name="result">
+                            <label for="result-03">잘 진행되고 있다</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-type">
+                            <input type="checkbox" id="result-04" name="result">
+                            <label for="result-04">관심없다</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox-type">
+                            <input type="checkbox" id="result-05" name="result">
+                            <label for="result-05">기타</label>
+                        </div>
+                        <div class="input-type">
+                            <input type="text" aria-label="기타" aria-hidden="true" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="popup-btn-set">
+                <button type="button" class="btn-type-1-04">다음 설문</button>
+                <button type="button" class="popup-close">닫기</button>
+            </div>
+            <!-- [End] 팝업 버튼 -->
+        </div>
     </div>
     <!-- [End] 팝업 콘텐츠 -->
 </div>
     <!-- [End] 설문조사 상세 입력 팝업 -->
 
     <!-- [Start] 설문조사 결과보기 팝업 -->
-    <!-- 팝업 창 data-id 설정 -->
+    <!-- 모바일 & 테블릿으로 접속 시 mobile 클래스 삽입 -->
 <div class="popup" data-id="popup-service-survey-result">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">

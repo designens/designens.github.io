@@ -1114,7 +1114,7 @@ JS 내용 작성</code></pre>
                         </tbody>
                     </table>
 <pre><code class="language-html">&lt;table class=&quot;table-type-01&quot;&gt;
-    &lt;caption&gt;Q&amp;A 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.&lt;/caption&gt;
+    &lt;caption&gt;&quot;○○○&quot; 테이블의 &quot;○○○&quot; 항목이 있습니다.&lt;/caption&gt;
     &lt;colgroup&gt;
         &lt;col&gt;
         &lt;col&gt;
@@ -1125,22 +1125,20 @@ JS 내용 작성</code></pre>
     &lt;/colgroup&gt;
     &lt;thead&gt;
         &lt;tr&gt;
-            &lt;th&gt;번호&lt;/th&gt;
-            &lt;th&gt;분야&lt;/th&gt;
-            &lt;th&gt;제목&lt;/th&gt;
-            &lt;th&gt;작성자&lt;/th&gt;
-            &lt;th&gt;첨부파일&lt;/th&gt;
-            &lt;th&gt;등록일&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;국내외 언론동향&lt;/td&gt;
-            &lt;!-- 한 줄 이상 줄바꿈 없이 말줄임 처리 class=&quot;view-link&quot; 적용 --&gt;
-            &lt;td class=&quot;icon-secret&quot;&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.&lt;/a&gt;
-            &lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td class=&quot;icon-secret&quot;&gt;&lt;a href class=&quot;view-link&quot; role=&quot;button&quot;&gt;팝업 링크 내용&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
             &lt;td class=&quot;table-download&quot;&gt;
                 &lt;span class=&quot;icon-hwp&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
                 &lt;span class=&quot;icon-doc&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
@@ -1148,106 +1146,22 @@ JS 내용 작성</code></pre>
                 &lt;span class=&quot;icon-jpg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
                 &lt;div class=&quot;download-file&quot;&gt;
                     &lt;strong&gt;파일명 :&lt;/strong&gt;
-                    &lt;a href=&quot;&quot;&gt;대북지원사업신청서.hwp&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;남북협력기금지원신청서.doc&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;파일명.hwp&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;파일명.doc&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;파일명.pdf&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;파일명.jpg&lt;/a&gt;
                     &lt;button type=&quot;button&quot; class=&quot;btn-download-close&quot;&gt;다운로드 팝업 닫기&lt;/button&gt;
                 &lt;/div&gt;
             &lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;북한동향&lt;/td&gt;
-            &lt;!-- 비밀글의 경우 td안에 icon-secret 클래스 적용 --&gt;
-            &lt;td class=&quot;icon-secret&quot;&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;
-                &lt;span class=&quot;icon-hwp&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;span class=&quot;icon-doc&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;span class=&quot;icon-pdf&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;span class=&quot;icon-jpg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;div class=&quot;download-file&quot;&gt;
-                    &lt;strong&gt;파일명 :&lt;/strong&gt;
-                    &lt;a href=&quot;&quot;&gt;대북지원사업신청서.hwp&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;남북협력기금지원신청서.doc&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
-                    &lt;button type=&quot;button&quot; class=&quot;btn-download-close&quot;&gt;다운로드 팝업 닫기&lt;/button&gt;
-                &lt;/div&gt;
-            &lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;행사정보&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;기타&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;북한동향&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;행사정보&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;기타&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;국내외 언론동향&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;국내외 언론동향&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;175&lt;/td&gt;
-            &lt;td&gt;기타&lt;/td&gt;
-            &lt;td&gt;&lt;a href class=&quot;btn-popup-qna-list view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;id****&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;&lt;/td&gt;
             &lt;td&gt;2017-12-11&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
                     <p class="ui-kit-comment">
-                        <span class="skyblue">&lt;caption&gt;</span> 요소의 설명은 "제목(타이틀)<strong class="red"> 테이블의 </strong> 번호, 분야, 제목, 작성자, 첨부파일, 등록일 <strong class="red">항목이 있습니다.</strong>" 와 같이 빨간 글자를 포함하여 설명을 작성합니다.<br>
-                        각 컬럼의 너비는 <span class="skyblue">&lt;col&gt;</span> 요소에 <strong class="red">width 요소로 값을 정의</strong> 합니다.
+                        <span class="skyblue">&lt;caption&gt;</span> 요소의 설명은 "○○○(제목)<strong class="red"> 테이블의 </strong> ○○○(항목) <strong class="red">항목이 있습니다.</strong>" 와 같이 빨간 글자를 포함하여 청각만으로도 표의 구조를 파악할 수 있도록 상세히 설명합니다.<br>
+                        각 컬럼의 너비는 <span class="skyblue">&lt;col&gt;</span> 요소에 <strong class="red">width 요소로 값을 정의</strong> 합니다.<br>
+                        팝업 링크 내용이 한 줄 이상일 경우 <span class="skyblue">&lt;a class="<strong class="red">view-link</strong>"&gt;</span>를 적용하면 줄바꿈 없이 말줄임 처리됩니다.<br>
+                        팝업 링크 내용을 잠금 설정할 경우 <span class="skyblue">&lt;td class="<strong class="red">icon-secret</strong>"&gt;</span>를 적용하면 잠금 아이콘이 표시됩니다.
                     </p>
                     <!-- [End] table-type-01 -->
 
@@ -1355,7 +1269,7 @@ JS 내용 작성</code></pre>
                         </tbody>
                     </table>
 <pre><code class="language-html">&lt;table class=&quot;table-type-02&quot;&gt;
-    &lt;caption&gt;&quot;table-type-02&quot; 테이블의&quot;제목, 작성자, 패스워드, 첨부파일&quot; 항목이 있습니다.&lt;/caption&gt;
+    &lt;caption&gt;&quot;○○○&quot; 테이블의 &quot;○○○&quot; 항목이 있습니다.&lt;/caption&gt;
     &lt;colgroup&gt;
         &lt;col&gt;
         &lt;col&gt;
@@ -1364,29 +1278,14 @@ JS 내용 작성</code></pre>
     &lt;/colgroup&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
-            &lt;th&gt;제목&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
             &lt;td colspan=&quot;3&quot;&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;th&gt;작성자&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
             &lt;td&gt;&lt;/td&gt;
-            &lt;th&gt;패스워드&lt;/th&gt;
+            &lt;th&gt;항목&lt;/th&gt;
             &lt;td&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;첨부파일&lt;/th&gt;
-            &lt;td colspan=&quot;3&quot;&gt;
-                &lt;!-- [Start] 첨부파일 추가 --&gt;
-                &lt;div class=&quot;add-file-area&quot;&gt;
-                    &lt;div class=&quot;file full-name&quot;&gt;
-                        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;첨부파일1.hwp&lt;/a&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;file full-name&quot;&gt;
-                        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;첨부파일2.hwp&lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;!-- [End] 첨부파일 추가 --&gt;
-            &lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>

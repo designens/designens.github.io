@@ -3086,11 +3086,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
 
-.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .popup .popup-content, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul, .footer-link-banner .wrap, .footer-link-banner .wrap .link-banner-area ul { *zoom: 1; }
+.add-file-search, .paging, .header, #container, .content-form-area .form-group, .step-area ul, .porgress-area, .all-pages-view, .input-type.tel, .gallery, .tablist, .gnb-area, .gnb-area .gnb #gnb-menu, .gnb-area .gnb #gnb-menu li a, #gnb-all-menu .wrap, .popup .popup-headline, .popup .popup-content, .login-content .form-group, .news-letters .gallery, .support-application-status .content-box-area .tracking-progress ul, .popup-service-survey-list .title-area, .popup-service-survey-write .title-area, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type, .popup-business-application table td .checkbox-type, .popup-business-application table td .radio-type, .popup-view-results-business table td .checkbox-type, .popup-register-your-funds-usage-report-business table td .checkbox-type, .popup-view-results-business table td .radio-type, .popup-register-your-funds-usage-report-business table td .radio-type, .popup-view-results-business .table-dl .add-file-area ul, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul, .footer-link-banner .wrap, .footer-link-banner .wrap .link-banner-area ul, .sdgs-area article { *zoom: 1; }
 
-.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .popup .popup-content:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .footer-link-banner .wrap:before, .footer-link-banner .wrap .link-banner-area ul:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .popup .popup-content:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .link-banner-area ul:after { content: ""; display: table; }
+.add-file-search:before, .paging:before, .header:before, #container:before, .content-form-area .form-group:before, .step-area ul:before, .porgress-area:before, .all-pages-view:before, .input-type.tel:before, .gallery:before, .tablist:before, .gnb-area:before, .gnb-area .gnb #gnb-menu:before, .gnb-area .gnb #gnb-menu li a:before, #gnb-all-menu .wrap:before, .popup .popup-headline:before, .popup .popup-content:before, .login-content .form-group:before, .news-letters .gallery:before, .support-application-status .content-box-area .tracking-progress ul:before, .popup-service-survey-list .title-area:before, .popup-service-survey-write .title-area:before, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:before, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:before, .popup-business-application table td .checkbox-type:before, .popup-business-application table td .radio-type:before, .popup-view-results-business table td .checkbox-type:before, .popup-register-your-funds-usage-report-business table td .checkbox-type:before, .popup-view-results-business table td .radio-type:before, .popup-register-your-funds-usage-report-business table td .radio-type:before, .popup-view-results-business .table-dl .add-file-area ul:before, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:before, .footer-link-banner .wrap:before, .footer-link-banner .wrap .link-banner-area ul:before, .sdgs-area article:before, .add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .popup .popup-content:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .popup-service-survey-list .title-area:after, .popup-service-survey-write .title-area:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .link-banner-area ul:after, .sdgs-area article:after { content: ""; display: table; }
 
-.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .popup .popup-content:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .link-banner-area ul:after { clear: both; }
+.add-file-search:after, .paging:after, .header:after, #container:after, .content-form-area .form-group:after, .step-area ul:after, .porgress-area:after, .all-pages-view:after, .input-type.tel:after, .gallery:after, .tablist:after, .gnb-area:after, .gnb-area .gnb #gnb-menu:after, .gnb-area .gnb #gnb-menu li a:after, #gnb-all-menu .wrap:after, .popup .popup-headline:after, .popup .popup-content:after, .login-content .form-group:after, .news-letters .gallery:after, .support-application-status .content-box-area .tracking-progress ul:after, .popup-service-survey-list .title-area:after, .popup-service-survey-write .title-area:after, .business-application .panel-group [aria-labelledby="tab1"] table td .checkbox-type:after, .business-application .panel-group [aria-labelledby="tab1"] table td .radio-type:after, .popup-business-application table td .checkbox-type:after, .popup-business-application table td .radio-type:after, .popup-view-results-business table td .checkbox-type:after, .popup-register-your-funds-usage-report-business table td .checkbox-type:after, .popup-view-results-business table td .radio-type:after, .popup-register-your-funds-usage-report-business table td .radio-type:after, .popup-view-results-business .table-dl .add-file-area ul:after, .popup-register-your-funds-usage-report-business .table-dl .add-file-area ul:after, .footer-link-banner .wrap:after, .footer-link-banner .wrap .link-banner-area ul:after, .sdgs-area article:after { clear: both; }
 
 .search-area .input-type label span { position: absolute; left: -9999px; visibility: hidden; }
 
@@ -3382,6 +3382,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .content-box-area h3 { position: relative; display: inline-block; font-size: 16px; padding-left: 10px; margin-top: 30px; margin-bottom: 13px; }
 
 .content-box-area h3:before { position: absolute; top: 1px; left: 0; display: inline-block; width: 3px; height: 16px; background: #003761; content: ""; }
+
+.content-box-area h3 span { font-weight: normal; }
 
 .content-box-area h3 + .sub-top-btn-area { float: right; margin-top: 27px; }
 
@@ -3936,6 +3938,40 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .comment-upload dd .comment-edit-area .comment-delete:after { position: absolute; top: 0; left: 3px; font-family: 'FontAwesome'; content: ""; font-size: 13px; font-size: 1.3rem; color: #4d4d4d; }
 
 /* =======================================*/
+/* 질문 / 답 선택 영역
+/* =======================================*/
+.survey-question { padding: 30px 20px; text-align: left; }
+
+.survey-question h5 { font-size: 14px; font-weight: bold; margin-bottom: 20px; }
+
+.survey-question h5 span { font-weight: normal; }
+
+.survey-question:nth-of-type(1) { padding-top: 60px; }
+
+.survey-question .survey-result li { line-height: 30px; }
+
+.survey-question .survey-result li div { display: inline-block; margin-right: 10px; }
+
+.survey-question .survey-result li div:last-child { margin-right: 0; }
+
+.survey-question .survey-result li .checkbox-type input + label, .survey-question .survey-result li .radio-type input + label, .survey-question .survey-result li .radio-type input + label { padding-left: 25px; }
+
+@media only screen and (max-width: 760px) and (max-width: 760px) { .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl { width: 100%; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl dt { position: absolute; top: -9999px; visibility: hidden; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl dd { font-size: 16px; min-width: 280px; width: 100%; height: auto; padding: 0; padding-bottom: 10px; border: 0; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .btn-type-2-03 { font-size: 16px; float: inherit; min-width: 280px; width: 100%; margin-top: 10px; } }
+
+@media only screen and (max-width: 760px) { .popup.mobile [class*="popup-service-survey-"].popup-content .text-area { padding: 0 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area p { padding: 15px 10px 25px 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question { padding: 20px 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question:nth-of-type(1) { padding-top: 40px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result li div { margin-right: 0; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result .input-type { display: block; min-width: calc(100% - 25px); margin-left: 25px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result .input-type input { width: 100%; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .popup-btn-set { padding-left: 0; padding-right: 0; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .popup-btn-set button { font-size: 16px; display: inline-block; min-width: calc(50% - 13px); height: 38px; line-height: 36px; text-align: center; padding: 0 10px; border-radius: 3px; } }
+
+/* =======================================*/
 /* 웹에디터 영역
 /* =======================================*/
 .web-edit-area { height: 300px; background: #d5d5d5; margin-top: 10px; }
@@ -4027,28 +4063,28 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .table-type-02 tr td { padding: 6px 10px; }
 
 /* ul, li 테이블 형태 */
-.table-li { display: table; width: 100%; border: 1px solid #d1d1d1; }
+.table-li { display: table; width: 100%; }
 
-.table-li li { display: table-cell; vertical-align: middle; min-height: 42px; padding: 10px; border-right: 1px solid #d1d1d1; }
+.table-li li { display: table-cell; vertical-align: middle; min-height: 42px; padding: 10px; border: 1px solid #d1d1d1; border-right: 0; }
 
-.table-li li.title { font-weight: bold; color: #2e3a42; background: #f0f3f5; height: 42px; padding: 0 20px; }
+.table-li li.title { font-weight: bold; color: #2e3a42; background: #f0f3f5; height: 42px; padding: 10px 20px; }
 
-.table-li li:last-child { border-right: 0; }
+.table-li li:last-child { border-right: 1px solid #d1d1d1; }
 
 /* dl, dt, dd 테이블 형태 */
-.table-dl { width: 100%; display: table; border: 1px solid #d1d1d1; }
+.table-dl { width: 100%; display: table; }
 
-.table-dl dt, .table-dl dd { display: table-cell; height: 42px; line-height: 42px; }
+.table-dl dt, .table-dl dd { display: table-cell; height: 42px; vertical-align: middle; border: 1px solid #d1d1d1; }
 
-.table-dl dt { font-weight: bold; color: #2e3a42; padding: 0 20px; vertical-align: middle; background: #f0f3f5; border-right: 1px solid #d1d1d1; }
+.table-dl dt { font-weight: bold; color: #2e3a42; padding: 10px 20px; background: #f0f3f5; }
 
-.table-dl dd { padding: 0 10px; }
+.table-dl dd { padding: 10px; border-left: 0; }
 
-.table-dt-dd { width: 100%; border: 1px solid #d1d1d1; }
+.table-dt-dd { width: 100%; }
 
-.table-dt-dd dt, .table-dt-dd dd { border-bottom: 1px solid #d1d1d1; }
+.table-dt-dd dt, .table-dt-dd dd { border: 1px solid #d1d1d1; border-bottom: 0; }
 
-.table-dt-dd dt:last-child, .table-dt-dd dd:last-child { border-bottom: 0; }
+.table-dt-dd dt:last-child, .table-dt-dd dd:last-child { border-bottom: 1px solid #d1d1d1; }
 
 .table-dt-dd dt { height: 42px; line-height: 42px; font-weight: bold; text-align: center; color: #2e3a42; padding: 0 10px; background: #f0f3f5; }
 
@@ -4217,7 +4253,7 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
   .popup .popup-content { max-height: calc(100vh - 50px); } }
 
 @media only screen and (max-width: 760px) { .popup.mobile { top: 0; left: 0; right: 0; bottom: 0; width: 100%; min-height: 100vh; max-height: 100vh; transform: inherit; }
-  .popup.mobile .popup-content { max-height: calc(100vh - 50px); padding: 20px 20px 0 20px; } }
+  .popup.mobile .popup-content { max-height: calc(100vh - 50px); padding: 20px; } }
 
 .readable-hidden { overflow: hidden; position: absolute; top: auto; left: -100000px; width: 1px; height: 1px; }
 
@@ -4767,10 +4803,28 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* 회원서비스 > 설문조사 상세 내용 팝업 (pc, mobile)
 /* (html/popup-service-survey-list.html)
 /* =======================================*/
-.popup-service-survey-list { text-align: center; }
+.popup-service-survey-list, .popup-service-survey-write { text-align: center; }
 
-.popup-service-survey-list p { display: inline-block; min-width: 280px; max-width: 760px; height: 384px; text-align: left; padding: 30px; border: 1px solid #d2d4d6; border-radius: 10px; box-shadow: 0 4   px 0 0 #d2d4d6; }
+.popup-service-survey-list.popup-content, .popup-content.popup-service-survey-write { padding: 50px 60px; }
 
+.popup-service-survey-list .title-area, .popup-service-survey-write .title-area { margin-bottom: 10px; }
+
+.popup-service-survey-list .title-area .table-dl, .popup-service-survey-write .title-area .table-dl { float: left; width: calc(100% - 164px); }
+
+.popup-service-survey-list .title-area .table-dl dt, .popup-service-survey-write .title-area .table-dl dt { min-width: 70px; }
+
+.popup-service-survey-list .title-area .table-dl dd, .popup-service-survey-write .title-area .table-dl dd { text-align: left; }
+
+.popup-service-survey-list .title-area .btn-type-2-03, .popup-service-survey-write .title-area .btn-type-2-03 { float: right; display: inline-block; min-width: 154px; height: 42px; line-height: 40px; text-align: center; padding: 0 10px; border-radius: 3px; }
+
+.popup-service-survey-list .text-area, .popup-service-survey-write .text-area { display: inline-block; min-width: 280px; max-width: 760px; min-height: 290px; padding: 0 30px; border: 1px solid #d2d4d6; border-radius: 10px; box-shadow: 0 4px 0 0 #d2d4d6; }
+
+.popup-service-survey-list .text-area p, .popup-service-survey-write .text-area p { color: #333; text-align: left; line-height: 2; padding: 30px 20px; border-bottom: 1px dashed #e6e6e6; }
+
+/* =======================================*/
+/* 회원서비스 > 설문조사 상세 입력 팝업 (pc, mobile)
+/* (html/popup-service-survey-write.html)
+/* =======================================*/
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회
 /* (html/business-application.html)
@@ -5064,6 +5118,58 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* (html/domestic-statistics-list.html)
 /* =======================================*/
 .domestic-statistics-list .panel-group [role="tabpanel"] .content-box-area:first-child { padding-top: 15px; }
+
+/* =======================================*/
+/* 북한현황지표 > SDGs > SDGs
+/* (html/sdgs.html)
+/* =======================================*/
+.sdgs-area { padding: 0 !important; }
+
+.sdgs-area article { position: relative; }
+
+.sdgs-area article h3 { position: absolute; top: 42px; left: 20px; width: 60px; height: 100px; font-size: 20px; color: #fff; text-align: center; }
+
+.sdgs-area article h3:before { display: block; padding-bottom: 10px; background-position: center 0 !important; content: ""; }
+
+.sdgs-area article ul { display: inline-block; margin: 35px 40px 35px 0; vertical-align: top; }
+
+.sdgs-area article ul:nth-of-type(1) { margin-left: 100px; }
+
+.sdgs-area article ul li { position: relative; min-height: 30px; padding: 4px 10px; color: #fff; }
+
+.sdgs-area article ul li:before { position: absolute; top: 14px; left: 0; display: block; width: 3px; height: 3px; background: #fff; content: ""; }
+
+.sdgs-area article:nth-of-type(1) { width: 32.63158%; float: left; margin-right: 1.05263%; height: 830px; background: #051c32; }
+
+.sdgs-area article:nth-of-type(1) h3:before { height: 52px; background: url("../../assets/images/icon/icon-sdg.png") no-repeat; }
+
+.sdgs-area article:nth-of-type(1) p { position: absolute; left: 0; right: 0; bottom: 45px; font-family: Arial, sans-serif; font-size: 37px; text-align: center; letter-spacing: 0.02em; line-height: 1; color: rgba(255, 255, 255, 0.3); }
+
+.sdgs-area article:nth-of-type(1) p span { font-size: 35px; letter-spacing: -0.02em; }
+
+.sdgs-area article:nth-of-type(1) p strong { font-size: 75px; line-height: 0.9; letter-spacing: 0; }
+
+.sdgs-area article:nth-of-type(2) { width: 66.31579%; float: right; margin-right: 0; background: #1f54ad; }
+
+.sdgs-area article:nth-of-type(2) h3:before { height: 44px; background: url("../../assets/images/icon/icon-health.png") no-repeat; }
+
+.sdgs-area article:nth-of-type(3) { width: 32.63158%; float: left; margin-right: 1.05263%; background: #db8703; }
+
+.sdgs-area article:nth-of-type(3) h3:before { height: 68px; background: url("../../assets/images/icon/icon-agriculture.png") no-repeat; }
+
+.sdgs-area article:nth-of-type(4) { width: 32.63158%; float: right; margin-right: 0; height: 235px; background: #c34c14; }
+
+.sdgs-area article:nth-of-type(4) h3:before { height: 60px; background: url("../../assets/images/icon/icon-energy.png") no-repeat; }
+
+.sdgs-area article:nth-of-type(5) { width: 32.63158%; float: left; margin-right: 1.05263%; background: #689a13; }
+
+.sdgs-area article:nth-of-type(5) h3:before { height: 50px; background: url("../../assets/images/icon/icon-forest.png") no-repeat; }
+
+.sdgs-area article:nth-of-type(6) { width: 32.63158%; float: right; margin-right: 0; height: 235px; margin-top: -35px; background: #0f7b1f; }
+
+.sdgs-area article:nth-of-type(6) h3:before { height: 66px; background: url("../../assets/images/icon/icon-environment.png") no-repeat; }
+
+.sdgs-area article:nth-of-type(3), .sdgs-area article:nth-of-type(4), .sdgs-area article:nth-of-type(5) { margin-top: 10px; }
 
 @media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) { .test { position: absolute; top: 0; left: 0; display: inline-block !important; }
   .test.w1 { width: 1%; }
