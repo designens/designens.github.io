@@ -3400,6 +3400,17 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 .content-box-area .left-area, .content-box-area .right-area { width: calc((100% - 30px)/2); }
 
 /* =======================================*/
+/* Sub Page : 별첨, 윗첨자 스타일
+/* =======================================*/
+.enclosure p { position: relative; padding-left: 14px; }
+
+.enclosure p:before { position: absolute; top: 9px; left: 0; display: inline-block; width: 4px; height: 4px; background: #003761; content: ""; }
+
+.enclosure .superscript { padding-top: 7px; border-top: 1px solid #ededed; margin-top: 7px; }
+
+.enclosure .superscript sup { font-weight: bold; vertical-align: text-top; }
+
+/* =======================================*/
 /* Sub Page : Content Box 스타일
 /* =======================================*/
 /* =======================================*/
@@ -3984,21 +3995,21 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 /* =======================================*/
 .web-edit-area { height: 300px; background: #d5d5d5; margin-top: 10px; }
 
-.web-edit-area p, .web-edit-area .test { text-align: center; line-height: 300px; }
+.web-edit-area .test { text-align: center; line-height: 300px; }
 
 /* =======================================*/
 /* 테이블 영역
 /* =======================================*/
 .web-table-area, .web-map-area { min-height: 78px; margin-bottom: 30px; overflow-x: auto; }
 
-.web-table-area p, .web-table-area .test, .web-map-area p, .web-map-area .test { text-align: center; line-height: 440px; background: #d5d5d5; }
+.web-table-area .test, .web-map-area .test { text-align: center; line-height: 440px; background: #d5d5d5; }
 
 /* =======================================*/
 /* 웹그래프 영역
 /* =======================================*/
 .web-graph-area { min-height: 440px; padding: 30px; margin-bottom: 30px; border: 1px solid #c2c2c2; }
 
-.web-graph-area p, .web-graph-area .test { font-size: 30px; text-align: center; line-height: 380px; background: #d5d5d5; }
+.web-graph-area .test { font-size: 30px; text-align: center; line-height: 380px; background: #d5d5d5; }
 
 /* =======================================*/
 /* 테이블 스타일
@@ -4043,11 +4054,15 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .table-type-01 tbody th, .table-type-01 tbody td { border-right: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; }
 
+.table-type-01 tbody td p { margin-bottom: 4px; }
+
+.table-type-01 tbody td p:last-child { margin-bottom: 0; }
+
 .table-type-01 tr th { color: #2e3a42; }
 
 .table-type-01 tr th.sub-title { font-weight: normal; }
 
-.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; padding: 1px 10px; /* 제목 - 팝업 링크 */ /* 제목 - 전체 조회수 */ }
+.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; padding: 8px 10px; /* 제목 - 팝업 링크 */ /* 제목 - 전체 조회수 */ }
 
 .table-type-01 tr th .view-link, .table-type-01 tr td .view-link { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; }
 
