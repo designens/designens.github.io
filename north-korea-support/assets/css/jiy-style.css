@@ -3963,21 +3963,6 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .survey-question .survey-result li .checkbox-type input + label, .survey-question .survey-result li .radio-type input + label, .survey-question .survey-result li .radio-type input + label { padding-left: 25px; }
 
-@media only screen and (max-width: 760px) and (max-width: 760px) { .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl { width: 100%; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl dt { position: absolute; top: -9999px; visibility: hidden; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl dd { font-size: 16px; min-width: 280px; width: 100%; height: auto; padding: 0; padding-bottom: 10px; border: 0; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .btn-type-2-03 { font-size: 16px; float: inherit; min-width: 280px; width: 100%; margin-top: 10px; } }
-
-@media only screen and (max-width: 760px) { .popup.mobile [class*="popup-service-survey-"].popup-content .text-area { padding: 0 10px; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area p { padding: 15px 10px 25px 10px; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question { padding: 20px 10px; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question:nth-of-type(1) { padding-top: 40px; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result li div { margin-right: 0; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result .input-type { display: block; min-width: calc(100% - 25px); margin-left: 25px; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result .input-type input { width: 100%; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .popup-btn-set { padding-left: 0; padding-right: 0; }
-  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .popup-btn-set button { font-size: 16px; display: inline-block; min-width: calc(50% - 13px); height: 38px; line-height: 36px; text-align: center; padding: 0 10px; border-radius: 3px; } }
-
 /* =======================================*/
 /* 웹에디터 영역
 /* =======================================*/
@@ -4838,6 +4823,21 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup-service-survey-list .text-area p, .popup-service-survey-write .text-area p { color: #333; text-align: left; line-height: 2; padding: 30px 20px; border-bottom: 1px dashed #e6e6e6; }
 
+@media only screen and (max-width: 760px) { .popup.mobile { min-width: 320px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl { width: 100%; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl dt { position: absolute; top: -9999px; visibility: hidden; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .table-dl dd { font-size: 16px; min-width: 280px; width: 100%; height: auto; padding: 0; padding-bottom: 10px; border: 0; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .title-area .btn-type-2-03 { font-size: 16px; float: inherit; min-width: 280px; width: 100%; margin-top: 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area { padding: 0 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area p { padding: 15px 10px 25px 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question { padding: 20px 10px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question:nth-of-type(1) { padding-top: 40px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result li div { margin-right: 0; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result .input-type { display: block; min-width: calc(100% - 25px); margin-left: 25px; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .survey-question .survey-result .input-type input { width: 100%; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .popup-btn-set { padding-left: 0; padding-right: 0; }
+  .popup.mobile [class*="popup-service-survey-"].popup-content .text-area .popup-btn-set button { font-size: 16px; display: inline-block; min-width: calc(50% - 13px); height: 38px; line-height: 36px; text-align: center; padding: 0 10px; border-radius: 3px; } }
+
 /* =======================================*/
 /* 회원서비스 > 설문조사 상세 입력 팝업 (pc, mobile)
 /* (html/popup-service-survey-write.html)
@@ -4856,17 +4856,45 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .popup-service-survey-result .results-area ol { padding: 30px; border-top: 1px dashed #e1e4e6; border-bottom: 1px dashed #e1e4e6; }
 
-.popup-service-survey-result .results-area ol li { color: #666; height: 34px; line-height: 34px; }
+.popup-service-survey-result .results-area ol li { width: 100%; height: 34px; line-height: 34px; }
 
-.popup-service-survey-result .results-area ol li span { display: inline-block; min-width: 170px; color: #333; }
+.popup-service-survey-result .results-area ol li span { display: inline-block; }
 
-.popup-service-survey-result .results-area .statistics { height: 42px; line-height: 42px; padding: 0 30px; }
+.popup-service-survey-result .results-area ol li span:first-child { float: left; min-width: 170px; color: #333; }
+
+.popup-service-survey-result .results-area ol li span:last-child { float: right; color: #666; min-width: 80px; text-align: right; }
+
+.popup-service-survey-result .results-area ol li progress[value] { width: calc(100% - 260px); height: 26px; vertical-align: middle; -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; }
+
+.popup-service-survey-result .results-area ol li progress[value]::-moz-progress-bar { background-color: #f05c26; }
+
+.popup-service-survey-result .results-area ol li progress[value]::-webkit-progress-value { background-color: #f05c26; }
+
+.popup-service-survey-result .results-area ol li progress[value]::-webkit-progress-bar { background-color: #fdeee9; }
+
+.popup-service-survey-result .results-area .statistics { min-height: 42px; padding: 10px 30px; }
+
+.popup-service-survey-result .results-area .statistics p { display: inline-block; }
+
+.popup-service-survey-result .results-area .statistics p:first-child:after { content: " / "; }
 
 .popup-service-survey-result .results-area .statistics .fa { color: #003761; margin-right: 4px; }
 
 .popup-service-survey-result .results-area .statistics .fa-user { font-size: 18px; vertical-align: -1px; }
 
-.popup-service-survey-result .results-area .statistics .fa-commenting { font-size: 16px; margin-left: 15px; }
+.popup-service-survey-result .results-area .statistics .fa-commenting { font-size: 16px; margin-left: 15px; transform: scale(-1, 1); }
+
+@media only screen and (max-width: 760px) { .popup.mobile .popup-service-survey-result .title-area { position: absolute; top: -9999px; visibility: hidden; }
+  .popup.mobile .popup-service-survey-result .results-area h5 { padding: 18px; }
+  .popup.mobile .popup-service-survey-result .results-area ol { padding: 18px; }
+  .popup.mobile .popup-service-survey-result .results-area ol li span:first-child { min-width: auto; }
+  .popup.mobile .popup-service-survey-result .results-area ol li span:last-child { min-width: auto; }
+  .popup.mobile .popup-service-survey-result .results-area ol li progress { position: absolute; top: -9999px; visibility: hidden; }
+  .popup.mobile .popup-service-survey-result .results-area .statistics { width: auto; padding: 10px 18px; }
+  .popup.mobile .popup-service-survey-result .results-area .statistics p { display: block; }
+  .popup.mobile .popup-service-survey-result .results-area .statistics p:first-child:after { content: ""; }
+  .popup.mobile .popup-service-survey-result .results-area .statistics .fa { width: 16px; text-align: center; }
+  .popup.mobile .popup-service-survey-result .results-area .statistics .fa-commenting { margin-left: 0; } }
 
 /* =======================================*/
 /* 기금사업신청 > 사업신청 조회
