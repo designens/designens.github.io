@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+    <!-- CSS : 기존 스타일 -->
+    <link rel="stylesheet" href="../../assets/css/human.css">
+    <!-- CSS : 신규 추가 스타일 -->
+    <link rel="stylesheet" href="../../assets/css/cy-human.css">
+</head>
+<body>
+
+    <div class="popup-container">
+        <div class="popup">
+            <!-- [Start] 팝업 헤드라인 -->
+            <header class="popup-headline">
+                <h4>팝업 제목</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </header>
+            <!-- [End] 팝업 헤드라인 -->
+            <!-- [Start] 팝업 콘텐츠 -->
+            <div class="popup-content">
+
+                <!-- [Start] 테이블 영역 -->
+                <div class="cy-section-table">
+                    <table>
+                        <caption>설문지 작성의 제목, 안내문 쓰기 테이블 입니다.</caption>
+                        <colgroup>
+                            <col width="112">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제목</th>
+                                <td><input class="cy-w100p" type="text" aria-label="제목 입력"></td>
+                            </tr>
+                            <tr>
+                                <th>안내문 쓰기</th>
+                                <td><textarea rows="3" aria-label="안내문 입력"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- [End] 테이블 영역 -->
+
+                <!-- [Start] 섹션 영역 -->
+                <div class="cy-section-box">
+                    <div class="cy-title">
+                        <h5>섹션</h5>
+                    </div>
+                    <textarea rows="3" aria-label="세션 입력"></textarea>
+                </div>
+                <!-- [End] 섹션 영역 -->
+
+                <!-- [Start] 질문 : 단답형 수정 영역 -->
+                <div class="cy-section-box">
+                    <div class="cy-title">
+                        <h5>질문</h5>
+                        <div class="cy-btn-set">
+                            <select aria-label="질문유형 선택">
+                                <option selected>단답형</option>
+                                <option>장문형</option>
+                                <option>단일선택형</option>
+                                <option>다중선택형</option>
+                                <option>증감</option>
+                                <option>그리드</option>
+                            </select>
+                            <button class="cy-btn-gray" type="button">보기</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <textarea rows="3" aria-label="질문 입력"></textarea>
+                </div>
+                <!-- [End] 질문 : 단답형 수정 영역 -->
+
+                <!-- [Start] 질문 : 단답형 보기 영역 -->
+                <div class="cy-section-box cy-view">
+                    <div class="cy-title">
+                        <h5>1. 사전정보공개에 대해 건의할 게 있습니까?</h5>
+                        <div class="cy-btn-set">
+                            <button class="cy-btn-gray" type="button">수정</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <input class="cy-w100p" type="text" aria-label="단답형으로 작성하세요.">
+                </div>
+                <!-- [End] 질문 : 단답형 보기 영역 -->
+
+                <!-- [Start] 질문 : 장문형 수정 영역 -->
+                <div class="cy-section-box">
+                    <div class="cy-title">
+                        <h5>질문</h5>
+                        <div class="cy-btn-set">
+                            <select aria-label="질문유형 선택">
+                                <option>단답형</option>
+                                <option selected>장문형</option>
+                                <option>단일선택형</option>
+                                <option>다중선택형</option>
+                                <option>증감</option>
+                                <option>그리드</option>
+                            </select>
+                            <button class="cy-btn-gray" type="button">보기</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <textarea rows="3" aria-label="질문 입력"></textarea>
+                </div>
+                <!-- [End] 질문 : 장문형 수정 영역 -->
+
+                <!-- [Start] 질문 : 장문형 보기 영역 -->
+                <div class="cy-section-box cy-view">
+                    <div class="cy-title">
+                        <h5>1. 사전정보공개에 대해 건의할 게 있습니까?</h5>
+                        <div class="cy-btn-set">
+                            <button class="cy-btn-gray" type="button">수정</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <textarea rows="5" aria-label="장문형으로 작성하세요."></textarea>
+                </div>
+                <!-- [End] 질문 : 장문형 보기 영역 -->
+
+                <!-- [Start] 질문 : 단일선택형 수정 영역 -->
+                <div class="cy-section-box">
+                    <div class="cy-title">
+                        <h5>질문</h5>
+                        <div class="cy-btn-set">
+                            <select aria-label="질문유형 선택">
+                                <option>단답형</option>
+                                <option>장문형</option>
+                                <option selected>단일선택형</option>
+                                <option>다중선택형</option>
+                                <option>증감</option>
+                                <option>그리드</option>
+                            </select>
+                            <button class="cy-btn-gray" type="button">보기</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <textarea rows="3" aria-label="질문 입력"></textarea>
+                    <!-- [Start] 문항추가 -->
+                    <div class="cy-item-add">
+                        <div class="cy-ex-txt">
+                            <input class="cy-w100p" id="ex01" type="text" placeholder="문항 1" aria-label="문항 입력">
+                        </div>
+                        <div class="cy-ex-btn">
+                            <button class="cy-btn-lightgrey" type="text">기타</button>
+                            <button class="cy-btn-lightgrey add" type="text">문항 추가</button>
+                            <button class="cy-btn-lightgrey remove" type="text">문항 삭제</button>
+                        </div>
+                    </div>
+                    <!-- [End] 문항추가 -->
+                </div>
+                <!-- [End] 질문 : 단일선택형 수정 영역 -->
+
+                <!-- [Start] 질문 : 단일선택형 보기 영역 -->
+                <div class="cy-section-box cy-view">
+                    <div class="cy-title">
+                        <h5>1. 사전정보공개에 대해 건의할 게 있습니까?</h5>
+                        <div class="cy-btn-set">
+                            <button class="cy-btn-gray" type="button">수정</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <ul class="cy-check-list">
+                        <li>
+                            <input id="radio-id" type="radio">
+                            <label for="radio-id">없다</label>
+                        </li>
+                        <li>
+                            <input id="radio-id" type="radio">
+                            <label for="radio-id">잘 모르겠다</label>
+                        </li>
+                        <li>
+                            <input id="radio-id" type="radio">
+                            <label for="radio-id">잘 진행되고 있다</label>
+                        </li>
+                        <li>
+                            <input id="radio-id" type="radio">
+                            <label for="radio-id">관심없다</label>
+                        </li>
+                        <li>
+                            <input id="radio-id" type="radio">
+                            <label for="radio-id">기타</label>
+                            <input id="text-id" type="text" aria-label="기타 답변 입력하세요.">
+                        </li>
+                    </ul>
+                </div>
+                <!-- [End] 질문 : 단일선택형 보기 영역 -->
+
+                <!-- [Start] 질문 : 다중선택형 수정 영역 -->
+                <div class="cy-section-box">
+                    <div class="cy-title">
+                        <h5>질문</h5>
+                        <div class="cy-btn-set">
+                            <label for="cy-number">선택 문항수</label>
+                            <input id="cy-number" type="number" min="2" max="10">
+                            <select aria-label="질문유형 선택">
+                                <option>단답형</option>
+                                <option>장문형</option>
+                                <option>단일선택형</option>
+                                <option selected>다중선택형</option>
+                                <option>증감</option>
+                                <option>그리드</option>
+                            </select>
+                            <button class="cy-btn-gray" type="button">보기</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <textarea rows="3" aria-label="질문 입력"></textarea>
+                    <!-- [Start] 문항추가 -->
+                    <div class="cy-item-add">
+                        <div class="cy-ex-txt">
+                            <input class="cy-w100p" id="ex01" type="text" placeholder="문항 1" aria-label="문항 입력">
+                        </div>
+                        <div class="cy-ex-btn">
+                            <button class="cy-btn-lightgrey" type="text">기타</button>
+                            <button class="cy-btn-lightgrey add" type="text">문항 추가</button>
+                            <button class="cy-btn-lightgrey remove" type="text">문항 삭제</button>
+                        </div>
+                    </div>
+                    <!-- [End] 문항추가 -->
+                </div>
+                <!-- [End] 질문 : 다중선택형 수정 영역 -->
+
+                <!-- [Start] 질문 : 다중선택형 보기 영역 -->
+                <div class="cy-section-box cy-view">
+                    <div class="cy-title">
+                        <h5>1. 사전정보공개에 대해 건의할 게 있습니까?<span>(복수선택 가능)</span></h5>
+                        <div class="cy-btn-set">
+                            <button class="cy-btn-gray" type="button">수정</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <ul class="cy-check-list">
+                        <li>
+                            <input id="check-id" type="checkbox">
+                            <label for="check-id">없다</label>
+                        </li>
+                        <li>
+                            <input id="check-id" type="checkbox">
+                            <label for="check-id">잘 모르겠다</label>
+                        </li>
+                        <li>
+                            <input id="check-id" type="checkbox">
+                            <label for="check-id">잘 진행되고 있다</label>
+                        </li>
+                        <li>
+                            <input id="check-id" type="checkbox">
+                            <label for="check-id">관심없다</label>
+                        </li>
+                        <li>
+                            <input id="check-id" type="checkbox">
+                            <label for="check-id">기타</label>
+                            <input id="text-id" type="text" aria-label="기타 답변 입력하세요.">
+                        </li>
+                    </ul>
+                </div>
+                <!-- [End] 질문 : 다중선택형 보기 영역 -->
+
+            </div>
+            <!-- [End] 팝업 콘텐츠 -->
+        </div>
+    </div>
+
+    <!-- 팝업 감추기 style="display: none"로 스크립트 제어 -->
+    <div class="popup-container" style="display: none">
+        <div class="popup">
+            <!-- [Start] 팝업 헤드라인 -->
+            <header class="popup-headline">
+                <h4>팝업 제목</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </header>
+            <!-- [End] 팝업 헤드라인 -->
+            <!-- [Start] 팝업 콘텐츠 -->
+            <div class="popup-content">
+                <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
+            </div>
+            <!-- [End] 팝업 콘텐츠 -->
+        </div>
+    </div>
+
+    <div class="popup-container" style="display: none">
+        <div class="popup">
+            <!-- [Start] 팝업 헤드라인 -->
+            <header class="popup-headline">
+                <h4>팝업 제목</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </header>
+            <!-- [End] 팝업 헤드라인 -->
+            <!-- [Start] 팝업 콘텐츠 -->
+            <div class="popup-content">
+                <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
+            </div>
+            <!-- [End] 팝업 콘텐츠 -->
+        </div>
+    </div>
+
+</body>
+</html>
