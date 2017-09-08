@@ -199,6 +199,6 @@ th, td { border-collapse: collapse; }
 
 .cy-section-box .cy-check-list li { padding: 4px 0; }
 
-.cy-section-box .cy-check-list li input[type="text"] { width: 580px; margin-left: 4px; }
+.cy-section-box .cy-check-list li input[type="text"] { min-width: 50%; max-width: 580px; margin-left: 4px; }
 
 /*# sourceMappingURL=map/cy-human.css.map */
