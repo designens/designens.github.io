@@ -1274,9 +1274,28 @@ JS 내용 작성</code></pre>
                                 <td colspan="3">이런 저런 내용으로 제안합니다.</td>
                             </tr>
                             <tr>
-                                <th>작성자 <div class="necessary"><span>필수입력</span></div></th>
+                                <th>대표사진</th>
+                                <td colspan="3">
+                                    <div class="photo-add">
+                                        <div class="add-file-search">
+                                            <button class="btn-type-1-02">파일 올리기</button>
+                                        </div>
+                                        <div class="add-file-area">
+                                            <div class="file">
+                                                <a class="icon-png" role="button" href="">첨부파일1.png</a>
+                                                <button class="btn-file-remove">파일삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="photo-view">
+                                        <img src="https://dummyimage.com/100x107/f5f8fa/333">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>작성자<div class="necessary"><span>필수입력</span></div></th>
                                 <td>홍길동</td>
-                                <th>패스워드 <div class="necessary"><span>필수입력</span></div></th>
+                                <th>패스워드<div class="necessary"><span>필수입력</span></div></th>
                                 <td>****</td>
                             </tr>
                             <tr>
@@ -1314,6 +1333,26 @@ JS 내용 작성</code></pre>
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+<p class="ui-kit-comment">기본 테이블 마크업 구조 입니다.</p>
+<pre><code class="language-html">&lt;td&gt;
+    &lt;div class=&quot;photo-add&quot;&gt;
+        &lt;div class=&quot;add-file-search&quot;&gt;
+            &lt;button class=&quot;btn-type-1-02&quot;&gt;파일 올리기&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;add-file-area&quot;&gt;
+            &lt;div class=&quot;file&quot;&gt;
+                &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href=&quot;&quot;&gt;첨부파일1.png&lt;/a&gt;
+                &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;photo-view&quot;&gt;
+        &lt;img src=&quot;https://dummyimage.com/100x107/f5f8fa/333&quot;&gt;
+    &lt;/div&gt;
+&lt;/td&gt;</code></pre>
+<p class="ui-kit-comment">첨부파일과 이미지 뷰 마크업 구조 입니다.</p>
+<pre><code class="language-html">&lt;th&gt;작성자&lt;div class=&quot;necessary&quot;&gt;&lt;span&gt;필수입력&lt;/span&gt;&lt;/div&gt;&lt;/th&gt;</code></pre>
+<p class="ui-kit-comment">필수입력(*) <span class="skyblue">&lt;calss="<strong class="red">necessary</strong>"&gt;</span> 요소의 내용을 작성하세요.</p>
                     <!-- [End] table-type-02 -->
                     
                     <!-- [Start] 하단 버튼 영역 공통 -->
