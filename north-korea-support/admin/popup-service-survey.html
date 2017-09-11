@@ -14,12 +14,12 @@
         <div class="popup">
             <!-- [Start] 팝업 헤드라인 -->
             <header class="popup-headline">
-                <h4>팝업 제목</h4>
+                <h4>설문조사</h4>
                 <button type="button" class="popup-close">창 닫기</button>
             </header>
             <!-- [End] 팝업 헤드라인 -->
             <!-- [Start] 팝업 콘텐츠 -->
-            <div class="popup-content">
+            <div class="popup-content cy-section-area">
 
                 <!-- [Start] 테이블 영역 -->
                 <div class="cy-section-table">
@@ -51,6 +51,15 @@
                     <textarea rows="3" aria-label="세션 입력"></textarea>
                 </div>
                 <!-- [End] 섹션 영역 -->
+
+                <!-- [Start] 질문 항목 추가 버튼 -->
+                <div class="cy-section-btn-add">
+                    <button type="button">질문추가</button>
+                    <button type="button">제목 img</button>
+                    <button type="button">안내문 img</button>
+                    <button type="button">섹션추가</button>
+                </div>
+                <!-- [End] 질문 항목 추가 버튼 -->
 
                 <!-- [Start] 질문 : 단답형 수정 영역 -->
                 <div class="cy-section-box">
@@ -193,8 +202,10 @@
                     <div class="cy-title">
                         <h5>질문</h5>
                         <div class="cy-btn-set">
-                            <label for="cy-number">선택 문항수</label>
-                            <input id="cy-number" type="number" min="2" max="10">
+                            <label for="cy-number">
+                                <span>선택 문항수</span>
+                                <input id="cy-number" type="number" min="2" max="10">
+                            </label>
                             <select aria-label="질문유형 선택">
                                 <option>단답형</option>
                                 <option>장문형</option>
@@ -278,12 +289,15 @@
                     <textarea rows="3" aria-label="질문 입력"></textarea>
                     <!-- [Start] 문항추가 -->
                     <div class="cy-item-add">
-                        <div class="cy-ex-txt">
-                            <input class="cy-w100p" id="ex01" type="text" placeholder="문항 1" aria-label="문항 입력">
+                        <div class="cy-keyword-txt">
+                            <input id="ex01" type="text" placeholder="최소 키워드" aria-label="문항 입력">
+                            <input id="ex01" type="text" placeholder="최대 키워드" aria-label="문항 입력">
                         </div>
-                        <div class="cy-ex-btn">
-                            <label for="cy-number">선택 문항수</label>
-                            <input id="cy-number" type="number" min="2" max="10">
+                        <div class="cy-keyword-num">
+                            <label for="cy-number">
+                                <span>증감 단계수</span>
+                                <input id="cy-number" type="number" min="2" max="10">
+                            </label>
                         </div>
                     </div>
                     <!-- [End] 문항추가 -->
@@ -299,31 +313,187 @@
                             <button class="cy-btn-gray" type="button">삭제</button>
                         </div>
                     </div>
-                    <ul class="cy-check-list">
-                        <li>
-                            <input id="radio-id" type="radio" name="radio-neme">
-                            <label for="radio-id">없다</label>
-                        </li>
-                        <li>
-                            <input id="radio-id" type="radio" name="radio-neme">
-                            <label for="radio-id">잘 모르겠다</label>
-                        </li>
-                        <li>
-                            <input id="radio-id" type="radio" name="radio-neme">
-                            <label for="radio-id">잘 진행되고 있다</label>
-                        </li>
-                        <li>
-                            <input id="radio-id" type="radio" name="radio-neme">
-                            <label for="radio-id">관심없다</label>
-                        </li>
-                        <li>
-                            <input id="radio-id" type="radio" name="radio-neme">
-                            <label for="radio-id">기타</label>
-                            <input id="text-id" type="text" aria-label="기타 답변 입력하세요.">
-                        </li>
-                    </ul>
+                    <div class="cy-increase-box">
+                        <span class="cy-start-keyword" aria-hidden="true">매우 싫음</span>
+                        <ul class="cy-check-list">
+                            <li>
+                                <label for="radio-id" aria-label="매우 싫음">1</label>
+                                <input id="radio-id" type="radio" name="radio-neme">
+                            </li>
+                            <li>
+                                <label for="radio-id" aria-label="싫음">2</label>
+                                <input id="radio-id" type="radio" name="radio-neme">
+                            </li>
+                            <li>
+                                <label for="radio-id" aria-label="보통">3</label>
+                                <input id="radio-id" type="radio" name="radio-neme">
+                            </li>
+                            <li>
+                                <label for="radio-id" aria-label="좋음">4</label>
+                                <input id="radio-id" type="radio" name="radio-neme">
+                            </li>
+                            <li>
+                                <label for="radio-id" aria-label="매우 좋음">5</label>
+                                <input id="radio-id" type="radio" name="radio-neme">
+                            </li>
+                        </ul>
+                        <span class="cy-end-keyword" aria-hidden="true">매우 좋음</span>
+                    </div>
                 </div>
                 <!-- [End] 질문 : 증감 보기 영역 -->
+
+                <!-- [Start] 질문 : 그리드 수정 영역 -->
+                <div class="cy-section-box">
+                    <div class="cy-title">
+                        <h5>질문</h5>
+                        <div class="cy-btn-set">
+                            <select aria-label="질문유형 선택">
+                                <option>단답형</option>
+                                <option>장문형</option>
+                                <option selected>단일선택형</option>
+                                <option>다중선택형</option>
+                                <option>증감</option>
+                                <option>그리드</option>
+                            </select>
+                            <button class="cy-btn-gray" type="button">보기</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <textarea rows="3" aria-label="질문 입력"></textarea>
+                    <!-- [Start] 문항추가 -->
+                    <div class="cy-item-add">
+                        <div class="cy-ex-txt">
+                            <input class="cy-w100p" id="ex01" type="text" placeholder="문항 1" aria-label="문항 입력">
+                        </div>
+                        <div class="cy-ex-btn">
+                            <button class="cy-btn-lightgrey" type="text">기타</button>
+                            <button class="cy-btn-lightgrey add" type="text">문항 추가</button>
+                            <button class="cy-btn-lightgrey remove" type="text">문항 삭제</button>
+                        </div>
+                    </div>
+                    <!-- [End] 문항추가 -->
+                </div>
+                <!-- [End] 질문 : 그리드 수정 영역 -->
+
+                <!-- [Start] 질문 : 그리드 보기 영역 -->
+                <div class="cy-section-box cy-view">
+                    <div class="cy-title">
+                        <h5>1. 사전정보공개에 대해 건의할 게 있습니까?</h5>
+                        <div class="cy-btn-set">
+                            <button class="cy-btn-gray" type="button">수정</button>
+                            <button class="cy-btn-gray" type="button">삭제</button>
+                        </div>
+                    </div>
+                    <table class="cy-check-grid">
+                        <colgroup>
+                            <col width="40">
+                            <col width="80">
+                            <col width="80">
+                            <col width="80">
+                            <col width="80">
+                            <col width="80">
+                            <col width="80">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>매우 좋음</th>
+                                <th>좋음</th>
+                                <th>보통</th>
+                                <th>나쁨</th>
+                                <th>매우 나쁨</th>
+                                <th>답변거부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>가</th>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="보통">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="답변거부">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>나</th>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="보통">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="답변거부">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>다</th>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="보통">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="답변거부">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>라</th>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="좋음">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="보통">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="매우 나쁨">
+                                </td>
+                                <td>
+                                    <input id="radio-id" type="radio" name="radio-neme" aria-label="답변거부">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </ul>
+                </div>
+                <!-- [End] 질문 : 그리드 보기 영역 -->
 
             </div>
             <!-- [End] 팝업 콘텐츠 -->

@@ -18,6 +18,16 @@ table { table-layout: fixed; border-collapse: collapse; border-spacing: 0; }
 
 th, td { border-collapse: collapse; }
 
+label[for="cy-number"] { position: relative; }
+
+label[for="cy-number"] span { line-height: 25px; }
+
+label[for="cy-number"]:before, label[for="cy-number"]:after { display: block; position: absolute; width: 20px; height: 10px; line-height: 10px; background-color: #fff; right: 1px; z-index: 2; font-size: 50%; text-align: center; pointer-events: none; }
+
+label[for="cy-number"]:before { content: "▲"; top: 2px; }
+
+label[for="cy-number"]:after { content: "▼"; top: 12px; }
+
 /* =======================================*/
 /* Common Style
 /* =======================================*/
@@ -135,13 +145,19 @@ th, td { border-collapse: collapse; }
 /* =======================================*/
 /* 설문조사 팝업
 /* =======================================*/
-.cy-section-table { margin-top: 10px; border: 1px solid #8ec5f4; background: #fff; }
+.cy-section-area { position: relative; padding-right: 145px !important; }
+
+.cy-section-area .cy-section-btn-add { position: absolute; top: 152px; right: 30px; }
+
+.cy-section-area .cy-section-btn-add button[type="button"] { display: block; width: 100px; height: 42px; line-height: 42px; text-align: center; color: #fff; background: #0875c8; border-radius: 4px; margin-bottom: 2px; }
+
+.cy-section-table { letter-spacing: -0.04em; margin-top: 10px; border: 1px solid #8ec5f4; background: #fff; }
 
 .cy-section-table:first-child { margin-top: 0; }
 
 .cy-section-table table tr:first-child th, .cy-section-table table tr:first-child td { border-top: 0; }
 
-.cy-section-table table th { text-align: left; letter-spacing: -0.04em; }
+.cy-section-table table th { text-align: left; }
 
 .cy-section-table table th:first-child { border-left: 0; }
 
@@ -151,7 +167,7 @@ th, td { border-collapse: collapse; }
 
 .cy-section-table table th, .cy-section-table table td { padding: 6px 20px; border-top: 1px solid #c5e2f3; border-left: 1px solid #c5e2f3; box-sizing: border-box; }
 
-.cy-section-box { border: 1px solid #8ec5f4; background: #fff; padding: 10px 20px; margin-top: 10px; }
+.cy-section-box { letter-spacing: -0.04em; border: 1px solid #8ec5f4; background: #fff; padding: 10px 20px; margin-top: 10px; }
 
 .cy-section-box.cy-view { border: 1px solid #b4bfc8; padding-top: 20px; }
 
@@ -197,8 +213,40 @@ th, td { border-collapse: collapse; }
 
 .cy-section-box .cy-item-add .cy-ex-btn .cy-btn-lightgrey.remove:after { top: 5px; right: 11px; width: 2px; height: 14px; }
 
+.cy-section-box .cy-item-add .cy-keyword-txt { position: relative; float: left; width: calc(100% - 162px); }
+
+.cy-section-box .cy-item-add .cy-keyword-txt input { width: calc(50% - 10px); margin-right: 20px; }
+
+.cy-section-box .cy-item-add .cy-keyword-txt input:last-child { float: left; }
+
+.cy-section-box .cy-item-add .cy-keyword-txt input:last-child { float: right; margin-right: 0; }
+
+.cy-section-box .cy-item-add .cy-keyword-txt:before { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 2px; display: inline-block; content: "~"; }
+
+.cy-section-box .cy-item-add .cy-keyword-num { float: right; }
+
 .cy-section-box .cy-check-list li { padding: 4px 0; }
 
 .cy-section-box .cy-check-list li input[type="text"] { min-width: 50%; max-width: 580px; margin-left: 4px; }
+
+.cy-increase-box { display: inline-block; margin: 10px 0; }
+
+.cy-increase-box [class$="-keyword"] { margin-top: 20px; }
+
+.cy-increase-box .cy-check-list { display: inline-block; }
+
+.cy-increase-box .cy-check-list li { display: inline-block; width: 70px; text-align: center; }
+
+.cy-increase-box .cy-check-list li label { display: block; }
+
+.cy-increase-box .cy-check-list li:first-child { margin-left: 25px; }
+
+.cy-increase-box .cy-check-list li:last-child { margin-right: 25px; }
+
+.cy-check-grid { margin: 10px 0; width: auto; }
+
+.cy-check-grid tr, .cy-check-grid td { text-align: center; line-height: 28px; }
+
+.cy-check-grid tbody th { text-align: left; }
 
 /*# sourceMappingURL=map/cy-human.css.map */
