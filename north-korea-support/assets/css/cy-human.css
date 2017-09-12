@@ -47,6 +47,14 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 .cy-btn-lightgrey { min-width: 52px; height: 25px; line-height: 25px; color: #394a57; padding: 0 10px; border-radius: 3px; background: #c5d2db; }
 
+.cy-base-table th { background: #f5f8fa; border-right: 1px solid #d3dbe0; }
+
+.cy-base-table td { line-height: 1.6; }
+
+.cy-base-table td label { margin-left: 4px; margin-right: 20px; }
+
+.cy-base-table td label:last-child { margin-right: 0; }
+
 /* =======================================*/
 /* Popup Style
 /* =======================================*/
@@ -130,15 +138,15 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 .cy-table table tbody td { text-align: center; }
 
-.cy-table table thead tr th { border-right: 1px solid #d3dbe0; font-weight: bold; padding-bottom: 1px; }
-
 .cy-table table tbody tr:last-child td { border-bottom: 0; }
-
-.cy-table table thead tr th:last-child { border-right: 0; }
 
 .cy-table table tbody tr td { border-right: 1px solid #d3dbe0; border-bottom: 1px solid #d3dbe0; line-height: 0; padding: 2px 0 1px; }
 
 .cy-table table tbody tr td:last-child { border-right: 0; }
+
+.cy-table table thead tr th { border-right: 1px solid #d3dbe0; font-weight: bold; padding-bottom: 1px; }
+
+.cy-table table thead tr th:last-child { border-right: 0; }
 
 .cy-table thead th { background-color: #b8c3cc; height: 30px; }
 
@@ -151,21 +159,21 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 .cy-section-area .cy-section-btn-add button[type="button"] { display: block; width: 100px; height: 42px; line-height: 42px; text-align: center; color: #fff; background: #0875c8; border-radius: 4px; margin-bottom: 2px; }
 
-.cy-section-table { letter-spacing: -0.04em; margin-top: 10px; border: 1px solid #8ec5f4; background: #fff; }
+.cy-section-table, .cy-base-table { letter-spacing: -0.04em; margin-top: 10px; border: 1px solid #8ec5f4; background: #fff; }
 
-.cy-section-table:first-child { margin-top: 0; }
+.cy-section-table:first-child, .cy-base-table:first-child { margin-top: 0; }
 
-.cy-section-table table tr:first-child th, .cy-section-table table tr:first-child td { border-top: 0; }
+.cy-section-table table tr:first-child th, .cy-base-table table tr:first-child th, .cy-section-table table tr:first-child td, .cy-base-table table tr:first-child td { border-top: 0; }
 
-.cy-section-table table th { text-align: left; }
+.cy-section-table table th, .cy-base-table table th { text-align: left; }
 
-.cy-section-table table th:first-child { border-left: 0; }
+.cy-section-table table th:first-child, .cy-base-table table th:first-child { border-left: 0; }
 
-.cy-section-table table td { height: 36px; }
+.cy-section-table table td, .cy-base-table table td { height: 36px; }
 
-.cy-section-table table td textarea { border: 1px solid #b4bfc8; overflow-y: scroll; }
+.cy-section-table table td textarea, .cy-base-table table td textarea { border: 1px solid #b4bfc8; overflow-y: scroll; }
 
-.cy-section-table table th, .cy-section-table table td { padding: 6px 20px; border-top: 1px solid #c5e2f3; border-left: 1px solid #c5e2f3; box-sizing: border-box; }
+.cy-section-table table th, .cy-base-table table th, .cy-section-table table td, .cy-base-table table td { padding: 6px 20px; border-top: 1px solid #c5e2f3; border-left: 1px solid #c5e2f3; box-sizing: border-box; }
 
 .cy-section-box { letter-spacing: -0.04em; border: 1px solid #8ec5f4; background: #fff; padding: 10px 20px; margin-top: 10px; }
 

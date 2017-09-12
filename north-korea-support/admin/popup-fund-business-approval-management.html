@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>메인화면 관리</title>
+    <!-- CSS : 기존 스타일 -->
+    <link rel="stylesheet" href="../../assets/css/human.css">
+    <!-- CSS : 신규 추가 스타일 -->
+    <link rel="stylesheet" href="../../assets/css/cy-human.css">
+</head>
+<body>
+<!-- popup-wrap(S) -->
+    <div class="popup-container" id="popupUser">
+        <div class="popup">
+            <!-- popup-headline(S) -->
+            <div class="popup-headline">
+                <h4>기금사업 신청정보</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </div>
+            <!-- popup-headline(E) -->
+            <form name="formPop" id="formPop" method="post" action="/mgt/SaveMgtBbsItem.do" enctype="multipart/form-data">
+                <!-- <input type="text" name="popStatus" id="popStatus"> -->
+                <!-- <input type="hidden" name="popBbsId" id="popBbsId" value="J"> -->
+                <!-- 공지사항 K -->
+                <!-- <input type="hidden" name="popService" id="popService"> -->
+                <!-- 게시물 숨김여부 -->
+                <!-- <input type="hidden" name="atchFileId"> -->
+                <!-- <input type="hidden" name="fileSn"> -->
+                <!-- <input type="hidden" name="fileListCnt"> -->
+                <!-- <input type="hidden" name="returnUrl"> -->
+                <!-- popup-content(S) -->
+                <div class="popup-content">
+                    <!-- 조회조건 (S) -->
+                    <div class="cy-section-box">
+                        <div class="cy-title">
+                            <h5>신청정보</h5>
+                        </div>
+                        <div class="cy-base-table view">
+                            <table>
+                                <colgroup>
+                                    <col width="160">
+                                    <col>
+                                    <col width="160">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>공고명</th>
+                                        <td class="cy-td-style cy-text-left" colspan="3">
+                                            <p>북녘동포 의약품 및 각종 생필품 보내기 사업</p>
+                                            <!-- <input type="text" maxlength="20" title="" class="full"> -->
+                                            <!-- <select id="popSector" name="popSector">
+                                                   <option value="J10" selected="selected">국내외언론동향</option>
+                                                   <option value="J20">북한동향</option>
+                                                   <option value="J30">행사정보</option>
+                                                   <option value="J40">기타</option>
+                                            </select> -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>단체명</th>
+                                        <td class="cy-td-style cy-text-left">
+                                            <p>대북지원단체1</p>
+                                            <!-- <input type="text" name="popTitle" id="popTitle" maxlength="20" title="" class="full"> -->
+                                        </td>
+                                        <th>대표자</th>
+                                        <td class="cy-td-style cy-text-left">
+                                            <p>홍길동</p>
+                                            <!-- <input type="text" name="popTitle" id="popTitle" maxlength="20" title="" class="full"> -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>지원분야</th>
+                                        <td class="cy-td-style cy-text-left" colspan="3">
+                                            <input name="popSvc" type="checkbox" value="N" checked="checked">
+                                            <label>식량차관</label>
+                                            <input name="popSvc" type="checkbox" value="N">
+                                            <label>일반구호</label>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>긴급구호</label>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>사회복지</label>
+                                            <br>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>보건의료</label>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>농업</label>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>산림</label>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>생활개선/에너지</label>
+                                            <input name="popSvc" type="checkbox" value="Y">
+                                            <label>환경</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>사업명</th>
+                                        <td colspan="3" class="cy-td-style">
+                                            <!-- <input type="text" maxlength="20" title="" class="full"> -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>사업대상자</th>
+                                        <td colspan="3" class="cy-td-style cy-text-left">민족화해 협의회, 평안남도 인민위원회 식량부
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="4" scope="col">기금사업신청금액</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">총소요자금</th>
+                                        <td class="cy-td-style cy-text-left" colspan="2" >1,000,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">자체재원확보액</th>
+                                        <td class="cy-td-style cy-text-left" colspan="2" >250,000,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기금지원신청액</th>
+                                        <td class="cy-td-style cy-text-left" colspan="2" >500,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="cy-section-box cy-base-table">
+                        <div class="cy-title">
+                            <h5>신청정보</h5>
+                        </div>
+                        <table class="table-full fixed">
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사업목적</th>
+                                    <td class="cy-td-style cy-text-left">1111111111111111111111</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업개요</th>
+                                    <td class="cy-td-style cy-text-left">2222222222222222222222</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수혜대상</th>
+                                    <td class="cy-td-style cy-text-left">3333333333333333333333</td>
+                                </tr>
+                                <tr>
+                                    <th>주요지원내역</th>
+                                    <td class="cy-td-style cy-text-left">4444444444444444444444</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cy-section-box cy-base-table">
+                        <div class="cy-title">
+                            <h5>신청정보</h5>
+                        </div>
+                        <table class="table-full fixed">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">사업계획서</th>
+                                    <th scope="row">기금사용계획서</th>
+                                    <th scope="row">자체재원확보내역서</th>
+                                    <th scope="row">분배투명성확보내역서</th>
+                                    <th class="cy-th-style cy-th-border" scope="row">증명서류</th>
+                                </tr>
+                                <tr>
+                                    <td class="cy-td-border">1.hwp</td>
+                                    <td class="cy-td-style">2.xls</td>
+                                    <td class="cy-td-style">3.doc</td>
+                                    <td class="cy-td-style">4.doc</td>
+                                    <td class="cy-td-style">22.hwp</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 조회조건 (E) -->
+                    <!-- 팝업 공통버튼 영역(S) -->
+                    <div class="popup-btns">
+                        <!-- <button type="button" class="btn-pop" onclick="fnSave('S'); return false;">
+                            <spring:message code="button.save" />
+                        </button>
+                        <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
+                    </div>
+                    <!-- 팝업 공통버튼 영역(E) -->
+                </div>
+                <!-- popup-content(E) -->
+            </form>
+        </div>
+    </div>
+    <!-- popup-wrap(E) -->
+    <!-- popup-wrap(S) -->
+    <div class="popup-container" id="popupStatus" style="display: none;">
+        <div class="popup">
+            <!-- popup-headline(S) -->
+            <div class="popup-headline">
+                <h4>상태 정보</h4>
+                <button type="button" class="pop-close">close</button>
+            </div>
+            <!-- popup-headline(E) -->
+            <form name="formPop" id="formPop" method="post" action="/mgt/SaveMgtBbsItem.do" enctype="multipart/form-data">
+                <!-- popup-content(S) -->
+                <div class="popup-content">
+                    <!-- 조회조건 (S) -->
+                    <div class="cy-base-table">
+                        상태설정
+                        <table>
+                            <colgroup>
+                                <col width="100">
+                                <col width="190">
+                                <col width="100">
+                                <col width="190">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <input type="radio" name="a">보완제출
+                                        <input type="radio" name="a">검토완료
+                                        <input type="radio" name="a">접수
+                                        <input type="radio" name="a">선정
+                                        <input type="radio" name="a">미선정
+                                        <!-- <select id="popSector" name="popSector">
+                                               <option value="J10" selected="selected">국내외언론동향</option>
+                                               <option value="J20">북한동향</option>
+                                               <option value="J30">행사정보</option>
+                                               <option value="J40">기타</option>
+                                </select> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 조회조건 (E) -->
+                    <!-- 팝업 공통버튼 영역(S) -->
+                    <div class="popup-btns">
+                        <button type="button" class="btn-pop" onclick="fnSave('S'); return false;">
+                            <spring:message code="button.save" />
+                        </button>
+                        <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button>
+                    </div>
+                    <!-- 팝업 공통버튼 영역(E) -->
+                </div>
+                <!-- popup-content(E) -->
+            </form>
+        </div>
+    </div>
+    <!-- popup-wrap(E) -->
+    <!-- popup-wrap(S) -->
+    <div class="popup-container" id="popupDoc" style="display: none;">
+        <div class="popup">
+            <!-- popup-headline(S) -->
+            <div class="popup-headline">
+                <h4>상태 정보</h4>
+                <button type="button" class="pop-close">close</button>
+            </div>
+            <!-- popup-headline(E) -->
+            <form name="formPop" id="formPop" method="post" action="/mgt/SaveMgtBbsItem.do" enctype="multipart/form-data">
+                <!-- popup-content(S) -->
+                <div class="popup-content">
+                    <!-- 조회조건 (S) -->
+                    <div class="cy-base-table">
+                        구비서류 확인
+                        <table>
+                            <colgroup>
+                                <col width="100">
+                                <col width="190">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사업계획서</th>
+                                    <td>사업추진 계획서.ppt</td>
+                                </tr>
+                                <tr>
+                                    <th>기금사용계획서</th>
+                                    <td>기금사용계획서.doc</td>
+                                </tr>
+                                <tr>
+                                    <th>자체재원확보내역서</th>
+                                    <td>재원확보내역서.xls</td>
+                                </tr>
+                                <tr>
+                                    <th>분배투명성확보 계획서</th>
+                                    <td>계획서.xls</td>
+                                </tr>
+                                <tr>
+                                    <th>증빙하는 서류</th>
+                                    <td>증명서.hwp</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 조회조건 (E) -->
+                    <!-- 팝업 공통버튼 영역(S) -->
+                    <div class="popup-btns">
+                        <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button>
+                    </div>
+                    <!-- 팝업 공통버튼 영역(E) -->
+                </div>
+                <!-- popup-content(E) -->
+            </form>
+        </div>
+    </div>
+    <!-- popup-wrap(E) -->
+</body>
+</html>
