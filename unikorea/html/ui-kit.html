@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+    <!-- Cross browsing -->
+    <!--[if !IE]><!--><html class="no-js"  lang="ko-KR"> <!--<![endif]-->
+    <!--[if IE 9]> <html class="no-js lt-ie10 ie9"  lang="ko-KR"> <![endif]-->
+    <!-- / Cross browsing End -->
 
 <head>
     <title>통일부 북한자료센터</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<!-- 페이지 저자 정의 -->
-<meta name="author" content="inyoung"/>
-<!-- SEO : 검색엔진최적화 -->
-<meta name="description" content="통일부 북한자료센터"/>
-<meta name="keywords" content="통일부 북한자료센터"/>
+    <!-- 페이지 저자 정의 -->
+    <meta name="author" content="inyoung"/>
+    <!-- SEO : 검색엔진최적화 -->
+    <meta name="description" content="통일부 북한자료센터"/>
+    <meta name="keywords" content="통일부 북한자료센터"/>
     <!-- MSIE 호환성 보기 (최신 브라우저) -->
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<!-- MOBILE : 모바일 최적화 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- MOBILE : 모바일 최적화 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Style : Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <!-- Style : Guide Style -->
     <link rel="stylesheet" href="../assets/css/jiy-ui-kit.css" />
     <!-- Jevascript : Code Style -->
-    <script type="text/javascript" src="https://cdn.rawgit.com/designens/designens.github.io/master/resource/js/lib/prism.js"></script>
-    <!-- IE 9 버전 이하 지원 -->
-<!--[if lt IE 9]>
-    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
-    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
-    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
-<![endif]-->
-
-<!-- IE 9 버전 이상 지원 -->
-<!--[if gte IE 9]><!-->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--<![endif]-->
-
-<!-- jQuery : jquery-ui -->
-<script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+    <!-- HTML5 & CSS3 지원 가능 브라우저 확인 -->
+    <script type="text/javascript" src="../assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- javascript : jQuery -->
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <!-- javascript : jquery-ui -->
+    <script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/designens/designens.github.io/master/resource/js/prism/prism.min.js"></script>
 </head>
 
 <body>
@@ -41,112 +36,54 @@
     <a class="skip-link" href="#gnb-all-menu" data-scroll data-target="#gnb-all-menu" role="button">전체메뉴 바로가기</a>
     <a class="skip-link" href="#container" data-scroll data-target="#container" role="button">컨텐츠 바로가기</a>
     <!-- [End] skip navigation -->
+    
     <!-- [Start] Header -->
     <header class="header">
+
         <!-- [Start] Top menu -->
         <div class="top-menu">
             <div class="wrap">
-                <a href="login.html">로그인</a>
-                <a href="apply-to-north-korea.html">대북지원사업자 신청</a>
-                <a href="support-application-status-list.html">사업자 지원접수현황</a>
+                <div class="menu">
+                    <a href="/">홈</a>
+                    <a href="login.html">로그인</a>
+                    <a href="user-join.html">회원가입</a>
+                    <a href="support-application-status-list.html">사이트맵</a>
+                </div>
+                <div class="link">
+                    <a href="/">My Library</a>
+                </div>
             </div>
         </div>
         <!-- [End] Top menu -->
-        <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
-        <div class="gnb-area wrap">
-            <!-- [Start] 로고 영역 -->
-            <h1 class="logo"><a href="/"><img src="../assets/images/common/logo.png" alt="대북지원정보시스템 메인이동" /></a></h1>
-            <!-- [End] 로고 영역 -->
-        </div>
-        <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
-        <!-- [Start] GNB 전체 메뉴 -->
-        <nav id="gnb-all-menu">
-            <div class="wrap">
-                <div class="panel">
-                    <h2><a href="#">대북지원사업안내</a></h2>
-                    <ul>
-                        <li><a href="#">대북지원사업절차</a></li>
-                        <li><a href="#">대북지원사업자 신청</a></li>
-                        <li><a href="#">북한방문 및 접촉</a></li>
-                        <li><a href="#">물품반출입</a></li>
-                        <li><a href="#">수송장비운행</a></li>
-                    </ul>
-                </div>
-                <div class="panel">
-                    <h2><a href="#">기금사업신청</a></h2>
-                    <ul>
-                        <li><a href="#">신청절차</a></li>
-                        <li><a href="#">사업 신청</a></li>
-                        <li><a href="#">결과 조회</a></li>
-                        <li><a href="#">자금사용보고서 등록</a></li>
-                    </ul>
-                </div>
-                <div class="panel">
-                    <h2><a href="#">통계</a></h2>
-                    <ul>
-                        <li><a href="#">국내</a>
-                            <ul>
-                                <li><a href="#">총괄</a></li>
-                                <li><a href="#">주체별</a></li>
-                                <li><a href="#">분야별</a></li>
-                                <li><a href="#">지원채널별</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">국제</a>
-                            <ul>
-                                <li><a href="#">총괄</a></li>
-                                <li><a href="#">주체별</a></li>
-                                <li><a href="#">분야별</a></li>
-                                <li><a href="#">지원채널별</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel">
-                    <h2><a href="#">북한형황지표</a></h2>
-                    <ul>
-                        <li><a href="#">SDGs</a></li>
-                        <li><a href="#">보건의료</a></li>
-                        <li><a href="#">농업</a></li>
-                        <li><a href="#">산림</a></li>
-                        <li><a href="#">에너지/환경</a></li>
-                    </ul>
-                </div>
-                <div class="panel">
-                    <h2><a href="#">자료마당</a></h2>
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">자료실</a></li>
-                        <li><a href="#">관련사이트</a></li>
-                    </ul>
-                </div>
-                <div class="panel">
-                    <h2><a href="#">커뮤니티</a></h2>
-                    <ul>
-                        <li><a href="#">뉴스레터</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Q&amp;A</a></li>
-                    </ul>
-                    <h2><a href="#">회원서비스</a></h2>
-                    <ul>
-                        <li><a href="#">회원가입안내</a>
-                            <ul>
-                                <li><a href="#">법인·단체</a></li>
-                                <li><a href="#">담당자</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">단체 정보 관리</a></li>
-                        <li><a href="#">정책제안</a></li>
-                        <li><a href="#">게시판</a></li>
-                        <li><a href="#">설문조사</a></li>
-                    </ul>
-                </div>
-                <button class="btn-gnb-close">전체메뉴 닫기</button>
+        
+        <!-- [Start] GNB : 대분류 메뉴 -->
+        <div class="top-area">
+        <div class="wrap">
+            <!-- [Start] 로고 -->
+            <h1 class="logo"><a href="/">대북지원정보시스템 메인이동</a></h1>
+            <!-- [End] 로고 -->
+            <!-- [Start] GNB : 대분류 -->
+            <nav class="gnb">
+                <button class="btn-gnb-menu">전체메뉴 보기</button>
+                <ul id="gnb-menu">
+                    <li><button type="button" aria-labelledby="gnb-all-menu">자료검색</button></li>
+                    <li><button type="button" aria-labelledby="gnb-all-menu">원문서비스</button></li>
+                    <li><button type="button" aria-labelledby="gnb-all-menu">통일북한정보</button></li>
+                    <li><button type="button" aria-labelledby="gnb-all-menu">참여서비스</button></li>
+                    <li><button type="button" aria-labelledby="gnb-all-menu">센터소개</button></li>
+                </ul>
+            </nav>
+            <!-- [End] GNB : 대분류 -->
+            <div class="btn-agency">
+                <a href="" target="_brank">정보교류협력기관</a>
             </div>
-        </nav>
-        <!-- [End] GNB 전체 메뉴 -->
+        </div>
+    </div>
+        <!-- [End] GNB : 대분류 메뉴 -->
+
     </header>
     <!-- [End] Header -->
+
     <!-- [Start] Container Area -->
     <main class="ui-kit">
         <section class="content-area wrap">
@@ -155,7 +92,7 @@
             <!-- [Start] HTML 주석 기본 사용 -->
             <article>
                 <h2>HTML 주석 기본 사용</h2>
-<pre><code class="language-html">&lt;!-- [Start] HTML 주석 기본 사용 --&gt;
+<pre><code id="source" class="language-html">&lt;!-- [Start] HTML 주석 기본 사용 --&gt;
 HTML 내용 작성
 &lt;!-- [End] HTML 주석 기본 사용 --&gt;</code></pre>
             </article>
@@ -164,7 +101,7 @@ HTML 내용 작성
             <!-- [Start] CSS 주석 기본 사용 -->
             <article>
                 <h2>CSS 주석 기본 사용</h2>
-<pre><code class="language-css">/* =======================================*/
+<pre><code id="source" class="language-css">/* =======================================*/
 /* 대분류 &gt; 중분류 &gt; 소분류
 /* (html/index.html)
 /* =======================================*/
@@ -175,7 +112,7 @@ CSS 내용 작성</code></pre>
             <!-- [Start] JS 주석 기본 사용 -->
             <article>
                 <h2>JS 주석 기본 사용</h2>
-<pre><code class="language-js">// =======================================
+<pre><code id="source" class="language-js">// =======================================
 // JS 플러그인명 (URL 제공)
 // =======================================
 JS 내용 작성
@@ -200,7 +137,7 @@ JS 내용 작성</code></pre>
                         <label for="password" aria-describedby="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;label for=&quot;label-name&quot;&gt;내용 설명&lt;/label&gt;
     &lt;input type=&quot;text&quot; id=&quot;label-name&quot; name=&quot;label-name&quot; /&gt;
 &lt;/div&gt;</code></pre>
@@ -210,7 +147,7 @@ JS 내용 작성</code></pre>
                     <div class="input-type">
                         <input type="text" aria-label="내용 설명" />
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] 설명이 없는 기본 인풋 스타일 -->
@@ -219,7 +156,7 @@ JS 내용 작성</code></pre>
                     <div class="input-type full">
                         <input type="text" aria-label="내용 설명" />
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type full&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;input-type full&quot;&gt;
     &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <p class="ui-kit-comment">
@@ -232,7 +169,7 @@ JS 내용 작성</code></pre>
                     <div class="input-type">
                         <input type="text" placeholder="Placeholder 내용"  aria-label="내용 설명"/>
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
@@ -249,7 +186,7 @@ JS 내용 작성</code></pre>
                             <input class="last-number" type="tel" aria-label="뒷번호">
                         </div>
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type tel&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;input-type tel&quot;&gt;
     &lt;div class=&quot;dialog&quot;&gt;
         &lt;input class=&quot;country-code&quot; type=&quot;tel&quot; aria-label=&quot;지역번호&quot;&gt;
     &lt;/div&gt;
@@ -282,7 +219,7 @@ JS 내용 작성</code></pre>
                             <option>yahoo.com</option>
                         </select>
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type e-mail&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;input-type e-mail&quot;&gt;
     &lt;div class=&quot;email&quot;&gt;
         &lt;input class=&quot;email-id&quot; type=&quot;text&quot; aria-label=&quot;이메일 아이디&quot;&gt;
     &lt;/div&gt;
@@ -305,7 +242,7 @@ JS 내용 작성</code></pre>
                     <!-- [Start] 텍스트박스 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>텍스트박스 스타일</h3>
                     <textarea class="textarea" placeholder="Placeholder 내용 설명"></textarea>
-<pre><code class="language-html">&lt;textarea class=&quot;textarea&quot; placeholder=&quot;Placeholder 내용 설명&quot;&gt;&lt;/textarea&gt;</code></pre>
+<pre><code id="source" class="language-html">&lt;textarea class=&quot;textarea&quot; placeholder=&quot;Placeholder 내용 설명&quot;&gt;&lt;/textarea&gt;</code></pre>
                     <!-- [End] 텍스트박스 스타일 -->
                 </div>
             </article>
@@ -329,7 +266,7 @@ JS 내용 작성</code></pre>
                         </select>
                     </div>
                     <!-- [End] 셀렉트 박스 기본 스타일 -->
-<pre><code class="language-html">&lt;div class=&quot;select-box&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;select-box&quot;&gt;
     &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
     &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
         &lt;option selected=&quot;selected&quot;&gt;검색&lt;/option&gt;
@@ -355,7 +292,7 @@ JS 내용 작성</code></pre>
                         </select>
                     </div>
                     <!-- [End] 너비 100% 셀렉트 박스 기본 스타일 -->
-<pre><code class="language-html">&lt;div class=&quot;select-box full&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;select-box full&quot;&gt;
     &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
     &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
         &lt;option selected=&quot;selected&quot;&gt;검색&lt;/option&gt;
@@ -396,7 +333,7 @@ JS 내용 작성</code></pre>
                         </li>
                     </ul>
                     <!-- [End] 검색 타입 1. -->
-<pre><code class="language-html">&lt;ul class=&quot;search-area&quot;&gt;
+<pre><code id="source" class="language-html">&lt;ul class=&quot;search-area&quot;&gt;
     &lt;li&gt;&lt;span class=&quot;search-title&quot;&gt;검색&lt;/span&gt;&lt;/li&gt;
     &lt;li class=&quot;select-box&quot;&gt;
         &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
@@ -437,7 +374,7 @@ JS 내용 작성</code></pre>
                         </li>
                     </ul>
                     <!-- [End] 검색 타입 2. -->
-<pre><code class="language-html">&lt;ul class=&quot;search-area&quot;&gt;
+<pre><code id="source" class="language-html">&lt;ul class=&quot;search-area&quot;&gt;
     &lt;li class=&quot;search-title&quot;&gt;&lt;span&gt;검색&lt;/span&gt;&lt;/li&gt;
     &lt;li class=&quot;select-box all&quot;&gt;
         &lt;label for=&quot;search&quot;&gt;말머리:전체&lt;/label&gt;
@@ -475,7 +412,7 @@ JS 내용 작성</code></pre>
                     <input type="checkbox" id="checkbox-03" name="test-03">
                     <label for="checkbox-03">Checkbox Test 03</label>
                 </div>
-<pre><code class="language-html">&lt;div class=&quot;checkbox-type&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;checkbox-type&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-id&quot; name=&quot;test-name&quot;&gt;
     &lt;label for=&quot;checkbox-id&quot;&gt;Checkbox Test&lt;/label&gt;
 &lt;/div&gt;</code></pre>
@@ -491,7 +428,7 @@ JS 내용 작성</code></pre>
                     <input type="radio" id="radio2" name="test">
                     <label for="radio2">Radio Button Test 02</label>
                 </div>
-<pre><code class="language-html">&lt;div class=&quot;radio-type&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;radio-type&quot;&gt;
     &lt;input type=&quot;radio&quot; id=&quot;radio-id-01&quot; name=&quot;test-name&quot;&gt;
     &lt;label for=&quot;radio-id-01&quot;&gt;Radio Button Test 01&lt;/label&gt;
     &lt;input type=&quot;radio&quot; id=&quot;radio-id-02&quot; name=&quot;test-name&quot;&gt;
@@ -505,9 +442,9 @@ JS 내용 작성</code></pre>
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
                     <button type="button" class="btn-type-1-01">버튼</button>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;</code></pre>
+<pre><code id="source" class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;</code></pre>
 <div class="ui-kit-comment">저장, 삭제, 닫기 등의 <strong class="red">전송 역할 버튼</strong>의 경우 <span class="skyblue">&lt;button&gt;</span> 요소로 사용합니다.</div>
-<pre><code class="language-html">&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
+<pre><code id="source" class="language-html">&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
 <div class="ui-kit-comment">페이지 이동 or 팝업 띄우기 등의 <strong class="red">링크 역할 버튼</strong>의 경우 <span class="skyblue">&lt;a&gt;</span> 요소로 사용합니다.</div>
                 </div>
             </article>
@@ -572,7 +509,7 @@ JS 내용 작성</code></pre>
                         </li>
                     </ul>
                 </div>
-<pre><code class="language-html">&lt;!-- 아코디언 설정 시 class=&quot;accordion-name&quot; 에서 name 변경 후 스타일 지정 --&gt;
+<pre><code id="source" class="language-html">&lt;!-- 아코디언 설정 시 class=&quot;accordion-name&quot; 에서 name 변경 후 스타일 지정 --&gt;
 &lt;div class=&quot;accordion-name&quot;&gt;
     &lt;!-- 닫힌 상태 class=&quot;aco-base&quot; 적용, 첫번째 메뉴 열린 상태 class=&quot;aco-open&quot; 적용 --&gt;
     &lt;ul class=&quot;aco-base&quot;&gt;
@@ -640,7 +577,7 @@ JS 내용 작성</code></pre>
                         tab5 영역 입니다.
                     </div>
                 </div>
-<pre><code class="language-html">&lt;!-- 탭의 갯수에 따라 t1~t8 까지 class 설정 가능 --&gt;
+<pre><code id="source" class="language-html">&lt;!-- 탭의 갯수에 따라 t1~t8 까지 class 설정 가능 --&gt;
 &lt;div class=&quot;tablist t5&quot; role=&quot;tablist&quot;&gt;
     &lt;!-- [Start] 탭 메뉴 5개 생성 --&gt;
     &lt;a href id=&quot;tab1&quot; aria-controls=&quot;panel1&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab1&lt;/span&gt;&lt;/a&gt;
@@ -690,7 +627,7 @@ JS 내용 작성</code></pre>
                         </div>
                     </div>
                     <!-- [End] 서브 전체 페이지 영역 -->
-<pre><code class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
     &lt;div class=&quot;all-page&quot;&gt;
         &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
     &lt;/div&gt;
@@ -714,7 +651,7 @@ JS 내용 작성</code></pre>
                         </div>
                     </div>
                     <!-- [End] 서브 전체 페이지 선택 영역 -->
-<pre><code class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
     &lt;div class=&quot;all-page&quot;&gt;
         &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
     &lt;/div&gt;
@@ -873,7 +810,7 @@ JS 내용 작성</code></pre>
                             </tr>
                         </tbody>
                     </table>
-<pre><code class="language-html">&lt;table class=&quot;table-type-01&quot;&gt;
+<pre><code id="source" class="language-html">&lt;table class=&quot;table-type-01&quot;&gt;
     &lt;caption&gt;&quot;○○○&quot; 테이블의 &quot;○○○&quot; 항목이 있습니다.&lt;/caption&gt;
     &lt;colgroup&gt;
         &lt;col&gt;
@@ -944,7 +881,7 @@ JS 내용 작성</code></pre>
                         <button type="button" class="next" aria-label="다음 페이지"></button>
                         <button type="button " class="last-next" aria-label="끝으로 이동"></button>
                     </div>
-<pre><code class="language-html">&lt;!-- [Start] Paging Area --&gt;
+<pre><code id="source" class="language-html">&lt;!-- [Start] Paging Area --&gt;
 &lt;div class=&quot;paging&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot;&gt;&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot;&gt;&lt;/button&gt;
@@ -977,7 +914,7 @@ JS 내용 작성</code></pre>
                 <h2>Popup Button</h2>
                 <!-- 팝업 버튼 class 설정 -->
                 <a class="btn-popup-test btn-type-3-02" role="button" href>팝업버튼 클릭</a>
-<pre><code class="language-html">&lt;a class=&quot;btn-popup-name&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;</code></pre>
+<pre><code id="source" class="language-html">&lt;a class=&quot;btn-popup-name&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;</code></pre>
                 <p class="ui-kit-comment">
                     팝업버튼의 <strong>class="btn-popup-<span class="red">name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="popup-<span class="red">name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
                     클래스의 <strong>popup-<span class="red">name</span></strong> 은 파일 네이밍과 동일하게 규칙적으로 사용합니다.
@@ -985,7 +922,7 @@ JS 내용 작성</code></pre>
             </article>
             <article>
                 <h2>Popup Base Style</h2>
-<pre><code class="language-html">&lt;div class=&quot;popup&quot; data-id=&quot;popup-name&quot;&gt;
+<pre><code id="source" class="language-html">&lt;div class=&quot;popup&quot; data-id=&quot;popup-name&quot;&gt;
 
     &lt;!-- [Start] 팝업 헤드라인 --&gt;
     &lt;header class=&quot;popup-headline&quot;&gt;
@@ -1009,7 +946,7 @@ JS 내용 작성</code></pre>
     &lt;!-- [End] 팝업 콘텐츠 --&gt;
 
 &lt;/div&gt;</code></pre>
-<pre><code class="language-js">// 팝업 버튼 (class=&quot;btn-popup-name&quot;)
+<pre><code id="source" class="language-js">// 팝업 버튼 (class=&quot;btn-popup-name&quot;)
 $('.btn-popup-name').on('click', function(e) {
     e.preventDefault();
     // 팝업 찾아 열기 (data-id=&quot;popup-name&quot;)
@@ -1024,16 +961,34 @@ $('.btn-popup-name').on('click', function(e) {
 
     <!-- [Start] Footer Area -->
     <footer class="footer">
-        <div class="site-info">
-            <a href="#"><span>이용약관</span></a>
-            <a href="#"><span>개인정보처리방법</span></a>
-            <a href="#"><span>이메일무단수집거부</span></a>
-            <a href="#"><span>저작권보호 및 이용정책</span></a>
+        <div class="wrap">
+            <div class="site-area">
+                <div class="site-info">
+                    <a href="#"><span>관련사이트</span></a>
+                    <a href="#"><span>찾아오시는길</span></a>
+                    <a href="#"><span>개인정보처리방침</span></a>
+                    <a href="#"><span>이메일무단수집거부</span></a>
+                </div>
+                <p class="site-copyright">
+                    137-702 서울특별시 서초구 반포대로 201<span>(반포동) 국립중앙도서관 본관 5층 통일부 북한자료센터</span>
+                    <small class="copyright">Copyright&copy; Information Center on North Korea. <span>ALL RIGHTS RESERVED.</span></small>
+                </p>
+            </div>
+            <div class="site-link-area">
+                <div class="select-box">
+                    <label for="site-link">유관기관 홈페이지</label>
+                    <select id="site-link" name="site-link-item">
+                        <option selected="selected">유관기관 홈페이지</option>
+                        <option>통일부</option>
+                        <option>북한정보포털</option>
+                        <option>남북이산가족찾기</option>
+                        <option>남북회담본부</option>
+                        <option>통일교육원</option>
+                    </select>
+                </div>
+                <button class="btn-site-link-move" class="button">이동</button>
+            </div>
         </div>
-        <p>
-            03171 서울특별시 종로구 세종대로 209 (세종로) 정부서울청사 6,7층 TEL : 1577-1365 (야간 2100-5799)<br/>
-            <small class="copyright">COPYRIGHT&copy;MINISTRY OF UNIFICATION .ALL RIGHTS RESERVED.</small>
-        </p>
     </footer>
     <!-- [End] Footer Area -->
 
@@ -1061,9 +1016,9 @@ $('.btn-popup-name').on('click', function(e) {
     <!-- [End] Popup Base Style Area -->
 
     <!-- javascript : 라이브러리 플러그인 -->
-<script type="text/javascript" src="../assets/js/lib-jquery.js"></script>
-<!-- javascript : 공통사용 -->
-<script type="text/javascript" src="../assets/js/uni-common.js"></script>
+    <script type="text/javascript" src="../assets/js/lib-jquery.js"></script>
+    <!-- javascript : 공통사용 -->
+    <script type="text/javascript" src="../assets/js/uni-common.js"></script>
 </body>
 
 </html>

@@ -55,9 +55,9 @@
 
     // 테스트 팝업
     $('.btn-popup-test').on('click', function(e) {
-      e.preventDefault();
-      // 팝업 찾아 열기 (id)
-      $.popupId($popups, 'test-area').open();
+        e.preventDefault();
+        // 팝업 찾아 열기 (id)
+        $.popupId($popups, 'test-area').open();
     });
 
 })(window, window.jQuery);
@@ -66,15 +66,19 @@
 // GNB 플러그인 실행
 // =======================================
 (function(global, $) {
-
-    // GNB 전체메뉴
+    
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈
-    $('.btn-gnb-all').click(function() {
-       $('#gnb-all-menu').toggleClass('open');
+    $("#gnb-menu li button").click(function() {
+       $("#gnb-all-menu").slideDown("slow");
     });
-    // 전체메뉴 닫기 버튼 클릭 시 닫기
-    $('.btn-gnb-close').click(function() {
-       $('#gnb-all-menu').toggleClass('open');
+
+    $(".btn-gnb-menu").click(function() {
+        $("#gnb-all-menu").slideDown("slow");
+    });
+
+    // 사이트맵 닫기 버튼 클릭 시 전체메뉴 감추기
+    $(".btn-gnb-close").click(function(){
+        $("#gnb-all-menu").slideUp("slow");
     });
 
 })(window, window.jQuery);
@@ -118,72 +122,81 @@
 // =======================================
 (function(global, $){
   'use strict';
+    // -----------------------------------------------------------------------------
+    // 메인 연속간행물 케로셀 배너
+    // -----------------------------------------------------------------------------
+    $('.serial-carousel-wrap .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 55,
+        nav: true,
+        responsiveClass: true,
+        navText: ['', ''],
+        responsive: {
+            0: {
+                dots: false,
+                items: 1,
+                slideBy: 1
+            },
+            480: {
+                dots: false,
+                items: 2,
+                slideBy: 2
+            },
+            720: {
+                items: 3,
+                slideBy: 3
+            },
+            900: {
+                items: 4,
+                slideBy: 4
+            },
+            1100: {
+                items: 5,
+                slideBy: 5
+            }
+        }
+    })
 
     // -----------------------------------------------------------------------------
-    // - 인디케이터 또는 이전, 다음 버튼(<,>) 클릭하면 슬라이드 자동 재생이 정지 
-    // - 재생(▶) 버튼이 정지(■) 버튼으로 변경
-    // - 이전, 다음 버튼(<,>), 재생, 정지(▶, ■) 인디케이터 화면 표시 설정 (true, false)
+    // 메인 팝업존 케로셀 배너
     // -----------------------------------------------------------------------------
-
-    // -----------------------------------------------------------------------------
-    // 메인 상단 케로셀 배너
-    // -----------------------------------------------------------------------------
-    $('.main-carousel-slider').carousel({
-        
-        // >>>>>> active = 활성화 번호 1 일 경우, 첫번째 슬라이드 활성화
-        // active: 3,
-
-        // >>>>>> indicator = 인디케이터 표시 여부 (기본 값 false)
-        indicator: true,
-
-        // >>>>>> nav_btn = 내비게이션 버튼 표시 여부 (기본 값 true)
-        // nav_btn: false,
-
-        // >>>>>> toggle_btn = 토글 애니메이션 버튼 표시 여부 (기본 값 true)
-        // toggle_btn: false,
-
-        // >>>>>> animate = 애니메이션 재생 설정 (기본 값 false)
+    $('.popup-zone-carousel').carousel({
         animate: true,
-        
-        // >>>>>> duration = 애니메이션 재생 시간 설정 (기본 값 3000)
-        // duration: 3000,
-        
-        // >>>>>> easing = 애니메이션 이징 설정 (기본 값 'swing')
-        // easing: 'linear',
-
-    });
-
-    // -----------------------------------------------------------------------------
-    // 메인 공지사항 케로셀 배너
-    // -----------------------------------------------------------------------------
-    $('.notices-list').carousel({
-        animate: true,
-        nav_btn: false,
-        // toggle_btn: false,
-        indicator: true
+        indicator: false
     });
 
     // -----------------------------------------------------------------------------
     // 관련 사이트 케로셀 배너
     // -----------------------------------------------------------------------------
-    $('.link-banner-area').carousel();
-
-
-    // ========================================================================
-    // 플러그인 객체 `재생/정지` 외부 버튼 사용법
-    // ========================================================================
-    // 캐러셀 컴포넌트 외부에서 원격 조정으로 제어하고자 할 경우,
-    // 다음과 같이 코드를 사용해야 한다.
-
-    // 플러그인 연결 후, 변수에 플러그인 객체 참조
-    // var main_slider = $('.main-carousel-slider').carousel().data('carousel');
-    // 외부 버튼 클릭 이벤트를 통해 캐러셀 컴포넌트 제어
-    // $('#pl').on('click', function(){
-    //   main_slider.play();
-    // });
-    // $('#st').on('click', function(){
-    //   main_slider.stop();
-    // });
-    // ========================================================================
+    $('.link-banner-area .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 14,
+        nav: true,
+        dots: false,
+        responsiveClass: true,
+        navText: ['', ''],
+        responsive: {
+            0: {
+                items: 1,
+                slideBy: 1
+            },
+            480: {
+                items: 2,
+                slideBy: 2
+            },
+            720: {
+                items: 3,
+                slideBy: 3
+            },
+            900: {
+                items: 4,
+                slideBy: 4
+            },
+            1100: {
+                items: 5,
+                slideBy: 5
+            }
+        }
+    })
 
 })(window, window.jQuery);
