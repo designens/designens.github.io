@@ -1652,7 +1652,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 /* =======================================*/
 .serial-carousel-wrap { position: relative; background: #d2eafa url("../../assets/images/main/bg-shelf.png") center bottom 4px no-repeat; }
 
-.serial-carousel-wrap .serial-carousel-headeline { position: relative; z-index: 9999; }
+.serial-carousel-wrap .serial-carousel-headeline { position: relative; z-index: 999; }
 
 .serial-carousel-wrap .serial-carousel-headeline h3 { position: absolute; top: 26px; left: 32px; color: #17324a; }
 
