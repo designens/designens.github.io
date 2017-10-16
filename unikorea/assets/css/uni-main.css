@@ -1601,7 +1601,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 @media (min-width: 45em) and (max-width: 68.75em) { .unibook-search { background-position: 30% center; } }
 
 @media (min-width: 68.75em) { .unibook-search { background-position: center; }
-  .unibook-search .top-search-area { width: 66%; float: left; margin-left: 17%; margin-right: -100%; } }
+  .unibook-search .top-search-area { width: 66%; float: left; margin-left: 17%; margin-right: -100%; padding: 0; } }
 
 /* =======================================*/
 /* UNIBOOK 서비스
