@@ -1670,13 +1670,17 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .serial-carousel-wrap .serial-carousel .owl-carousel a > img { position: absolute; top: 0; left: 0; width: 104px; height: 141px; }
 
-.serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev { position: absolute; top: 50%; left: 20px; width: 22px; height: 35px; }
+.serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev { position: absolute; top: 50%; left: 21px; width: 22px; height: 35px; }
 
 .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev:before { font-family: 'FontAwesome'; content: ""; font-size: 60px; font-size: 6rem; color: #bbc7cf; }
 
-.serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next { position: absolute; top: 50%; right: 20px; width: 22px; height: 35px; }
+.serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev:hover, .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev:focus { transform: scale(1.2); }
+
+.serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next { position: absolute; top: 50%; right: 21px; width: 22px; height: 35px; }
 
 .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next:before { font-family: 'FontAwesome'; content: ""; font-size: 60px; font-size: 6rem; color: #bbc7cf; }
+
+.serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next:hover, .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next:focus { transform: scale(1.2); }
 
 .serial-carousel-wrap .serial-carousel .owl-carousel .owl-dots { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: -50px; }
 
@@ -1690,11 +1694,15 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .serial-carousel-wrap .serial-carousel .owl-carousel .owl-dots .owl-dot.active:focus { background: #3466a2; }
 
-@media (min-width: 30em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 100px 0 100px; } }
+@media (min-width: 30em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 100px 0 100px; }
+  .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev { left: 0; }
+  .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next { right: 0; } }
 
 @media (min-width: 45em) and (max-width: 68.75em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 120px 0 120px; } }
 
-@media (min-width: 68.75em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 170px 0 170px; } }
+@media (min-width: 68.75em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 170px 0 170px; }
+  .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev { left: 20px; }
+  .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next { right: 20px; } }
 
 /* =======================================*/
 /* 팝업존

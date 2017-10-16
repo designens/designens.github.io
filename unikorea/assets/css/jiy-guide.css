@@ -1878,7 +1878,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 /* =======================================*/
 .lnb { width: 30.90909%; float: left; margin-right: 3.63636%; margin-bottom: 30px; }
 
-.lnb h3 { display: block; height: 100px; line-height: 100px; color: #fff; text-align: center; letter-spacing: -0.03em; }
+.lnb h3 { display: block; height: 110px; line-height: 110px; color: #fff; text-align: center; letter-spacing: -0.03em; background: "../../assets/images/sub/bg-lnb-title.png"; }
 
 .accordion-lnb { border: 1px solid #cad7e0; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
@@ -2098,11 +2098,11 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .footer-link-banner .wrap .link-banner-area .owl-carousel li a span { display: none; }
 
-.footer-link-banner .wrap .link-banner-area .owl-carousel .owl-nav .owl-prev { position: absolute; top: 50%; left: -37px; width: 23px; height: 23px; line-height: 21px; text-align: center; border-radius: 50%; margin-top: -12px; background: #bdbbbb; }
+.footer-link-banner .wrap .link-banner-area .owl-carousel .owl-nav .owl-prev { position: absolute; top: 50%; left: -37px; width: 23px; height: 23px; line-height: 23px; text-align: center; border-radius: 50%; margin-top: -12px; background: #bdbbbb; }
 
 .footer-link-banner .wrap .link-banner-area .owl-carousel .owl-nav .owl-prev:before { font-family: 'FontAwesome'; content: ""; font-size: 18px; font-size: 1.8rem; color: #1c1c1c; }
 
-.footer-link-banner .wrap .link-banner-area .owl-carousel .owl-nav .owl-next { position: absolute; top: 50%; right: -37px; width: 23px; height: 23px; line-height: 21px; text-align: center; border-radius: 50%; margin-top: -12px; background: #bdbbbb; }
+.footer-link-banner .wrap .link-banner-area .owl-carousel .owl-nav .owl-next { position: absolute; top: 50%; right: -37px; width: 23px; height: 23px; line-height: 23px; text-align: center; border-radius: 50%; margin-top: -12px; background: #bdbbbb; }
 
 .footer-link-banner .wrap .link-banner-area .owl-carousel .owl-nav .owl-next:before { font-family: 'FontAwesome'; content: ""; font-size: 18px; font-size: 1.8rem; color: #1c1c1c; }
 
