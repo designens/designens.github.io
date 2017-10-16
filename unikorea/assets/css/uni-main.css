@@ -1656,7 +1656,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .serial-carousel-wrap .serial-carousel-headeline h3 { position: absolute; top: 26px; left: 32px; color: #17324a; }
 
-.serial-carousel-wrap .serial-carousel-headeline .btn-more { position: absolute; top: 26px; right: 32px; padding-right: 18px; background: url("https://icon.now.sh/plus/254389/12") right center no-repeat; }
+.serial-carousel-wrap .serial-carousel-headeline .btn-more { position: absolute; top: 26px; right: 32px; padding-right: 18px; background: url("../../assets/images/icon/icon-more-blue.svg") right center no-repeat; }
 
 .serial-carousel-wrap .serial-carousel { height: 274px; }
 
@@ -1713,6 +1713,14 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .popup-zone .headline { display: none; }
 
+.popup-zone .popup-zone-carousel-count { position: absolute; top: 6px; right: 80px; font-size: 13px; font-size: 1.3rem; }
+
+.popup-zone .popup-zone-carousel-count span { color: #3a434a; }
+
+.popup-zone .popup-zone-carousel-count span:first-child { font-weight: bold; }
+
+.popup-zone .popup-zone-carousel-count span:first-child:after { font-weight: normal; content: " / "; }
+
 .popup-zone .popup-zone-carousel { height: 196px; }
 
 .popup-zone .popup-zone-carousel .ui-carousel__tabpanel-wrapper article { width: 100vw; text-align: center; }
@@ -1748,7 +1756,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .notice-zone .headline { margin-top: 23px; }
 
-.notice-zone .headline .btn-more { position: absolute; top: 6px; right: 0; padding-right: 18px; background: url("https://icon.now.sh/plus/254389/12") right center no-repeat; }
+.notice-zone .headline .btn-more { position: absolute; top: 6px; right: 0; padding-right: 18px; background: url("../../assets/images/icon/icon-more-sky-blue.svg") right center no-repeat; }
 
 .notice-zone ul li { position: relative; height: 33px; line-height: 33px; clear: both; }
 
