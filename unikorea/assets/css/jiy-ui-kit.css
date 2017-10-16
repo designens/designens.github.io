@@ -2019,7 +2019,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* Container : 컨테이너 영역
 /* =======================================*/
-#container { display: block; min-height: 670px; padding-top: 50px; padding-bottom: 30px; /* Content 영역 */ }
+#container { display: block; min-height: 670px; /* Content 영역 */ }
 
 #container .content-area { width: 40%; float: right; margin-right: 0; margin-bottom: 90px; }
 
