@@ -311,7 +311,7 @@ window.smoothScroll = (function (window, document, undefined) {
             link.on('click', { link: link }, that.dropdown);
         });
         if (active > 0) {
-           links.eq(active - 1).trigger('click');     
+           links.eq(active - 1).trigger('click');
         }
     }
     // 아코디언 설정
