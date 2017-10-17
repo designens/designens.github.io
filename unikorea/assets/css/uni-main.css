@@ -1,8 +1,21 @@
 @charset "UTF-8";
 /*! uni-main.css v1.0.0 © inyoung524@naver.com */
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 100; src: local("Noto Sans Thin"), local("NotoSans-Thin"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Thin-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Thin-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-Thin-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-Thin-Hestia.otf") format("opentype"); }
+
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 300; src: local("Noto Sans Light"), local("NotoSans-Light"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Light-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Light-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-Light-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-Light-Hestia.otf") format("opentype"); }
+
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 350; src: local("Noto Sans DemiLight"), local("NotoSans-DemiLight"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-DemiLight-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-DemiLight-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-DemiLight-Hestia.otf") format("opentype"); }
+
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 400; src: local("Noto Sans Regular"), local("NotoSans-Regular"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Regular-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Regular-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-Regular-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-Regular-Hestia.otf") format("opentype"); }
+
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 500; src: local("Noto Sans Medium"), local("NotoSans-Medium"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Medium-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Medium-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-Medium-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-Medium-Hestia.otf") format("opentype"); }
+
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 700; src: local("Noto Sans Bold"), local("NotoSans-Bold"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Bold-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Bold-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-Bold-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-Bold-Hestia.otf") format("opentype"); }
+
+@font-face { font-family: 'Noto Sans Korean'; font-style: normal; font-weight: 900; src: local("Noto Sans Black"), local("NotoSans-Black"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Black-Hestia.eot"), url("../fonts/NotoSansKR-Hestia/eot/NotoSansKR-Black-Hestia.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Hestia/woff/NotoSansKR-Black-Hestia.woff") format("woff"), url("../fonts/NotoSansKR-Hestia/otf/NotoSansKR-Black-Hestia.otf") format("opentype"); }
+
 /*! Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
 /* FONT PATH -------------------------- */
-@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 
 .fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -1553,17 +1566,25 @@
 /* =======================================*/
 html { font-size: 10px; }
 
-html body { font-family: "Noto Sans Korean", sans-serif, serif; font-size: 1.4rem; -webkit-font-smoothing: antialiased; color: #464646; line-height: 21px; }
+html[lang="ko-KR"], html[lang="ko"] { font-family: "Noto Sans Korean", sans-serif, serif; }
 
-h2, h3, h4 { font-weight: 500; letter-spacing: -0.03em; }
+html[lang="en"] { font-family: Arial, sans-serif, serif; }
+
+html body { font-size: 1.4rem; color: #464646; line-height: 21px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { html body { -webkit-font-smoothing: antialiased; } }
+
+h1, h2, h3, h4 { font-weight: 500; }
 
 h5, h6 { font-weight: 600; }
 
-h2 { font-size: 25px; font-size: 2.5rem; line-height: 37.5px; line-height: 3.75rem; }
+h1 { font-size: 30px; font-size: 3rem; line-height: 45px; line-height: 4.5rem; }
+
+h2 { font-size: 26px; font-size: 2.6rem; line-height: 39px; line-height: 3.9rem; }
 
 h3 { font-size: 23px; font-size: 2.3rem; line-height: 34.5px; line-height: 3.45rem; }
 
-h4 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem; }
+h4 { font-size: 20px; font-size: 2rem; line-height: 30px; line-height: 3rem; }
 
 h5 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
@@ -1850,7 +1871,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   .participating-services ul li:nth-of-type(1) { width: 22%; }
   .participating-services ul li:nth-of-type(2) { width: 28%; } }
 
-@media (min-width: 68.75em) { .participating-services h4 { margin-right: 30px; }
+@media (min-width: 68.75em) { .participating-services h4 { font-size: 18px; font-size: 1.8rem; margin-right: 30px; }
   .participating-services ul li { padding: 0 33px; } }
 
 /*# sourceMappingURL=map/uni-main.css.map */
