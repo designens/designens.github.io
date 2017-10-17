@@ -2044,17 +2044,19 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* Container : 서브 헤드라인 영역
 /* =======================================*/
-.sub-headline { height: 90px; background: #e1f1ff url("../../assets/images/sub/bg-sub-top-title.png") no-repeat; background-position: right -20px center; }
+.sub-headline { background: #e1f1ff; }
 
-.sub-headline .wrap { position: relative; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.sub-headline .wrap { height: 90px; background: url("../../assets/images/sub/bg-sub-top-title.png") no-repeat; background-position: right -21px center; }
 
-.sub-headline .wrap h2 { font-size: 20px; font-size: 2rem; }
+.sub-headline .wrap .headline { position: relative; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-.sub-headline .wrap p { display: none; }
+.sub-headline .wrap .headline h2 { font-size: 20px; font-size: 2rem; }
 
-@media (min-width: 68.75em) { .sub-headline { height: 110px; text-align: center; background-position: right 34px center; }
-  .sub-headline .wrap h2 { font-size: 26px; font-size: 2.6rem; }
-  .sub-headline .wrap p { display: block; } }
+.sub-headline .wrap .headline p { display: none; }
+
+@media (min-width: 68.75em) { .sub-headline .wrap { height: 110px; text-align: center; background-position: right center; }
+  .sub-headline .wrap .headline h2 { font-size: 26px; font-size: 2.6rem; }
+  .sub-headline .wrap .headline p { display: block; } }
 
 /* =======================================*/
 /* 페이징 스타일
