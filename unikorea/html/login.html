@@ -38,7 +38,8 @@
     
     <!-- [Start] Header -->
     <header class="header">
-        <!-- [Start] Top menu -->
+
+        <!-- [Start] Header : Top menu -->
         <div class="top-menu">
             <div class="wrap">
                 <div class="menu">
@@ -52,19 +53,9 @@
                 </div>
             </div>
         </div>
-        <!-- [End] Top menu -->
+        <!-- [End] Header : Top menu -->
         
-        <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
-        <div class="gnb-area wrap">
-        
-            <!-- [Start] 로고 영역 -->
-            <h1 class="logo"><a href="/"><img src="../assets/images/common/logo.png" alt="대북지원정보시스템 메인이동" /></a></h1>
-            <!-- [End] 로고 영역 -->
-
-        </div>
-        <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
-
-        <!-- [Start] GNB 전체 메뉴 -->
+        <!-- [Start] Header : GNB -->
         <div class="top-area">
         <div class="wrap">
             <!-- [Start] 로고 -->
@@ -76,7 +67,7 @@
                 <ul id="gnb-menu">
                     <li><button type="button" aria-labelledby="gnb-all-menu">자료검색</button></li>
                     <li><button type="button" aria-labelledby="gnb-all-menu">원문서비스</button></li>
-                    <li><button type="button" aria-labelledby="gnb-all-menu">통일북한정보</button></li>
+                    <li><button type="button" aria-labelledby="gnb-all-menu">통일북한자료실</button></li>
                     <li><button type="button" aria-labelledby="gnb-all-menu">참여서비스</button></li>
                     <li><button type="button" aria-labelledby="gnb-all-menu">센터소개</button></li>
                 </ul>
@@ -87,49 +78,230 @@
             </div>
         </div>
     </div>
-        <!-- [End] GNB 전체 메뉴 -->
+        <!-- [End] Header : GNB -->
+
     </header>
     <!-- [End] Header -->
+    
+    <!-- [Start] GNB : 사이트 맵 -->
+    <nav id="gnb-all-menu" class="accordion-gnb">
+        <div class="user-menu">
+            <a href="">로그인</a><a href="">회원가입</a>
+        </div>
+        <ul class="aco-open wrap">
+            <li>
+                <a class="title-link" role="button" href="">자료검색</a>
+                <ul class="sub-menu">
+                    <li><a href="">소장자료 검색</a></li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-1-accordion" id="2depth-1-2title"/>
+                        <label class="toggle-label" for="2depth-1-2title">연속간행물 검색</label>
+                        <ul class="toggle-container">
+                            <li><a href="">국내연속간행물</a></li>
+                            <li><a href="">국외연속간행물</a></li>
+                            <li><a href="">북한발행연속간행물</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">신규 등록자료 검색</a></li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-1-accordion" id="2depth-1-4title"/>
+                        <label class="toggle-label" for="2depth-1-4title">인기 자료 검색</label>
+                        <ul class="toggle-container">
+                            <li><a href="">인기 키워드 자료</a></li>
+                            <li><a href="">인기 대출 자료</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="title-link" role="button" href="">원문서비스</a>
+                <ul class="sub-menu">
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-2-accordion" id="2depth-2-1title"/>
+                        <label class="toggle-label" for="2depth-2-1title">통일부 발간물</label>
+                        <ul class="toggle-container">
+                            <li><a href="">통일부 발간물 원문검색</a></li>
+                            <li><a href="">통일백서</a></li>
+                            <li><a href="">통일문제의 이해</a></li>
+                            <li><a href="">북한의 이해</a></li>
+                            <li><a href="">북한동향</a></li>
+                            <li><a href="">북한관련 자료</a></li>
+                            <li><a href="">신진연구자 논문집</a></li>
+                        </ul>
+                    </li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-2-accordion" id="2depth-2-2title"/>
+                        <label class="toggle-label" for="2depth-2-2title">통일연구원 발간물</label>
+                        <ul class="toggle-container">
+                            <li><a href="">남북관계</a></li>
+                            <li><a href="">통일</a></li>
+                            <li><a href="">북한</a></li>
+                            <li><a href="">국제관계</a></li>
+                            <li><a href="">북한인권</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">학술DB</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title-link" role="button" href="">통일북한자료실</a>
+                <ul class="sub-menu">
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-1title"/>
+                        <label class="toggle-label" for="2depth-3-1title">북한영화</label>
+                        <ul class="toggle-container">
+                            <li><a href="">북한영화 개요</a></li>
+                            <li><a href="">북한영화 해설</a></li>
+                        </ul>
+                    </li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-2title"/>
+                        <label class="toggle-label" for="2depth-3-2title">북한 교과서</label>
+                        <ul class="toggle-container">
+                            <li><a href="">유치원생</a></li>
+                            <li><a href="">소학교</a></li>
+                            <li><a href="">중학교</a></li>
+                            <li><a href="">고등학교</a></li>
+                        </ul>
+                    </li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-3title"/>
+                        <label class="toggle-label" for="2depth-3-3title">북한만화</label>
+                        <ul class="toggle-container">
+                            <li><a href="">만화</a></li>
+                            <li><a href="">동화</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">북한발행 정기간행물</a></li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-5title"/>
+                        <label class="toggle-label" for="2depth-3-5title">북한 사전</label>
+                        <ul class="toggle-container">
+                            <li><a href="">북한용어사전</a></li>
+                            <li><a href="">남북한 언어비교</a></li>
+                            <li><a href="">북한은어</a></li>
+                            <li><a href="">당정기구 영문표기</a></li>
+                            <li><a href="">남북관계 지식사전</a></li>
+                            <li><a href="">북한 지식사전</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="title-link" role="button" href="">참여서비스</a>
+                <ul class="sub-menu">
+                    <li><a href="">북한영화 신청</a></li>
+                    <li><a href="">북한상실설명회 신청</a></li>
+                    <li><a href="">세미나실 이용 신청</a></li>
+                    <li><a href="">견학 및 이용자교육</a></li>
+                    <li><a href="">신문고 민원신청</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title-link" role="button" href="">센터소개</a>
+                <ul class="sub-menu">
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">연혁</a></li>
+                    <li class="toggle">
+                        <input class="toggle-trigger" type="checkbox" name="2depth-4-accordion" id="2depth-4-3title"/>
+                        <label class="toggle-label" for="2depth-4-3title">이용안내</label>
+                        <ul class="toggle-container">
+                            <li><a href="">이용안내</a></li>
+                            <li><a href="">이용서비스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">소장자료안내</a></li>
+                    <li><a href="">오시는길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="title-link" role="button" href="">My Library</a>
+                <ul class="sub-menu">
+                    <li><a href="">개인정보수정</a></li>
+                    <li><a href="">대출/연장/반납</a></li>
+                    <li><a href="">희망도서신청</a></li>
+                    <li><a href="">나의활동</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="btn-gnb-close">전체메뉴 닫기</button>
+    </nav>
+    <!-- [End] GNB : 사이트 맵 -->
+
+    <!-- [Start] Container Headline -->
+    <header class="sub-headline">
+        <div class="wrap">
+            <div class="headline">
+                <h2>로그인</h2>
+                <p>현재 페이지 상세 내용이 있습니다.</p>
+            </div>
+        </div>
+    </header>
+    <!-- [End] Container Headline -->
 
     <!-- [Start] Container Area -->
-    <main id="container" class="login-bg">
+    <main id="container" class="sub-content">
 
-        <!-- [Start] Content Area -->
-        <section class="login-area">
+        <div class="wrap"></div>
 
-            <!-- [Start] 컨텐츠 타이틀 -->
-            <h2>회원 로그인</h2>
-            <!-- [End] 컨텐츠 타이틀 -->
-
-            <!-- [Start] 컨텐츠 상세  -->
-            <div class="login-content">
-                <div class="form-group">
-                    <div class="input-area">
-                        <label for="username">아이디 입력</label>
-                        <input type="text" id="username" name="username" required="required" />
-                        <br/>
-                        <label for="password">비밀번호 입력</label>
-                        <input type="password" id="password" name="password" required="required" />
-                    </div>
-                    <button class="btn-login">로그인</button>
-                </div>
-                <div class="checkbox-type">
-                    <input type="checkbox" id="rememberMe" name="rememberMe">
-                    <label for="rememberMe">아이디 저장</label>
-                </div>
-                <div class="btn-link-set">
-                    <a class="btn-main" href="/">메인화면으로 이동</a>
-                    <a class="btn-join" href="sign-up-write.html">회원가입</a>
-                </div>
-                <div class="information">아이디나 비밀번호를 잊어버리신 경우 <span>1577-1365 (야간 02-2100-5799)</span>로 문의주시기 바랍니다.</div>
-            </div>
-            <!-- [End] 컨텐츠 상세  -->
-
-        </section>
-        <!-- [End] Content Area -->
-        
     </main>
     <!-- [End] Container Area -->
+
+    <!-- [Start] Footer Banner -->
+    <div class="footer-link-banner">
+        <div class="wrap">
+            <div class="link-banner-area">
+                <ul class="owl-carousel">
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-01.png" alt=""><span>통일부</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-02.png" alt=""><span>북한정보포털</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-03.png" alt=""><span>남북이산가족찾기</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-04.png" alt=""><span>남북회담본부</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-05.png" alt=""><span>통일교육원</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-01.png" alt=""><span>통일부</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-02.png" alt=""><span>북한정보포털</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-03.png" alt=""><span>남북이산가족찾기</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-04.png" alt=""><span>남북회담본부</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-05.png" alt=""><span>통일교육원</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-01.png" alt=""><span>통일부</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-02.png" alt=""><span>북한정보포털</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-03.png" alt=""><span>남북이산가족찾기</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-04.png" alt=""><span>남북회담본부</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="../assets/images/common/site-link-05.png" alt=""><span>통일교육원</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- [End] Footer Banner -->
 
     <!-- [Start] Footer Area -->
     <footer class="footer">

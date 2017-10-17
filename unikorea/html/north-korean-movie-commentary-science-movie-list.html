@@ -15,14 +15,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- MOBILE : 모바일 최적화 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Style : Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <!-- Styles : CSS & SASS Sorcemap -->
     <link rel="stylesheet" href="../assets/css/uni-common.css"/>
-    <link rel="stylesheet" href="../assets/css/uni-main.css"/>
+    <link rel="stylesheet" href="../assets/css/uni-style.css"/>
     <!-- Styles : CSS min -->
     <!-- <link rel="stylesheet" href="../assets/css/uni-common.min.css"/> -->
-    <!-- <link rel="stylesheet" href="../assets/css/uni-main.min.css"/> -->
+    <!-- <link rel="stylesheet" href="../assets/css/uni-style.min.css"/> -->
     <!-- HTML5 & CSS3 지원 가능 브라우저 확인 -->
     <script type="text/javascript" src="../assets/js/modernizr-2.8.3.min.js"></script>
     <!-- javascript : jQuery -->
@@ -57,7 +55,7 @@
         </div>
         <!-- [End] Header : Top menu -->
         
-        <!-- [Start] Header : GNB 메뉴 -->
+        <!-- [Start] Header : GNB -->
         <div class="top-area">
         <div class="wrap">
             <!-- [Start] 로고 -->
@@ -80,7 +78,7 @@
             </div>
         </div>
     </div>
-        <!-- [End] Header : GNB 메뉴 -->
+        <!-- [End] Header : GNB -->
 
     </header>
     <!-- [End] Header -->
@@ -230,178 +228,95 @@
     </nav>
     <!-- [End] GNB : 사이트 맵 -->
 
-    <main id="container">
-        <!-- [Start] Top Search Area -->
-        <div class="unibook-search">
-            <div class="wrap">
-                <div class="top-search-area">
-                    <div class="search-wrap">
-                        <button class="btn-lang-input" type="button">다국어입력</button>
-                        <label>소장자료 검색</label>
-                        <input type="text" placeholder="검색어를 입력하세요.">
-                        <button class="btn-unibook-search" type="button">검색버튼</button>
-                    </div>
-                    <div class="searh-keyword">
-                        <a href="">조선로동당</a>
-                        <a href="">공화국</a>
-                        <a href="">왕오천축국전</a>
-                        <a href="">만병초</a>
-                        <a href="">북한시장을 말하다</a>
-                        <a href="">미사일 바이블</a>
-                        <a href="">북핵, 오늘과 내일</a>
-                    </div>
-                </div>
+    <!-- [Start] Container Headline -->
+    <header class="sub-headline">
+        <div class="wrap">
+            <div class="headline">
+                <h2>통일북한자료실</h2>
+                <p>현재 페이지 상세 내용이 있습니다.</p>
             </div>
         </div>
-        <!-- [End] Top Search Area -->
+    </header>
+    <!-- [End] Container Headline -->
 
-        <!-- [Start] Unibook Service Area -->
-        <div class="unibook-service">
-            <div class="wrap">
-                <h2><span>UNIBOOK</span> 서비스</h2>
-                <ul class="unibook-item">
+    <!-- [Start] Container Area -->
+    <main id="container" class="sub-content">
+
+        <div class="wrap">
+            <!-- [Start] LNB 메뉴 -->
+            <nav class="lnb">
+                <h3>통일북한자료실</h3>
+                <ul class="aco-open accordion-lnb">
                     <li>
-                        <h3>신착자료</h3>
-                        <p>신규로 입수되어 등록한 자료입니다.</p>
+                        <a href="#" class="lnb-link" role="button">북한영화<span class="fa icon-toggle" aria-hidden="true"></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="">북한영화 개요</a></li>
+                            <li><a href="">북한영화 해설</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <h3>통일부 발간물</h3>
-                        <p>통일부에서 발행된 발간물입니다.</p>
+                        <a href="#" class="lnb-link" role="button">북한 교과서<span class="fa icon-toggle" aria-hidden="true"></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="">유치원생</a></li>
+                            <li><a href="">소학교</a></li>
+                            <li><a href="">중학교</a></li>
+                            <li><a href="">고등학교</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <h3>북한영화</h3>
-                        <p>북한영화상영신청을 할 수 있습니다.</p>
+                        <a href="#" class="lnb-link" role="button">북한만화<span class="fa icon-toggle" aria-hidden="true"></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="">만화</a></li>
+                            <li><a href="">동화</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="lnb-link" role="button">북한발행 정기간행물<span class="fa icon-toggle" aria-hidden="true"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="lnb-link" role="button">북한 사전<span class="fa icon-toggle" aria-hidden="true"></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="">북한용어사전</a></li>
+                            <li><a href="">남북한 언어비교</a></li>
+                            <li><a href="">북한은어</a></li>
+                            <li><a href="">당정기구 영문표기</a></li>
+                            <li><a href="">남북관계 지식사전</a></li>
+                            <li><a href="">북한 지식사전</a></li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <!-- [End] Unibook Service Area -->
+            </nav>
+            <!-- [End] LNB 메뉴 -->
+            
+            <!-- [Start] Content Area -->
+            <section class="content-area">
 
-        <!-- [Start] Main Carousel Slider -->
-        <div class="serial-carousel-wrap">
-            <div class="serial-carousel-headeline wrap">
-                <h3>연속간행물</h3>
-                <a class="btn-more" href="">더보기</a>
-            </div>
-            <div class="serial-carousel wrap">
-                <div class="owl-carousel">
-                    <a href=""><img src="../assets/images/main/img-book01.png" alt="조선료리"></a>
-                    <a href=""><img src="../assets/images/main/img-book02.png" alt="경제연구"></a>
-                    <a href=""><img src="../assets/images/main/img-book03.png" alt="한문서적"></a>
-                    <a href=""><img src="../assets/images/main/img-book04.png" alt="월간북한"></a>
-                    <a href=""><img src="../assets/images/main/img-book05.png" alt="Foreing Affairs"></a>
-                    <a href=""><img src="../assets/images/main/img-book05.png" alt="Foreing Affairs"></a>
-                    <a href=""><img src="../assets/images/main/img-book04.png" alt="월간북한"></a>
-                    <a href=""><img src="../assets/images/main/img-book03.png" alt="한문서적"></a>
-                    <a href=""><img src="../assets/images/main/img-book02.png" alt="경제연구"></a>
-                    <a href=""><img src="../assets/images/main/img-book01.png" alt="조선료리"></a>
-                    <a href=""><img src="../assets/images/main/img-book01.png" alt="조선료리"></a>
-                    <a href=""><img src="../assets/images/main/img-book02.png" alt="경제연구"></a>
-                    <a href=""><img src="../assets/images/main/img-book03.png" alt="한문서적"></a>
-                    <a href=""><img src="../assets/images/main/img-book04.png" alt="월간북한"></a>
-                    <a href=""><img src="../assets/images/main/img-book05.png" alt="Foreing Affairs"></a>
-                </div>
-            </div>
-        </div>
-        <!-- [End] Main Carousel Slider -->
-
-        <!-- [Start] Main Content Area -->
-        <div class="main-content wrap">
-            <div class="popup-zone">
-                <div class="headline">
-                    <h3>팝업존</h3>
-                    <!-- 카운트 연결 안됨 (.popup-zone-carousel와 스크립트 연결 필요) -->
-                    <div class="popup-zone-carousel-count">
-                        <!-- 현재 카운트 -->
-                        <span>1</span>
-                        <!-- 전체 카운트 -->
-                        <span>10</span>
+                <!-- [Start] Content Title -->
+                <header class="headline">
+                    <div class="site-location">
+                        <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
+                        <a href="#">대분류</a>
+                        <a href="#">중분류</a>
+                        <a href="#">세분류</a>
                     </div>
+                    <h1 class="sub-title">과학영화</h1>
+                </header>
+                <!-- [End] Content Title -->
+                
+                <!-- [Start] Content 상세  -->
+                <div class="content">
+                    이 곳에 컨텐츠 내용을 작성하시면 됩니다.
                 </div>
-                <section class="popup-zone-carousel">
-                    <article data-label="이벤트 1번째">
-                        <a href=""><img src="../assets/images/main/popup-open-event.png" alt="홈페이지 오픈 광고"></a>
-                    </article>
-                    <article data-label="이벤트 2번째">
-                       <a href=""><img src="../assets/images/main/popup-open-event.png" alt="홈페이지 오픈 광고"></a>
-                    </article>
-                    <article data-label="이벤트 3번째">
-                        <a href=""><img src="../assets/images/main/popup-open-event.png" alt="홈페이지 오픈 광고"></a>
-                    </article>
-                </section>
-            </div>
-            <div class="notice-zone">
-                <div class="headline">
-                    <h3>공지사항</h3>
-                    <a class="btn-more" href="">더보기</a>
-                </div>
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="title-text">제33차 희망도서 신착안내(8.14. ~ ....</span>
-                            <span class="date-text">2017-09-01</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="title-text">정기6차(2) 구입 신간 자료 비치(일반)</span>
-                            <span class="date-text">2017-09-01</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="title-text">정기6차(1) 구입 신간 자료 비치(일반)</span>
-                            <span class="date-text">2017-08-25</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="title-text">제32차 희망도서 신착안내(8.7. ~ ...</span>
-                            <span class="date-text">2017-08-25</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="title-text">정기6차(청소년) 구입 신간 자료 비치</span>
-                            <span class="date-text">2017-08-25</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="title-text">정기6차(청소년) 구입 신간 자료 비치</span>
-                            <span class="date-text">2017-08-25</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="site-link-zone">
-                <div class="headline">
-                    <h3>바로가기</h3>
-                </div>
-                <ul>
-                    <li><a href="">북한사전<span>바로가기</span></a></li>
-                    <li><a href="">북한인물<span>바로가기</span></a></li>
-                    <li><a href="">권력기구도<span>바로가기</span></a></li>
-                    <li><a href="">주요행사 일정표<span>바로가기</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- [End] Main Content Area -->
+                <!-- [End] Content 상세  -->
 
-        <!-- [Start] Participating Services Area -->
-        <div class="participating-services wrap">
-            <h4>참여서비스 메뉴</h4>
-            <ul>
-                <li><a href="">북한영화 신청</a></li>
-                <li><a href="">북한실상설명회 신청</a></li>
-                <li><a href="">추천서 다운로드</a></li>
-                <li><a href="">서약서 다운로드</a></li>
-            </ul>
+            </section>
+            <!-- [End] Content Area -->
         </div>
-        <!-- [End] Participating Services Area -->
+
     </main>
+    <!-- [End] Container Area -->
 
-    <!-- [Start] Footer : Link Banner Banner -->
+    <!-- [Start] Footer Banner -->
     <div class="footer-link-banner">
         <div class="wrap">
             <div class="link-banner-area">
@@ -455,9 +370,9 @@
             </div>
         </div>
     </div>
-    <!-- [End] Footer Link Banner Banner -->
+    <!-- [End] Footer Banner -->
 
-    <!-- [Start] Footer : Site info Area -->
+    <!-- [Start] Footer Area -->
     <footer class="footer">
         <div class="wrap">
             <div class="site-area">
@@ -489,7 +404,7 @@
             </div> -->
         </div>
     </footer>
-    <!-- [End] Footer Site info Area -->
+    <!-- [End] Footer Area -->
 
     <!-- javascript : 라이브러리 플러그인 -->
     <script type="text/javascript" src="../assets/js/lib-jquery.js"></script>
