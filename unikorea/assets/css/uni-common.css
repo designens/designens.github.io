@@ -1906,9 +1906,9 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .accordion-lnb { border-bottom: 1px solid #dcdcdc; margin-top: 5px; }
 
-.accordion-lnb > li { border-bottom: 1px solid #dcdcdc; color: #333; }
+.accordion-lnb > li { border-bottom: 1px solid #dcdcdc; }
 
-.accordion-lnb > li [class*="link"] { position: relative; color: #333; font-size: 16px; font-size: 1.6rem; padding: 9px 20px; border-bottom: 1px solid #CCC; }
+.accordion-lnb > li [class*="link"] { position: relative; color: #333; font-size: 16px; font-size: 1.6rem; padding: 9px 20px; }
 
 .accordion-lnb > li [class*="link"] .icon-toggle { position: absolute; display: block; top: 50%; right: 20px; width: 13px; height: 13px; margin-top: -7px; }
 
@@ -1926,15 +1926,15 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .accordion-lnb [class*="sub"] { background: #fff; padding: 10px 0; }
 
-.accordion-lnb [class*="sub"] > li { font-weight: normal; padding: 2px 20px; }
+.accordion-lnb [class*="sub"] > li { padding: 2px 20px; }
 
-.accordion-lnb [class*="sub"] > li > a { position: relative; display: block; padding-left: 22px; }
+.accordion-lnb [class*="sub"] > li > a { position: relative; display: block; padding-left: 22px; color: #464646; }
 
 .accordion-lnb [class*="sub"] > li > a:before { position: absolute; top: 10px; left: 0; display: block; width: 10px; height: 2px; background: #dcdcdc; content: ""; }
 
-.accordion-lnb [class*="sub"] > li > a:hover, .accordion-lnb [class*="sub"] > li > a:focus { color: #003761; text-decoration: underline; }
+.accordion-lnb [class*="sub"] > li > a:hover, .accordion-lnb [class*="sub"] > li > a:focus { font-weight: 500; color: #305ed6; }
 
-.accordion-lnb [class*="sub"] > li > a:hover:before, .accordion-lnb [class*="sub"] > li > a:focus:before { background: #003761; }
+.accordion-lnb [class*="sub"] > li > a:hover:before, .accordion-lnb [class*="sub"] > li > a:focus:before { background: #305ed6; }
 
 /* =======================================*/
 /* Container Layout Style
@@ -1984,8 +1984,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 @media (min-width: 45em) and (max-width: 68.75em) { .top-menu .wrap { margin: 0; padding: 0; } }
 
-@media (min-width: 68.75em) { .top-menu { padding: 0 21px; }
-  .top-menu .wrap { max-width: 1100px; margin-left: auto; margin-right: auto; }
+@media (min-width: 68.75em) { .top-menu .wrap { max-width: 1100px; margin-left: auto; margin-right: auto; }
   .top-menu .wrap:after { content: " "; display: block; clear: both; }
   head:hover ~ .top-menu .wrap, head:hover ~ body .top-menu .wrap { position: relative; }
   head:hover ~ .top-menu .wrap:before, head:hover ~ body .top-menu .wrap:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(69, 144, 230, 0.25), rgba(136, 184, 239, 0.25) 100%, transparent 100%); background-size: 10%; background-origin: content-box; background-clip: content-box; background-position: left top; }
@@ -2016,8 +2015,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 @media (min-width: 45em) and (max-width: 68.75em) { .top-area .wrap { margin: 0; padding: 0; }
   .top-area .wrap .logo { position: absolute; left: 50%; margin-left: -95px; } }
 
-@media (min-width: 68.75em) { .top-area { padding: 0 21px; }
-  .top-area .wrap { max-width: 1100px; margin-left: auto; margin-right: auto; }
+@media (min-width: 68.75em) { .top-area .wrap { max-width: 1100px; margin-left: auto; margin-right: auto; }
   .top-area .wrap:after { content: " "; display: block; clear: both; }
   head:hover ~ .top-area .wrap, head:hover ~ body .top-area .wrap { position: relative; }
   head:hover ~ .top-area .wrap:before, head:hover ~ body .top-area .wrap:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(69, 144, 230, 0.25), rgba(136, 184, 239, 0.25) 100%, transparent 100%); background-size: 10%; background-origin: content-box; background-clip: content-box; background-position: left top; }
