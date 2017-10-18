@@ -1623,7 +1623,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 26px; }
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
 
 .checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
 
@@ -1655,11 +1655,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-#gnb-menu, #gnb-all-menu, .header, .top-area, #container, .paging, .footer-link-banner .wrap .link-banner-area .owl-carousel, .input-type.tel, .gallery, .tab-area .tab-menu, .ul-list-type li, .dl-list-type, .dl-list-type dt, .dl-list-type dd { *zoom: 1; }
+#gnb-menu, #gnb-all-menu, .header, .top-area, #container, .paging, .footer-link-banner .wrap .link-banner-area .owl-carousel, .input-type.tel, .tab-area .tab-menu, .ul-list-type li, .dl-list-type, .dl-list-type dt, .dl-list-type dd { *zoom: 1; }
 
-#gnb-menu:before, #gnb-all-menu:before, .header:before, .top-area:before, #container:before, .paging:before, .footer-link-banner .wrap .link-banner-area .owl-carousel:before, .input-type.tel:before, .gallery:before, .tab-area .tab-menu:before, .ul-list-type li:before, .dl-list-type:before, .dl-list-type dt:before, .dl-list-type dd:before, #gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .gallery:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { content: ""; display: block; }
+#gnb-menu:before, #gnb-all-menu:before, .header:before, .top-area:before, #container:before, .paging:before, .footer-link-banner .wrap .link-banner-area .owl-carousel:before, .input-type.tel:before, .tab-area .tab-menu:before, .ul-list-type li:before, .dl-list-type:before, .dl-list-type dt:before, .dl-list-type dd:before, #gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { content: ""; display: block; }
 
-#gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .gallery:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { clear: both; }
+#gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { clear: both; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -2137,7 +2137,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .footer .site-link-area .select-box label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
 
-.footer .site-link-area .select-box select { width: 100%; height: 28px; line-height: 26px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.footer .site-link-area .select-box select { width: 100%; height: 28px; color: inherit; line-height: 26px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .footer .site-link-area .select-box select:focus { border: 1px solid #002847; }
 
@@ -2179,6 +2179,14 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type input { width: 130px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
 
+.input-type input::-webkit-input-placeholder { /* Chrome/Opera/Safari*/ color: inherit; }
+
+.input-type input::-moz-placeholder { /* Firefox 19+*/ color: inherit; }
+
+.input-type input:-ms-input-placeholder { /* IE 10+*/ color: inherit !important; }
+
+.input-type input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
+
 .input-type input:focus { border: 1px solid #002847; }
 
 .input-type input:focus::-webkit-input-placeholder { color: transparent; }
@@ -2194,6 +2202,14 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 .input-type.tel { min-width: 71px; }
 
 .input-type.tel input { width: 71px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
+
+.input-type.tel input::-webkit-input-placeholder { /* Chrome/Opera/Safari*/ color: inherit; }
+
+.input-type.tel input::-moz-placeholder { /* Firefox 19+*/ color: inherit; }
+
+.input-type.tel input:-ms-input-placeholder { /* IE 10+*/ color: inherit !important; }
+
+.input-type.tel input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .input-type.tel input:focus { border: 1px solid #002847; }
 
@@ -2218,6 +2234,14 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 .input-type.e-mail { min-width: 140px; }
 
 .input-type.e-mail input { width: 140px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
+
+.input-type.e-mail input::-webkit-input-placeholder { /* Chrome/Opera/Safari*/ color: inherit; }
+
+.input-type.e-mail input::-moz-placeholder { /* Firefox 19+*/ color: inherit; }
+
+.input-type.e-mail input:-ms-input-placeholder { /* IE 10+*/ color: inherit !important; }
+
+.input-type.e-mail input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
 
 .input-type.e-mail input:focus { border: 1px solid #002847; }
 
@@ -2247,6 +2271,14 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type.full input { width: 100%; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
 
+.input-type.full input::-webkit-input-placeholder { /* Chrome/Opera/Safari*/ color: inherit; }
+
+.input-type.full input::-moz-placeholder { /* Firefox 19+*/ color: inherit; }
+
+.input-type.full input:-ms-input-placeholder { /* IE 10+*/ color: inherit !important; }
+
+.input-type.full input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
+
 .input-type.full input:focus { border: 1px solid #002847; }
 
 .input-type.full input:focus::-webkit-input-placeholder { color: transparent; }
@@ -2266,7 +2298,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box select:focus { border: 1px solid #002847; }
 
@@ -2276,7 +2308,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .select-box.e-mail label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box.e-mail select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box.e-mail select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box.e-mail select:focus { border: 1px solid #002847; }
 
@@ -2286,7 +2318,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .select-box.full label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box.full select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box.full select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box.full select:focus { border: 1px solid #002847; }
 
@@ -2313,35 +2345,6 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 .aco-base [class*="sub"], .aco-open [class*="sub"] { display: none; }
 
 /* =======================================*/
-/* 갤러리 스타일
-/* =======================================*/
-.gallery { /* 컬럼의 갯수 col1~col6 까지 class 생성 */ /* @include list-type(컬럼 수, 마진 우측 px) */ width: 100%; }
-
-.gallery.col1 li { float: left; width: calc((100% - 0px) / 1); margin-right: 10px; }
-
-.gallery.col1 li:nth-of-type(1n) { margin-right: 0; }
-
-.gallery.col2 li { float: left; width: calc((100% - 10px) / 2); margin-right: 10px; }
-
-.gallery.col2 li:nth-of-type(2n) { margin-right: 0; }
-
-.gallery.col3 li { float: left; width: calc((100% - 20px) / 3); margin-right: 10px; }
-
-.gallery.col3 li:nth-of-type(3n) { margin-right: 0; }
-
-.gallery.col4 li { float: left; width: calc((100% - 30px) / 4); margin-right: 10px; }
-
-.gallery.col4 li:nth-of-type(4n) { margin-right: 0; }
-
-.gallery.col5 li { float: left; width: calc((100% - 40px) / 5); margin-right: 10px; }
-
-.gallery.col5 li:nth-of-type(5n) { margin-right: 0; }
-
-.gallery.col6 li { float: left; width: calc((100% - 50px) / 6); margin-right: 10px; }
-
-.gallery.col6 li:nth-of-type(6n) { margin-right: 0; }
-
-/* =======================================*/
 /* 탭 스타일
 /* =======================================*/
 .tab-area .tab-menu { height: 40px; border-bottom: 1px solid #858585; margin-bottom: 20px; }
@@ -2355,7 +2358,11 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 .ul-list-type li { display: block; margin-bottom: 10px; }
 
-.dl-list-type dt, .dl-list-type dd { display: block; height: 35px; line-height: 35px; }
+.dl-list-type dt { position: relative; padding-left: 13px; font-weight: 500; color: #333; }
+
+.dl-list-type dt:before { position: absolute; top: 22px; left: 0; display: block; width: 3px; height: 3px; background: #454c5f; content: ""; }
+
+.dl-list-type dt, .dl-list-type dd { display: block; height: 45px; line-height: 45px; }
 
 @media (min-width: 71.25em) { .dl-list-type dt, .dl-list-type dd { display: inline-block; } }
 

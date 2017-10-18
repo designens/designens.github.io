@@ -1519,7 +1519,7 @@
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 26px; }
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
 
 .checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
 

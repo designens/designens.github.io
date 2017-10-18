@@ -68,12 +68,9 @@
 (function(global, $) {
     
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈
-    $("#gnb-menu li button").click(function() {
-       $("#gnb-all-menu").slideDown("slow");
-    });
-
-    $(".btn-gnb-menu").click(function() {
-        $("#gnb-all-menu").slideDown("slow");
+    $("#gnb-menu li button , .btn-gnb-menu").click(function() {
+       if($("#gnb-all-menu").css("display") == "none" ) $("#gnb-all-menu").slideDown("slow");
+       else $("#gnb-all-menu").slideUp("slow");
     });
 
     // 사이트맵 닫기 버튼 클릭 시 전체메뉴 감추기
@@ -95,10 +92,15 @@
         var aco_base = aco_bases.eq(index);
         new $.Accordion(aco_base);
     });
-    // 첫번째 패널 오픈
+    // 패널 오픈
     $.each(aco_opens,function(index) {
-        var aco_open = aco_opens.eq(index);
-        new $.Accordion(aco_open, 1);
+       //현재 나의 위치 찾기, 모바일 메뉴는 open 되지 않고 호출
+       var open_index = 0;
+       if($(this).attr("class") == "aco-open accordion-lnb") 
+          open_index = $(".aco-open.accordion-lnb > li").index($(".aco-open.accordion-lnb > li.on")) + 1;
+        
+       var aco_open = aco_opens.eq(index);
+        new $.Accordion(aco_open, open_index);
     });
 
 })(window, window.jQuery);

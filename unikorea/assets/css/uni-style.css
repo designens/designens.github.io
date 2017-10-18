@@ -1622,7 +1622,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 26px; }
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
 
 .checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
 
@@ -1832,16 +1832,17 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   .keyword-search-area .ul-list-type li .search-1st { width: 13.15789%; float: left; margin-right: 1.31579%; }
   .keyword-search-area .ul-list-type li .search-1st .select-box { position: relative; width: 100px; height: 35px; }
   .keyword-search-area .ul-list-type li .search-1st .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
-  .keyword-search-area .ul-list-type li .search-1st .select-box select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+  .keyword-search-area .ul-list-type li .search-1st .select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
   .keyword-search-area .ul-list-type li .search-1st .select-box select:focus { border: 1px solid #002847; }
   .keyword-search-area .ul-list-type li .search-1st .select-box select::-ms-expand { display: none; }
   .keyword-search-area .ul-list-type li .search-2nd { width: 71.05263%; float: left; margin-right: 1.31579%; }
   .keyword-search-area .ul-list-type li .search-3rd { width: 13.15789%; float: right; margin-right: 0; }
   .keyword-search-area .ul-list-type li .search-3rd .select-box { position: relative; width: 100px; height: 35px; }
   .keyword-search-area .ul-list-type li .search-3rd .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
-  .keyword-search-area .ul-list-type li .search-3rd .select-box select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+  .keyword-search-area .ul-list-type li .search-3rd .select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
   .keyword-search-area .ul-list-type li .search-3rd .select-box select:focus { border: 1px solid #002847; }
   .keyword-search-area .ul-list-type li .search-3rd .select-box select::-ms-expand { display: none; }
+  .keyword-search-area .ul-list-type .dl-list-type { margin: 0; margin-top: 10px; }
   .keyword-search-area .dl-list-type { max-width: 836px; margin: 0 38px; }
   .keyword-search-area .dl-list-type dt { width: 13.15789%; float: left; margin-right: 1.31579%; }
   .keyword-search-area .dl-list-type dd { width: 85.52632%; float: right; margin-right: 0; } }
