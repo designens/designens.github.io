@@ -1814,9 +1814,9 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 #gnb-all-menu .wrap > li .sub-menu .toggle > ul > li > a { display: block; height: 26px; line-height: 26px; }
 
-@media (min-width: 0) and (max-width: 47.5em) { #gnb-all-menu { bottom: 0; } }
+@media (min-width: 0) and (max-width: 45em) { #gnb-all-menu { bottom: 0; } }
 
-@media (min-width: 47.5em) { #gnb-all-menu { top: 116px; bottom: initial; z-index: 1000; }
+@media (min-width: 45em) { #gnb-all-menu { top: 116px; bottom: initial; z-index: 1000; }
   #gnb-all-menu .user-menu { display: none; }
   #gnb-all-menu .wrap { border-top: 0; border-bottom: 0px; }
   #gnb-all-menu .wrap > li { border-top: 0; border-bottom: 0; background: transparent; }
@@ -1836,7 +1836,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul > li:hover, #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul > li:focus { color: #0066b3; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul > li:hover:before, #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul > li:focus:before { position: absolute; top: 0; left: 0; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #0066b3; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { #gnb-all-menu { width: 100%; border-bottom: 1px solid #d4d4d4; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: #fff; }
+@media (min-width: 45em) and (max-width: 71.25em) { #gnb-all-menu { width: 100%; border-bottom: 1px solid #d4d4d4; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: #fff; }
   #gnb-all-menu .wrap { padding: 0 0 40px; margin: 0 21px; }
   #gnb-all-menu .wrap > li { width: 30%; float: left; }
   #gnb-all-menu .wrap > li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
@@ -1886,7 +1886,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .btn-gnb-close:after { position: absolute; top: 40px; left: 20px; width: 38px; height: 4px; border-radius: 2px; background: #005083; transform: rotate(-38deg); content: ""; }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .btn-gnb-close { left: 0; } }
+@media (min-width: 45em) and (max-width: 71.25em) { .btn-gnb-close { left: 0; } }
 
 @media (min-width: 71.25em) { .btn-gnb-close { top: initial; left: initial; right: 21px; bottom: 0; width: 40px; height: 40px; background: #005083; }
   .btn-gnb-close:before { top: 20px; left: 4px; width: 32px; height: 1px; background: #fff; transform: rotate(45deg); }
@@ -1978,11 +1978,11 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .top-menu .wrap .link a { display: block; height: 35px; color: #363b36; text-align: center; background: #6dd0f7; }
 
-@media (min-width: 47.5em) { .top-menu { display: block; }
+@media (min-width: 45em) { .top-menu { display: block; }
   .top-menu .wrap .menu { display: inline-block; width: -webkit-calc( 100% - 110px); width: -moz-calc( 100% - 110px); width: calc( 100% - 110px); }
   .top-menu .wrap .link { display: inline-block; width: 110px; float: right; margin-right: 0; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .top-menu .wrap { margin: 0; padding: 0; } }
+@media (min-width: 45em) and (max-width: 71.25em) { .top-menu .wrap { margin: 0; padding: 0; } }
 
 @media (min-width: 71.25em) { .top-menu .wrap { padding: 0 20px; }
   .top-menu .wrap .menu { width: 90%; float: left; }
@@ -2006,11 +2006,11 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .top-area .wrap .btn-agency a { display: block; font-size: 12px; font-size: 1.2rem; color: #1b1b1b; letter-spacing: -0.04em; text-align: center; width: 100%; height: 80px; padding-top: 50px; }
 
-@media (min-width: 47.5em) { .top-area .wrap { padding: 0; }
+@media (min-width: 45em) { .top-area .wrap { padding: 0; }
   .top-area .wrap .logo { position: static; left: auto; margin-left: auto; }
   .top-area .wrap .btn-agency { display: block; float: right; margin-right: 0; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .top-area .wrap .logo { position: absolute; left: 50%; margin-left: -95px; } }
+@media (min-width: 45em) and (max-width: 71.25em) { .top-area .wrap .logo { position: absolute; left: 50%; margin-left: -95px; } }
 
 @media (min-width: 71.25em) { .top-area .wrap { padding: 0 20px; }
   .top-area .wrap .logo { width: 20%; float: left; background-position: left center; }
@@ -2026,9 +2026,9 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 #container.sub-content .content-area { margin-bottom: 30px; }
 
-@media (min-width: 47.5em) { #container.sub-content .content-area { margin-top: 0; } }
+@media (min-width: 45em) { #container.sub-content .content-area { margin-top: 0; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { #container.sub-content .content-area { margin-bottom: 60px; } }
+@media (min-width: 45em) and (max-width: 71.25em) { #container.sub-content .content-area { margin-bottom: 60px; } }
 
 @media (min-width: 71.25em) { #container.sub-content { margin-top: 42px; }
   #container.sub-content .content-area { margin-bottom: 120px; } }
@@ -2145,14 +2145,14 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .footer .site-link-area .btn-site-link-move { width: 51px; height: 28px; line-height: 28px; background: #eaeaea; }
 
-@media (min-width: 47.5em) { .footer .site-area { padding-top: 45px; padding-bottom: 25px; }
+@media (min-width: 45em) { .footer .site-area { padding-top: 45px; padding-bottom: 25px; }
   .footer .site-area .site-info a { display: inline-block; width: auto; text-align: left; }
   .footer .site-area .site-info a span { width: auto; padding: 0 10px; border-right: 1px solid #808080; }
   .footer .site-area .site-info a:nth-of-type(2) span { border-right: 1px solid #808080; }
   .footer .site-area .site-copyright { display: block; padding: 0; text-align: left; }
   .footer .site-area .site-copyright span { display: inline-block; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .footer .site-area { width: 100%; float: left; margin-left: 0; margin-right: 0; padding-bottom: 10px; } }
+@media (min-width: 45em) and (max-width: 71.25em) { .footer .site-area { width: 100%; float: left; margin-left: 0; margin-right: 0; padding-bottom: 10px; } }
 
 @media (min-width: 71.25em) { .footer .site-area { width: 66%; float: left; margin-right: 2%; }
   .footer .site-link-area { display: block; width: 32%; float: right; margin-right: 0; } }
