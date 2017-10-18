@@ -550,126 +550,6 @@ JS 내용 작성</code></pre>
             </article>
             <!-- [End] 아코디언 스타일 공통 -->
 
-            <!-- [Start] 탭 스타일 공통 -->
-            <article>
-                <h2>Tab Style</h2>
-                <div class="tablist t5" role="tablist">
-                    <a href id="tab1" aria-controls="panel1" role="tab"><span>tab1</span></a>
-                    <a href id="tab2" aria-controls="panel2" role="tab"><span>tab2</span></a>
-                    <a href id="tab3" aria-controls="panel3" role="tab"><span>tab3</span></a>
-                    <a href id="tab4" aria-controls="panel4" role="tab"><span>tab4</span></a>
-                    <a href id="tab5" aria-controls="panel5" role="tab"><span>tab5</span></a>
-                </div>
-                <div class="panel-group">
-                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
-                        tab1 영역 입니다.
-                    </div>
-                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
-                        tab2 영역 입니다.
-                    </div>
-                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
-                        tab3 영역 입니다.
-                    </div>
-                    <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
-                        tab4 영역 입니다.
-                    </div>
-                    <div id="panel5" aria-labelledby="tab5" role="tabpanel" tabindex="0">
-                        tab5 영역 입니다.
-                    </div>
-                </div>
-<pre><code id="source" class="language-html">&lt;!-- 탭의 갯수에 따라 t1~t8 까지 class 설정 가능 --&gt;
-&lt;div class=&quot;tablist t5&quot; role=&quot;tablist&quot;&gt;
-    &lt;!-- [Start] 탭 메뉴 5개 생성 --&gt;
-    &lt;a href id=&quot;tab1&quot; aria-controls=&quot;panel1&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab1&lt;/span&gt;&lt;/a&gt;
-    &lt;a href id=&quot;tab2&quot; aria-controls=&quot;panel2&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab2&lt;/span&gt;&lt;/a&gt;
-    &lt;a href id=&quot;tab3&quot; aria-controls=&quot;panel3&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab3&lt;/span&gt;&lt;/a&gt;
-    &lt;a href id=&quot;tab4&quot; aria-controls=&quot;panel4&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab4&lt;/span&gt;&lt;/a&gt;
-    &lt;a href id=&quot;tab5&quot; aria-controls=&quot;panel5&quot; role=&quot;tab&quot;&gt;&lt;span&gt;tab5&lt;/span&gt;&lt;/a&gt;
-    &lt;!-- [End] 탭 메뉴 5개 생성 --&gt;
-&lt;/div&gt;
-&lt;div class=&quot;panel-group&quot;&gt;
-    &lt;!-- [Start] 탭 패널 5개 생성 --&gt;
-    &lt;div id=&quot;panel1&quot; aria-labelledby=&quot;tab1&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
-        tab1 영역 입니다.
-    &lt;/div&gt;
-    &lt;div id=&quot;panel2&quot; aria-labelledby=&quot;tab2&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
-        tab2 영역 입니다.
-    &lt;/div&gt;
-    &lt;div id=&quot;panel3&quot; aria-labelledby=&quot;tab3&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
-        tab3 영역 입니다.
-    &lt;/div&gt;
-    &lt;div id=&quot;panel4&quot; aria-labelledby=&quot;tab4&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
-        tab4 영역 입니다.
-    &lt;/div&gt;
-    &lt;div id=&quot;panel5&quot; aria-labelledby=&quot;tab5&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;&gt;
-        tab5 영역 입니다.
-    &lt;/div&gt;
-    &lt;!-- [End] 탭 패널 5개 생성 --&gt;
-&lt;/div&gt;</code></pre>
-                <p class="ui-kit-comment">
-                    탭의 갯수 만큼 <strong>tab</strong>과 <strong>panel</strong> 마크업 작성<br>
-                    탭의 갯수에 따라 <strong>class="t<span class="red">(n)</span>"</strong> 설정 (max:8)<br>
-                    ex) tab 갯수가 5개일 경우 <strong>class="t<span class="red">5</span>"</strong> 설정
-                </p>
-            </article>
-            <!-- [End] 탭 스타일 공통 -->
-
-            <!-- [Start] 서브 전체 페이지 선택 영역 -->
-            <article>
-                <h2>All Pages Style</h2>
-                <div class="all-pages-view-area">
-
-                    <h3><div class="fa fa-angle-double-right"></div>서브 전체 페이지 영역</h3>
-                    <!-- [Start] 서브 전체 페이지 영역 -->
-                    <div class="all-pages-view">
-                        <div class="all-page">
-                            <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
-                        </div>
-                    </div>
-                    <!-- [End] 서브 전체 페이지 영역 -->
-<pre><code id="source" class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
-    &lt;div class=&quot;all-page&quot;&gt;
-        &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-                    <h3><div class="fa fa-angle-double-right"></div>서브 전체 페이지 선택 영역</h3>
-                    <!-- [Start] 서브 전체 페이지 선택 영역 -->
-                    <div class="all-pages-view">
-                        <div class="all-page">
-                            <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
-                        </div>
-                        <div class="select-box">
-                            <label for="search">10개씩보기</label>
-                            <select id="search" name="search-item">
-                                <option selected="selected">10개씩보기</option>
-                                <option>20개씩보기</option>
-                                <option>30개씩보기</option>
-                                <option>40개씩보기</option>
-                                <option>50개씩보기</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- [End] 서브 전체 페이지 선택 영역 -->
-<pre><code id="source" class="language-html">&lt;div class=&quot;all-pages-view&quot;&gt;
-    &lt;div class=&quot;all-page&quot;&gt;
-        &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;select-box&quot;&gt;
-        &lt;label for=&quot;search&quot;&gt;10개씩보기&lt;/label&gt;
-        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
-            &lt;option selected=&quot;selected&quot;&gt;10개씩보기&lt;/option&gt;
-            &lt;option&gt;20개씩보기&lt;/option&gt;
-            &lt;option&gt;30개씩보기&lt;/option&gt;
-            &lt;option&gt;40개씩보기&lt;/option&gt;
-            &lt;option&gt;50개씩보기&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-            </article>
-            <!-- [End] 서브 전체 페이지 선택 영역 -->
-
             <!-- [Start] 테이블 스타일 공통 -->
             <article>
                 <h2>Table Style</h2>
@@ -975,7 +855,7 @@ $('.btn-popup-name').on('click', function(e) {
                 </p>
             </div>
             <!-- 유관기관 홈페이지 오픈 보류 -->
-            <!-- <div class="site-link-area">
+            <div class="site-link-area">
                 <div class="select-box">
                     <label for="site-link">유관기관 홈페이지</label>
                     <select id="site-link" name="site-link-item">
@@ -988,7 +868,7 @@ $('.btn-popup-name').on('click', function(e) {
                     </select>
                 </div>
                 <button class="btn-site-link-move" class="button">이동</button>
-            </div> -->
+            </div>
         </div>
     </footer>
     <!-- [End] Footer Area -->

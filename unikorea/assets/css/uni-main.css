@@ -1519,13 +1519,13 @@
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 22px; }
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 26px; }
 
-.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 14px; height: 14px; border: 1px solid #dbdbdb; background: #fff; }
+.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
 
-.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; border-color: #002847; }
+.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; }
 
-.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #002847; border-color: #002847; }
+.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #191919; }
 
 .checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
 
@@ -1533,7 +1533,7 @@
 
 .radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
 
-.radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
+.radio-type input[type="radio"]:checked + label:before { background-color: #191919; box-shadow: inset 0 0 0 3px #fff; }
 
 @keyframes slideDown { 0% { transform: translateY(-100%); }
   50% { transform: translateY(-50%); }

@@ -1624,13 +1624,13 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 22px; }
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 26px; }
 
-.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 14px; height: 14px; border: 1px solid #dbdbdb; background: #fff; }
+.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
 
-.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; border-color: #002847; }
+.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; }
 
-.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #002847; border-color: #002847; }
+.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #191919; }
 
 .checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
 
@@ -1638,7 +1638,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
 
-.radio-type input[type="radio"]:checked + label:before { background-color: #002847; box-shadow: inset 0 0 0 3px #fff; }
+.radio-type input[type="radio"]:checked + label:before { background-color: #191919; box-shadow: inset 0 0 0 3px #fff; }
 
 @keyframes slideDown { 0% { transform: translateY(-100%); }
   50% { transform: translateY(-50%); }
@@ -1656,11 +1656,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-#gnb-menu, #gnb-all-menu, .header, .top-area, #container, .paging, .footer-link-banner .wrap .link-banner-area .owl-carousel, .input-type.tel, .gallery, .tablist { *zoom: 1; }
+#gnb-menu, #gnb-all-menu, .header, .top-area, #container, .paging, .footer-link-banner .wrap .link-banner-area .owl-carousel, .input-type.tel, .gallery, .tab-area .tab-menu, .ul-list-type li, .dl-list-type, .dl-list-type dt, .dl-list-type dd { *zoom: 1; }
 
-#gnb-menu:before, #gnb-all-menu:before, .header:before, .top-area:before, #container:before, .paging:before, .footer-link-banner .wrap .link-banner-area .owl-carousel:before, .input-type.tel:before, .gallery:before, .tablist:before, #gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .gallery:after, .tablist:after { content: ""; display: block; }
+#gnb-menu:before, #gnb-all-menu:before, .header:before, .top-area:before, #container:before, .paging:before, .footer-link-banner .wrap .link-banner-area .owl-carousel:before, .input-type.tel:before, .gallery:before, .tab-area .tab-menu:before, .ul-list-type li:before, .dl-list-type:before, .dl-list-type dt:before, .dl-list-type dd:before, #gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .gallery:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { content: ""; display: block; }
 
-#gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .gallery:after, .tablist:after { clear: both; }
+#gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .paging:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .input-type.tel:after, .gallery:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { clear: both; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1783,7 +1783,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 #gnb-all-menu .user-menu > a:last-child { border-left: 1px solid #004072; }
 
-#gnb-all-menu .wrap { margin: 0; min-width: initial; border-top: 1px solid #245c88; border-bottom: 1px solid #004072; clear: both; }
+#gnb-all-menu .wrap { min-width: initial; padding: 0; border-top: 1px solid #245c88; border-bottom: 1px solid #004072; clear: both; }
 
 #gnb-all-menu .wrap > li { background: #175280; border-top: 1px solid #004072; border-bottom: 1px solid #245c88; }
 
@@ -1940,7 +1940,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 /* =======================================*/
 /* Container Layout Style
 /* =======================================*/
-.wrap { max-width: 100%; margin-left: auto; margin-right: auto; min-width: 400px; padding: 0 20px; }
+.wrap { max-width: 100%; margin-left: auto; margin-right: auto; min-width: 360px; padding: 0 20px; }
 
 .wrap:after { content: " "; display: block; clear: both; }
 
@@ -1965,7 +1965,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 .header { border-bottom: 1px solid #aaa; }
 
-.top-menu { display: none; min-width: 400px; height: 35px; line-height: 35px; background: #005083; }
+.top-menu { display: none; min-width: 360px; height: 35px; line-height: 35px; background: #005083; }
 
 .top-menu .wrap .menu { text-align: right; }
 
@@ -1989,7 +1989,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
   .top-menu .wrap .menu { width: 90%; float: left; }
   .top-menu .wrap .link { display: inline-block; width: 10%; float: left; float: right; margin-right: 0; } }
 
-.top-area { min-width: 400px; height: 80px; padding: 0; }
+.top-area { min-width: 360px; height: 80px; padding: 0; }
 
 .top-area .wrap { position: relative; }
 
@@ -2130,9 +2130,19 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .footer .site-area .site-copyright span { display: block; }
 
-.footer .site-area .site-copyright .copyright { font-size: 12px; font-size: 1.2rem; }
+.footer .site-area .site-copyright .copyright { display: block; font-size: 12px; font-size: 1.2rem; }
 
 .footer .site-link-area { display: none; padding-top: 45px; text-align: right; }
+
+.footer .site-link-area .select-box { position: relative; width: 150px; height: 28px; }
+
+.footer .site-link-area .select-box label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
+
+.footer .site-link-area .select-box select { width: 100%; height: 28px; line-height: 26px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+
+.footer .site-link-area .select-box select:focus { border: 1px solid #002847; }
+
+.footer .site-link-area .select-box select::-ms-expand { display: none; }
 
 .footer .site-link-area .btn-site-link-move { width: 51px; height: 28px; line-height: 28px; background: #eaeaea; }
 
@@ -2143,8 +2153,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
   .footer .site-area .site-copyright { display: block; padding: 0; text-align: left; }
   .footer .site-area .site-copyright span { display: inline-block; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .footer .site-area { width: 100%; float: left; margin-left: 0; margin-right: 0; padding-bottom: 10px; }
-  .footer .site-link-area { display: block; width: 100%; float: left; margin-left: 0; margin-right: 0; text-align: left; padding-top: 0; padding-bottom: 45px; } }
+@media (min-width: 47.5em) and (max-width: 71.25em) { .footer .site-area { width: 100%; float: left; margin-left: 0; margin-right: 0; padding-bottom: 10px; } }
 
 @media (min-width: 71.25em) { .footer .site-area { width: 66%; float: left; margin-right: 2%; }
   .footer .site-link-area { display: block; width: 32%; float: right; margin-right: 0; } }
@@ -2167,9 +2176,9 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* 인풋 스타일
 /* =======================================*/
-.input-type { display: inline-block; min-width: 242px; }
+.input-type { display: inline-block; min-width: 130px; }
 
-.input-type input { width: 242px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.input-type input { width: 130px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
 
 .input-type input:focus { border: 1px solid #002847; }
 
@@ -2181,11 +2190,11 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type input:focus:-ms-input-placeholder { color: transparent; }
 
-.input-type label { line-height: 30px; }
+.input-type label { line-height: 35px; }
 
 .input-type.tel { min-width: 71px; }
 
-.input-type.tel input { width: 71px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.input-type.tel input { width: 71px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
 
 .input-type.tel input:focus { border: 1px solid #002847; }
 
@@ -2197,7 +2206,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type.tel input:focus:-ms-input-placeholder { color: transparent; }
 
-.input-type.tel label { line-height: 30px; }
+.input-type.tel label { line-height: 35px; }
 
 .input-type.tel .dialog { position: relative; display: inline-block; margin-right: 10px; }
 
@@ -2209,7 +2218,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type.e-mail { min-width: 140px; }
 
-.input-type.e-mail input { width: 140px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.input-type.e-mail input { width: 140px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
 
 .input-type.e-mail input:focus { border: 1px solid #002847; }
 
@@ -2221,7 +2230,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type.e-mail input:focus:-ms-input-placeholder { color: transparent; }
 
-.input-type.e-mail label { line-height: 30px; }
+.input-type.e-mail label { line-height: 35px; }
 
 .input-type.e-mail .email { position: relative; display: inline-block; }
 
@@ -2237,7 +2246,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type.full { min-width: 100%; }
 
-.input-type.full input { width: 100%; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; }
+.input-type.full input { width: 100%; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
 
 .input-type.full input:focus { border: 1px solid #002847; }
 
@@ -2249,42 +2258,36 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .input-type.full input:focus:-ms-input-placeholder { color: transparent; }
 
-.input-type.full label { line-height: 30px; }
+.input-type.full label { line-height: 35px; }
 
 /* =======================================*/
 /* 셀렉트박스 스타일
 /* =======================================*/
-.select-box { display: inline-block; position: relative; width: 150px; height: 28px; }
+.select-box { display: inline-block; position: relative; width: 130px; height: 35px; }
 
-.select-box:before { position: absolute; top: 0; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+.select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
-
-.select-box select { width: 100%; height: 28px; line-height: 26px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box select:focus { border: 1px solid #002847; }
 
 .select-box select::-ms-expand { display: none; }
 
-.select-box.e-mail { position: relative; width: 140px; height: 28px; }
+.select-box.e-mail { position: relative; width: 140px; height: 35px; }
 
-.select-box.e-mail:before { position: absolute; top: 0; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+.select-box.e-mail label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box.e-mail label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
-
-.select-box.e-mail select { width: 100%; height: 28px; line-height: 26px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box.e-mail select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box.e-mail select:focus { border: 1px solid #002847; }
 
 .select-box.e-mail select::-ms-expand { display: none; }
 
-.select-box.full { position: relative; width: 100%; height: 28px; }
+.select-box.full { position: relative; width: 100%; height: 35px; }
 
-.select-box.full:before { position: absolute; top: 0; right: 10px; font-family: 'FontAwesome'; content: "\f0dd"; font-size: 17px; color: #343434; pointer-events: none; }
+.select-box.full label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box.full label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
-
-.select-box.full select { width: 100%; height: 28px; line-height: 26px; padding: 0 10px; border: 1px solid #dbdbdb; background: #fff; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box.full select { width: 100%; height: 35px; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box.full select:focus { border: 1px solid #002847; }
 
@@ -2342,105 +2345,20 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* 탭 스타일
 /* =======================================*/
-.tablist { /* 탭의 갯수 t1~t8 까지 class 생성 */ /* @include tabs(컬럼 수) */ width: 100%; width: 932px; margin-left: -1px; }
+.tab-area .tab-menu { height: 40px; border-bottom: 1px solid #858585; margin-bottom: 20px; }
 
-.tablist.t1 [role="tab"] { float: left; width: 100%; padding: 0 1px; }
+.tab-area .tab-menu a[role="button"] { float: left; display: inline-block; height: 40px; line-height: 38px; padding: 0 40px; color: #888; border: 1px solid #858585; }
 
-.tablist.t1 [role="tab"]:nth-child(1) { margin-bottom: 2px; }
+.tab-area .tab-menu a[role="button"].active { color: #fff; background: #757575; }
 
-.tablist.t1 [role="tab"]:nth-child(1) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+/* =======================================*/
+/* 리스트 스타일
+/* =======================================*/
+.ul-list-type li { display: block; margin-bottom: 10px; }
 
-.tablist.t1 [role="tab"]:nth-child(1):last-child { margin-bottom: 0; }
+.dl-list-type dt, .dl-list-type dd { display: block; height: 35px; line-height: 35px; }
 
-.tablist.t1 [role="tab"]:nth-child(2) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t2 [role="tab"] { float: left; width: 50%; padding: 0 1px; }
-
-.tablist.t2 [role="tab"]:nth-child(2) { margin-bottom: 2px; }
-
-.tablist.t2 [role="tab"]:nth-child(2) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t2 [role="tab"]:nth-child(2):last-child { margin-bottom: 0; }
-
-.tablist.t2 [role="tab"]:nth-child(3) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t3 [role="tab"] { float: left; width: 33.33333%; padding: 0 1px; }
-
-.tablist.t3 [role="tab"]:nth-child(3) { margin-bottom: 2px; }
-
-.tablist.t3 [role="tab"]:nth-child(3) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t3 [role="tab"]:nth-child(3):last-child { margin-bottom: 0; }
-
-.tablist.t3 [role="tab"]:nth-child(4) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t4 [role="tab"] { float: left; width: 25%; padding: 0 1px; }
-
-.tablist.t4 [role="tab"]:nth-child(4) { margin-bottom: 2px; }
-
-.tablist.t4 [role="tab"]:nth-child(4) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t4 [role="tab"]:nth-child(4):last-child { margin-bottom: 0; }
-
-.tablist.t4 [role="tab"]:nth-child(5) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t5 [role="tab"] { float: left; width: 20%; padding: 0 1px; }
-
-.tablist.t5 [role="tab"]:nth-child(5) { margin-bottom: 2px; }
-
-.tablist.t5 [role="tab"]:nth-child(5) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t5 [role="tab"]:nth-child(5):last-child { margin-bottom: 0; }
-
-.tablist.t5 [role="tab"]:nth-child(6) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t6 [role="tab"] { float: left; width: 16.66667%; padding: 0 1px; }
-
-.tablist.t6 [role="tab"]:nth-child(6) { margin-bottom: 2px; }
-
-.tablist.t6 [role="tab"]:nth-child(6) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t6 [role="tab"]:nth-child(6):last-child { margin-bottom: 0; }
-
-.tablist.t6 [role="tab"]:nth-child(7) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t7 [role="tab"] { float: left; width: 14.28571%; padding: 0 1px; }
-
-.tablist.t7 [role="tab"]:nth-child(7) { margin-bottom: 2px; }
-
-.tablist.t7 [role="tab"]:nth-child(7) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t7 [role="tab"]:nth-child(7):last-child { margin-bottom: 0; }
-
-.tablist.t7 [role="tab"]:nth-child(8) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist.t8 [role="tab"] { float: left; width: 12.5%; padding: 0 1px; }
-
-.tablist.t8 [role="tab"]:nth-child(8) { margin-bottom: 2px; }
-
-.tablist.t8 [role="tab"]:nth-child(8) span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist.t8 [role="tab"]:nth-child(8):last-child { margin-bottom: 0; }
-
-.tablist.t8 [role="tab"]:nth-child(9) span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist [role="tab"]:first-child span { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
-
-.tablist [role="tab"]:last-child span { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
-
-.tablist [role="tab"] span { display: block; text-align: center; width: 100%; height: 40px; line-height: 36px; background: #f5dfd7; border: 2px solid #f1c7b7; }
-
-.tablist [role="tab"][aria-selected='true'] span { position: relative; font-weight: bold; color: #fff; line-height: 35px; background: #d14411; border: 0; box-shadow: 1px 1px 4px 3px rgba(209, 68, 17, 0.3) inset; }
-
-.tablist [role="tab"][aria-selected='true'] span:before { position: absolute; bottom: 0; left: 50%; margin-left: -5px; display: block; width: 0; height: 0; border-color: transparent; border-width: 6px; border-style: solid; border-bottom-color: #fff; content: ""; }
-
-.tablist [role="tab"]:hover span, .tablist [role="tab"]:focus span { position: relative; font-weight: bold; color: #fff; line-height: 40px; background: #d14411; border: 0; box-shadow: 1px 1px 4px 3px rgba(209, 68, 17, 0.3) inset; }
-
-.tablist [role="tab"]:hover span:before, .tablist [role="tab"]:focus span:before { position: absolute; bottom: -12px; left: 50%; display: block; width: 0; height: 0; border-color: transparent; border-width: 6px; border-style: solid; border-top-color: #d14411; content: ""; }
-
-.panel-group { margin-top: 12px; width: 100%; min-height: 480px; }
-
-.panel-group [role="tabpanel"][aria-hidden='true'] { display: none; }
+@media (min-width: 71.25em) { .dl-list-type dt, .dl-list-type dd { display: inline-block; } }
 
 body { height: 100vh; background: #ededed; }
 
