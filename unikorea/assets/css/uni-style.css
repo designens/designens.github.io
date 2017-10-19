@@ -1589,7 +1589,7 @@ textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color: transparent;
 
 textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color: transparent; }
 
-input[type="reset"], input[type="button"], input[type="submit"] { line-height: normal !important; }
+input[type="reset"], input[type="button"], input[type="submit"] { line-height: normal !important; cursor: pointer; }
 
 input[type="button"], input[type="text"], input[type="image"], input[type="submit"] { -webkit-appearance: none; -webkit-border-radius: 0; }
 
@@ -1619,6 +1619,8 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 @media print { code[class*="language-"], pre[class*="language-"] { text-shadow: none; }
   html * { color: #000; background: #fff; } }
+
+.checkbox-type, .radio-type { display: inline-block; }
 
 .checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
 
@@ -1660,15 +1662,13 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .popup .popup-headline:after, .popup .popup-content:after { clear: both; }
 
-.popup .popup-content .popup-btn-set .popup-close, .popup .popup-content .popup-btn-set .popup-save { display: inline-block; min-width: 66px; height: 30px; line-height: 28px; text-align: center; padding: 0 10px; border-radius: 3px; }
+.popup .popup-content .popup-btn-set .popup-save { font-weight: 500; color: #333; border: 2px solid #585858; background: #fff; }
 
-.popup .popup-content .popup-btn-set .popup-close { font-size: 14px; color: #333; text-shadow: 0 0 1px #7cbed8; border: 1px solid skyblue; background: skyblue; }
+.popup .popup-content .popup-btn-set .popup-save:hover, .popup .popup-content .popup-btn-set .popup-save:focus { border-color: #3466a2; transition: all .3s ease; }
 
-.popup .popup-content .popup-btn-set .popup-close:hover, .popup .popup-content .popup-btn-set .popup-close:focus, .popup .popup-content .popup-btn-set .popup-close:active { border-color: #7ab9d4; background: #7ab9d4; transition: all .3s ease; }
+.popup .popup-content .popup-btn-set .popup-close { color: #fff; background: #3466a2; }
 
-.popup .popup-content .popup-btn-set .popup-save { font-size: 14px; color: #fff; text-shadow: 0 0 1px #003359; border: 1px solid #003761; background: #003761; }
-
-.popup .popup-content .popup-btn-set .popup-save:hover, .popup .popup-content .popup-btn-set .popup-save:focus, .popup .popup-content .popup-btn-set .popup-save:active { border-color: #003257; background: #003257; transition: all .3s ease; }
+.popup .popup-content .popup-btn-set .popup-close:hover, .popup .popup-content .popup-btn-set .popup-close:focus { background: #585858; transition: all .3s ease; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1825,26 +1825,80 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 /* 자료검색 > 소장자료 검색 > 초기화면
 /* (html/resources-search.html)
 /* =======================================*/
-.keyword-search-area { background: #f1f1f1; padding-top: 30px; padding-bottom: 30px; }
+.keyword-search-area { background: #f1f1f1; padding: 15px; }
 
-@media (min-width: 71.25em) { .keyword-search-area { padding-top: 15px; padding-bottom: 15px; }
-  .keyword-search-area .ul-list-type { max-width: 836px; margin: 0 38px; }
-  .keyword-search-area .ul-list-type li .search-1st { width: 13.15789%; float: left; margin-right: 1.31579%; }
-  .keyword-search-area .ul-list-type li .search-1st .select-box { position: relative; width: 100px; height: 35px; }
-  .keyword-search-area .ul-list-type li .search-1st .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
-  .keyword-search-area .ul-list-type li .search-1st .select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
-  .keyword-search-area .ul-list-type li .search-1st .select-box select:focus { border: 1px solid #002847; }
-  .keyword-search-area .ul-list-type li .search-1st .select-box select::-ms-expand { display: none; }
-  .keyword-search-area .ul-list-type li .search-2nd { width: 71.05263%; float: left; margin-right: 1.31579%; }
-  .keyword-search-area .ul-list-type li .search-3rd { width: 13.15789%; float: right; margin-right: 0; }
-  .keyword-search-area .ul-list-type li .search-3rd .select-box { position: relative; width: 100px; height: 35px; }
-  .keyword-search-area .ul-list-type li .search-3rd .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
-  .keyword-search-area .ul-list-type li .search-3rd .select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
-  .keyword-search-area .ul-list-type li .search-3rd .select-box select:focus { border: 1px solid #002847; }
-  .keyword-search-area .ul-list-type li .search-3rd .select-box select::-ms-expand { display: none; }
-  .keyword-search-area .ul-list-type .dl-list-type { margin: 0; margin-top: 10px; }
-  .keyword-search-area .dl-list-type { max-width: 836px; margin: 0 38px; }
-  .keyword-search-area .dl-list-type dt { width: 13.15789%; float: left; margin-right: 1.31579%; }
-  .keyword-search-area .dl-list-type dd { width: 85.52632%; float: right; margin-right: 0; } }
+.keyword-search-area .ul-list-type li .search-1st { width: 38.18182%; float: left; margin-right: 3.0303%; }
+
+.keyword-search-area .ul-list-type li .search-2nd { width: 58.78788%; float: left; margin-right: 3.0303%; }
+
+.keyword-search-area .ul-list-type li .search-3rd { width: 38.18182%; float: right; margin-right: 0; }
+
+.keyword-search-area .dl-list-type { margin-top: 15px; }
+
+.keyword-search-area .dl-list-type dt { line-height: 2; }
+
+.keyword-search-area .dl-list-type dt:before { top: 12px; }
+
+.keyword-search-area .dl-list-type dd { line-height: 2; }
+
+.keyword-search-area .dl-list-type dd .select-box { width: 46.06061%; float: left; margin-right: 7.87879%; }
+
+.keyword-search-area .dl-list-type dd .checkbox-type, .keyword-search-area .dl-list-type dd .radio-type { width: 48.10496%; float: left; }
+
+.keyword-search-area .dl-list-type dd .checkbox-type:nth-child(2n + 1), .keyword-search-area .dl-list-type dd .radio-type:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+
+.keyword-search-area .dl-list-type dd .checkbox-type:nth-child(2n + 2), .keyword-search-area .dl-list-type dd .radio-type:nth-child(2n + 2) { margin-left: 51.89504%; margin-right: -100%; clear: none; }
+
+.keyword-search-area .dl-list-type dd .input-type { position: relative; width: 100%; }
+
+.keyword-search-area .dl-list-type dd .input-type:before { position: absolute; top: 3px; left: 50%; margin-left: -5px; content: "~"; }
+
+.keyword-search-area .dl-list-type dd .input-type input { width: 46.06061%; float: left; margin-right: 7.87879%; }
+
+.keyword-search-area .dl-list-type dd .input-type input:last-child { float: right; margin-right: 0; }
+
+@media (min-width: 47.5em) and (max-width: 71.25em) { .keyword-search-area .ul-list-type li .search-1st { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .keyword-search-area .ul-list-type li .search-2nd { width: 71.05943%; float: left; margin-right: 1.29199%; }
+  .keyword-search-area .ul-list-type li .search-3rd { width: 13.17829%; float: right; margin-right: 0; }
+  .keyword-search-area .dl-list-type { margin-top: 15px; }
+  .keyword-search-area .dl-list-type dt { line-height: 2; }
+  .keyword-search-area .dl-list-type dt:before { top: 12px; }
+  .keyword-search-area .dl-list-type dd .checkbox-type, .keyword-search-area .dl-list-type dd .radio-type { width: 22.17391%; float: left; }
+  .keyword-search-area .dl-list-type dd .checkbox-type:nth-child(4n + 1), .keyword-search-area .dl-list-type dd .radio-type:nth-child(4n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .keyword-search-area .dl-list-type dd .checkbox-type:nth-child(4n + 2), .keyword-search-area .dl-list-type dd .radio-type:nth-child(4n + 2) { margin-left: 25.94203%; margin-right: -100%; clear: none; }
+  .keyword-search-area .dl-list-type dd .checkbox-type:nth-child(4n + 3), .keyword-search-area .dl-list-type dd .radio-type:nth-child(4n + 3) { margin-left: 51.88406%; margin-right: -100%; clear: none; }
+  .keyword-search-area .dl-list-type dd .checkbox-type:nth-child(4n + 4), .keyword-search-area .dl-list-type dd .radio-type:nth-child(4n + 4) { margin-left: 77.82609%; margin-right: -100%; clear: none; }
+  .keyword-search-area .dl-list-type dd .select-box { width: 48.11594%; float: left; margin-right: 3.76812%; }
+  .keyword-search-area .dl-list-type dd .input-type input { width: 48.11594%; float: left; margin-right: 3.76812%; }
+  .keyword-search-area .dl-list-type dd .input-type input:last-child { float: right; margin-right: 0; } }
+
+@media (min-width: 71.25em) { .keyword-search-area { padding: 15px 31px; }
+  .keyword-search-area .ul-list-type li .search-1st { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .keyword-search-area .ul-list-type li .search-2nd { width: 71.05943%; float: left; margin-right: 1.29199%; }
+  .keyword-search-area .ul-list-type li .search-3rd { width: 13.17829%; float: right; margin-right: 0; }
+  .keyword-search-area .dl-list-type { max-width: 836px; }
+  .keyword-search-area .dl-list-type dt { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .keyword-search-area .dl-list-type dd { width: 85.52972%; float: right; margin-right: 0; }
+  .keyword-search-area .dl-list-type dd .checkbox-type, .keyword-search-area .dl-list-type dd .radio-type { width: auto; float: none; clear: none !important; margin-right: initial !important; margin-left: initial !important; }
+  .keyword-search-area .dl-list-type dd .select-box { position: relative; width: 130px; height: 35px; }
+  .keyword-search-area .dl-list-type dd .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
+  .keyword-search-area .dl-list-type dd .select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+  .keyword-search-area .dl-list-type dd .select-box select:focus { border: 1px solid #002847; }
+  .keyword-search-area .dl-list-type dd .select-box select::-ms-expand { display: none; }
+  .keyword-search-area .dl-list-type dd .input-type { min-width: 130px; }
+  .keyword-search-area .dl-list-type dd .input-type input { width: 130px; height: 35px; line-height: 35px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; }
+  .keyword-search-area .dl-list-type dd .input-type input::-webkit-input-placeholder { /* Chrome/Opera/Safari*/ color: inherit; }
+  .keyword-search-area .dl-list-type dd .input-type input::-moz-placeholder { /* Firefox 19+*/ color: inherit; }
+  .keyword-search-area .dl-list-type dd .input-type input:-ms-input-placeholder { /* IE 10+*/ color: inherit !important; }
+  .keyword-search-area .dl-list-type dd .input-type input:-moz-placeholder { /* Firefox 18-*/ color: inherit; }
+  .keyword-search-area .dl-list-type dd .input-type input:focus { border: 1px solid #002847; }
+  .keyword-search-area .dl-list-type dd .input-type input:focus::-webkit-input-placeholder { color: transparent; }
+  .keyword-search-area .dl-list-type dd .input-type input:focus:-moz-placeholder { color: transparent; }
+  .keyword-search-area .dl-list-type dd .input-type input:focus::-moz-placeholder { color: transparent; }
+  .keyword-search-area .dl-list-type dd .input-type input:focus:-ms-input-placeholder { color: transparent; }
+  .keyword-search-area .dl-list-type dd .input-type label { line-height: 35px; }
+  .keyword-search-area .dl-list-type dd .input-type:before { left: 144px; }
+  .keyword-search-area .dl-list-type dd .input-type input { margin-right: 26px; }
+  .keyword-search-area .dl-list-type dd .input-type input:last-child { float: none; } }
 
 /*# sourceMappingURL=map/uni-style.css.map */

@@ -351,114 +351,56 @@ JS 내용 작성</code></pre>
             <article>
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
-                    <button type="button" class="btn-type-1-01">버튼</button>
-<pre><code id="source" class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;</code></pre>
-<div class="ui-kit-comment">저장, 삭제, 닫기 등의 <strong class="red">전송 역할 버튼</strong>의 경우 <span class="skyblue">&lt;button&gt;</span> 요소로 사용합니다.</div>
-<pre><code id="source" class="language-html">&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code></pre>
-<div class="ui-kit-comment">페이지 이동 or 팝업 띄우기 등의 <strong class="red">링크 역할 버튼</strong>의 경우 <span class="skyblue">&lt;a&gt;</span> 요소로 사용합니다.</div>
+                    <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시</h3>
+                    <div class="btn-set-area">
+                        <form class="btn-size btn-blue">
+                            <label class="btn-icon">버튼</label>
+                            <input type="button" name="search-keyword">
+                        </form>
+                        <a href="" class="btn-size btn-defult" role="button">기본 버튼</a>
+                        <a href="" class="btn-size btn-defult" role="button">기본 버튼</a>
+                        <a href="" class="btn-size btn-defult" role="button">기본 버튼</a>
+                        <button class="btn-size btn-blue" type="button">활성화 버튼</button>
+                        <button class="btn-size btn-blue" type="button">활성화 버튼</button>
+                    </div>
+<pre>
+<code id="source" class="language-html">&lt;div class=&quot;btn-set-area&quot;&gt;
+    &lt;form class=&quot;btn-size btn-blue&quot;&gt;
+        &lt;label class=&quot;btn-icon&quot;&gt;버튼&lt;/label&gt;
+        &lt;input type=&quot;button&quot; name=&quot;search-keyword&quot;&gt;
+    &lt;/form&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-size btn-defult&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+    &lt;button class=&quot;btn-size btn-blue&quot; type=&quot;button&quot;&gt;버튼&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+                    <div class="ui-kit-comment">"<strong class="red">btn-set-area</strong>" class 내부에 버튼을 추가 하고 각 버튼의 특성에 따라 엘리먼트에 설정하여 class를 적용 하시면 됩니다.</div>
+                    <h3><div class="fa fa-angle-double-right"></div>아이콘 버튼 스타일</h3>
+                    <form class="btn-size btn-blue">
+                        <label class="btn-icon">버튼</label>
+                        <input type="button" name="search-keyword">
+                    </form>
+<pre>
+<code id="source" class="language-html">&lt;form class=&quot;btn-size btn-blue&quot;&gt;
+    &lt;label class=&quot;btn-icon&quot;&gt;버튼&lt;/label&gt;
+    &lt;input type=&quot;button&quot; name=&quot;search-keyword&quot;&gt;
+&lt;/form&gt;</code>
+</pre>
+                    <div class="ui-kit-comment">"<strong class="red">btn-size</strong>" class로 사이즈 설정, "<strong class="red">btn-blue</strong>" class로 색상 설정, 아이콘이 있는 버튼의 경우 "<strong class="red">btn-icon</strong>" class로 아이콘 설정</div>
+                    <h3><div class="fa fa-angle-double-right"></div>기본 버튼 스타일</h3>
+                    <a href="" class="btn-size btn-defult" role="button">버튼</a>
+<pre>
+<code id="source" class="language-html">&lt;a href=&quot;&quot; class=&quot;btn-size btn-defult&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;</code>
+</pre>
+                    <div class="ui-kit-comment">기본 디폴트 버튼 "<strong class="red">btn-defult</strong>" class로 색상 설정</div>
+                    <h3><div class="fa fa-angle-double-right"></div>활성화 버튼 스타일</h3>
+                    <button class="btn-size btn-blue" type="button">버튼</button>
+<pre>
+<code id="source" class="language-html">&lt;button class=&quot;btn-size btn-blue&quot; type=&quot;button&quot;&gt;버튼&lt;/button&gt;</code>
+</pre>
+                    <div class="ui-kit-comment">기본 활성화 버튼 "<strong class="red">btn-blue</strong>" class로 색상 설정</div>
                 </div>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
-
-            <!-- [Start] 아코디언 스타일 공통 -->
-            <article>
-                <h2>Accordion Style</h2>
-                <div class="accordion-test">
-                    <h3><span class="fa fa-list-ul"></span>아코디언 전체 패널 닫힘</h3>
-                    <ul class="aco-base">
-                        <li>
-                            <a href="#" class="name-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <ul class="sub-name">
-                                <li><a href="#">중분류 1</a>
-                                    <ul>
-                                        <li><a href="">세분류 1</a></li>
-                                        <li><a href="">세분류 2</a></li>
-                                        <li><a href="">세분류 3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">중분류 2</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="name-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <ul class="sub-name">
-                                <li><a href="#">중분류 1</a></li>
-                                <li><a href="#">중분류 2</a></li>
-                                <li><a href="#">중분류 3</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="name-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                        </li>
-                    </ul>
-                    <h3><span class="fa fa-list-ul"></span>아코디언 첫번째 패널 펼침</h3>
-                    <ul class="aco-open accordion-faq">
-                        <li>
-                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                            <div class="sub-panel">
-                                <p>답변입니다.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                            <div class="sub-panel">
-                                <p>답변입니다.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                            <div class="sub-panel">
-                                <p>답변입니다.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                            <div class="sub-panel">
-                                <p>답변입니다.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-<pre><code id="source" class="language-html">&lt;!-- 아코디언 설정 시 class=&quot;accordion-name&quot; 에서 name 변경 후 스타일 지정 --&gt;
-&lt;div class=&quot;accordion-name&quot;&gt;
-    &lt;!-- 닫힌 상태 class=&quot;aco-base&quot; 적용, 첫번째 메뉴 열린 상태 class=&quot;aco-open&quot; 적용 --&gt;
-    &lt;ul class=&quot;aco-base&quot;&gt;
-
-        &lt;!-- [Start] 대분류, 중분류, 세분류 작성 시 --&gt;
-        &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;name-link&quot; role=&quot;button&quot;&gt;대분류 1&lt;span class=&quot;fa fa-angle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-            &lt;!-- 중분류 설정 시 class=&quot;sub-name&quot; 에서 name 변경 후 스타일 지정 --&gt;
-            &lt;ul class=&quot;sub-name&quot;&gt;
-                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;중분류 1&lt;/a&gt;
-                    &lt;ul&gt;
-                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;세분류 1&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;세분류 2&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;세분류 3&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;중분류 2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;중분류 3&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;!-- [End] 대분류, 중분류, 세분류 작성 시 --&gt;
-
-        &lt;!-- [Start] 대분류만 작성 시 --&gt;
-        &lt;li&gt;
-            &lt;a href=&quot;#&quot; class=&quot;name-link&quot; role=&quot;button&quot;&gt;대분류 2&lt;span class=&quot;fa fa-angle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;!-- [End] 대분류만 작성 시 --&gt;
-
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                <p class="ui-kit-comment">
-                    아코디언 메뉴 제작 시 <strong>class="accordion-<span class="red">name</span>"</strong>의 <strong class="red">name</strong> 을 지정하고 아코디언 스타일을 설정합니다.<br>
-                    아코디언의 ul요소에 <strong>class="<span class="red">aco-base</span>"</strong> 적용 시 <strong>전체 패널이 닫힌 상태</strong>로 처리됩니다.<br>
-                    아코디언의 &lt;ul&gt;요소에 <strong>class="<span class="red">aco-open</span>"</strong> 적용 시 <strong>첫번째 패널 펼친 상태</strong>로 처리됩니다.<br>
-                    아코디언 대분류 &lt;a&gt;요소의 <strong>class="<span class="red">name</span>-link"</strong> <strong class="red">name</strong> 을 지정하고 대분류 스타일을 설정합니다.<br>
-                    아코디언 중분류 &lt;a&gt;요소의 <strong>class="sub-<span class="red">name</span>"</strong> <strong class="red">name</strong> 을 지정하고 중분류 스타일을 설정합니다.
-                </p>
-            </article>
-            <!-- [End] 아코디언 스타일 공통 -->
 
             <!-- [Start] 테이블 스타일 공통 -->
             <article>
