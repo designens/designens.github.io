@@ -299,7 +299,7 @@
                                 <ul class="ul-list-type">
                                     <li>
                                         <div class="search-1st">
-                                            <div class="select-box">
+                                            <div class="select-box full">
                                                 <label for="site-link">전체</label>
                                                 <select id="site-link" name="site-link-item">
                                                     <option selected="selected">전체</option>
@@ -317,7 +317,7 @@
                                             </div>
                                         </div>
                                         <div class="search-3rd">
-                                            <div class="select-box">
+                                            <div class="select-box full">
                                                 <label for="site-link">AND</label>
                                                 <select id="site-link" name="site-link-item">
                                                     <option selected="selected">AND</option>
@@ -328,7 +328,7 @@
                                     </li>
                                     <li>
                                         <div class="search-1st">
-                                            <div class="select-box">
+                                            <div class="select-box full">
                                                 <label for="site-link">전체</label>
                                                 <select id="site-link" name="site-link-item">
                                                     <option selected="selected">전체</option>
@@ -346,7 +346,7 @@
                                             </div>
                                         </div>
                                         <div class="search-3rd">
-                                            <div class="select-box">
+                                            <div class="select-box full">
                                                 <label for="site-link">AND</label>
                                                 <select id="site-link" name="site-link-item">
                                                     <option selected="selected">AND</option>
@@ -357,7 +357,7 @@
                                     </li>
                                     <li>
                                         <div class="search-1st">
-                                            <div class="select-box">
+                                            <div class="select-box full">
                                                 <label for="site-link">전체</label>
                                                 <select id="site-link" name="site-link-item">
                                                     <option selected="selected">전체</option>
@@ -380,40 +380,140 @@
                                     <dt>검색범위</dt>
                                     <dd>
                                         <div class="radio-type">
-                                            <input type="radio" id="radio1" name="test">
-                                            <label for="radio1">전체</label>
-                                            <input type="radio" id="radio2" name="test">
-                                            <label for="radio2">단행본</label>
-                                            <input type="radio" id="radio3" name="test">
-                                            <label for="radio3">연속간행물</label>
+                                            <input type="radio" id="search-range-01" name="search-range">
+                                            <label for="search-range-01">전체</label>
+                                        </div>
+                                        <div class="radio-type">
+                                            <input type="radio" id="search-range-02" name="search-range">
+                                            <label for="search-range-02">단행본</label>
+                                        </div>
+                                        <div class="radio-type">
+                                            <input type="radio" id="search-range-03" name="search-range">
+                                            <label for="search-range-03">연속간행물</label>
                                         </div>
                                     </dd>
                                 </dl>
                                 <dl class="dl-list-type">
                                     <dt>자료유형</dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-01" name="data-type-01">
+                                            <label for="data-type-01">전체</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-02" name="data-type-02">
+                                            <label for="data-type-02">단행본</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-03" name="data-type-03">
+                                            <label for="data-type-03">연속간행물</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-04" name="data-type-04">
+                                            <label for="data-type-04">학위논문</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-05" name="data-type-05">
+                                            <label for="data-type-05">참고자료</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-06" name="data-type-06">
+                                            <label for="data-type-06">비도서</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-07" name="data-type-07">
+                                            <label for="data-type-07">기사</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="data-type-08" name="data-type-08">
+                                            <label for="data-type-08">전자자료</label>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl class="dl-list-type">
                                     <dt>수록정보</dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="information-01" name="information-01">
+                                            <label for="information-01">원문</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="information-02" name="information-02">
+                                            <label for="information-02">초록</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="information-03" name="information-03">
+                                            <label for="information-03">목차</label>
+                                        </div>
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="information-04" name="information-04">
+                                            <label for="information-04">URL</label>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl class="dl-list-type">
                                     <dt>소장처</dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="select-box">
+                                            <label for="site-link">전체</label>
+                                            <select id="site-link" name="site-link-item">
+                                                <option selected="selected">전체</option>
+                                                <option>옵션 01</option>
+                                                <option>옵션 02</option>
+                                                <option>옵션 03</option>
+                                            </select>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl class="dl-list-type">
                                     <dt>언어</dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="select-box">
+                                            <label for="site-link">전체</label>
+                                            <select id="site-link" name="site-link-item">
+                                                <option selected="selected">전체</option>
+                                                <option>옵션 01</option>
+                                                <option>옵션 02</option>
+                                                <option>옵션 03</option>
+                                            </select>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl class="dl-list-type">
                                     <dt>발행년</dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="input-type">
+                                            <input type="text" placeholder="발행시작년도" />
+                                            <input type="text" placeholder="발행종료년도" />
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl class="dl-list-type">
                                     <dt>쪽당 출력건수</dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="select-box">
+                                            <label for="site-link">10</label>
+                                            <select id="site-link" name="site-link-item">
+                                                <option selected="selected">10</option>
+                                                <option>20</option>
+                                                <option>30</option>
+                                                <option>40</option>
+                                                <option>50</option>
+                                            </select>
+                                        </div>
+                                    </dd>
                                 </dl>
                             </div>
+                        </div>
+                        <div class="btn-set-area">
+                            <form class="btn-size btn-blue">
+                                <label class="btn-icon">검색</label>
+                                <input type="button" name="search-keyword">
+                            </form>
+                            <a href="" class="btn-size btn-defult" type="button">다국어입력</a>
+                            <a href="" class="btn-size btn-defult" type="button">검색 History</a>
+                            <a href="" class="btn-size btn-defult" type="button">바구니보기</a>
+                            <a href="" class="btn-size btn-defult" type="button">초기화</a>
                         </div>
                     </div>
                 </div>
