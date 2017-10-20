@@ -2096,21 +2096,21 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 .paging { text-align: center; margin-top: 20px; }
 
-.paging .mobile-number { display: inline-block; margin: 0 18px; }
+.paging .mobile-page { display: inline-block; margin: 0 18px; }
 
-.paging .mobile-number .now-number { width: 65px; height: 32px; line-height: 30px; text-align: right; padding-left: 10px; color: #305ed6; border: 1px solid #d3d4d8; }
+.paging .mobile-page .now-page { width: 65px; height: 32px; line-height: 30px; text-align: right; padding-left: 10px; color: #305ed6; border: 1px solid #d3d4d8; }
 
-.paging .mobile-number .all-number { display: inline-block; min-width: 65px; height: 32px; text-align: right; }
+.paging .mobile-page .all-page { display: inline-block; min-width: 65px; height: 32px; text-align: right; }
 
-.paging .mobile-number .all-number:before { content: "/ "; }
+.paging .mobile-page .all-page:before { content: "/ "; }
 
-.paging .pc-number { display: none; }
+.paging .pc-page { display: none; }
 
-@media (min-width: 47.5em) { .paging .mobile-number { display: none; } }
+@media (min-width: 47.5em) { .paging .mobile-page { display: none; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .paging .pc-number { display: inline-block; } }
+@media (min-width: 47.5em) and (max-width: 71.25em) { .paging .pc-page { display: inline-block; } }
 
-@media (min-width: 71.25em) { .paging .pc-number { display: inline-block; } }
+@media (min-width: 71.25em) { .paging .pc-page { display: inline-block; } }
 
 .paging button { position: relative; display: inline-block; min-width: 32px; height: 32px; vertical-align: top; border: 1px solid #d3d4d8; }
 

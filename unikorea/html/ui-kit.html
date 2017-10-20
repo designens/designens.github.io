@@ -599,34 +599,37 @@ JS 내용 작성</code></pre>
                     <div class="paging">
                         <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
                         <button type="button" class="prev" aria-label="이전 페이지"></button>
-                        <a href role="button">1</a>
-                        <a href role="button">2</a>
-                        <a href role="button">3</a>
-                        <a href role="button">4</a>
-                        <!-- 선택된 버튼 class="selected"로 제어 -->
-                        <a href role="button" class="selected">5</a>
-                        <a href role="button">6</a>
-                        <a href role="button">7</a>
-                        <a href role="button">8</a>
-                        <a href role="button">9</a>
-                        <a href role="button">10</a>
-                        <button type="button" class="next" aria-label="다음 페이지"></button>
-                        <button type="button " class="last-next" aria-label="끝으로 이동"></button>
+                        <div class="mobile-page">
+                            <input class="now-page" type="number" name="now-page" aria-label="현재 페이지">
+                            <span class="all-page" aria-label="총 페이지">19</span>
+                        </div>
+                        <div class="pc-page">
+                            <a href role="button">1</a>
+                            <a href role="button">2</a>
+                            <!-- 선택된 버튼 class="selected"로 제어 -->
+                            <a href role="button" class="selected">3</a>
+                            <a href role="button">4</a>
+                            <a href role="button">5</a>
+                        </div>
+                        <button type="button" class="next"" aria-label="다음 페이지"></button>
+                        <button type="button" class="last-next" aria-label="끝으로 이동"></button>
                     </div>
 <pre><code id="source" class="language-html">&lt;!-- [Start] Paging Area --&gt;
 &lt;div class=&quot;paging&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot;&gt;&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot;&gt;&lt;/button&gt;
-    &lt;a href role=&quot;button&quot;&gt;1&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;2&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;3&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;4&lt;/a&gt;
-    &lt;a href role=&quot;button&quot; class=&quot;selected&quot;&gt;5&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;6&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;7&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;8&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;9&lt;/a&gt;
-    &lt;a href role=&quot;button&quot;&gt;10&lt;/a&gt;
+    &lt;div class=&quot;mobile-page&quot;&gt;
+        &lt;input class=&quot;now-page&quot; type=&quot;number&quot; name=&quot;now-page&quot; aria-label=&quot;현재 페이지&quot;&gt;
+        &lt;span class=&quot;all-page&quot; aria-label=&quot;총 페이지&quot;&gt;19&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pc-page&quot;&gt;
+        &lt;a href role=&quot;button&quot;&gt;1&lt;/a&gt;
+        &lt;a href role=&quot;button&quot;&gt;2&lt;/a&gt;
+        &lt;!-- 선택된 버튼 class=&quot;selected&quot;로 제어 --&gt;
+        &lt;a href role=&quot;button&quot; class=&quot;selected&quot;&gt;3&lt;/a&gt;
+        &lt;a href role=&quot;button&quot;&gt;4&lt;/a&gt;
+        &lt;a href role=&quot;button&quot;&gt;5&lt;/a&gt;
+    &lt;/div&gt;
     &lt;button type=&quot;button&quot; class=&quot;next&quot;&quot; aria-label=&quot;다음 페이지&quot;&gt;&lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;last-next&quot; aria-label=&quot;끝으로 이동&quot;&gt;&lt;/button&gt;
 &lt;/div&gt;
