@@ -1609,11 +1609,11 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .unibook-search .top-search-area .search-wrap .btn-unibook-search { position: absolute; top: 35px; right: 0; width: 58px; height: 58px; background: linear-gradient(#065aaa, #05488d); text-indent: -9999px; }
 
-.unibook-search .top-search-area .search-wrap .btn-unibook-search:before { position: absolute; top: 16px; left: 18px; font-family: 'FontAwesome'; content: ""; font-size: 24px; font-size: 2.4rem; color: #fff; text-indent: initial; }
+.unibook-search .top-search-area .search-wrap .btn-unibook-search:before { position: absolute; top: 16px; left: 18px; font-family: 'FontAwesome'; content: ""; font-size: 24px; font-size: 2.4rem; color: #fff; text-indent: 0; }
 
 .unibook-search .top-search-area .searh-keyword { position: relative; width: 100%; float: left; margin-left: 0; margin-right: 0; height: 30px; padding-left: 25px; background: rgba(0, 0, 0, 0.3); overflow: hidden; }
 
-.unibook-search .top-search-area .searh-keyword:before { position: absolute; top: 5px; left: 14px; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; text-indent: initial; }
+.unibook-search .top-search-area .searh-keyword:before { position: absolute; top: 5px; left: 14px; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; text-indent: 0; }
 
 .unibook-search .top-search-area .searh-keyword a { position: relative; float: left; display: inline-block; line-height: 30px; font-size: 13px; font-size: 1.3rem; color: #fff; letter-spacing: -0.04em; padding: 0 10px; }
 
@@ -1771,13 +1771,13 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 @media (min-width: 71.25em) { .popup-zone .headline { display: block; }
   .popup-zone .popup-zone-carousel { position: static; height: auto; }
   .popup-zone .popup-zone-carousel .ui-carousel__tabpanel-wrapper article { width: auto; }
-  .popup-zone .popup-zone-carousel .ui-carousel__toggle--animate { display: block; position: absolute; top: 5px; right: 24px; width: 24px; height: 24px; border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; border-radius: initial; box-shadow: initial; }
+  .popup-zone .popup-zone-carousel .ui-carousel__toggle--animate { display: block; position: absolute; top: 5px; right: 24px; width: 24px; height: 24px; border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; border-radius: 0; box-shadow: none; }
   .popup-zone .popup-zone-carousel .ui-carousel__toggle--animate:before { color: #76a7cc; }
   .popup-zone .popup-zone-carousel .ui-carousel__toggle--animate:hover, .popup-zone .popup-zone-carousel .ui-carousel__toggle--animate:focus { background: #eaeaea; transform: scale(1) !important; }
   .popup-zone .popup-zone-carousel .ui-carousel__button { top: 28px; width: 24px; height: 24px; border: 1px solid #d3d3d3; }
   .popup-zone .popup-zone-carousel .ui-carousel__button:before { font-size: 20px; font-size: 2rem; color: #76a7cc; text-align: center; width: 24px; height: 24px; line-height: 22px; }
   .popup-zone .popup-zone-carousel .ui-carousel__button:hover, .popup-zone .popup-zone-carousel .ui-carousel__button:focus { background: #eaeaea; transform: inherit !important; }
-  .popup-zone .popup-zone-carousel .ui-carousel__button--prev { left: initial; right: 47px; }
+  .popup-zone .popup-zone-carousel .ui-carousel__button--prev { left: auto; right: 47px; }
   .popup-zone .popup-zone-carousel .ui-carousel__button--next { right: 0; } }
 
 /* =======================================*/

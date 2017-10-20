@@ -1968,6 +1968,32 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
   head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(69, 144, 230, 0.25), rgba(136, 184, 239, 0.25) 88.23529%, transparent 88.23529%); background-size: 17%; background-origin: content-box; background-clip: content-box; background-position: left top; } }
 
 /* =======================================*/
+/* 영역 숨김 / 표시 설정
+/* =======================================*/
+.area-hidden { display: none; visibility: hidden; }
+
+.area-visible { display: none; visibility: visible; }
+
+/* =======================================*/
+/* 공간 지우기 설정
+/* =======================================*/
+.pt-zero { padding-top: 0 !important; }
+
+.pb-zero { padding-bottom: 0 !important; }
+
+.pl-zero { padding-left: 0 !important; }
+
+.pr-zero { padding-right: 0 !important; }
+
+.mt-zero { margin-top: 0 !important; }
+
+.mb-zero { margin-bottom: 0 !important; }
+
+.ml-zero { margin-left: 0 !important; }
+
+.mr-zero { margin-right: 0 !important; }
+
+/* =======================================*/
 /* Skip Navigation 설정
 /* =======================================*/
 .skip-link { position: absolute; top: -35px; display: inline-block; width: 100%; height: 35px; line-height: 35px; text-align: center; background: #333; }
@@ -2068,35 +2094,59 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* 페이징 스타일
 /* =======================================*/
-.paging { display: inline-block; text-align: center; margin-top: 30px; position: relative; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.paging { text-align: center; margin-top: 20px; }
 
-.paging button { float: left; position: relative; display: inline-block; width: 36px; height: 36px; vertical-align: top; padding: 0 4px; border-top: 1px solid #c2c2c2; border-left: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2; }
+.paging .mobile-number { display: inline-block; margin: 0 18px; }
 
-.paging button:before, .paging button:after { position: absolute; top: 12px; }
+.paging .mobile-number .now-number { width: 65px; height: 32px; line-height: 30px; text-align: right; padding-left: 10px; color: #305ed6; border: 1px solid #d3d4d8; }
 
-.paging button.first-prev { margin-left: 0; }
+.paging .mobile-number .all-number { display: inline-block; min-width: 65px; height: 32px; text-align: right; }
 
-.paging button.first-prev:before { left: 9px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging .mobile-number .all-number:before { content: "/ "; }
 
-.paging button.first-prev:after { right: 11px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging .pc-number { display: none; }
 
-.paging button.prev:before { left: 12px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+@media (min-width: 47.5em) { .paging .mobile-number { display: none; } }
 
-.paging button.last-next { border-right: 1px solid #c2c2c2; }
+@media (min-width: 47.5em) and (max-width: 71.25em) { .paging .pc-number { display: inline-block; } }
 
-.paging button.last-next:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+@media (min-width: 71.25em) { .paging .pc-number { display: inline-block; } }
 
-.paging button.last-next:after { right: 9px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button { position: relative; display: inline-block; min-width: 32px; height: 32px; vertical-align: top; border: 1px solid #d3d4d8; }
 
-.paging button.next:before { right: 12px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #879dad; }
+.paging button:before, .paging button:after { position: absolute; top: 4px; }
 
-.paging button:focus, .paging button:active, .paging button.selected { border-bottom: 3px solid #112a3d; }
+.paging button.first-prev { margin-right: 2px; margin-left: 0; }
 
-.paging button:focus:before, .paging button:focus:after, .paging button:active:before, .paging button:active:after, .paging button.selected:before, .paging button.selected:after { color: #003761; }
+.paging button.first-prev:before { left: 8px; font-family: 'FontAwesome'; content: ""; font-size: 22px; font-size: 2.2rem; color: #494a4e; }
 
-.paging a { float: left; display: inline-block; width: 36px; height: 36px; line-height: 34px; padding: 0 4px; border-top: 1px solid #c2c2c2; border-left: 1px solid #c2c2c2; border-bottom: 1px solid #c2c2c2; }
+.paging button.first-prev:after { right: 8px; font-family: 'FontAwesome'; content: ""; font-size: 22px; font-size: 2.2rem; color: #494a4e; }
 
-.paging a:focus, .paging a:active, .paging a.selected { font-weight: bold; color: #003761; border-bottom: 3px solid #112a3d; }
+.paging button.prev { margin-right: 2px; }
+
+.paging button.prev:before { left: 10px; font-family: 'FontAwesome'; content: ""; font-size: 22px; font-size: 2.2rem; color: #494a4e; }
+
+.paging button.last-next { margin-left: 2px; }
+
+.paging button.last-next:before { left: 8px; font-family: 'FontAwesome'; content: ""; font-size: 22px; font-size: 2.2rem; color: #494a4e; }
+
+.paging button.last-next:after { right: 8px; font-family: 'FontAwesome'; content: ""; font-size: 22px; font-size: 2.2rem; color: #494a4e; }
+
+.paging button.next { margin-left: 2px; }
+
+.paging button.next:before { right: 10px; font-family: 'FontAwesome'; content: ""; font-size: 22px; font-size: 2.2rem; color: #494a4e; }
+
+.paging button:focus, .paging button:active, .paging button.selected { background: #494a4e; border-color: transparent; }
+
+.paging button:focus:before, .paging button:focus:after, .paging button:active:before, .paging button:active:after, .paging button.selected:before, .paging button.selected:after { color: #fff; }
+
+.paging a { display: inline-block; min-width: 32px; height: 32px; line-height: 30px; padding: 0 10px; margin: 0 2px; border: 1px solid #d3d4d8; }
+
+.paging a:first-child { margin-left: 18px; }
+
+.paging a:last-child { margin-right: 18px; }
+
+.paging a:focus, .paging a:active, .paging a.selected { background: #494a4e; border-color: transparent; color: #fff; }
 
 /* =======================================*/
 /* Footer : 관련 사이트
@@ -2397,13 +2447,17 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* 리스트 스타일
 /* =======================================*/
-.ul-list-type li { display: block; line-height: 45px; }
+.ul-list-type li { display: block; line-height: 35px; margin-bottom: 10px; }
+
+.dl-list-type { margin-bottom: 10px; }
+
+.dl-list-type:last-child { margin-bottom: 0; }
 
 .dl-list-type dt { position: relative; padding-left: 13px; font-weight: 500; color: #333; }
 
-.dl-list-type dt:before { position: absolute; top: 22px; left: 0; display: block; width: 3px; height: 3px; background: #454c5f; content: ""; }
+.dl-list-type dt:before { position: absolute; top: 16px; left: 0; display: block; width: 3px; height: 3px; background: #454c5f; content: ""; }
 
-.dl-list-type dt, .dl-list-type dd { display: block; line-height: 45px; }
+.dl-list-type dt, .dl-list-type dd { display: block; line-height: 35px; }
 
 @media (min-width: 71.25em) { .dl-list-type dt, .dl-list-type dd { display: inline-block; } }
 
