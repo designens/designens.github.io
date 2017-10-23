@@ -1873,7 +1873,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 #gnb-all-menu .user-menu > a:last-child { border-left: 1px solid #004072; }
 
-#gnb-all-menu .wrap { min-width: initial; padding: 0; border-top: 1px solid #245c88; border-bottom: 1px solid #004072; clear: both; }
+#gnb-all-menu .wrap { min-width: auto; padding: 0; border-top: 1px solid #245c88; border-bottom: 1px solid #004072; clear: both; }
 
 #gnb-all-menu .wrap > li { background: #175280; border-top: 1px solid #004072; border-bottom: 1px solid #245c88; }
 
@@ -1907,7 +1907,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 @media (min-width: 0) and (max-width: 47.5em) { #gnb-all-menu { bottom: 0; } }
 
-@media (min-width: 47.5em) { #gnb-all-menu { top: 116px; bottom: initial; z-index: 1000; }
+@media (min-width: 47.5em) { #gnb-all-menu { top: 117px; bottom: auto; z-index: 1000; }
   #gnb-all-menu .user-menu { display: none; }
   #gnb-all-menu .wrap { border-top: 0; border-bottom: 0px; }
   #gnb-all-menu .wrap > li { border-top: 0; border-bottom: 0; background: transparent; }
@@ -1918,8 +1918,8 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   #gnb-all-menu .wrap > li.open > ul > li:last-child { border-bottom: 1px solid #e6e6e6; }
   #gnb-all-menu .wrap > li.open .title-link { background: transparent; }
   #gnb-all-menu .wrap > li .sub-menu { display: block !important; }
-  #gnb-all-menu .wrap > li .sub-menu > li { font-weight: 300; color: initial; padding: 10px 0; margin-bottom: 0; border-bottom: 1px solid #e6e6e6; background: transparent; }
-  #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-label { height: inherit; line-height: inherit; color: inherit; }
+  #gnb-all-menu .wrap > li .sub-menu > li { font-weight: 300; color: #464646; padding: 10px 0; margin-bottom: 0; border-bottom: 1px solid #e6e6e6; background: transparent; }
+  #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-label { height: auto; line-height: 1.5; color: #464646; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul { margin-bottom: 0; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul > li { position: relative; font-size: 13px; font-size: 1.3rem; color: #888; height: 20px; line-height: 20px; padding-left: 8px; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle > ul > li a { height: 20px; line-height: 20px; }
@@ -1935,11 +1935,11 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   #gnb-all-menu .wrap > li:nth-child(3n + 3) { margin-left: 70%; margin-right: -100%; clear: none; }
   #gnb-all-menu .wrap > li .title-link { height: 60px; line-height: 58px; font-size: 20px; font-size: 2rem; text-align: center; padding: 0; border-bottom: 3px solid #0066b3; margin-top: 10px; background: transparent; }
   #gnb-all-menu .wrap > li .title-link:hover, #gnb-all-menu .wrap > li .title-link:focus { color: #0066b3; }
-  #gnb-all-menu .wrap > li .sub-menu > li { padding: 8px 0; border-top: initial; }
-  #gnb-all-menu .wrap > li .sub-menu > li a { font-size: 14px; font-size: 1.4rem; font-weight: 300; height: initial; line-height: initial; }
+  #gnb-all-menu .wrap > li .sub-menu > li { padding: 8px 0; border-top: 0; }
+  #gnb-all-menu .wrap > li .sub-menu > li a { font-size: 14px; font-size: 1.4rem; font-weight: 300; height: auto; line-height: 1.5; }
   #gnb-all-menu .wrap > li .sub-menu > li:hover, #gnb-all-menu .wrap > li .sub-menu > li:focus { color: #0066b3; }
-  #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-label:before { top: 9px; left: initial; right: 10px; background: #0066b3; }
-  #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-label:after { top: 5px; left: initial; right: 14px; background: #0066b3; }
+  #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-label:before { top: 9px; left: auto; right: 10px; background: #0066b3; }
+  #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-label:after { top: 5px; left: auto; right: 14px; background: #0066b3; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-trigger:checked ~ .toggle-label { padding-bottom: 8px; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-trigger:checked ~ ul { position: static; overflow: hidden; padding-top: 2px; margin-bottom: -4px; }
   #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-trigger:checked ~ ul:hover + li, #gnb-all-menu .wrap > li .sub-menu > li.toggle .toggle-trigger:checked ~ ul:fouce + li { border-top: 0; }
@@ -1965,8 +1965,8 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   #gnb-all-menu .wrap > li:nth-child(6n + 6) { margin-left: 86.36364%; margin-right: -100%; clear: none; }
   #gnb-all-menu .wrap > li .sub-menu > li { border-top: 0; border-bottom: 1px solid #e6e6e6; }
   #gnb-all-menu .wrap > li .sub-menu > li:hover, #gnb-all-menu .wrap > li .sub-menu > li:focus { color: #0066b3; border-bottom: 1px solid #0066b3; }
-  #gnb-all-menu .wrap > li .sub-menu > li > a { font-size: 14px; font-size: 1.4rem; font-weight: 300; color: inherit; height: auto; line-height: inherit; }
-  #gnb-all-menu .wrap > li .sub-menu .toggle:hover, #gnb-all-menu .wrap > li .sub-menu .toggle:focus { color: inherit; border-bottom: 1px solid #e6e6e6; }
+  #gnb-all-menu .wrap > li .sub-menu > li > a { font-size: 14px; font-size: 1.4rem; font-weight: 300; color: #464646; height: auto; line-height: 1.5; }
+  #gnb-all-menu .wrap > li .sub-menu .toggle:hover, #gnb-all-menu .wrap > li .sub-menu .toggle:focus { color: #464646; border-bottom: 1px solid #e6e6e6; }
   #gnb-all-menu .wrap > li .sub-menu .toggle .toggle-label { cursor: default; padding-bottom: 13px; }
   #gnb-all-menu .wrap > li .sub-menu .toggle .toggle-container { opacity: 1; height: auto; }
   #gnb-all-menu .wrap > li .sub-menu .toggle > ul { margin-top: -8px; } }
@@ -1979,7 +1979,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .btn-gnb-close { left: 0; } }
 
-@media (min-width: 71.25em) { .btn-gnb-close { top: initial; left: initial; right: 21px; bottom: 0; width: 40px; height: 40px; background: #005083; }
+@media (min-width: 71.25em) { .btn-gnb-close { top: auto; left: auto; right: 21px; bottom: 0; width: 40px; height: 40px; background: #005083; }
   .btn-gnb-close:before { top: 20px; left: 4px; width: 32px; height: 1px; background: #fff; transform: rotate(45deg); }
   .btn-gnb-close:after { top: 20px; left: 4px; width: 32px; height: 1px; background: #fff; transform: rotate(-45deg); } }
 
