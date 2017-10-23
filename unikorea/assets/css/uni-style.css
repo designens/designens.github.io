@@ -1988,9 +1988,36 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap input { width: 73%; height: 35px; margin: 0 0 10px 10px; padding: 0 0 0 5px; background: #fff; border-top: 1px solid #c2c2c2; border-left: 1px solid #c2c2c2; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
-.login-m.bhk .lo-wp .login { float: right; }
+.login-m.bhk .lo-wp .login { float: right; width: 100%; }
 
-.login-m.bhk .lo-wp .login .btn-login-size { min-width: 80px; width: 22%; height: 80px; text-align: center; padding: 20px 0; }
+.login-m.bhk .lo-wp .login .btn-login-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label { line-height: 40px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label .fa { font-size: 20px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 5px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 5px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label .icon, .login-m.bhk .lo-wp .login .btn-login-size label img { vertical-align: middle; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 5px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 5px; }
+
+.login-m.bhk .lo-wp .login .btn-login-size input[type="button"] { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+@media (min-width: 47.5em) { .login-m.bhk .lo-wp .login { width: auto; }
+  .login-m.bhk .lo-wp .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label { line-height: 80px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .fa { font-size: 50px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 5px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 5px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .icon, .login-m.bhk .lo-wp .login .btn-login-size label img { vertical-align: middle; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 5px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 5px; }
+  .login-m.bhk .lo-wp .login .btn-login-size input[type="button"] { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } }
 
 @media only screen and (max-width: 760px) { .login-m.bhk { background: #fff; border-bottom: 1px solid #ddd; }
   .login-m.bhk .lo-wp { overflow: hidden; width: 290px; padding: 0 15px 30px; margin: 0 auto; }
@@ -2005,9 +2032,7 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 .login-f.bhk .f-wrap .se { text-align: left; display: inline-block; }
 
-.login-f.bhk .f-wrap .se .search_id { padding: 0 30px 12px 0; color: #777; }
-
-.login-f.bhk .f-wrap .se .se_id { padding: 8px 31px 10px 11px; cursor: pointer; color: #666; border: 1px solid #d5d5d5; }
+.login-f.bhk .f-wrap .se .search-id { padding: 0 30px 12px 0; color: #777; }
 
 .login-f.bhk .f-wrap .jo { text-align: left; display: inline-block; }
 
@@ -2081,7 +2106,5 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 .certification.bhk li:first-child { margin-left: 0; }
 
 @media only screen and (max-width: 760px) { .certification.bhk ul li { background: #f1f1f1; width: 100%; margin-bottom: 4%; margin-left: 0; min-height: 336px; padding: 30px; } }
-
-@media screen and (-ms-high-contrast: active) and (min-width: 47.5em), (-ms-high-contrast: none) and (min-width: 47.5em) { #gnb-all-menu { top: 117px; } }
 
 /*# sourceMappingURL=map/uni-style.css.map */
