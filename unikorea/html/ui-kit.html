@@ -15,7 +15,7 @@
     <!-- MSIE 호환성 보기 (최신 브라우저) -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- MOBILE : 모바일 최적화 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Style : Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <!-- Style : Guide Style -->
@@ -354,8 +354,8 @@ JS 내용 작성</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시 (아이템 영역)</h3>
                     <div class="btn-set-area">
                         <form class="btn-item-size btn-blue">
-                            <label><span class="fa fa-search before"></span>버튼</label>
-                            <input type="button">
+                            <label aria-hidden="true"><span class="fa fa-search before"></span></label>
+                            <input type="button" value="버튼">
                         </form>
                         <a href="#" class="btn-item-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-item-size btn-defult" role="button">기본 버튼</a>
@@ -366,8 +366,8 @@ JS 내용 작성</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시 (테이블 내부)</h3>
                     <div class="btn-set-area col-3">
                         <form class="btn-in-size btn-blue">
-                            <label><span class="fa fa-search before"></span>버튼</label>
-                            <input type="button">
+                            <label aria-hidden="true"><span class="fa fa-search before"></span></label>
+                            <input type="button" value="버튼">
                         </form>
                         <a href="#" class="btn-in-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-in-size btn-defult" role="button">기본 버튼</a>
@@ -378,8 +378,8 @@ JS 내용 작성</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시 (테이블 외부)</h3>
                     <div class="btn-set-area col-4">
                         <form class="btn-out-size btn-blue">
-                            <label><span class="fa fa-search before"></span>버튼</label>
-                            <input type="button">
+                            <label aria-hidden="true"><span class="fa fa-search before"></span></label>
+                            <input type="button" value="버튼">
                         </form>
                         <a href="#" class="btn-out-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-out-size btn-defult" role="button">기본 버튼</a>
@@ -412,7 +412,7 @@ JS 내용 작성</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>아이콘 버튼 스타일</h3>
                     <form class="btn-out-size btn-blue">
                         <label class="btn-icon">버튼</label>
-                        <input type="button">
+                        <input type="button" value="버튼">
                     </form>
 <pre>
 <code id="source" class="language-html">&lt;form class=&quot;btn-out-size btn-blue&quot;&gt;

@@ -1816,7 +1816,7 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 /* =======================================*/
 .content-area .headline { margin-bottom: 30px; }
 
-.content-area .headline .sub-title { color: #333; padding-bottom: 10px; border-bottom: 2px solid #666; clear: both; }
+.content-area .headline .sub-title { font-size: 30px; font-size: 3rem; color: #333; padding-bottom: 10px; border-bottom: 2px solid #666; clear: both; }
 
 .content-area .headline .site-location { height: 35px; line-height: 35px; }
 
@@ -2007,28 +2007,25 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .login-m.bhk .lo-wp .login .btn-login-size label .fa { font-size: 20px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 5px; }
+.login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 4px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 5px; }
+.login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 4px; }
 
 .login-m.bhk .lo-wp .login .btn-login-size label .icon, .login-m.bhk .lo-wp .login .btn-login-size label img { vertical-align: middle; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 5px; }
+.login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 4px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 5px; }
-
-.login-m.bhk .lo-wp .login .btn-login-size input[type="button"] { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 4px; }
 
 @media (min-width: 47.5em) { .login-m.bhk .lo-wp .login { width: auto; }
   .login-m.bhk .lo-wp .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
   .login-m.bhk .lo-wp .login .btn-login-size label { line-height: 80px; }
   .login-m.bhk .lo-wp .login .btn-login-size label .fa { font-size: 50px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 5px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 5px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 4px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 4px; }
   .login-m.bhk .lo-wp .login .btn-login-size label .icon, .login-m.bhk .lo-wp .login .btn-login-size label img { vertical-align: middle; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 5px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 5px; }
-  .login-m.bhk .lo-wp .login .btn-login-size input[type="button"] { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } }
+  .login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 4px; }
+  .login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 4px; } }
 
 @media only screen and (max-width: 760px) { .login-m.bhk { background: #fff; border-bottom: 1px solid #ddd; }
   .login-m.bhk .lo-wp { overflow: hidden; width: 290px; padding: 0 15px 30px; margin: 0 auto; }
