@@ -2267,6 +2267,9 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
   .btn-set-area form:nth-child(2n + 2), .btn-set-area button:nth-child(2n + 2), .btn-set-area a:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
   .btn-set-area.col-1 form, .btn-set-area.col-1 button, .btn-set-area.col-1 a { width: 100%; float: left; margin-bottom: 1.11111%; }
   .btn-set-area.col-1 form:nth-child(1n + 1), .btn-set-area.col-1 button:nth-child(1n + 1), .btn-set-area.col-1 a:nth-child(1n + 1) { margin-left: 0; margin-right: -100%; clear: none; }
+  .btn-set-area.col-2 form, .btn-set-area.col-2 button, .btn-set-area.col-2 a { width: 49.44444%; float: left; margin-bottom: 1.11111%; }
+  .btn-set-area.col-2 form:nth-child(2n + 1), .btn-set-area.col-2 button:nth-child(2n + 1), .btn-set-area.col-2 a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area.col-2 form:nth-child(2n + 2), .btn-set-area.col-2 button:nth-child(2n + 2), .btn-set-area.col-2 a:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
   .btn-set-area.col-3 form, .btn-set-area.col-3 button, .btn-set-area.col-3 a { width: 32.46377%; float: left; margin-bottom: 1.30435%; }
   .btn-set-area.col-3 form:nth-child(3n + 1), .btn-set-area.col-3 button:nth-child(3n + 1), .btn-set-area.col-3 a:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area.col-3 form:nth-child(3n + 2), .btn-set-area.col-3 button:nth-child(3n + 2), .btn-set-area.col-3 a:nth-child(3n + 2) { margin-left: 33.76812%; margin-right: -100%; clear: none; }
