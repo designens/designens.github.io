@@ -1811,6 +1811,12 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .sub-list-title .search-word span { color: #ff8134; }
 
+.search-select-box-area { background: #f1f1f1; padding: 0 15px; line-height: 41px; }
+
+.search-select-box-area .icon-img-type { color: #09c; padding-left: 23px; background: url("../../assets/images/icon/icon-img-type.svg") left center no-repeat; }
+
+.search-select-box-area .select-box { width: 100px; margin-left: 6px; }
+
 /* =======================================*/
 /* Content : 컨텐츠 영역
 /* =======================================*/
@@ -1929,9 +1935,9 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
   .keyword-search-area-view .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
   .keyword-search-area-view .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
 
-.search-select-box-area { background: #f1f1f1; padding: 3px 15px; line-height: 41px; }
+.search-select-content { padding: 20px 30px; border: 1px solid #dddddd; margin-top: 10px; }
 
-.search-select-box-area .icon-img-type { color: #09c; padding-left: 23px; background: url("../../assets/images/icon/icon-img-type.svg") left center no-repeat; }
+.search-select-content ul li { display: inline-block; }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
