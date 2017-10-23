@@ -1769,7 +1769,7 @@ html body { font-size: 1.4rem; color: #464646; line-height: 21px; }
 
 h1, h2, h3, h4 { font-weight: 500; }
 
-h5, h6 { font-weight: 600; }
+h5, h6 { font-weight: 400; }
 
 h1 { font-size: 30px; font-size: 3rem; line-height: 45px; line-height: 4.5rem; }
 
@@ -1779,9 +1779,9 @@ h3 { font-size: 23px; font-size: 2.3rem; line-height: 34.5px; line-height: 3.45r
 
 h4 { font-size: 20px; font-size: 2rem; line-height: 30px; line-height: 3rem; }
 
-h5 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
+h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem; }
 
-h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem; }
+h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
 /* =======================================*/
 /* Carousel Style

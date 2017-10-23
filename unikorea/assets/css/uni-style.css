@@ -1656,11 +1656,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-.popup .popup-headline, .popup .popup-content { *zoom: 1; }
+.popup .popup-headline, .popup .popup-content, .search-select-box-area { *zoom: 1; }
 
-.popup .popup-headline:before, .popup .popup-content:before, .popup .popup-headline:after, .popup .popup-content:after { content: ""; display: block; }
+.popup .popup-headline:before, .popup .popup-content:before, .search-select-box-area:before, .popup .popup-headline:after, .popup .popup-content:after, .search-select-box-area:after { content: ""; display: block; }
 
-.popup .popup-headline:after, .popup .popup-content:after { clear: both; }
+.popup .popup-headline:after, .popup .popup-content:after, .search-select-box-area:after { clear: both; }
 
 .popup .popup-content .popup-btn-set .popup-save { font-weight: 500; color: #333; border: 2px solid #585858; background: #fff; }
 
@@ -1689,7 +1689,7 @@ html body { font-size: 1.4rem; color: #464646; line-height: 21px; }
 
 h1, h2, h3, h4 { font-weight: 500; }
 
-h5, h6 { font-weight: 600; }
+h5, h6 { font-weight: 400; }
 
 h1 { font-size: 30px; font-size: 3rem; line-height: 45px; line-height: 4.5rem; }
 
@@ -1699,9 +1699,9 @@ h3 { font-size: 23px; font-size: 2.3rem; line-height: 34.5px; line-height: 3.45r
 
 h4 { font-size: 20px; font-size: 2rem; line-height: 30px; line-height: 3rem; }
 
-h5 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
+h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem; }
 
-h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem; }
+h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
 /* =======================================*/
 /* 테이블 스타일
@@ -1803,6 +1803,13 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 @media only screen and (max-width: 760px) { .popup.mobile { top: 0; left: 0; right: 0; bottom: 0; width: 100%; max-height: 100vh; transform: inherit; }
   .popup.mobile .popup-content { max-height: calc(100% - 50px); padding: 20px; } }
+
+/* =======================================*/
+/* Content : 공통 요소 스타일
+/* =======================================*/
+.sub-list-title { padding: 25px 0; }
+
+.sub-list-title .search-word span { color: #ff8134; }
 
 /* =======================================*/
 /* Content : 컨텐츠 영역
@@ -1922,8 +1929,12 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
   .keyword-search-area-view .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
   .keyword-search-area-view .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
 
+.search-select-box-area { background: #f1f1f1; padding: 3px 15px; line-height: 41px; }
+
+.search-select-box-area .icon-img-type { color: #09c; padding-left: 23px; background: url("../../assets/images/icon/icon-img-type.svg") left center no-repeat; }
+
 /* =======================================*/
-/* 공통 요소 스타일
+/* Content : 공통 요소 스타일
 /* =======================================*/
 .type-ta01.bhk { width: 100%; border-top: 2px solid #999999; }
 
