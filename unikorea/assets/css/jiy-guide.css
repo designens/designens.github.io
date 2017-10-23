@@ -1909,8 +1909,11 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 @media (min-width: 0) and (max-width: 47.5em) { #gnb-all-menu { bottom: 0; } }
 
-@media (min-width: 47.5em) { #gnb-all-menu { top: 117px; bottom: auto; z-index: 1000; }
-  #gnb-all-menu .user-menu { display: none; }
+@media (min-width: 47.5em) { #gnb-all-menu { top: 117px; bottom: auto; z-index: 1000; } }
+
+@media screen and (min-width: 47.5em) and (-webkit-min-device-pixel-ratio: 0) { #gnb-all-menu { top: 116px; } }
+
+@media (min-width: 47.5em) { #gnb-all-menu .user-menu { display: none; }
   #gnb-all-menu .wrap { border-top: 0; border-bottom: 0px; }
   #gnb-all-menu .wrap > li { border-top: 0; border-bottom: 0; background: transparent; }
   #gnb-all-menu .wrap > li .title-link { margin-top: 20px; height: 60px; line-height: 58px; font-size: 20px; font-size: 2rem; color: #050505; text-align: center; padding: 0; background: transparent; border-bottom: 3px solid #0066b3; }

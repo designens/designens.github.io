@@ -2082,4 +2082,6 @@ h6 { font-size: 14px; font-size: 1.4rem; line-height: 21px; line-height: 2.1rem;
 
 @media only screen and (max-width: 760px) { .certification.bhk ul li { background: #f1f1f1; width: 100%; margin-bottom: 4%; margin-left: 0; min-height: 336px; padding: 30px; } }
 
+@media screen and (-ms-high-contrast: active) and (min-width: 47.5em), (-ms-high-contrast: none) and (min-width: 47.5em) { #gnb-all-menu { top: 117px; } }
+
 /*# sourceMappingURL=map/uni-style.css.map */
