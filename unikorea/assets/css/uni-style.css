@@ -1656,11 +1656,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-.popup .popup-headline, .popup .popup-content, .search-select-box-area { *zoom: 1; }
+.popup .popup-headline, .popup .popup-content, .search-select-box-area, .search-select-content .list-item { *zoom: 1; }
 
-.popup .popup-headline:before, .popup .popup-content:before, .search-select-box-area:before, .popup .popup-headline:after, .popup .popup-content:after, .search-select-box-area:after { content: ""; display: block; }
+.popup .popup-headline:before, .popup .popup-content:before, .search-select-box-area:before, .search-select-content .list-item:before, .popup .popup-headline:after, .popup .popup-content:after, .search-select-box-area:after, .search-select-content .list-item:after { content: ""; display: block; }
 
-.popup .popup-headline:after, .popup .popup-content:after, .search-select-box-area:after { clear: both; }
+.popup .popup-headline:after, .popup .popup-content:after, .search-select-box-area:after, .search-select-content .list-item:after { clear: both; }
 
 .popup .popup-content .popup-btn-set .popup-save { font-weight: 500; color: #333; border: 2px solid #585858; background: #fff; }
 
@@ -1709,23 +1709,9 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 /* table-type-01 */
 .table-type-01 { width: 100%; }
 
-.table-type-01 thead { border-top: 2px solid #45494d; }
+.table-type-01 th, .table-type-01 td { min-width: 40px; text-align: center; line-height: 31px; padding: 0 10px; border: 1px solid #ccc; }
 
-.table-type-01 thead th { border-right: 1px solid #d1d1d1; border-bottom: 1px solid #c2c2c2; background: #f0f3f5; }
-
-.table-type-01 tbody th, .table-type-01 tbody td { border-right: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; }
-
-.table-type-01 tbody td p { margin-bottom: 4px; }
-
-.table-type-01 tbody td p:last-child { margin-bottom: 0; }
-
-.table-type-01 tr th { color: #2e3a42; }
-
-.table-type-01 tr th.sub-title { font-weight: normal; }
-
-.table-type-01 tr th, .table-type-01 tr td { height: 38px; text-align: center; padding: 8px 10px; }
-
-.table-type-01 tr th:last-child, .table-type-01 tr td:last-child { border-right: 0; }
+.table-type-01 th { font-weight: 500; color: #333; background: #f1f5f7; }
 
 /* table-type-02 */
 .table-type-02 { width: 100%; }
@@ -1915,29 +1901,56 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type input:last-child { float: none; } }
 
 /* =======================================*/
-/* 자료검색 > 소장자료 검색 > 상세
-/* (html/resources-search-view.html)
+/* 자료검색 > 소장자료 검색 > 리스트
+/* (html/resources-search-list.html)
 /* =======================================*/
-.keyword-search-area-view .ul-list-type li:first-child { margin-top: -5px; margin-bottom: 0; }
+.keyword-search-area-list .ul-list-type li:first-child { margin-top: -5px; margin-bottom: 0; }
 
-.keyword-search-area-view .ul-list-type li:last-child { margin-bottom: 0; }
+.keyword-search-area-list .ul-list-type li:last-child { margin-bottom: 0; }
 
-.keyword-search-area-view .ul-list-type li:last-child div { margin-bottom: 10px; }
+.keyword-search-area-list .ul-list-type li:last-child div { margin-bottom: 10px; }
 
-.keyword-search-area-view .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
+.keyword-search-area-list .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
 
-.keyword-search-area-view .ul-list-type li .fr-align { display: block; float: inherit; }
+.keyword-search-area-list .ul-list-type li .fr-align { display: block; float: inherit; }
 
-.keyword-search-area-view .btn-more-size .icon.after { padding-left: 20px; vertical-align: inherit; }
+.keyword-search-area-list .btn-more-size .icon.after { padding-left: 20px; vertical-align: inherit; }
 
-@media (min-width: 47.5em) { .keyword-search-area-view .ul-list-type li:first-child .fr-align { float: right; margin-right: -8px; }
-  .keyword-search-area-view .ul-list-type li:last-child .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
-  .keyword-search-area-view .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
-  .keyword-search-area-view .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
+@media (min-width: 47.5em) { .keyword-search-area-list .ul-list-type li:first-child .fr-align { float: right; margin-right: -8px; }
+  .keyword-search-area-list .ul-list-type li:last-child .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .keyword-search-area-list .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
+  .keyword-search-area-list .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
 
-.search-select-content { padding: 20px 30px; border: 1px solid #dddddd; margin-top: 10px; }
+.search-select-content .list-item { padding: 20px 31px; border: 1px solid #ddd; margin-top: 10px; }
 
-.search-select-content ul li { display: inline-block; }
+.search-select-content .list-item li.item-img { text-align: center; width: 75px; height: 103px; border: 1px solid #ddd; }
+
+.search-select-content .list-item li.item-img img { width: 100%; height: 100%; }
+
+.search-select-content .list-item li.item-text .icon-list-item { height: 24px; line-height: 24px; font-weight: 500; }
+
+.search-select-content .list-item li.item-text .icon-list-item img { vertical-align: -2px; margin-right: 5px; }
+
+.search-select-content .list-item li.item-text h6 span { font-weight: 300; }
+
+.search-select-content .list-item li.item-text .item-info { color: #888; margin-top: 2px; }
+
+.search-select-content .list-item li.item-text .item-info span { position: relative; padding-right: 20px; }
+
+.search-select-content .list-item li.item-text .item-info span:before { position: absolute; top: 6px; right: 0; width: 1px; height: 11px; margin-right: 9px; background: #ccc; content: ""; }
+
+.search-select-content .list-item li.item-text .item-info span:last-child:before { background-color: transparent; }
+
+.search-select-content .list-item li.item-text .item-keyword { color: #405a89; margin-top: 6px; }
+
+.search-select-content .list-item li.item-text .item-keyword span { padding: 0 10px; margin-right: 5px; background: #dbebff; }
+
+@media (min-width: 71.25em) { .search-select-content .list-item li.item-number { width: 10.23316%; float: left; margin-right: 2.59067%; }
+  .search-select-content .list-item li.item-img { width: 10.23316%; float: left; margin-right: 2.59067%; }
+  .search-select-content .list-item li.item-text { width: 74.35233%; float: right; margin-right: 0; position: relative; }
+  .search-select-content .list-item li.item-text .icon-list-item { position: absolute; top: 0; right: 0; }
+  .search-select-content .list-item li.item-table { clear: both; width: 100%; float: left; margin-left: 0; margin-right: 0; }
+  .search-select-content .list-item li.item-table table { margin-top: 20px; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
