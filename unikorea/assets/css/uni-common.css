@@ -2250,7 +2250,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* 버튼 스타일
 /* =======================================*/
-.btn-set-area { margin-top: 20px; text-align: center; }
+.btn-set-area { margin-top: 30px; text-align: center; }
 
 .btn-set-area div[class^="btn-"], .btn-set-area button, .btn-set-area a { width: 100%; float: left; margin-left: 0; margin-right: 0; margin-bottom: 2%; vertical-align: top; }
 

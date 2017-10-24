@@ -1923,9 +1923,11 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .search-select-content .list-item { padding: 20px 31px; border: 1px solid #ddd; margin-top: 10px; }
 
-.search-select-content .list-item li.item-img { text-align: center; width: 75px; height: 103px; border: 1px solid #ddd; }
+.search-select-content .list-item li.item-number .checkbox-type label, .search-select-content .list-item li.item-number .radio-type label { padding-left: 26px; }
 
-.search-select-content .list-item li.item-img img { width: 100%; height: 100%; }
+.search-select-content .list-item li.item-img { text-align: center; }
+
+.search-select-content .list-item li.item-img img { width: 75px; height: 103px; border: 1px solid #ddd; }
 
 .search-select-content .list-item li.item-text .icon-list-item { height: 24px; line-height: 24px; font-weight: 500; }
 
@@ -1945,12 +1947,17 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .search-select-content .list-item li.item-text .item-keyword span { padding: 0 10px; margin-right: 5px; background: #dbebff; }
 
-@media (min-width: 71.25em) { .search-select-content .list-item li.item-number { width: 10.23316%; float: left; margin-right: 2.59067%; }
-  .search-select-content .list-item li.item-img { width: 10.23316%; float: left; margin-right: 2.59067%; }
-  .search-select-content .list-item li.item-text { width: 74.35233%; float: right; margin-right: 0; position: relative; }
+.search-select-content .list-item li.item-text .btn-item-table { margin-top: 8px; margin-bottom: 10px; color: #333; }
+
+.search-select-content .list-item li.item-text .btn-item-table span { width: 20px; height: 20px; line-height: 20px; margin-right: 5px; color: #fff; background: #ff8134; }
+
+@media (min-width: 71.25em) { .search-select-content .list-item li.item-number { width: 10.07752%; float: left; margin-right: 1.16279%; }
+  .search-select-content .list-item li.item-img { width: 10.07752%; float: left; margin-right: 1.16279%; }
+  .search-select-content .list-item li.item-text { width: 77.51938%; float: right; margin-right: 0; position: relative; padding-left: 10px; }
   .search-select-content .list-item li.item-text .icon-list-item { position: absolute; top: 0; right: 0; }
-  .search-select-content .list-item li.item-table { clear: both; width: 100%; float: left; margin-left: 0; margin-right: 0; }
-  .search-select-content .list-item li.item-table table { margin-top: 20px; } }
+  .search-select-content .list-item li.item-text .btn-item-table { margin-bottom: 0; }
+  .search-select-content .list-item li.item-table-area { clear: both; width: 100%; float: left; margin-left: 0; margin-right: 0; }
+  .search-select-content .list-item li.item-table-area table { margin-top: 20px; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
@@ -2010,7 +2017,7 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .login-m.bhk .lo-wp { overflow: hidden; width: 60%; margin: 50px auto; }
 
-.login-m.bhk .lo-wp form[name="login-frm"] { float: left; width: 77%; }
+.login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap { float: left; width: 77%; }
 
 .login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap .id .in-id { width: 18%; line-height: 35px; display: inline-block; }
 
@@ -2018,40 +2025,40 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap input { width: 73%; height: 35px; margin: 0 0 10px 10px; padding: 0 0 0 5px; background: #fff; border-top: 1px solid #c2c2c2; border-left: 1px solid #c2c2c2; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
-.login-m.bhk .lo-wp .login { float: right; width: 100%; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login { float: right; width: 100%; }
 
-.login-m.bhk .lo-wp .login .btn-login-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label { line-height: 40px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label { line-height: 40px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .fa { font-size: 20px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .fa { font-size: 20px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 4px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .fa.before { padding-right: 4px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 4px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .fa.after { padding-left: 4px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .icon, .login-m.bhk .lo-wp .login .btn-login-size label img { vertical-align: middle; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .icon, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label img { vertical-align: middle; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 4px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label img.before { padding-right: 4px; }
 
-.login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 4px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label img.after { padding-left: 4px; }
 
-@media (min-width: 47.5em) { .login-m.bhk .lo-wp .login { width: auto; }
-  .login-m.bhk .lo-wp .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label { line-height: 80px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .fa { font-size: 50px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .fa.before { padding-right: 4px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .fa.after { padding-left: 4px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .icon, .login-m.bhk .lo-wp .login .btn-login-size label img { vertical-align: middle; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp .login .btn-login-size label img.before { padding-right: 4px; }
-  .login-m.bhk .lo-wp .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp .login .btn-login-size label img.after { padding-left: 4px; } }
+@media (min-width: 47.5em) { .login-m.bhk .lo-wp form[name="login-frm"] .login { width: auto; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label { line-height: 80px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .fa { font-size: 50px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .fa.before { padding-right: 4px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .fa.after { padding-left: 4px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .icon, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label img { vertical-align: middle; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .icon.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label img.before { padding-right: 4px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label .icon.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size label img.after { padding-left: 4px; } }
 
 @media only screen and (max-width: 760px) { .login-m.bhk { background: #fff; border-bottom: 1px solid #ddd; }
   .login-m.bhk .lo-wp { overflow: hidden; width: 290px; padding: 0 15px 30px; margin: 0 auto; }
-  .login-m.bhk .lo-wp form[name="login-frm"] { width: 100%; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap { width: 100%; }
   .login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap .id .in-id { width: 60px; line-height: 35px; display: inline-block; }
   .login-m.bhk .lo-wp form[name="login-frm"] .lg-wrap .pw .in-ps { width: 60px; line-height: 35px; display: inline-block; }
-  .login-m.bhk .lo-wp .login .btn-login-size { width: 100%; height: 40px; padding: 0px 0px; } }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { width: 100%; height: 40px; padding: 0px 0px; } }
 
 .login-f.bhk { border-bottom: 1px solid #b1b1b1; padding-top: 30px; text-align: center; }
 

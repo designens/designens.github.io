@@ -202,3 +202,21 @@
     })
 
 })(window, window.jQuery);
+
+
+// =================================================================
+// 소장정보 보기/닫기 실행
+// =================================================================
+(function(global, $) {
+
+    var btn_item_table = $(".btn-item-table"),
+        item_table_area = $(".item-table-area");
+    
+    btn_item_table.click(function() {
+       // if($(".item-table-area").css("display") == "none" ) $(".item-table-area").slideDown("slow");
+       // else $(".item-table-area").slideUp("slow");
+       if($(this).parents(0).css("display") == "none" ) $(this).parents(0).slideDown("slow");
+       else $(this).parents(0).slideUp("slow");
+    });
+
+})(window, window.jQuery);
