@@ -353,10 +353,10 @@ JS 내용 작성</code></pre>
                 <div class="btn-type-sample">
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시 (아이템 영역)</h3>
                     <div class="btn-set-area">
-                        <form class="btn-item-size btn-blue">
+                        <div class="btn-item-size btn-blue">
                             <label><span class="fa fa-search before" aria-hidden="true"></span>버튼</label>
-                            <input type="button">
-                        </form>
+                            <input type="submit" role="button" value>
+                        </div>
                         <a href="#" class="btn-item-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-item-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-item-size btn-defult" role="button">기본 버튼</a>
@@ -365,10 +365,10 @@ JS 내용 작성</code></pre>
                     </div>
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시 (테이블 내부)</h3>
                     <div class="btn-set-area col-3">
-                        <form class="btn-in-size btn-blue">
+                        <div class="btn-in-size btn-blue">
                             <label><span class="fa fa-search before" aria-hidden="true"></span>버튼</label>
-                            <input type="button">
-                        </form>
+                            <input type="submit" role="button" value>
+                        </div>
                         <a href="#" class="btn-in-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-in-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-in-size btn-defult" role="button">기본 버튼</a>
@@ -377,10 +377,10 @@ JS 내용 작성</code></pre>
                     </div>
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시 (테이블 외부)</h3>
                     <div class="btn-set-area col-4">
-                        <form class="btn-out-size btn-blue">
+                        <div class="btn-out-size btn-blue">
                             <label><span class="fa fa-search before" aria-hidden="true"></span>버튼</label>
-                            <input type="button">
-                        </form>
+                            <input type="submit" role="button" value>
+                        </div>
                         <a href="#" class="btn-out-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-out-size btn-defult" role="button">기본 버튼</a>
                         <a href="#" class="btn-out-size btn-defult" role="button">기본 버튼</a>
@@ -389,14 +389,14 @@ JS 내용 작성</code></pre>
                     </div>
 <pre>
 <code id="source" class="language-html">&lt;div class=&quot;btn-set-area&quot;&gt;
-    &lt;form class=&quot;btn-item-size btn-blue&quot;&gt;
+    &lt;div class=&quot;btn-item-size btn-blue&quot;&gt;
         &lt;!-- label 내부 아이콘 추가 시 폰트어썸 or 이미지 아이콘 사용 --&gt;
-        &lt;label&gt;&lt;span class=&quot;fa fa-search before&quot;&gt;&lt;/span&gt;버튼&lt;/label&gt;
-        &lt;input type=&quot;button&quot;&gt;
-    &lt;/form&gt;
-    &lt;a href=&quot;&quot; class=&quot;btn-item-size btn-defult&quot; role=&quot;button&quot;&gt;기본 버튼&lt;/a&gt;
-    &lt;a href=&quot;&quot; class=&quot;btn-item-size btn-defult&quot; role=&quot;button&quot;&gt;기본 버튼&lt;/a&gt;
-    &lt;a href=&quot;&quot; class=&quot;btn-item-size btn-defult&quot; role=&quot;button&quot;&gt;기본 버튼&lt;/a&gt;
+        &lt;label&gt;&lt;span class=&quot;fa fa-search before&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;버튼&lt;/label&gt;
+        &lt;input type=&quot;submit&quot; role=&quot;button&quot; value&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn-item-size btn-defult&quot; role=&quot;button&quot;&gt;기본 버튼&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn-item-size btn-defult&quot; role=&quot;button&quot;&gt;기본 버튼&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn-item-size btn-defult&quot; role=&quot;button&quot;&gt;기본 버튼&lt;/a&gt;
     &lt;button class=&quot;btn-item-size btn-blue&quot; type=&quot;button&quot;&gt;활성화 버튼&lt;/button&gt;
     &lt;button class=&quot;btn-item-size btn-blue&quot; type=&quot;button&quot;&gt;활성화 버튼&lt;/button&gt;
 &lt;/div&gt;</code>
@@ -415,15 +415,15 @@ JS 내용 작성</code></pre>
                         버튼 아이콘 추가 시 "<strong class="blue">&lt;lable&gt;</strong>" 자식요소로 추가 하고 앞쪽에 배치할 때 "<strong class="red">before</strong>" class를 뒤쪽에 배치할 때 "<strong class="red">after</strong>" class를 사용하면 아이콘 정렬이 됩니다.
                     </div>
                     <h3><div class="fa fa-angle-double-right"></div>아이콘 버튼 스타일</h3>
-                    <form class="btn-out-size btn-blue">
+                    <div class="btn-out-size btn-blue">
                         <label><span class="fa fa-search before" aria-hidden="true"></span>버튼</label>
-                        <input type="button">
-                    </form>
+                        <input type="submit" role="button" value>
+                    </div>
 <pre>
-<code id="source" class="language-html">&lt;form class=&quot;btn-out-size btn-blue&quot;&gt;
+<code id="source" class="language-html">&lt;div class=&quot;btn-out-size btn-blue&quot;&gt;
     &lt;label class=&quot;btn-icon&quot;&gt;버튼&lt;/label&gt;
     &lt;input type=&quot;button&quot; name=&quot;search-keyword&quot;&gt;
-&lt;/form&gt;</code>
+&lt;/div&gt;</code>
 </pre>
                     <div class="ui-kit-comment">"<strong class="red">btn-out-size</strong>" class로 사이즈 설정, "<strong class="red">btn-blue</strong>" class로 색상 설정, 아이콘이 있는 버튼의 경우 "<strong class="red">btn-icon</strong>" class로 아이콘 설정</div>
                     <h3><div class="fa fa-angle-double-right"></div>기본 버튼 스타일</h3>

@@ -2253,40 +2253,40 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 .btn-set-area { margin-top: 20px; text-align: center; }
 
-.btn-set-area form, .btn-set-area button, .btn-set-area a { width: 100%; float: left; margin-left: 0; margin-right: 0; margin-bottom: 2%; vertical-align: top; }
+.btn-set-area div[class^="btn-"], .btn-set-area button, .btn-set-area a { width: 100%; float: left; margin-left: 0; margin-right: 0; margin-bottom: 2%; vertical-align: top; }
 
-@media (min-width: 22.5em) and (max-width: 47.5em) { .btn-set-area form, .btn-set-area button, .btn-set-area a { width: 49%; float: left; margin-bottom: 2%; }
-  .btn-set-area form:nth-child(2n + 1), .btn-set-area button:nth-child(2n + 1), .btn-set-area a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area form:nth-child(2n + 2), .btn-set-area button:nth-child(2n + 2), .btn-set-area a:nth-child(2n + 2) { margin-left: 51%; margin-right: -100%; clear: none; }
-  .btn-set-area form.full, .btn-set-area button.full, .btn-set-area a.full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
+@media (min-width: 22.5em) and (max-width: 47.5em) { .btn-set-area div[class^="btn-"], .btn-set-area button, .btn-set-area a { width: 49%; float: left; margin-bottom: 2%; }
+  .btn-set-area div[class^="btn-"]:nth-child(2n + 1), .btn-set-area button:nth-child(2n + 1), .btn-set-area a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area div[class^="btn-"]:nth-child(2n + 2), .btn-set-area button:nth-child(2n + 2), .btn-set-area a:nth-child(2n + 2) { margin-left: 51%; margin-right: -100%; clear: none; }
+  .btn-set-area div[class^="btn-"].full, .btn-set-area button.full, .btn-set-area a.full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
-@media (min-width: 47.5em) { .btn-set-area form.full, .btn-set-area button.full, .btn-set-area a.full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
+@media (min-width: 47.5em) { .btn-set-area div[class^="btn-"].full, .btn-set-area button.full, .btn-set-area a.full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .btn-set-area form, .btn-set-area button, .btn-set-area a { width: 49.44444%; float: left; margin-bottom: 1.11111%; }
-  .btn-set-area form:nth-child(2n + 1), .btn-set-area button:nth-child(2n + 1), .btn-set-area a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area form:nth-child(2n + 2), .btn-set-area button:nth-child(2n + 2), .btn-set-area a:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-1 form, .btn-set-area.col-1 button, .btn-set-area.col-1 a { width: 100%; float: left; margin-bottom: 1.11111%; }
-  .btn-set-area.col-1 form:nth-child(1n + 1), .btn-set-area.col-1 button:nth-child(1n + 1), .btn-set-area.col-1 a:nth-child(1n + 1) { margin-left: 0; margin-right: -100%; clear: none; }
-  .btn-set-area.col-2 form, .btn-set-area.col-2 button, .btn-set-area.col-2 a { width: 49.44444%; float: left; margin-bottom: 1.11111%; }
-  .btn-set-area.col-2 form:nth-child(2n + 1), .btn-set-area.col-2 button:nth-child(2n + 1), .btn-set-area.col-2 a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area.col-2 form:nth-child(2n + 2), .btn-set-area.col-2 button:nth-child(2n + 2), .btn-set-area.col-2 a:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-3 form, .btn-set-area.col-3 button, .btn-set-area.col-3 a { width: 32.46377%; float: left; margin-bottom: 1.30435%; }
-  .btn-set-area.col-3 form:nth-child(3n + 1), .btn-set-area.col-3 button:nth-child(3n + 1), .btn-set-area.col-3 a:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area.col-3 form:nth-child(3n + 2), .btn-set-area.col-3 button:nth-child(3n + 2), .btn-set-area.col-3 a:nth-child(3n + 2) { margin-left: 33.76812%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-3 form:nth-child(3n + 3), .btn-set-area.col-3 button:nth-child(3n + 3), .btn-set-area.col-3 a:nth-child(3n + 3) { margin-left: 67.53623%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-4 form, .btn-set-area.col-4 button, .btn-set-area.col-4 a { width: 24.63612%; float: left; margin-bottom: 1.30435%; }
-  .btn-set-area.col-4 form:nth-child(4n + 1), .btn-set-area.col-4 button:nth-child(4n + 1), .btn-set-area.col-4 a:nth-child(4n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area.col-4 form:nth-child(4n + 2), .btn-set-area.col-4 button:nth-child(4n + 2), .btn-set-area.col-4 a:nth-child(4n + 2) { margin-left: 25.12129%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-4 form:nth-child(4n + 3), .btn-set-area.col-4 button:nth-child(4n + 3), .btn-set-area.col-4 a:nth-child(4n + 3) { margin-left: 50.24259%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-4 form:nth-child(4n + 4), .btn-set-area.col-4 button:nth-child(4n + 4), .btn-set-area.col-4 a:nth-child(4n + 4) { margin-left: 75.36388%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-5 form, .btn-set-area.col-5 button, .btn-set-area.col-5 a { width: 18.84058%; float: left; margin-bottom: 1.44928%; }
-  .btn-set-area.col-5 form:nth-child(5n + 1), .btn-set-area.col-5 button:nth-child(5n + 1), .btn-set-area.col-5 a:nth-child(5n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area.col-5 form:nth-child(5n + 2), .btn-set-area.col-5 button:nth-child(5n + 2), .btn-set-area.col-5 a:nth-child(5n + 2) { margin-left: 20.28986%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-5 form:nth-child(5n + 3), .btn-set-area.col-5 button:nth-child(5n + 3), .btn-set-area.col-5 a:nth-child(5n + 3) { margin-left: 40.57971%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-5 form:nth-child(5n + 4), .btn-set-area.col-5 button:nth-child(5n + 4), .btn-set-area.col-5 a:nth-child(5n + 4) { margin-left: 60.86957%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-5 form:nth-child(5n + 5), .btn-set-area.col-5 button:nth-child(5n + 5), .btn-set-area.col-5 a:nth-child(5n + 5) { margin-left: 81.15942%; margin-right: -100%; clear: none; } }
+@media (min-width: 47.5em) and (max-width: 71.25em) { .btn-set-area div[class^="btn-"], .btn-set-area button, .btn-set-area a { width: 49.44444%; float: left; margin-bottom: 1.11111%; }
+  .btn-set-area div[class^="btn-"]:nth-child(2n + 1), .btn-set-area button:nth-child(2n + 1), .btn-set-area a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area div[class^="btn-"]:nth-child(2n + 2), .btn-set-area button:nth-child(2n + 2), .btn-set-area a:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-1 div[class^="btn-"], .btn-set-area.col-1 button, .btn-set-area.col-1 a { width: 100%; float: left; margin-bottom: 1.11111%; }
+  .btn-set-area.col-1 div[class^="btn-"]:nth-child(1n + 1), .btn-set-area.col-1 button:nth-child(1n + 1), .btn-set-area.col-1 a:nth-child(1n + 1) { margin-left: 0; margin-right: -100%; clear: none; }
+  .btn-set-area.col-2 div[class^="btn-"], .btn-set-area.col-2 button, .btn-set-area.col-2 a { width: 49.44444%; float: left; margin-bottom: 1.11111%; }
+  .btn-set-area.col-2 div[class^="btn-"]:nth-child(2n + 1), .btn-set-area.col-2 button:nth-child(2n + 1), .btn-set-area.col-2 a:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area.col-2 div[class^="btn-"]:nth-child(2n + 2), .btn-set-area.col-2 button:nth-child(2n + 2), .btn-set-area.col-2 a:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-3 div[class^="btn-"], .btn-set-area.col-3 button, .btn-set-area.col-3 a { width: 32.46377%; float: left; margin-bottom: 1.30435%; }
+  .btn-set-area.col-3 div[class^="btn-"]:nth-child(3n + 1), .btn-set-area.col-3 button:nth-child(3n + 1), .btn-set-area.col-3 a:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area.col-3 div[class^="btn-"]:nth-child(3n + 2), .btn-set-area.col-3 button:nth-child(3n + 2), .btn-set-area.col-3 a:nth-child(3n + 2) { margin-left: 33.76812%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-3 div[class^="btn-"]:nth-child(3n + 3), .btn-set-area.col-3 button:nth-child(3n + 3), .btn-set-area.col-3 a:nth-child(3n + 3) { margin-left: 67.53623%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-4 div[class^="btn-"], .btn-set-area.col-4 button, .btn-set-area.col-4 a { width: 24.63612%; float: left; margin-bottom: 1.30435%; }
+  .btn-set-area.col-4 div[class^="btn-"]:nth-child(4n + 1), .btn-set-area.col-4 button:nth-child(4n + 1), .btn-set-area.col-4 a:nth-child(4n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area.col-4 div[class^="btn-"]:nth-child(4n + 2), .btn-set-area.col-4 button:nth-child(4n + 2), .btn-set-area.col-4 a:nth-child(4n + 2) { margin-left: 25.12129%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-4 div[class^="btn-"]:nth-child(4n + 3), .btn-set-area.col-4 button:nth-child(4n + 3), .btn-set-area.col-4 a:nth-child(4n + 3) { margin-left: 50.24259%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-4 div[class^="btn-"]:nth-child(4n + 4), .btn-set-area.col-4 button:nth-child(4n + 4), .btn-set-area.col-4 a:nth-child(4n + 4) { margin-left: 75.36388%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-5 div[class^="btn-"], .btn-set-area.col-5 button, .btn-set-area.col-5 a { width: 18.84058%; float: left; margin-bottom: 1.44928%; }
+  .btn-set-area.col-5 div[class^="btn-"]:nth-child(5n + 1), .btn-set-area.col-5 button:nth-child(5n + 1), .btn-set-area.col-5 a:nth-child(5n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area.col-5 div[class^="btn-"]:nth-child(5n + 2), .btn-set-area.col-5 button:nth-child(5n + 2), .btn-set-area.col-5 a:nth-child(5n + 2) { margin-left: 20.28986%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-5 div[class^="btn-"]:nth-child(5n + 3), .btn-set-area.col-5 button:nth-child(5n + 3), .btn-set-area.col-5 a:nth-child(5n + 3) { margin-left: 40.57971%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-5 div[class^="btn-"]:nth-child(5n + 4), .btn-set-area.col-5 button:nth-child(5n + 4), .btn-set-area.col-5 a:nth-child(5n + 4) { margin-left: 60.86957%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-5 div[class^="btn-"]:nth-child(5n + 5), .btn-set-area.col-5 button:nth-child(5n + 5), .btn-set-area.col-5 a:nth-child(5n + 5) { margin-left: 81.15942%; margin-right: -100%; clear: none; } }
 
-@media (min-width: 71.25em) { .btn-set-area form, .btn-set-area button, .btn-set-area a { width: auto; float: none; margin-right: 6px; margin-bottom: 6px; }
+@media (min-width: 71.25em) { .btn-set-area div[class^="btn-"], .btn-set-area button, .btn-set-area a { width: auto; float: none; margin-right: 6px; margin-bottom: 6px; }
   .btn-set-area *:last-child { margin-right: 0; } }
 
 /* =======================================*/
