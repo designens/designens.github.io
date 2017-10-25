@@ -209,14 +209,16 @@
 // =================================================================
 (function(global, $) {
 
-    var btn_item_table = $(".btn-item-table"),
-        item_table_area = $(".item-table-area");
+    var $btn_item_table = $(".btn-item-table"),
+        item_table_area = ".item-table-area",
+        open_text = "소장정보 열기",
+        close_text = "소장정보 닫기";
     
-    btn_item_table.click(function() {
-       // if($(".item-table-area").css("display") == "none" ) $(".item-table-area").slideDown("slow");
-       // else $(".item-table-area").slideUp("slow");
-       if($(this).parents(0).css("display") == "none" ) $(this).parents(0).slideDown("slow");
-       else $(this).parents(0).slideUp("slow");
+    $btn_item_table.click(function() {
+        var $this = $(this);
+        if($this.html(close_text).parents().siblings(item_table_area).css("display") == "none" )
+            $this.html(close_text).parents().siblings(item_table_area).slideDown("slow");
+        else $this.html(open_text).parents().siblings(item_table_area).slideUp("slow");
     });
 
 })(window, window.jQuery);

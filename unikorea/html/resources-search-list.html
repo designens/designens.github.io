@@ -279,17 +279,250 @@
                 <header class="headline">
                     <div class="site-location">
                         <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                        <a href="#">대분류</a>
-                        <a href="#">중분류</a>
-                        <a href="#">세분류</a>
+                        <a href="#">자료검색</a>
+                        <a href="#">소장자료검색</a>
+                        <a href="#">키워드 검색</a>
                     </div>
                     <h2 class="sub-title">소장자료 검색</h2>
                 </header>
                 <!-- [End] Content Title -->
                 
                 <!-- [Start] Content 상세  -->
-                <div class="content">
-                    이 곳에 컨텐츠 내용을 작성하시면 됩니다.
+                <div class="content keyword-search-area-list">
+                    <div class="tab-area">
+                        <div class="tab-menu">
+                            <a class="active" href="#" role="button">키워드</a>
+                            <a href="#" role="button">Naver 정보</a>
+                        </div>
+                        <div class="tab-panel">
+                            <div class="sub-search-area">
+                                <ul class="ul-list-type">
+                                     <li>
+                                        <div class="radio-type">
+                                            <input type="radio" id="search-range-01" name="search-range">
+                                            <label for="search-range-01">전체</label>
+                                        </div>
+                                        <div class="radio-type">
+                                            <input type="radio" id="search-range-02" name="search-range">
+                                            <label for="search-range-02">단행본</label>
+                                        </div>
+                                        <div class="radio-type">
+                                            <input type="radio" id="search-range-03" name="search-range">
+                                            <label for="search-range-03">연속간행물</label>
+                                        </div>
+                                        <div class="checkbox-type fr-align">
+                                            <input type="checkbox" id="data-type-01" name="data-type-01">
+                                            <label for="data-type-01">결과내 검색</label>
+                                        </div>
+                                     </li>
+                                     <li>
+                                        <div class="select-box full">
+                                            <label for="select-01">전체</label>
+                                            <select id="select-01">
+                                                <option selected="selected">전체</option>
+                                                <option>옵션 01</option>
+                                                <option>옵션 02</option>
+                                                <option>옵션 03</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-type-search full">
+                                            <input type="text" placeholder="검색 키워드를 입력하세요" />
+                                            <button type="button" class="btn-in-size btn-blue">검색</button>
+                                        </div>
+                                     </li>
+                                </ul>
+                            </div>
+                            <form class="btn-more-size btn-gray full">
+                                <input type="button" value="검색결과 내 상세검색">
+                                <label aria-hidden="true"><img class="icon after" src="../assets/images/icon/icon-btn-more.svg" alt=""></label>
+                            </form>
+                        </div>
+                        <article>
+                            <header class="sub-list-title">
+                                <p class="search-word">검색어 <span>[키워드/전체:통일]</span></p>
+                                <h5>소장자료 검색결과 (총 10건중 10건 출력)</h5>
+                            </header>
+                            <div class="search-select-box-area">
+                                <div class="fl-align">
+                                    <button class="icon-img-type" type="button">이미지형</button>
+                                </div>
+                                <div class="fr-align">
+                                    <div class="select-box align">
+                                        <label for="select-02">항목선택</label>
+                                        <select id="select-02">
+                                            <option selected="selected">항목선택</option>
+                                            <option>서명</option>
+                                            <option>저자</option>
+                                            <option>출판사</option>
+                                            <option>출판년</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-box align">
+                                        <label for="select-03">정렬</label>
+                                        <select id="select-03">
+                                            <option selected="selected">정렬</option>
+                                            <option>오름차순</option>
+                                            <option>내림차순</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-box number">
+                                        <label for="select-04">5</label>
+                                        <select id="select-04">
+                                            <option selected="selected">5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                            <option>50</option>
+                                            <option>100</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-select-content">
+                                <ul class="list-item">
+                                    <li class="item-number">
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="checkbox-01" name="test-01">
+                                            <label for="checkbox-01">1.</label>
+                                        </div>
+                                    </li>
+                                    <li class="item-img">
+                                        <img src="../assets/images/sub/book-sample.png" alt="이제 만나러 갑니다.">
+                                    </li>
+                                    <li class="item-text">
+                                        <div class="icon-list-item">
+                                            <!-- 단행본, 연속간행물, 영상자료, 기사, 기타 5가지 타입 -->
+                                            <img src="../assets/images/icon/icon-list-item-01.svg" alt="" aria-hidden="true"><span>단행본</span>
+                                            <!-- <img src="../assets/images/icon/icon-list-item-02.svg" alt="" aria-hidden="true"><span>연속간행물</span> -->
+                                            <!-- <img src="../assets/images/icon/icon-list-item-03.svg" alt="" aria-hidden="true"><span>영상자료</span> -->
+                                            <!-- <img src="../assets/images/icon/icon-list-item-04.svg" alt="" aria-hidden="true"><span>기사</span> -->
+                                            <!-- <img src="../assets/images/icon/icon-list-item-05.svg" alt="" aria-hidden="true"><span>기타</span> -->
+                                        </div>
+                                        <h6>이제 만나러 갑니다 <span>(청소년을 위한 살아 있는 북한 이야기)</span></h6>
+                                        <p class="item-info"><span>안문석(대학교수) 저</span><span>인물과사상사</span><span>2013</span></p>
+                                        <p class="item-keyword"><span>초록</span><span>목차</span><span>URL</span></p>
+                                        <button class="btn-item-table" type="button">소장정보 열기</button>
+                                    </li>
+                                    <li class="item-table-area">
+                                        <table class="table-type-01 moblie">
+                                            <col width="60px">
+                                            <col width="180p">
+                                            <col width="120p;">
+                                            <col width="130p;">
+                                            <col width="96px">
+                                            <col width="96px">
+                                            <col width="auto">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">등록번호</th>
+                                                    <th scope="col">소장위치</th>
+                                                    <th scope="col">청구기호</th>
+                                                    <th scope="col">도서상태</th>
+                                                    <th scope="col">반납예정일</th>
+                                                    <th scope="col">서비스</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>EM0000065224</td>
+                                                    <td>임시서고</td>
+                                                    <td>342 안36</td>
+                                                    <td class="readable">열람가능</td>
+                                                    <td>2017.10.01</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                                <ul class="list-item">
+                                    <li class="item-number">
+                                        <div class="checkbox-type">
+                                            <input type="checkbox" id="checkbox-02" name="test-02">
+                                            <label for="checkbox-02">99999.</label>
+                                        </div>
+                                    </li>
+                                    <li class="item-img">
+                                        <img src="../assets/images/sub/book-sample.png" width="75" height="103" alt="이제 만나러 갑니다.">
+                                    </li>
+                                    <li class="item-text">
+                                        <div class="icon-list-item">
+                                            <!-- 단행본, 연속간행물, 영상자료, 기사, 기타 5가지 타입 -->
+                                            <!-- <img src="../assets/images/icon/icon-list-item-01.svg" alt="" aria-hidden="true"><span>단행본</span> -->
+                                            <img src="../assets/images/icon/icon-list-item-02.svg" alt="" aria-hidden="true"><span>연속간행물</span>
+                                            <!-- <img src="../assets/images/icon/icon-list-item-03.svg" alt="" aria-hidden="true"><span>영상자료</span> -->
+                                            <!-- <img src="../assets/images/icon/icon-list-item-04.svg" alt="" aria-hidden="true"><span>기사</span> -->
+                                            <!-- <img src="../assets/images/icon/icon-list-item-05.svg" alt="" aria-hidden="true"><span>기타</span> -->
+                                        </div>
+                                        <h6>이제 만나러 갑니다 <span>(청소년을 위한 살아 있는 북한 이야기)</span></h6>
+                                        <p class="item-info"><span>안문석(대학교수) 저</span><span>인물과사상사</span><span>2013</span></p>
+                                        <p class="item-keyword"><span>초록</span><span>목차</span><span>URL</span></p>
+                                        <button class="btn-item-table" type="button">소장정보 열기</button>
+                                    </li>
+                                    <li class="item-table-area">
+                                        <table class="table-type-01 moblie">
+                                            <col width="60px">
+                                            <col width="180p">
+                                            <col width="120p;">
+                                            <col width="130p;">
+                                            <col width="96px">
+                                            <col width="96px">
+                                            <col width="auto">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">등록번호</th>
+                                                    <th scope="col">소장위치</th>
+                                                    <th scope="col">청구기호</th>
+                                                    <th scope="col">도서상태</th>
+                                                    <th scope="col">반납예정일</th>
+                                                    <th scope="col">서비스</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>EM0000065224</td>
+                                                    <td>임시서고</td>
+                                                    <td>342 안36</td>
+                                                    <td class="readable">열람가능</td>
+                                                    <td>2017.10.01</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <!-- [Start] Paging Area -->
+                        <div class="paging">
+    <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
+    <button type="button" class="prev" aria-label="이전 페이지"></button>
+    <div class="mobile-page">
+        <input class="now-page" type="number" name="now-page" aria-label="현재 페이지">
+        <span class="all-page" aria-label="총 페이지">19</span>
+    </div>
+    <div class="pc-page">
+        <a href role="button">1</a>
+        <a href role="button">2</a>
+        <!-- 선택된 버튼 class="selected"로 제어 -->
+        <a href role="button" class="selected">3</a>
+        <a href role="button">4</a>
+        <a href role="button">5</a>
+    </div>
+    <button type="button" class="next" aria-label="다음 페이지"></button>
+    <button type="button" class="last-next" aria-label="끝으로 이동"></button>
+</div>
+                        <!-- [End] Paging Area -->
+                        <div class="btn-set-area">
+                            <a href="#" class="btn-out-size btn-blue" role="button">바구니넣기</a>
+                            <a href="#" class="btn-out-size btn-defult" role="button">바구니보기</a>
+                        </div>
+                    </div>
                 </div>
                 <!-- [End] Content 상세  -->
 
