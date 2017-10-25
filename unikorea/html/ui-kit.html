@@ -161,7 +161,7 @@ JS 내용 작성</code></pre>
 &lt;/div&gt;</code></pre>
                     <p class="ui-kit-comment">
                         input-type 클래스의 형재요소 클래스로 <strong class="red">full</strong> 을 추가해준다.<br>
-                        ex) <span class="skyblue">&lt;div class="input-type <strong class="red">full</strong>"&gt;</span>
+                        ex) <span class="blue">&lt;div class="input-type <strong class="red">full</strong>"&gt;</span>
                     </p>
                     <!-- [End] 설명이 없는 너비 100% 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
@@ -305,7 +305,7 @@ JS 내용 작성</code></pre>
 &lt;/div&gt;</code></pre>
                     <p class="ui-kit-comment">
                         select-box 클래스의 형재요소 클래스로 <strong class="red">full</strong> 을 추가해준다.<br>
-                        ex) <span class="skyblue">&lt;div class="select-box <strong class="red">full</strong>"&gt;</span>
+                        ex) <span class="blue">&lt;div class="select-box <strong class="red">full</strong>"&gt;</span>
                     </p>
                 </div>
             </article>
@@ -445,194 +445,81 @@ JS 내용 작성</code></pre>
             <!-- [Start] 테이블 스타일 공통 -->
             <article>
                 <h2>Table Style</h2>
-                <!-- 컬럼 width 값 설정 시 추가 class 삽입 후 스타일 지정 -->
-                <!-- ex) class를 추가 후 컬럼 width 설정 -->
                 <div class="table-type">
-                    <h3><span class="fa fa-table"></span>table-type-01</h3>
-                    <!-- [Start] table-type-01 -->
-                    <table class="table-type-01">
-                        <caption>Q&amp;A 테이블의 번호, 분야, 제목, 작성자, 첨부파일, 등록일 항목이 있습니다.</caption>
-                        <colgroup>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                        </colgroup>
+                    <h3><span class="fa fa-table"></span>table-view-type</h3>
+                    <!-- [Start] table-view-type -->
+                    <table class="table-view-type list-type">
+                        <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
+                        <col width="60">
+                        <col width="180">
+                        <col width="120">
+                        <col width="130">
+                        <col width="96">
+                        <col width="96">
+                        <col width="auto">
                         <thead>
                             <tr>
-                                <th>번호</th>
-                                <th>분야</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>첨부파일</th>
-                                <th>등록일</th>
+                                <th scope="col">번호</th>
+                                <th scope="col">등록번호</th>
+                                <th scope="col">소장위치</th>
+                                <th scope="col">청구기호</th>
+                                <th scope="col">도서상태</th>
+                                <th scope="col">반납예정일</th>
+                                <th scope="col">서비스</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>175</td>
-                                <td>국내외 언론동향</td>
-                                <!-- 한 줄 이상 줄바꿈 없이 말줄임 처리 class="view-link" 적용 -->
-                                <td class="icon-secret"><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.</a>
-                                </td>
-                                <td>id****</td>
-                                <td class="table-download">
-                                    <span class="icon-hwp" aria-hidden="true"></span>
-                                    <span class="icon-doc" aria-hidden="true"></span>
-                                    <span class="icon-pdf" aria-hidden="true"></span>
-                                    <span class="icon-jpg" aria-hidden="true"></span>
-                                    <div class="download-file">
-                                        <strong>파일명 :</strong>
-                                        <a href="#">대북지원사업신청서.hwp</a>
-                                        <a href="#">남북협력기금지원신청서.doc</a>
-                                        <a href="#">대북지원사업자 지정신청서.pdf</a>
-                                        <a href="#">대북지원사업자 지정신청서.pdf</a>
-                                        <button type="button" class="btn-download-close">다운로드 팝업 닫기</button>
-                                    </div>
-                                </td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>북한동향</td>
-                                <!-- 비밀글의 경우 td안에 icon-secret 클래스 적용 -->
-                                <td class="icon-secret"><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download">
-                                    <span class="icon-hwp" aria-hidden="true"></span>
-                                    <span class="icon-doc" aria-hidden="true"></span>
-                                    <span class="icon-pdf" aria-hidden="true"></span>
-                                    <span class="icon-jpg" aria-hidden="true"></span>
-                                    <div class="download-file">
-                                        <strong>파일명 :</strong>
-                                        <a href="#">대북지원사업신청서.hwp</a>
-                                        <a href="#">남북협력기금지원신청서.doc</a>
-                                        <a href="#">대북지원사업자 지정신청서.pdf</a>
-                                        <a href="#">대북지원사업자 지정신청서.pdf</a>
-                                        <button type="button" class="btn-download-close">다운로드 팝업 닫기</button>
-                                    </div>
-                                </td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>행사정보</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>기타</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>북한동향</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>행사정보</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>기타</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>국내외 언론동향</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>국내외 언론동향</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>기타</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                                <td>id****</td>
-                                <td class="table-download"></td>
-                                <td>2017-12-11</td>
+                                <td>1</td>
+                                <td>EM0000065224</td>
+                                <td>임시서고</td>
+                                <td>342 안36</td>
+                                <td>열람가능</td>
+                                <td>2017.10.01</td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
-<pre><code id="source" class="language-html">&lt;table class=&quot;table-type-01&quot;&gt;
-    &lt;caption&gt;&quot;○○○&quot; 테이블의 &quot;○○○&quot; 항목이 있습니다.&lt;/caption&gt;
-    &lt;colgroup&gt;
-        &lt;col&gt;
-        &lt;col&gt;
-        &lt;col&gt;
-        &lt;col&gt;
-        &lt;col&gt;
-        &lt;col&gt;
-    &lt;/colgroup&gt;
+<pre><code id="source" class="language-html">&lt;table class=&quot;table-view-type list-type&quot;&gt;
+    &lt;caption&gt;(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.&lt;/caption&gt;
+    &lt;col width=&quot;60&quot;&gt;
+    &lt;col width=&quot;180&quot;&gt;
+    &lt;col width=&quot;120&quot;&gt;
+    &lt;col width=&quot;130&quot;&gt;
+    &lt;col width=&quot;96&quot;&gt;
+    &lt;col width=&quot;96&quot;&gt;
+    &lt;col width=&quot;auto&quot;&gt;
     &lt;thead&gt;
         &lt;tr&gt;
-            &lt;th&gt;항목&lt;/th&gt;
-            &lt;th&gt;항목&lt;/th&gt;
-            &lt;th&gt;항목&lt;/th&gt;
-            &lt;th&gt;항목&lt;/th&gt;
-            &lt;th&gt;항목&lt;/th&gt;
-            &lt;th&gt;항목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;번호&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;등록번호&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;소장위치&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;청구기호&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;도서상태&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;반납예정일&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;서비스&lt;/th&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;EM0000065224&lt;/td&gt;
+            &lt;td&gt;임시서고&lt;/td&gt;
+            &lt;td&gt;342 안36&lt;/td&gt;
+            &lt;td class=&quot;readable&quot;&gt;열람가능&lt;/td&gt;
+            &lt;td&gt;2017.10.01&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td class=&quot;icon-secret&quot;&gt;&lt;a href class=&quot;view-link&quot; role=&quot;button&quot;&gt;팝업 링크 내용&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td class=&quot;table-download&quot;&gt;
-                &lt;span class=&quot;icon-hwp&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;span class=&quot;icon-doc&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;span class=&quot;icon-pdf&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;span class=&quot;icon-jpg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-                &lt;div class=&quot;download-file&quot;&gt;
-                    &lt;strong&gt;파일명 :&lt;/strong&gt;
-                    &lt;a href=&quot;&quot;&gt;파일명.hwp&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;파일명.doc&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;파일명.pdf&lt;/a&gt;
-                    &lt;a href=&quot;&quot;&gt;파일명.jpg&lt;/a&gt;
-                    &lt;button type=&quot;button&quot; class=&quot;btn-download-close&quot;&gt;다운로드 팝업 닫기&lt;/button&gt;
-                &lt;/div&gt;
-            &lt;/td&gt;
-            &lt;td&gt;2017-12-11&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
                     <p class="ui-kit-comment">
-                        <span class="skyblue">&lt;caption&gt;</span> 요소의 설명은 "○○○(제목)<strong class="red"> 테이블의 </strong> ○○○(항목) <strong class="red">항목이 있습니다.</strong>" 와 같이 빨간 글자를 포함하여 청각만으로도 표의 구조를 파악할 수 있도록 상세히 설명합니다.<br>
-                        각 컬럼의 너비는 <span class="skyblue">&lt;col&gt;</span> 요소에 <strong class="red">width 요소로 값을 정의</strong> 합니다.<br>
-                        팝업 링크 내용이 한 줄 이상일 경우 <span class="skyblue">&lt;a class="<strong class="red">view-link</strong>"&gt;</span>를 적용하면 줄바꿈 없이 말줄임 처리됩니다.<br>
-                        팝업 링크 내용을 잠금 설정할 경우 <span class="skyblue">&lt;td class="<strong class="red">icon-secret</strong>"&gt;</span>를 적용하면 잠금 아이콘이 표시됩니다.
+                        <span class="blue">&lt;caption&gt;</span> 요소의 설명은 "<strong>(<span class="red">제목</span>)의 타이틀은 (<span class="red">가로 or 세로</span>)정렬로 되어있습니다.</strong>" 와 같이 청각만으로도 표의 구조를 파악할 수 있도록 상세히 설명합니다.<br>
+                        각 컬럼의 너비는 <span class="blue">&lt;col&gt;</span> 요소에 <strong class="red">width 값</strong>을 표의 제목(컬럼)에 맞게 <strong class="red">너비를 재정의</strong> 합니다.<br>
+                        반응형 중단점에 따른 테이블 변화를 적용하려면 table-view-type 클래스의 형재요소 클래스로 <strong class="red">list-type</strong> 을 추가해준다.<br>
+                        ex) <span class="blue">&lt;table class="table-view-type <strong class="red">list-type</strong>"&gt;</span><br>
+                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 반응형 적용 시 중단점에 따라 column을 감추는 형태로 사용하면 됩니다.
                     </p>
-                    <!-- [End] table-type-01 -->
+                    <!-- [End] table-view-type -->
 
                     <!-- [Start] 페이징 스타일 공통 -->
                     <h2>Paging Style</h2>
@@ -675,8 +562,8 @@ JS 내용 작성</code></pre>
 &lt;/div&gt;
 &lt;!-- [End] Paging Area --&gt;</code></pre>
                     <p class="ui-kit-comment">
-                        선택된 버튼은 <span class="skyblue">&lt;a&gt;</span> 요소에 <strong class="red">selected</strong> 클래스를 적용합니다.<br>
-                        ex) <span class="skyblue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>
+                        선택된 버튼은 <span class="blue">&lt;a&gt;</span> 요소에 <strong class="red">selected</strong> 클래스를 적용합니다.<br>
+                        ex) <span class="blue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>
                     </p>
                     <!-- [End] 페이징 스타일 공통 -->
 

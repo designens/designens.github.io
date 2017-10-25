@@ -216,9 +216,9 @@
     
     $btn_item_table.click(function() {
         var $this = $(this);
-        if($this.html(close_text).parents().siblings(item_table_area).css("display") == "none" )
-            $this.html(close_text).parents().siblings(item_table_area).slideDown("slow");
-        else $this.html(open_text).parents().siblings(item_table_area).slideUp("slow");
+        if($this.html(close_text).parent().siblings(item_table_area).css("display") == "none" )
+            $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
+        else $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
     });
 
 })(window, window.jQuery);
