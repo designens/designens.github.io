@@ -1,231 +1,33 @@
-<!DOCTYPE html>
-    <!-- Cross browsing -->
-    <!--[if !IE]><!--><html class="no-js"  lang="ko-KR"> <!--<![endif]-->
-    <!--[if IE 9]> <html class="no-js lt-ie10 ie9"  lang="ko-KR"> <![endif]-->
-    <!-- / Cross browsing End -->
+<!--#include file="../_inc/_doctype.html"-->
 <head>
-    <title>통일부 북한자료센터</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <!-- 페이지 저자 정의 -->
-    <meta name="author" content="inyoung"/>
-    <!-- SEO : 검색엔진최적화 -->
-    <meta name="description" content="통일부 북한자료센터"/>
-    <meta name="keywords" content="통일부 북한자료센터"/>
-    <!-- MSIE 호환성 보기 (최신 브라우저) -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!-- MOBILE : 모바일 최적화 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <!-- Styles : CSS & SASS Sorcemap -->
-    <link rel="stylesheet" href="../assets/css/uni-common.css"/>
-    <link rel="stylesheet" href="../assets/css/uni-style.css"/>
-    <!-- Styles : CSS min -->
-    <!-- <link rel="stylesheet" href="../assets/css/uni-common.min.css"/> -->
-    <!-- <link rel="stylesheet" href="../assets/css/uni-style.min.css"/> -->
-    <!-- HTML5 & CSS3 지원 가능 브라우저 확인 -->
-    <script type="text/javascript" src="../assets/js/modernizr-2.8.3.min.js"></script>
-    <!-- javascript : jQuery -->
-    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
-    <!-- javascript : jquery-ui -->
-    <script type="text/javascript" src="../assets/js/jquery-ui.min.js"></script>
+    <!--#include file="../_inc/_page-title.html"-->
+    <!--#include file="../_inc/_meta-information.html"-->
+    <!--#include file="../_inc/_meta-settings.html"-->
+    <!--#include file="../_inc/_css-settings.html"-->
+    <!--#include file="../_inc/_js-top-settings.html"-->
 </head>
 
 <body>
     <!-- [Start] skip navigation -->
-    <a class="skip-link" href="#gnb-menu" data-scroll data-target="#gnb-menu" role="button">메뉴 바로가기</a>
-    <a class="skip-link" href="#gnb-all-menu" data-scroll data-target="#gnb-all-menu" role="button">전체메뉴 바로가기</a>
-    <a class="skip-link" href="#container" data-scroll data-target="#container" role="button">컨텐츠 바로가기</a>
+    <!--#include file="../_inc/_skip-navigation.html"-->
     <!-- [End] skip navigation -->
     
     <!-- [Start] Header -->
     <header class="header">
 
         <!-- [Start] Header : Top menu -->
-        <div class="top-menu">
-            <div class="wrap">
-                <div class="menu">
-                    <a href="#">홈</a>
-                    <a href="login.html">로그인</a>
-                    <a href="user-join.html">회원가입</a>
-                    <a href="support-application-status-list.html">사이트맵</a>
-                </div>
-                <div class="link">
-                    <a href="#">My Library</a>
-                </div>
-            </div>
-        </div>
+        <!--#include file="../_inc/_top-menu.html"-->
         <!-- [End] Header : Top menu -->
         
         <!-- [Start] Header : GNB -->
-        <div class="top-area">
-        <div class="wrap">
-            <!-- [Start] 로고 -->
-            <h1 class="logo"><a href="#">대북지원정보시스템 메인이동</a></h1>
-            <!-- [End] 로고 -->
-            <!-- [Start] GNB : 대분류 -->
-            <nav class="gnb">
-                <button class="btn-gnb-menu">전체메뉴 보기</button>
-                <ul id="gnb-menu">
-                    <li><button type="button" aria-labelledby="gnb-all-menu">자료검색</button></li>
-                    <li><button type="button" aria-labelledby="gnb-all-menu">원문서비스</button></li>
-                    <li><button type="button" aria-labelledby="gnb-all-menu">통일북한자료실</button></li>
-                    <li><button type="button" aria-labelledby="gnb-all-menu">참여서비스</button></li>
-                    <li><button type="button" aria-labelledby="gnb-all-menu">센터소개</button></li>
-                </ul>
-            </nav>
-            <!-- [End] GNB : 대분류 -->
-            <div class="btn-agency">
-                <a href="#" target="_blank">정보교류협력기관</a>
-            </div>
-        </div>
-    </div>
+        <!--#include file="../_inc/_gnb.html"-->
         <!-- [End] Header : GNB -->
 
     </header>
     <!-- [End] Header -->
     
     <!-- [Start] GNB : 사이트 맵 -->
-    <nav id="gnb-all-menu" class="accordion-gnb">
-        <div class="user-menu">
-            <a href="#">로그인</a><a href="#">회원가입</a>
-        </div>
-        <ul class="aco-open wrap">
-            <li>
-                <a class="title-link" role="button" href="#">자료검색</a>
-                <ul class="sub-menu">
-                    <li><a href="#">소장자료 검색</a></li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-1-accordion" id="2depth-1-2title"/>
-                        <label class="toggle-label" for="2depth-1-2title">연속간행물 검색</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">국내연속간행물</a></li>
-                            <li><a href="#">국외연속간행물</a></li>
-                            <li><a href="#">북한발행연속간행물</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">신규 등록자료 검색</a></li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-1-accordion" id="2depth-1-4title"/>
-                        <label class="toggle-label" for="2depth-1-4title">인기 자료 검색</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">인기 키워드 자료</a></li>
-                            <li><a href="#">인기 대출 자료</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="title-link" role="button" href="#">원문서비스</a>
-                <ul class="sub-menu">
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-2-accordion" id="2depth-2-1title"/>
-                        <label class="toggle-label" for="2depth-2-1title">통일부 발간물</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">통일부 발간물 원문검색</a></li>
-                            <li><a href="#">통일백서</a></li>
-                            <li><a href="#">통일문제의 이해</a></li>
-                            <li><a href="#">북한의 이해</a></li>
-                            <li><a href="#">북한동향</a></li>
-                            <li><a href="#">북한관련 자료</a></li>
-                            <li><a href="#">신진연구자 논문집</a></li>
-                        </ul>
-                    </li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-2-accordion" id="2depth-2-2title"/>
-                        <label class="toggle-label" for="2depth-2-2title">통일연구원 발간물</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">남북관계</a></li>
-                            <li><a href="#">통일</a></li>
-                            <li><a href="#">북한</a></li>
-                            <li><a href="#">국제관계</a></li>
-                            <li><a href="#">북한인권</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">학술DB</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="title-link" role="button" href="#">통일북한자료실</a>
-                <ul class="sub-menu">
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-1title"/>
-                        <label class="toggle-label" for="2depth-3-1title">북한영화</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">북한영화 개요</a></li>
-                            <li><a href="#">북한영화 해설</a></li>
-                        </ul>
-                    </li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-2title"/>
-                        <label class="toggle-label" for="2depth-3-2title">북한 교과서</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">유치원생</a></li>
-                            <li><a href="#">소학교</a></li>
-                            <li><a href="#">중학교</a></li>
-                            <li><a href="#">고등학교</a></li>
-                        </ul>
-                    </li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-3title"/>
-                        <label class="toggle-label" for="2depth-3-3title">북한만화</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">만화</a></li>
-                            <li><a href="#">동화</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">북한발행 정기간행물</a></li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="radio" name="2depth-3-accordion" id="2depth-3-5title"/>
-                        <label class="toggle-label" for="2depth-3-5title">북한 사전</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">북한용어사전</a></li>
-                            <li><a href="#">남북한 언어비교</a></li>
-                            <li><a href="#">북한은어</a></li>
-                            <li><a href="#">당정기구 영문표기</a></li>
-                            <li><a href="#">남북관계 지식사전</a></li>
-                            <li><a href="#">북한 지식사전</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="title-link" role="button" href="#">참여서비스</a>
-                <ul class="sub-menu">
-                    <li><a href="#">북한영화 신청</a></li>
-                    <li><a href="#">북한상실설명회 신청</a></li>
-                    <li><a href="#">세미나실 이용 신청</a></li>
-                    <li><a href="#">견학 및 이용자교육</a></li>
-                    <li><a href="#">신문고 민원신청</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="title-link" role="button" href="#">센터소개</a>
-                <ul class="sub-menu">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li class="toggle">
-                        <input class="toggle-trigger" type="checkbox" name="2depth-4-accordion" id="2depth-4-3title"/>
-                        <label class="toggle-label" for="2depth-4-3title">이용안내</label>
-                        <ul class="toggle-container">
-                            <li><a href="#">이용안내</a></li>
-                            <li><a href="#">이용서비스</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">소장자료안내</a></li>
-                    <li><a href="#">오시는길</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="title-link" role="button" href="#">My Library</a>
-                <ul class="sub-menu">
-                    <li><a href="#">개인정보수정</a></li>
-                    <li><a href="#">대출/연장/반납</a></li>
-                    <li><a href="#">희망도서신청</a></li>
-                    <li><a href="#">나의활동</a></li>
-                </ul>
-            </li>
-        </ul>
-        <button class="btn-gnb-close">전체메뉴 닫기</button>
-    </nav>
+    <!--#include file="../_inc/_gnb-all.html"-->
     <!-- [End] GNB : 사이트 맵 -->
 
     <!-- [Start] Container Headline -->
@@ -244,29 +46,7 @@
 
         <div class="wrap">
             <!-- [Start] LNB 메뉴 -->
-            <nav class="lnb">
-                <h3>기타</h3>
-                <ul class="aco-open accordion-lnb">
-                    <li>
-                        <a href="#" class="lnb-link" role="button">로그인<span class="fa icon-toggle" aria-hidden="true"></span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">회원가입<span class="fa icon-toggle" aria-hidden="true"></span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">아이디/비밀번호 찾기<span class="fa icon-toggle" aria-hidden="true"></span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">개인정보처리방침<span class="fa icon-toggle" aria-hidden="true"></span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">이메일무단수집거부<span class="fa icon-toggle" aria-hidden="true"></span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="lnb-link" role="button">관련사이트<span class="fa icon-toggle" aria-hidden="true"></span></a>
-                    </li>
-                </ul>
-            </nav>
+            <!--#include file="../_inc/_lnb-title-07.html"-->
             <!-- [End] LNB 메뉴 -->
             
             <!-- [Start] Content Area -->
@@ -285,180 +65,185 @@
                 <!-- [Start] Content 상세  -->
                 <div class="content bhk">
                     <!-- [Start] membership-application-form -->
-                    <p class="explan">북한자료센터는 안전한 인터넷 환경 조성과 회원님의 소중한 개인정보 보호를 위해 주민등록법 제21조 제2항 제9호(2006년 9월 24일 시행), 정보통신망 이용촉진 및 정보보호 등에 관한 법률 제44조의 5(2007년 7월 27일 시행)에 의거, 회원가입시 본인인증 절차를 거치고 있습니다.</p>
-                    <div class="step-box bhk">
-                        <ol>
-                            <li>
-                                <dl>
-                                    <dt>STEP 1.</dt>
-                                    <dd>가입동의</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>STEP 2.</dt>
-                                    <dd>실명인증</dd>
-                                </dl>
-                            </li>
-                            <li class="on">
-                                <dl>
-                                    <dt>STEP 3.</dt>
-                                    <dd>회원정보입력</dd>
-                                </dl>
-                            </li>
-                        </ol>
-                    </div>
-                    <h4 class="title-sub-list">회원정보입력</h4>
-                    <table summary="회원가입을 위한 표" class="type-ta01 bhk">
-                    <caption>회원정보입력</caption>
-                    <colgroup><col width="21%"><col width="*"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th>아이디</th>
-                                <td>
-                                    <div class="input-type">
-                                        <input type="text" aria-label="내용 설명" />
-                                    </div>
-                                    <a href="#" class="btn-in-size btn-defult" role="button">중복확인</a>
-                                    <span class="gray">(4~12자 이내의 영문, 숫자만 가능)</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호</th>
-                                <td>
-                                    <div class="input-type">
-                                        <input type="text" aria-label="내용 설명" />
-                                    </div>
-                                    <span class="orange">(8자리 이상 영문,숫자,특수기호 필수)</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호 확인</th>
-                                <td>
-                                    <div class="input-type">
-                                        <input type="text" aria-label="내용 설명" />
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>이름</th>
-                                <td>홍길동</td>
-                            </tr>
-                            <tr>
-                                <th>주소</th>
-                                <td>
-                                    <div>
-                                        <ul>
-                                            <li>
-                                                <div class="input-type">
-                                                    <input type="text" aria-label="내용 설명" />
-                                                </div>
-                                                <a href="#" class="btn-in-size btn-defult" role="button">우편번호 </a>
-                                            </li>
-                                            <li class="pt10">
-                                                <div class="input-type full">
-                                                    <input type="text" aria-label="내용 설명" />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>전화번호</th>
-                                <td>
-                                    <div class="input-type tel">
-                                        <div class="dialog">
-                                            <input class="country-code" type="tel" aria-label="지역번호">
+                    <form>
+                        <p class="explan">북한자료센터는 안전한 인터넷 환경 조성과 회원님의 소중한 개인정보 보호를 위해 주민등록법 제21조 제2항 제9호(2006년 9월 24일 시행), 정보통신망 이용촉진 및 정보보호 등에 관한 법률 제44조의 5(2007년 7월 27일 시행)에 의거, 회원가입시 본인인증 절차를 거치고 있습니다.</p>
+                        <div class="step-box bhk">
+                            <ol>
+                                <li>
+                                    <dl>
+                                        <dt>STEP 1.</dt>
+                                        <dd>가입동의</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>STEP 2.</dt>
+                                        <dd>실명인증</dd>
+                                    </dl>
+                                </li>
+                                <li class="on">
+                                    <dl>
+                                        <dt>STEP 3.</dt>
+                                        <dd>회원정보입력</dd>
+                                    </dl>
+                                </li>
+                            </ol>
+                        </div>
+                        <h4 class="title-sub-list">회원정보입력</h4>
+                        <table summary="회원가입을 위한 표" class="type-ta01 bhk">
+                        <caption>회원정보입력</caption>
+                        <colgroup>
+                            <col width="21">
+                            <col width="auto">
+                        </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>아이디</th>
+                                    <td>
+                                        <div class="input-type">
+                                            <input type="text" aria-label="내용 설명" />
                                         </div>
-                                        <div class="dialog">
-                                            <input class="first-number" type="tel" aria-label="앞번호">
+                                        <a href="#" class="btn-in-size btn-defult" role="button">중복확인</a>
+                                        <span class="gray">(4~12자 이내의 영문, 숫자만 가능)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호</th>
+                                    <td>
+                                        <div class="input-type">
+                                            <input type="text" aria-label="내용 설명" />
                                         </div>
-                                        <div class="dialog">
-                                            <input class="last-number" type="tel" aria-label="뒷번호">
+                                        <span class="orange">(8자리 이상 영문,숫자,특수기호 필수)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호 확인</th>
+                                    <td>
+                                        <div class="input-type">
+                                            <input type="text" aria-label="내용 설명" />
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>휴대전화</th>
-                                <td>
-                                    <div class="input-type tel">
-                                        <div class="dialog">
-                                            <input class="country-code" type="tel" aria-label="통신사번호">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이름</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <div class="input-type">
+                                                        <input type="text" aria-label="내용 설명" />
+                                                    </div>
+                                                    <a href="#" class="btn-in-size btn-defult" role="button">우편번호 </a>
+                                                </li>
+                                                <li class="pt10">
+                                                    <div class="input-type full">
+                                                        <input type="text" aria-label="내용 설명" />
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="dialog">
-                                            <input class="first-number" type="tel" aria-label="중간">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td>
+                                        <div class="input-type tel">
+                                            <div class="dialog">
+                                                <input class="country-code" type="tel" aria-label="지역번호">
+                                            </div>
+                                            <div class="dialog">
+                                                <input class="first-number" type="tel" aria-label="앞번호">
+                                            </div>
+                                            <div class="dialog">
+                                                <input class="last-number" type="tel" aria-label="뒷번호">
+                                            </div>
                                         </div>
-                                        <div class="dialog">
-                                            <input class="last-number" type="tel" aria-label="뒷번호">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>휴대전화</th>
+                                    <td>
+                                        <div class="input-type tel">
+                                            <div class="dialog">
+                                                <input class="country-code" type="tel" aria-label="통신사번호">
+                                            </div>
+                                            <div class="dialog">
+                                                <input class="first-number" type="tel" aria-label="중간">
+                                            </div>
+                                            <div class="dialog">
+                                                <input class="last-number" type="tel" aria-label="뒷번호">
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>E-mail</th>
-                                <td>
-                                    <div class="input-type e-mail">
-                                        <div class="email">
-                                            <input class="email-id" type="text" aria-label="이메일 아이디">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>E-mail</th>
+                                    <td>
+                                        <div class="input-type e-mail">
+                                            <div class="email">
+                                                <input class="email-id" type="text" aria-label="이메일 아이디">
+                                            </div>
+                                            <div class="email">
+                                                <input class="email-address" type="text" aria-label="이메일 주소 직접입력">
+                                            </div>
                                         </div>
-                                        <div class="email">
-                                            <input class="email-address" type="text" aria-label="이메일 주소 직접입력">
+                                        <div class="select-box e-mail">
+                                            <label for="email-search">직접입력</label>
+                                            <select id="email-search" name="email-search-item">
+                                                <option selected="selected">직접입력</option>
+                                                <option>naver.com</option>
+                                                <option>daum.net</option>
+                                                <option>nate.com</option>
+                                                <option>google.com</option>
+                                                <option>yahoo.com</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="select-box e-mail">
-                                        <label for="email-search">직접입력</label>
-                                        <select id="email-search" name="email-search-item">
-                                            <option selected="selected">직접입력</option>
-                                            <option>naver.com</option>
-                                            <option>daum.net</option>
-                                            <option>nate.com</option>
-                                            <option>google.com</option>
-                                            <option>yahoo.com</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>소속</th>
-                                <td>
-                                    <div class="select-box full">
-                                        <label for="search">소속</label>
-                                        <select id="search" name="search-item">
-                                            <option selected="selected">선택해 주시기 바랍니다</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>소속기관명</th>
-                                <td>
-                                    <div class="input-type full">
-                                        <input type="text" aria-label="내용 설명" />
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>이용목적</th>
-                                <td><textarea class="textarea" placeholder="이용목적을 적어 주시기 바랍니다"></textarea></td>
-                            </tr>
-                            <tr>
-                                <th>국적</th>
-                                <td>
-                                    <div class="input-type full">
-                                        <input type="text" aria-label="내용 설명" />
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="btn-set-area">
-                        <a href="#" class="btn-out-size btn-defult" role="button" title="등록">등록</a>
-                        <a href="#" class="btn-out-size btn-defult" role="button" title="취소">취소</a>
-                    </div>
-                    <!-- [End] membership-application-form -->  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>소속</th>
+                                    <td>
+                                        <div class="select-box full">
+                                            <label for="search">소속</label>
+                                            <select id="search" name="search-item">
+                                                <option selected="selected">선택해 주시기 바랍니다</option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>소속기관명</th>
+                                    <td>
+                                        <div class="input-type full">
+                                            <input type="text" aria-label="내용 설명" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이용목적</th>
+                                    <td><textarea class="textarea" placeholder="이용목적을 적어 주시기 바랍니다"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th>국적</th>
+                                    <td>
+                                        <div class="input-type full">
+                                            <input type="text" aria-label="내용 설명" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-set-area">
+                            <a href="#" class="btn-out-size btn-defult" role="button" title="등록">등록</a>
+                            <a href="#" class="btn-out-size btn-defult" role="button" title="취소">취소</a>
+                        </div>
+                    </form>
+                    <!-- [End] membership-application-form -->
                     
                 </div>
                 <!-- [End] Content 상세  -->
@@ -471,99 +256,14 @@
     <!-- [End] Container Area -->
 
     <!-- [Start] Footer Banner -->
-    <div class="footer-link-banner">
-        <div class="wrap">
-            <div class="link-banner-area">
-                <ul class="owl-carousel">
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-01.png" alt=""><span>통일부</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-02.png" alt=""><span>북한정보포털</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-03.png" alt=""><span>남북이산가족찾기</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-04.png" alt=""><span>남북회담본부</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-05.png" alt=""><span>통일교육원</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-01.png" alt=""><span>통일부</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-02.png" alt=""><span>북한정보포털</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-03.png" alt=""><span>남북이산가족찾기</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-04.png" alt=""><span>남북회담본부</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-05.png" alt=""><span>통일교육원</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-01.png" alt=""><span>통일부</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-02.png" alt=""><span>북한정보포털</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-03.png" alt=""><span>남북이산가족찾기</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-04.png" alt=""><span>남북회담본부</span></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img src="../assets/images/common/site-link-05.png" alt=""><span>통일교육원</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <!--#include file="../_inc/_footer-link-banner.html"-->
     <!-- [End] Footer Banner -->
 
     <!-- [Start] Footer Area -->
-    <footer class="footer">
-        <div class="wrap">
-            <div class="site-area">
-                <div class="site-info">
-                    <a href="#"><span>관련사이트</span></a>
-                    <a href="#"><span>찾아오시는길</span></a>
-                    <a href="#"><span>개인정보처리방침</span></a>
-                    <a href="#"><span>이메일무단수집거부</span></a>
-                </div>
-                <p class="site-copyright">
-                    137-702 서울특별시 서초구 반포대로 201<span>(반포동) 국립중앙도서관 본관 5층 통일부 북한자료센터</span>
-                    <small class="copyright">Copyright&copy; Information Center on North Korea. <span>ALL RIGHTS RESERVED.</span></small>
-                </p>
-            </div>
-            <!-- 유관기관 홈페이지 오픈 보류 -->
-            <div class="site-link-area">
-                <div class="select-box">
-                    <label for="site-link">유관기관 홈페이지</label>
-                    <select id="site-link" name="site-link-item">
-                        <option selected="selected">유관기관 홈페이지</option>
-                        <option>통일부</option>
-                        <option>북한정보포털</option>
-                        <option>남북이산가족찾기</option>
-                        <option>남북회담본부</option>
-                        <option>통일교육원</option>
-                    </select>
-                </div>
-                <button type="button" class="btn-site-link-move">이동</button>
-            </div>
-        </div>
-    </footer>
+    <!--#include file="../_inc/_site-info.html"-->
     <!-- [End] Footer Area -->
 
-    <!-- javascript : 라이브러리 플러그인 -->
-    <script type="text/javascript" src="../assets/js/lib-jquery.js"></script>
-    <!-- javascript : 공통사용 -->
-    <script type="text/javascript" src="../assets/js/uni-common.js"></script>
+    <!--#include file="../_inc/_js-bottom-settings.html"-->
 </body>
 
 </html>

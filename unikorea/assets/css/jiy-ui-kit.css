@@ -2370,7 +2370,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 /* =======================================*/
 /* 인풋 스타일
 /* =======================================*/
-.input-type { display: inline-block; min-width: 130px; height: 35px; }
+.input-type { display: inline-block; min-width: 130px; height: 35px; vertical-align: top; }
 
 .input-type input { width: 130px; height: 35px; line-height: 33px; padding: 0 10px; border: 1px solid #c4c4c4; background: #fff; vertical-align: top; }
 
