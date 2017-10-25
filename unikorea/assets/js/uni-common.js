@@ -203,7 +203,6 @@
 
 })(window, window.jQuery);
 
-
 // =================================================================
 // 소장정보 보기/닫기 실행
 // =================================================================
@@ -219,6 +218,23 @@
         if($this.html(close_text).parent().siblings(item_table_area).css("display") == "none" )
             $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
         else $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
+    });
+
+})(window, window.jQuery);
+
+// =================================================================
+// 소장정보 보기/닫기 실행
+// =================================================================
+(function(global, $) {
+
+    var $btn_result_search = $(".btn-result-search"),
+        result_table_area = ".sub-search-view-area";
+    
+    $btn_result_search.click(function() {
+        var $this = $(this);
+        if($this.siblings(result_table_area).css("display") == "none" )
+            $this.siblings(result_table_area).slideDown("slow");
+        else $this.siblings(result_table_area).slideUp("slow");
     });
 
 })(window, window.jQuery);
