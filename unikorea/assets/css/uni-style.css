@@ -1976,6 +1976,8 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .search-select-content .list-item li.item-text .btn-item-table:before { display: inline-block; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; width: 20px; height: 20px; line-height: 20px; margin-right: 5px; background: #ff8134; }
 
+.search-select-content .list-item li.item-table-area { display: none; }
+
 @media (min-width: 71.25em) { .search-select-content .list-item li.item-number { width: 10.07752%; float: left; margin-right: 1.16279%; }
   .search-select-content .list-item li.item-img { width: 10.07752%; float: left; margin-right: 1.16279%; }
   .search-select-content .list-item li.item-text { width: 77.51938%; float: right; margin-right: 0; position: relative; padding-left: 10px; }
