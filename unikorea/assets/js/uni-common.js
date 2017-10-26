@@ -233,8 +233,8 @@
     $btn_result_search.click(function() {
         var $this = $(this);
         if($this.siblings(result_table_area).css("display") == "none" )
-            $this.siblings(result_table_area).slideDown("slow");
-        else $this.siblings(result_table_area).slideUp("slow");
+            $this.addClass("open").siblings(result_table_area).slideDown("slow");
+        else $this.removeClass("open").siblings(result_table_area).slideUp("slow");
     });
 
 })(window, window.jQuery);
