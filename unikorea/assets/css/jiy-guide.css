@@ -1787,6 +1787,22 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-item-size label .icon.after, .btn-item-size label img.after { padding-left: 4px; }
 
+.btn-content-size { position: relative; display: inline-block; min-width: 70px; height: 27px; line-height: 23px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+
+.btn-content-size label { line-height: 27px; }
+
+.btn-content-size label .fa { font-size: 10px; }
+
+.btn-content-size label .fa.before { padding-right: 4px; }
+
+.btn-content-size label .fa.after { padding-left: 4px; }
+
+.btn-content-size label .icon, .btn-content-size label img { vertical-align: middle; }
+
+.btn-content-size label .icon.before, .btn-content-size label img.before { padding-right: 4px; }
+
+.btn-content-size label .icon.after, .btn-content-size label img.after { padding-left: 4px; }
+
 .btn-more-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 18px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-more-size label { line-height: 40px; }
@@ -1803,7 +1819,7 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-more-size label .icon.after, .btn-more-size label img.after { padding-left: 4px; }
 
-.btn-table-view-size { position: relative; display: inline-block; min-width: 70px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
+.btn-table-view-size { position: relative; display: inline-block; min-width: 45px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-view-size label { line-height: 23px; }
 
@@ -1860,13 +1876,13 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-orange .fa { color: #fff; }
 
-.btn-orange:hover, .btn-orange:focus { background: #ff8134; transition: all .3s ease; }
+.btn-orange:hover, .btn-orange:focus { background: #585858; transition: all .3s ease; }
 
 .btn-green { color: #fff; background: #1c8278; }
 
 .btn-green .fa { color: #fff; }
 
-.btn-green:hover, .btn-green:focus { background: #1c8278; transition: all .3s ease; }
+.btn-green:hover, .btn-green:focus { background: #585858; transition: all .3s ease; }
 
 /* =======================================*/
 /* Carousel Style

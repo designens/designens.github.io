@@ -1656,11 +1656,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-.btn-set-area, .search-select-box-area, .search-select-box-area .fl-align, .search-select-box-area .fr-align, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item, .marc-view-area, .marc-view-area dl, .list-view-area { *zoom: 1; }
+.btn-set-area, .search-select-box-area, .search-select-box-area .fl-align, .search-select-box-area .fr-align, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline { *zoom: 1; }
 
-.btn-set-area:before, .search-select-box-area:before, .search-select-box-area .fl-align:before, .search-select-box-area .fr-align:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after { content: ""; display: block; }
+.btn-set-area:before, .search-select-box-area:before, .search-select-box-area .fl-align:before, .search-select-box-area .fr-align:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after { content: ""; display: block; }
 
-.btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after { clear: both; }
+.btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after { clear: both; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1785,6 +1785,22 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-item-size label .icon.after, .btn-item-size label img.after { padding-left: 4px; }
 
+.btn-content-size { position: relative; display: inline-block; min-width: 70px; height: 27px; line-height: 23px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+
+.btn-content-size label { line-height: 27px; }
+
+.btn-content-size label .fa { font-size: 10px; }
+
+.btn-content-size label .fa.before { padding-right: 4px; }
+
+.btn-content-size label .fa.after { padding-left: 4px; }
+
+.btn-content-size label .icon, .btn-content-size label img { vertical-align: middle; }
+
+.btn-content-size label .icon.before, .btn-content-size label img.before { padding-right: 4px; }
+
+.btn-content-size label .icon.after, .btn-content-size label img.after { padding-left: 4px; }
+
 .btn-more-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 18px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-more-size label { line-height: 40px; }
@@ -1801,7 +1817,7 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-more-size label .icon.after, .btn-more-size label img.after { padding-left: 4px; }
 
-.btn-table-view-size { position: relative; display: inline-block; min-width: 70px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
+.btn-table-view-size { position: relative; display: inline-block; min-width: 45px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-view-size label { line-height: 23px; }
 
@@ -1858,13 +1874,13 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-orange .fa { color: #fff; }
 
-.btn-orange:hover, .btn-orange:focus { background: #ff8134; transition: all .3s ease; }
+.btn-orange:hover, .btn-orange:focus { background: #585858; transition: all .3s ease; }
 
 .btn-green { color: #fff; background: #1c8278; }
 
 .btn-green .fa { color: #fff; }
 
-.btn-green:hover, .btn-green:focus { background: #1c8278; transition: all .3s ease; }
+.btn-green:hover, .btn-green:focus { background: #585858; transition: all .3s ease; }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
@@ -2153,14 +2169,49 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 @media (min-width: 71.25em) { .list-view-area { padding: 15px 31px; } }
 
-.content-view-area .content-box h5 { font-weight: 500; margin-top: 28px; margin-bottom: 13px; }
+.content-view-area .content-box h5 { margin-top: 28px; margin-bottom: 13px; font-weight: 500; }
 
-.content-view-area .content-box .content-text { padding: 15px; border: 1px solid #ccc; }
+.content-view-area .content-box h5 + button { margin: 10px 0; }
+
+.content-view-area .content-box h5.full-color { display: block; width: 100%; height: 40px; line-height: 40px; color: #fff; text-align: center; margin-bottom: 0; background: #5f7a8f; }
+
+.content-view-area .content-box .content-text { padding: 15px; border: 1px solid #ccc; clear: both; }
 
 .content-view-area .content-box pre { font-family: "Noto Sans Korean", sans-serif, serif; height: 150px; overflow-y: auto; }
 
-@media (min-width: 47.5em) { .content-view-area .content-box .content-text { padding: 20px 31px; }
+@media (min-width: 47.5em) { .content-view-area .content-box h5 + button { margin-top: 31px; }
+  .content-view-area .content-box h5.full-color { width: auto; height: auto; line-height: 1.5; color: #464646; text-align: left; margin-bottom: 13px; background-color: transparent; }
+  .content-view-area .content-box .content-text { padding: 20px 31px; }
   .content-view-area .content-box pre { height: auto; overflow-y: inherit; } }
+
+.book-review li { padding: 20px 0; border-bottom: 1px dashed #d5d5d5; }
+
+.book-review li:first-child { padding-top: 0; }
+
+.book-review li:last-child { padding-bottom: 0; border-bottom: 0; }
+
+.book-review li .headline { margin-bottom: 4px; }
+
+.book-review li .headline .fl-align, .book-review li .headline .fr-align { float: none; }
+
+.book-review li .headline .author-date { font-weight: 300; color: #888; }
+
+.book-review li .headline .author-date span { font-weight: normal; color: #464646; padding: 0 6px; }
+
+.book-review li .headline .author-date span:first-child { position: relative; padding-right: 14px; }
+
+.book-review li .headline .author-date span:first-child:after { position: absolute; top: 4px; right: 0; width: 1px; height: 14px; margin-right: 6px; background: #888; content: ""; }
+
+.book-review li .headline .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
+
+.book-review li .headline .fa.on { color: #54b477; }
+
+.book-review li .headline .star-number { font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #333; margin-left: 6px; }
+
+.book-review li .book-review-text { color: #858585; }
+
+@media (min-width: 47.5em) { .book-review li .headline .fl-align { float: left; }
+  .book-review li .headline .fr-align { float: right; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
