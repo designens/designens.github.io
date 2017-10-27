@@ -2155,9 +2155,12 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .content-view-area .content-box h5 { font-weight: 500; margin-top: 28px; margin-bottom: 13px; }
 
-.content-view-area .content-box .content-text { padding: 20px 31px; border: 1px solid #ccc; }
+.content-view-area .content-box .content-text { padding: 15px; border: 1px solid #ccc; }
 
-.content-view-area .content-box pre { font-family: "Noto Sans Korean", sans-serif, serif; }
+.content-view-area .content-box pre { font-family: "Noto Sans Korean", sans-serif, serif; height: 150px; overflow-y: auto; }
+
+@media (min-width: 47.5em) { .content-view-area .content-box .content-text { padding: 20px 31px; }
+  .content-view-area .content-box pre { height: auto; overflow-y: inherit; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
