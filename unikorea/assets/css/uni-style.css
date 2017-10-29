@@ -2048,6 +2048,20 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .search-select-content .list-item li.item-table-area { display: none; }
 
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
+
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(2):before { content: "등록번호"; }
+
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(3):before { content: "소장위치"; }
+
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(4):before { content: "청구기호"; }
+
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(5):before { content: "도서상태"; }
+
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(6):before { content: "반납예정일"; }
+
+.search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(7):before { content: "서비스"; }
+
 @media (min-width: 71.25em) { .search-select-content .list-item li.item-number { width: 10.07752%; float: left; margin-right: 1.16279%; }
   .search-select-content .list-item li.item-img { width: 10.07752%; float: left; margin-right: 1.16279%; }
   .search-select-content .list-item li.item-text { width: 77.51938%; float: right; margin-right: 0; position: relative; padding-left: 10px; }
@@ -2234,7 +2248,22 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .login-m.bhk .lo-wp form[name="login-frm"] .login { float: right; width: 100%; }
 
-@media (min-width: 47.5em) { .login-m.bhk .lo-wp form[name="login-frm"] .login { width: auto; } }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
+
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 20px; vertical-align: middle; }
+
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
+
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; }
+
+@media (min-width: 47.5em) { .login-m.bhk .lo-wp form[name="login-frm"] .login { width: auto; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 50px; vertical-align: middle; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; } }
 
 @media only screen and (max-width: 760px) { .login-m.bhk { background: #fff; border-bottom: 1px solid #ddd; }
   .login-m.bhk .lo-wp { overflow: hidden; width: 290px; padding: 0 15px 30px; margin: 0 auto; }
