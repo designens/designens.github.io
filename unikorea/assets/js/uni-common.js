@@ -94,12 +94,12 @@
     });
     // 패널 오픈
     $.each(aco_opens,function(index) {
-       //현재 나의 위치 찾기, 모바일 메뉴는 open 되지 않고 호출
-       var open_index = 0;
-       if($(this).attr("class") == "aco-open accordion-lnb") 
-          open_index = $(".aco-open.accordion-lnb > li").index($(".aco-open.accordion-lnb > li.on")) + 1;
-        
-       var aco_open = aco_opens.eq(index);
+        //현재 나의 위치 찾기, 모바일 메뉴는 open 되지 않고 호출
+        var open_index = 0;
+        var aco_open = aco_opens.eq(index);
+        if($(this).attr("class") == "aco-open accordion-lnb"){
+            open_index = $(".aco-open.accordion-lnb > li").index($(".aco-open.accordion-lnb > li.on")) + 1;
+        }
         new $.Accordion(aco_open, open_index);
     });
 
@@ -215,9 +215,11 @@
     
     $btn_item_table.click(function() {
         var $this = $(this);
-        if($this.html(close_text).parent().siblings(item_table_area).css("display") == "none" )
+        if($this.html(close_text).parent().siblings(item_table_area).css("display") == "none" ){
             $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
-        else $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
+        }else{
+            $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
+        }
     });
 
 })(window, window.jQuery);
@@ -228,17 +230,24 @@
 (function(global, $) {
 
     var $btn_result_search = $(".btn-result-search"),
-        result_table_area = ".sub-search-view-area",
-        $btn_result_link = $(".result-accordion li .result-link"),
-        sub_result_area = ".sub-result";
+        result_table_area = ".sub-search-view-area";
     
     $btn_result_search.addClass("open");
-    $btn_result_search.click(function() {
+    $btn_result_search.click(function(e) {
+        e.preventDefault();
         var $this = $(this);
-        if($this.siblings(result_table_area).css("display") == "none" )
+        if($this.siblings(result_table_area).css("display") == "none" ){
             $this.addClass("open").siblings(result_table_area).slideDown("slow");
-        else $this.removeClass("open").siblings(result_table_area).slideUp("slow");
+        }else{
+            $this.removeClass("open").siblings(result_table_area).slideUp("slow");
+        }
     });
+})(window, window.jQuery);
+
+(function(global, $) {
+
+    var $btn_result_link = $(".result-accordion li .result-link"),
+        sub_result_area = ".sub-result";
     
     $btn_result_link.addClass("open");
     $btn_result_link.click(function(e) {
