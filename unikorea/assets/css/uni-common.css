@@ -1933,7 +1933,7 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 [class*="table-view-type"][class*="list-type"] th:last-child, [class*="table-view-type"][class*="list-type"] td:last-child { border-bottom: 0; }
 
-[class*="table-view-type"][class*="list-type"] td { position: relative; min-height: 30px; padding: 4px 10px 4px 53%; }
+[class*="table-view-type"][class*="list-type"] td { position: relative; min-height: 28px; padding: 4px 10px 4px 53%; }
 
 [class*="table-view-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 4px 10px; background: #f1f5f7; content: ""; }
 
