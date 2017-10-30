@@ -1691,6 +1691,8 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
+pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21px; }
+
 /* =======================================*/
 /* 버튼 반응형 적용 레이아웃 구성 설정
 /* 클래스 col-1 ~ col-5 적용하여 버튼 정렬
@@ -1703,13 +1705,16 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 @media (min-width: 22.5em) and (max-width: 47.5em) { .btn-set-area [class^="btn-"] { width: 49.23077%; float: left; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.76923%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
   .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
-@media (min-width: 47.5em) { .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
+@media (min-width: 47.5em) { .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
+  .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .btn-set-area [class^="btn-"] { width: 49.44444%; float: left; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
   .btn-set-area.col-3 [class^="btn-"] { width: 32.46377%; float: left; }
   .btn-set-area.col-3 [class^="btn-"]:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area.col-3 [class^="btn-"]:nth-child(3n + 2) { margin-left: 33.76812%; margin-right: -100%; clear: none; }
@@ -1864,6 +1869,34 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
   .search-select-box-area .fr-align .select-box:nth-of-type(2) { width: 48.72449%; float: left; margin-right: 2.55102%; }
   .search-select-box-area .fr-align .select-box:nth-of-type(3) { width: 48.72449%; float: right; margin-right: 0; } }
 
+.sub-search-area { background: #f1f1f1; padding: 20px 10px; }
+
+.sub-search-area .ul-list-type li.text-top-area { margin-top: -5px; margin-bottom: 0; }
+
+.sub-search-area .ul-list-type li:last-child div { margin-bottom: 10px; }
+
+.sub-search-area .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
+
+.sub-search-area .ul-list-type li .fr-align { display: block; float: inherit; }
+
+@media (min-width: 47.5em) { .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; margin-right: -8px; }
+  .sub-search-area .ul-list-type li:last-child div { margin-bottom: 0; }
+  .sub-search-area .ul-list-type li:last-child .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .sub-search-area .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
+  .sub-search-area .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
+
+@media (min-width: 47.5em) and (max-width: 71.25em) { .sub-search-area { padding: 20px 15px; } }
+
+@media (min-width: 71.25em) { .sub-search-area { padding: 15px 31px; } }
+
+.all-table-views { padding: 7px 15px; }
+
+.all-table-views span { color: #ff8134; }
+
+@media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
+
+@media (min-width: 71.25em) { .all-table-views { padding: 26px 15px 7px; } }
+
 /* =======================================*/
 /* Content : 컨텐츠 영역
 /* =======================================*/
@@ -1889,12 +1922,6 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 /* 자료검색 > 소장자료 검색 > 초기화면
 /* (html/resources-search.html)
 /* =======================================*/
-.sub-search-area { background: #f1f1f1; padding: 20px 10px; }
-
-@media (min-width: 47.5em) and (max-width: 71.25em) { .sub-search-area { padding: 20px 15px; } }
-
-@media (min-width: 71.25em) { .sub-search-area { padding: 15px 31px; } }
-
 .keyword-search-area .sub-search-area .ul-list-type li .search-1st { width: 38.18182%; float: left; margin-right: 3.0303%; margin-bottom: 5px; }
 
 .keyword-search-area .sub-search-area .ul-list-type li .search-2nd { width: 58.78788%; float: left; margin-right: 3.0303%; }
@@ -1965,20 +1992,6 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 /* 자료검색 > 소장자료 검색 > 리스트
 /* (html/resources-search-list.html)
 /* =======================================*/
-.resources-search-list .ul-list-type li.text-top-area { margin-top: -5px; margin-bottom: 0; }
-
-.resources-search-list .ul-list-type li:last-child div { margin-bottom: 10px; }
-
-.resources-search-list .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
-
-.resources-search-list .ul-list-type li .fr-align { display: block; float: inherit; }
-
-@media (min-width: 47.5em) { .resources-search-list .ul-list-type li.text-top-area .fr-align { float: right; margin-right: -8px; }
-  .resources-search-list .ul-list-type li:last-child div { margin-bottom: 0; }
-  .resources-search-list .ul-list-type li:last-child .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
-  .resources-search-list .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
-  .resources-search-list .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
-
 .sub-search-view-area { border: 1px solid #e7e7e7; }
 
 .sub-search-view-area .btn-result-search-view { display: block; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; clear: both; }

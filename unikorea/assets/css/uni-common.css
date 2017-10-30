@@ -1691,6 +1691,8 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
+pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21px; }
+
 /* =======================================*/
 /* 버튼 반응형 적용 레이아웃 구성 설정
 /* 클래스 col-1 ~ col-5 적용하여 버튼 정렬
@@ -1703,13 +1705,16 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 @media (min-width: 22.5em) and (max-width: 47.5em) { .btn-set-area [class^="btn-"] { width: 49.23077%; float: left; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.76923%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
   .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
-@media (min-width: 47.5em) { .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
+@media (min-width: 47.5em) { .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
+  .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .btn-set-area [class^="btn-"] { width: 49.44444%; float: left; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
+  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
   .btn-set-area.col-3 [class^="btn-"] { width: 32.46377%; float: left; }
   .btn-set-area.col-3 [class^="btn-"]:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area.col-3 [class^="btn-"]:nth-child(3n + 2) { margin-left: 33.76812%; margin-right: -100%; clear: none; }
@@ -1919,6 +1924,33 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 /* =======================================*/
 /* 테이블 스타일
 /* =======================================*/
+table .align-left.col-1 tr td:nth-of-type(1) { text-align: left; }
+
+table .align-left.col-2 tr td:nth-of-type(2) { text-align: left; }
+
+table .align-left.col-3 tr td:nth-of-type(3) { text-align: left; }
+
+table .align-left.col-4 tr td:nth-of-type(4) { text-align: left; }
+
+table .align-left.col-5 tr td:nth-of-type(5) { text-align: left; }
+
+table .align-left.col-6 tr td:nth-of-type(6) { text-align: left; }
+
+table .align-left.col-7 tr td:nth-of-type(7) { text-align: left; }
+
+table .align-left.col-8 tr td:nth-of-type(8) { text-align: left; }
+
+table .align-left.col-9 tr td:nth-of-type(9) { text-align: left; }
+
+table .align-left.col-10 tr td:nth-of-type(10) { text-align: left; }
+
+table .col-hidden { display: none; }
+
+@media (min-width: 53.75em) { table colgroup.col-hidden { display: table-column-group; }
+  table col.col-hidden { display: table-column; }
+  table tr.col-hidden { display: table-row; }
+  table td.col-hidden, table th.col-hidden { display: table-cell; } }
+
 [class*="table-view-type"] { width: 100%; }
 
 [class*="table-view-type"] th, [class*="table-view-type"] td { text-align: center; padding: 4px 10px; border: 1px solid #ccc; }
@@ -1928,33 +1960,6 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 [class*="table-view-type"] td.readable { color: #e57c00; }
 
 [class*="table-view-type"] td img { margin: 6px 0; }
-
-[class*="table-view-type"] .align-left.col-1 tr th:nth-of-type(1), [class*="table-view-type"] .align-left.col-1 tr td:nth-of-type(1) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-2 tr th:nth-of-type(2), [class*="table-view-type"] .align-left.col-2 tr td:nth-of-type(2) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-3 tr th:nth-of-type(3), [class*="table-view-type"] .align-left.col-3 tr td:nth-of-type(3) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-4 tr th:nth-of-type(4), [class*="table-view-type"] .align-left.col-4 tr td:nth-of-type(4) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-5 tr th:nth-of-type(5), [class*="table-view-type"] .align-left.col-5 tr td:nth-of-type(5) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-6 tr th:nth-of-type(6), [class*="table-view-type"] .align-left.col-6 tr td:nth-of-type(6) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-7 tr th:nth-of-type(7), [class*="table-view-type"] .align-left.col-7 tr td:nth-of-type(7) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-8 tr th:nth-of-type(8), [class*="table-view-type"] .align-left.col-8 tr td:nth-of-type(8) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-9 tr th:nth-of-type(9), [class*="table-view-type"] .align-left.col-9 tr td:nth-of-type(9) { text-align: left; }
-
-[class*="table-view-type"] .align-left.col-10 tr th:nth-of-type(10), [class*="table-view-type"] .align-left.col-10 tr td:nth-of-type(10) { text-align: left; }
-
-[class*="table-view-type"] .col-hidden { display: none; }
-
-@media (min-width: 53.75em) { [class*="table-view-type"] colgroup.col-hidden { display: table-column-group; }
-  [class*="table-view-type"] col.col-hidden { display: table-column; }
-  [class*="table-view-type"] tr.col-hidden { display: table-row; }
-  [class*="table-view-type"] td.col-hidden, [class*="table-view-type"] th.col-hidden { display: table-cell; } }
 
 [class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { display: none; }
 
@@ -1985,25 +1990,37 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
   [class*="table-view-type"][class*="list-type"] td { padding: 4px 10px; }
   [class*="table-view-type"][class*="list-type"] td:before { display: none; } }
 
-[class*="table-board-type"] { width: 100%; }
+[class*="table-board-type"] { width: 100%; border-top: 2px solid #999; }
 
-[class*="table-board-type"] thead { border-top: 2px solid #45494d; }
+[class*="table-board-type"] tr th { color: #333; background: #f7f7f7; }
 
-[class*="table-board-type"] thead th { border-right: 1px solid #d1d1d1; border-bottom: 1px solid #c2c2c2; background: #f0f3f5; }
+[class*="table-board-type"] tr th, [class*="table-board-type"] tr td { height: 40px; line-height: 40px; text-align: center; padding: 0 10px; }
 
-[class*="table-board-type"] tbody th, [class*="table-board-type"] tbody td { border-right: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; }
+[class*="table-board-type"] thead th { border-bottom: 1px solid #dedede; }
 
-[class*="table-board-type"] tbody td p { margin-bottom: 4px; }
+[class*="table-board-type"] tbody th, [class*="table-board-type"] tbody td { border-bottom: 1px solid #dedfe2; }
 
-[class*="table-board-type"] tbody td p:last-child { margin-bottom: 0; }
+[class*="table-board-type"] tbody td { font-size: 15px; font-size: 1.5rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
-[class*="table-board-type"] tr th { color: #2e3a42; }
+[class*="table-board-type"] tbody td .title { color: #1397c1; }
 
-[class*="table-board-type"] tr th.sub-title { font-weight: normal; }
+[class*="table-board-type"] tbody td img { vertical-align: -2px; }
 
-[class*="table-board-type"] tr th, [class*="table-board-type"] tr td { height: 38px; text-align: center; padding: 8px 10px; }
+[class*="table-board-type"] tbody td pre { padding: 20px 10px; font-weight: 300; }
 
-[class*="table-board-type"] tr th:last-child, [class*="table-board-type"] tr td:last-child { border-right: 0; }
+.table-board-prev-next-area { border-top: 1px solid #dedede; margin-top: 30px; }
+
+.table-board-prev-next-area dl { display: table; width: 100%; border-bottom: 1px solid #dedede; }
+
+.table-board-prev-next-area dl dt, .table-board-prev-next-area dl dd { display: table-cell; height: 40px; line-height: 40px; padding: 0 10px; }
+
+.table-board-prev-next-area dl dt { width: 11.96172%; color: #333; text-align: center; background: #f7f7f7; }
+
+.table-board-prev-next-area dl dt .fa { margin-left: 10px; }
+
+.table-board-prev-next-area dl dt .fa.fa-sort-up { vertical-align: -3px; }
+
+.table-board-prev-next-area dl dt .fa.fa-sort-down { vertical-align: 2px; }
 
 /* =======================================*/
 /* Popup Style

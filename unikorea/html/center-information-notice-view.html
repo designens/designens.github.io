@@ -286,99 +286,55 @@
                 
                 <!-- [Start] Content 상세  -->
                 <div class="content">
-                    <div class="sub-search-area">
-                        <ul class="ul-list-type">
-                             <li>
-                                <div class="select-box full">
-                                    <label for="select-01">제목</label>
-                                    <select id="select-01">
-                                        <option selected="selected">제목</option>
-                                        <option>저자</option>
-                                    </select>
-                                </div>
-                                <div class="input-type-search full">
-                                    <input type="text" placeholder="검색 키워드를 입력하세요" />
-                                    <button type="button" class="btn-in-size btn-blue">검색</button>
-                                </div>
-                             </li>
-                        </ul>
-                    </div>
-                    <div class="all-table-views">전체 <span>50</span>건[1/5]</div>
                     <table class="table-board-type">
-                        <caption>공지사항의 타이틀은 가로정렬로 되어있습니다.</caption>
-                        <!-- class="col-hidden" 사용하여 중단점에 따라 컬럼 감추기  -->
-                        <col class="col-hidden" width="60">
+                        <caption>공지사항의 타이틀은 세로정렬로 되어있습니다.</caption>
+                        <col width="140">
                         <col width="auto">
-                        <col width="70">
-                        <col class="col-hidden" width="100">
-                        <col class="col-hidden" width="80">
-                        <thead>
+                        <tbody class="align-left col-1">
                             <tr>
-                                <th class="col-hidden" scope="col">번호</th>
-                                <th scope="col">제목</th>
-                                <th scope="col">첨부</th>
-                                <th class="col-hidden" scope="col">등록일</th>
-                                <th class="col-hidden" scope="col">조회수</th>
-                            </tr>
-                        </thead>
-                        <tbody class="align-left col-2">
-                            <tr>
-                                <td class="col-hidden">5</td>
-                                <td>2017년 통일부 신진연구자 정책연구 과제 공모 안내</td>
-                                <td><a href="/"><img src="../assets/images/icon/icon-attachments.png" alt="첨부파일명.hwp"></a></td>
-                                <td class="col-hidden">2017-09-27</td>
-                                <td class="col-hidden">174</td>
+                                <th>제목</th>
+                                <td class="title">2017년 통일부 신진연구자 정책연구 과제 공모 안내</td>
                             </tr>
                             <tr>
-                                <td class="col-hidden">4</td>
-                                <td>북한자료센터 서비스 일정 안내</td>
-                                <td></td>
-                                <td class="col-hidden">2017-09-27</td>
-                                <td class="col-hidden">174</td>
+                                <th>등록일</th>
+                                <td>2017-09-27</td>
                             </tr>
                             <tr>
-                                <td class="col-hidden">3</td>
-                                <td> 북한자료센터 이사기간 휴관 안내</td>
-                                <td></td>
-                                <td class="col-hidden">2017-09-27</td>
-                                <td class="col-hidden">174</td>
+                                <th>조회수</th>
+                                <td>174</td>
                             </tr>
                             <tr>
-                                <td class="col-hidden">2</td>
-                                <td>북한자료센터 홈페이지 일시 중단 안내</td>
-                                <td></td>
-                                <td class="col-hidden">2017-09-27</td>
-                                <td class="col-hidden">174</td>
+                                <th>첨부파일</th>
+                                <td><a href=""><img src="../assets/images/icon/icon-attachments.png" alt=""> 공고문.hwp</a></td>
                             </tr>
                             <tr>
-                                <td class="col-hidden">1</td>
-                                <td>북한자료센터 홈페이지 일시 중단 안내</td>
-                                <td></td>
-                                <td class="col-hidden">2017-09-27</td>
-                                <td class="col-hidden">174</td>
+                                <td colspan="2">
+                                    <pre>북한 및 통일문제에 관심이 있는 신진연구자들에게 연구 기회를 부여하고 참신한 정책 연구 결과를 수렴하기 위하여 다음과 같이 정책연구과제를 공모하오니 많은 참여 바랍니다.
+
+ □ 사업 개요 
+  o 공모를 통해 연구자(연구기관) 선정, 정책연구용역 계약 체결 
+    - 연구자의 경우, 박사학위 취득일로부터 5년 以內(전공 불문)
+  o 선발 예정 인원 : 10명
+  o 연구비 : 1주제 당 1,000만원
+    ※ 응모기관(자) 중복 응모 불가
+  o 선정방법 : 내?외부 심사위원단 구성, 연구계획서 평가</pre>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                    <!-- [Start] Paging Area -->
-                    <div class="paging">
-                        <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
-                        <button type="button" class="prev" aria-label="이전 페이지"></button>
-                        <div class="mobile-page">
-                            <input class="now-page" type="number" name="now-page" aria-label="현재 페이지">
-                            <span class="all-page" aria-label="총 페이지">19</span>
-                        </div>
-                        <div class="pc-page">
-                            <a href role="button">1</a>
-                            <a href role="button">2</a>
-                            <!-- 선택된 버튼 class="selected"로 제어 -->
-                            <a href role="button" class="selected">3</a>
-                            <a href role="button">4</a>
-                            <a href role="button">5</a>
-                        </div>
-                        <button type="button" class="next"" aria-label="다음 페이지"></button>
-                        <button type="button" class="last-next" aria-label="끝으로 이동"></button>
+                    <div class="btn-set-area col-1">
+                        <button class="btn-out-size btn-defult" type="button">목록</button>
                     </div>
-                    <!-- [End] Paging Area -->
+                    <div class="table-board-prev-next-area">
+                        <dl>
+                            <dt>이전글<span class="fa fa-sort-up"></span></dt>
+                            <dd>이전글이 없습니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>다음글<span class="fa fa-sort-down"></span></dt>
+                            <dd>북한자료센터 서비스 일정 안내</dd>
+                        </dl>
+                    </div>
                 </div>
                 <!-- [End] Content 상세  -->
 
