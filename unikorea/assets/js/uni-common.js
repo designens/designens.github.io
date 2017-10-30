@@ -227,6 +227,16 @@
 // =================================================================
 // 소장자료 검색 : 검색결과 내 상세검색 더보기
 // =================================================================
+// 더보기 버튼 아이콘 활설화
+(function(global, $) {
+    var $btn_more_size = $(".btn-more-size");
+    $btn_more_size.click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.toggleClass("open");
+    });
+})(window, window.jQuery);
+
 (function(global, $) {
 
     var $btn_result_search = $(".btn-result-search"),

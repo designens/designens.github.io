@@ -394,6 +394,7 @@ JS 내용 작성</code></pre>
                         버튼이 4개 이상 일때 "<strong>btn-set-area <span class="red">col-4</span></strong>" class를 추가 합니다.<br>
                         버튼이 5개 이상 일때 "<strong>btn-set-area <span class="red">col-5</span></strong>" class를 추가 합니다.<br>
                         각 버튼은 특성에 따라 엘리먼트를 시멘틱하게 사용하고, <strong>버튼 사이즈</strong>와 <strong>버튼 색상</strong> class를 활용하여 디자인 합니다.<br>
+                        ex) class="<span class="blue">btn-out-size</span> <span class="blue">btn-defult</span>" 버튼사이즈(btn-out-size)와 버튼색상(btn-defult) class를 함께 적용합니다.
                     </div>
 
                     <h3><div class="fa fa-angle-double-right"></div>버튼 사이즈 class 설정</h3>
@@ -486,33 +487,41 @@ JS 내용 작성</code></pre>
 &lt;/div&gt;</code></pre>
                     <div class="ui-kit-comment">
                         버튼 엘리먼트는 역할에 따라 요소를 사용하고 <strong>버튼 사이즈과 버튼 색상 class를 적절히 사용</strong>하여 디자인 하시면 됩니다. <br>
-                        버튼 요소에 아이콘 추가 시 "<span class="blue">&lt;lable&gt;</span>" 내부에 <span class="blue">&lt;span&gt;</span> or <span class="blue">&lt;img&lt;span&gt;</span> 요소를 사용하여 <strong>아이콘(img or FontAwesome)</strong> 추가한다.<br>
+                        아이콘 추가 시 버튼 요소 내부에 <span class="blue">&lt;span&gt;</span> or <span class="blue">&lt;img&gt;</span> 요소를 사용하여 <strong>아이콘(img or FontAwesome)</strong> 추가한다.<br>
                         아이콘을 글자 앞쪽에 배치할 때는 <strong>글자 앞으로 아이콘 요소를 배치</strong>하고 아이콘 요소에 "<strong class="red">before</strong>" class를 적용하면 아이콘 정렬이 됩니다.<br>
                         아이콘을 글자 뒤쪽에 배치할 때는 <strong>글자 뒤로 아이콘 요소를 배치</strong>하고 아이콘 요소에 "<strong class="red">after</strong>" class를 적용하면 아이콘 정렬이 됩니다.
                     </div>
+
+                    <h3><div class="fa fa-angle-double-right"></div>더보기 버튼 설정</h3>
+                    <button class="btn-more-size btn-gray full">
+                        더보기 버튼<span class="icon after" aria-hidden="true"></span>
+                    </button>
+                    <pre><code class="language-html">&lt;button class=&quot;btn-more-size btn-gray full&quot;&gt;
+    더보기 버튼&lt;span class=&quot;icon after&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
 
                 </div>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
 
+            
             <!-- [Start] 테이블 스타일 공통 -->
             <article>
                 <h2>Table Style</h2>
                 <div class="table-type">
-                    <h3><span class="fa fa-table"></span>table-view-type</h3>
-                    <!-- [Start] table-view-type -->
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (List 변경 타입)</h3>
                     <table class="table-view-type-num list-type">
                         <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
                         <!-- class="col-hidden" 사용하여 중단점에 따라 컬럼 감추기  -->
-                        <col class="col-hidden" width="60">
-                        <col class="col-hidden" width="auto">
-                        <col class="col-hidden" width="120">
-                        <col class="col-hidden" width="130">
-                        <col class="col-hidden" width="96">
-                        <col class="col-hidden" width="96">
-                        <col class="col-hidden" width="115">
+                        <col width="60">
+                        <col width="auto">
+                        <col width="120">
+                        <col width="130">
+                        <col width="96">
+                        <col width="96">
+                        <col width="115">
                         <thead>
-                            <tr class="col-hidden">
+                            <tr>
                                 <th scope="col">번호</th>
                                 <th scope="col">등록번호</th>
                                 <th scope="col">소장위치</th>
@@ -529,52 +538,143 @@ JS 내용 작성</code></pre>
                                 <td>임시서고</td>
                                 <td>342 안36</td>
                                 <!-- 도서 상태 폰트 Color 적용 -->
-                                <td class="readable">열람가능</td>
+                                <td>열람가능</td>
                                 <td>2017.10.01</td>
                                 <td><button class="btn-table-view-size btn-orange">출력</button></td>
                             </tr>
                         </tbody>
                     </table>
-<pre><code class="language-html">&lt;table class=&quot;table-view-type list-type&quot;&gt;
+                    <pre><code class="language-html">&lt;table class=&quot;table-view-type-num list-type&quot;&gt;
     &lt;caption&gt;(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.&lt;/caption&gt;
-    &lt;col width=&quot;60&quot;&gt;
-    &lt;col width=&quot;180&quot;&gt;
-    &lt;col width=&quot;120&quot;&gt;
-    &lt;col width=&quot;130&quot;&gt;
-    &lt;col width=&quot;96&quot;&gt;
-    &lt;col width=&quot;96&quot;&gt;
-    &lt;col width=&quot;auto&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;auto&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
     &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th scope=&quot;col&quot;&gt;번호&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;등록번호&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;소장위치&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;청구기호&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;도서상태&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;반납예정일&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;서비스&lt;/th&gt;
+        &lt;tr class=&quot;col-hidden&quot;&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;EM0000065224&lt;/td&gt;
-            &lt;td&gt;임시서고&lt;/td&gt;
-            &lt;td&gt;342 안36&lt;/td&gt;
-            &lt;td class=&quot;readable&quot;&gt;열람가능&lt;/td&gt;
-            &lt;td&gt;2017.10.01&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <pre><code class="language-css">.table-view-type-num td:nth-of-type(1):before {
+  content: &quot;번호&quot;;
+}
+.table-view-type-num td:nth-of-type(2):before {
+  content: &quot;등록번호&quot;;
+}
+.table-view-type-num td:nth-of-type(3):before {
+  content: &quot;소장위치&quot;;
+}
+.table-view-type-num td:nth-of-type(4):before {
+  content: &quot;청구기호&quot;;
+}
+.table-view-type-num td:nth-of-type(5):before {
+  content: &quot;도서상태&quot;;
+}
+.table-view-type-num td:nth-of-type(6):before {
+  content: &quot;반납예정일&quot;;
+}
+.table-view-type-num td:nth-of-type(7):before {
+  content: &quot;서비스&quot;;
+}</code></pre>
+                    <p class="ui-kit-comment">
+                        <span class="blue">&lt;caption&gt;</span> 의 설명은 "<strong>(<span class="red">제목</span>)의 타이틀은 (<span class="red">가로 or 세로</span>)정렬로 되어있습니다.</strong>" 와 같이 일관된 구문을 넣어 사용합니다.<br>
+                        청각만으로도 표의 구조가 그려질 수 있도록 자세히 설명하여 표를 읽어나가는데 도움이 되도록 작성합니다.<br>
+                        각 제목(컬럼)의 너비는 <span class="blue">&lt;col&gt;</span> 요소에 <strong class="red">width 요소로 너비를 설정</strong>하고 너비의 비율에 대비하기 위해 단위를 작성하지 않습니다.<br>
+                        그리고 유동적인 테이블일 경우 컬럼 하나의 값은 <strong>width="<span class="red">auto</span>"</strong>로 설정하여 변화되는 너비의 값을 대응해야 합니다.<br>
+                        표 마다 일관된 width 값이 없으므로 각 표의 제목(컬럼)의 너비에 따라 재정의하여 사용합니다.<br>
+                        반응형 중단점에 따라 리스트(list-type) 테이블로 변화를 적용할 경우 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">list-type</strong>" class를 추가해 줍니다.<br>
+                        ex) <span class="blue">&lt;table class="table-view-type <strong class="red">list-type</strong>"&gt;</span><br>
+                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 반응형 적용 시 중단점에 따라 column을 감추는 형태로 사용하면 됩니다.<br>
+                        "<strong class="red">list-type</strong>"을 사용하는 표의 테이블 제목(컬럼)이 달라질 경우 "<strong>table-view-type</strong>" class명에 "<strong>table-view-type<span class="red">-num</span></strong>" class명과 같이 <span class="blue">-num</span>을 붙여서 class명을 정의하고 <strong>제목을 css의 content로 재설정</strong> 해줘야 합니다.<br>
+                        ex) <span class="blue">&lt;table class="</span><strong>table-view-type</strong><strong class="red">-01</strong><span class="blue"> list-type"&gt;</span><br>
+                    </p>
+
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (column 감추기 타입)</h3>
+                    <table class="table-view-type">
+                        <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
+                        <col width="98">
+                        <col width="auto">
+                        <col class="col-hidden" width="200">
+                        <col class="col-hidden" width="132">
+                        <col class="col-hidden" width="76">
+                        <thead>
+                            <tr>
+                                <th scope="col">이미지</th>
+                                <th scope="col">자료명</th>
+                                <th class="col-hidden" scope="col">저자</th>
+                                <th class="col-hidden" scope="col">출판사</th>
+                                <th class="col-hidden" scope="col">출판년</th>
+                        </thead>
+                        <tbody class="align-left col-2">
+                            <tr>
+                                <td><img aria-labelledby="bookName1" src="../assets/images/sub/book-sample1.png" alt></td>
+                                <td id="bookName1">정밀 메커니즘 설계 : 자동화·메카트로닉스 시스템정밀</td>
+                                <td class="col-hidden">이진갑 저</td>
+                                <td class="col-hidden">문운당</td>
+                                <td class="col-hidden">2015</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../assets/images/sub/book-sample2.png" aria-labelledby="bookName2" alt></td>
+                                <td id="bookName2">미식의 도시 뉴욕 : 세계의 푸디가 모이는 맛의 천국 : 뉴욕맛집 완벽가이드</td>
+                                <td class="col-hidden">제이민 지음</td>
+                                <td class="col-hidden">중앙books</td>
+                                <td class="col-hidden">2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre><code class="language-html">&lt;table class=&quot;table-view-type&quot;&gt;
+    &lt;caption&gt;(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.&lt;/caption&gt;
+    &lt;col width=&quot;100&quot;&gt;
+    &lt;col width=&quot;auto&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th class=&quot;col-hidden&quot; scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th class=&quot;col-hidden&quot; scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th class=&quot;col-hidden&quot; scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody class=&quot;align-left col-2&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;컬럼&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;컬럼&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;컬럼&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;컬럼&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;컬럼&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;컬럼&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
                     <p class="ui-kit-comment">
-                        <span class="blue">&lt;caption&gt;</span> 요소의 설명은 "<strong>(<span class="red">제목</span>)의 타이틀은 (<span class="red">가로 or 세로</span>)정렬로 되어있습니다.</strong>" 와 같이 청각만으로도 표의 구조를 파악할 수 있도록 상세히 설명합니다.<br>
-                        각 컬럼의 너비는 <span class="blue">&lt;col&gt;</span> 요소에 <strong class="red">width 값</strong>을 표의 제목(컬럼)에 맞게 <strong class="red">너비를 재정의</strong> 합니다.<br>
-                        반응형 중단점에 따른 테이블 변화를 적용하려면 table-view-type 클래스의 형재요소 클래스로 <strong class="red">list-type</strong> 을 추가해준다.<br>
-                        ex) <span class="blue">&lt;table class="table-view-type <strong class="red">list-type</strong>"&gt;</span><br>
-                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 반응형 적용 시 중단점에 따라 column을 감추는 형태로 사용하면 됩니다.
+                        중단점에 따른 컬럼 감추기는 "<strong class="red">col-hidden</strong>" class를 사용하여 각 <span class="blue">&lt;col&gt;</span>,<span class="blue"> &lt;th&gt;</span>,<span class="blue"> &lt;td&gt;</span> 요소에 적용합니다.<br>
+                        테이블은 기본 가운데 정렬로 처리되어 있으며, 일부 컬럼의 좌측 정렬이 필요할 경우 <span class="blue"> &lt;tbody&gt;</span>요소에 <strong>align-left col-<span class="red">num</span></strong>을 적용하여 사용합니다.<br>
+                        ex) 두번째 컬럼의 좌측 정렬이 필요한 경우 : <span class="blue"> &lt;tbody class="</span><strong>align-left col-<span class="red">2</span></strong><span class="blue">"&gt;</span>
                     </p>
-                    <!-- [End] table-view-type -->
 
                     <!-- [Start] 페이징 스타일 공통 -->
                     <h2>Paging Style</h2>
@@ -621,7 +721,6 @@ JS 내용 작성</code></pre>
                         ex) <span class="blue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>
                     </p>
                     <!-- [End] 페이징 스타일 공통 -->
-
                 </div>
             </article>
             <!-- [End] 테이블 스타일 공통 -->

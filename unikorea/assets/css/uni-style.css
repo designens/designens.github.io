@@ -1802,6 +1802,14 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
 
 .btn-more-size span.after, .btn-more-size img.after, .btn-more-size .icon.after { padding-left: 5px; }
 
+.btn-more-size .icon.after { position: relative; display: inline-block; margin-left: 30px; vertical-align: inherit; }
+
+.btn-more-size .icon.after:before { position: absolute; top: -3px; right: 0; width: 13px; height: 3px; background: #fff; content: ""; }
+
+.btn-more-size .icon.after:after { position: absolute; top: -8px; right: 5px; width: 3px; height: 13px; background: #fff; content: ""; transform: rotate(0deg); transition: transform 0.25s ease; }
+
+.btn-more-size.open .icon.after:after { background: #fff; transform: rotate(90deg); transition: transform 0.25s ease; }
+
 /* =======================================*/
 /* 버튼 색상 설정
 /* =======================================*/
@@ -1970,16 +1978,6 @@ h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem;
   .resources-search-list .ul-list-type li:last-child .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
   .resources-search-list .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
   .resources-search-list .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
-
-.btn-result-search { margin-top: 20px; }
-
-.btn-result-search .icon.after { position: relative; display: inline-block; margin-left: 30px; vertical-align: inherit; }
-
-.btn-result-search .icon.after:before { position: absolute; top: -3px; right: 0; width: 13px; height: 3px; background: #fff; content: ""; }
-
-.btn-result-search .icon.after:after { position: absolute; top: -8px; right: 5px; width: 3px; height: 13px; background: #fff; content: ""; transform: rotate(0deg); transition: transform 0.25s ease; }
-
-.btn-result-search.open .icon.after:after { background: #fff; transform: rotate(90deg); transition: transform 0.25s ease; }
 
 .sub-search-view-area { border: 1px solid #e7e7e7; }
 
