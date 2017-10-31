@@ -2843,9 +2843,9 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .ui-kit-comment { padding: 15px; border: 10px solid #eff4f7; margin-top: -10px; }
 
-.ui-kit-comment .red { color: #e51d68; }
+[class*="ui-kit"] .red { color: #e51d68; }
 
-.ui-kit-comment .blue { color: #257de0; }
+[class*="ui-kit"] .blue { color: #257de0; }
 
 .btn-type-sample p { font-size: 12px; margin-top: 20px; margin-bottom: 10px; }
 
