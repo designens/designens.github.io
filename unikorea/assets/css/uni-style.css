@@ -1855,6 +1855,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .sub-list-title .search-word span { color: #ff8134; }
 
+.explan { color: #888; border-top: 1px solid #e5e6e6; border-bottom: 1px solid #e5e6e6; background: url("../../assets/images/common/bg-dashed01.png"); padding: 20px; }
+
 .search-select-box-area { background: #f1f1f1; padding: 0 15px; line-height: 41px; }
 
 .search-select-box-area .fl-align .icon-img-type { color: #09c; padding-left: 23px; background: url("../../assets/images/icon/icon-img-type.svg") left center no-repeat; }
@@ -2212,8 +2214,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 @media only screen and (max-width: 760px) { .type-ta01.bhk span { clear: both; display: block; width: 100%; line-height: 35px; }
   .type-ta01.bhk tbody span .ml10 { margin-left: 0px; } }
-
-.bhk .explan { color: #888; border-top: 1px solid #e5e6e6; border-bottom: 1px solid #e5e6e6; background: url("../../assets/images/common/bg-dashed01.png"); padding: 20px; }
 
 .bhk .title-sub-list { margin: 20px 0 5px; padding-left: 16px; background: url("../../assets/images/common/bullet-1.png") 0 9px no-repeat; font-size: 1.8rem; font-weight: 500; color: #333; line-height: 27px; }
 

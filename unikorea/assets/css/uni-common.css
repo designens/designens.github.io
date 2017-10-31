@@ -2014,7 +2014,7 @@ table .col-hidden { display: none; }
 
 .table-board-prev-next-area dl dt, .table-board-prev-next-area dl dd { display: table-cell; height: 40px; line-height: 40px; padding: 0 10px; }
 
-.table-board-prev-next-area dl dt { width: 11.96172%; color: #333; text-align: center; background: #f7f7f7; }
+.table-board-prev-next-area dl dt { width: 100px; color: #333; text-align: center; background: #f7f7f7; }
 
 .table-board-prev-next-area dl dt .fa { margin-left: 10px; }
 
