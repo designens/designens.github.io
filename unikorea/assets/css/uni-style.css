@@ -1656,11 +1656,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-.btn-set-area, .search-select-box-area, .search-select-box-area .fl-align, .search-select-box-area .fr-align, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline { *zoom: 1; }
+.btn-set-area, .search-select-box-area, .search-select-box-area .fl-align, .search-select-box-area .fr-align, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline, .year-month-select-area { *zoom: 1; }
 
-.btn-set-area:before, .search-select-box-area:before, .search-select-box-area .fl-align:before, .search-select-box-area .fr-align:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after { content: ""; display: block; }
+.btn-set-area:before, .search-select-box-area:before, .search-select-box-area .fl-align:before, .search-select-box-area .fr-align:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .year-month-select-area:before, .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after { content: ""; display: block; }
 
-.btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after { clear: both; }
+.btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after { clear: both; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1705,16 +1705,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 @media (min-width: 22.5em) and (max-width: 47.5em) { .btn-set-area [class^="btn-"] { width: 49.23077%; float: left; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.76923%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
-  .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
+  .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; } }
 
-@media (min-width: 47.5em) { .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
-  .btn-set-area [class^="btn-"].full { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
-
-@media (min-width: 47.5em) and (max-width: 71.25em) { .btn-set-area [class^="btn-"] { width: 49.44444%; float: left; }
-  .btn-set-area [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .btn-set-area [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
-  .btn-set-area.col-1 [class^="btn-"] { float: none; width: auto; margin: auto; }
+@media (min-width: 47.5625em) and (max-width: 71.25em) { .btn-set-area [class^="btn-"] { float: none; width: auto; margin-right: 6px; margin-bottom: 6px; }
+  .btn-set-area.col-2 [class^="btn-"] { width: 49.44444%; float: left; }
+  .btn-set-area.col-2 [class^="btn-"]:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .btn-set-area.col-2 [class^="btn-"]:nth-child(2n + 2) { margin-left: 50.55556%; margin-right: -100%; clear: none; }
   .btn-set-area.col-3 [class^="btn-"] { width: 32.46377%; float: left; }
   .btn-set-area.col-3 [class^="btn-"]:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .btn-set-area.col-3 [class^="btn-"]:nth-child(3n + 2) { margin-left: 33.76812%; margin-right: -100%; clear: none; }
@@ -1898,6 +1895,12 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 @media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
 
 @media (min-width: 71.25em) { .all-table-views { padding: 26px 15px 7px; } }
+
+.review-star .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
+
+.review-star .fa.on { color: #54b477; }
+
+.review-star .star-number { font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #333; margin-left: 6px; }
 
 /* =======================================*/
 /* Content : 컨텐츠 영역
@@ -2182,16 +2185,89 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .book-review li .headline .author-date span:first-child:after { position: absolute; top: 4px; right: 0; width: 1px; height: 14px; margin-right: 6px; background: #888; content: ""; }
 
-.book-review li .headline .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
-
-.book-review li .headline .fa.on { color: #54b477; }
-
-.book-review li .headline .star-number { font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #333; margin-left: 6px; }
-
 .book-review li .book-review-text { color: #858585; }
 
 @media (min-width: 47.5em) { .book-review li .headline .fl-align { float: left; }
   .book-review li .headline .fr-align { float: right; } }
+
+/* =======================================*/
+/* 참여서비스 > 북한영화 신청 > 캘린더
+/* html/north-korea-movie-application-calendar.html
+/* =======================================*/
+.year-month-select-area { margin-top: 30px; }
+
+.year-month-select-area .year-month-text { font-size: 30px; font-size: 3rem; color: #333; padding: 0 20px; }
+
+.year-month-select-area .year-month-text span { color: #3466a2; }
+
+.year-month-select-area [class*="btn-month"] { width: 36px; height: 36px; border-radius: 50%; background: #e6e6e6; }
+
+.year-month-select-area [class*="btn-month"]:before { vertical-align: 2px; }
+
+.year-month-select-area .btn-month-prev:before { font-family: 'FontAwesome'; content: ""; font-size: 24px; font-size: 2.4rem; color: #1c1c1c; }
+
+.year-month-select-area .btn-month-next:before { font-family: 'FontAwesome'; content: ""; font-size: 24px; font-size: 2.4rem; color: #1c1c1c; }
+
+.year-month-select-area .select-box { margin-right: 7px; }
+
+.year-month-select-area .select-box.year { position: relative; width: 84px; height: 35px; line-height: 33px; vertical-align: top; }
+
+.year-month-select-area .select-box.year label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
+
+.year-month-select-area .select-box.year select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+
+.year-month-select-area .select-box.year select:focus { border: 1px solid #002847; }
+
+.year-month-select-area .select-box.year select::-ms-expand { display: none; }
+
+.year-month-select-area .select-box.month { position: relative; width: 74px; height: 35px; line-height: 33px; vertical-align: top; }
+
+.year-month-select-area .select-box.month label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
+
+.year-month-select-area .select-box.month select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+
+.year-month-select-area .select-box.month select:focus { border: 1px solid #002847; }
+
+.year-month-select-area .select-box.month select::-ms-expand { display: none; }
+
+.year-month-select-area .fl-align { float: none; text-align: center; }
+
+.year-month-select-area .fr-align { display: none; }
+
+@media (min-width: 47.5em) { .year-month-select-area .fl-align { float: left; text-align: left; }
+  .year-month-select-area .fr-align { display: block; } }
+
+.calendar-table { width: 100%; }
+
+.calendar-table thead th { height: 33px; line-height: 33px; color: #fff; background: #3a71b3; border-right: 1px solid #2e5d99; }
+
+.calendar-table thead th:first-child { border-left: 1px solid #2e5d99; }
+
+.calendar-table tbody td { height: 50px; border: 1px solid #ddd; vertical-align: top; }
+
+.calendar-table tbody td a { display: block; width: 100%; height: 100%; padding: 10px 6px; }
+
+.calendar-table tbody tr td:first-child, .calendar-table tbody tr .can-not-apply { color: #e35000; }
+
+.calendar-table tbody tr .can-not-apply p { background: #edba9d; }
+
+.calendar-table tbody tr .day:hover, .calendar-table tbody tr .day:focus { border: 2px solid #333; }
+
+.calendar-table tbody tr .day.inactive:hover, .calendar-table tbody tr .day.inactive:focus, .calendar-table tbody tr .day.can-not-apply:hover, .calendar-table tbody tr .day.can-not-apply:focus { border: 1px solid #ddd; }
+
+.calendar-table tbody tr .day.inactive:hover a, .calendar-table tbody tr .day.inactive:focus a, .calendar-table tbody tr .day.can-not-apply:hover a, .calendar-table tbody tr .day.can-not-apply:focus a { cursor: no-drop; }
+
+.calendar-table tbody tr .inactive { color: #ccc; }
+
+.calendar-table tbody tr:first-child td { border-top: 1px solid #2e5d99; }
+
+.calendar-table tbody tr:first-child td.day.inactive:hover, .calendar-table tbody tr:first-child td.day.inactive:focus, .calendar-table tbody tr:first-child td.day.can-not-apply:hover, .calendar-table tbody tr:first-child td.day.can-not-apply:focus { border-top: 1px solid #2e5d99; }
+
+@media (min-width: 71.25em) { .calendar-table tbody td { height: 100px; } }
+
+.can-not-apply-message { margin: 6px 0 7px 0; }
+
+.can-not-apply-message:before { display: inline-block; width: 15px; height: 15px; margin-right: 8px; vertical-align: -2px; background: #edba9d; content: ""; }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일

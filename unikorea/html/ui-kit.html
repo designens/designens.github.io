@@ -352,17 +352,37 @@ JS 내용 작성</code></pre>
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
                     <h3><div class="fa fa-angle-double-right"></div>여러개 버튼 구성 시</h3>
+                    <p><span class="blue">btn-set-area</span></p>
+                    <div class="btn-set-area">
+                        <button class="btn-out-size btn-defult" type="button">버튼</button>
+                        <button class="btn-out-size btn-blue" type="button">버튼</button>
+                        <button class="btn-out-size btn-gray" type="button">버튼</button>
+                        <button class="btn-out-size btn-orange" type="button">버튼</button>
+                        <button class="btn-out-size btn-green" type="button">버튼</button>
+                    </div>
+                    <p>btn-set-area <span class="blue">col-1</span></p>
+                    <div class="btn-set-area col-1">
+                        <button class="btn-out-size btn-defult" type="button">버튼</button>
+                    </div>
+                    <p>btn-set-area <span class="blue">col-2</span></p>
+                    <div class="btn-set-area col-2">
+                        <button class="btn-out-size btn-orange" type="button">버튼</button>
+                        <button class="btn-out-size btn-green" type="button">버튼</button>
+                    </div>
+                    <p>btn-set-area <span class="blue">col-3</span></p>
                     <div class="btn-set-area col-3">
                         <button class="btn-out-size btn-gray" type="button">버튼</button>
                         <button class="btn-out-size btn-orange" type="button">버튼</button>
                         <button class="btn-out-size btn-green" type="button">버튼</button>
                     </div>
+                    <p>btn-set-area <span class="blue">col-4</span></p>
                     <div class="btn-set-area col-4">
                         <button class="btn-out-size btn-defult" type="button">버튼</button>
                         <button class="btn-out-size btn-blue" type="button">버튼</button>
                         <button class="btn-out-size btn-defult" type="button">버튼</button>
                         <button class="btn-out-size btn-blue" type="button">버튼</button>
                     </div>
+                    <p>btn-set-area <span class="blue">col-5</span></p>
                     <div class="btn-set-area col-5">
                         <button class="btn-out-size btn-defult" type="button">버튼</button>
                         <button class="btn-out-size btn-blue" type="button">버튼</button>
@@ -370,7 +390,14 @@ JS 내용 작성</code></pre>
                         <button class="btn-out-size btn-orange" type="button">버튼</button>
                         <button class="btn-out-size btn-green" type="button">버튼</button>
                     </div>
-                    <pre><code class="language-html">&lt;div class=&quot;btn-set-area col-3&quot;&gt;
+                    <pre><code class="language-html">&lt;div class=&quot;btn-set-area col-1&quot;&gt;
+    &lt;button&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-set-area col-2&quot;&gt;
+    &lt;button&gt;&lt;/button&gt;
+    &lt;button&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-set-area col-3&quot;&gt;
     &lt;button&gt;&lt;/button&gt;
     &lt;button&gt;&lt;/button&gt;
     &lt;button&gt;&lt;/button&gt;
@@ -390,42 +417,45 @@ JS 내용 작성</code></pre>
 &lt;/div&gt;</code></pre>
                     <div class="ui-kit-comment">
                         두개의 이상의 버튼을 사용할 때는 "<strong class="red">btn-set-area</strong>" class로 버튼 요소들을 감싸 줍니다.<br>
+                        버튼이 1개 일때 "<strong>btn-set-area <span class="red">col-1</span></strong>" class를 추가 합니다.<br>
+                        버튼이 2개 이상 일때 "<strong>btn-set-area <span class="red">col-2</span></strong>" class를 추가 합니다.<br>
                         버튼이 3개 이상 일때 "<strong>btn-set-area <span class="red">col-3</span></strong>" class를 추가 합니다.<br>
                         버튼이 4개 이상 일때 "<strong>btn-set-area <span class="red">col-4</span></strong>" class를 추가 합니다.<br>
                         버튼이 5개 이상 일때 "<strong>btn-set-area <span class="red">col-5</span></strong>" class를 추가 합니다.<br>
                         각 버튼은 특성에 따라 엘리먼트를 시멘틱하게 사용하고, <strong>버튼 사이즈</strong>와 <strong>버튼 색상</strong> class를 활용하여 디자인 합니다.<br>
-                        ex) class="<span class="blue">btn-out-size</span> <span class="blue">btn-defult</span>" 버튼사이즈(btn-out-size)와 버튼색상(btn-defult) class를 함께 적용합니다.
+                        <strong>col-<span class="red">num</span></strong>을 설정 안할 경우 <strong>Tablet(760px) 이하 디바이스는 2column</strong>으로 반응형 처리되어 디자인 됩니다.<br>
+                        ex) class="<span class="blue">btn-out-size</span> <span class="blue">btn-defult</span>" <strong>버튼사이즈</strong>(btn-out-size)와 <strong>버튼색상</strong>(btn-defult) <strong>class를 함께 적용</strong>합니다.
                     </div>
 
                     <h3><div class="fa fa-angle-double-right"></div>버튼 사이즈 class 설정</h3>
                     <div class="btn-set-area">
                         <p><span class="blue">height</span>: 27px, <span class="blue">padding-left</span>: 20px, <span class="blue">padding-right</span>: 20px</p>
-                        <button class="btn-content-size btn-defult" type="button">컨텐츠 버튼</button>
+                        <button class="btn-content-size btn-defult" type="button">btn-content-size</button>
                         <button class="btn-content-size btn-defult" type="button">컨텐츠 버튼</button>
                     </div>
                     <div class="btn-set-area">
                         <p><span class="blue">height</span>: 30px, <span class="blue">padding-left</span>: 20px, <span class="blue">padding-right</span>: 20px</p>
-                        <button class="btn-item-size btn-blue" type="button">아이템 버튼</button>
+                        <button class="btn-item-size btn-blue" type="button">btn-item-size</button>
                         <button class="btn-item-size btn-blue" type="button">아이템 버튼</button>
                     </div>
                     <div class="btn-set-area">
                         <p><span class="blue">height</span>: 35px, <span class="blue">padding-left</span>: 20px, <span class="blue">padding-right</span>: 20px</p>
-                        <button class="btn-in-size btn-defult" type="button">테이블 내부 버튼</button>
+                        <button class="btn-in-size btn-defult" type="button">btn-in-size</button>
                         <button class="btn-in-size btn-defult" type="button">테이블 내부 버튼</button>
                     </div>
                     <div class="btn-set-area">
                         <p><span class="blue">height</span>: 40px, <span class="blue">padding-left</span>: 20px, <span class="blue">padding-right</span>: 20px</p>
-                        <button class="btn-out-size btn-blue" type="button">테이블 외부 버튼</button>
+                        <button class="btn-out-size btn-blue" type="button">btn-out-size</button>
                         <button class="btn-out-size btn-blue" type="button">테이블 외부 버튼</button>
                     </div>
                     <div class="btn-set-area">
                         <p><span class="blue">height</span>: 23px, <span class="blue">padding-left</span>: 10px, <span class="blue">padding-right</span>: 10px</p>
-                        <button class="btn-table-view-size btn-orange" type="button">테이블 상세 버튼</button>
+                        <button class="btn-table-view-size btn-orange" type="button">btn-table-view-size</button>
                         <button class="btn-table-view-size btn-orange" type="button">테이블 상세 버튼</button>
                     </div>
                     <div class="btn-set-area">
                         <p><span class="blue">height</span>: 30px, <span class="blue">padding-left</span>: 10px, <span class="blue">padding-right</span>: 10px</p>
-                        <button class="btn-table-board-size btn-green" type="button">테이블 게시판 버튼</button>
+                        <button class="btn-table-board-size btn-green" type="button">btn-table-board-size</button>
                         <button class="btn-table-board-size btn-green" type="button">테이블 게시판 버튼</button>
                     </div>
                     <pre><code class="language-html">&lt;button class=&quot;btn-content-size&quot; type=&quot;button&quot;&gt;컨텐츠 버튼&lt;/button&gt;
@@ -515,7 +545,7 @@ JS 내용 작성</code></pre>
             <article>
                 <h2>Table Style</h2>
                 <div class="table-type">
-                    <h3><span class="fa fa-table"></span>반응형 테이블 (List 변경 타입)</h3>
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (List 내부 타입)</h3>
                     <table class="table-view-type-num list-type">
                         <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
                         <!-- class="col-hidden" 사용하여 중단점에 따라 컬럼 감추기  -->
@@ -682,7 +712,175 @@ JS 내용 작성</code></pre>
                         ex) 두번째 컬럼의 좌측 정렬이 필요한 경우 : <span class="blue"> &lt;tbody class="</span><strong>align-left col-<span class="red">2</span></strong><span class="blue">"&gt;</span>
                     </p>
 
-                    <!-- [Start] 페이징 스타일 공통 -->
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (Board list 타입)</h3>
+                    <table class="table-board-type">
+                        <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
+                        <col class="col-hidden" width="60">
+                        <col width="auto">
+                        <col width="70">
+                        <col class="col-hidden" width="100">
+                        <col class="col-hidden" width="80">
+                        <thead>
+                            <tr>
+                                <th class="col-hidden" scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">첨부</th>
+                                <th class="col-hidden" scope="col">등록일</th>
+                                <th class="col-hidden" scope="col">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody class="align-left col-2">
+                            <tr>
+                                <td class="col-hidden">5</td>
+                                <td>2017년 통일부 신진연구자 정책연구 과제 공모 안내</td>
+                                <td><a href="/"><img src="../assets/images/icon/icon-attachments.png" alt="첨부파일명.hwp"></a></td>
+                                <td class="col-hidden">2017-09-27</td>
+                                <td class="col-hidden">174</td>
+                            </tr>
+                            <tr>
+                                <td class="col-hidden">4</td>
+                                <td>북한자료센터 서비스 일정 안내</td>
+                                <td></td>
+                                <td class="col-hidden">2017-09-27</td>
+                                <td class="col-hidden">174</td>
+                            </tr>
+                            <tr>
+                                <td class="col-hidden">3</td>
+                                <td> 북한자료센터 이사기간 휴관 안내</td>
+                                <td></td>
+                                <td class="col-hidden">2017-09-27</td>
+                                <td class="col-hidden">174</td>
+                            </tr>
+                            <tr>
+                                <td class="col-hidden">2</td>
+                                <td>북한자료센터 홈페이지 일시 중단 안내</td>
+                                <td></td>
+                                <td class="col-hidden">2017-09-27</td>
+                                <td class="col-hidden">174</td>
+                            </tr>
+                            <tr>
+                                <td class="col-hidden">1</td>
+                                <td>북한자료센터 홈페이지 일시 중단 안내</td>
+                                <td></td>
+                                <td class="col-hidden">2017-09-27</td>
+                                <td class="col-hidden">174</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre><code class="language-html">&lt;table class=&quot;table-board-type&quot;&gt;
+    &lt;caption&gt;(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.&lt;/caption&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;60&quot;&gt;
+    &lt;col width=&quot;auto&quot;&gt;
+    &lt;col width=&quot;70&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;100&quot;&gt;
+    &lt;col class=&quot;col-hidden&quot; width=&quot;80&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th class=&quot;col-hidden&quot; scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th class=&quot;col-hidden&quot; scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th class=&quot;col-hidden&quot; scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody class=&quot;align-left col-2&quot;&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;&lt;/td&gt;
+            &lt;td class=&quot;col-hidden&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        중단점에 따른 컬럼 감추기는 "<strong class="red">col-hidden</strong>" class를 사용하여 각 <span class="blue">&lt;col&gt;</span>,<span class="blue"> &lt;th&gt;</span>,<span class="blue"> &lt;td&gt;</span> 요소에 적용합니다.<br>
+                        테이블은 기본 가운데 정렬로 처리되어 있으며, 일부 컬럼의 좌측 정렬이 필요할 경우 <span class="blue"> &lt;tbody&gt;</span>요소에 "<strong>align-left col-<span class="red">num</span></strong>" class를 적용하여 사용하면 되고 <span class="blue">-num</span>은 column 1~10까지 적용 가능합니다.<br>
+                        ex) 두번째 컬럼의 좌측 정렬이 필요한 경우 : <span class="blue"> &lt;tbody class="</span><strong>align-left col-<span class="red">2</span></strong><span class="blue">"&gt;</span>
+                    </p>
+
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (Board view 타입)</h3>
+                    <table class="table-board-type">
+                        <caption>공지사항의 타이틀은 세로정렬로 되어있습니다.</caption>
+                        <col width="140">
+                        <col width="auto">
+                        <tbody class="align-left col-1">
+                            <tr>
+                                <th>제목</th>
+                                <td class="title">2017년 통일부 신진연구자 정책연구 과제 공모 안내</td>
+                            </tr>
+                            <tr>
+                                <th>등록일</th>
+                                <td>2017-09-27</td>
+                            </tr>
+                            <tr>
+                                <th>조회수</th>
+                                <td>174</td>
+                            </tr>
+                            <tr>
+                                <th>첨부파일</th>
+                                <td><a href=""><img src="../assets/images/icon/icon-attachments.png" alt=""> 공고문.hwp</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <pre>북한 및 통일문제에 관심이 있는 신진연구자들에게 연구 기회를 부여하고 참신한 정책 연구 결과를 수렴하기 위하여 다음과 같이 정책연구과제를 공모하오니 많은 참여 바랍니다.
+
+ □ 사업 개요 
+  o 공모를 통해 연구자(연구기관) 선정, 정책연구용역 계약 체결 
+    - 연구자의 경우, 박사학위 취득일로부터 5년 以內(전공 불문)
+  o 선발 예정 인원 : 10명
+  o 연구비 : 1주제 당 1,000만원
+    ※ 응모기관(자) 중복 응모 불가
+  o 선정방법 : 내?외부 심사위원단 구성, 연구계획서 평가</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre><code class="language-html">&lt;table class=&quot;table-board-type&quot;&gt;
+    &lt;caption&gt;(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.&lt;/caption&gt;
+    &lt;col width=&quot;140&quot;&gt;
+    &lt;col width=&quot;auto&quot;&gt;
+    &lt;tbody class=&quot;align-left col-1&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;td class=&quot;title&quot;&gt;제목 색상&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot;&gt;
+                &lt;pre&gt;상세 내용&lt;/pre&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        <strong>col-<span class="red">num</span></strong>" class는 td 기준의 <span class="blue">nth-of-type(num)</span> 입니다.<br>
+                        ex) 위 표에서 두번째 컬럼(td)의 좌측 정렬이 필요한 경우 : <span class="blue"> &lt;tbody class="</span><strong>align-left col-<span class="red">1</span></strong><span class="blue">"&gt;</span> 적용합니다.
+                    </p>
+                </div>
+            </article>
+            <!-- [End] 테이블 스타일 공통 -->
+                
+            <!-- [Start] 페이징 스타일 공통 -->
+            <article>
                     <h2>Paging Style</h2>
                     <div class="paging">
                         <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
@@ -726,10 +924,9 @@ JS 내용 작성</code></pre>
                         선택된 버튼은 <span class="blue">&lt;a&gt;</span> 요소에 <strong class="red">selected</strong> 클래스를 적용합니다.<br>
                         ex) <span class="blue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>
                     </p>
-                    <!-- [End] 페이징 스타일 공통 -->
                 </div>
             </article>
-            <!-- [End] 테이블 스타일 공통 -->
+            <!-- [End] 페이징 스타일 공통 -->
             
             <!-- [Start] 팝업 기본 스타일 -->
             <article>
@@ -828,9 +1025,10 @@ $('.btn-popup-name').on('click', function(e) {
     <div class="popup-content">
         <p>이 곳에 팝업 상세내용 작성하시면 됩니다.</p>
         <!-- [Start] 팝업 버튼 -->
-        <div class="popup-btn-set">
-            <!-- 닫기 버튼 필수 (접근성) -->
-            <button type="button" class="popup-close">닫기</button>
+        <div class="btn-set-area">
+            <a href="#" class="btn-out-size btn-blue" role="button">저장</a>
+            <!-- 닫기 or 취소 버튼 필수 (접근성) -->
+            <a href="#" class="btn-out-size btn-defult popup-close" role="button">취소</a>
         </div>
         <!-- [End] 팝업 버튼 -->
     </div>

@@ -445,7 +445,7 @@
                         </div>
                         <div class="content-box">
                             <h5 class="fl-align full-color">서평</h5>
-                            <button class="fr-align btn-content-size btn-defult">서평쓰기</button>
+                            <button class="fr-align btn-popup-write-review btn-content-size btn-defult">서평쓰기</button>
                             <div class="content-text">
                                 <ul class="book-review">
                                     <li>
@@ -454,9 +454,9 @@
                                                 <p class="author-date">작성자<span>홍길동</span>작성일<span>2017-10-17</span></p>
                                                 <h6>사소한 것에 화나는 사람들을 위한 힐링도서</h6>
                                             </div>
-                                            <div class="fr-align">
+                                            <div class="fr-align review-star">
                                                 <!-- 별 선택 시 span 요소에 on 클래스 적용 -->
-                                                <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number">4</span>
+                                                <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점에 4점">4</span>
                                             </div>
                                         </div>
                                         <p class="book-review-text">[진짜 마음 가짜 마음]에서 말하는 진짜 마음은 ‘행복과 사랑’이며 가짜 마음은 ‘불행과 집착’이다. 이 책은 가짜 마음을 키우며 사는 사람들에게 행복으로 가는 문을 한가지씩 열어 주고 있다.</p>
@@ -467,8 +467,8 @@
                                                 <p class="author-date">작성자<span>홍길동</span>작성일<span>2017-10-17</span></p>
                                                 <h6>사소한 것에 화나는 사람들을 위한 힐링도서</h6>
                                             </div>
-                                            <div class="fr-align">
-                                                <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="star-number">2</span>
+                                            <div class="fr-align review-star">
+                                                <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점에 2점">2</span>
                                             </div>
                                         </div>
                                         <p class="book-review-text">남북한이 만나는 것은 한반도 문제 해결의 지름길이다. 북한과 대화하고 협력하고, 그런 관계를 만드는 게 남한으로서는 쉬운 일이 아니다. 북한은 때로 떼를 쓰기고 하고 억지도 부린다. 대화 상대로 까칠하기 이를 데 없다. 하지만 북한과 협상하고 대화하지 않으면 남북한에 손해가 되는 것은 자명하다. 북한과 이야기를 하자면 북한에 대해 아는 것은 기본 중의 기본이다. 전문가뿐만 아니라 중고생도 대학생도 일반 시민들도 북한에 대해 많이 알아야 한다. 그래야 북한이 떼를 쓸 때, 북한이 협상을 깰 때 그들의 속내를 짐작이나마 할 수 있게 된다.</p>
@@ -678,6 +678,92 @@
         </div>
     </footer>
     <!-- [End] Footer Area -->
+
+    <!-- [Start] Popup 서평쓰기 Area -->
+    <!-- 팝업 창 data-id 설정 -->
+<div class="popup" data-id="popup-write-review">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>서평쓰기</h4>
+        <button type="button" class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content">
+        <table class="table-board-type from">
+            <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
+            <col class="col-hidden" width="140">
+            <col width="auto">
+            <tbody class="align-left col-1">
+                <tr>
+                    <th class="col-hidden">제목</th>
+                    <td>
+                        <div class="input-type full">
+                            <input type="text" placeholder="제목을 입력하세요." aria-label="제목입력 폼" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-hidden">별점선택</th>
+                    <td>
+                        <div class="review-star">
+                            <div class="radio-type">
+                                <input type="radio" id="radio-id-01" name="test-name">
+                                <label for="radio-id-01">
+                                    <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점에 1점">1</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="review-star">
+                            <div class="radio-type">
+                                <input type="radio" id="radio-id-02" name="test-name">
+                                <label for="radio-id-02">
+                                    <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점에 2점">2</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="review-star">
+                            <div class="radio-type">
+                                <input type="radio" id="radio-id-03" name="test-name">
+                                <label for="radio-id-03">
+                                    <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점에 3점">3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="review-star">
+                            <div class="radio-type">
+                                <input type="radio" id="radio-id-04" name="test-name">
+                                <label for="radio-id-04">
+                                    <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점에 4점">4</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="review-star">
+                            <div class="radio-type">
+                                <input type="radio" id="radio-id-05" name="test-name">
+                                <label for="radio-id-05">
+                                    <span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star on"></span><span class="fa fa-star"></span><span class="star-number" aria-label="5점 만점">5</span>
+                                </label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-textarea-area">
+            <textarea class="textarea full" placeholder="서평 내용을 작성해 주세요." aria-label="서평쓰기 폼"></textarea>
+        </div>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="btn-set-area">
+            <button class="btn-out-size btn-blue">저장</button>
+            <!-- 닫기 or 취소 버튼 필수 (접근성) -->
+            <button class="btn-out-size btn-defult popup-close">취소</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] Popup 서평쓰기 Area -->
 
     <!-- javascript : 라이브러리 플러그인 -->
     <script type="text/javascript" src="../assets/js/lib-jquery.js"></script>

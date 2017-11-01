@@ -60,6 +60,13 @@
         $.popupId($popups, 'test-area').open();
     });
 
+    // 서평쓰기 팝업
+    $('.btn-popup-write-review').on('click', function(e) {
+        e.preventDefault();
+        // 팝업 찾아 열기 (id)
+        $.popupId($popups, 'popup-write-review').open();
+    });
+
 })(window, window.jQuery);
 
 // =================================================================
