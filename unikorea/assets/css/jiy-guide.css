@@ -2036,7 +2036,7 @@ table .col-hidden { display: none; }
 .popup-container .popup-dim { height: 100%; background: rgba(0, 0, 0, 0.1); }
 
 /* 팝업 영역 */
-.popup { width: 100%; min-width: 360px; height: 100vh; transform: inherit; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; }
+.popup { width: 100%; min-width: 320px; height: 100vh; transform: inherit; background: #fff; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; }
 
 .popup.is-center { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 

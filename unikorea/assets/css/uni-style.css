@@ -2270,6 +2270,16 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .can-not-apply-message:before { display: inline-block; width: 15px; height: 15px; margin-right: 8px; vertical-align: -2px; background: #edba9d; content: ""; }
 
 /* =======================================*/
+/* 자료검색 > 인기 자료 검색 > 인기 키워드 자료
+/* html/popular-keywords-resources.html
+/* =======================================*/
+.keyword-cloud-area { height: 232px; padding: 30px 10px; }
+
+.keyword-cloud-area #keyword_cloud { min-width: 320px; }
+
+.keyword-cloud-area #keyword_cloud a { font-family: "Noto Sans Korean", sans-serif, serif; transition: transform .35s; }
+
+/* =======================================*/
 /* Content : 공통 요소 스타일
 /* =======================================*/
 .type-ta01.bhk { width: 100%; border-top: 2px solid #999999; }
