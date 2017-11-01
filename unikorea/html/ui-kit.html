@@ -941,29 +941,26 @@ JS 내용 작성</code></pre>
             </article>
             <article>
                 <h2>Popup Base Style</h2>
-<pre><code class="language-html">&lt;div class=&quot;popup&quot; data-id=&quot;popup-name&quot;&gt;
-
+<pre><code class="language-html">&lt;!-- 팝업 창 data-id 설정 --&gt;
+&lt;div class=&quot;popup&quot; data-id=&quot;test-area&quot;&gt;
     &lt;!-- [Start] 팝업 헤드라인 --&gt;
     &lt;header class=&quot;popup-headline&quot;&gt;
         &lt;h4&gt;팝업 제목&lt;/h4&gt;
         &lt;button type=&quot;button&quot; class=&quot;popup-close&quot;&gt;창 닫기&lt;/button&gt;
     &lt;/header&gt;
     &lt;!-- [End] 팝업 헤드라인 --&gt;
-
     &lt;!-- [Start] 팝업 콘텐츠 --&gt;
     &lt;div class=&quot;popup-content&quot;&gt;
         &lt;p&gt;이 곳에 팝업 상세내용 작성하시면 됩니다.&lt;/p&gt;
-
         &lt;!-- [Start] 팝업 버튼 --&gt;
-        &lt;div class=&quot;popup-btn-set&quot;&gt;
-            &lt;!-- 닫기 버튼 필수 (접근성) --&gt;
-            &lt;button type=&quot;button&quot; class=&quot;popup-close&quot;&gt;닫기&lt;/button&gt;
+        &lt;div class=&quot;btn-set-area&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn-out-size btn-blue&quot; role=&quot;button&quot;&gt;저장&lt;/a&gt;
+            &lt;!-- 닫기 or 취소 버튼 필수 (접근성) --&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn-out-size btn-defult popup-close&quot; role=&quot;button&quot;&gt;취소&lt;/a&gt;
         &lt;/div&gt;
         &lt;!-- [End] 팝업 버튼 --&gt;
-
     &lt;/div&gt;
     &lt;!-- [End] 팝업 콘텐츠 --&gt;
-
 &lt;/div&gt;</code></pre>
 <pre><code class="language-js">// 팝업 버튼 (class=&quot;btn-popup-name&quot;)
 $('.btn-popup-name').on('click', function(e) {
