@@ -232,8 +232,8 @@
     <header class="sub-headline">
         <div class="wrap">
             <div class="headline">
-                <h2>자료검색</h2>
-                <p>현재 페이지 상세 내용이 있습니다.</p>
+                <h2>인기자료 검색</h2>
+                <p>북한자료센터의 북한관련 소장자료를 검색할 수 있습니다.</p>
             </div>
         </div>
     </header>
@@ -279,17 +279,115 @@
                 <header class="headline">
                     <div class="site-location">
                         <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                        <a href="#">대분류</a>
-                        <a href="#">중분류</a>
-                        <a href="#">세분류</a>
+                        <a href="#">자료검색</a>
+                        <a href="#">인기자료 검색</a>
+                        <a href="#">인기 검색어</a>
                     </div>
-                    <h2 class="sub-title">인기 키워드 자료</h2>
+                    <h2 class="sub-title">인기 검색어</h2>
                 </header>
                 <!-- [End] Content Title -->
                 
                 <!-- [Start] Content 상세  -->
-                <div class="content">
-                    이 곳에 컨텐츠 내용을 작성하시면 됩니다.
+                <div class="content popular-keywords-resources">
+                    <!-- [Start] 인기검색 키워드 데이터 호출 -->
+                    <div class="keyword-cloud-area">
+                        <div id="keyword_cloud">
+                            <img src="../assets/images/sub/test-keyword.png" alt="위치 확인 후 삭제하세요."><!-- 개발 진행 시 이미지는 삭제하시고 이곳에 데이터를 호출 하시면 됩니다. -->
+                        </div>
+                    </div>
+                    <!-- [End] 인기검색 키워드 데이터 호출 -->
+                    <div class="sub-search-area">
+                        <div class="date-type">
+                            <div class="select-box">
+                                <label for="select-01">1주일</label>
+                                <select id="select-01">
+                                    <option selected="selected">1주일</option>
+                                    <option>1개월</option>
+                                    <option>3개월</option>
+                                    <option>6개월</option>
+                                    <option>1년</option>
+                                </select>
+                            </div>
+                             <div class="input-type date">
+                                <div class="start-date">
+                                    <input type="text" aria-label="시작 년, 월, 일">
+                                    <button type="button">
+                                        <img src="../assets/images/icon/icon-link-04.png" width="21px" height="23px" alt="선택">
+                                    </button>
+                                </div>
+                                <span class="and">~</span>
+                                <div class="end-date">
+                                    <input type="text" aria-label="마지막 년, 월, 일">
+                                    <button type="button">
+                                        <img src="../assets/images/icon/icon-link-04.png" width="21px" height="23px" alt="선택">
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn-in-size btn-blue" type="button">검색</button>
+                        </div>
+                    </div>
+                    <ol class="ranking-keyword-area">
+                        <li>
+                            <span class="ranking-num">1</span>
+                           <a href="/"> 미사일</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">2</span>
+                            <a href="/">북한도발</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">3</span>
+                             <a href="/">재인대통령러시아출국</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">4</span>
+                            <a href="/">유럽증시</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">5</span>
+                            <a href="/">사회통합</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">6</span>
+                            <a href="/">수소폭탄</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">7</span>
+                           <a href="/"> 김정은</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">8</span>
+                            <a href="/">빅데이터</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">9</span>
+                          <a href="/">  전쟁</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">10</span>
+                          <a href="/">  지진</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">11</span>
+                           <a href="/"> 트럼프</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                        <li>
+                            <span class="ranking-num">12</span>
+                          <a href="/">  금값</a>
+                            <a href="/" role="button" class="btn-table-board-size btn-gray">검색</a>
+                        </li>
+                    </ol>
                 </div>
                 <!-- [End] Content 상세  -->
 

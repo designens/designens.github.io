@@ -2849,7 +2849,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .porgress-area-test .step-area { width: 930px; }
 
-.arrow-box [class^="arrow-"] { display: inline-block; margin-right: 10px; }
+.fa-hand-o-left { margin-left: 10px; margin-right: 5px; }
 
 .form-group h3, .search-type-area h3, .select-box-group h3, .file-area-test h3, .all-pages-view-area h3, .btn-type-sample h3, .table-type h3 { font-size: 20px; color: #69c; margin-top: 50px; margin-bottom: 10px; }
 

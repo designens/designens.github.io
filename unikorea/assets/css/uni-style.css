@@ -2009,6 +2009,10 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 소장자료 검색 > 리스트
 /* (html/resources-search-list.html)
 /* =======================================*/
+@media (min-width: 47.5em) { .resources-search-list .ul-list-type li:last-child div { margin-bottom: 0; }
+  .resources-search-list .ul-list-type li .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .resources-search-list .ul-list-type li .input-type-search { width: 85.52972%; float: right; margin-right: 0; } }
+
 .sub-search-view-area { border: 1px solid #e7e7e7; }
 
 .sub-search-view-area .btn-result-search-view { display: block; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; clear: both; }
