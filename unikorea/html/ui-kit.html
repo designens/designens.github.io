@@ -916,8 +916,8 @@ JS 내용 작성</code></pre>
             <article>
                     <h2>Paging Style</h2>
                     <div class="paging">
-                        <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
-                        <button type="button" class="prev" aria-label="이전 페이지"></button>
+                        <a class="first-prev" aria-label="처음으로 이동" href role="button"></a>
+                        <a class="prev" aria-label="이전 페이지" href role="button"></a>
                         <div class="mobile-page">
                             <input class="now-page" type="number" name="now-page" aria-label="현재 페이지">
                             <span class="all-page" aria-label="총 페이지">19</span>
@@ -930,13 +930,12 @@ JS 내용 작성</code></pre>
                             <a href role="button">4</a>
                             <a href role="button">5</a>
                         </div>
-                        <button type="button" class="next"" aria-label="다음 페이지"></button>
-                        <button type="button" class="last-next" aria-label="끝으로 이동"></button>
+                        <a class="next" aria-label="다음 페이지" href role="button"></a>
+                        <a class="last-next" aria-label="끝으로 이동" href role="button"></a>
                     </div>
-<pre><code class="language-html">&lt;!-- [Start] Paging Area --&gt;
-&lt;div class=&quot;paging&quot;&gt;
-    &lt;button type=&quot;button&quot; class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot;&gt;&lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot;&gt;&lt;/button&gt;
+<pre><code class="language-html">&lt;div class=&quot;paging&quot;&gt;
+    &lt;a class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot; href role=&quot;button&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot; href role=&quot;button&quot;&gt;&lt;/a&gt;
     &lt;div class=&quot;mobile-page&quot;&gt;
         &lt;input class=&quot;now-page&quot; type=&quot;number&quot; name=&quot;now-page&quot; aria-label=&quot;현재 페이지&quot;&gt;
         &lt;span class=&quot;all-page&quot; aria-label=&quot;총 페이지&quot;&gt;19&lt;/span&gt;
@@ -949,10 +948,9 @@ JS 내용 작성</code></pre>
         &lt;a href role=&quot;button&quot;&gt;4&lt;/a&gt;
         &lt;a href role=&quot;button&quot;&gt;5&lt;/a&gt;
     &lt;/div&gt;
-    &lt;button type=&quot;button&quot; class=&quot;next&quot;&quot; aria-label=&quot;다음 페이지&quot;&gt;&lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;last-next&quot; aria-label=&quot;끝으로 이동&quot;&gt;&lt;/button&gt;
-&lt;/div&gt;
-&lt;!-- [End] Paging Area --&gt;</code></pre>
+    &lt;a class=&quot;next&quot; aria-label=&quot;다음 페이지&quot; href role=&quot;button&quot;&gt;&lt;/a&gt;
+    &lt;a class=&quot;last-next&quot; aria-label=&quot;끝으로 이동&quot; href role=&quot;button&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
                     <p class="ui-kit-comment">
                         선택된 버튼은 <span class="blue">&lt;a&gt;</span> 요소에 <strong class="red">selected</strong> 클래스를 적용합니다.<br>
                         ex) <span class="blue">&lt;a href role="button" class="<strong class="red">selected</strong>"&gt;</span>
