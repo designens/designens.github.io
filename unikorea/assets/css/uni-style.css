@@ -1876,6 +1876,10 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .sub-search-area .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
 
+.sub-search-area .ul-list-type li .select-box { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+
+.sub-search-area .ul-list-type li .input-type-search { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+
 .sub-search-area .ul-list-type li .fr-align { display: block; float: inherit; }
 
 .sub-search-area .date-type * { margin-bottom: 10px; }
@@ -1887,8 +1891,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .sub-search-area .date-type button { width: 100%; }
 
 @media (min-width: 47.5em) { .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; margin-right: -8px; }
-  .sub-search-area .ul-list-type li:last-child { margin-bottom: 0; }
-  .sub-search-area .ul-list-type li .input-type-search { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+  .sub-search-area .ul-list-type li:last-child div { margin-bottom: 0; }
+  .sub-search-area .ul-list-type li .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
+  .sub-search-area .ul-list-type li .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
   .sub-search-area .ul-list-type li .input-type-search.full { min-width: auto; }
   .sub-search-area .date-type * { margin-bottom: 0; }
   .sub-search-area .date-type .select-box { width: 130px; margin-right: 8px; }
@@ -1939,13 +1944,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 소장자료 검색 > 초기화면
 /* (html/resources-search.html)
 /* =======================================*/
-.keyword-search-area .sub-search-area .ul-list-type li .search-1st { width: 38.18182%; float: left; margin-right: 3.0303%; margin-bottom: 5px; }
+.keyword-search-area .sub-search-area .ul-list-type li .search-1st { width: 58.78788%; float: left; margin-right: 3.0303%; margin-bottom: 5px; }
 
 .keyword-search-area .sub-search-area .ul-list-type li .search-2nd { width: 58.78788%; float: left; margin-right: 3.0303%; }
 
 .keyword-search-area .sub-search-area .ul-list-type li .search-3rd { width: 38.18182%; float: right; margin-right: 0; }
-
-.keyword-search-area .sub-search-area .ul-list-type li:last-child { margin-bottom: 10px; }
 
 .keyword-search-area .sub-search-area .dl-list-type dd { line-height: 2; }
 
@@ -1964,6 +1967,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .keyword-search-area .sub-search-area .dl-list-type dd .input-type input { width: 46.06061%; float: left; margin-right: 7.87879%; }
 
 .keyword-search-area .sub-search-area .dl-list-type dd .input-type input:last-child { float: right; margin-right: 0; }
+
+@media (min-width: 47.5em) { .keyword-search-area .sub-search-area .ul-list-type li .search-1st .select-box, .keyword-search-area .sub-search-area .ul-list-type li .search-3rd .select-box { width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .keyword-search-area .sub-search-area .ul-list-type li .search-1st { width: 13.17829%; float: left; margin-right: 1.29199%; margin-bottom: 0; }
   .keyword-search-area .sub-search-area .ul-list-type li .search-2nd { width: 71.05943%; float: left; margin-right: 1.29199%; }
@@ -2009,9 +2014,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 소장자료 검색 > 리스트
 /* (html/resources-search-list.html)
 /* =======================================*/
-@media (min-width: 47.5em) { .resources-search-list .ul-list-type li:last-child div { margin-bottom: 0; }
-  .resources-search-list .ul-list-type li .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
-  .resources-search-list .ul-list-type li .input-type-search { width: 85.52972%; float: right; margin-right: 0; } }
+@media (min-width: 47.5em) { .resources-search-list .ul-list-type li:last-child div { margin-bottom: 0; } }
 
 .sub-search-view-area { border: 1px solid #e7e7e7; }
 
@@ -2317,6 +2320,32 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .ranking-keyword-area li a:nth-of-type(1):hover, .ranking-keyword-area li a:nth-of-type(1):focus { text-decoration: underline; }
 
 .ranking-keyword-area li a[role="button"] { position: absolute; top: 9px; right: 6px; }
+
+/* =======================================*/
+/* 자료검색 > 인기 자료 검색 > 인기 대출 자료
+/* html/popular-loans-resources.html
+/* =======================================*/
+.best-ranking-area li { width: 47.89916%; float: left; text-align: center; }
+
+.best-ranking-area li:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+
+.best-ranking-area li:nth-child(2n + 2) { margin-left: 52.10084%; margin-right: -100%; clear: none; }
+
+.best-ranking-area li .ranking-img { position: relative; width: 78px; height: 106px; }
+
+.best-ranking-area li .ranking-img .ranking-num { position: absolute; top: -4px; left: -4px; width: 29px; height: 29px; line-height: 29px; color: #fff; text-align: center; background: #ff8134; }
+
+@media (min-width: 47.5em) and (max-width: 71.25em) { .best-ranking-area li { width: 32.16783%; float: left; }
+  .best-ranking-area li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .best-ranking-area li:nth-child(3n + 2) { margin-left: 33.91608%; margin-right: -100%; clear: none; }
+  .best-ranking-area li:nth-child(3n + 3) { margin-left: 67.83217%; margin-right: -100%; clear: none; } }
+
+@media (min-width: 71.25em) { .best-ranking-area li { width: 18.56287%; float: left; }
+  .best-ranking-area li:nth-child(5n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .best-ranking-area li:nth-child(5n + 2) { margin-left: 20.35928%; margin-right: -100%; clear: none; }
+  .best-ranking-area li:nth-child(5n + 3) { margin-left: 40.71856%; margin-right: -100%; clear: none; }
+  .best-ranking-area li:nth-child(5n + 4) { margin-left: 61.07784%; margin-right: -100%; clear: none; }
+  .best-ranking-area li:nth-child(5n + 5) { margin-left: 81.43713%; margin-right: -100%; clear: none; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
