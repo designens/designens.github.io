@@ -1656,11 +1656,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-.btn-set-area, .search-select-box-area, .search-select-box-area .fl-align, .search-select-box-area .fr-align, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline, .year-month-select-area, .ranking-keyword-area { *zoom: 1; }
+.btn-set-area, .search-select-box-area, .search-select-box-area .fl-align, .search-select-box-area .fr-align, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline, .year-month-select-area, .ranking-keyword-area, .best-ranking-area { *zoom: 1; }
 
-.btn-set-area:before, .search-select-box-area:before, .search-select-box-area .fl-align:before, .search-select-box-area .fr-align:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .year-month-select-area:before, .ranking-keyword-area:before, .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after { content: ""; display: block; }
+.btn-set-area:before, .search-select-box-area:before, .search-select-box-area .fl-align:before, .search-select-box-area .fr-align:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .year-month-select-area:before, .ranking-keyword-area:before, .best-ranking-area:before, .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after { content: ""; display: block; }
 
-.btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after { clear: both; }
+.btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after { clear: both; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -2325,7 +2325,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 인기 자료 검색 > 인기 대출 자료
 /* html/popular-loans-resources.html
 /* =======================================*/
-.best-ranking-area li { width: 47.89916%; float: left; text-align: center; }
+.best-ranking-area { background: #f1f1f1; padding-bottom: 20px; }
+
+.best-ranking-area li { width: 47.89916%; float: left; text-align: center; margin-top: 28px; }
 
 .best-ranking-area li:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
 
@@ -2335,10 +2337,24 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .best-ranking-area li .ranking-img .ranking-num { position: absolute; top: -4px; left: -4px; width: 29px; height: 29px; line-height: 29px; color: #fff; text-align: center; background: #ff8134; }
 
-@media (min-width: 47.5em) and (max-width: 71.25em) { .best-ranking-area li { width: 32.16783%; float: left; }
+.best-ranking-area li .ranking-img img { border: 1px solid #ddd; }
+
+.best-ranking-area li p { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 10px; }
+
+.best-ranking-area li .book-title { color: #333; font-weight: 500; margin-top: 10px; }
+
+.best-ranking-area li .book-author { color: #888; font-weight: 300; }
+
+@media (min-width: 47.5em) and (max-width: 53.75em) { .best-ranking-area li { width: 32.16783%; float: left; }
   .best-ranking-area li:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   .best-ranking-area li:nth-child(3n + 2) { margin-left: 33.91608%; margin-right: -100%; clear: none; }
   .best-ranking-area li:nth-child(3n + 3) { margin-left: 67.83217%; margin-right: -100%; clear: none; } }
+
+@media (min-width: 53.75em) and (max-width: 71.25em) { .best-ranking-area li { width: 23.68728%; float: left; }
+  .best-ranking-area li:nth-child(4n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .best-ranking-area li:nth-child(4n + 2) { margin-left: 25.43757%; margin-right: -100%; clear: none; }
+  .best-ranking-area li:nth-child(4n + 3) { margin-left: 50.87515%; margin-right: -100%; clear: none; }
+  .best-ranking-area li:nth-child(4n + 4) { margin-left: 76.31272%; margin-right: -100%; clear: none; } }
 
 @media (min-width: 71.25em) { .best-ranking-area li { width: 18.56287%; float: left; }
   .best-ranking-area li:nth-child(5n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
@@ -2346,6 +2362,33 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .best-ranking-area li:nth-child(5n + 3) { margin-left: 40.71856%; margin-right: -100%; clear: none; }
   .best-ranking-area li:nth-child(5n + 4) { margin-left: 61.07784%; margin-right: -100%; clear: none; }
   .best-ranking-area li:nth-child(5n + 5) { margin-left: 81.43713%; margin-right: -100%; clear: none; } }
+
+.popular-loans-resources .table-board-type { margin-top: 20px; }
+
+.popular-loans-resources .table-board-type .title { font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #1397c1; text-align: left; }
+
+.popular-loans-resources .table-board-type td { width: 50%; padding: 0; }
+
+.popular-loans-resources .table-board-type td > div:first-child .ranking-img { position: relative; width: 78px; height: 140px; line-height: 138px; margin: 0 auto; }
+
+.popular-loans-resources .table-board-type td > div:first-child .ranking-img .ranking-num { position: absolute; top: 15px; left: -3px; width: 29px; height: 29px; line-height: 29px; text-align: center; border: 1px solid #dedede; background: #fff9e9; }
+
+.popular-loans-resources .table-board-type td > div:first-child .ranking-img img { vertical-align: middle; }
+
+.popular-loans-resources .table-board-type td > div:last-child p { line-height: 1.5; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 10px; }
+
+.popular-loans-resources .table-board-type td > div:last-child .book-title { font-weight: 500; font-size: 15px; font-size: 1.5rem; margin-bottom: 12px; }
+
+.popular-loans-resources .table-board-type td > div:last-child .book-author, .popular-loans-resources .table-board-type td > div:last-child .book-publisher { display: none; color: #333; }
+
+.popular-loans-resources .table-board-type td > div:last-child .book-author span, .popular-loans-resources .table-board-type td > div:last-child .book-publisher span { color: #888; }
+
+@media (min-width: 47.5em) { .popular-loans-resources .table-board-type td > div:first-child { width: 120px; float: left; }
+  .popular-loans-resources .table-board-type td > div:first-child .ranking-img { height: 150px; line-height: 148px; }
+  .popular-loans-resources .table-board-type td > div:first-child .ranking-img .ranking-num { top: 20px; left: -3px; }
+  .popular-loans-resources .table-board-type td > div:last-child { width: -webkit-calc( 100% - 120px); width: -moz-calc( 100% - 120px); width: calc( 100% - 120px); float: left; padding-top: 20px; }
+  .popular-loans-resources .table-board-type td > div:last-child p { text-align: left; }
+  .popular-loans-resources .table-board-type td > div:last-child .book-author, .popular-loans-resources .table-board-type td > div:last-child .book-publisher { display: block; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
