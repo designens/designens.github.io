@@ -1639,71 +1639,71 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-content-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-content-size span, .btn-content-size img, .btn-content-size .icon { font-size: 10px; vertical-align: middle; }
+.btn-content-size img, .btn-content-size .fa, .btn-content-size .icon { font-size: 10px; vertical-align: middle; }
 
-.btn-content-size span.before, .btn-content-size img.before, .btn-content-size .icon.before { padding-right: 5px; }
+.btn-content-size img.before, .btn-content-size .fa.before, .btn-content-size .icon.before { padding-right: 5px; }
 
-.btn-content-size span.after, .btn-content-size img.after, .btn-content-size .icon.after { padding-left: 5px; }
+.btn-content-size img.after, .btn-content-size .fa.after, .btn-content-size .icon.after { padding-left: 5px; }
 
 .btn-item-size { position: relative; display: inline-block; min-width: 70px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-item-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-item-size span, .btn-item-size img, .btn-item-size .icon { font-size: 12px; vertical-align: middle; }
+.btn-item-size img, .btn-item-size .fa, .btn-item-size .icon { font-size: 12px; vertical-align: middle; }
 
-.btn-item-size span.before, .btn-item-size img.before, .btn-item-size .icon.before { padding-right: 5px; }
+.btn-item-size img.before, .btn-item-size .fa.before, .btn-item-size .icon.before { padding-right: 5px; }
 
-.btn-item-size span.after, .btn-item-size img.after, .btn-item-size .icon.after { padding-left: 5px; }
+.btn-item-size img.after, .btn-item-size .fa.after, .btn-item-size .icon.after { padding-left: 5px; }
 
 .btn-in-size { position: relative; display: inline-block; min-width: 70px; height: 35px; line-height: 31px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-in-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-in-size span, .btn-in-size img, .btn-in-size .icon { font-size: 16px; vertical-align: middle; }
+.btn-in-size img, .btn-in-size .fa, .btn-in-size .icon { font-size: 16px; vertical-align: middle; }
 
-.btn-in-size span.before, .btn-in-size img.before, .btn-in-size .icon.before { padding-right: 5px; }
+.btn-in-size img.before, .btn-in-size .fa.before, .btn-in-size .icon.before { padding-right: 5px; }
 
-.btn-in-size span.after, .btn-in-size img.after, .btn-in-size .icon.after { padding-left: 5px; }
+.btn-in-size img.after, .btn-in-size .fa.after, .btn-in-size .icon.after { padding-left: 5px; }
 
 .btn-out-size { position: relative; display: inline-block; min-width: 70px; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-out-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-out-size span, .btn-out-size img, .btn-out-size .icon { font-size: 20px; vertical-align: middle; }
+.btn-out-size img, .btn-out-size .fa, .btn-out-size .icon { font-size: 20px; vertical-align: middle; }
 
-.btn-out-size span.before, .btn-out-size img.before, .btn-out-size .icon.before { padding-right: 5px; }
+.btn-out-size img.before, .btn-out-size .fa.before, .btn-out-size .icon.before { padding-right: 5px; }
 
-.btn-out-size span.after, .btn-out-size img.after, .btn-out-size .icon.after { padding-left: 5px; }
+.btn-out-size img.after, .btn-out-size .fa.after, .btn-out-size .icon.after { padding-left: 5px; }
 
 .btn-table-view-size { position: relative; display: inline-block; min-width: 45px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-view-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-table-view-size span, .btn-table-view-size img, .btn-table-view-size .icon { font-size: 7px; vertical-align: middle; }
+.btn-table-view-size img, .btn-table-view-size .fa, .btn-table-view-size .icon { font-size: 7px; vertical-align: middle; }
 
-.btn-table-view-size span.before, .btn-table-view-size img.before, .btn-table-view-size .icon.before { padding-right: 5px; }
+.btn-table-view-size img.before, .btn-table-view-size .fa.before, .btn-table-view-size .icon.before { padding-right: 5px; }
 
-.btn-table-view-size span.after, .btn-table-view-size img.after, .btn-table-view-size .icon.after { padding-left: 5px; }
+.btn-table-view-size img.after, .btn-table-view-size .fa.after, .btn-table-view-size .icon.after { padding-left: 5px; }
 
 .btn-table-board-size { position: relative; display: inline-block; min-width: 56px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-board-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-table-board-size span, .btn-table-board-size img, .btn-table-board-size .icon { font-size: 12px; vertical-align: middle; }
+.btn-table-board-size img, .btn-table-board-size .fa, .btn-table-board-size .icon { font-size: 12px; vertical-align: middle; }
 
-.btn-table-board-size span.before, .btn-table-board-size img.before, .btn-table-board-size .icon.before { padding-right: 5px; }
+.btn-table-board-size img.before, .btn-table-board-size .fa.before, .btn-table-board-size .icon.before { padding-right: 5px; }
 
-.btn-table-board-size span.after, .btn-table-board-size img.after, .btn-table-board-size .icon.after { padding-left: 5px; }
+.btn-table-board-size img.after, .btn-table-board-size .fa.after, .btn-table-board-size .icon.after { padding-left: 5px; }
 
 .btn-more-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 18px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-more-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-more-size span, .btn-more-size img, .btn-more-size .icon { font-size: 17px; vertical-align: middle; }
+.btn-more-size img, .btn-more-size .fa, .btn-more-size .icon { font-size: 17px; vertical-align: middle; }
 
-.btn-more-size span.before, .btn-more-size img.before, .btn-more-size .icon.before { padding-right: 5px; }
+.btn-more-size img.before, .btn-more-size .fa.before, .btn-more-size .icon.before { padding-right: 5px; }
 
-.btn-more-size span.after, .btn-more-size img.after, .btn-more-size .icon.after { padding-left: 5px; }
+.btn-more-size img.after, .btn-more-size .fa.after, .btn-more-size .icon.after { padding-left: 5px; }
 
 .btn-more-size .icon.after { position: relative; display: inline-block; margin-left: 30px; vertical-align: inherit; }
 

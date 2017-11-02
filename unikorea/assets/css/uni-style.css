@@ -1738,71 +1738,71 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-content-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-content-size span, .btn-content-size img, .btn-content-size .icon { font-size: 10px; vertical-align: middle; }
+.btn-content-size img, .btn-content-size .fa, .btn-content-size .icon { font-size: 10px; vertical-align: middle; }
 
-.btn-content-size span.before, .btn-content-size img.before, .btn-content-size .icon.before { padding-right: 5px; }
+.btn-content-size img.before, .btn-content-size .fa.before, .btn-content-size .icon.before { padding-right: 5px; }
 
-.btn-content-size span.after, .btn-content-size img.after, .btn-content-size .icon.after { padding-left: 5px; }
+.btn-content-size img.after, .btn-content-size .fa.after, .btn-content-size .icon.after { padding-left: 5px; }
 
 .btn-item-size { position: relative; display: inline-block; min-width: 70px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-item-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-item-size span, .btn-item-size img, .btn-item-size .icon { font-size: 12px; vertical-align: middle; }
+.btn-item-size img, .btn-item-size .fa, .btn-item-size .icon { font-size: 12px; vertical-align: middle; }
 
-.btn-item-size span.before, .btn-item-size img.before, .btn-item-size .icon.before { padding-right: 5px; }
+.btn-item-size img.before, .btn-item-size .fa.before, .btn-item-size .icon.before { padding-right: 5px; }
 
-.btn-item-size span.after, .btn-item-size img.after, .btn-item-size .icon.after { padding-left: 5px; }
+.btn-item-size img.after, .btn-item-size .fa.after, .btn-item-size .icon.after { padding-left: 5px; }
 
 .btn-in-size { position: relative; display: inline-block; min-width: 70px; height: 35px; line-height: 31px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-in-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-in-size span, .btn-in-size img, .btn-in-size .icon { font-size: 16px; vertical-align: middle; }
+.btn-in-size img, .btn-in-size .fa, .btn-in-size .icon { font-size: 16px; vertical-align: middle; }
 
-.btn-in-size span.before, .btn-in-size img.before, .btn-in-size .icon.before { padding-right: 5px; }
+.btn-in-size img.before, .btn-in-size .fa.before, .btn-in-size .icon.before { padding-right: 5px; }
 
-.btn-in-size span.after, .btn-in-size img.after, .btn-in-size .icon.after { padding-left: 5px; }
+.btn-in-size img.after, .btn-in-size .fa.after, .btn-in-size .icon.after { padding-left: 5px; }
 
 .btn-out-size { position: relative; display: inline-block; min-width: 70px; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-out-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-out-size span, .btn-out-size img, .btn-out-size .icon { font-size: 20px; vertical-align: middle; }
+.btn-out-size img, .btn-out-size .fa, .btn-out-size .icon { font-size: 20px; vertical-align: middle; }
 
-.btn-out-size span.before, .btn-out-size img.before, .btn-out-size .icon.before { padding-right: 5px; }
+.btn-out-size img.before, .btn-out-size .fa.before, .btn-out-size .icon.before { padding-right: 5px; }
 
-.btn-out-size span.after, .btn-out-size img.after, .btn-out-size .icon.after { padding-left: 5px; }
+.btn-out-size img.after, .btn-out-size .fa.after, .btn-out-size .icon.after { padding-left: 5px; }
 
 .btn-table-view-size { position: relative; display: inline-block; min-width: 45px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-view-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-table-view-size span, .btn-table-view-size img, .btn-table-view-size .icon { font-size: 7px; vertical-align: middle; }
+.btn-table-view-size img, .btn-table-view-size .fa, .btn-table-view-size .icon { font-size: 7px; vertical-align: middle; }
 
-.btn-table-view-size span.before, .btn-table-view-size img.before, .btn-table-view-size .icon.before { padding-right: 5px; }
+.btn-table-view-size img.before, .btn-table-view-size .fa.before, .btn-table-view-size .icon.before { padding-right: 5px; }
 
-.btn-table-view-size span.after, .btn-table-view-size img.after, .btn-table-view-size .icon.after { padding-left: 5px; }
+.btn-table-view-size img.after, .btn-table-view-size .fa.after, .btn-table-view-size .icon.after { padding-left: 5px; }
 
 .btn-table-board-size { position: relative; display: inline-block; min-width: 56px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-board-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-table-board-size span, .btn-table-board-size img, .btn-table-board-size .icon { font-size: 12px; vertical-align: middle; }
+.btn-table-board-size img, .btn-table-board-size .fa, .btn-table-board-size .icon { font-size: 12px; vertical-align: middle; }
 
-.btn-table-board-size span.before, .btn-table-board-size img.before, .btn-table-board-size .icon.before { padding-right: 5px; }
+.btn-table-board-size img.before, .btn-table-board-size .fa.before, .btn-table-board-size .icon.before { padding-right: 5px; }
 
-.btn-table-board-size span.after, .btn-table-board-size img.after, .btn-table-board-size .icon.after { padding-left: 5px; }
+.btn-table-board-size img.after, .btn-table-board-size .fa.after, .btn-table-board-size .icon.after { padding-left: 5px; }
 
 .btn-more-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 18px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-more-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-more-size span, .btn-more-size img, .btn-more-size .icon { font-size: 17px; vertical-align: middle; }
+.btn-more-size img, .btn-more-size .fa, .btn-more-size .icon { font-size: 17px; vertical-align: middle; }
 
-.btn-more-size span.before, .btn-more-size img.before, .btn-more-size .icon.before { padding-right: 5px; }
+.btn-more-size img.before, .btn-more-size .fa.before, .btn-more-size .icon.before { padding-right: 5px; }
 
-.btn-more-size span.after, .btn-more-size img.after, .btn-more-size .icon.after { padding-left: 5px; }
+.btn-more-size img.after, .btn-more-size .fa.after, .btn-more-size .icon.after { padding-left: 5px; }
 
 .btn-more-size .icon.after { position: relative; display: inline-block; margin-left: 30px; vertical-align: inherit; }
 
@@ -1878,11 +1878,27 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .sub-search-area .ul-list-type li .fr-align { display: block; float: inherit; }
 
+.sub-search-area .date-type * { margin-bottom: 10px; }
+
+.sub-search-area .date-type *:last-child { margin-bottom: 0; }
+
+.sub-search-area .date-type .select-box { width: 100%; }
+
+.sub-search-area .date-type .input-type.date { width: 100%; }
+
+.sub-search-area .date-type .input-type.date .start-date, .sub-search-area .date-type .input-type.date .end-date { float: left; width: -webkit-calc( 100% / 2 - 15px); width: -moz-calc( 100% / 2 - 15px); width: calc( 100% / 2 - 15px); }
+
+.sub-search-area .date-type .input-type.date .start-date input, .sub-search-area .date-type .input-type.date .end-date input { float: left; width: -webkit-calc( 100% - 26px); width: -moz-calc( 100% - 26px); width: calc( 100% - 26px); }
+
+.sub-search-area .date-type .input-type.date .start-date button, .sub-search-area .date-type .input-type.date .end-date button { float: left; width: 26px; text-align: right; }
+
+.sub-search-area .date-type .input-type.date .and { float: left; display: inline-block; width: 30px; line-height: 35px; text-align: center; }
+
 @media (min-width: 47.5em) { .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; margin-right: -8px; }
   .sub-search-area .ul-list-type li:last-child div { margin-bottom: 0; }
-  .sub-search-area .ul-list-type li:last-child .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
   .sub-search-area .ul-list-type li:last-child .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
-  .sub-search-area .ul-list-type li:last-child .input-type-search.full { min-width: auto; } }
+  .sub-search-area .ul-list-type li:last-child .input-type-search.full { min-width: auto; }
+  .sub-search-area .date-type > button { margin-left: 10px; } }
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .sub-search-area { padding: 20px 15px; } }
 
@@ -1895,6 +1911,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 @media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
 
 @media (min-width: 71.25em) { .all-table-views { padding: 26px 15px 7px; } }
+
+.review-star { height: 30px; line-height: 30px; }
 
 .review-star .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
 
@@ -2273,11 +2291,15 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 인기 자료 검색 > 인기 키워드 자료
 /* html/popular-keywords-resources.html
 /* =======================================*/
-.keyword-cloud-area { height: 232px; padding: 30px 10px; }
+.keyword-cloud-area { text-align: center; height: 232px; padding: 30px 10px; border: 1px solid #ccc; }
 
-.keyword-cloud-area #keyword_cloud { min-width: 320px; }
+.keyword-cloud-area #keyword_cloud { position: relative; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); min-width: 240px; max-width: 370px; height: 170px; }
 
-.keyword-cloud-area #keyword_cloud a { font-family: "Noto Sans Korean", sans-serif, serif; transition: transform .35s; }
+.keyword-cloud-area #keyword_cloud a { font-family: "Noto Sans Korean", sans-serif, serif; }
+
+.keyword-cloud-area #keyword_cloud img { width: 100%; height: 100%; }
+
+.popular-keywords-resources .sub-search-area { text-align: center; margin-top: 20px; }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
@@ -2349,18 +2371,18 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 20px; vertical-align: middle; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 20px; vertical-align: middle; }
 
-.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
 
-.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; }
 
 @media (min-width: 47.5em) { .login-m.bhk .lo-wp form[name="login-frm"] .login { width: auto; }
   .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
   .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
-  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 50px; vertical-align: middle; }
-  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
-  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size span.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; } }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 50px; vertical-align: middle; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; } }
 
 @media only screen and (max-width: 760px) { .login-m.bhk { background: #fff; border-bottom: 1px solid #ddd; }
   .login-m.bhk .lo-wp { overflow: hidden; width: 290px; padding: 0 15px 30px; margin: 0 auto; }
