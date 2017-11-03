@@ -958,7 +958,298 @@ JS 내용 작성</code></pre>
                 </div>
             </article>
             <!-- [End] 페이징 스타일 공통 -->
+                
+            <!-- [Start] 탭 메뉴 스타일 공통 -->
+            <article>
+                    <h2>Tab Menu Area</h2>
+                    <div class="teb-menu-area">
+                        <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 기본 스타일</h3>
+                        <div class="tab-area">
+                            <div class="tab-menu">
+                                <a class="active" href="#" role="button">탭 메뉴 1</a>
+                                <a href="#" role="button">탭 메뉴 2</a>
+                            </div>
+                            <div class="tab-panel">
+                                탭 패널 영역 입니다.
+                            </div>
+                        </div>
+                        <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
+    &lt;div class=&quot;tab-menu&quot;&gt;
+        &lt;a class=&quot;active&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 1&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 2&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 3&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-panel&quot;&gt;
+        탭 패널 영역 입니다.
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 2~5개 반응형 스타일</h3>
+                        <div class="tab-area">
+                            <div class="tab-menu col-5">
+                                <a class="active" href="#" role="button">탭 메뉴 1</a>
+                                <a href="#" role="button">탭 메뉴 2</a>
+                                <a href="#" role="button">탭 메뉴 3</a>
+                                <a href="#" role="button">탭 메뉴 4</a>
+                                <a href="#" role="button">탭 메뉴 5</a>
+                            </div>
+                            <div class="tab-panel">
+                                탭 패널 영역 입니다.
+                            </div>
+                        </div>
+                        <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
+    &lt;div class=&quot;tab-menu col-5&quot;&gt;
+        &lt;a class=&quot;active&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 1&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 2&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 3&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 4&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;탭 메뉴 5&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-panel&quot;&gt;
+        탭 패널 영역 입니다.
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <div class="ui-kit-comment">
+                        탭 메뉴 2개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-2</span></strong>" class를 추가 합니다.<br>
+                        탭 메뉴 3개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-3</span></strong>" class를 추가 합니다.<br>
+                        탭 메뉴 4개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-4</span></strong>" class를 추가 합니다.<br>
+                        탭 메뉴 5개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-5</span></strong>" class를 추가 합니다.<br>
+                        <strong>col-<span class="red">num</span></strong>을 설정 안할 경우 <strong>Tablet(760px) 이하 디바이스는 1column</strong>으로 반응형 처리되어 디자인 됩니다.
+                    </div>
+                    </div>
+            </article>
+            <!-- [End] 탭 메뉴 스타일 공통 -->
             
+            <!-- [Start] 검색영역 스타일 공통 -->
+            <article>
+                <h2>Search Area</h2>
+                <div class="search-area">
+                    <h3><div class="fa fa-angle-double-right"></div>상단 라디오 &amp; 체크박스 삽입된 검색 영역 스타일</h3>
+                    <div class="sub-search-area">
+                        <ul class="ul-list-type">
+                             <li class="text-top-area">
+                                <div class="radio-type">
+                                    <input type="radio" id="search-range-01" name="search-range">
+                                    <label for="search-range-01">전체</label>
+                                </div>
+                                <div class="radio-type">
+                                    <input type="radio" id="search-range-02" name="search-range">
+                                    <label for="search-range-02">단행본</label>
+                                </div>
+                                <div class="radio-type">
+                                    <input type="radio" id="search-range-03" name="search-range">
+                                    <label for="search-range-03">연속간행물</label>
+                                </div>
+                                <div class="checkbox-type fr-align">
+                                    <input type="checkbox" id="data-type-01" name="data-type-01">
+                                    <label for="data-type-01">결과내 검색</label>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="select-box full">
+                                    <label for="select-01">전체</label>
+                                    <select id="select-01">
+                                        <option selected="selected">전체</option>
+                                        <option>옵션 01</option>
+                                        <option>옵션 02</option>
+                                        <option>옵션 03</option>
+                                    </select>
+                                </div>
+                                <div class="input-type-search full">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <button type="button" class="btn-in-size btn-blue">검색</button>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;sub-search-area&quot;&gt;
+    &lt;ul class=&quot;ul-list-type&quot;&gt;
+        &lt;li class=&quot;text-top-area&quot;&gt;
+            &lt;div class=&quot;radio-type&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;search-range-01&quot; name=&quot;search-range&quot;&gt;
+                &lt;label for=&quot;search-range-01&quot;&gt;전체&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio-type&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;search-range-02&quot; name=&quot;search-range&quot;&gt;
+                &lt;label for=&quot;search-range-02&quot;&gt;단행본&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio-type&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;search-range-03&quot; name=&quot;search-range&quot;&gt;
+                &lt;label for=&quot;search-range-03&quot;&gt;연속간행물&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;checkbox-type fr-align&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;data-type-01&quot; name=&quot;data-type-01&quot;&gt;
+                &lt;label for=&quot;data-type-01&quot;&gt;결과내 검색&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;select-box full&quot;&gt;
+                &lt;label for=&quot;select-01&quot;&gt;전체&lt;/label&gt;
+                &lt;select id=&quot;select-01&quot;&gt;
+                    &lt;option selected=&quot;selected&quot;&gt;전체&lt;/option&gt;
+                    &lt;option&gt;옵션 01&lt;/option&gt;
+                    &lt;option&gt;옵션 02&lt;/option&gt;
+                    &lt;option&gt;옵션 03&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;input-type-search full&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                    <h3><div class="fa fa-angle-double-right"></div>셀렉트박스 1개로 구성된 검색영역 스타일</h3>
+                    <div class="sub-search-area">
+                        <ul class="ul-list-type">
+                             <li>
+                                <div class="select-box full">
+                                    <label for="select-01">전체</label>
+                                    <select id="select-01">
+                                        <option selected="selected">전체</option>
+                                        <option>옵션 01</option>
+                                        <option>옵션 02</option>
+                                        <option>옵션 03</option>
+                                    </select>
+                                </div>
+                                <div class="input-type-search full">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <button type="button" class="btn-in-size btn-blue">검색</button>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;sub-search-area&quot;&gt;
+    &lt;ul class=&quot;ul-list-type&quot;&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;select-box full&quot;&gt;
+                &lt;label for=&quot;select-01&quot;&gt;전체&lt;/label&gt;
+                &lt;select id=&quot;select-01&quot;&gt;
+                    &lt;option selected=&quot;selected&quot;&gt;전체&lt;/option&gt;
+                    &lt;option&gt;옵션 01&lt;/option&gt;
+                    &lt;option&gt;옵션 02&lt;/option&gt;
+                    &lt;option&gt;옵션 03&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;input-type-search full&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                    <h3><div class="fa fa-angle-double-right"></div>셀렉트박스 2개로 구성된 검색영역 스타일</h3>
+                    <div class="sub-search-area item-two">
+                        <ul class="ul-list-type">
+                             <li>
+                                <div class="select-box full">
+                                    <label for="select-01">전체</label>
+                                    <select id="select-01">
+                                        <option selected="selected">전체</option>
+                                        <option>옵션 01</option>
+                                        <option>옵션 02</option>
+                                        <option>옵션 03</option>
+                                    </select>
+                                </div>
+                                <div class="select-box full">
+                                    <label for="select-01">전체</label>
+                                    <select id="select-01">
+                                        <option selected="selected">전체</option>
+                                        <option>옵션 01</option>
+                                        <option>옵션 02</option>
+                                        <option>옵션 03</option>
+                                    </select>
+                                </div>
+                                <div class="input-type-search full">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <button type="button" class="btn-in-size btn-blue">검색</button>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;sub-search-area&quot;&gt;
+    &lt;ul class=&quot;ul-list-type&quot;&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;select-box full&quot;&gt;
+                &lt;label for=&quot;select-01&quot;&gt;전체&lt;/label&gt;
+                &lt;select id=&quot;select-01&quot;&gt;
+                    &lt;option selected=&quot;selected&quot;&gt;전체&lt;/option&gt;
+                    &lt;option&gt;옵션 01&lt;/option&gt;
+                    &lt;option&gt;옵션 02&lt;/option&gt;
+                    &lt;option&gt;옵션 03&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;input-type-search full&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                     <h3><div class="fa fa-angle-double-right"></div>가운데 정렬로 구성된 검색영역 스타일</h3>
+                     <div class="sub-search-area item-canter">
+                        <div class="date-type">
+                            <div class="select-box">
+                                <label for="select-01">1주일</label>
+                                <select id="select-01">
+                                    <option selected="selected">1주일</option>
+                                    <option>1개월</option>
+                                    <option>3개월</option>
+                                    <option>6개월</option>
+                                    <option>1년</option>
+                                </select>
+                            </div>
+                             <div class="input-type date">
+                                <div class="start-date">
+                                    <input type="text" aria-label="시작 년, 월, 일">
+                                    <button type="button">
+                                        <img src="../assets/images/icon/icon-link-04.png" width="21px" height="23px" alt="선택">
+                                    </button>
+                                </div>
+                                <span class="and">~</span>
+                                <div class="end-date">
+                                    <input type="text" aria-label="마지막 년, 월, 일">
+                                    <button type="button">
+                                        <img src="../assets/images/icon/icon-link-04.png" width="21px" height="23px" alt="선택">
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn-in-size btn-blue" type="button">검색</button>
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;sub-search-area item-canter&quot;&gt;
+    &lt;div class=&quot;date-type&quot;&gt;
+        &lt;div class=&quot;select-box&quot;&gt;
+            &lt;label for=&quot;select-01&quot;&gt;1주일&lt;/label&gt;
+            &lt;select id=&quot;select-01&quot;&gt;
+                &lt;option selected=&quot;selected&quot;&gt;1주일&lt;/option&gt;
+                &lt;option&gt;1개월&lt;/option&gt;
+                &lt;option&gt;3개월&lt;/option&gt;
+                &lt;option&gt;6개월&lt;/option&gt;
+                &lt;option&gt;1년&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;input-type date&quot;&gt;
+            &lt;div class=&quot;start-date&quot;&gt;
+                &lt;input type=&quot;text&quot; aria-label=&quot;시작 년, 월, 일&quot;&gt;
+                &lt;button type=&quot;button&quot;&gt;
+                    &lt;img src=&quot;../assets/images/icon/icon-link-04.png&quot; width=&quot;21px&quot; height=&quot;23px&quot; alt=&quot;선택&quot;&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;and&quot;&gt;~&lt;/span&gt;
+            &lt;div class=&quot;end-date&quot;&gt;
+                &lt;input type=&quot;text&quot; aria-label=&quot;마지막 년, 월, 일&quot;&gt;
+                &lt;button type=&quot;button&quot;&gt;
+                    &lt;img src=&quot;../assets/images/icon/icon-link-04.png&quot; width=&quot;21px&quot; height=&quot;23px&quot; alt=&quot;선택&quot;&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn-in-size btn-blue&quot; type=&quot;button&quot;&gt;검색&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </article>
+            <!-- [End] 검색영역 스타일 공통 -->
+
             <!-- [Start] 팝업 기본 스타일 -->
             <article>
                 <h2>Popup Button</h2>

@@ -1561,7 +1561,7 @@
 
 .unibook-service .unibook-item li:last-child:after, .site-link-zone .headline h3 { display: none; visibility: hidden; }
 
-.unibook-service .unibook-item li:after { display: block; visibility: visible; }
+.unibook-service .unibook-item li:after { position: static; clip: auto; visibility: visible; }
 
 /* =======================================*/
 /* Base Fonts Style Settings

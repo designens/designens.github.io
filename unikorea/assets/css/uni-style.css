@@ -1868,41 +1868,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .search-select-box-area .fr-align .select-box:nth-of-type(2) { width: 48.72449%; float: left; margin-right: 2.55102%; }
   .search-select-box-area .fr-align .select-box:nth-of-type(3) { width: 48.72449%; float: right; margin-right: 0; } }
 
-.sub-search-area { background: #f1f1f1; padding: 20px 10px; }
-
-.sub-search-area .ul-list-type li.text-top-area { margin-top: -5px; margin-bottom: 0; }
-
-.sub-search-area .ul-list-type li:last-child div { margin-bottom: 10px; }
-
-.sub-search-area .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
-
-.sub-search-area .ul-list-type li .select-box { width: 100%; float: left; margin-left: 0; margin-right: 0; }
-
-.sub-search-area .ul-list-type li .input-type-search { width: 100%; float: left; margin-left: 0; margin-right: 0; }
-
-.sub-search-area .ul-list-type li .fr-align { display: block; float: inherit; }
-
-.sub-search-area .date-type * { margin-bottom: 10px; }
-
-.sub-search-area .date-type *:last-child { margin-bottom: 0; }
-
-.sub-search-area .date-type .select-box { width: 100%; }
-
-.sub-search-area .date-type button { width: 100%; }
-
-@media (min-width: 47.5em) { .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; margin-right: -8px; }
-  .sub-search-area .ul-list-type li:last-child div { margin-bottom: 0; }
-  .sub-search-area .ul-list-type li .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
-  .sub-search-area .ul-list-type li .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
-  .sub-search-area .ul-list-type li .input-type-search.full { min-width: auto; }
-  .sub-search-area .date-type * { margin-bottom: 0; }
-  .sub-search-area .date-type .select-box { width: 130px; margin-right: 8px; }
-  .sub-search-area .date-type > button { width: auto; margin-left: 10px; } }
-
-@media (min-width: 47.5em) and (max-width: 71.25em) { .sub-search-area { padding: 20px 15px; } }
-
-@media (min-width: 71.25em) { .sub-search-area { padding: 15px 31px; } }
-
 .all-table-views { padding: 7px 15px; }
 
 .all-table-views span { color: #ff8134; }
@@ -1910,14 +1875,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 @media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
 
 @media (min-width: 71.25em) { .all-table-views { padding: 26px 15px 7px; } }
-
-.review-star { height: 30px; line-height: 30px; }
-
-.review-star .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
-
-.review-star .fa.on { color: #54b477; }
-
-.review-star .star-number { font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #333; margin-left: 6px; }
 
 /* =======================================*/
 /* Content : 컨텐츠 영역
@@ -2292,15 +2249,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 인기 자료 검색 > 인기 키워드 자료
 /* html/popular-keywords-resources.html
 /* =======================================*/
-.keyword-cloud-area { text-align: center; height: 232px; padding: 30px 10px; border: 1px solid #ccc; }
+.keyword-cloud-area { text-align: center; height: 232px; padding: 30px 10px; border: 1px solid #ccc; margin-bottom: 20px; }
 
 .keyword-cloud-area #keyword_cloud { position: relative; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); min-width: 240px; max-width: 370px; height: 170px; }
 
 .keyword-cloud-area #keyword_cloud a { font-family: "Noto Sans Korean", sans-serif, serif; }
 
 .keyword-cloud-area #keyword_cloud img { width: 100%; height: 100%; }
-
-.popular-keywords-resources .sub-search-area { text-align: center; margin-top: 20px; }
 
 .ranking-keyword-area { margin-top: 20px; border-left: 1px solid #dedede; border-bottom: 1px solid #dedede; }
 
