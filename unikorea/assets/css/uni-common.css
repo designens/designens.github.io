@@ -2445,7 +2445,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .footer .site-link-area .select-box label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
 
-.footer .site-link-area .select-box select { width: 100%; height: 28px; color: inherit; line-height: 26px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.footer .site-link-area .select-box select { width: 100%; height: 28px; color: inherit; line-height: 26px; padding: 0 36px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .footer .site-link-area .select-box select:focus { border: 1px solid #002847; }
 
@@ -2727,7 +2727,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 26px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 36px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box select:focus { border: 1px solid #002847; }
 
@@ -2820,6 +2820,12 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .sub-search-area .ul-list-type li.text-top-area { margin-top: -5px; margin-bottom: 0; }
 
+.sub-search-area .ul-list-type li.text-top-area .fl-align { float: none; }
+
+.sub-search-area .ul-list-type li.text-top-area .fr-align { float: none; margin-bottom: 10px; }
+
+.sub-search-area .ul-list-type li.text-top-area .fr-align .select-box { width: auto; margin-right: 10px; }
+
 .sub-search-area .ul-list-type li:last-child div { margin-bottom: 10px; }
 
 .sub-search-area .ul-list-type li:last-child div:last-child { margin-bottom: 0; }
@@ -2841,7 +2847,9 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 @media (min-width: 47.5em) { .sub-search-area.item-two .ul-list-type .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
   .sub-search-area.item-two .ul-list-type .input-type-search { width: 71.05943%; float: right; margin-right: 0; }
   .sub-search-area.item-two .ul-list-type .input-type-search.full { min-width: auto; }
-  .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; margin-right: -8px; }
+  .sub-search-area .ul-list-type li.text-top-area .fl-align { float: left; }
+  .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; text-align: right; margin-right: -8px; }
+  .sub-search-area .ul-list-type li.text-top-area .fr-align .select-box { width: auto; }
   .sub-search-area .ul-list-type li:last-child div { margin-bottom: 0; }
   .sub-search-area .ul-list-type li .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
   .sub-search-area .ul-list-type li .input-type-search { width: 85.52972%; float: right; margin-right: 0; }

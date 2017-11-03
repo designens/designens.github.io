@@ -1023,6 +1023,105 @@ JS 내용 작성</code></pre>
             <article>
                 <h2>Search Area</h2>
                 <div class="search-area">
+                    <h3><div class="fa fa-angle-double-right"></div>상단 라디오 &amp; 체크박스  &amp; 셀렉트박스 삽입된 검색 영역 스타일</h3>
+                    <div class="sub-search-area">
+                        <ul class="ul-list-type">
+                             <li class="text-top-area">
+                                <div class="fl-align">
+                                    <div class="radio-type">
+                                        <input type="radio" id="search-range-01" name="search-range">
+                                        <label for="search-range-01">전체</label>
+                                    </div>
+                                    <div class="radio-type">
+                                        <input type="radio" id="search-range-02" name="search-range">
+                                        <label for="search-range-02">단행본</label>
+                                    </div>
+                                    <div class="radio-type">
+                                        <input type="radio" id="search-range-03" name="search-range">
+                                        <label for="search-range-03">연속간행물</label>
+                                    </div>
+                                </div>
+                                <div class="fr-align">
+                                    <div class="select-box">
+                                        <label for="select-01">전체</label>
+                                        <select id="select-01">
+                                            <option selected="selected">전체</option>
+                                            <option>옵션 01</option>
+                                            <option>옵션 02</option>
+                                            <option>옵션 03</option>
+                                        </select>
+                                    </div>
+                                    <div class="checkbox-type">
+                                        <input type="checkbox" id="data-type-01" name="data-type-01">
+                                        <label for="data-type-01">결과내 검색</label>
+                                    </div>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="select-box full">
+                                    <label for="select-01">전체</label>
+                                    <select id="select-01">
+                                        <option selected="selected">전체</option>
+                                        <option>옵션 01</option>
+                                        <option>옵션 02</option>
+                                        <option>옵션 03</option>
+                                    </select>
+                                </div>
+                                <div class="input-type-search full">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <button type="button" class="btn-in-size btn-blue">검색</button>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                    <pre><code class="language-html">&lt;ul class=&quot;ul-list-type&quot;&gt;
+    &lt;li class=&quot;text-top-area&quot;&gt;
+        &lt;div class=&quot;fl-align&quot;&gt;
+            &lt;div class=&quot;radio-type&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;search-range-01&quot; name=&quot;search-range&quot;&gt;
+                &lt;label for=&quot;search-range-01&quot;&gt;전체&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio-type&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;search-range-02&quot; name=&quot;search-range&quot;&gt;
+                &lt;label for=&quot;search-range-02&quot;&gt;단행본&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;radio-type&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;search-range-03&quot; name=&quot;search-range&quot;&gt;
+                &lt;label for=&quot;search-range-03&quot;&gt;연속간행물&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fr-align&quot;&gt;
+            &lt;div class=&quot;select-box&quot;&gt;
+                &lt;label for=&quot;select-01&quot;&gt;전체&lt;/label&gt;
+                &lt;select id=&quot;select-01&quot;&gt;
+                    &lt;option selected=&quot;selected&quot;&gt;전체&lt;/option&gt;
+                    &lt;option&gt;옵션 01&lt;/option&gt;
+                    &lt;option&gt;옵션 02&lt;/option&gt;
+                    &lt;option&gt;옵션 03&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;checkbox-type&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;data-type-01&quot; name=&quot;data-type-01&quot;&gt;
+                &lt;label for=&quot;data-type-01&quot;&gt;결과내 검색&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;select-box full&quot;&gt;
+            &lt;label for=&quot;select-01&quot;&gt;전체&lt;/label&gt;
+            &lt;select id=&quot;select-01&quot;&gt;
+                &lt;option selected=&quot;selected&quot;&gt;전체&lt;/option&gt;
+                &lt;option&gt;옵션 01&lt;/option&gt;
+                &lt;option&gt;옵션 02&lt;/option&gt;
+                &lt;option&gt;옵션 03&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;input-type-search full&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>상단 라디오 &amp; 체크박스 삽입된 검색 영역 스타일</h3>
                     <div class="sub-search-area">
                         <ul class="ul-list-type">
