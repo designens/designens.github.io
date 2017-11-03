@@ -1665,8 +1665,6 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 [class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
 
-[class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { position: static; clip: auto; visibility: visible; }
-
 /* =======================================*/
 /* Base Fonts Style Settings
 /* =======================================*/
@@ -1995,7 +1993,8 @@ table .col-hidden { display: none; }
 @media (min-width: 53.75em) { [class*="table-view-type"] tbody { border-bottom: 1px solid #ccc; }
   [class*="table-view-type"] th, [class*="table-view-type"] td { border: 1px solid #ccc; border-bottom: 0; }
   [class*="table-view-type"] td:before { content: ""; }
-  [class*="table-view-type"][class*="list-type"] { display: table; width: 100%; }
+  [class*="table-view-type"][class*="list-type"] { width: 100%; }
+  [class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { position: static; clip: auto; visibility: visible; }
   [class*="table-view-type"][class*="list-type"] thead { border-bottom: 0; }
   [class*="table-view-type"][class*="list-type"] tbody { border-bottom: 1px solid #ccc; }
   [class*="table-view-type"][class*="list-type"] th, [class*="table-view-type"][class*="list-type"] td { display: table-cell; height: auto; text-align: center; border: 1px solid #ccc; border-bottom: 0; }

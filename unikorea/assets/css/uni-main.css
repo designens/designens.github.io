@@ -1559,9 +1559,7 @@
 
 .btn-set-area:after, .unibook-service .unibook-item:after, .site-link-zone ul:after { clear: both; }
 
-.unibook-service .unibook-item li:last-child:after, .site-link-zone .headline h3 { display: none; visibility: hidden; }
-
-.unibook-service .unibook-item li:after { position: static; clip: auto; visibility: visible; }
+.unibook-service .unibook-item li:last-child:after, .site-link-zone .headline h3 { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1815,7 +1813,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .unibook-service .unibook-item li:nth-child(3n + 3) { margin-left: 66.66667%; margin-right: -100%; clear: none; }
 
-.unibook-service .unibook-item li:after { position: absolute; top: 2px; right: 0; width: 1px; height: 97px; background: linear-gradient(to bottom, #b6c6d5 69%, transparent 70%); background-size: 1px 10px; content: ""; }
+.unibook-service .unibook-item li:after { position: absolute; top: 2px; right: 0; width: 1px; height: 97px; background: linear-gradient(to bottom, #b6c6d5 69%, transparent 70%); background-size: 1px 10px; content: ""; position: static; clip: auto; visibility: visible; }
 
 .unibook-service .unibook-item li h3 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem; text-align: center; font-weight: 500; color: #333; margin-top: 68px; }
 
