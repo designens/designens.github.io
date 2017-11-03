@@ -1750,6 +1750,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-content-size img.after, .btn-content-size .fa.after, .btn-content-size .icon.after { padding-left: 5px; }
 
+.btn-content-size .fa-search { vertical-align: text-top; }
+
 .btn-item-size { position: relative; display: inline-block; min-width: 70px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-item-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
@@ -1759,6 +1761,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .btn-item-size img.before, .btn-item-size .fa.before, .btn-item-size .icon.before { padding-right: 5px; }
 
 .btn-item-size img.after, .btn-item-size .fa.after, .btn-item-size .icon.after { padding-left: 5px; }
+
+.btn-item-size .fa-search { vertical-align: text-top; }
 
 .btn-in-size { position: relative; display: inline-block; min-width: 70px; height: 35px; line-height: 31px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
@@ -1770,6 +1774,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-in-size img.after, .btn-in-size .fa.after, .btn-in-size .icon.after { padding-left: 5px; }
 
+.btn-in-size .fa-search { vertical-align: text-top; }
+
 .btn-out-size { position: relative; display: inline-block; min-width: 70px; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-out-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
@@ -1779,6 +1785,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .btn-out-size img.before, .btn-out-size .fa.before, .btn-out-size .icon.before { padding-right: 5px; }
 
 .btn-out-size img.after, .btn-out-size .fa.after, .btn-out-size .icon.after { padding-left: 5px; }
+
+.btn-out-size .fa-search { vertical-align: text-top; }
 
 .btn-table-view-size { position: relative; display: inline-block; min-width: 45px; height: 23px; line-height: 19px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
@@ -1790,6 +1798,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-table-view-size img.after, .btn-table-view-size .fa.after, .btn-table-view-size .icon.after { padding-left: 5px; }
 
+.btn-table-view-size .fa-search { vertical-align: text-top; }
+
 .btn-table-board-size { position: relative; display: inline-block; min-width: 56px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-board-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
@@ -1800,6 +1810,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-table-board-size img.after, .btn-table-board-size .fa.after, .btn-table-board-size .icon.after { padding-left: 5px; }
 
+.btn-table-board-size .fa-search { vertical-align: text-top; }
+
 .btn-more-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 18px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-more-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
@@ -1809,6 +1821,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .btn-more-size img.before, .btn-more-size .fa.before, .btn-more-size .icon.before { padding-right: 5px; }
 
 .btn-more-size img.after, .btn-more-size .fa.after, .btn-more-size .icon.after { padding-left: 5px; }
+
+.btn-more-size .fa-search { vertical-align: text-top; }
 
 .btn-more-size .icon.after { position: relative; display: inline-block; margin-left: 30px; vertical-align: inherit; }
 
