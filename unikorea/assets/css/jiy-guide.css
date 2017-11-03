@@ -2277,6 +2277,17 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 .area-visible { display: none; visibility: visible; }
 
 /* =======================================*/
+/* 영역 간의 기본 간격 20px
+/* =======================================*/
+.gutter-top-20 { margin-top: 20px !important; }
+
+.gutter-bottom-20 { margin-bottom: 20px !important; }
+
+.gutter-left-20 { margin-left: 20px !important; }
+
+.gutter-right-20 { margin-right: 20px !important; }
+
+/* =======================================*/
 /* 공간 지우기 설정
 /* =======================================*/
 .pt-zero { padding-top: 0 !important; }

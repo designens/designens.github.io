@@ -1872,15 +1872,14 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-box-area .fl-align .icon-img-type { color: #09c; padding-left: 23px; background: url("../../assets/images/icon/icon-img-type.svg") left center no-repeat; }
 
-.search-select-box-area .fr-align .select-box { margin-top: 3px; margin-right: 6px; }
+.search-select-box-area .fr-align .select-box, .search-select-box-area .fr-align button { margin-top: 3px; margin-left: 6px; vertical-align: top; }
 
-.search-select-box-area .fr-align .select-box:last-child { margin-right: 0; }
-
-@media (min-width: 1em) and (max-width: 30em) { .search-select-box-area .fr-align { float: none; clear: both; }
+@media (min-width: 1em) and (max-width: 45em) { .search-select-box-area .fr-align { float: none; clear: both; }
   .search-select-box-area .fr-align .select-box { margin-top: -2px; margin-bottom: 10px; }
   .search-select-box-area .fr-align .select-box:nth-of-type(1) { width: 100%; float: left; margin-left: 0; margin-right: 0; }
-  .search-select-box-area .fr-align .select-box:nth-of-type(2) { width: 48.72449%; float: left; margin-right: 2.55102%; }
-  .search-select-box-area .fr-align .select-box:nth-of-type(3) { width: 48.72449%; float: right; margin-right: 0; } }
+  .search-select-box-area .fr-align .select-box:nth-of-type(2) { width: 48.72449%; float: left; margin-right: 2.55102%; margin-left: 0; }
+  .search-select-box-area .fr-align .select-box:nth-of-type(3) { width: 48.72449%; float: right; margin-right: 0; margin-left: 0; }
+  .search-select-box-area .fr-align button { width: 100%; float: left; margin-left: 0; margin-right: 0; margin-top: -2px; margin-bottom: 10px; } }
 
 .all-table-views { padding: 7px 15px; }
 
