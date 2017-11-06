@@ -1870,7 +1870,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-box-area { background: #f1f1f1; padding: 0 15px; line-height: 41px; }
 
-.search-select-box-area .fl-align .icon-img-type { color: #09c; padding-left: 23px; background: url("../../assets/images/icon/icon-img-type.svg") left center no-repeat; }
+.search-select-box-area .fl-align .icon-img-type { color: #09c; }
 
 .search-select-box-area .fr-align .select-box, .search-select-box-area .fr-align button { margin-top: 3px; margin-left: 6px; vertical-align: top; }
 
@@ -2305,7 +2305,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .best-ranking-area li .ranking-img .ranking-num { position: absolute; top: -4px; left: -4px; width: 29px; height: 29px; line-height: 29px; color: #fff; text-align: center; background: #ff8134; }
 
-.best-ranking-area li .ranking-img img { border: 1px solid #ddd; }
+.best-ranking-area li .ranking-img img { width: 75px; height: 103px; border: 1px solid #ddd; }
 
 .best-ranking-area li p { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 10px; }
 
@@ -2341,7 +2341,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .popular-loans-resources .table-board-type td > div:first-child .ranking-img .ranking-num { position: absolute; top: 15px; left: -3px; width: 29px; height: 29px; line-height: 29px; text-align: center; border: 1px solid #dedede; background: #fff9e9; }
 
-.popular-loans-resources .table-board-type td > div:first-child .ranking-img img { vertical-align: middle; }
+.popular-loans-resources .table-board-type td > div:first-child .ranking-img img { width: 75px; height: 103px; vertical-align: middle; border: 1px solid #ddd; }
 
 .popular-loans-resources .table-board-type td > div:last-child p { line-height: 1.5; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 10px; }
 
