@@ -2033,15 +2033,15 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .sub-search-view-area li .sub-result .checkbox-type:nth-child(4n + 3), .sub-search-view-area li .sub-result .radio-type:nth-child(4n + 3) { margin-left: 51.24378%; margin-right: -100%; clear: none; }
   .sub-search-view-area li .sub-result .checkbox-type:nth-child(4n + 4), .sub-search-view-area li .sub-result .radio-type:nth-child(4n + 4) { margin-left: 76.86567%; margin-right: -100%; clear: none; } }
 
-.search-select-content .list-item { padding: 20px 31px; border: 1px solid #ddd; margin-top: 10px; }
+.search-select-content .list-item { position: relative; padding: 20px 15px 10px; border: 1px solid #ddd; margin-top: 10px; }
 
 .search-select-content .list-item li.item-number .checkbox-type label, .search-select-content .list-item li.item-number .radio-type label { padding-left: 26px; }
 
-.search-select-content .list-item li.item-img { text-align: center; }
+.search-select-content .list-item li.item-img { text-align: center; margin-bottom: 10px; }
 
 .search-select-content .list-item li.item-img img { width: 75px; height: 103px; border: 1px solid #ddd; }
 
-.search-select-content .list-item li.item-text .icon-list-item { height: 24px; line-height: 24px; font-weight: 500; }
+.search-select-content .list-item li.item-text .icon-list-item { position: absolute; top: 18px; right: 15px; height: 24px; line-height: 24px; font-weight: 500; }
 
 .search-select-content .list-item li.item-text .icon-list-item img { vertical-align: -2px; margin-right: 5px; }
 
@@ -2063,7 +2063,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item li.item-text .btn-item-table:before { display: inline-block; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; width: 20px; height: 20px; line-height: 20px; margin-right: 5px; background: #ff8134; }
 
-.search-select-content .list-item li.item-table-area { display: none; }
+.search-select-content .list-item li.item-table-area { display: none; margin-bottom: 10px; }
 
 .search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
 
@@ -2079,10 +2079,12 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item li.item-table-area .table-view-type-01 td:nth-of-type(7):before { content: "서비스"; }
 
+@media (min-width: 47.5em) { .search-select-content .list-item { padding: 20px 31px 10px; }
+  .search-select-content .list-item li.item-text .icon-list-item { right: 31px; } }
+
 @media (min-width: 71.25em) { .search-select-content .list-item li.item-number { width: 10.07752%; float: left; margin-right: 1.16279%; }
-  .search-select-content .list-item li.item-img { width: 10.07752%; float: left; margin-right: 1.16279%; }
-  .search-select-content .list-item li.item-text { width: 77.51938%; float: right; margin-right: 0; position: relative; padding-left: 10px; }
-  .search-select-content .list-item li.item-text .icon-list-item { position: absolute; top: 0; right: 0; }
+  .search-select-content .list-item li.item-img { width: 10.07752%; float: left; margin-right: 1.16279%; margin-bottom: 0; }
+  .search-select-content .list-item li.item-text { width: 77.51938%; float: right; margin-right: 0; padding-left: 10px; }
   .search-select-content .list-item li.item-text .btn-item-table { margin-bottom: 0; }
   .search-select-content .list-item li.item-table-area { clear: both; width: 100%; float: left; margin-left: 0; margin-right: 0; }
   .search-select-content .list-item li.item-table-area table { margin-top: 20px; } }
