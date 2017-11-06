@@ -2168,11 +2168,6 @@ table .col-hidden { display: none; }
 @media (min-width: 71.25em) { #gnb-all-menu { width: 100%; padding: 0 21px 40px; border-bottom: 1px solid #d4d4d4; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background: #ffffff; }
   #gnb-all-menu .wrap { max-width: 1140px; margin-left: auto; margin-right: auto; }
   #gnb-all-menu .wrap:after { content: " "; display: block; clear: both; }
-  head { display: block; position: fixed; right: 10px; top: 10px; z-index: 999; color: #333; background: rgba(255, 255, 255, 0.25); }
-  head:before { content: "|||"; display: block; padding: 5px 10px; font-family: sans-serif; font-size: 16px; font-weight: bold; }
-  head:hover { background: rgba(255, 255, 255, 0.5); color: red; }
-  head:hover ~ #gnb-all-menu .wrap, head:hover ~ body #gnb-all-menu .wrap { position: relative; }
-  head:hover ~ #gnb-all-menu .wrap:before, head:hover ~ body #gnb-all-menu .wrap:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(69, 144, 230, 0.25), rgba(136, 184, 239, 0.25) 71.42857%, transparent 71.42857%); background-size: 17.5%; background-origin: content-box; background-clip: content-box; background-position: left top; }
   #gnb-all-menu .wrap > li { width: 13.63636%; float: left; }
   #gnb-all-menu .wrap > li:nth-child(6n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
   #gnb-all-menu .wrap > li:nth-child(6n + 2) { margin-left: 17.27273%; margin-right: -100%; clear: none; }
@@ -2251,14 +2246,8 @@ table .col-hidden { display: none; }
 
 .wrap:after { content: " "; display: block; clear: both; }
 
-head:hover ~ .wrap, head:hover ~ body .wrap { position: relative; }
-
-head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(69, 144, 230, 0.25), rgba(136, 184, 239, 0.25) 100%, transparent 100%); background-size: 16.66667%; background-origin: content-box; background-clip: content-box; background-position: left top; }
-
 @media (min-width: 71.25em) { .wrap { max-width: 1140px; margin-left: auto; margin-right: auto; }
-  .wrap:after { content: " "; display: block; clear: both; }
-  head:hover ~ .wrap, head:hover ~ body .wrap { position: relative; }
-  head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: " "; z-index: 998; background-image: linear-gradient(to right, rgba(69, 144, 230, 0.25), rgba(136, 184, 239, 0.25) 88.23529%, transparent 88.23529%); background-size: 17%; background-origin: content-box; background-clip: content-box; background-position: left top; } }
+  .wrap:after { content: " "; display: block; clear: both; } }
 
 /* =======================================*/
 /* 아이템 정렬
@@ -2456,7 +2445,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .footer .site-link-area .select-box label { position: absolute; width: 100%; height: 28px; color: transparent; z-index: -1; }
 
-.footer .site-link-area .select-box select { width: 100%; height: 28px; color: inherit; line-height: 26px; padding: 0 36px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.footer .site-link-area .select-box select { width: 100%; height: 28px; color: inherit; line-height: 26px; padding: 0 30px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .footer .site-link-area .select-box select:focus { border: 1px solid #002847; }
 
@@ -2740,7 +2729,7 @@ head:hover ~ .wrap:before, head:hover ~ body .wrap:before { position: absolute; 
 
 .select-box label { position: absolute; width: 100%; height: 35px; color: transparent; z-index: -1; }
 
-.select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 36px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; /* 기본 버튼 속성 무시*/ -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+.select-box select { width: 100%; height: 35px; color: inherit; line-height: 33px; padding: 0 30px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
 
 .select-box select:focus { border: 1px solid #002847; }
 
