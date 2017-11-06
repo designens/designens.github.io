@@ -1663,7 +1663,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-set-area:after, [class*="table-view-type"]:after, .popup .popup-headline:after, .popup .popup-content:after, #gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .paging:after, .input-type.tel:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { clear: both; }
 
-[class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+[class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead, [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1674,7 +1674,7 @@ html[lang="ko-KR"], html[lang="ko"] { font-family: "Noto Sans Korean", sans-seri
 
 html[lang="en"] { font-family: Arial, sans-serif, serif; }
 
-html body { font-size: 1.4rem; color: #464646; line-height: 21px; }
+html body { font-size: 1.5rem; color: #464646; line-height: 22.5px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { html body { -webkit-font-smoothing: antialiased; } }
 
@@ -1694,7 +1694,7 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
-pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21px; }
+pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.5px; }
 
 /* =======================================*/
 /* 버튼 반응형 적용 레이아웃 구성 설정
@@ -1975,7 +1975,11 @@ table .col-hidden { display: none; }
 
 [class*="table-view-type"] td img { margin: 6px 0; }
 
-[class*="table-view-type"][class*="list-type"] thead, [class*="table-view-type"][class*="list-type"] tbody { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+[class*="table-view-type"][class*="list-type"] thead, [class*="table-view-type"][class*="list-type"] tbody { border-bottom: 1px solid #ccc; }
+
+[class*="table-view-type"][class*="list-type"] tr { border-top: 1px solid #999; }
+
+[class*="table-view-type"][class*="list-type"] tr:first-child { border-top: 1px solid #ccc; }
 
 [class*="table-view-type"][class*="list-type"] th, [class*="table-view-type"][class*="list-type"] td { display: block; width: 100%; border-top: 0; border-bottom: 1px solid #ccc; border-left: 0; border-right: 0; }
 
@@ -2020,6 +2024,12 @@ table .col-hidden { display: none; }
 [class*="table-board-type"] tbody td img { vertical-align: -2px; }
 
 [class*="table-board-type"] tbody td pre { padding: 20px 10px; font-weight: 300; }
+
+@media (min-width: 30em) and (max-width: 53.75em) { [class*="table-board-type"][class*="list-type"] tbody td { padding: 4px 10px 4px 32%; }
+  [class*="table-board-type"][class*="list-type"] tbody td:before { width: 30%; content: ""; } }
+
+@media (min-width: 53.75em) { [class*="table-board-type"][class*="list-type"] { width: 100%; }
+  [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: static; clip: auto; visibility: visible; } }
 
 .table-board-prev-next-area { border-top: 1px solid #dedede; margin-top: 30px; }
 

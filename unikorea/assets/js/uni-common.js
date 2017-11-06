@@ -3,35 +3,37 @@
 // =================================================================
 (function(global, doc, $) {
 
-    // SVGInjector : Style 설정
-    var svgInjection = function() {
-        // img.inject-me 요소 수집해서 mySVGsToInject 변수에 참조
-        var mySVGsToInject = doc.querySelectorAll('img.inject-svg');
-        // SVG 주입(Injector) 설정 옵션
-        var injectorOptions = {
-            evalScripts: 'once', // always, once, never
-            pngFallback: 'images/ie-assets', // PNG 대체 폴더 설정
-            each: function(svg) {
-                // svg는 수집된 개별 img.inject-me를 가리킴
-                console.log(svg.id);
-            }
-        };
-        // SVGInjector 함수에 연결
-        SVGInjector(
-            // 수집된 img.inject-me 요소
-            mySVGsToInject,
+    if ( global.location.protocol !== 'file:' ) {
+        // SVGInjector : Style 설정
+        var svgInjection = function() {
+            // img.inject-me 요소 수집해서 mySVGsToInject 변수에 참조
+            var mySVGsToInject = doc.querySelectorAll('img.inject-svg');
             // SVG 주입(Injector) 설정 옵션
-            injectorOptions,
-            // 콜백 함수
-            function(totalSVGsInjected) {
-                // totalSVGsInjected는 SVG 주입된 설정 개수를 출력
-                // console.log(totalSVGsInjected);
-            }
-        );
-    };
+            var injectorOptions = {
+                evalScripts: 'once', // always, once, never
+                pngFallback: 'images/ie-assets', // PNG 대체 폴더 설정
+                each: function(svg) {
+                    // svg는 수집된 개별 img.inject-me를 가리킴
+                    console.log(svg.id);
+                }
+            };
+            // SVGInjector 함수에 연결
+            SVGInjector(
+                // 수집된 img.inject-me 요소
+                mySVGsToInject,
+                // SVG 주입(Injector) 설정 옵션
+                injectorOptions,
+                // 콜백 함수
+                function(totalSVGsInjected) {
+                    // totalSVGsInjected는 SVG 주입된 설정 개수를 출력
+                    // console.log(totalSVGsInjected);
+                }
+            );
+        };
 
-    // IMG => SVG로 변환, ie9 이하 버전 PNG로 대체
-    svgInjection();
+        // IMG => SVG로 변환, ie9 이하 버전 PNG로 대체
+        svgInjection();
+    }
 
 })(window, document, window.jQuery);
 
@@ -248,8 +250,7 @@
 
     var $btn_result_search = $(".btn-result-search"),
         result_table_area = ".sub-search-view-area";
-    
-    $btn_result_search.addClass("open");
+
     $btn_result_search.click(function(e) {
         e.preventDefault();
         var $this = $(this);

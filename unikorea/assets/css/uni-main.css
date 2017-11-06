@@ -1570,7 +1570,7 @@ html[lang="ko-KR"], html[lang="ko"] { font-family: "Noto Sans Korean", sans-seri
 
 html[lang="en"] { font-family: Arial, sans-serif, serif; }
 
-html body { font-size: 1.4rem; color: #464646; line-height: 21px; }
+html body { font-size: 1.5rem; color: #464646; line-height: 22.5px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { html body { -webkit-font-smoothing: antialiased; } }
 
@@ -1590,7 +1590,7 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
-pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21px; }
+pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.5px; }
 
 /* =======================================*/
 /* 버튼 반응형 적용 레이아웃 구성 설정
