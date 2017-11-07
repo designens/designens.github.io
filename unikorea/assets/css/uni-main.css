@@ -1883,7 +1883,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .serial-carousel-wrap .serial-carousel .owl-carousel .owl-dots .owl-dot.active:focus { background: #3466a2; }
 
-@media (min-width: 30em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 100px 0 100px; }
+@media (min-width: 30em) { .serial-carousel-wrap .serial-carousel .owl-carousel { padding: 74px 90px 0 90px; }
   .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-prev { left: 0; }
   .serial-carousel-wrap .serial-carousel .owl-carousel .owl-nav .owl-next { right: 0; } }
 
@@ -1968,7 +1968,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 @media (min-width: 71.25em) { .notice-zone { padding-bottom: 0; border-top: 0; border-bottom: 0; margin-top: 0; margin-bottom: 0; }
   .notice-zone .headline { margin-top: 0; }
-  .notice-zone ul li .title-text { width: 270px; }
+  .notice-zone ul li .title-text { width: 270px; margin-right: 0; }
   .notice-zone ul li .date-text { width: auto; } }
 
 /* =======================================*/
