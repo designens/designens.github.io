@@ -77,7 +77,8 @@
 (function(global, $) {
     
     // 상단 메뉴 버튼 클릭 시 전체메뉴 오픈
-    $("#gnb-menu li button , .btn-gnb-menu").click(function() {
+    $("#gnb-menu li button , .btn-gnb-menu , .btn-site-map").click(function(e) {
+        e.preventDefault();
        if($("#gnb-all-menu").css("display") == "none" ) $("#gnb-all-menu").slideDown("slow");
        else $("#gnb-all-menu").slideUp("slow");
     });
