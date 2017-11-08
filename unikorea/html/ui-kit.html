@@ -167,7 +167,7 @@ JS 내용 작성</code></pre>
                     <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
                     <!-- [Start] Placeholder가 있는 인풋 스타일 -->
                     <div class="input-type">
-                        <input type="text" placeholder="Placeholder 내용"  aria-label="내용 설명"/>
+                        <input type="text" placeholder="Placeholder 내용" aria-label="내용 설명"/>
                     </div>
 <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용&quot; aria-label=&quot;내용 설명&quot; /&gt;
@@ -672,7 +672,7 @@ JS 내용 작성</code></pre>
                         ex) <span class="blue">&lt;table class="</span><strong>table-view-type</strong><strong class="red">-01</strong><span class="blue"> list-type"&gt;</span><br>
                     </p>
 
-                    <h3><span class="fa fa-table"></span>반응형 테이블 (column 감추기 타입)</h3>
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (List 내부 column 숨김 타입)</h3>
                     <table class="table-view-type">
                         <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
                         <col width="98">
@@ -748,6 +748,109 @@ JS 내용 작성</code></pre>
                     </p>
 
                     <h3><span class="fa fa-table"></span>반응형 테이블 (Board list 타입)</h3>
+                    <table class="table-board-type-num list-type">
+                        <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
+                        <col width="60">
+                        <col width="auto">
+                        <col width="70">
+                        <col width="100">
+                        <col width="80">
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">첨부</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody class="align-left col-2">
+                            <tr>
+                                <td>5</td>
+                                <td>2017년 통일부 신진연구자 정책연구 과제 공모 안내</td>
+                                <td><a href="/"><img src="../assets/images/icon/icon-attachments.png" alt="첨부파일명.hwp"></a></td>
+                                <td>2017-09-27</td>
+                                <td>174</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>북한자료센터 서비스 일정 안내</td>
+                                <td></td>
+                                <td>2017-09-27</td>
+                                <td>174</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td> 북한자료센터 이사기간 휴관 안내</td>
+                                <td></td>
+                                <td>2017-09-27</td>
+                                <td>174</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>북한자료센터 홈페이지 일시 중단 안내</td>
+                                <td></td>
+                                <td>2017-09-27</td>
+                                <td>174</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>북한자료센터 홈페이지 일시 중단 안내</td>
+                                <td></td>
+                                <td>2017-09-27</td>
+                                <td>174</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre><code class="language-html">&lt;table class=&quot;table-board-type-num list-type&quot;&gt;
+    &lt;caption&gt;(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.&lt;/caption&gt;
+    &lt;col width=&quot;60&quot;&gt;
+    &lt;col width=&quot;auto&quot;&gt;
+    &lt;col width=&quot;70&quot;&gt;
+    &lt;col width=&quot;100&quot;&gt;
+    &lt;col width=&quot;80&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<pre><code class="language-css">.table-view-type-num td:nth-of-type(1):before {
+  content: &quot;번호&quot;;
+}
+.table-view-type-num td:nth-of-type(2):before {
+  content: &quot;제목&quot;;
+}
+.table-view-type-num td:nth-of-type(3):before {
+  content: &quot;첨부&quot;;
+}
+.table-view-type-num td:nth-of-type(4):before {
+  content: &quot;등록일&quot;;
+}
+.table-view-type-num td:nth-of-type(5):before {
+  content: &quot;조회수&quot;;
+}</code></pre>
+                    <p class="ui-kit-comment">
+                        반응형 중단점에 따라 리스트(list-type) 테이블로 변화를 적용할 경우 "<strong>table-board-type</strong>" class의 형재요소로 "<strong class="red">list-type</strong>" class를 추가해 줍니다.<br>
+                        ex) <span class="blue">&lt;table class="table-board-type <strong class="red">list-type</strong>"&gt;</span><br>
+                        "<strong class="red">list-type</strong>"을 사용하는 표의 테이블 제목(컬럼)이 달라질 경우 "<strong>table-board-type</strong>" class명에 "<strong>table-board-type<span class="red">-num</span></strong>" class명과 같이 <span class="blue">-num</span>을 붙여서 class명을 정의하고 <strong>제목을 css의 content로 재설정</strong> 해줘야 합니다.<br>
+                        ex) <span class="blue">&lt;table class="</span><strong>table-board-type</strong><strong class="red">-01</strong><span class="blue"> list-type"&gt;</span><br>
+                    </p>
+
+                    <h3><span class="fa fa-table"></span>반응형 테이블 (Board list column 숨김 타입)</h3>
                     <table class="table-board-type">
                         <caption>(표 제목)의 타이틀은 (가로 or 세로)정렬로 되어있습니다.</caption>
                         <col class="col-hidden" width="60">
@@ -1070,7 +1173,7 @@ JS 내용 작성</code></pre>
                                     </select>
                                 </div>
                                 <div class="input-type-search full">
-                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요" aria-label="검색 키워드를 입력하세요">
                                     <button type="button" class="btn-in-size btn-blue">검색</button>
                                 </div>
                              </li>
@@ -1119,7 +1222,7 @@ JS 내용 작성</code></pre>
             &lt;/select&gt;
         &lt;/div&gt;
         &lt;div class=&quot;input-type-search full&quot;&gt;
-            &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot; aria-label=&quot;검색 키워드를 입력하세요&quot;&gt;
             &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
         &lt;/div&gt;
     &lt;/li&gt;
@@ -1156,7 +1259,7 @@ JS 내용 작성</code></pre>
                                     </select>
                                 </div>
                                 <div class="input-type-search full">
-                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요" aria-label="검색 키워드를 입력하세요">
                                     <button type="button" class="btn-in-size btn-blue">검색</button>
                                 </div>
                              </li>
@@ -1193,7 +1296,7 @@ JS 내용 작성</code></pre>
                 &lt;/select&gt;
             &lt;/div&gt;
             &lt;div class=&quot;input-type-search full&quot;&gt;
-                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot; aria-label=&quot;검색 키워드를 입력하세요&quot;&gt;
                 &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
             &lt;/div&gt;
         &lt;/li&gt;
@@ -1213,7 +1316,7 @@ JS 내용 작성</code></pre>
                                     </select>
                                 </div>
                                 <div class="input-type-search full">
-                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요" aria-label="검색 키워드를 입력하세요">
                                     <button type="button" class="btn-in-size btn-blue">검색</button>
                                 </div>
                              </li>
@@ -1232,7 +1335,7 @@ JS 내용 작성</code></pre>
                 &lt;/select&gt;
             &lt;/div&gt;
             &lt;div class=&quot;input-type-search full&quot;&gt;
-                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot; aria-label=&quot;검색 키워드를 입력하세요&quot;&gt;
                 &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
             &lt;/div&gt;
         &lt;/li&gt;
@@ -1261,7 +1364,7 @@ JS 내용 작성</code></pre>
                                     </select>
                                 </div>
                                 <div class="input-type-search full">
-                                    <input type="text" placeholder="검색 키워드를 입력하세요">
+                                    <input type="text" placeholder="검색 키워드를 입력하세요" aria-label="검색 키워드를 입력하세요">
                                     <button type="button" class="btn-in-size btn-blue">검색</button>
                                 </div>
                              </li>
@@ -1289,7 +1392,7 @@ JS 내용 작성</code></pre>
                 &lt;/select&gt;
             &lt;/div&gt;
             &lt;div class=&quot;input-type-search full&quot;&gt;
-                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot;&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;검색 키워드를 입력하세요&quot; aria-label=&quot;검색 키워드를 입력하세요&quot;&gt;
                 &lt;button type=&quot;button&quot; class=&quot;btn-in-size btn-blue&quot;&gt;검색&lt;/button&gt;
             &lt;/div&gt;
         &lt;/li&gt;

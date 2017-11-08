@@ -2008,7 +2008,7 @@ table .col-hidden { display: none; }
 
 [class*="table-board-type"] tr th { color: #333; background: #f7f7f7; }
 
-[class*="table-board-type"] tr th, [class*="table-board-type"] tr td { height: 40px; line-height: 40px; text-align: center; padding: 0 10px; }
+[class*="table-board-type"] tr th, [class*="table-board-type"] tr td { text-align: center; min-height: 40px; line-height: 40px; padding: 0 10px; }
 
 [class*="table-board-type"].from tr th, [class*="table-board-type"].from tr td { height: auto; line-height: 1.5; padding: 10px; }
 
@@ -2028,9 +2028,9 @@ table .col-hidden { display: none; }
 
 [class*="table-board-type"][class*="list-type"] tr:first-child td { border-top: 0; }
 
-[class*="table-board-type"][class*="list-type"] td { position: relative; min-height: 28px; padding: 4px 10px 4px 53%; }
+[class*="table-board-type"][class*="list-type"] td { position: relative; padding: 0 10px 0 53%; }
 
-[class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 4px 10px; background: #f1f5f7; content: ""; }
+[class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 0 10px; min-height: 40px; line-height: 40px; background: #f1f5f7; content: ""; }
 
 [class*="table-board-type"][class*="list-type"] td:first-child { border-top: 2px solid #999; }
 
@@ -2038,14 +2038,14 @@ table .col-hidden { display: none; }
 
 [class*="table-board-type"][class*="list-type"] td:last-child:before { border-bottom: 0; }
 
-@media (min-width: 30em) and (max-width: 53.75em) { [class*="table-board-type"][class*="list-type"] tbody td { padding: 4px 10px 4px 32%; }
+@media (min-width: 30em) and (max-width: 53.75em) { [class*="table-board-type"][class*="list-type"] tbody td { padding: 0 10px 0 32%; }
   [class*="table-board-type"][class*="list-type"] tbody td:before { width: 30%; content: ""; } }
 
 @media (min-width: 53.75em) { [class*="table-board-type"] tr th { background: #f7f7f7; }
   [class*="table-board-type"][class*="list-type"] { width: 100%; }
   [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: static; top: 0; clip: auto; visibility: visible; }
   [class*="table-board-type"][class*="list-type"] tr th, [class*="table-board-type"][class*="list-type"] tr td { display: table-cell; }
-  [class*="table-board-type"][class*="list-type"] td { padding: 4px 10px; }
+  [class*="table-board-type"][class*="list-type"] td { padding: 0 10px; }
   [class*="table-board-type"][class*="list-type"] td:before { display: none; }
   [class*="table-board-type"][class*="list-type"] td:first-child { border-top: 1px solid #dedfe2; }
   [class*="table-board-type"][class*="list-type"] td:last-child { margin-bottom: 0; } }
