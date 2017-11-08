@@ -1662,6 +1662,8 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item-img:after, .search-select-content .list-item-list:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after { clear: both; }
 
+.search-select-content .list-item-table td h6 .btn-item-table-icon span, .search-select-content .list-item-table td p .btn-item-table-icon span { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
+
 /* =======================================*/
 /* Base Fonts Style Settings
 /* =======================================*/
@@ -1990,7 +1992,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type input:focus::-moz-placeholder { color: transparent; }
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type input:focus:-ms-input-placeholder { color: transparent; }
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type label { line-height: 35px; }
-  .keyword-search-area .sub-search-area .dl-list-type dd .input-type label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+  .keyword-search-area .sub-search-area .dl-list-type dd .input-type label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type:before { left: 144px; }
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type input { margin-right: 26px; }
   .keyword-search-area .sub-search-area .dl-list-type dd .input-type input:last-child { float: none; } }
@@ -2121,6 +2123,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .search-select-content .list-item-table td h6, .search-select-content .list-item-table td p { white-space: pre-wrap; }
 
+.search-select-content .list-item-table td h6 .btn-item-table-icon, .search-select-content .list-item-table td p .btn-item-table-icon { margin-left: 6px; }
+
 .search-select-content .list-item-table td:before { width: 40%; line-height: 34px; text-align: center; }
 
 .search-select-content .list-item-table td:nth-of-type(1) { text-overflow: clip; }
@@ -2158,6 +2162,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt { width: 30%; }
 
 .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd { width: 70%; font-weight: 300; white-space: pre-wrap; }
+
+.search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd.readable { color: #ff8134; }
 
 @media (min-width: 30em) and (max-width: 53.75em) { .search-select-content .list-item-table tbody td { padding: 10px 10px 10px 32%; }
   .search-select-content .list-item-table tbody td:before { width: 30%; content: ""; } }

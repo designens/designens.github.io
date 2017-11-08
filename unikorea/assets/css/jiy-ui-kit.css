@@ -1663,7 +1663,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-set-area:after, [class*="table-view-type"]:after, .popup .popup-headline:after, .popup .popup-content:after, #gnb-menu:after, #gnb-all-menu:after, .header:after, .top-area:after, #container:after, .footer-link-banner .wrap .link-banner-area .owl-carousel:after, .paging:after, .input-type.tel:after, .tab-area .tab-menu:after, .ul-list-type li:after, .dl-list-type:after, .dl-list-type dt:after, .dl-list-type dd:after { clear: both; }
 
-[class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead, [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+[class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead, [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 /* =======================================*/
 /* Base Fonts Style Settings
@@ -1998,18 +1998,18 @@ table .col-hidden { display: none; }
   [class*="table-view-type"] th, [class*="table-view-type"] td { border: 1px solid #ccc; border-bottom: 0; }
   [class*="table-view-type"] td:before { content: ""; }
   [class*="table-view-type"][class*="list-type"] { width: 100%; }
-  [class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { position: static; clip: auto; visibility: visible; }
+  [class*="table-view-type"][class*="list-type"] colgroup, [class*="table-view-type"][class*="list-type"] col, [class*="table-view-type"][class*="list-type"] thead { position: static; top: 0; clip: auto; visibility: visible; }
   [class*="table-view-type"][class*="list-type"] thead { border-bottom: 0; }
   [class*="table-view-type"][class*="list-type"] tbody { border-bottom: 1px solid #ccc; }
   [class*="table-view-type"][class*="list-type"] th, [class*="table-view-type"][class*="list-type"] td { display: table-cell; height: auto; text-align: center; border: 1px solid #ccc; border-bottom: 0; }
   [class*="table-view-type"][class*="list-type"] td { padding: 4px 10px; }
   [class*="table-view-type"][class*="list-type"] td:before { display: none; } }
 
-[class*="table-board-type"] { width: 100%; }
+[class*="table-board-type"] { width: 100%; border-top: 2px solid #999; }
 
 [class*="table-board-type"] tr th { color: #333; background: #f7f7f7; }
 
-[class*="table-board-type"] tr th, [class*="table-board-type"] tr td { display: block; width: 100%; height: 40px; line-height: 40px; text-align: center; padding: 0 10px; }
+[class*="table-board-type"] tr th, [class*="table-board-type"] tr td { height: 40px; line-height: 40px; text-align: center; padding: 0 10px; }
 
 [class*="table-board-type"].from tr th, [class*="table-board-type"].from tr td { height: auto; line-height: 1.5; padding: 10px; }
 
@@ -2025,6 +2025,10 @@ table .col-hidden { display: none; }
 
 [class*="table-board-type"] tbody td pre { padding: 20px 10px; font-weight: 300; }
 
+[class*="table-board-type"][class*="list-type"] tr th, [class*="table-board-type"][class*="list-type"] tr td { display: block; width: 100%; }
+
+[class*="table-board-type"][class*="list-type"] tr:first-child td { border-top: 0; }
+
 [class*="table-board-type"][class*="list-type"] td { position: relative; min-height: 28px; padding: 4px 10px 4px 53%; }
 
 [class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 4px 10px; background: #f1f5f7; content: ""; }
@@ -2038,12 +2042,10 @@ table .col-hidden { display: none; }
 @media (min-width: 30em) and (max-width: 53.75em) { [class*="table-board-type"][class*="list-type"] tbody td { padding: 4px 10px 4px 32%; }
   [class*="table-board-type"][class*="list-type"] tbody td:before { width: 30%; content: ""; } }
 
-@media (min-width: 53.75em) { [class*="table-board-type"] { border-top: 2px solid #999; }
-  [class*="table-board-type"] tr th { background: #f7f7f7; }
-  [class*="table-board-type"] tr th, [class*="table-board-type"] tr td { height: 40px; line-height: 40px; }
+@media (min-width: 53.75em) { [class*="table-board-type"] tr th { background: #f7f7f7; }
   [class*="table-board-type"][class*="list-type"] { width: 100%; }
-  [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: static; clip: auto; visibility: visible; }
-  [class*="table-board-type"][class*="list-type"] th, [class*="table-board-type"][class*="list-type"] td { display: table-cell; }
+  [class*="table-board-type"][class*="list-type"] colgroup, [class*="table-board-type"][class*="list-type"] col, [class*="table-board-type"][class*="list-type"] thead { position: static; top: 0; clip: auto; visibility: visible; }
+  [class*="table-board-type"][class*="list-type"] tr th, [class*="table-board-type"][class*="list-type"] tr td { display: table-cell; }
   [class*="table-board-type"][class*="list-type"] td { padding: 4px 10px; }
   [class*="table-board-type"][class*="list-type"] td:before { display: none; }
   [class*="table-board-type"][class*="list-type"] td:first-child { border-top: 1px solid #dedfe2; }
@@ -2600,7 +2602,7 @@ table .col-hidden { display: none; }
 
 .input-type label { line-height: 35px; }
 
-.input-type label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+.input-type label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 .input-type.tel { min-width: 71px; height: 35px; }
 
@@ -2626,7 +2628,7 @@ table .col-hidden { display: none; }
 
 .input-type.tel label { line-height: 35px; }
 
-.input-type.tel label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+.input-type.tel label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 .input-type.tel .dialog { position: relative; display: inline-block; margin-right: 10px; }
 
@@ -2660,7 +2662,7 @@ table .col-hidden { display: none; }
 
 .input-type.e-mail label { line-height: 35px; }
 
-.input-type.e-mail label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+.input-type.e-mail label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 .input-type.e-mail .email { position: relative; display: inline-block; }
 
@@ -2706,7 +2708,7 @@ table .col-hidden { display: none; }
 
 .input-type.full label { line-height: 35px; }
 
-.input-type.full label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+.input-type.full label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 .input-type-search { display: inline-block; position: relative; min-width: 130px; height: 35px; }
 
@@ -2734,7 +2736,7 @@ table .col-hidden { display: none; }
 
 .input-type-search label { line-height: 35px; }
 
-.input-type-search label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+.input-type-search label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 .input-type-search.full { min-width: 100%; height: 35px; }
 
@@ -2760,7 +2762,7 @@ table .col-hidden { display: none; }
 
 .input-type-search.full label { line-height: 35px; }
 
-.input-type-search.full label .hidden { position: absolute; clip: rect(0 0 0 0); visibility: hidden; }
+.input-type-search.full label .hidden { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 /* =======================================*/
 /* 셀렉트박스 스타일
