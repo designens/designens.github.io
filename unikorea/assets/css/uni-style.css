@@ -2125,7 +2125,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .search-select-content .list-item-table td h6 .btn-item-table-icon, .search-select-content .list-item-table td p .btn-item-table-icon { margin-left: 6px; }
 
-.search-select-content .list-item-table td:before { width: 40%; line-height: 34px; text-align: center; }
+.search-select-content .list-item-table td:before { width: 40%; text-align: center; }
 
 .search-select-content .list-item-table td:nth-of-type(1) { text-overflow: clip; }
 
