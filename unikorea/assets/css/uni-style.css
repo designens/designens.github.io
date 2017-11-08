@@ -2468,16 +2468,18 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .download-paper-list .download-item-box { width: 100%; text-align: center; margin-bottom: 10px; }
 
-.download-paper-list .download-item-box .item-box { padding: 10px; border: 1px solid #ccc; }
+.download-paper-list .download-item-box .item-box { position: relative; padding: 10px; border: 1px solid #ccc; }
 
 .download-paper-list .download-item-box .item-box h6 { margin: 5px 0 15px 0; }
 
 .download-paper-list .download-item-box .item-box h6 span { color: #2373c8; }
 
+.download-paper-list .download-item-box .item-box .item-views { color: #888; text-align: right; margin-bottom: 8px; }
+
 .download-paper-list .download-item-box .item-box .item-btn { padding-top: 10px; border-top: 1px solid #dcdcdc; }
 
-@media (min-width: 30em) { .download-paper-list .download-item-box .item-box { width: 194px; height: 290px; padding: 20px; margin: 0 auto; }
-  .download-paper-list .download-item-box .item-box h6 { margin: 0; }
+@media (min-width: 30em) { .download-paper-list .download-item-box .item-box { width: 194px; height: 320px; padding: 20px; margin: 0 auto; }
+  .download-paper-list .download-item-box .item-box h6 { display: block; margin: 0; }
   .download-paper-list .download-item-box .item-box .item-img { position: static; top: 0; clip: auto; visibility: visible; margin-top: 10px; margin-bottom: 10px; }
   .download-paper-list .download-item-box .item-box .item-img img { width: 152px; height: 172px; } }
 
