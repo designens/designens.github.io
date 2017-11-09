@@ -2096,6 +2096,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 @media (min-width: 71.25em) { .search-select-content .list-item-img li.item-number, .search-select-content .list-item-list li.item-number { width: 10.07752%; float: left; margin-right: 1.16279%; }
   .search-select-content .list-item-img li.item-img, .search-select-content .list-item-list li.item-img { width: 10.07752%; float: left; margin-right: 1.16279%; margin-bottom: 0; }
   .search-select-content .list-item-img li.item-text, .search-select-content .list-item-list li.item-text { width: 77.51938%; float: right; margin-right: 0; padding-left: 10px; }
+  .search-select-content .list-item-img li.item-text h6, .search-select-content .list-item-list li.item-text h6 { padding-right: 130px; }
   .search-select-content .list-item-img li.item-table-area, .search-select-content .list-item-list li.item-table-area { clear: both; width: 100%; float: left; margin-left: 0; margin-right: 0; } }
 
 /* =======================================*/
@@ -2107,7 +2108,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 .search-select-content .list-item-list li.item-img { display: none; }
 
 @media (min-width: 47.5em) { .search-select-content .list-item-list li.item-number { width: 10.07752%; float: left; margin-right: 1.16279%; }
-  .search-select-content .list-item-list li.item-text { width: 88.75969%; float: right; margin-right: 0; padding-left: 10px; margin-top: 0; } }
+  .search-select-content .list-item-list li.item-text { width: 88.75969%; float: right; margin-right: 0; padding-left: 10px; margin-top: 0; }
+  .search-select-content .list-item-list li.item-text h6 { padding-right: 130px; } }
 
 /* =======================================*/
 /* 자료검색 > 소장자료 검색 > 리스트 (table)
