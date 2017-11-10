@@ -216,42 +216,42 @@
 // =================================================================
 // 소장정보 보기/닫기 실행
 // =================================================================
-(function(global, $) {
+// (function(global, $) {
 
-    var $btn_item_table = $(".btn-item-table"),
-        $btn_item_table_icon = $(".btn-item-table-icon"),
-        item_table_area = ".item-table-area",
-        open_text = "소장정보 열기",
-        close_text = "소장정보 닫기";
+//     var $btn_item_table = $(".btn-item-table"),
+//         $btn_item_table_icon = $(".btn-item-table-icon"),
+//         item_table_area = ".item-table-area",
+//         open_text = "소장정보 열기",
+//         close_text = "소장정보 닫기";
     
-    $(item_table_area).css("display", "none");
+//     $(item_table_area).css("display", "none");
 
-    $btn_item_table.click(function() {
-        var $this = $(this);
-        if ( $this.html(close_text).parent().siblings(item_table_area).css("display") == "none" ){
-            $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
-        } else {
-            $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
-        }
-    });
+//     $btn_item_table.click(function() {
+//         var $this = $(this);
+//         if ( $this.html(close_text).parent().siblings(item_table_area).css("display") == "none" ){
+//             $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
+//         } else {
+//             $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
+//         }
+//     });
 
-    $btn_item_table_icon.click(function() {
-        var $this = $(this);
-        if ( $this.parents().next(item_table_area).css("display") == "none" ) {
-           $this.parents().next(item_table_area).slideDown("slow");
-        } else {
-           $this.parents().next(item_table_area).slideUp("slow");
-        }
-    });
+//     $btn_item_table_icon.click(function() {
+//         var $this = $(this);
+//         if ( $this.parents().next(item_table_area).css("display") == "none" ) {
+//            $this.parents().next(item_table_area).slideDown("slow");
+//         } else {
+//            $this.parents().next(item_table_area).slideUp("slow");
+//         }
+//     });
 
-})(window, window.jQuery);
+// })(window, window.jQuery);
 
 // =================================================================
 // 소장자료 검색 : 검색결과 내 상세검색 더보기
 // =================================================================
 // 더보기 버튼 아이콘 활설화
 (function(global, $) {
-    var $btn_more_size = $(".btn-more-size");
+    var $btn_more_size = $(".btn-more-size, .tab-menu-select");
     $btn_more_size.click(function(e) {
         e.preventDefault();
         var $this = $(this);
