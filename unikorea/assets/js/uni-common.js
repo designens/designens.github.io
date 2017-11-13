@@ -12,10 +12,6 @@
             var injectorOptions = {
                 evalScripts: 'once', // always, once, never
                 pngFallback: 'images/ie-assets', // PNG 대체 폴더 설정
-                each: function(svg) {
-                    // svg는 수집된 개별 img.inject-me를 가리킴
-                    console.log(svg.id);
-                }
             };
             // SVGInjector 함수에 연결
             SVGInjector(
