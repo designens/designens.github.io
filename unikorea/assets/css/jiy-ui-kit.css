@@ -2272,7 +2272,7 @@ table .col-hidden { display: none; }
 /* =======================================*/
 /* Container Layout Style
 /* =======================================*/
-.wrap { max-width: 100%; margin-left: auto; margin-right: auto; min-width: 320px; padding: 0 20px; }
+.wrap { max-width: 100%; margin-left: auto; margin-right: auto; min-width: 280px; padding: 0 20px; }
 
 .wrap:after { content: " "; display: block; clear: both; }
 

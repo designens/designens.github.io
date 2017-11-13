@@ -211,6 +211,19 @@
         }
     })
 
+    // -------------------------------------------------------------
+    // 영화 썸네일 배너
+    // -------------------------------------------------------------
+    $('.movie-thumbnail .owl-carousel').owlCarousel({
+        margin: 7,
+        nav: true,
+        dots: false,
+        responsiveClass: true,
+        navText: ['', ''],
+        autoWidth:true,
+        slideBy: 1
+    })
+
 })(window, window.jQuery);
 
 // =================================================================
