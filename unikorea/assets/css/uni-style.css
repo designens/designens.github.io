@@ -1662,7 +1662,7 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 
 .btn-set-area:after, .search-select-box-area:after, .search-select-box-area .fl-align:after, .search-select-box-area .fr-align:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item-img:after, .search-select-content .list-item-list:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after, .download-paper-list:after, .item-gallery-area:after, .cartoon-list-area:after { clear: both; }
 
-.download-paper-list .download-item-box .item-box .item-img, .cartoon-list-area .download-item-box .item-box .item-img { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
+.download-paper-list .download-item-box .item-box .item-img { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
 .popular-loans-resources .table-board-type td > div:last-child p, .item-gallery-area li h6, .item-gallery-area li p { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
@@ -2238,11 +2238,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .list-view-area .fr-align dl:first-child { margin-top: 10px; }
 
-.list-view-area .fr-align dl dt { min-width: 72px; font-weight: 500; text-align: right; padding-right: 20px; }
+.list-view-area .fr-align dl dt { min-width: 100px; font-weight: 500; text-align: right; padding-right: 20px; }
 
 .list-view-area .fr-align dl dt, .list-view-area .fr-align dl dd { display: table-cell; line-height: 1.5; }
 
-.list-view-area .fr-align dl .author { color: #305ed6; }
+.list-view-area .fr-align dl .author, .list-view-area .fr-align dl a { color: #305ed6; text-decoration: underline; }
 
 @media (min-width: 47.5em) { .list-view-area .fl-align { float: left; width: 75px; margin-right: 30px; }
   .list-view-area .fr-align { float: right; width: -webkit-calc( 100% - 105px); width: -moz-calc( 100% - 105px); width: calc( 100% - 105px); }
@@ -2595,37 +2595,28 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 /* 통일북한자료실 > 북한어린이도서 > 만화 > 리스트
 /* (html/north-korean-cartoon-list.html)
 /* =======================================*/
-.cartoon-list-area .download-item-box { width: 100%; text-align: center; margin-bottom: 10px; }
+.cartoon-list-area .cartoon-box { width: 100%; text-align: center; margin-bottom: 10px; }
 
-.cartoon-list-area .download-item-box .item-box { position: relative; padding: 10px; border: 1px solid #ccc; }
+.cartoon-list-area .cartoon-box .item-box { position: relative; display: block; width: 156px; height: 235px; padding: 10px; margin: 0 auto; border: 1px solid #ccc; }
 
-.cartoon-list-area .download-item-box .item-box h6 { margin: 5px 0 15px 0; }
+.cartoon-list-area .cartoon-box .item-box .item-img img { width: 134px; height: 172px; }
 
-.cartoon-list-area .download-item-box .item-box h6 span { color: #2373c8; }
+.cartoon-list-area .cartoon-box .item-box .item-title { padding-top: 10px; border-top: 1px solid #dcdcdc; }
 
-.cartoon-list-area .download-item-box .item-box .item-views { color: #888; text-align: right; margin-bottom: 8px; }
+@media (min-width: 30em) and (max-width: 47.5em) { .cartoon-list-area .cartoon-box { width: 48.80383%; float: left; }
+  .cartoon-list-area .cartoon-box:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .cartoon-list-area .cartoon-box:nth-child(2n + 2) { margin-left: 51.19617%; margin-right: -100%; clear: none; } }
 
-.cartoon-list-area .download-item-box .item-box .item-btn { padding-top: 10px; border-top: 1px solid #dcdcdc; }
+@media (min-width: 47.5em) and (max-width: 56.25em) { .cartoon-list-area .cartoon-box { width: 31.47632%; float: left; }
+  .cartoon-list-area .cartoon-box:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .cartoon-list-area .cartoon-box:nth-child(3n + 2) { margin-left: 34.26184%; margin-right: -100%; clear: none; }
+  .cartoon-list-area .cartoon-box:nth-child(3n + 3) { margin-left: 68.52368%; margin-right: -100%; clear: none; } }
 
-@media (min-width: 30em) { .cartoon-list-area .download-item-box .item-box { width: 194px; height: 320px; padding: 20px; margin: 0 auto; }
-  .cartoon-list-area .download-item-box .item-box h6 { display: block; margin: 0; }
-  .cartoon-list-area .download-item-box .item-box .item-img { position: static; top: 0; clip: auto; visibility: visible; margin-top: 10px; margin-bottom: 10px; }
-  .cartoon-list-area .download-item-box .item-box .item-img img { width: 152px; height: 172px; } }
-
-@media (min-width: 30em) and (max-width: 47.5em) { .cartoon-list-area .download-item-box { width: 48.80383%; float: left; }
-  .cartoon-list-area .download-item-box:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .cartoon-list-area .download-item-box:nth-child(2n + 2) { margin-left: 51.19617%; margin-right: -100%; clear: none; } }
-
-@media (min-width: 47.5em) and (max-width: 56.25em) { .cartoon-list-area .download-item-box { width: 31.47632%; float: left; }
-  .cartoon-list-area .download-item-box:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .cartoon-list-area .download-item-box:nth-child(3n + 2) { margin-left: 34.26184%; margin-right: -100%; clear: none; }
-  .cartoon-list-area .download-item-box:nth-child(3n + 3) { margin-left: 68.52368%; margin-right: -100%; clear: none; } }
-
-@media (min-width: 56.25em) { .cartoon-list-area .download-item-box { width: 23.20574%; float: left; }
-  .cartoon-list-area .download-item-box:nth-child(4n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
-  .cartoon-list-area .download-item-box:nth-child(4n + 2) { margin-left: 25.59809%; margin-right: -100%; clear: none; }
-  .cartoon-list-area .download-item-box:nth-child(4n + 3) { margin-left: 51.19617%; margin-right: -100%; clear: none; }
-  .cartoon-list-area .download-item-box:nth-child(4n + 4) { margin-left: 76.79426%; margin-right: -100%; clear: none; } }
+@media (min-width: 56.25em) { .cartoon-list-area .cartoon-box { width: 23.20574%; float: left; }
+  .cartoon-list-area .cartoon-box:nth-child(4n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+  .cartoon-list-area .cartoon-box:nth-child(4n + 2) { margin-left: 25.59809%; margin-right: -100%; clear: none; }
+  .cartoon-list-area .cartoon-box:nth-child(4n + 3) { margin-left: 51.19617%; margin-right: -100%; clear: none; }
+  .cartoon-list-area .cartoon-box:nth-child(4n + 4) { margin-left: 76.79426%; margin-right: -100%; clear: none; } }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
