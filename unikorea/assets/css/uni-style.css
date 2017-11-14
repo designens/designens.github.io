@@ -2013,7 +2013,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .search-select-content .item-keyword span:last-child { margin-right: 0 !important; }
 
-.search-select-content [class^="btn-item-table"]:before { display: inline-block; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; width: 20px; height: 20px; line-height: 20px; margin-right: 5px; background: #ff8134; }
+.search-select-content .btn-item-table, .search-select-content .btn-item-url { margin-right: 10px; }
+
+.search-select-content .btn-item-table:before, .search-select-content .btn-item-url:before { display: inline-block; width: 20px; height: 20px; text-align: center; line-height: 20px; margin-right: 5px; background: #ff8134; }
+
+.search-select-content .btn-item-table:before { font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; }
+
+.search-select-content .btn-item-url:before { font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; }
 
 .search-select-content .list-item-img, .search-select-content .list-item-list { position: relative; padding: 20px 15px 10px; border: 1px solid #ddd; margin-top: 10px; }
 
@@ -2033,7 +2039,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .search-select-content .list-item-img li.item-text .item-keyword span, .search-select-content .list-item-list li.item-text .item-keyword span { padding: 0 10px; margin-right: 5px; }
 
-.search-select-content .list-item-img li.item-text .btn-item-table, .search-select-content .list-item-list li.item-text .btn-item-table { margin-top: 8px; margin-bottom: 10px; color: #333; }
+.search-select-content .list-item-img li.item-text .btn-item-table, .search-select-content .list-item-list li.item-text .btn-item-table { margin-top: 8px; }
+
+.search-select-content .list-item-img li.item-text [class^="btn-item-"], .search-select-content .list-item-list li.item-text [class^="btn-item-"] { margin-bottom: 8px; color: #333; }
 
 .search-select-content .list-item-img li.item-table-area, .search-select-content .list-item-list li.item-table-area { margin-bottom: 10px; }
 
