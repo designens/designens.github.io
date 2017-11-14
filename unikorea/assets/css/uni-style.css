@@ -1999,7 +1999,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
   .sub-search-view-area li .sub-result .checkbox-type:nth-child(4n + 3), .sub-search-view-area li .sub-result .radio-type:nth-child(4n + 3) { margin-left: 51.24378%; margin-right: -100%; clear: none; }
   .sub-search-view-area li .sub-result .checkbox-type:nth-child(4n + 4), .sub-search-view-area li .sub-result .radio-type:nth-child(4n + 4) { margin-left: 76.86567%; margin-right: -100%; clear: none; } }
 
-.search-select-content .item-info { color: #888; margin-top: 2px; }
+.search-select-content .item-info { color: #888; }
 
 .search-select-content .item-info span { position: relative; padding-right: 20px; }
 
@@ -2018,6 +2018,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 .search-select-content .btn-item-table:before, .search-select-content .btn-item-url:before { display: inline-block; width: 20px; height: 20px; text-align: center; line-height: 20px; margin-right: 5px; background: #ff8134; }
 
 .search-select-content .btn-item-table:before { font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; }
+
+.search-select-content .btn-item-url { display: inline-block; }
 
 .search-select-content .btn-item-url:before { font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; }
 
@@ -2039,11 +2041,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .search-select-content .list-item-img li.item-text .item-keyword span, .search-select-content .list-item-list li.item-text .item-keyword span { padding: 0 10px; margin-right: 5px; }
 
-.search-select-content .list-item-img li.item-text .btn-item-table, .search-select-content .list-item-list li.item-text .btn-item-table { margin-top: 8px; }
+.search-select-content .list-item-img li.item-text [class^="btn-item-"], .search-select-content .list-item-list li.item-text [class^="btn-item-"] { margin-top: 7px; color: #333; }
 
-.search-select-content .list-item-img li.item-text [class^="btn-item-"], .search-select-content .list-item-list li.item-text [class^="btn-item-"] { margin-bottom: 8px; color: #333; }
-
-.search-select-content .list-item-img li.item-table-area, .search-select-content .list-item-list li.item-table-area { margin-bottom: 10px; }
+.search-select-content .list-item-img li.item-table-area, .search-select-content .list-item-list li.item-table-area { margin-top: 10px; margin-bottom: 10px; }
 
 .search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(1):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
 
@@ -2152,33 +2152,33 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 /* 자료검색 > 소장자료 검색 > 상세
 /* (html/resources-search-view.html)
 /* =======================================*/
-.resources-search-view .sub-search-area { height: 40px; padding: 0 15px; }
+.resources-search-view .sub-search-area, .domestic-serials-view .sub-search-area { height: 40px; padding: 0 15px; }
 
-.resources-search-view .sub-search-area button, .resources-search-view .sub-search-area a { font-weight: 300; line-height: 40px; margin-right: 20px; }
+.resources-search-view .sub-search-area button, .domestic-serials-view .sub-search-area button, .resources-search-view .sub-search-area a, .domestic-serials-view .sub-search-area a { font-weight: 300; line-height: 40px; margin-right: 20px; }
 
-.resources-search-view .sub-search-area button:last-child, .resources-search-view .sub-search-area a:last-child { margin-right: 0; }
+.resources-search-view .sub-search-area button:last-child, .domestic-serials-view .sub-search-area button:last-child, .resources-search-view .sub-search-area a:last-child, .domestic-serials-view .sub-search-area a:last-child { margin-right: 0; }
 
-.resources-search-view .sub-search-area button.btn-result-prev, .resources-search-view .sub-search-area a.btn-result-prev { padding-left: 18px; background: url("../../assets/images/icon/icon-result-prev.svg") left center no-repeat; }
+.resources-search-view .sub-search-area button.btn-result-prev, .domestic-serials-view .sub-search-area button.btn-result-prev, .resources-search-view .sub-search-area a.btn-result-prev, .domestic-serials-view .sub-search-area a.btn-result-prev { padding-left: 18px; background: url("../../assets/images/icon/icon-result-prev.svg") left center no-repeat; }
 
-.resources-search-view .sub-search-area button.btn-url-copy, .resources-search-view .sub-search-area a.btn-url-copy { padding-left: 36px; background: url("../../assets/images/icon/icon-url-copy.svg") left top 12px no-repeat; }
+.resources-search-view .sub-search-area button.btn-url-copy, .domestic-serials-view .sub-search-area button.btn-url-copy, .resources-search-view .sub-search-area a.btn-url-copy, .domestic-serials-view .sub-search-area a.btn-url-copy { padding-left: 36px; background: url("../../assets/images/icon/icon-url-copy.svg") left top 12px no-repeat; }
 
-.resources-search-view .sub-search-area button.btn-marc-view, .resources-search-view .sub-search-area a.btn-marc-view { display: none; padding-left: 22px; background: url("../../assets/images/icon/icon-marc-view.svg") left center no-repeat; }
+.resources-search-view .sub-search-area button.btn-marc-view, .domestic-serials-view .sub-search-area button.btn-marc-view, .resources-search-view .sub-search-area a.btn-marc-view, .domestic-serials-view .sub-search-area a.btn-marc-view { display: none; padding-left: 22px; background: url("../../assets/images/icon/icon-marc-view.svg") left center no-repeat; }
 
-@media (min-width: 47.5em) { .resources-search-view .sub-search-area button.btn-marc-view { display: inline-block; } }
+@media (min-width: 47.5em) { .resources-search-view .sub-search-area button.btn-marc-view, .domestic-serials-view .sub-search-area button.btn-marc-view { display: inline-block; } }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(1):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(2):before { content: "등록번호"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(2):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(2):before { content: "등록번호"; }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(3):before { content: "소장위치"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(3):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(3):before { content: "소장위치"; }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(4):before { content: "청구기호"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(4):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(4):before { content: "청구기호"; }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(5):before { content: "도서상태"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(5):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(5):before { content: "도서상태"; }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(6):before { content: "반납예정일"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(6):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(6):before { content: "반납예정일"; }
 
-.resources-search-view .table-view-type-01 td:nth-of-type(7):before { content: "서비스"; }
+.resources-search-view .table-view-type-01 td:nth-of-type(7):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(7):before { content: "서비스"; }
 
 .marc-view-area { display: none; padding: 15px 58px; border: 1px solid #ccc; margin-top: 10px; }
 
@@ -2216,7 +2216,19 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .content-view-area .content-box h5 { margin-top: 28px; margin-bottom: 13px; font-weight: 500; }
 
-.content-view-area .content-box h5 + button { margin: 10px 0; }
+.content-view-area .content-box h5 + button, .content-view-area .content-box h5 + .select-box { margin: 10px 0; }
+
+.content-view-area .content-box h5 + .select-box { position: relative; width: 77px; height: 27px; line-height: 25px; vertical-align: top; }
+
+.content-view-area .content-box h5 + .select-box label { position: absolute; width: 100%; height: 27px; color: transparent; z-index: -1; }
+
+.content-view-area .content-box h5 + .select-box select { width: 100%; height: 27px; color: inherit; line-height: 25px; padding: 0 30px 0 10px; border: 1px solid #c4c4c4; background: #fff url("../../assets/images/icon/icon-select-box-down.svg") right 10px center no-repeat; -webkit-appearance: none; -ms-appearance: none; -moz-appearance: none; appearance: none; box-sizing: border-box; }
+
+.content-view-area .content-box h5 + .select-box select option { background: #fff; }
+
+.content-view-area .content-box h5 + .select-box select:focus { border: 1px solid #3466a2; }
+
+.content-view-area .content-box h5 + .select-box select::-ms-expand { display: none; }
 
 .content-view-area .content-box h5.full-color { display: block; width: 100%; height: 40px; line-height: 40px; color: #fff; text-align: center; margin-bottom: 0; background: #5f7a8f; }
 
@@ -2224,7 +2236,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .content-view-area .content-box pre { font-family: "Noto Sans Korean", sans-serif, serif; height: 150px; overflow-y: auto; }
 
-@media (min-width: 47.5em) { .content-view-area .content-box h5 + button { margin-top: 31px; }
+@media (min-width: 53.75em) { .content-view-area .content-box h5 + button, .content-view-area .content-box h5 + .select-box { margin-top: 31px; }
   .content-view-area .content-box h5.full-color { width: auto; height: auto; line-height: 1.5; color: #464646; text-align: left; margin-bottom: 13px; background-color: transparent; }
   .content-view-area .content-box .content-text { padding: 20px 31px; }
   .content-view-area .content-box pre { height: auto; overflow-y: inherit; } }
@@ -2584,6 +2596,70 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
   .cartoon-list-area .cartoon-box:nth-child(5n + 3) { margin-left: 40.66986%; margin-right: -100%; clear: none; }
   .cartoon-list-area .cartoon-box:nth-child(5n + 4) { margin-left: 61.00478%; margin-right: -100%; clear: none; }
   .cartoon-list-area .cartoon-box:nth-child(5n + 5) { margin-left: 81.33971%; margin-right: -100%; clear: none; } }
+
+/* =======================================*/
+/* 자료검색 > 연속간행물 검색 > 국내연속간행물 > 리스트
+/* (html/domestic-serials-list.html)
+/* =======================================*/
+.domestic-serials-list .serial-carousel { height: 253px; margin-top: 20px; background: #d2eafa url("../../assets/images/main/bg-shelf.png") center bottom no-repeat; }
+
+.domestic-serials-list .serial-carousel h5 { padding-top: 16px; color: #17324a; }
+
+.domestic-serials-list .serial-carousel .owl-carousel { position: relative; padding-top: 14px; padding-left: 40px; padding-right: 40px; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item { text-align: center; }
+
+.domestic-serials-list .serial-carousel .owl-carousel a { position: relative; display: inline-block; width: 108px; height: 141px; }
+
+.domestic-serials-list .serial-carousel .owl-carousel a:before { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("../../assets/images/main/bg-book-cover.png") center no-repeat; content: ""; z-index: 999; }
+
+.domestic-serials-list .serial-carousel .owl-carousel a > img { position: absolute; top: 0; left: 0; width: 104px; height: 141px; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-prev { position: absolute; top: 50%; left: 0; width: 22px; height: 35px; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-prev:before { font-family: 'FontAwesome'; content: ""; font-size: 60px; font-size: 6rem; color: #bbc7cf; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-prev:hover, .domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-prev:focus { transform: scale(1.2); }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-next { position: absolute; top: 50%; right: 0; width: 22px; height: 35px; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-next:before { font-family: 'FontAwesome'; content: ""; font-size: 60px; font-size: 6rem; color: #bbc7cf; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-next:hover, .domestic-serials-list .serial-carousel .owl-carousel .owl-nav .owl-next:focus { transform: scale(1.2); }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-dots { position: absolute; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: -47px; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-dots .owl-dot { display: inline-block; width: 16px; height: 16px; margin-left: 8px; margin-right: 8px; border-radius: 50%; background: #a3b4b9; border: 1px solid #fff; transition: all 0.2s cubic-bezier(0.01, 0.35, 0, 1.01); }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-dots .owl-dot:hover, .domestic-serials-list .serial-carousel .owl-carousel .owl-dots .owl-dot:focus { background: #a3b4b9; transform: scale(1.2); }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-dots .owl-dot.active { background: #3466a2; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-dots .owl-dot.active:hover { cursor: default; }
+
+.domestic-serials-list .serial-carousel .owl-carousel .owl-dots .owl-dot.active:focus { background: #3466a2; }
+
+@media (min-width: 30em) and (max-width: 47.5em) { .domestic-serials-list .serial-carousel .owl-carousel { padding-left: 60px; padding-right: 60px; } }
+
+@media (min-width: 47.5em) and (max-width: 71.25em) { .domestic-serials-list .serial-carousel .owl-carousel { padding-left: 100px; padding-right: 100px; } }
+
+@media (min-width: 71.25em) { .domestic-serials-list .serial-carousel .owl-carousel { padding-left: 50px; padding-right: 50px; } }
+
+/* =======================================*/
+/* 자료검색 > 연속간행물 검색 > 국내연속간행물 > 상세
+/* (html/domestic-serials-view.html)
+/* =======================================*/
+.domestic-serials-view .table-view-type-02 td:nth-of-type(1):before { content: "번호"; }
+
+.domestic-serials-view .table-view-type-02 td:nth-of-type(2):before { content: "권호"; }
+
+.domestic-serials-view .table-view-type-02 td:nth-of-type(3):before { content: "소장위치"; }
+
+.domestic-serials-view .table-view-type-02 td:nth-of-type(4):before { content: "발행일"; }
+
+.domestic-serials-view .table-view-type-02 td:nth-of-type(5):before { content: "입수일"; }
+
+.domestic-serials-view .table-view-type-02 td:nth-of-type(6):before { content: "상태"; }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일

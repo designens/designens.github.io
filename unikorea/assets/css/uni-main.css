@@ -1922,7 +1922,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 
 .popup-zone .popup-zone-carousel .ui-carousel__tabpanel-wrapper article { width: 100vw; text-align: center; }
 
-.popup-zone .popup-zone-carousel .ui-carousel__tabpanel-wrapper article > a { text-align: center; }
+.popup-zone .popup-zone-carousel .ui-carousel__tabpanel-wrapper article > a { display: block; text-align: center; }
 
 .popup-zone .popup-zone-carousel .ui-carousel__toggle--animate { display: none; }
 
