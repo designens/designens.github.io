@@ -1517,26 +1517,6 @@
 
 .owl-carousel .owl-video-frame { position: relative; z-index: 1; height: 100%; width: 100%; }
 
-.checkbox-type, .radio-type { display: inline-block; }
-
-.checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
-
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
-
-.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
-
-.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; }
-
-.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #191919; }
-
-.checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
-
-.checkbox-type input[type="checkbox"]:checked + label:before, .radio-type input[type="checkbox"]:checked + label:before { font-size: 13px; line-height: 1.2; font-family: 'FontAwesome'; content: "\f00c"; }
-
-.radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
-
-.radio-type input[type="radio"]:checked + label:before { background-color: #191919; box-shadow: inset 0 0 0 3px #fff; }
-
 @keyframes slideDown { 0% { transform: translateY(-100%); }
   50% { transform: translateY(-50%); }
   100% { transform: translateY(0%); } }
@@ -1591,6 +1571,28 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
 pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.5px; }
+
+.checkbox-type, .radio-type { display: inline-block; }
+
+.checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
+
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
+
+.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
+
+.checkbox-type input + label span, .radio-type input + label span { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
+
+.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; }
+
+.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #191919; }
+
+.checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
+
+.checkbox-type input[type="checkbox"]:checked + label:before, .radio-type input[type="checkbox"]:checked + label:before { font-size: 13px; line-height: 1.2; font-family: 'FontAwesome'; content: "\f00c"; }
+
+.radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
+
+.radio-type input[type="radio"]:checked + label:before { background-color: #191919; box-shadow: inset 0 0 0 3px #fff; }
 
 /* =======================================*/
 /* 버튼 반응형 적용 레이아웃 구성 설정

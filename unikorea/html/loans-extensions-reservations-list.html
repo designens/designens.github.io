@@ -233,7 +233,7 @@
         <div class="wrap">
             <div class="headline">
                 <h2>Mylibrary</h2>
-                <p>현재 페이지 상세 내용이 있습니다.</p>
+                <p>대출/반납/예약, 나의활등을 보실 수 있습니다.</p>
             </div>
         </div>
     </header>
@@ -270,17 +270,110 @@
                 <header class="headline">
                     <div class="site-location">
                         <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                        <a href="#">대분류</a>
-                        <a href="#">중분류</a>
-                        <a href="#">세분류</a>
+                        <a href="#">My Library</a>
+                        <a href="#">대출/반납/예약</a>
+                        <a href="#">대출</a>
                     </div>
-                    <h2 class="sub-title">대출/연장/예약</h2>
+                    <h2 class="sub-title">대출</h2>
                 </header>
                 <!-- [End] Content Title -->
                 
                 <!-- [Start] Content 상세  -->
                 <div class="content">
-                    이 곳에 컨텐츠 내용을 작성하시면 됩니다.
+                    <div class="tab-area">
+                        <div class="tab-menu">
+                            <a class="active" href="#" role="tab">대출</a>
+                            <a href="#" role="tab">반납</a>
+                        </div>
+                        <div class="tab-panel loans-extensions-reservations-list">
+                            <div class="sub-search-area">
+                                <ul class="ul-list-type">
+                                     <li>
+                                        <div class="select-box full">
+                                            <label for="select-01">제목</label>
+                                            <select id="select-01">
+                                                <option selected="selected">제목</option>
+                                                <option>저자</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-type-search full">
+                                            <input type="text" placeholder="검색 키워드를 입력하세요" />
+                                            <button type="button" class="btn-in-size btn-blue">검색</button>
+                                        </div>
+                                     </li>
+                                </ul>
+                            </div>
+                            <div class="all-table-views">전체 <span>50</span>건[1/5]</div>
+                            <ul class="loans-extensions-guide">
+                                <li>대출중인도서 : <span class="blue">1/0</span></li>
+                                <li>연체도서 : <span class="blue">1</span></li>
+                                <li>대출중기기간 : <span class="blue"></span></li>
+                            </ul>
+                            <table class="table-board-type-01 list-type h-auto">
+                                <caption>대출 리스트 표입니다.</caption>
+                                <col width="50">
+                                <col width="130">
+                                <col width="auto">
+                                <col class="col-hidden" width="90">
+                                <col class="col-hidden" width="90">
+                                <col width="98">
+                                <col width="98">
+                                <col width="78">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">선택</th>
+                                        <th scope="col">등록번호</th>
+                                        <th scope="col">서명</th>
+                                        <th class="col-hidden" scope="col">저자</th>
+                                        <th class="col-hidden" scope="col">출판사</th>
+                                        <th scope="col">대출일</th>
+                                        <th scope="col">반납예정일</th>
+                                        <th scope="col">연장횟수</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-left col-3">
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-type">
+                                                <input type="checkbox" id="checkbox-id-table-1" name="test-name">
+                                                <label for="checkbox-id-table-1"><span>1</span></label>
+                                            </div>
+                                        </td>
+                                        <td>EM0000065224</td>
+                                        <td>북한의 실상과 남북한 관계의 전망 : 북한문제 전문가와 귀순인사의 견해를 통해 본 진단</td>
+                                        <td class="col-hidden">선문대학교 통일사상연구원 편저</td>
+                                        <td class="col-hidden">선문대학교출판부</td>
+                                        <td>2017-10-01</td>
+                                        <td>2017-10-31</td>
+                                        <td class="orange">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- [Start] Paging Area -->
+                            <div class="paging">
+    <a class="first-prev" aria-label="처음으로 이동" href role="button"></a>
+    <a class="prev" aria-label="이전 페이지" href role="button"></a>
+    <div class="mobile-page">
+        <span class="now-page" aria-label="현재 페이지">1</span>
+        <span class="all-page" aria-label="총 페이지">19</span>
+    </div>
+    <div class="pc-page">
+        <a href role="button">1</a>
+        <a href role="button">2</a>
+        <!-- 선택된 버튼 class="selected"로 제어 -->
+        <a href role="button" class="selected">3</a>
+        <a href role="button">4</a>
+        <a href role="button">5</a>
+    </div>
+    <a class="next" aria-label="다음 페이지" href role="button"></a>
+    <a class="last-next" aria-label="끝으로 이동" href role="button"></a>
+</div>
+                            <!-- [End] Paging Area -->
+                            <div class="btn-set-area col-1">
+                                <a href="#" class="btn-out-size btn-defult" role="button">연장신청</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- [End] Content 상세  -->
 

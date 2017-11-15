@@ -666,8 +666,9 @@ JS 내용 작성</code></pre>
                         그리고 유동적인 테이블일 경우 컬럼 하나의 값은 <strong>width="<span class="red">auto</span>"</strong>로 설정하여 변화되는 너비의 값을 대응해야 합니다.<br>
                         표 마다 일관된 width 값이 없으므로 각 표의 제목(컬럼)의 너비에 따라 재정의하여 사용합니다.<br>
                         반응형 중단점에 따라 리스트(list-type) 테이블로 변화를 적용할 경우 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">list-type</strong>" class를 추가해 줍니다.<br>
+                        th, td 요소의 텍스트 <strong>말줄임 처리를 해제</strong> 하려면 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">h-auto</strong>" class를 추가해 줍니다.<br>
                         ex) <span class="blue">&lt;table class="table-view-type <strong class="red">list-type</strong>"&gt;</span><br>
-                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 반응형 적용 시 중단점에 따라 column을 감추는 형태로 사용하면 됩니다.<br>
+                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 반응형 적용 시 중단점에 따라 column을 감추는 형태로 사용하면 됩니다. (모바일에서의 column 감추기 가능)<br>
                         "<strong class="red">list-type</strong>"을 사용하는 표의 테이블 제목(컬럼)이 달라질 경우 "<strong>table-view-type</strong>" class명에 "<strong>table-view-type<span class="red">-num</span></strong>" class명과 같이 <span class="blue">-num</span>을 붙여서 class명을 정의하고 <strong>제목을 css의 content로 재설정</strong> 해줘야 합니다.<br>
                         ex) <span class="blue">&lt;table class="</span><strong>table-view-type</strong><strong class="red">-01</strong><span class="blue"> list-type"&gt;</span><br>
                     </p>

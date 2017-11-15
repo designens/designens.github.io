@@ -337,21 +337,21 @@
 // =================================================================
 // 소장정보 상세보기/MARC보기 실행
 // =================================================================
-(function(global, $) {
+// (function(global, $) {
 
-    var $btn_marc_view = $(".btn-marc-view"),
-        list_view_area = ".list-view-area",
-        marc_view_area = ".marc-view-area",
-        open_text = "상세보기",
-        close_text = "MARC 보기";
+//     var $btn_marc_view = $(".btn-marc-view"),
+//         list_view_area = ".list-view-area",
+//         marc_view_area = ".marc-view-area",
+//         open_text = "상세보기",
+//         close_text = "MARC 보기";
     
-    $btn_marc_view.click(function() {
-        var $this = $(this);
-        if($this.parent().siblings(list_view_area).css("display") == "none" )
-            $this.html(close_text).parent().siblings(list_view_area).show(),
-             $this.parent().siblings(marc_view_area).hide();
-        else $this.html(open_text).parent().siblings(marc_view_area).show(),
-            $this.parent().siblings(list_view_area).hide();
-    });
+//     $btn_marc_view.click(function() {
+//         var $this = $(this);
+//         if($this.parent().siblings(list_view_area).css("display") == "none" )
+//             $this.html(close_text).parent().siblings(list_view_area).show(),
+//              $this.parent().siblings(marc_view_area).hide();
+//         else $this.html(open_text).parent().siblings(marc_view_area).show(),
+//             $this.parent().siblings(list_view_area).hide();
+//     });
 
-})(window, window.jQuery);
+// })(window, window.jQuery);

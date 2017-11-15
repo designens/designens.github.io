@@ -1620,26 +1620,6 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
 @media print { code[class*="language-"], pre[class*="language-"] { text-shadow: none; }
   html * { color: #000; background: #fff; } }
 
-.checkbox-type, .radio-type { display: inline-block; }
-
-.checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
-
-.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
-
-.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
-
-.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; }
-
-.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #191919; }
-
-.checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
-
-.checkbox-type input[type="checkbox"]:checked + label:before, .radio-type input[type="checkbox"]:checked + label:before { font-size: 13px; line-height: 1.2; font-family: 'FontAwesome'; content: "\f00c"; }
-
-.radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
-
-.radio-type input[type="radio"]:checked + label:before { background-color: #191919; box-shadow: inset 0 0 0 3px #fff; }
-
 @keyframes slideDown { 0% { transform: translateY(-100%); }
   50% { transform: translateY(-50%); }
   100% { transform: translateY(0%); } }
@@ -1656,11 +1636,11 @@ input[type="date"], input focus { box-shadow: none; -webkit-box-shadow: none; -m
   50% { -webkit-transform: translateY(-50%); }
   100% { -webkit-transform: translateY(-100%); } }
 
-.btn-set-area, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item-img, .search-select-content .list-item-list, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline, .year-month-select-area, .ranking-keyword-area, .best-ranking-area, .download-paper-list, .item-gallery-area, .cartoon-list-area { *zoom: 1; }
+.btn-set-area, .sub-search-view-area .result-accordion li .sub-result, .search-select-content .list-item-img, .search-select-content .list-item-list, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd, .marc-view-area, .marc-view-area dl, .list-view-area, .book-review li .headline, .year-month-select-area, .ranking-keyword-area, .best-ranking-area, .download-paper-list, .item-gallery-area, .cartoon-list-area, .loans-extensions-reservations-list .loans-extensions-guide { *zoom: 1; }
 
-.btn-set-area:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item-img:before, .search-select-content .list-item-list:before, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:before, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:before, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .year-month-select-area:before, .ranking-keyword-area:before, .best-ranking-area:before, .download-paper-list:before, .item-gallery-area:before, .cartoon-list-area:before, .btn-set-area:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item-img:after, .search-select-content .list-item-list:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after, .download-paper-list:after, .item-gallery-area:after, .cartoon-list-area:after { content: ""; display: block; }
+.btn-set-area:before, .sub-search-view-area .result-accordion li .sub-result:before, .search-select-content .list-item-img:before, .search-select-content .list-item-list:before, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:before, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:before, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:before, .marc-view-area:before, .marc-view-area dl:before, .list-view-area:before, .book-review li .headline:before, .year-month-select-area:before, .ranking-keyword-area:before, .best-ranking-area:before, .download-paper-list:before, .item-gallery-area:before, .cartoon-list-area:before, .loans-extensions-reservations-list .loans-extensions-guide:before, .btn-set-area:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item-img:after, .search-select-content .list-item-list:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after, .download-paper-list:after, .item-gallery-area:after, .cartoon-list-area:after, .loans-extensions-reservations-list .loans-extensions-guide:after { content: ""; display: block; }
 
-.btn-set-area:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item-img:after, .search-select-content .list-item-list:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after, .download-paper-list:after, .item-gallery-area:after, .cartoon-list-area:after { clear: both; }
+.btn-set-area:after, .sub-search-view-area .result-accordion li .sub-result:after, .search-select-content .list-item-img:after, .search-select-content .list-item-list:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dt:after, .search-select-content .list-item-table .item-table-area td[colspan="4"] .item-area-wrap .item-area dl dd:after, .marc-view-area:after, .marc-view-area dl:after, .list-view-area:after, .book-review li .headline:after, .year-month-select-area:after, .ranking-keyword-area:after, .best-ranking-area:after, .download-paper-list:after, .item-gallery-area:after, .cartoon-list-area:after, .loans-extensions-reservations-list .loans-extensions-guide:after { clear: both; }
 
 .download-paper-list .download-item-box .item-box .item-img { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
 
@@ -1696,6 +1676,28 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
 pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.5px; }
+
+.checkbox-type, .radio-type { display: inline-block; }
+
+.checkbox-type input, .radio-type input { position: absolute; cursor: pointer; opacity: 0; }
+
+.checkbox-type input + label, .radio-type input + label { position: relative; padding-left: 23px; padding-right: 8px; }
+
+.checkbox-type input + label:before, .radio-type input + label:before { position: absolute; top: 2px; left: 0; display: inline-block; content: ''; text-align: center; width: 18px; height: 18px; border: 1px solid #c4c4c4; background: #fff; }
+
+.checkbox-type input + label span, .radio-type input + label span { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
+
+.checkbox-type input:focus + label:before, .radio-type input:focus + label:before { outline: none; }
+
+.checkbox-type input:checked + label:before, .radio-type input:checked + label:before { color: #191919; }
+
+.checkbox-type input[type="checkbox"] + label:before, .radio-type input[type="checkbox"] + label:before { font-size: 18px; line-height: 1; transition: all 0.1s ease; }
+
+.checkbox-type input[type="checkbox"]:checked + label:before, .radio-type input[type="checkbox"]:checked + label:before { font-size: 13px; line-height: 1.2; font-family: 'FontAwesome'; content: "\f00c"; }
+
+.radio-type input[type="radio"] + label:before { border-radius: 100%; transition: all 0.3s ease; }
+
+.radio-type input[type="radio"]:checked + label:before { background-color: #191919; box-shadow: inset 0 0 0 3px #fff; }
 
 /* =======================================*/
 /* 버튼 반응형 적용 레이아웃 구성 설정
@@ -2660,6 +2662,61 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.
 .domestic-serials-view .table-view-type-02 td:nth-of-type(5):before { content: "입수일"; }
 
 .domestic-serials-view .table-view-type-02 td:nth-of-type(6):before { content: "상태"; }
+
+/* =======================================*/
+/* Mylibrary > 대출/연장 > 리스트
+/* (html/loans-extensions-reservations-list.html)
+/* =======================================*/
+.loans-extensions-reservations-list .loans-extensions-guide { background: #f1f1f1; margin-bottom: 10px; }
+
+.loans-extensions-reservations-list .loans-extensions-guide li { position: relative; padding-left: 30px; padding-top: 9px; }
+
+.loans-extensions-reservations-list .loans-extensions-guide li:before { position: absolute; top: 19px; left: 20px; display: block; width: 3px; height: 3px; background: #454c5f; content: ""; }
+
+.loans-extensions-reservations-list .loans-extensions-guide li:last-child { padding-bottom: 9px; }
+
+@media (min-width: 47.5em) { .loans-extensions-reservations-list .loans-extensions-guide li { float: left; width: 33.33333%; padding-top: 9px; padding-bottom: 9px; } }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(1):before { content: "선택"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(2):before { content: "등록번호"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(3):before { content: "서명"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(4):before { content: "저자"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(5):before { content: "출판사"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(6):before { content: "대출일"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(7):before { content: "반납예정일"; }
+
+.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(8):before { content: "연장횟수"; }
+
+/* =======================================*/
+/* Mylibrary > 반납 > 리스트
+/* (html/loans-return-reservations-list.html)
+/* =======================================*/
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(1):before { content: "번호"; }
+
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(2):before { content: "등록번호"; }
+
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(3):before { content: "서명"; }
+
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(4):before { content: "저자"; }
+
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(5):before { content: "출판사"; }
+
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(6):before { content: "대출일"; }
+
+.loans-return-reservations-list .table-board-type-01 td:nth-of-type(7):before { content: "반납일"; }
+
+/* =======================================*/
+/* 라이브러리 기본 속성 변경
+/* =======================================*/
+.ui-widget-shadow { opacity: 1 !important; }
+
+.calendar-table tbody td a { height: 70% !important; }
 
 /* =======================================*/
 /* Content : 공통 요소 스타일
