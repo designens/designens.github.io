@@ -1657,15 +1657,13 @@ html[lang="ko-KR"], html[lang="ko"] { font-family: "Noto Sans Korean", sans-seri
 
 html[lang="en"] { font-family: Arial, sans-serif, serif; }
 
-html body { font-size: 1.5rem; color: #464646; line-height: 22.5px; }
+html body { font-size: 1.5rem; color: #464646; line-height: 21px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { html body { -webkit-font-smoothing: antialiased; } }
 
-h1, h2, h3, h4 { font-weight: 500; }
+h2, h3, h4 { font-weight: 500; }
 
 h5, h6 { font-weight: 400; }
-
-h1 { font-size: 30px; font-size: 3rem; line-height: 45px; line-height: 4.5rem; }
 
 h2 { font-size: 26px; font-size: 2.6rem; line-height: 39px; line-height: 3.9rem; }
 
@@ -1677,7 +1675,7 @@ h5 { font-size: 18px; font-size: 1.8rem; line-height: 27px; line-height: 2.7rem;
 
 h6 { font-size: 16px; font-size: 1.6rem; line-height: 24px; line-height: 2.4rem; }
 
-pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 22.5px; }
+pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21px; }
 
 .checkbox-type, .radio-type { display: inline-block; }
 
@@ -2075,7 +2073,7 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 [class*="table-board-type"][class*="list-type"] td { position: relative; min-height: 40px; padding: 9px 10px 9px 53%; }
 
-[class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 9px 10px; background: #f1f5f7; content: ""; }
+[class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 9px 10px; background: #f7f7f7; content: ""; }
 
 [class*="table-board-type"][class*="list-type"] td:first-child { border-top: 2px solid #999; }
 

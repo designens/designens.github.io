@@ -123,6 +123,43 @@ JS 내용 작성</code></pre>
             </article>
             <!-- [End] JS 주석 기본 사용 -->
 
+            <!-- [Start] 타이포그라피 설계 -->
+            <article>
+                <h2>Typography</h2>
+                <div class="typography-area">
+                    <h3>타이포그라피 설계</h3>
+                    <div class="typography-wrap fl-align">
+                        <p>
+                            <span class="blue">reset 폰트 사이즈</span> : 10px = 1rem</br>
+                            <span class="blue">본문 폰트 사이즈</span> : 15px</br>
+                            <span class="blue">본문 행간 비율</span> : 1.4배 (본문 폰트 사이즈 * 행간 비율)
+                        </p>
+                        <p>타이포그라피 설계는 본문 폰트 사이즈와 행간 비율을 사용자가 글을 읽는데 불편함이 없도록 가독성이 좋게 설정을 해준다. 행간의 높이는 <span class="blue">본문 폰트 사이즈 * 행간 비율</span>로 설정하는데 소수점이 떨어지지 않도록 설계하는 것이 가독성을 높이는데 도움이 된다.</p>
+                        <p>p 본문 사이즈 / 행간 사이즈 : 15px / 21px</p>
+                        <h6>h6 폰트 사이즈 : 16px</h6>
+                        <h5>h5 폰트 사이즈 : 18px</h5>
+                        <h4>h4 폰트 사이즈 : 20px</h4>
+                        <h3>h3 폰트 사이즈 : 23px</h3>
+                        <h2>h2 폰트 사이즈 : 26px</h2>
+                    </div>
+                    <div class="typography-wrap fr-align">
+                        <p>
+                            <span class="blue">reset 폰트 사이즈</span> : 10px = 1rem</br>
+                            <span class="blue">본문 폰트 사이즈</span> : 15px</br>
+                            <span class="blue">본문 행간 비율</span> : 1.4배 (본문 폰트 사이즈 * 행간 비율)
+                        </p>
+                        <p class="paragraph">타이포그라피 설계는 본문 폰트 사이즈와 행간 비율을 사용자가 글을 읽는데 불편함이 없도록 가독성이 좋게 설정을 해준다. 행간의 높이는 <span class="blue">본문 폰트 사이즈 * 행간 비율</span>로 설정하는데 소수점이 떨어지지 않도록 설계하는 것이 가독성을 높이는데 도움이 된다.</p>
+                        <p class="paragraph">p 본문 사이즈 / 행간 사이즈 : 15px / 21px</p>
+                        <h6>h6 폰트 사이즈 : 16px</h6>
+                        <h5>h5 폰트 사이즈 : 18px</h5>
+                        <h4>h4 폰트 사이즈 : 20px</h4>
+                        <h3>h3 폰트 사이즈 : 23px</h3>
+                        <h2>h2 폰트 사이즈 : 26px</h2>
+                    </div>
+                </div>
+            </article>
+            <!-- [End] 타이포그라피 설계 -->
+
             <!-- [Start] Input 공통 -->
             <article>
                 <h2>Input</h2>
@@ -1422,8 +1459,49 @@ JS 내용 작성</code></pre>
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
-                     <h3><div class="fa fa-angle-double-right"></div>가운데 정렬로 구성된 검색영역 스타일</h3>
-                     <div class="sub-search-area item-canter">
+                     <h3><div class="fa fa-angle-double-right"></div>좌측 텍스트 포함된 검색영역 스타일</h3>
+                    <div class="search-select-box-area">
+                        <div class="fl-align">
+                            <span class="orange">* 통일부에서 발간된 발간물입니다.</span>
+                        </div>
+                        <div class="fr-align">
+                            <div class="select-box number">
+                                <label for="select-01">5</label>
+                                <select id="select-01">
+                                    <option selected="selected">5</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                                </select>
+                            </div>
+                            <button class="btn-in-size btn-gray" type="button">보기</button>
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;search-select-box-area&quot;&gt;
+    &lt;div class=&quot;fl-align&quot;&gt;
+        &lt;span class=&quot;orange&quot;&gt;* 통일부에서 발간된 발간물입니다.&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fr-align&quot;&gt;
+        &lt;div class=&quot;select-box number&quot;&gt;
+            &lt;label for=&quot;select-01&quot;&gt;5&lt;/label&gt;
+            &lt;select id=&quot;select-01&quot;&gt;
+                &lt;option selected=&quot;selected&quot;&gt;5&lt;/option&gt;
+                &lt;option&gt;10&lt;/option&gt;
+                &lt;option&gt;15&lt;/option&gt;
+                &lt;option&gt;20&lt;/option&gt;
+                &lt;option&gt;30&lt;/option&gt;
+                &lt;option&gt;50&lt;/option&gt;
+                &lt;option&gt;100&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn-in-size btn-gray&quot; type=&quot;button&quot;&gt;보기&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <h3><div class="fa fa-angle-double-right"></div>가운데 정렬로 구성된 검색영역 스타일</h3>
+                    <div class="sub-search-area item-canter">
                         <div class="date-type">
                             <div class="select-box">
                                 <label for="select-01">1주일</label>
