@@ -2653,11 +2653,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .login-m.bhk .lo-wp form[name="login-frm"] .login { float: right; width: 100%; }
 
-.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 100%; height: 40px; line-height: 36px; font-size: 15px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 20px; vertical-align: middle; }
+.login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 19px; vertical-align: middle; }
 
 .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
 
@@ -2666,9 +2666,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa-search { vertical-align: text-top; }
 
 @media (min-width: 47.5em) { .login-m.bhk .lo-wp form[name="login-frm"] .login { width: auto; }
-  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size { position: relative; display: inline-block; min-width: 80px; height: 80px; line-height: 76px; font-size: 15px; text-align: center; vertical-align: middle; padding: 0 20px; }
   .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
-  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 50px; vertical-align: middle; }
+  .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon { font-size: 49px; vertical-align: middle; }
   .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.before, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.before { padding-right: 5px; }
   .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size img.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa.after, .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .icon.after { padding-left: 5px; }
   .login-m.bhk .lo-wp form[name="login-frm"] .login .btn-login-size .fa-search { vertical-align: text-top; } }

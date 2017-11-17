@@ -1764,11 +1764,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-item-size .fa-search { vertical-align: text-top; }
 
-.btn-in-size { position: relative; display: inline-block; min-width: 70px; height: 35px; line-height: 31px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+.btn-in-size { position: relative; display: inline-block; min-width: 70px; height: 35px; line-height: 31px; font-size: 15px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-in-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-in-size img, .btn-in-size .fa, .btn-in-size .icon { font-size: 16px; vertical-align: middle; }
+.btn-in-size img, .btn-in-size .fa, .btn-in-size .icon { font-size: 15px; vertical-align: middle; }
 
 .btn-in-size img.before, .btn-in-size .fa.before, .btn-in-size .icon.before { padding-right: 5px; }
 
@@ -1776,11 +1776,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-in-size .fa-search { vertical-align: text-top; }
 
-.btn-out-size { position: relative; display: inline-block; min-width: 70px; height: 40px; line-height: 36px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 20px; }
+.btn-out-size { position: relative; display: inline-block; min-width: 70px; height: 40px; line-height: 36px; font-size: 15px; text-align: center; vertical-align: middle; padding: 0 20px; }
 
 .btn-out-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
-.btn-out-size img, .btn-out-size .fa, .btn-out-size .icon { font-size: 20px; vertical-align: middle; }
+.btn-out-size img, .btn-out-size .fa, .btn-out-size .icon { font-size: 19px; vertical-align: middle; }
 
 .btn-out-size img.before, .btn-out-size .fa.before, .btn-out-size .icon.before { padding-right: 5px; }
 
@@ -1800,7 +1800,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .btn-table-view-size .fa-search { vertical-align: text-top; }
 
-.btn-table-board-size { position: relative; display: inline-block; min-width: 56px; height: 30px; line-height: 26px; font-size: 14px; text-align: center; vertical-align: middle; padding: 0 10px; }
+.btn-table-board-size { position: relative; display: inline-block; min-width: 56px; height: 30px; line-height: 26px; font-size: 15px; text-align: center; vertical-align: middle; padding: 0 10px; }
 
 .btn-table-board-size input { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
@@ -3020,6 +3020,21 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 /* =======================================*/
 /* 별점 선택 스타일
 /* =======================================*/
+.page-review-star { position: relative; background: #f4f4f4; padding: 24px 30px; margin-bottom: 20px; }
+
+.page-review-star .message { font-size: 16px; font-size: 1.6rem; color: #333; padding: 5px 0; }
+
+.page-review-star .review-star { height: 30px; line-height: 30px; }
+
+.page-review-star .review-star .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
+
+.page-review-star .review-star .fa.on { color: #ffb700; }
+
+.page-review-star .btn-rating { width: 100%; margin-top: 7px; }
+
+@media (min-width: 53.75em) { .page-review-star .review-star { display: inline-block; }
+  .page-review-star .btn-rating { position: absolute; right: 30px; bottom: 30px; width: auto; margin-top: 0; } }
+
 .review-star { height: 30px; line-height: 30px; }
 
 .review-star .fa { font-size: 16px; font-size: 1.6rem; color: #d5d5d5; margin-right: 2px; }
