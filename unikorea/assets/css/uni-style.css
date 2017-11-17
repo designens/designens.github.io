@@ -2564,6 +2564,29 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .search-history-list li .title { width: -webkit-calc( 100% - 120px); width: -moz-calc( 100% - 120px); width: calc( 100% - 120px); padding: 0 10px; }
   .search-history-list li .dete { position: absolute; right: 15px; bottom: 10px; padding-left: 0; } }
 
+.north-korean-film-application-list td:nth-of-type(1):before { content: "번호"; }
+
+.north-korean-film-application-list td:nth-of-type(2):before { content: "단체명"; }
+
+.north-korean-film-application-list td:nth-of-type(3):before { content: "희망장소"; }
+
+.north-korean-film-application-list td:nth-of-type(4):before { content: "희망일"; }
+
+.north-korean-film-application-list td:nth-of-type(5):before { content: "신청일"; }
+
+.north-korean-film-application-list td:nth-of-type(6):before { content: "상태"; }
+
+.north-korean-film-application-list td:nth-of-type(7):before { content: "비고"; }
+
+.north-korean-film-application-list .btn-table-area { margin-bottom: -6px; }
+
+.north-korean-film-application-list .btn-table-area a[role="button"], .north-korean-film-application-list .btn-table-area button { margin-right: 2px; margin-bottom: 6px; }
+
+.north-korean-film-application-list .btn-table-area a[role="button"]:last-child, .north-korean-film-application-list .btn-table-area button:last-child { margin-right: 0; }
+
+@media (min-width: 53.75em) { .north-korean-film-application-list .btn-table-area { margin-top: 2px; margin-bottom: 0; }
+  .north-korean-film-application-list .btn-table-area a[role="button"], .north-korean-film-application-list .btn-table-area button { min-width: 50px; height: 23px; line-height: 19px; padding: 0 10px; margin-bottom: 0; } }
+
 /* =======================================*/
 /* Content : 공통 요소 스타일
 /* =======================================*/

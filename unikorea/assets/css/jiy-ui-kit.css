@@ -1940,6 +1940,27 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 /* 테이블 스타일
 /* =======================================*/
+table.mobile-btn-hidden .mobile { display: none; }
+
+table.mobile-btn-hidden .tablet, table.mobile-btn-hidden .desktap { display: block; }
+
+@media (min-width: 30em) { table.mobile-btn-hidden .mobile { display: block; }
+  table.mobile-btn-hidden .tablet, table.mobile-btn-hidden .desktap { display: none; } }
+
+table.tablet-btn-hidden .mobile { display: block; }
+
+table.tablet-btn-hidden .tablet, table.tablet-btn-hidden .desktap { display: none; }
+
+@media (min-width: 47.5em) { table.tablet-btn-hidden .mobile { display: none; }
+  table.tablet-btn-hidden .tablet, table.tablet-btn-hidden .desktap { display: block; } }
+
+table.desktap-btn-hidden .mobile { display: block; }
+
+table.desktap-btn-hidden .tablet, table.desktap-btn-hidden .desktap { display: none; }
+
+@media (min-width: 53.75em) { table.desktap-btn-hidden .mobile { display: none; }
+  table.desktap-btn-hidden .tablet, table.desktap-btn-hidden .desktap { display: block; } }
+
 table .align-left.col-1 tr td { text-align: left; }
 
 @media (min-width: 53.75em) { table .align-left.col-1 tr td { text-align: center; }
@@ -1989,6 +2010,10 @@ table .align-left.col-10 tr td { text-align: left; }
 
 @media (min-width: 53.75em) { table .align-left.col-10 tr td { text-align: center; }
   table .align-left.col-10 tr td:nth-of-type(10) { text-align: left; } }
+
+table [class^="br-"] { display: inline-block; }
+
+@media (min-width: 53.75em) { table [class^="br-"] { display: block; } }
 
 table .col-hidden { display: none !important; }
 
@@ -2070,9 +2095,9 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 [class*="table-board-type"][class*="list-type"] tr:first-child td { border-top: 0; }
 
-[class*="table-board-type"][class*="list-type"] td { position: relative; min-height: 40px; padding: 9px 10px 9px 53%; }
+[class*="table-board-type"][class*="list-type"] td { position: relative; min-height: 40px; padding: 9px 10px 9px 43%; }
 
-[class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 9px 10px; background: #f7f7f7; content: ""; }
+[class*="table-board-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 40%; height: 100%; font-weight: 500; color: #333; padding: 9px 10px; background: #f7f7f7; content: ""; }
 
 [class*="table-board-type"][class*="list-type"] td:first-child { border-top: 2px solid #999; }
 
@@ -2081,7 +2106,7 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 [class*="table-board-type"][class*="list-type"] td:last-child:before { border-bottom: 0; }
 
 @media (min-width: 30em) and (max-width: 53.75em) { [class*="table-board-type"][class*="list-type"] tbody td { padding: 9px 10px 9px 32%; }
-  [class*="table-board-type"][class*="list-type"] tbody td:before { width: 30%; content: ""; } }
+  [class*="table-board-type"][class*="list-type"] tbody td:before { width: 30%; } }
 
 @media (min-width: 53.75em) { [class*="table-board-type"] tr th { background: #f7f7f7; }
   [class*="table-board-type"][class*="list-type"] { width: 100%; }
@@ -3002,6 +3027,8 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .review-star .star-number { font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #333; margin-left: 6px; }
 
+.review-star input + label span { position: static; top: 0; clip: auto; visibility: visible; }
+
 /* =======================================*/
 /* Content : 공통 요소 스타일
 /* =======================================*/
@@ -3059,7 +3086,14 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 @media (min-width: 71.25em) { .sub-search-area { padding: 15px 31px; } }
 
-.explan { color: #888; border-top: 1px solid #e5e6e6; border-bottom: 1px solid #e5e6e6; background: url("../../assets/images/common/bg-dashed01.png"); padding: 20px; }
+.explan { position: relative; color: #888; border-top: 1px solid #e5e6e6; border-bottom: 1px solid #e5e6e6; background: url("../../assets/images/common/bg-dashed01.png"); padding: 20px; }
+
+.explan.btn-add { padding-bottom: 75px; }
+
+.explan.btn-add button, .explan.btn-add a[role="button"] { position: absolute; right: 20px; bottom: 23px; }
+
+@media (min-width: 47.5em) { .explan.btn-add { padding-bottom: 20px; }
+  .explan.btn-add button, .explan.btn-add a[role="button"] { position: absolute; right: 20px; bottom: 23px; } }
 
 .gong-gongnuli-info { position: relative; padding: 12px 20px; margin-top: 20px; background: #f1f1f1; }
 
