@@ -2147,7 +2147,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .calendar-table tbody td { height: 60px; border: 1px solid #ddd; vertical-align: top; }
 
-.calendar-table tbody td .btn-day-link { position: relative; display: block; width: 100%; height: 100%; padding: 10px 6px; z-index: 9998; }
+.calendar-table tbody td .btn-day-link { position: relative; display: block; width: 100%; height: 60px; padding: 10px 6px; z-index: 9998; }
 
 .calendar-table tbody td .btn-day-link p { color: #464646; }
 
@@ -2161,7 +2161,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .calendar-table tbody td .btn-day-link:hover + .application-status-area, .calendar-table tbody td .btn-day-link:focus + .application-status-area, .calendar-table tbody td .btn-day-link:active + .application-status-area, .calendar-table tbody td .btn-day-link.active + .application-status-area { display: block; }
 
-.calendar-table tbody td .application-status-area { display: none; position: absolute; left: 0; width: 100%; height: 120px; padding: 6px 10px; border: 1px solid #7aaecd; background: #e5f4fd; z-index: 9999; overflow: auto; }
+.calendar-table tbody td .application-status-area { display: none; position: absolute; left: 0; width: 100%; height: 121px; padding: 6px 10px; margin-top: 1px; border: 1px solid #7aaecd; background: #e5f4fd; z-index: 9999; overflow: auto; }
 
 .calendar-table tbody td .application-status-area p { font-size: 14px; font-size: 1.4rem; color: #333; position: relative; padding-left: 12px; }
 
@@ -2198,20 +2198,19 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 @media (min-width: 47.5em) { .calendar-table tbody td { position: relative; }
   .calendar-table tbody td:hover .btn-day-link:after { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #596273; outline: 1px solid #596273; content: ""; }
   .calendar-table tbody td:hover .application-status-area { display: block; }
-  .calendar-table tbody td .application-status-area { top: 60px; left: 0; width: 202%; height: 120px; }
+  .calendar-table tbody td .application-status-area { top: 60px; left: 0; width: 202%; height: 121px; }
   .calendar-table tbody td .application-status-area .btn-set-mobile { display: none; }
-  .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -101%; }
-  .calendar-table tbody tr:nth-of-type(2) td:last-child .application-status-area { left: -101%; }
-  .calendar-table tbody tr:nth-of-type(3) td:last-child .application-status-area { left: -101%; }
-  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area { left: -101%; }
-  .calendar-table tbody tr:nth-of-type(4) td .application-status-area, .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -121px; }
-  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area, .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -101%; top: -121px; } }
+  .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -102%; }
+  .calendar-table tbody tr:nth-of-type(2) td:last-child .application-status-area { left: -102%; }
+  .calendar-table tbody tr:nth-of-type(3) td:last-child .application-status-area { left: -102%; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area { left: -102%; }
+  .calendar-table tbody tr:nth-of-type(4) td .application-status-area, .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -123px; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area, .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -102%; top: -123px; } }
 
-@media (min-width: 53.75em) { .calendar-table tbody td .btn-day-link .icon-application-status { right: 9px; bottom: 8px; width: auto; height: auto; line-height: 24px; text-indent: inherit; padding-left: 30px; }
-  .calendar-table tbody td .btn-day-link .icon-application-status:before { width: 21px; height: 24px; } }
-
-@media (min-width: 71.25em) { .calendar-table tbody td { height: 100px; }
-  .calendar-table tbody td .application-status-area { left: 0; width: 202%; height: 100px; }
+@media (min-width: 53.75em) { .calendar-table tbody td .application-status-area { left: 0; width: 202%; height: 100px; }
+  .calendar-table tbody td .btn-day-link { height: 100px; }
+  .calendar-table tbody td .btn-day-link .icon-application-status { right: 9px; bottom: 8px; width: auto; height: auto; line-height: 24px; text-indent: inherit; padding-left: 30px; }
+  .calendar-table tbody td .btn-day-link .icon-application-status:before { width: 21px; height: 24px; }
   .calendar-table tbody tr:nth-of-type(1) td .application-status-area { top: 100px; }
   .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -101%; top: 100px; }
   .calendar-table tbody tr:nth-of-type(2) td .application-status-area { top: 100px; }
