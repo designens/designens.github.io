@@ -2204,8 +2204,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .calendar-table tbody tr:nth-of-type(2) td:last-child .application-status-area { left: -102%; }
   .calendar-table tbody tr:nth-of-type(3) td:last-child .application-status-area { left: -102%; }
   .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area { left: -102%; }
-  .calendar-table tbody tr:nth-of-type(4) td .application-status-area, .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -123px; }
-  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area, .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -102%; top: -123px; } }
+  .calendar-table tbody tr:nth-of-type(4) td .application-status-area, .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -122px; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area, .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -102%; top: -122px; } }
 
 @media (min-width: 53.75em) { .calendar-table tbody td .application-status-area { left: 0; width: 202%; height: 100px; }
   .calendar-table tbody td .btn-day-link { height: 100px; }
