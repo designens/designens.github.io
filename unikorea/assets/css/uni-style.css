@@ -2141,31 +2141,125 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .calendar-table { width: 100%; }
 
-.calendar-table thead th { height: 33px; line-height: 33px; color: #fff; background: #3a71b3; border-right: 1px solid #2e5d99; }
+.calendar-table thead th { font-weight: 400; height: 33px; line-height: 33px; color: #fff; background: #3a71b3; border-right: 1px solid #2e5d99; }
 
 .calendar-table thead th:first-child { border-left: 1px solid #2e5d99; }
 
-.calendar-table tbody td { height: 50px; border: 1px solid #ddd; vertical-align: top; }
+.calendar-table tbody td { position: relative; height: 70px; border: 1px solid #ddd; vertical-align: top; }
 
-.calendar-table tbody td a { display: block; width: 100%; height: 100%; padding: 10px 6px; }
+.calendar-table tbody td .btn-day-link { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 10px 6px; z-index: 9998; }
 
-.calendar-table tbody tr td:first-child, .calendar-table tbody tr .can-not-apply { color: #e35000; }
+.calendar-table tbody td .btn-day-link p { color: #464646; }
 
-.calendar-table tbody tr .can-not-apply p { background: #edba9d; }
+.calendar-table tbody td .icon-application-status { display: block; position: absolute; width: 17px; height: 20px; right: 7px; bottom: 6px; color: #596273; text-indent: -9999px; z-index: 9997; }
 
-.calendar-table tbody tr .day:hover, .calendar-table tbody tr .day:focus { border: 2px solid #333; }
+.calendar-table tbody td .icon-application-status:before { position: absolute; left: 0; width: 17px; height: 20px; background: url("../../assets/images/icon/icon-link-04.png") no-repeat; background-size: auto 100%; content: ""; }
 
-.calendar-table tbody tr .day.inactive:hover, .calendar-table tbody tr .day.inactive:focus, .calendar-table tbody tr .day.can-not-apply:hover, .calendar-table tbody tr .day.can-not-apply:focus { border: 1px solid #ddd; }
+.calendar-table tbody td .application-status-area { display: none; position: absolute; top: 70px; height: 140px; padding: 6px 10px; border: 1px solid #7aaecd; background: #e5f4fd; z-index: 9999; overflow: auto; }
 
-.calendar-table tbody tr .day.inactive:hover a, .calendar-table tbody tr .day.inactive:focus a, .calendar-table tbody tr .day.can-not-apply:hover a, .calendar-table tbody tr .day.can-not-apply:focus a { cursor: no-drop; }
+.calendar-table tbody td .application-status-area p { font-size: 14px; font-size: 1.4rem; color: #333; position: relative; padding-left: 12px; }
 
-.calendar-table tbody tr .inactive { color: #ccc; }
+.calendar-table tbody td .application-status-area p:before { position: absolute; top: 7px; left: 0; display: block; width: 6px; height: 6px; background: #333; content: ""; }
+
+.calendar-table tbody td .application-status-area .btn-set-mobile { display: none; text-align: right; margin: 4px 0 6px 0; }
+
+.calendar-table tbody td .application-status-area .btn-set-mobile [class^="btn-"] { margin-right: 6px; }
+
+.calendar-table tbody td .application-status-area .btn-set-mobile [class^="btn-"]:last-child { margin-right: 0; }
+
+.calendar-table tbody td:hover .application-status-area, .calendar-table tbody td:focus .application-status-area, .calendar-table tbody td:active .application-status-area, .calendar-table tbody td.active .application-status-area { display: block; }
+
+.calendar-table tbody td:hover.inactive .application-status-area, .calendar-table tbody td:focus.inactive .application-status-area, .calendar-table tbody td:active.inactive .application-status-area, .calendar-table tbody td.active.inactive .application-status-area { display: none; }
+
+.calendar-table tbody tr .can-not-apply .btn-day-link p { background: #edba9d; }
+
+.calendar-table tbody tr td:first-child .btn-day-link p { color: #e35000; }
+
+.calendar-table tbody tr .day .btn-day-link:hover, .calendar-table tbody tr .day .btn-day-link:focus { position: relative; }
+
+.calendar-table tbody tr .day .btn-day-link:hover:after, .calendar-table tbody tr .day .btn-day-link:focus:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid #333; outline: 1px solid #333; content: ""; }
+
+.calendar-table tbody tr .day .icon-application-status:hover + .btn-day-link:after, .calendar-table tbody tr .day .icon-application-status:focus + .btn-day-link:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid #333; outline: 1px solid #333; content: ""; }
+
+.calendar-table tbody tr .day.inactive .btn-day-link:hover, .calendar-table tbody tr .day.inactive .btn-day-link:focus, .calendar-table tbody tr .day.can-not-apply .btn-day-link:hover, .calendar-table tbody tr .day.can-not-apply .btn-day-link:focus { cursor: no-drop; }
+
+.calendar-table tbody tr .day.inactive .btn-day-link:hover:after, .calendar-table tbody tr .day.inactive .btn-day-link:focus:after, .calendar-table tbody tr .day.can-not-apply .btn-day-link:hover:after, .calendar-table tbody tr .day.can-not-apply .btn-day-link:focus:after { border: 0; outline: 0; }
+
+.calendar-table tbody tr .inactive .btn-day-link p { color: #ccc; }
+
+.calendar-table tbody tr .inactive .icon-application-status { display: none; }
 
 .calendar-table tbody tr:first-child td { border-top: 1px solid #2e5d99; }
 
 .calendar-table tbody tr:first-child td.day.inactive:hover, .calendar-table tbody tr:first-child td.day.inactive:focus, .calendar-table tbody tr:first-child td.day.can-not-apply:hover, .calendar-table tbody tr:first-child td.day.can-not-apply:focus { border-top: 1px solid #2e5d99; }
 
-@media (min-width: 71.25em) { .calendar-table tbody td { height: 100px; } }
+@media (min-width: 0) and (max-width: 47.5em) { .calendar-table tbody td .application-status-area .btn-set-mobile { display: block; }
+  .calendar-table tbody tr:nth-of-type(1) td .application-status-area { width: 700%; }
+  .calendar-table tbody tr:nth-of-type(1) td:first-child .application-status-area { left: 0; }
+  .calendar-table tbody tr:nth-of-type(1) td:nth-of-type(2) .application-status-area { left: -100%; }
+  .calendar-table tbody tr:nth-of-type(1) td:nth-of-type(3) .application-status-area { left: -200%; }
+  .calendar-table tbody tr:nth-of-type(1) td:nth-of-type(4) .application-status-area { left: -300%; }
+  .calendar-table tbody tr:nth-of-type(1) td:nth-of-type(5) .application-status-area { left: -400%; }
+  .calendar-table tbody tr:nth-of-type(1) td:nth-of-type(6) .application-status-area { left: -500%; }
+  .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -600%; }
+  .calendar-table tbody tr:nth-of-type(2) td .application-status-area { width: 700%; }
+  .calendar-table tbody tr:nth-of-type(2) td:first-child .application-status-area { left: 0; }
+  .calendar-table tbody tr:nth-of-type(2) td:nth-of-type(2) .application-status-area { left: -100%; }
+  .calendar-table tbody tr:nth-of-type(2) td:nth-of-type(3) .application-status-area { left: -200%; }
+  .calendar-table tbody tr:nth-of-type(2) td:nth-of-type(4) .application-status-area { left: -300%; }
+  .calendar-table tbody tr:nth-of-type(2) td:nth-of-type(5) .application-status-area { left: -400%; }
+  .calendar-table tbody tr:nth-of-type(2) td:nth-of-type(6) .application-status-area { left: -500%; }
+  .calendar-table tbody tr:nth-of-type(2) td:last-child .application-status-area { left: -600%; }
+  .calendar-table tbody tr:nth-of-type(3) td .application-status-area { width: 700%; }
+  .calendar-table tbody tr:nth-of-type(3) td:first-child .application-status-area { left: 0; }
+  .calendar-table tbody tr:nth-of-type(3) td:nth-of-type(2) .application-status-area { left: -100%; }
+  .calendar-table tbody tr:nth-of-type(3) td:nth-of-type(3) .application-status-area { left: -200%; }
+  .calendar-table tbody tr:nth-of-type(3) td:nth-of-type(4) .application-status-area { left: -300%; }
+  .calendar-table tbody tr:nth-of-type(3) td:nth-of-type(5) .application-status-area { left: -400%; }
+  .calendar-table tbody tr:nth-of-type(3) td:nth-of-type(6) .application-status-area { left: -500%; }
+  .calendar-table tbody tr:nth-of-type(3) td:last-child .application-status-area { left: -600%; }
+  .calendar-table tbody tr:nth-of-type(4) td .application-status-area { width: 700%; }
+  .calendar-table tbody tr:nth-of-type(4) td:first-child .application-status-area { left: 0; }
+  .calendar-table tbody tr:nth-of-type(4) td:nth-of-type(2) .application-status-area { left: -100%; }
+  .calendar-table tbody tr:nth-of-type(4) td:nth-of-type(3) .application-status-area { left: -200%; }
+  .calendar-table tbody tr:nth-of-type(4) td:nth-of-type(4) .application-status-area { left: -300%; }
+  .calendar-table tbody tr:nth-of-type(4) td:nth-of-type(5) .application-status-area { left: -400%; }
+  .calendar-table tbody tr:nth-of-type(4) td:nth-of-type(6) .application-status-area { left: -500%; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area { left: -600%; }
+  .calendar-table tbody tr:nth-of-type(5) td .application-status-area { width: 700%; }
+  .calendar-table tbody tr:nth-of-type(5) td:first-child .application-status-area { left: 0; }
+  .calendar-table tbody tr:nth-of-type(5) td:nth-of-type(2) .application-status-area { left: -100%; }
+  .calendar-table tbody tr:nth-of-type(5) td:nth-of-type(3) .application-status-area { left: -200%; }
+  .calendar-table tbody tr:nth-of-type(5) td:nth-of-type(4) .application-status-area { left: -300%; }
+  .calendar-table tbody tr:nth-of-type(5) td:nth-of-type(5) .application-status-area { left: -400%; }
+  .calendar-table tbody tr:nth-of-type(5) td:nth-of-type(6) .application-status-area { left: -500%; }
+  .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -600%; }
+  .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -141px; } }
+
+@media (min-width: 47.5em) { .calendar-table tbody td .application-status-area { top: 70px; left: 0; width: 202%; height: 140px; }
+  .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -101%; top: 70px; }
+  .calendar-table tbody tr:nth-of-type(2) td:last-child .application-status-area { left: -101%; top: 70px; }
+  .calendar-table tbody tr:nth-of-type(3) td:last-child .application-status-area { left: -101%; top: 70px; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area { left: -101%; top: 70px; }
+  .calendar-table tbody tr:nth-of-type(4) td .application-status-area, .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -141px; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area, .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -101%; top: -141px; } }
+
+@media (min-width: 53.75em) { .calendar-table tbody td .icon-application-status { right: 9px; bottom: 8px; width: auto; height: auto; line-height: 24px; text-indent: inherit; padding-left: 30px; }
+  .calendar-table tbody td .icon-application-status:before { width: 21px; height: 24px; } }
+
+@media (min-width: 71.25em) { .calendar-table tbody td { height: 100px; }
+  .calendar-table tbody td .icon-application-status { position: absolute; bottom: 10px; right: 10px; }
+  .calendar-table tbody td .application-status-area { left: 0; width: 202%; height: 100px; }
+  .calendar-table tbody tr:nth-of-type(1) td .application-status-area { top: 100px; }
+  .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -101%; top: 100px; }
+  .calendar-table tbody tr:nth-of-type(2) td .application-status-area { top: 100px; }
+  .calendar-table tbody tr:nth-of-type(2) td:last-child .application-status-area { left: -101%; top: 100px; }
+  .calendar-table tbody tr:nth-of-type(3) td .application-status-area { top: 100px; }
+  .calendar-table tbody tr:nth-of-type(3) td:last-child .application-status-area { left: -101%; top: 100px; }
+  .calendar-table tbody tr:nth-of-type(4) td .application-status-area { top: 100px; }
+  .calendar-table tbody tr:nth-of-type(4) td:last-child .application-status-area { left: -101%; top: 100px; }
+  .calendar-table tbody tr:nth-of-type(5) td .application-status-area { top: -101px; }
+  .calendar-table tbody tr:nth-of-type(5) td:last-child .application-status-area { left: -101%; top: -101px; } }
 
 .can-not-apply-message { margin: 6px 0 7px 0; }
 
@@ -2537,8 +2631,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 라이브러리 기본 속성 변경
 /* =======================================*/
 .ui-widget-shadow { opacity: 1 !important; }
-
-.calendar-table tbody td a { height: 70% !important; }
 
 /* =======================================*/
 /* Mylibrary > 나의활동 > 리스트
