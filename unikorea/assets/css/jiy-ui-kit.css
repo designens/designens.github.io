@@ -2936,8 +2936,6 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .tab-area .tab-menu-toggle a[role="tab"] div { color: #333; font-weight: 300; height: 40px; line-height: 40px; text-align: left; padding: 0 10px; border: 1px solid #ccc; border-bottom: 0; }
 
-.tab-area .tab-menu-toggle a[role="tab"]:first-child { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
-
 .tab-area .tab-menu-toggle a[role="tab"]:last-child div { border-bottom: 1px solid #ccc; }
 
 .tab-area .tab-menu-toggle a[role="tab"]:focus div, .tab-area .tab-menu-toggle a[role="tab"]:active div, .tab-area .tab-menu-toggle a[role="tab"].active div { font-weight: 400; color: #305ed6; background: #f1f1f1; border: 1px solid #ccc; border-bottom: 0; }
