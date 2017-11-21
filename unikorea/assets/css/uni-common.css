@@ -2439,7 +2439,7 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .top-area .wrap .logo { position: absolute; left: 50%; margin-left: -95px; }
 
-.top-area .wrap .logo a { display: block; width: 190px; height: 80px; text-indent: -9999px; background: url("../../assets/images/common/logo.png") 50% center no-repeat; }
+.top-area .wrap .logo a { display: block; width: 190px; height: 80px; text-indent: -9999px; background: url("../../assets/images/common/logo.png") center no-repeat; background-size: 190px auto; }
 
 .top-area .wrap .gnb { display: inline-block; }
 
