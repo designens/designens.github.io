@@ -2155,15 +2155,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .calendar-table tbody td .btn-day-link .icon-application-status:before { position: absolute; left: 0; width: 17px; height: 20px; background: url("../../assets/images/icon/icon-link-04.png") no-repeat; background-size: auto 100%; content: ""; }
 
-.calendar-table tbody td .btn-day-link:hover, .calendar-table tbody td .btn-day-link:focus { position: relative; }
-
-.calendar-table tbody td .btn-day-link:hover:after, .calendar-table tbody td .btn-day-link:focus:after { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #333; outline: 1px solid #333; content: ""; }
-
-.calendar-table tbody td .btn-day-link:hover + .application-status-area, .calendar-table tbody td .btn-day-link:focus + .application-status-area { display: block; }
-
 .calendar-table tbody td .btn-day-link:active, .calendar-table tbody td .btn-day-link.active { position: relative; }
 
 .calendar-table tbody td .btn-day-link:active:after, .calendar-table tbody td .btn-day-link.active:after { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #3a71b3; outline: 1px solid #3a71b3; content: ""; }
+
+.calendar-table tbody td:hover .btn-day-link:after, .calendar-table tbody td:focus .btn-day-link:after { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #596273; outline: 1px solid #596273; content: ""; }
+
+.calendar-table tbody td:hover .btn-day-link + .application-status-area, .calendar-table tbody td:focus .btn-day-link + .application-status-area { display: block; }
 
 .calendar-table tbody td .application-status-area { display: none; position: absolute; left: 0; width: 100%; height: 121px; padding: 6px 10px; margin-top: 1px; border: 1px solid #7aaecd; background: #e5f4fd; z-index: 9999; overflow: auto; }
 
@@ -2200,8 +2198,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .calendar-table tbody tr td:first-child .btn-day-link .day { color: #e35000; }
 
 @media (min-width: 47.5em) { .calendar-table tbody td { position: relative; }
-  .calendar-table tbody td:hover .btn-day-link:after { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 1px solid #596273; outline: 1px solid #596273; content: ""; }
-  .calendar-table tbody td:hover .application-status-area { display: block; }
   .calendar-table tbody td .application-status-area { top: 60px; left: 0; width: 202%; height: 121px; }
   .calendar-table tbody td .application-status-area .btn-set-mobile { display: none; }
   .calendar-table tbody tr:nth-of-type(1) td:last-child .application-status-area { left: -102%; }
