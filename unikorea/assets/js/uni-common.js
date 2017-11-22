@@ -303,7 +303,6 @@
 })(window, window.jQuery);
 
 (function(global, $) {
-
     var $btn_result_search = $(".btn-result-search"),
         result_table_area = ".sub-search-view-area";
 
@@ -355,3 +354,11 @@
 //     });
 
 // })(window, window.jQuery);
+
+// =================================================================
+// 페이지 정보 평가 삽입 시 간격 설정
+// =================================================================
+(function(global, $) {
+    var pageReview = $(".page-review-star");
+    pageReview.parent().css('margin-bottom','0');
+})(window, window.jQuery);

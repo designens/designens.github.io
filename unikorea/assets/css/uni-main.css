@@ -1818,7 +1818,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .main-content [class$="-zone"] .headline { position: relative; margin-bottom: 12px; }
 
 @media (min-width: 71.25em) { .main-content { height: 242px; margin: 30px auto; }
-  .main-content [class$="-zone"] { padding: 0; width: 32%; float: left; margin-right: 2%; }
+  .main-content [class$="-zone"] { width: 32%; float: left; margin-right: 2%; }
   .main-content [class$="-zone"]:last-child { width: 32%; float: right; margin-right: 0; } }
 
 .popup-zone { position: relative; }
