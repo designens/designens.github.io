@@ -1717,7 +1717,7 @@ JS 내용 작성</code></pre>
                 <!-- 팝업 버튼 class 설정 -->
                 <a class="btn-popup-test btn-out-size btn-defult" role="button" href>팝업 열기</a>
                 <span class="fa fa-hand-o-left"></span><span>버튼을 클릭하면 팝업을 호출 합니다.</span>
-<pre><code class="language-html">&lt;a class=&quot;btn-popup-name&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;</code></pre>
+<pre><code class="language-html">&lt;a class=&quot;btn-popup-test&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;</code></pre>
                 <p class="ui-kit-comment">
                     팝업버튼의 <strong>class="btn-popup-<span class="red">name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="popup-<span class="red">name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
                     클래스의 <strong>popup-<span class="red">name</span></strong> 은 파일 네이밍과 동일하게 규칙적으로 사용합니다.
@@ -1726,7 +1726,7 @@ JS 내용 작성</code></pre>
             <article>
                 <h2>Popup Base Style</h2>
 <pre><code class="language-html">&lt;!-- 팝업 창 data-id 설정 --&gt;
-&lt;div class=&quot;popup&quot; data-id=&quot;test-area&quot;&gt;
+&lt;div class=&quot;popup&quot; data-id=&quot;popup-test&quot;&gt;
     &lt;!-- [Start] 팝업 헤드라인 --&gt;
     &lt;header class=&quot;popup-headline&quot;&gt;
         &lt;h4&gt;팝업 제목&lt;/h4&gt;
@@ -1795,7 +1795,7 @@ $('.btn-popup-name').on('click', function(e) {
 
     <!-- [Start] Popup Base Style Area -->
     <!-- 팝업 창 data-id 설정 -->
-<div class="popup" data-id="test-area">
+<div class="popup" data-id="popup-test">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">
         <h4>팝업 제목</h4>

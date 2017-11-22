@@ -55,7 +55,7 @@
     $('.btn-popup-test').on('click', function(e) {
         e.preventDefault();
         // 팝업 찾아 열기 (id)
-        $.popupId($popups, 'test-area').open();
+        $.popupId($popups, 'popup-test').open();
     });
 
     // 서평쓰기 팝업
