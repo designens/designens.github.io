@@ -2233,11 +2233,8 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 @media (min-width: 1em) and (max-width: 47.5em) { #gnb-all-menu { bottom: 0; } }
 
-@media (min-width: 47.5em) { #gnb-all-menu { top: 117px; bottom: auto; z-index: 1000; } }
-
-@media screen and (min-width: 47.5em) and (-webkit-min-device-pixel-ratio: 0) { #gnb-all-menu { top: 116px; } }
-
-@media (min-width: 47.5em) { #gnb-all-menu .user-menu { display: none; }
+@media (min-width: 47.5em) { #gnb-all-menu { top: 116px; bottom: auto; z-index: 1000; }
+  #gnb-all-menu .user-menu { display: none; }
   #gnb-all-menu .wrap { border-top: 0; border-bottom: 0px; }
   #gnb-all-menu .wrap .aco-open > li { border-top: 0; border-bottom: 0; background: transparent; }
   #gnb-all-menu .wrap .aco-open > li .title-link { margin-top: 20px; height: 60px; line-height: 58px; font-size: 20px; font-size: 2rem; color: #050505; text-align: center; padding: 0; background: transparent; border-bottom: 3px solid #0066b3; }
@@ -2251,7 +2248,7 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
   #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle .toggle-label { height: auto; line-height: 1.5; color: #464646; }
   #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul { margin-bottom: 0; }
   #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li { position: relative; font-size: 14px; font-size: 1.4rem; color: #888; padding-left: 8px; }
-  #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li a { font-size: 14px; font-size: 1.4rem; font-weight: 300; height: 20px; line-height: 20px; }
+  #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li a { font-size: 14px; font-size: 1.4rem; font-weight: 300; letter-spacing: -0.02em; height: 20px; line-height: 20px; }
   #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li:before { position: absolute; top: -1px; left: 0; display: inline-block; content: "- "; }
   #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li:hover, #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li:focus { color: #0066b3; }
   #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li:hover:before, #gnb-all-menu .wrap .aco-open > li .sub-menu > li.toggle > ul > li:focus:before { position: absolute; top: 0; left: 0; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #0066b3; } }
@@ -2411,9 +2408,11 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 /* =======================================*/
 .header { border-bottom: 1px solid #aaa; }
 
-.top-menu { display: none; min-width: 360px; height: 35px; line-height: 35px; background: #005083; }
+.top-menu { display: none; min-width: 360px; height: 35px; background: #005083; }
 
-.top-menu .wrap .menu { text-align: right; }
+.top-menu .wrap .menu { text-align: right; line-height: 33px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { .top-menu .wrap .menu { line-height: 35px; } }
 
 .top-menu .wrap .menu a { font-size: 13px; font-size: 1.3rem; font-weight: 100; color: #dde3ea; }
 
@@ -2421,7 +2420,9 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .top-menu .wrap .menu a:last-child:after { background: transparent; }
 
-.top-menu .wrap .link { display: none; }
+.top-menu .wrap .link { display: none; line-height: 33px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { .top-menu .wrap .link { line-height: 35px; } }
 
 .top-menu .wrap .link a { display: block; height: 35px; color: #363b36; text-align: center; background: #6dd0f7; }
 
@@ -2435,7 +2436,7 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
   .top-menu .wrap .menu { width: 90%; float: left; }
   .top-menu .wrap .link { display: inline-block; width: 10%; float: left; float: right; margin-right: 0; } }
 
-.top-area { min-width: 360px; height: 80px; padding: 0; }
+.top-area { min-width: 360px; height: 80px; }
 
 .top-area .wrap { position: relative; }
 
