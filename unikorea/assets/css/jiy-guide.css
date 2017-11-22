@@ -2913,14 +2913,15 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
   .tab-area .tab-menu.col-4 a[role="tab"] { width: 50%; }
   .tab-area .tab-menu.col-5 a[role="tab"] { width: 50%; } }
 
-@media (min-width: 47.5em) { .tab-area .tab-menu { height: 40px; }
-  .tab-area .tab-menu a[role="tab"] { width: auto; padding: 0 40px; }
+@media (min-width: 47.5em) { .tab-area .tab-menu a[role="tab"] { width: 33.33333%; padding: 0 40px; }
   .tab-area .tab-menu.col-2 a[role="tab"] { width: 100%; }
   .tab-area .tab-menu.col-3 a[role="tab"] { width: 50%; }
   .tab-area .tab-menu.col-4 a[role="tab"] { width: 33.33333%; }
   .tab-area .tab-menu.col-5 a[role="tab"] { width: 25%; } }
 
-@media (min-width: 71.25em) { .tab-area .tab-menu.col-2 a[role="tab"] { width: 50%; }
+@media (min-width: 53.75em) { .tab-area .tab-menu { height: 40px; }
+  .tab-area .tab-menu a[role="tab"] { width: auto; padding: 0 40px; }
+  .tab-area .tab-menu.col-2 a[role="tab"] { width: 50%; }
   .tab-area .tab-menu.col-3 a[role="tab"] { width: 33.33333%; }
   .tab-area .tab-menu.col-4 a[role="tab"] { width: 25%; }
   .tab-area .tab-menu.col-5 a[role="tab"] { width: 20%; } }
