@@ -1680,7 +1680,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 .content-area .headline { margin-bottom: 30px; }
 
-.content-area .headline .sub-title { font-size: 30px; font-size: 3rem; color: #333; padding-bottom: 10px; border-bottom: 2px solid #666; clear: both; }
+.content-area .headline .sub-title { font-size: 30px; font-size: 3rem; color: #333; padding: 23px 0 10px; border-bottom: 2px solid #666; clear: both; }
 
 .content-area .headline .site-location { height: 35px; line-height: 35px; }
 
@@ -1886,29 +1886,41 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 소장자료 검색 > 리스트 (list)
 /* (html/resources-search-list-item.html)
 /* =======================================*/
-.accordion-result-search { margin-top: 20px; }
+.accordion-search-title { color: #fff; text-align: center; height: 40px; line-height: 36px; margin-top: 50px; background: #5f7a8f; }
 
-.accordion-result-search h6, .accordion-result-search .title { background: #ddd; padding: 4px 10px; }
+.accordion-search-area { border-left: 1px solid #e7e7e7; border-right: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7; }
 
-.accordion-result-search .aco-open { padding: 4px 10px; }
+.accordion-search-area h6, .accordion-search-area .title { color: #005bb3; padding: 4px 15px; background: #f1f1f1; }
 
-.accordion-result-search .aco-open li { padding: 4px 0; }
+.accordion-search-area .aco-open { padding: 10px 15px; }
 
-.accordion-result-search .aco-open li [class*="link"] { position: relative; color: #333; font-size: 16px; font-size: 1.6rem; }
+.accordion-search-area .aco-open li a[href] { font-size: 14px; font-size: 1.4rem; }
 
-.accordion-result-search .aco-open li [class*="link"] .icon-toggle { position: absolute; display: block; top: 50%; right: 20px; width: 13px; height: 13px; margin-top: -7px; }
+.accordion-search-area .aco-open li a[href] .amount { font-weight: 300; color: #888; margin-left: 2px; }
 
-.accordion-result-search .aco-open li [class*="link"] .icon-toggle:before { position: absolute; top: 5px; right: 0; width: 13px; height: 3px; background: #b1b1b3; content: ""; }
+.accordion-search-area .aco-open li [class*="link"] { position: relative; padding: 4px 0; }
 
-.accordion-result-search .aco-open li [class*="link"] .icon-toggle:after { position: absolute; top: 0; right: 5px; width: 3px; height: 13px; background: #b1b1b3; content: ""; transform: rotate(0deg); transition: transform 0.25s ease; }
+.accordion-search-area .aco-open li [class*="link"] .icon-toggle { position: absolute; display: block; top: 50%; right: 0; width: 9px; height: 9px; margin-top: -4px; }
 
-.accordion-result-search .aco-open li:last-child, .accordion-result-search .aco-open li [class*="link"] { border-bottom: 0; }
+.accordion-search-area .aco-open li [class*="link"] .icon-toggle:before { position: absolute; top: 4px; right: 0; width: 9px; height: 1px; background: #0066b3; content: ""; }
 
-.accordion-result-search .aco-open li.open { background: #00baf2; }
+.accordion-search-area .aco-open li [class*="link"] .icon-toggle:after { position: absolute; top: 0; right: 4px; width: 1px; height: 9px; background: #0066b3; content: ""; transform: rotate(0deg); transition: transform 0.25s ease; }
 
-.accordion-result-search .aco-open li.open [class*="link"] { color: #fff; }
+.accordion-search-area .aco-open li:last-child, .accordion-search-area .aco-open li [class*="link"] { border-bottom: 0; }
 
-.accordion-result-search .aco-open li.open [class*="link"] .icon-toggle:after { background: #fff; transform: rotate(90deg); transition: transform 0.25s ease; }
+.accordion-search-area .aco-open li.open [class*="link"] .icon-toggle:after { transform: rotate(90deg); transition: transform 0.25s ease; }
+
+.accordion-search-area .aco-open li.open .sub-menu { padding: 4px 10px 4px 20px; background: #e9f0f5; }
+
+.accordion-search-area .aco-open li.open .sub-menu > li { position: relative; padding: 1px 0; }
+
+.accordion-search-area .aco-open li.open .sub-menu > li:before { position: absolute; top: 10px; left: -10px; display: block; width: 3px; height: 3px; background: #888; content: ""; }
+
+.accordion-search-area .aco-open li.open .sub-menu > li a[href] { font-weight: 300; }
+
+.accordion-search-area .aco-open li.open .sub-menu > li:hover:before, .accordion-search-area .aco-open li.open .sub-menu > li:focus:before, .accordion-search-area .aco-open li.open .sub-menu > li:active:before, .accordion-search-area .aco-open li.open .sub-menu > li.active:before { background: #0066b3; }
+
+.accordion-search-area .aco-open li.open .sub-menu > li:hover a[href], .accordion-search-area .aco-open li.open .sub-menu > li:focus a[href], .accordion-search-area .aco-open li.open .sub-menu > li:active a[href], .accordion-search-area .aco-open li.open .sub-menu > li.active a[href] { font-weight: 400; color: #0066b3; }
 
 .search-select-content .list-item-list li.item-text { margin-top: 4px; }
 

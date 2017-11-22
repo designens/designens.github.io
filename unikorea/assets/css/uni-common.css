@@ -3097,8 +3097,8 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
   .sub-search-area.item-two .ul-list-type .input-type-search { width: 71.05943%; float: right; margin-right: 0; }
   .sub-search-area.item-two .ul-list-type .input-type-search.full { min-width: auto; }
   .sub-search-area .ul-list-type li.text-top-area .fl-align { float: left; }
-  .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; text-align: right; margin-right: -8px; }
-  .sub-search-area .ul-list-type li.text-top-area .fr-align .select-box { width: auto; }
+  .sub-search-area .ul-list-type li.text-top-area .fr-align { float: right; text-align: right; margin-right: -8px; margin-bottom: 0; }
+  .sub-search-area .ul-list-type li.text-top-area .fr-align .select-box { width: auto; margin-bottom: 10px; }
   .sub-search-area .ul-list-type li:last-child div { margin-bottom: 0; }
   .sub-search-area .ul-list-type li .select-box { width: 13.17829%; float: left; margin-right: 1.29199%; }
   .sub-search-area .ul-list-type li .input-type-search { width: 85.52972%; float: right; margin-right: 0; }
