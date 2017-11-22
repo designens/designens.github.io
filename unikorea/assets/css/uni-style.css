@@ -2406,7 +2406,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 통일북한자료실 > 북한영화 > 북한영화 해설 > 과학영화 > 리스트
 /* (html/north-korean-movie-commentary-science-movie-list.html)
 /* ============================================================*/
-.item-gallery-area { border-bottom: 1px solid #ccc; margin-top: 20px; }
+.item-gallery-area { position: relative; border-bottom: 1px solid #ccc; margin-top: 20px; }
 
 .item-gallery-area li { position: relative; }
 
@@ -2414,13 +2414,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .item-gallery-area li:first-child:before { display: none; }
 
-.item-gallery-area li .img-box { padding: 4px; border: 1px solid #ccc; margin-top: 15px; }
+.item-gallery-area li .img-box { height: 180px; padding: 4px; border: 1px solid #ccc; margin-top: 15px; overflow: hidden; }
 
 .item-gallery-area li .img-box:hover, .item-gallery-area li .img-box:focus { border: 1px solid #333; }
 
-.item-gallery-area li .img-box a[href] { display: block; }
+.item-gallery-area li .img-box a[href] { display: block; text-align: center; width: 100%; height: 100%; }
 
-.item-gallery-area li .img-box a[href] img { width: 100%; height: auto; }
+.item-gallery-area li .img-box a[href] img { width: 100%; height: 100%; }
 
 .item-gallery-area li h6 { padding: 10px 10px 7px 10px; color: #2373c8; }
 
