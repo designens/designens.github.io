@@ -1857,21 +1857,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item-img li.item-text [class^="btn-item-"], .search-select-content .list-item-list li.item-text [class^="btn-item-"] { margin-top: 7px; color: #333; }
 
-.search-select-content .list-item-img li.item-table-area, .search-select-content .list-item-list li.item-table-area { margin-top: 10px; margin-bottom: 10px; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(1):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(2):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(2):before { content: "등록번호"; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(3):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(3):before { content: "소장위치"; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(4):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(4):before { content: "청구기호"; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(5):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(5):before { content: "도서상태"; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(6):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(6):before { content: "반납예정일"; }
-
-.search-select-content .list-item-img li.item-table-area .table-view-type-01 td:nth-of-type(7):before, .search-select-content .list-item-list li.item-table-area .table-view-type-01 td:nth-of-type(7):before { content: "서비스"; }
+.search-select-content .list-item-img li.item-table-area, .search-select-content .list-item-list li.item-table-area { padding: 10px 0; clear: both; }
 
 @media (min-width: 47.5em) { .search-select-content .list-item-img, .search-select-content .list-item-list { padding: 20px 31px 10px; }
   .search-select-content .list-item-img li.item-text .icon-list-item, .search-select-content .list-item-list li.item-text .icon-list-item { right: 31px; } }
@@ -1952,13 +1938,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item-table td:nth-of-type(1) .checkbox-type label { padding-left: 33px; }
 
-.search-select-content .list-item-table td:nth-of-type(1):before { content: "번호"; }
-
 .search-select-content .list-item-table td:nth-of-type(2):before { overflow: hidden; white-space: pre-wrap; line-height: 1.5; padding-top: 10px; content: "서명 / 저자 / \A출판사 / 출판년"; }
-
-.search-select-content .list-item-table td:nth-of-type(3):before { content: "유형"; }
-
-.search-select-content .list-item-table td:nth-of-type(4):before { content: "부가서비스"; }
 
 .search-select-content .list-item-table .item-table-area { position: relative; display: block; }
 
@@ -2002,33 +1982,23 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 소장자료 검색 > 상세
 /* (html/resources-search-view.html)
 /* =======================================*/
-.resources-search-view .sub-search-area, .domestic-serials-view .sub-search-area { height: 40px; padding: 0 15px; }
+.resources-search-view .sub-search-area, .domestic-serials-view .sub-search-area { height: auto; padding: 4px 15px; }
 
-.resources-search-view .sub-search-area button, .domestic-serials-view .sub-search-area button, .resources-search-view .sub-search-area a, .domestic-serials-view .sub-search-area a { font-weight: 300; line-height: 40px; margin-right: 20px; }
+.resources-search-view .sub-search-area button, .domestic-serials-view .sub-search-area button, .resources-search-view .sub-search-area a, .domestic-serials-view .sub-search-area a { font-weight: 300; line-height: 30px; margin-right: 10px; }
 
 .resources-search-view .sub-search-area button:last-child, .domestic-serials-view .sub-search-area button:last-child, .resources-search-view .sub-search-area a:last-child, .domestic-serials-view .sub-search-area a:last-child { margin-right: 0; }
 
 .resources-search-view .sub-search-area button.btn-result-prev, .domestic-serials-view .sub-search-area button.btn-result-prev, .resources-search-view .sub-search-area a.btn-result-prev, .domestic-serials-view .sub-search-area a.btn-result-prev { padding-left: 18px; background: url("../../assets/images/icon/icon-result-prev.svg") left center no-repeat; }
 
-.resources-search-view .sub-search-area button.btn-url-copy, .domestic-serials-view .sub-search-area button.btn-url-copy, .resources-search-view .sub-search-area a.btn-url-copy, .domestic-serials-view .sub-search-area a.btn-url-copy { padding-left: 36px; background: url("../../assets/images/icon/icon-url-copy.svg") left top 12px no-repeat; }
+.resources-search-view .sub-search-area button.btn-url-copy, .domestic-serials-view .sub-search-area button.btn-url-copy, .resources-search-view .sub-search-area a.btn-url-copy, .domestic-serials-view .sub-search-area a.btn-url-copy { padding-left: 36px; background: url("../../assets/images/icon/icon-url-copy.svg") left top 8px no-repeat; }
 
-.resources-search-view .sub-search-area button.btn-marc-view, .domestic-serials-view .sub-search-area button.btn-marc-view, .resources-search-view .sub-search-area a.btn-marc-view, .domestic-serials-view .sub-search-area a.btn-marc-view { display: none; padding-left: 22px; background: url("../../assets/images/icon/icon-marc-view.svg") left center no-repeat; }
+.resources-search-view .sub-search-area button.btn-marc-view, .domestic-serials-view .sub-search-area button.btn-marc-view, .resources-search-view .sub-search-area a.btn-marc-view, .domestic-serials-view .sub-search-area a.btn-marc-view { padding-left: 22px; background: url("../../assets/images/icon/icon-marc-view.svg") left center no-repeat; }
+
+@media (min-width: 30em) { .resources-search-view .sub-search-area, .domestic-serials-view .sub-search-area { height: 40px; padding: 0s 15px; }
+  .resources-search-view .sub-search-area button, .domestic-serials-view .sub-search-area button, .resources-search-view .sub-search-area a, .domestic-serials-view .sub-search-area a { margin-right: 20px; line-height: 40px; }
+  .resources-search-view .sub-search-area button.btn-url-copy, .domestic-serials-view .sub-search-area button.btn-url-copy, .resources-search-view .sub-search-area a.btn-url-copy, .domestic-serials-view .sub-search-area a.btn-url-copy { padding-left: 36px; background: url("../../assets/images/icon/icon-url-copy.svg") left top 12px no-repeat; } }
 
 @media (min-width: 47.5em) { .resources-search-view .sub-search-area button.btn-marc-view, .domestic-serials-view .sub-search-area button.btn-marc-view { display: inline-block; } }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(1):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(1):before { content: "번호"; }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(2):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(2):before { content: "등록번호"; }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(3):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(3):before { content: "소장위치"; }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(4):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(4):before { content: "청구기호"; }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(5):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(5):before { content: "도서상태"; }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(6):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(6):before { content: "반납예정일"; }
-
-.resources-search-view .table-view-type-01 td:nth-of-type(7):before, .domestic-serials-view .table-view-type-01 td:nth-of-type(7):before { content: "서비스"; }
 
 .marc-view-area { display: none; padding: 15px 58px; border: 1px solid #ccc; margin-top: 10px; }
 
@@ -2066,7 +2036,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .content-view-area .content-box h5 { margin-top: 28px; margin-bottom: 13px; font-weight: 500; }
 
-.content-view-area .content-box h5 + button, .content-view-area .content-box h5 + .select-box { margin: 10px 0; }
+.content-view-area .content-box h5 + a[role="button"], .content-view-area .content-box h5 + button, .content-view-area .content-box h5 + .select-box { margin: 10px 0; }
 
 .content-view-area .content-box h5 + .select-box { position: relative; width: 77px; height: 27px; line-height: 25px; vertical-align: top; }
 
@@ -2086,7 +2056,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .content-view-area .content-box pre { font-family: "Noto Sans Korean", sans-serif, serif; height: 150px; overflow-y: auto; }
 
-@media (min-width: 53.75em) { .content-view-area .content-box h5 + button, .content-view-area .content-box h5 + .select-box { margin-top: 31px; }
+@media (min-width: 53.75em) { .content-view-area .content-box h5 + a[role="button"], .content-view-area .content-box h5 + button, .content-view-area .content-box h5 + .select-box { margin-top: 31px; }
   .content-view-area .content-box h5.full-color { width: auto; height: auto; line-height: 1.5; color: #464646; text-align: left; margin-bottom: 13px; background-color: transparent; }
   .content-view-area .content-box .content-text { padding: 20px 31px; }
   .content-view-area .content-box pre { height: auto; overflow-y: inherit; } }
@@ -2336,6 +2306,8 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .best-ranking-area li:nth-child(5n + 3) { margin-left: 40.71856%; margin-right: -100%; clear: none; }
   .best-ranking-area li:nth-child(5n + 4) { margin-left: 61.07784%; margin-right: -100%; clear: none; }
   .best-ranking-area li:nth-child(5n + 5) { margin-left: 81.43713%; margin-right: -100%; clear: none; } }
+
+.popular-loans-resources .sub-list-title { padding-bottom: 7px; }
 
 .popular-loans-resources .table-board-type { margin-top: 20px; }
 

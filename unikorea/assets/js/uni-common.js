@@ -44,6 +44,28 @@
 })(window, window.jQuery);
 
 // =================================================================
+// 테이블 컨텐츠 설정 실행
+// =================================================================
+(function(global, $) {
+
+    var columnHead = $('table[class*="list-type"] thead tr th'),
+        rowHead = $('table[class*="list-type"] tbody tr td');
+
+    // thead th 타이틀 텍스트 가져오기
+    var tdArr = columnHead.map(function(){
+            var $this = $(this);
+            return $.trim($this.text());
+        }).get();
+
+    // tbody td:before content 속성에 thead th 타이틀 삽입 하기
+    rowHead.each(function(i) {
+        var $this = $(this);
+        $this.attr( 'data-before' , tdArr[i] );
+    });
+
+})(window, window.jQuery);
+
+// =================================================================
 // 팝업 플러그인 실행
 // =================================================================
 (function(global, $) {
@@ -63,6 +85,23 @@
         e.preventDefault();
         // 팝업 찾아 열기 (id)
         $.popupId($popups, 'popup-write-review').open();
+    });
+
+})(window, window.jQuery);
+
+// =================================================================
+// 슬라이드 다운 팝업 배너
+// =================================================================
+(function(global, $) {
+    
+    $(".btn-banner-open").click(function(e) {
+       if($(".popup-slidedown-banner").css("display") == "none" ) $(".popup-slidedown-banner").slideDown("slow");
+       else $(".popup-slidedown-banner").slideUp("slow");
+    });
+
+    // 사이트맵 닫기 버튼 클릭 시 전체메뉴 감추기
+    $(".btn-banner-close").click(function(){
+        $(".popup-slidedown-banner").slideUp("slow");
     });
 
 })(window, window.jQuery);

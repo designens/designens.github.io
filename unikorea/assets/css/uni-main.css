@@ -1933,7 +1933,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 /* 참여서비스
 /* =======================================*/
-.participating-services { display: none; background: #5c7788; color: #fff; height: 60px; line-height: 60px; }
+.participating-services { display: none; background: #5c7788; color: #fff; height: 60px; line-height: 60px; margin: 0 20px; }
 
 .participating-services h4 { position: relative; float: left; display: block; line-height: 60px; line-height: 6rem; padding-left: 35px; padding-right: 25px; }
 

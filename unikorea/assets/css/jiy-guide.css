@@ -2047,12 +2047,32 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 [class*="table-view-type"][class*="list-type"] td { position: relative; min-height: 28px; padding: 4px 10px 4px 53%; }
 
-[class*="table-view-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 4px 10px; background: #f1f5f7; content: ""; }
+[class*="table-view-type"][class*="list-type"] td:before { display: inline-block; position: absolute; top: 0; left: 0; width: 50%; height: 100%; font-weight: 500; color: #333; padding: 4px 10px; background: #f1f5f7; }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(1):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(2):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(3):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(4):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(5):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(6):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(7):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(8):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(9):before { content: attr(data-before); }
+
+[class*="table-view-type"][class*="list-type"] td:nth-of-type(10):before { content: attr(data-before); }
 
 [class*="table-view-type"][class*="list-type"] td:last-child:before { border-bottom: 0; }
 
 @media (min-width: 30em) and (max-width: 53.6875em) { [class*="table-view-type"][class*="list-type"] tbody td { padding: 4px 10px 4px 32%; }
-  [class*="table-view-type"][class*="list-type"] tbody td:before { width: 30%; content: ""; } }
+  [class*="table-view-type"][class*="list-type"] tbody td:before { width: 30%; } }
 
 @media (min-width: 53.75em) { [class*="table-view-type"] tbody { border-bottom: 1px solid #ccc; }
   [class*="table-view-type"] th, [class*="table-view-type"] td { border: 1px solid #ccc; border-bottom: 0; }
@@ -2105,6 +2125,26 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 [class*="table-board-type"][class*="list-type"] td:last-child { margin-bottom: 10px; }
 
 [class*="table-board-type"][class*="list-type"] td:last-child:before { border-bottom: 0; }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(1):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(2):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(3):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(4):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(5):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(6):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(7):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(8):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(9):before { content: attr(data-before); }
+
+[class*="table-board-type"][class*="list-type"] td:nth-of-type(10):before { content: attr(data-before); }
 
 @media (min-width: 30em) and (max-width: 53.75em) { [class*="table-board-type"][class*="list-type"] tbody td { padding: 9px 10px 9px 32%; }
   [class*="table-board-type"][class*="list-type"] tbody td:before { width: 30%; } }
@@ -2402,6 +2442,15 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 .skip-link { position: absolute; top: -35px; display: inline-block; width: 100%; height: 35px; line-height: 35px; text-align: center; background: #333; }
 
 .skip-link:hover, .skip-link:focus, .skip-link:active { top: 0; color: #efefef; }
+
+/* =======================================*/
+/* 슬라이드 다운 팝업 배너
+/* =======================================*/
+.popup-slidedown-banner { height: 100px; text-align: center; background: #fcf3d2; }
+
+.popup-slidedown-banner .wrap { position: relative; line-height: 100px; }
+
+.popup-slidedown-banner .btn-banner-close { position: absolute; top: 20px; right: 20px; }
 
 /* =======================================*/
 /* Header : Top menu & GNB

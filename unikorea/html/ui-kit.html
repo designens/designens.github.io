@@ -123,6 +123,51 @@ JS 내용 작성</code></pre>
             </article>
             <!-- [End] JS 주석 기본 사용 -->
 
+            <!-- [Start] FortAwesome 활용 방법 -->
+            <article>
+                <h2>FortAwesome 활용 방법</h2>
+                <div class="fortawesome-area">
+                    <h3><div class="fa fa-angle-double-right"></div>요소(Element)에 적용할 경우</h3>
+                    <ol>
+                        <li><a class="link" href="http://fontawesome.io/cheatsheet/" target="_blank"><strong class="fa fa-link blue"></strong>http://fontawesome.io/cheatsheet</a> 로 접속하여 "<strong>FortAwesome Cheatsheet</strong>"에서 적용할 아이콘 폰트를 찾아 <strong>아이콘 폰트의 이름을 복사</strong>한다.<br>
+                            예) "<strong>FortAwesome Cheatsheet</strong>"에 있는 "<strong><span class="fa fa-pagelines"></span> fa-pagelines</strong>" 나뭇잎(<strong><span class="fa fa-pagelines"></span></strong>) 아이콘 폰트를 사용하고 싶을 경우 아이콘 폰트의 이름 "<strong class="red">fa-pagelines</strong>"을 복사한다.
+                        </li>
+                        <li>아이콘 폰트를 추가 할 영역에 <strong>적합한 요소(Element)를 삽입</strong>하여 복사한 아이콘 폰트의 이름을 class로 적용하고 <strong>class="<span class="blue">fa</span>"</strong>와 함께 적용한다.<br>
+                            <strong>class="<span class="blue">fa</span>"</strong>는 아이콘 폰트체(FortAwesome)와 폰트영역(Display)을 설정하는 기준이 되는 스타일이기 때문에 <strong>반드시 함께 적용</strong>해야 한다.<br>
+                            예) &lt;span class=&quot;<strong class="blue">fa </strong><strong class="red">fa-pagelines</strong>&quot;&gt;&lt;/span&gt;</li>
+                        <li>FortAwesome 아이콘 사이즈는 폰트이기 때문에 스타일 <strong>"<strong class="red">font-size</strong>" 속성으로 적용</strong>합니다.</li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <pre><code class="language-html">&lt;p&gt;&lt;span class=&quot;fa fa-pagelines&quot;&gt;&lt;/span&gt; FortAwesome 활용 방법&lt;/p&gt;</code></pre>
+                    <p class="ui-kit-comment">
+                        <span class="fa fa-pagelines"></span> FortAwesome 활용 방법
+                    </p>
+                    <pre><code class="language-css">p {
+    color: #999;
+}
+p .fa {
+    font-size: 14px;
+    color: #0ba44c;
+}</code></pre>
+                    <p class="ui-kit-comment" style="color: #999;">
+                        <span class="fa fa-pagelines" style="font-size: 14px; color: #0ba44c;"></span> FortAwesome 활용 방법
+                    </p>
+                    <h3><div class="fa fa-angle-double-right"></div>가상요소(Before, After)에 적용할 경우</h3>
+                    <ol>
+                        <li><a class="link" href="http://fontawesome.io/cheatsheet/" target="_blank"><strong class="fa fa-link blue"></strong>http://fontawesome.io/cheatsheet</a> 로 접속하여 "<strong>FortAwesome Cheatsheet</strong>"에서 적용할 아이콘 폰트를 찾아 <strong>아이콘 폰트의 이름을 복사</strong>한다.<br>
+                            예) "<strong>FortAwesome Cheatsheet</strong>"에 있는 "<strong><span class="fa fa-pagelines"></span> fa-pagelines</strong>" 나뭇잎(<strong><span class="fa fa-pagelines"></span></strong>) 아이콘 폰트를 사용하고 싶을 경우 아이콘 폰트의 이름 "<strong class="red">fa-pagelines</strong>"을 복사한다.</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <pre><code class="language-html"></code></pre>
+                    <pre><code class="language-css"></code></pre>
+                </div>
+            </article>
+            <!-- [End] FortAwesome 활용 방법 -->
+
             <!-- [Start] 타이포그라피 설계 -->
             <article>
                 <h2>Typography</h2>
@@ -174,7 +219,7 @@ JS 내용 작성</code></pre>
                         <label for="password" aria-describedby="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
+                    <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;label for=&quot;label-name&quot;&gt;내용 설명&lt;/label&gt;
     &lt;input type=&quot;text&quot; id=&quot;label-name&quot; name=&quot;label-name&quot; /&gt;
 &lt;/div&gt;</code></pre>
@@ -184,7 +229,7 @@ JS 내용 작성</code></pre>
                     <div class="input-type">
                         <input type="text" aria-label="내용 설명" />
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
+                    <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] 설명이 없는 기본 인풋 스타일 -->
@@ -193,7 +238,7 @@ JS 내용 작성</code></pre>
                     <div class="input-type full">
                         <input type="text" aria-label="내용 설명" />
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type full&quot;&gt;
+                    <pre><code class="language-html">&lt;div class=&quot;input-type full&quot;&gt;
     &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <p class="ui-kit-comment">
@@ -206,7 +251,7 @@ JS 내용 작성</code></pre>
                     <div class="input-type">
                         <input type="text" placeholder="Placeholder 내용" aria-label="내용 설명"/>
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
+                    <pre><code class="language-html">&lt;div class=&quot;input-type&quot;&gt;
     &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용&quot; aria-label=&quot;내용 설명&quot; /&gt;
 &lt;/div&gt;</code></pre>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
@@ -223,7 +268,7 @@ JS 내용 작성</code></pre>
                             <input class="last-number" type="tel" aria-label="뒷번호">
                         </div>
                     </div>
-<pre><code class="language-html">&lt;div class=&quot;input-type tel&quot;&gt;
+                    <pre><code class="language-html">&lt;div class=&quot;input-type tel&quot;&gt;
     &lt;div class=&quot;dialog&quot;&gt;
         &lt;input class=&quot;country-code&quot; type=&quot;tel&quot; aria-label=&quot;지역번호&quot;&gt;
     &lt;/div&gt;
@@ -1132,43 +1177,53 @@ JS 내용 작성</code></pre>
                 
             <!-- [Start] 탭 메뉴 스타일 공통 -->
             <article>
-                    <h2>Tab Menu Area</h2>
-                    <div class="teb-menu-area">
-                        <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 기본 스타일</h3>
-                        <div class="tab-area">
-                            <div class="tab-menu">
-                                <a class="active" href="#" role="tab">탭 메뉴 1</a>
-                                <a href="#" role="tab">탭 메뉴 2</a>
-                            </div>
-                            <div class="tab-panel">
-                                탭 패널 영역 입니다.
-                            </div>
+                <h2>Tab Menu Area</h2>
+                <div class="teb-menu-area">
+                    <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 기본 스타일</h3>
+                    <div class="tab-area">
+                        <div class="tab-menu">
+                            <a class="active" href="#" role="tab">탭 메뉴 1</a>
+                            <a href="#" role="tab">탭 메뉴 2</a>
+                            <a href="#" role="tab">탭 메뉴 3</a>
+                            <a href="#" role="tab">탭 메뉴 4</a>
+                            <a href="#" role="tab">탭 메뉴 5</a>
                         </div>
-                        <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
+                        <div class="tab-panel">
+                            탭 패널 영역 입니다.
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
     &lt;div class=&quot;tab-menu&quot;&gt;
         &lt;a class=&quot;active&quot; href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 1&lt;/a&gt;
         &lt;a href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 2&lt;/a&gt;
         &lt;a href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 3&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 4&lt;/a&gt;
+        &lt;a href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 5&lt;/a&gt;
     &lt;/div&gt;
     &lt;div class=&quot;tab-panel&quot;&gt;
         탭 패널 영역 입니다.
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                        <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 반응형 스타일</h3>
-                        <div class="tab-area">
-                            <a href="#" class="tab-menu-select">전체</a>
-                            <div class="tab-menu-toggle">
-                                <a class="active" href="#" role="tab"><div>전체</div></a>
-                                <a href="#" role="tab"><div>탭 메뉴 1</div></a>
-                                <a href="#" role="tab"><div>탭 메뉴 2</div></a>
-                                <a href="#" role="tab"><div>탭 메뉴 3</div></a>
-                                <a href="#" role="tab"><div>탭 메뉴 4</div></a>
-                            </div>
-                            <div class="tab-panel">
-                                탭 패널 영역 입니다.
-                            </div>
+                    <div class="ui-kit-comment">
+                        Mobile 기준 탭 메뉴는 "<strong><span class="red">2</span>column</strong>"으로 각 폭은 1/2로 나뉘어 변화 됩니다.<br>
+                        Tablet 기준 탭 메뉴는 "<strong><span class="red">3</span>column</strong>"으로 각 폭은 1/3로 나뉘어 변화 됩니다.<br>
+                        Desktop 기준 탭 메뉴는 각 폭의 width는 자동(auto)이고, 최대 "<strong><span class="red">5</span>column</strong>"까지 추가 가능합니다.
+                    </div>
+                    <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 반응형 스타일</h3>
+                    <div class="tab-area">
+                        <a href="#" class="tab-menu-select">전체</a>
+                        <div class="tab-menu-toggle">
+                            <a class="active" href="#" role="tab"><div>전체</div></a>
+                            <a href="#" role="tab"><div>탭 메뉴 1</div></a>
+                            <a href="#" role="tab"><div>탭 메뉴 2</div></a>
+                            <a href="#" role="tab"><div>탭 메뉴 3</div></a>
+                            <a href="#" role="tab"><div>탭 메뉴 4</div></a>
                         </div>
-                        <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
+                        <div class="tab-panel">
+                            탭 패널 영역 입니다.
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;tab-menu-select&quot;&gt;전체&lt;/a&gt;
     &lt;div class=&quot;tab-menu-toggle&quot;&gt;
         &lt;a class=&quot;active&quot; href=&quot;#&quot; role=&quot;tab&quot;&gt;&lt;div&gt;전체&lt;/div&gt;&lt;/a&gt;
@@ -1181,20 +1236,20 @@ JS 내용 작성</code></pre>
         탭 패널 영역 입니다.
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                        <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 2~5개 반응형 스타일 (현재 사용 X, 반응형 대비)</h3>
-                        <div class="tab-area">
-                            <div class="tab-menu col-5">
-                                <a class="active" href="#" role="tab">탭 메뉴 1</a>
-                                <a href="#" role="tab">탭 메뉴 2</a>
-                                <a href="#" role="tab">탭 메뉴 3</a>
-                                <a href="#" role="tab">탭 메뉴 4</a>
-                                <a href="#" role="tab">탭 메뉴 5</a>
-                            </div>
-                            <div class="tab-panel">
-                                탭 패널 영역 입니다.
-                            </div>
+                    <h3><div class="fa fa-angle-double-right"></div>탭 메뉴 2~5개 반응형 스타일 (현재 사용 X, 반응형 대비)</h3>
+                    <div class="tab-area">
+                        <div class="tab-menu col-5">
+                            <a class="active" href="#" role="tab">탭 메뉴 1</a>
+                            <a href="#" role="tab">탭 메뉴 2</a>
+                            <a href="#" role="tab">탭 메뉴 3</a>
+                            <a href="#" role="tab">탭 메뉴 4</a>
+                            <a href="#" role="tab">탭 메뉴 5</a>
                         </div>
-                        <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
+                        <div class="tab-panel">
+                            탭 패널 영역 입니다.
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class=&quot;tab-area&quot;&gt;
     &lt;div class=&quot;tab-menu col-5&quot;&gt;
         &lt;a class=&quot;active&quot; href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 1&lt;/a&gt;
         &lt;a href=&quot;#&quot; role=&quot;tab&quot;&gt;탭 메뉴 2&lt;/a&gt;
@@ -1211,7 +1266,8 @@ JS 내용 작성</code></pre>
                         탭 메뉴 3개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-3</span></strong>" class를 추가 합니다.<br>
                         탭 메뉴 4개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-4</span></strong>" class를 추가 합니다.<br>
                         탭 메뉴 5개 일때 반응형 대응 "<strong>tab-menu <span class="red">col-5</span></strong>" class를 추가 합니다.<br>
-                        <strong>col-<span class="red">num</span></strong>을 설정 안할 경우 <strong>Tablet(760px) 이하 디바이스는 1column</strong>으로 반응형 처리되어 디자인 됩니다.
+                        <strong>col-<span class="red">num</span></strong>을 설정 안할 경우 <strong>Tablet(760px) 이하 디바이스는 1column</strong>으로 반응형 처리되어 디자인 됩니다.<br>
+                        <strong>최대 5column</strong>까지 중단점 설정에 따른 변화가 가능하도록 제작 되었습니다.
                     </div>
                 </div>
             </article>
