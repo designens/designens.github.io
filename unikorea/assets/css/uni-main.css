@@ -1676,15 +1676,15 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 /* 소장자료 검색
 /* =======================================*/
-.unibook-search { width: 100%; height: 207px; background: url("../../assets/images/common/bg-top-area.png") left center; }
+.unibook-search { width: 100%; height: 133px; background: url("../../assets/images/common/bg-top-area.png") left center; }
 
-.unibook-search .top-search-area { width: 100%; float: left; margin-left: 0; margin-right: 0; min-width: 320px; padding: 0 21px; }
+.unibook-search .top-search-area { width: 100%; float: left; margin-left: 0; margin-right: 0; min-width: 260px; padding-top: 20px; }
 
 .unibook-search .top-search-area .search-wrap { position: relative; }
 
 .unibook-search .top-search-area .search-wrap .btn-lang-input { position: absolute; top: 10px; right: 0; width: 100px; height: 20px; line-height: 20px; font-size: 13px; font-size: 1.3rem; color: #333; padding-left: 30px; background: #f2f2f2 url("../../assets/images/icon/icon-keyborad.svg") 6px center no-repeat; }
 
-.unibook-search .top-search-area .search-wrap label { display: block; width: 123px; height: 35px; line-height: 35px; text-align: center; color: #fff; margin-top: 46px; background: #005083; }
+.unibook-search .top-search-area .search-wrap label { display: block; width: 123px; height: 35px; line-height: 35px; text-align: center; color: #fff; background: #005083; }
 
 .unibook-search .top-search-area .search-wrap input[type="text"] { width: 100%; float: left; margin-left: 0; margin-right: 0; height: 58px; padding: 0 10px; border: 3px solid #005bb3; background: #fff; }
 
@@ -1692,7 +1692,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .unibook-search .top-search-area .search-wrap .btn-unibook-search:before { position: absolute; top: 16px; left: 18px; font-family: 'FontAwesome'; content: ""; font-size: 24px; font-size: 2.4rem; color: #fff; text-indent: 0; }
 
-.unibook-search .top-search-area .searh-keyword { position: relative; width: 100%; float: left; margin-left: 0; margin-right: 0; height: 30px; padding-left: 25px; background: rgba(0, 0, 0, 0.3); overflow: hidden; }
+.unibook-search .top-search-area .searh-keyword { display: none; position: relative; width: 100%; float: left; margin-left: 0; margin-right: 0; height: 30px; padding-left: 25px; background: rgba(0, 0, 0, 0.3); overflow: hidden; }
 
 .unibook-search .top-search-area .searh-keyword:before { position: absolute; top: 5px; left: 14px; font-family: 'FontAwesome'; content: ""; font-size: 14px; font-size: 1.4rem; color: #fff; text-indent: 0; }
 
@@ -1701,6 +1701,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .unibook-search .top-search-area .searh-keyword a:after { position: absolute; top: 10px; left: 0; display: block; content: ""; width: 1px; height: 9px; background: #fff; }
 
 .unibook-search .top-search-area .searh-keyword a:first-child:after { background: transparent; }
+
+@media (min-width: 20em) { .unibook-search .top-search-area { padding-top: 20px; } }
+
+@media (min-width: 47.5em) { .unibook-search { height: 207px; }
+  .unibook-search .top-search-area { padding: 46px 21px 0 21px; } }
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .unibook-search { background-position: 30% center; } }
 
@@ -1901,9 +1906,11 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .site-link-zone ul li a { position: relative; display: block; padding: 0 10px; }
 
-.site-link-zone ul li a:after { position: absolute; right: 10px; top: 50%; width: 23px; height: 23px; line-height: 25px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #d4d9df; text-align: center; border-radius: 50%; margin-top: -12px; background: #a8b2be; }
+.site-link-zone ul li a:after { position: absolute; right: 10px; top: 50%; width: 16px; height: 16px; line-height: 16px; font-family: 'FontAwesome'; content: ""; font-size: 9px; font-size: 0.9rem; color: #d4d9df; text-align: center; border-radius: 50%; margin-top: -8px; background: #a8b2be; }
 
 .site-link-zone ul li a span { display: none; }
+
+@media (min-width: 30em) { .site-link-zone ul li a:after { position: absolute; width: 23px; height: 23px; line-height: 25px; font-family: 'FontAwesome'; content: ""; font-size: 12px; font-size: 1.2rem; color: #d4d9df; margin-top: -12px; } }
 
 .site-link-zone ul li:nth-of-type(1), .site-link-zone ul li:nth-of-type(3) { border-right-color: transparent; }
 

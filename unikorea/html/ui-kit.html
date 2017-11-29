@@ -661,7 +661,7 @@ p .fa {
                 <h2>Table Style</h2>
                 <div class="table-type">
                     <h3><span class="fa fa-table"></span>반응형 테이블 (List 내부 타입)</h3>
-                    <table class="table-view-type-num list-type">
+                    <table id="demo-data-table-01" class="table-view-type list-type">
                         <caption>(표 제목)의 표입니다.</caption>
                         <col width="60">
                         <col width="auto">
@@ -673,11 +673,11 @@ p .fa {
                         <thead>
                             <tr>
                                 <th scope="col">번호</th>
-                                <th scope="col">등록번호</th>
+                                <th scope="col">반납예정일</th>
                                 <th scope="col">소장위치</th>
+                                <th scope="col">등록번호</th>
                                 <th scope="col">청구기호</th>
                                 <th scope="col">도서상태</th>
-                                <th scope="col">반납예정일</th>
                                 <th scope="col">서비스</th>
                             </tr>
                         </thead>
@@ -694,7 +694,7 @@ p .fa {
                             </tr>
                         </tbody>
                     </table>
-                    <pre><code class="language-html">&lt;table class=&quot;table-view-type-num list-type&quot;&gt;
+                    <pre><code class="language-html">&lt;table id=&quot;data-table-num&quot; class=&quot;table-view-type list-type&quot;&gt;
     &lt;caption&gt;(표 제목)의 표입니다.&lt;/caption&gt;
     &lt;col width=&quot;100&quot;&gt;
     &lt;col width=&quot;auto&quot;&gt;
@@ -703,58 +703,38 @@ p .fa {
     &lt;col width=&quot;100&quot;&gt;
     &lt;thead&gt;
         &lt;tr&gt;
-            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;제목&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목1&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목2&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목3&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목4&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;제목5&lt;/th&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
-            &lt;td&gt;컬럼&lt;/td&gt;
-            &lt;td&gt;컬럼&lt;/td&gt;
-            &lt;td&gt;컬럼&lt;/td&gt;
-            &lt;td&gt;컬럼&lt;/td&gt;
-            &lt;td&gt;컬럼&lt;/td&gt;
+            &lt;td&gt;컬럼1&lt;/td&gt;
+            &lt;td&gt;컬럼2&lt;/td&gt;
+            &lt;td&gt;컬럼3&lt;/td&gt;
+            &lt;td&gt;컬럼4&lt;/td&gt;
+            &lt;td&gt;컬럼5&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-                    <pre><code class="language-css">.table-view-type-num td:nth-of-type(1):before {
-  content: &quot;번호&quot;;
-}
-.table-view-type-num td:nth-of-type(2):before {
-  content: &quot;등록번호&quot;;
-}
-.table-view-type-num td:nth-of-type(3):before {
-  content: &quot;소장위치&quot;;
-}
-.table-view-type-num td:nth-of-type(4):before {
-  content: &quot;청구기호&quot;;
-}
-.table-view-type-num td:nth-of-type(5):before {
-  content: &quot;도서상태&quot;;
-}
-.table-view-type-num td:nth-of-type(6):before {
-  content: &quot;반납예정일&quot;;
-}
-.table-view-type-num td:nth-of-type(7):before {
-  content: &quot;서비스&quot;;
-}</code></pre>
                     <p class="ui-kit-comment">
                         <span class="blue">&lt;caption&gt;</span>의 설명은 "<strong>(<span class="red">제목</span>)의 표입니다.</strong>" 와 같이 일관되고 간략하게 제목을 작성합니다.<br>
                         복잡한 구조의 테이블 일 경우 청각만으로도 표의 구조가 그려질 수 있도록 요약 정보를 제공하여 표를 이해하는데 도움이 되도록 작성합니다.<br>
-                        각 제목(컬럼)의 너비는 <span class="blue">&lt;col&gt;</span> 요소에 <strong class="red">width 요소로 너비를 설정</strong>하고 너비의 비율에 대비하기 위해 단위를 작성하지 않습니다.<br>
-                        그리고 유동적인 테이블일 경우 컬럼 하나의 값은 <strong>width="<span class="red">auto</span>"</strong>로 설정하여 변화되는 너비의 값을 대응해야 합니다.<br>
-                        표 마다 일관된 width 값이 없으므로 각 표의 제목(컬럼)의 너비에 따라 재정의하여 사용합니다.<br>
-                        반응형 중단점에 따라 리스트(list-type) 테이블로 변화를 적용할 경우 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">list-type</strong>" class를 추가해 줍니다.<br>
-                        th, td 요소의 텍스트 <strong>말줄임 처리를 해제</strong> 하려면 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">h-auto</strong>" class를 추가해 줍니다.<br>
-                        ex) <span class="blue">&lt;table class="table-view-type <strong class="red">list-type</strong>"&gt;</span><br>
-                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 반응형 적용 시 중단점에 따라 column을 감추는 형태로 사용하면 됩니다. (모바일에서의 column 감추기 가능)<br>
-                        "<strong class="red">list-type</strong>"을 사용하는 표의 테이블 제목(컬럼)이 달라질 경우 "<strong>table-view-type</strong>" class명에 "<strong>table-view-type<span class="red">-num</span></strong>" class명과 같이 <span class="blue">-num</span>을 붙여서 class명을 정의하고 <strong>제목을 css의 content로 재설정</strong> 해줘야 합니다.<br>
-                        ex) <span class="blue">&lt;table class="</span><strong>table-view-type</strong><strong class="red">-01</strong><span class="blue"> list-type"&gt;</span><br>
+                        각 제목(컬럼)의 너비는 <span class="blue">&lt;col&gt;</span> 요소에 <strong class="red">width 속성으로 고정 너비를 설정</strong>하고 유동 너비는 auto로 설정하여 상대적으로 변화되도록 처리합니다.<br>
+                        반응형 테이블을 적용 할 경우 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">list-type</strong>" class와 "<strong>data-table-<span class="red">num</span></strong>"을 id로 추가하면 중단점에 따라 리스트(list-type) 형태로 변화됩니다.<br>
+                        ex) <span class="blue">&lt;table id="<strong class="red">data-table-<span class="blue">num</span></strong>" class="table-view-type <strong class="red">list-type</strong>"&gt;</span><br>
+                        "<strong class="red">list-type</strong>"을 빼면 기본 테이블로 적용되고 중단점에 따라 column을 감추는 형태로 반응형 테이블을 사용하면 됩니다. (모바일에서의 column 감추기 가능)<br>
+                        th, td 요소의 텍스트는 기본 설정으로 영역보다 텍스트가 길어지면 말줄임 처리가 되도록 처리되어 있습니다.<br>
+                        <strong>말줄임 처리를 해제</strong> 하려면 "<strong>table-view-type</strong>" class의 형재요소로 "<strong class="red">h-auto</strong>" class를 추가해주면 말줄임 처리가 해제되고 영역보다 텍스트 내용이 길어지면 줄바꿈 처리가 됩니다.<br>
                     </p>
-
+                    <pre><code class="language-js">// table > th의 Column title 값을 td:before에 할당
+assignTableHeading( $('#data-table-num') );</code></pre>
+                    <p class="ui-kit-comment">
+                        "<strong class="red">list-type</strong>"을 적용하는 반응형 테이블일 경우 table에 id를 부여하되 "<strong>#data-table-<span class="red">num</span></strong>" 와 같이 네이밍을 고유한 id를 사용하여 " <strong class="red">num</strong>(순차적번호)" 부분을 다르게 작성하여 js파일에서 함수로 "<strong>assignTableHeading( $('<span class="red">#data-table-num</span>') );</strong>" 이와 같이 테이블 id를 호출해 줍니다. 
+                    </p>
                     <h3><span class="fa fa-table"></span>반응형 테이블 (List 내부 column 숨김 타입)</h3>
                     <table class="table-view-type">
                         <caption>(표 제목)의 표입니다.</caption>
@@ -831,7 +811,7 @@ p .fa {
                     </p>
 
                     <h3><span class="fa fa-table"></span>반응형 테이블 (Board list 타입)</h3>
-                    <table class="table-board-type-num list-type">
+                    <table id="demo-data-table-02" class="table-board-type list-type">
                         <caption>(표 제목)의 표입니다.</caption>
                         <col width="60">
                         <col width="auto">
@@ -911,26 +891,11 @@ p .fa {
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-<pre><code class="language-css">.table-view-type-num td:nth-of-type(1):before {
-  content: &quot;번호&quot;;
-}
-.table-view-type-num td:nth-of-type(2):before {
-  content: &quot;제목&quot;;
-}
-.table-view-type-num td:nth-of-type(3):before {
-  content: &quot;첨부&quot;;
-}
-.table-view-type-num td:nth-of-type(4):before {
-  content: &quot;등록일&quot;;
-}
-.table-view-type-num td:nth-of-type(5):before {
-  content: &quot;조회수&quot;;
-}</code></pre>
+                    <pre><code class="language-js">assignTableHeading( $('#demo-data-table-01') );
+assignTableHeading( $('#demo-data-table-02') );</code></pre>
                     <p class="ui-kit-comment">
                         반응형 중단점에 따라 리스트(list-type) 테이블로 변화를 적용할 경우 "<strong>table-board-type</strong>" class의 형재요소로 "<strong class="red">list-type</strong>" class를 추가해 줍니다.<br>
                         ex) <span class="blue">&lt;table class="table-board-type <strong class="red">list-type</strong>"&gt;</span><br>
-                        "<strong class="red">list-type</strong>"을 사용하는 표의 테이블 제목(컬럼)이 달라질 경우 "<strong>table-board-type</strong>" class명에 "<strong>table-board-type<span class="red">-num</span></strong>" class명과 같이 <span class="blue">-num</span>을 붙여서 class명을 정의하고 <strong>제목을 css의 content로 재설정</strong> 해줘야 합니다.<br>
-                        ex) <span class="blue">&lt;table class="</span><strong>table-board-type</strong><strong class="red">-01</strong><span class="blue"> list-type"&gt;</span><br>
                     </p>
 
                     <h3><span class="fa fa-table"></span>반응형 테이블 (Board list column 숨김 타입)</h3>
