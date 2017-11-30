@@ -106,6 +106,13 @@ assignTableHeading( $('#demo-data-table-02') );
         // 팝업 찾아 열기 (id)
         $.popupId($popups, 'popup-write-review').open();
     });
+    
+    // Movie 썸네일 뷰
+    $('.btn-popup-movie-thumbnail-views').on('click', function(e) {
+        e.preventDefault();
+        // 팝업 찾아 열기 (id)
+        $.popupId($popups, 'popup-movie-thumbnail-views').open();
+    });
 
 })(window, window.jQuery);
 

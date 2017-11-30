@@ -3116,6 +3116,16 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .sub-list-title.bottom-line { padding-bottom: 7px; border-bottom: 2px solid #0099cc; margin-top: -10px; }
 
+.all-table-views { padding: 7px 15px; }
+
+.all-table-views span { color: #ff8134; }
+
+.all-table-views.bottom-line { padding-bottom: 7px; border-bottom: 2px solid #0099cc; margin-top: -10px; }
+
+@media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
+
+@media (min-width: 71.25em) { .all-table-views { padding: 26px 15px 7px; } }
+
 .sub-search-area { background: #f1f1f1; padding: 20px 10px; }
 
 .sub-search-area.item-canter { text-align: center; }
@@ -3207,14 +3217,6 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
   .search-select-box-area .fr-align .select-box:nth-of-type(2) { width: 48.72449%; float: left; margin-right: 2.55102%; margin-left: 0; }
   .search-select-box-area .fr-align .select-box:nth-of-type(3) { width: 48.72449%; float: right; margin-right: 0; margin-left: 0; }
   .search-select-box-area .fr-align button { width: 100%; float: left; margin-left: 0; margin-right: 0; margin-top: -2px; margin-bottom: 10px; } }
-
-.all-table-views { padding: 7px 15px; }
-
-.all-table-views span { color: #ff8134; }
-
-@media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
-
-@media (min-width: 71.25em) { .all-table-views { padding: 26px 15px 7px; } }
 
 .ui-kit { background: #f3f3f3; overflow: hidden; }
 
