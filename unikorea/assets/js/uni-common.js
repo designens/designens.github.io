@@ -34,12 +34,23 @@
 })(window, document, window.jQuery);
 
 // =================================================================
-// 스크롤 플러그인 실행 (https://github.com/cferdinandi/smooth-scroll)
+// 스크롤 관련 제어
 // =================================================================
 (function(global, $) {
 
     // 부드럽게 스크롤 이동 처리
+    // 스크롤 움직임 처리 (https://github.com/cferdinandi/smooth-scroll)
     smoothScroll.init();
+
+    // 스크롤 스타일 설정 (http://manos.malihu.gr/jquery-custom-content-scroller/)
+    $(".thumbnail-gallery .mCustomScrollbar").mCustomScrollbar({
+        // 스크롤 X축만 처리
+        axis:"x",
+        // 스크롤 좌우 버튼 생성, 탭 이동 처리
+        scrollButtons:{ enable: true, tabindex: 0 },
+        // 키보드 접근성 처리
+        keyboard:{ enable: true },
+    });
 
 })(window, window.jQuery);
 
@@ -310,15 +321,15 @@ assignTableHeading( $('#demo-data-table-02') );
     // -------------------------------------------------------------
     // 영화 썸네일 배너
     // -------------------------------------------------------------
-    $('.movie-thumbnail .owl-carousel').owlCarousel({
-        margin: 7,
+    $('.movie-thumbnail-views .owl-carousel').owlCarousel({
         nav: true,
         dots: false,
         responsiveClass: true,
         navText: ['', ''],
         autoWidth:true,
-        slideBy: 1
+        items: 1
     })
+
 
 })(window, window.jQuery);
 
