@@ -92,14 +92,15 @@ assignTableHeading( $('#demo-data-table-02') );
 (function(doc, global, $) {
 
     var dataTableCnt = 1;
-    $('[class*="table-view-type"][class*="list-type"]').each(function(){
+    $('[class*="table-board-type"][class*="list-type"], [class*="table-view-type"][class*="list-type"]').each(function(){
         var $this = $(this);
-        if ( $this.attr("id")) assignTableHeading( $('#' + $this.attr("id")) );
-        else {
+        if ($this.attr("id")) {
+            assignTableHeading( $('#' + $this.attr("id")) );
+        } else {
             assignTableHeading($this.attr("id", "data-type-" + dataTableCnt) );
             dataTableCnt++;
-       }
-   });
+        }
+    });
 
 })(document, window, window.jQuery);
 
