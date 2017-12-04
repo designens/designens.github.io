@@ -91,8 +91,15 @@ assignTableHeading( $('#demo-data-table-02') );
 // table > th의 Column title 값을 td:before에 할당
 (function(doc, global, $) {
 
-    assignTableHeading( $('#data-table-01') );
-    assignTableHeading( $('#data-table-02') );
+    var dataTableCnt = 1;
+    $('[class*="table-view-type"][class*="list-type"]').each(function(){
+        var $this = $(this);
+        if ( $this.attr("id")) assignTableHeading( $('#' + $this.attr("id")) );
+        else {
+            assignTableHeading($this.attr("id", "data-type-" + dataTableCnt) );
+            dataTableCnt++;
+       }
+   });
 
 })(document, window, window.jQuery);
 
