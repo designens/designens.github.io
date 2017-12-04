@@ -324,9 +324,7 @@ assignTableHeading( $('#demo-data-table-02') );
     $('.movie-thumbnail-views .owl-carousel').owlCarousel({
         nav: true,
         dots: false,
-        responsiveClass: true,
         navText: ['', ''],
-        autoWidth:true,
         items: 1
     })
 

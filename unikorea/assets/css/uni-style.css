@@ -3203,7 +3203,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .movie-thumbnail-views .popup-headline { background: #06a2ae; }
 
-.movie-thumbnail-views .popup-content .owl-carousel { height: 100%; }
+.movie-thumbnail-views .popup-content .owl-carousel { position: relative; }
+
+.movie-thumbnail-views .popup-content .owl-carousel .owl-nav { position: absolute; top: 0; }
 
 @media (min-width: 53.75em) { .movie-thumbnail-views { width: 680px; min-height: 490px; } }
 
