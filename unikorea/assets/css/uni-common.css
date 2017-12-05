@@ -2628,8 +2628,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .ui-carousel__tabpanel > a { display: block; }
 
-.ui-carousel__tabpanel > a img { vertical-align: middle; }
-
 .ui-carousel__toggle--animate { position: relative; float: left; width: 18px; height: 18px; color: #333; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6); }
 
 .ui-carousel__toggle--animate:hover, .ui-carousel__toggle--animate:focus { background: #eaeaea; transform: scale(1.3); }
@@ -3858,6 +3856,20 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 .sub-list-title .search-word span { color: #ff8134; }
 
 .sub-list-title.bottom-line { padding-bottom: 7px; border-bottom: 2px solid #0099cc; margin-top: -10px; }
+
+.page-service-area { text-align: right; margin-bottom: 5px; }
+
+.page-service-area [class*="btn-"] { margin-right: 4px; }
+
+.page-service-area [class*="btn-"] span { width: 28px; height: 28px; line-height: 28px; font-size: 14px; border-radius: 50%; margin-left: 3px; color: #fff; background: #999; margin-right: 4px; }
+
+.page-service-area [class*="btn-"]:hover, .page-service-area [class*="btn-"]:focus { color: #09c; }
+
+.page-service-area [class*="btn-"]:hover span, .page-service-area [class*="btn-"]:focus span { background: #09c; }
+
+.page-service-area .btn-print { position: absolute; top: -9999px; clip: rect(0 0 0 0); visibility: hidden; }
+
+@media (min-width: 47.5em) { .page-service-area .btn-print { position: static; top: 0; clip: auto; visibility: visible; } }
 
 .all-table-views { padding: 7px 15px; }
 
