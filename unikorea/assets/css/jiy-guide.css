@@ -2630,8 +2630,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .ui-carousel__tabpanel > a { display: block; }
 
-.ui-carousel__tabpanel > a img { vertical-align: middle; object-fit: cover; }
-
 .ui-carousel__toggle--animate { position: relative; float: left; width: 18px; height: 18px; color: #333; border-radius: 50%; background: #fff; box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6); }
 
 .ui-carousel__toggle--animate:hover, .ui-carousel__toggle--animate:focus { background: #eaeaea; transform: scale(1.3); }
