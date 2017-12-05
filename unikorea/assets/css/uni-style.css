@@ -2559,7 +2559,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .item-info { color: #888; }
 
-.search-select-content .item-info span { position: relative; padding-right: 20px; }
+.search-select-content .item-info span { position: relative; padding-right: 20px; display: inline-block; }
 
 .search-select-content .item-info span:before { position: absolute; top: 6px; right: 0; width: 1px; height: 11px; margin-right: 9px; background: #ccc; content: ""; }
 
