@@ -3863,7 +3863,7 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .all-table-views span { color: #ff8134; }
 
-.all-table-views.bottom-line { padding-bottom: 7px; border-bottom: 2px solid #0099cc; margin-top: -10px; }
+.all-table-views.bottom-line { padding-bottom: 7px; border-bottom: 2px solid #0099cc; }
 
 @media (min-width: 47.5em) and (max-width: 71.25em) { .all-table-views { padding: 16px 15px 7px; } }
 

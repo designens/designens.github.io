@@ -3387,8 +3387,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 .search-history-list li { position: relative; padding: 10px 15px 8px 15px; border-bottom: 1px solid #dedfe2; }
 
-.search-history-list li:first-child { border-top: 2px solid #09c; }
-
 .search-history-list li .order, .search-history-list li .title { display: inline-block; }
 
 .search-history-list li .order { vertical-align: top; }
