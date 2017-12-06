@@ -2704,55 +2704,25 @@ table.desktap-btn-hidden .tablet, table.desktap-btn-hidden .desktap { display: n
 @media (min-width: 53.75em) { table.desktap-btn-hidden .mobile { display: none; }
   table.desktap-btn-hidden .tablet, table.desktap-btn-hidden .desktap { display: block; } }
 
-table .align-left.col-1 tr td { text-align: left; }
+table .align-left.col-1 tr td:nth-of-type(1) { text-align: left; }
 
-@media (min-width: 53.75em) { table .align-left.col-1 tr td { text-align: center; }
-  table .align-left.col-1 tr td:nth-of-type(1) { text-align: left; } }
+table .align-left.col-2 tr td:nth-of-type(2) { text-align: left; }
 
-table .align-left.col-2 tr td { text-align: left; }
+table .align-left.col-3 tr td:nth-of-type(3) { text-align: left; }
 
-@media (min-width: 53.75em) { table .align-left.col-2 tr td { text-align: center; }
-  table .align-left.col-2 tr td:nth-of-type(2) { text-align: left; } }
+table .align-left.col-4 tr td:nth-of-type(4) { text-align: left; }
 
-table .align-left.col-3 tr td { text-align: left; }
+table .align-left.col-5 tr td:nth-of-type(5) { text-align: left; }
 
-@media (min-width: 53.75em) { table .align-left.col-3 tr td { text-align: center; }
-  table .align-left.col-3 tr td:nth-of-type(3) { text-align: left; } }
+table .align-left.col-6 tr td:nth-of-type(6) { text-align: left; }
 
-table .align-left.col-4 tr td { text-align: left; }
+table .align-left.col-7 tr td:nth-of-type(7) { text-align: left; }
 
-@media (min-width: 53.75em) { table .align-left.col-4 tr td { text-align: center; }
-  table .align-left.col-4 tr td:nth-of-type(4) { text-align: left; } }
+table .align-left.col-8 tr td:nth-of-type(8) { text-align: left; }
 
-table .align-left.col-5 tr td { text-align: left; }
+table .align-left.col-9 tr td:nth-of-type(9) { text-align: left; }
 
-@media (min-width: 53.75em) { table .align-left.col-5 tr td { text-align: center; }
-  table .align-left.col-5 tr td:nth-of-type(5) { text-align: left; } }
-
-table .align-left.col-6 tr td { text-align: left; }
-
-@media (min-width: 53.75em) { table .align-left.col-6 tr td { text-align: center; }
-  table .align-left.col-6 tr td:nth-of-type(6) { text-align: left; } }
-
-table .align-left.col-7 tr td { text-align: left; }
-
-@media (min-width: 53.75em) { table .align-left.col-7 tr td { text-align: center; }
-  table .align-left.col-7 tr td:nth-of-type(7) { text-align: left; } }
-
-table .align-left.col-8 tr td { text-align: left; }
-
-@media (min-width: 53.75em) { table .align-left.col-8 tr td { text-align: center; }
-  table .align-left.col-8 tr td:nth-of-type(8) { text-align: left; } }
-
-table .align-left.col-9 tr td { text-align: left; }
-
-@media (min-width: 53.75em) { table .align-left.col-9 tr td { text-align: center; }
-  table .align-left.col-9 tr td:nth-of-type(9) { text-align: left; } }
-
-table .align-left.col-10 tr td { text-align: left; }
-
-@media (min-width: 53.75em) { table .align-left.col-10 tr td { text-align: center; }
-  table .align-left.col-10 tr td:nth-of-type(10) { text-align: left; } }
+table .align-left.col-10 tr td:nth-of-type(10) { text-align: left; }
 
 table [class^="br-"] { display: inline-block; }
 
