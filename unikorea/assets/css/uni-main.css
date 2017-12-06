@@ -2454,7 +2454,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 @media (min-width: 47.5em) and (max-width: 71.25em) { .unibook-search { background-position: 30% center; } }
 
 @media (min-width: 71.25em) { .unibook-search { background-position: center; }
-  .unibook-search .top-search-area { width: 66%; float: left; margin-left: 17%; margin-right: -100%; padding: 0; } }
+  .unibook-search .top-search-area { width: 66%; float: left; margin-left: 17%; margin-right: -100%; } }
 
 /* =======================================*/
 /* UNIBOOK 서비스
@@ -2692,7 +2692,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .participating-services h4:after { position: absolute; right: 0; font-family: 'FontAwesome'; content: ""; font-size: 30px; font-size: 3rem; color: #fff; }
 
-@media (min-width: 47.5em) { .participating-services { display: block; }
+@media (min-width: 47.5em) { .participating-services { display: block; margin: 0; }
   .participating-services ul li { float: left; font-size: 15px; font-size: 1.5rem; }
   .participating-services ul li a { position: relative; display: block; }
   .participating-services ul li a:before { position: absolute; top: 50%; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 0; content: ""; }
