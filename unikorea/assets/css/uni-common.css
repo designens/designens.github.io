@@ -2704,23 +2704,43 @@ table.desktap-btn-hidden .tablet, table.desktap-btn-hidden .desktap { display: n
 
 table .align-left.col-1 tr td:nth-of-type(1) { text-align: left; }
 
+table .align-left.col-1 tr td:nth-of-type(1):before { text-align: center; }
+
 table .align-left.col-2 tr td:nth-of-type(2) { text-align: left; }
+
+table .align-left.col-2 tr td:nth-of-type(2):before { text-align: center; }
 
 table .align-left.col-3 tr td:nth-of-type(3) { text-align: left; }
 
+table .align-left.col-3 tr td:nth-of-type(3):before { text-align: center; }
+
 table .align-left.col-4 tr td:nth-of-type(4) { text-align: left; }
+
+table .align-left.col-4 tr td:nth-of-type(4):before { text-align: center; }
 
 table .align-left.col-5 tr td:nth-of-type(5) { text-align: left; }
 
+table .align-left.col-5 tr td:nth-of-type(5):before { text-align: center; }
+
 table .align-left.col-6 tr td:nth-of-type(6) { text-align: left; }
+
+table .align-left.col-6 tr td:nth-of-type(6):before { text-align: center; }
 
 table .align-left.col-7 tr td:nth-of-type(7) { text-align: left; }
 
+table .align-left.col-7 tr td:nth-of-type(7):before { text-align: center; }
+
 table .align-left.col-8 tr td:nth-of-type(8) { text-align: left; }
+
+table .align-left.col-8 tr td:nth-of-type(8):before { text-align: center; }
 
 table .align-left.col-9 tr td:nth-of-type(9) { text-align: left; }
 
+table .align-left.col-9 tr td:nth-of-type(9):before { text-align: center; }
+
 table .align-left.col-10 tr td:nth-of-type(10) { text-align: left; }
+
+table .align-left.col-10 tr td:nth-of-type(10):before { text-align: center; }
 
 table [class^="br-"] { display: inline-block; }
 
