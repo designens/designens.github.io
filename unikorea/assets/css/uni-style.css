@@ -2603,13 +2603,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item-img li.item-img img, .search-select-content .list-item-list li.item-img img { width: 75px; height: 103px; border: 1px solid #ddd; }
 
+.search-select-content .list-item-img li.item-text h6 span, .search-select-content .list-item-list li.item-text h6 span { color: #ff8134; }
+
 .search-select-content .list-item-img li.item-text h6 span.icon-list-item, .search-select-content .list-item-list li.item-text h6 span.icon-list-item { display: inline-block; height: 24px; line-height: 24px; font-weight: 500; color: #09c; font-weight: 400; }
 
 .search-select-content .list-item-img li.item-text h6 span.icon-list-item img, .search-select-content .list-item-list li.item-text h6 span.icon-list-item img, .search-select-content .list-item-img li.item-text h6 span.icon-list-item svg, .search-select-content .list-item-list li.item-text h6 span.icon-list-item svg { vertical-align: -2px; margin: 0 2px; }
 
 .search-select-content .list-item-img li.item-text h6 span.icon-list-item img.injected-svg [class*="icon-list-item-"], .search-select-content .list-item-list li.item-text h6 span.icon-list-item img.injected-svg [class*="icon-list-item-"], .search-select-content .list-item-img li.item-text h6 span.icon-list-item svg.injected-svg [class*="icon-list-item-"], .search-select-content .list-item-list li.item-text h6 span.icon-list-item svg.injected-svg [class*="icon-list-item-"] { fill: #09c; }
-
-.search-select-content .list-item-img li.item-text h6 span:last-child, .search-select-content .list-item-list li.item-text h6 span:last-child { color: #ff8134; }
 
 .search-select-content .list-item-img li.item-text .item-keyword, .search-select-content .list-item-list li.item-text .item-keyword { margin-top: 7px; }
 
