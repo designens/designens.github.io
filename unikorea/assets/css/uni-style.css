@@ -2609,7 +2609,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item-img li.item-text h6 span.icon-list-item img.injected-svg [class*="icon-list-item-"], .search-select-content .list-item-list li.item-text h6 span.icon-list-item img.injected-svg [class*="icon-list-item-"], .search-select-content .list-item-img li.item-text h6 span.icon-list-item svg.injected-svg [class*="icon-list-item-"], .search-select-content .list-item-list li.item-text h6 span.icon-list-item svg.injected-svg [class*="icon-list-item-"] { fill: #09c; }
 
-.search-select-content .list-item-img li.item-text h6 span:last-child, .search-select-content .list-item-list li.item-text h6 span:last-child { font-weight: 300; }
+.search-select-content .list-item-img li.item-text h6 span:last-child, .search-select-content .list-item-list li.item-text h6 span:last-child { color: #ff8134; }
 
 .search-select-content .list-item-img li.item-text .item-keyword, .search-select-content .list-item-list li.item-text .item-keyword { margin-top: 7px; }
 
@@ -2689,7 +2689,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item-table td h6, .search-select-content .list-item-table td p { white-space: pre-wrap; }
 
-.search-select-content .list-item-table td h6 .btn-item-table-icon, .search-select-content .list-item-table td p .btn-item-table-icon { margin-left: 6px; }
+.search-select-content .list-item-table td h6 .btn-item-table, .search-select-content .list-item-table td p .btn-item-table { margin-left: 6px; }
 
 .search-select-content .list-item-table td:before { width: 40%; text-align: center; }
 
