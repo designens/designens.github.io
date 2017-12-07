@@ -2577,11 +2577,13 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
   .search-select-content .item-info dl:nth-child(2n + 1) { clear: both; }
   .search-select-content .item-info dl:nth-child(2n + 2):before { background-color: transparent; } }
 
-.search-select-content .item-keyword { color: #405a89; }
+.search-select-content .item-keyword { color: #fff; }
 
-.search-select-content .item-keyword span { background: #dbebff; }
+.search-select-content .item-keyword a[href] { background: #b1b1b3; }
 
-.search-select-content .item-keyword span:last-child { margin-right: 0 !important; }
+.search-select-content .item-keyword a[href]:last-child { margin-right: 0 !important; }
+
+.search-select-content .item-keyword a[href]:hover, .search-select-content .item-keyword a[href]:focus { background: #5f7a8f; }
 
 .search-select-content .btn-item-table, .search-select-content .btn-item-url { margin-right: 10px; }
 
@@ -2611,7 +2613,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .search-select-content .list-item-img li.item-text .item-keyword, .search-select-content .list-item-list li.item-text .item-keyword { margin-top: 7px; }
 
-.search-select-content .list-item-img li.item-text .item-keyword span, .search-select-content .list-item-list li.item-text .item-keyword span { padding: 0 10px; margin-right: 5px; }
+.search-select-content .list-item-img li.item-text .item-keyword a[href], .search-select-content .list-item-list li.item-text .item-keyword a[href] { padding: 0 10px; margin-right: 5px; }
 
 .search-select-content .list-item-img li.item-text [class^="btn-item-"], .search-select-content .list-item-list li.item-text [class^="btn-item-"] { margin-top: 7px; color: #333; }
 
@@ -2679,7 +2681,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 .search-select-content .list-item-table { margin-top: 10px; }
 
-.search-select-content .list-item-table .item-keyword span { font-size: 12px; font-size: 1.2rem; padding: 0 4px; margin-right: 3px; }
+.search-select-content .list-item-table .item-keyword a[href] { font-size: 12px; font-size: 1.2rem; padding: 0 4px; margin-right: 3px; }
 
 .search-select-content .list-item-table tbody td { height: auto; line-height: 1.5; padding: 10px 10px 10px 43%; }
 
@@ -2997,7 +2999,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* =======================================*/
 .keyword-cloud-area { text-align: center; height: 232px; padding: 30px 20px; border: 1px solid #ccc; margin-bottom: 20px; }
 
-.keyword-cloud-area #keyword_cloud { height: 100%; }
+.keyword-cloud-area #keyword_cloud { height: 100%; text-align: center; }
 
 .keyword-cloud-area #keyword_cloud a { font-family: "Noto Sans Korean", sans-serif, serif; }
 
@@ -3327,18 +3329,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 /* 자료검색 > 연속간행물 검색 > 국내연속간행물 > 상세
 /* (html/domestic-serials-view.html)
 /* =======================================*/
-.domestic-serials-view .table-view-type-02 td:nth-of-type(1):before { content: "번호"; }
-
-.domestic-serials-view .table-view-type-02 td:nth-of-type(2):before { content: "권호"; }
-
-.domestic-serials-view .table-view-type-02 td:nth-of-type(3):before { content: "소장위치"; }
-
-.domestic-serials-view .table-view-type-02 td:nth-of-type(4):before { content: "발행일"; }
-
-.domestic-serials-view .table-view-type-02 td:nth-of-type(5):before { content: "입수일"; }
-
-.domestic-serials-view .table-view-type-02 td:nth-of-type(6):before { content: "상태"; }
-
 /* =======================================*/
 /* Mylibrary > 대출/연장 > 리스트
 /* (html/loans-extensions-reservations-list.html)
@@ -3352,40 +3342,6 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 .loans-extensions-reservations-list .loans-extensions-guide li:last-child { padding-bottom: 9px; }
 
 @media (min-width: 47.5em) { .loans-extensions-reservations-list .loans-extensions-guide li { float: left; width: 33.33333%; padding-top: 9px; padding-bottom: 9px; } }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(1):before { content: "선택"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(2):before { content: "등록번호"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(3):before { content: "서명"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(4):before { content: "저자"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(5):before { content: "출판사"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(6):before { content: "대출일"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(7):before { content: "반납예정일"; }
-
-.loans-extensions-reservations-list .table-board-type-01 td:nth-of-type(8):before { content: "연장횟수"; }
-
-/* =======================================*/
-/* Mylibrary > 반납 > 리스트
-/* (html/loans-return-reservations-list.html)
-/* =======================================*/
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(1):before { content: "번호"; }
-
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(2):before { content: "등록번호"; }
-
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(3):before { content: "서명"; }
-
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(4):before { content: "저자"; }
-
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(5):before { content: "출판사"; }
-
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(6):before { content: "대출일"; }
-
-.loans-return-reservations-list .table-board-type-01 td:nth-of-type(7):before { content: "반납일"; }
 
 /* =======================================*/
 /* 라이브러리 기본 속성 변경
