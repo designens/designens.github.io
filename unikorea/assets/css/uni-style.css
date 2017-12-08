@@ -2785,7 +2785,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .list-view-area .fr-align dl dt, .list-view-area .fr-align dl dd { display: table-cell; line-height: 1.5; }
 
-.list-view-area .fr-align dl .author, .list-view-area .fr-align dl a { color: #305ed6; text-decoration: underline; }
+.list-view-area .fr-align dl .author, .list-view-area .fr-align dl a { color: #305ed6; text-decoration: underline; word-break: break-all; }
 
 @media (min-width: 47.5em) { .list-view-area .fl-align { float: left; width: 75px; margin-right: 30px; }
   .list-view-area .fr-align { float: right; width: -webkit-calc( 100% - 105px); width: -moz-calc( 100% - 105px); width: calc( 100% - 105px); }
