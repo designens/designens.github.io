@@ -3978,19 +3978,19 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .ui-kit section > article > h2 { color: #002847; padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid #e2e2e2; }
 
-.ui-kit code[class*="language-"], .ui-kit pre[class*="language-"] { font-family: "Noto Sans Korean", sans-serif, serif; color: inherit; background: none; text-align: left; white-space: pre-wrap; line-height: 1.5; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; }
+.ui-kit pre[class*="language-"] { position: relative; font-family: "Noto Sans Korean", sans-serif, serif; color: inherit; background: none; text-align: left; white-space: pre-wrap; line-height: 1.5; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; padding: 65px 30px 30px 30px; margin-top: 30px; border-radius: 10px; background: #eff4f7; overflow: auto; }
 
-.ui-kit code[class*="language-"]::-moz-selection, .ui-kit code[class*="language-"] ::-moz-selection, .ui-kit pre[class*="language-"]::-moz-selection, .ui-kit pre[class*="language-"] ::-moz-selection { text-shadow: none; }
+.ui-kit pre[class*="language-"]::-moz-selection, .ui-kit pre[class*="language-"] ::-moz-selection { text-shadow: none; }
 
-.ui-kit code[class*="language-"] .toolbar .toolbar-item, .ui-kit pre[class*="language-"] .toolbar .toolbar-item { position: absolute; top: 22px; left: 30px; font-size: 20px; font-weight: bold; color: #002847; text-transform: uppercase; }
+.ui-kit pre[class*="language-"]:before { position: absolute; top: 20px; left: 30px; font-size: 20px; font-weight: bold; color: #002847; }
 
-.ui-kit code[class*="language-"]::-moz-selection, .ui-kit code[class*="language-"] ::-moz-selection { text-shadow: none; }
+.ui-kit pre[class*="language-"][class*="-html"]:before { content: "HTML"; }
 
-.ui-kit code[class*="language-"]::selection, .ui-kit code[class*="language-"] ::selection { text-shadow: none; }
+.ui-kit pre[class*="language-"][class*="-css"]:before { content: "CSS"; }
 
-.ui-kit code[class*="language-"]::selection, .ui-kit code[class*="language-"] ::selection { text-shadow: none; }
+.ui-kit pre[class*="language-"][class*="-js"]:before { content: "JS"; }
 
-.ui-kit pre[class*="language-"] { position: relative; padding: 70px 30px 30px 30px; margin-top: 30px; border-radius: 10px; background: #eff4f7; overflow: auto; }
+.ui-kit pre[class*="language-"] .copy { position: absolute; top: 30px; right: 30px; font-size: 14px; color: #fff; padding: 2px 8px 4px 8px; border-radius: 6px; background: #07a; }
 
 .ui-kit :not(pre) > code[class*="language-"] { padding: .1em; border-radius: .3em; white-space: normal; }
 
