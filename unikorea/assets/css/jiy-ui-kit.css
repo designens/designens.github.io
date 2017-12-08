@@ -3990,7 +3990,9 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .ui-kit pre[class*="language-"][class*="-js"]:before { content: "JS"; }
 
-.ui-kit pre[class*="language-"] .copy { position: absolute; top: 30px; right: 30px; font-size: 14px; color: #fff; padding: 2px 8px 4px 8px; border-radius: 6px; background: #07a; }
+.ui-kit pre[class*="language-"] .copy { position: absolute; top: 30px; right: 30px; font-size: 14px; color: #fff; padding: 2px 8px 4px 8px; border-radius: 6px; background: #bcd0dc; cursor: pointer; }
+
+.ui-kit pre[class*="language-"] .copy:hover, .ui-kit pre[class*="language-"] .copy:focus { background: #002847; }
 
 .ui-kit :not(pre) > code[class*="language-"] { padding: .1em; border-radius: .3em; white-space: normal; }
 
