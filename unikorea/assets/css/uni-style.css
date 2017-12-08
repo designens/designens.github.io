@@ -3400,7 +3400,9 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .north-korean-film-application-list > li ul .application-information-box dl dd { font-weight: 300; padding: 0 10px; }
 
-.north-korean-film-application-list > li ul .application-information-box dl:first-child dd, .north-korean-film-application-list > li ul .application-information-box dl:last-child dd { font-weight: 400; }
+.north-korean-film-application-list > li ul .application-information-box dl dd.orange, .north-korean-film-application-list > li ul .application-information-box dl dd.blue { font-weight: 400; }
+
+.north-korean-film-application-list > li ul .application-information-box dl:first-child dd { font-weight: 400; }
 
 .north-korean-film-application-list > li ul .btn-table-area { text-align: right; margin-top: 10px; }
 
@@ -3408,11 +3410,14 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .north-korean-film-application-list > li ul .btn-table-area a[role="button"]:last-child, .north-korean-film-application-list > li ul .btn-table-area button:last-child { margin-right: 0; }
 
-@media (min-width: 47.5em) { .north-korean-film-application-list > li ul { display: table; }
+@media (min-width: 30em) { .north-korean-film-application-list > li ul { display: table; }
   .north-korean-film-application-list > li ul li { display: table-cell; }
   .north-korean-film-application-list > li ul li:first-child { width: 40px; }
-  .north-korean-film-application-list > li ul li:last-child { width: 111px; text-align: right; }
+  .north-korean-film-application-list > li ul li:last-child { width: 130px; text-align: right; }
   .north-korean-film-application-list > li ul .application-information-box { margin-top: 0; }
+  .north-korean-film-application-list > li ul .application-information-box dl { float: left; }
+  .north-korean-film-application-list > li ul .application-information-box dl dd { min-width: 170px; }
+  .north-korean-film-application-list > li ul .application-information-box dl:nth-of-type(1), .north-korean-film-application-list > li ul .application-information-box dl:nth-of-type(2), .north-korean-film-application-list > li ul .application-information-box dl:nth-of-type(2n + 1) { clear: both; }
   .north-korean-film-application-list > li ul .btn-table-area { text-align: center; margin-top: 0; }
   .north-korean-film-application-list > li ul .btn-table-area a[role="button"], .north-korean-film-application-list > li ul .btn-table-area button { display: block; margin-right: 0; margin-bottom: 10px; }
   .north-korean-film-application-list > li ul .btn-table-area a[role="button"]:last-child, .north-korean-film-application-list > li ul .btn-table-area button:last-child { margin-bottom: 0; } }
