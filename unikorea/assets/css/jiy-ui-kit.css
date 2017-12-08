@@ -4074,13 +4074,19 @@ table .checkbox-type + label, table .radio-type + label, table .radio-type + lab
 
 .form-group h3 .fa, .search-type-area h3 .fa, .select-box-group h3 .fa, .file-area-test h3 .fa, .all-pages-view-area h3 .fa, .btn-type-sample h3 .fa, .search-area h3 .fa, .teb-menu-area h3 .fa, .fortawesome-area h3 .fa, .table-type h3 .fa { font-size: 16px; margin-right: 6px; vertical-align: 2px; }
 
+.icon-fortawesome-before:before { font-family: FontAwesome; content: "\f286"; margin-right: 4px; }
+
+.icon-fortawesome-after { color: #999; }
+
+.icon-fortawesome-after:after { font-family: FontAwesome; font-size: 14px; color: #4d52de; content: "\f286"; margin-left: 4px; }
+
 .fortawesome-area ol { padding: 0 20px 0 30px; }
 
 .fortawesome-area ol li { list-style-type: decimal; margin-bottom: 10px; }
 
 .fortawesome-area ol li .link { text-decoration: underline; }
 
-.fortawesome-area ol li .link .fa { font-size: 12px; margin-right: 2px; }
+.fortawesome-area ol li .link .fa { font-size: 12px; margin-right: 2px; color: #0a52a3; }
 
 .table-type h2 { margin-top: 20px; }
 
