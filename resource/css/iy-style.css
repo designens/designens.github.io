@@ -3309,7 +3309,7 @@ body { font-family: "Noto Sans Korean", sans-serif, serif; font-size: 14px; line
 
 body * { box-sizing: border-box; word-wrap: break-word; }
 
-.portfolio-list { max-width: 3737px; margin-left: auto; margin-right: auto; min-width: 480px; max-width: 1000px; padding: 20px; }
+.portfolio-list { max-width: 3737px; margin-left: auto; margin-right: auto; min-width: 480px; max-width: 1280px; padding: 20px; }
 
 .portfolio-list:after { content: " "; display: block; clear: both; }
 
