@@ -342,35 +342,35 @@ assignTableHeading( $('#demo-data-table-02') );
 // =================================================================
 // 소장정보 보기/닫기 실행
 // =================================================================
-// (function(global, $) {
+(function(global, $) {
 
-//     var $btn_item_table = $(".btn-item-table"),
-//         $btn_item_table_icon = $(".btn-item-table-icon"),
-//         item_table_area = ".item-table-area",
-//         open_text = "소장정보 열기",
-//         close_text = "소장정보 닫기";
+    var $btn_item_table = $(".btn-item-table"),
+        $btn_item_table_icon = $(".btn-item-table-icon"),
+        item_table_area = ".item-table-area",
+        open_text = "소장정보 열기",
+        close_text = "소장정보 닫기";
     
-//     $(item_table_area).css("display", "none");
+    $(item_table_area).css("display", "none");
 
-//     $btn_item_table.click(function() {
-//         var $this = $(this);
-//         if ( $this.html(close_text).parent().siblings(item_table_area).css("display") == "none" ){
-//             $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
-//         } else {
-//             $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
-//         }
-//     });
+    $btn_item_table.click(function() {
+        var $this = $(this);
+        if ( $this.html(close_text).parent().siblings(item_table_area).css("display") == "none" ){
+            $this.html(close_text).parent().siblings(item_table_area).slideDown("slow");
+        } else {
+            $this.html(open_text).parent().siblings(item_table_area).slideUp("slow");
+        }
+    });
 
-//     $btn_item_table_icon.click(function() {
-//         var $this = $(this);
-//         if ( $this.parents().next(item_table_area).css("display") == "none" ) {
-//            $this.parents().next(item_table_area).slideDown("slow");
-//         } else {
-//            $this.parents().next(item_table_area).slideUp("slow");
-//         }
-//     });
+    $btn_item_table_icon.click(function() {
+        var $this = $(this);
+        if ( $this.parents().next(item_table_area).css("display") == "none" ) {
+           $this.parents().next(item_table_area).slideDown("slow");
+        } else {
+           $this.parents().next(item_table_area).slideUp("slow");
+        }
+    });
 
-// })(window, window.jQuery);
+})(window, window.jQuery);
 
 // =================================================================
 // 소장자료 검색 : 검색결과 내 상세검색 더보기
@@ -419,24 +419,24 @@ assignTableHeading( $('#demo-data-table-02') );
 // =================================================================
 // 소장정보 상세보기/MARC보기 실행
 // =================================================================
-// (function(global, $) {
+(function(global, $) {
 
-//     var $btn_marc_view = $(".btn-marc-view"),
-//         list_view_area = ".list-view-area",
-//         marc_view_area = ".marc-view-area",
-//         open_text = "상세보기",
-//         close_text = "MARC 보기";
+    var $btn_marc_view = $(".btn-marc-view"),
+        list_view_area = ".list-view-area",
+        marc_view_area = ".marc-view-area",
+        open_text = "상세보기",
+        close_text = "MARC 보기";
     
-//     $btn_marc_view.click(function() {
-//         var $this = $(this);
-//         if($this.parent().siblings(list_view_area).css("display") == "none" )
-//             $this.html(close_text).parent().siblings(list_view_area).show(),
-//              $this.parent().siblings(marc_view_area).hide();
-//         else $this.html(open_text).parent().siblings(marc_view_area).show(),
-//             $this.parent().siblings(list_view_area).hide();
-//     });
+    $btn_marc_view.click(function() {
+        var $this = $(this);
+        if($this.parent().siblings(list_view_area).css("display") == "none" )
+            $this.html(close_text).parent().siblings(list_view_area).show(),
+             $this.parent().siblings(marc_view_area).hide();
+        else $this.html(open_text).parent().siblings(marc_view_area).show(),
+            $this.parent().siblings(list_view_area).hide();
+    });
 
-// })(window, window.jQuery);
+})(window, window.jQuery);
 
 // =================================================================
 // 페이지 정보 평가 삽입 시 간격 설정

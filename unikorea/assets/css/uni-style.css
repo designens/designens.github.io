@@ -2532,7 +2532,7 @@ pre, code { font-family: "Noto Sans Korean", sans-serif, serif; line-height: 21p
 
 .sub-search-view-area .result-accordion li:first-child .result-link { border-top: 0; }
 
-.sub-search-view-area .result-accordion li .sub-result { position: relative; padding: 6px 15px 15px 15px; border-top: 1px solid #e7e7e7; height: 80px; overflow-y: auto; }
+.sub-search-view-area .result-accordion li .sub-result { display: none; position: relative; padding: 6px 15px 15px 15px; border-top: 1px solid #e7e7e7; height: 80px; overflow-y: auto; }
 
 .sub-search-view-area .result-accordion li .sub-result a[href], .sub-search-view-area .result-accordion li .sub-result button { display: block; margin-top: 6px; }
 
