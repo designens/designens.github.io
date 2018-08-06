@@ -16,7 +16,7 @@
 /* [Common] UI Kit 공통 */
 /* ====================================================================== */
 
-.ui-kit, pre, code { font-family: 'Spoqa Han Sans', Arial, "Helvetica Neue", Helvetica, sans-serif; !important }
+.ui-kit, pre, code { font-family: 'Spoqa Han Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
 
 .ui-kit .title { position: relative; color: #1566c1; letter-spacing: -0.03em; padding-bottom: 1rem; border-bottom: 1px solid #cad4e0; margin-bottom: 2rem; }
 
