@@ -7,21 +7,20 @@
 /* ====================================================================== */
 
 /* ====================================================================== */
-/* [Common] 레이아웃 */
+/* [Font] Web Font link */
 /* ====================================================================== */
-.container { padding-top: 60px; padding-bottom: 102px; }
+@import url(https://use.fontawesome.com/releases/v5.2.0/css/all.css);
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
-.wrap { padding-left: 20px; padding-right: 20px; }
+/* ====================================================================== */
+/* [Common] UI Kit 공통 */
+/* ====================================================================== */
 
-.ci-hyundai path { fill: #002c5f; }
-
-body { background: #f3f3f3; padding: 4rem 2rem; }
+.ui-kit { font-family: 'Spoqa Han Sans', Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .ui-kit .title { position: relative; color: #1566c1; letter-spacing: -0.03em; padding-bottom: 1rem; border-bottom: 1px solid #cad4e0; margin-bottom: 2rem; }
 
-.ui-kit .markup-title { font-weight: 200; color: #aaa; margin-top: 3rem; margin-bottom: 1rem; clear: both; }
-
-.ui-kit strong { font-weight: 500; color: #000; }
+.ui-kit .markup-title { color: #aaa; margin-top: 3rem; margin-bottom: 1rem; clear: both; }
 
 .ui-kit .markup-group { min-width: 320px; padding: 24px; background: #fff; border: 1px solid #e2e2e2; }
 
@@ -31,11 +30,7 @@ body { background: #f3f3f3; padding: 4rem 2rem; }
 
 .ui-kit .markup-group .markup-sub-title:first-child { margin-top: 0; }
 
-.ui-kit .markup-group .markup-sub-title:before { font-family: "Font Awesome 5 Free"; content: ""; font-size: 1.6rem; font-weight: 900; vertical-align: baseline; padding-right: 1rem; }
-
-[class*="ui-kit"] .red { color: #e51d68; }
-
-[class*="ui-kit"] .blue { color: #257de0; }
+.ui-kit .markup-group .markup-sub-title:before { font-family: "Font Awesome 5 Free"; content: "\f0c1"; font-size: 1.6rem; font-weight: 900; vertical-align: baseline; padding-right: 1rem; }
 
 .ui-kit-comment { padding: 15px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border: 15px solid #eff4f7; margin-top: -55px; margin-bottom: 40px; }
 
