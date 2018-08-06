@@ -15,81 +15,42 @@
 /* ====================================================================== */
 /* [Common] UI Kit 공통 */
 /* ====================================================================== */
-
-.ui-kit, pre, code { font-family: 'Spoqa Han Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
-
-.ui-kit .title { position: relative; color: #1566c1; letter-spacing: -0.03em; padding-bottom: 1rem; border-bottom: 1px solid #cad4e0; margin-bottom: 2rem; }
-
-.ui-kit .markup-title { color: #aaa; margin-top: 3rem; margin-bottom: 1rem; clear: both; }
-
-.ui-kit .markup-group { min-width: 320px; padding: 24px; background: #fff; border: 1px solid #e2e2e2; }
-
-.ui-kit .markup-group:last-child { margin-bottom: 24px; }
-
-.ui-kit .markup-group .markup-sub-title { color: #69c; margin-top: 20px; margin-bottom: 10px; }
-
-.ui-kit .markup-group .markup-sub-title:first-child { margin-top: 0; }
-
-.ui-kit .markup-group .markup-sub-title:before { font-family: "Font Awesome 5 Free"; content: "\f0c1"; font-size: 1.6rem; font-weight: 900; vertical-align: baseline; padding-right: 1rem; }
-
-.ui-kit-comment { padding: 15px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border: 15px solid #eff4f7; margin-top: -55px; margin-bottom: 40px; }
-
-.ui-kit-comment:last-child { margin-bottom: 0; }
-
-.ui-kit :not(pre) > code[class*="language-"] { padding: .1em; border-radius: .3em; white-space: normal; }
-
-.ui-kit pre[class*="language-"] { position: relative; color: inherit; background: none; text-align: left; white-space: pre-wrap; line-height: 1.5; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; padding: 65px 30px 30px 30px; margin-top: 10px; margin-bottom: 40px; border-radius: 10px; background: #eff4f7; overflow: auto; }
-
-.ui-kit pre[class*="language-"]::-moz-selection, .ui-kit pre[class*="language-"] ::-moz-selection { text-shadow: none; }
-
-.ui-kit pre[class*="language-"]:last-child { margin-bottom: 0; }
-
-.ui-kit pre[class*="language-"]:before { position: absolute; top: 20px; left: 30px; font-size: 1.8rem; font-weight: bold; color: #002847; }
-
-.ui-kit pre[class*="language-"] .copy { position: absolute; top: 30px; right: 30px; font-size: 1.4rem; color: #fff; padding: 2px 8px 4px 8px; border-radius: 6px; background: #bcd0dc; cursor: pointer; }
-
-.ui-kit pre[class*="language-"] .copy:hover, .ui-kit pre[class*="language-"] .copy:focus { background: #002847; }
-
-.ui-kit pre[class*="language-"][class*="-html"]:before { content: "HTML"; }
-
-.ui-kit pre[class*="language-"][class*="-css"]:before { content: "CSS"; }
-
-.ui-kit pre[class*="language-"][class*="-scss"]:before { content: "SCSS"; }
-
-.ui-kit pre[class*="language-"][class*="-sass"]:before { content: "Sass"; }
-
-.ui-kit pre[class*="language-"][class*="-js"]:before { content: "JS"; }
-
-.ui-kit .token.comment, .ui-kit .token.prolog, .ui-kit .token.doctype, .ui-kit .token.cdata { color: slategray; }
-
-.ui-kit .token.punctuation { color: #999; }
-
-.ui-kit .token.property, .ui-kit .token.tag, .ui-kit .token.boolean, .ui-kit .token.number, .ui-kit .token.constant, .ui-kit .token.symbol, .ui-kit .token.deleted { color: #905; }
-
-.ui-kit .token.selector, .ui-kit .token.attr-name, .ui-kit .token.string, .ui-kit .token.char, .ui-kit .token.builtin, .ui-kit .token.inserted { color: #690; }
-
-.ui-kit .token.operator, .ui-kit .token.entity, .ui-kit .token.url { color: #a67f59; }
-
-.ui-kit .token.atrule, .ui-kit .token.attr-value, .ui-kit .token.keyword { color: #07a; }
-
-.ui-kit .token.function { color: #DD4A68; }
-
-.ui-kit .token.regex, .ui-kit .token.important, .ui-kit .token.variable { color: #e90; }
-
-.ui-kit .token.important, .ui-kit .token.bold { font-weight: bold; }
-
-.ui-kit .token.italic { font-style: italic; }
-
-.ui-kit .token.entity { cursor: help; }
-
-.ui-kit .language-css .token.string, .ui-kit .language-sass .token.string, .ui-kit .language-scss .token.string, .ui-kit .style .token.string { color: #a67f59; }
-
-.ui-kit .namespace { opacity: .7; }
-
-.code-box-copy { position: relative; }
-
-.code-box-copy .code-box-copy__btn { position: absolute; top: 20px; right: 20px; font-size: 1.2rem; color: #fff; text-shadow: 0 0 1px #003359; padding: 2px 10px 6px 10px; border: 1px solid #003761; border-radius: 8px; background: #003761; z-index: 1000; }
-
-.code-box-copy .code-box-copy__btn:before { content: "Copy"; text-align: center; }
-
-.color-set-message { color: #999; padding: 0 0 10px 24px; border-bottom: 1px solid #eee; margin-top: -10px; margin-bottom: 24px; }
+.ui-kit,pre,code{font-family:'Spoqa Han Sans',Arial,"Helvetica Neue",Helvetica,sans-serif!important;}
+.ui-kit .title{position:relative;color:#1566c1;letter-spacing:-0.03em;padding-bottom:1px;border-bottom:1px solid #cad4e0;margin-bottom:2px;}
+.ui-kit .markup-title{color:#aaa;margin-top:3px;margin-bottom:1px;clear:both;}
+.ui-kit .markup-group{min-width:320px;padding:24px;background:#fff;border:1px solid #e2e2e2;}
+.ui-kit .markup-group:last-child{margin-bottom:24px;}
+.ui-kit .markup-group .markup-sub-title{color:#69c;margin-top:20px;margin-bottom:10px;}
+.ui-kit .markup-group .markup-sub-title:first-child{margin-top:0;}
+.ui-kit .markup-group .markup-sub-title:before{font-family:"Font Awesome 5 Free";content:"\f0c1";font-size:16px;font-weight:900;vertical-align:baseline;padding-right:1px;}
+.ui-kit-comment{padding:15px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;border:15px solid #eff4f7;margin-top:-55px;margin-bottom:40px;}
+.ui-kit-comment:last-child{margin-bottom:0;}
+.ui-kit:not(pre) > code[class*="language-"]{padding:.1em;border-radius:.3em;white-space:normal;}
+.ui-kit pre[class*="language-"]{position:relative;color:inherit;background:none;text-align:left;white-space:pre-wrap;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:65px 30px 30px 30px;margin-top:10px;margin-bottom:40px;border-radius:10px;background:#eff4f7;overflow:auto;}
+.ui-kit pre[class*="language-"]::-moz-selection,.ui-kit pre[class*="language-"]::-moz-selection{text-shadow:none;}
+.ui-kit pre[class*="language-"]:last-child{margin-bottom:0;}
+.ui-kit pre[class*="language-"]:before{position:absolute;top:20px;left:30px;font-size:18px;font-weight:bold;color:#002847;}
+.ui-kit pre[class*="language-"] .copy{position:absolute;top:30px;right:30px;font-size:14px;color:#fff;padding:2px 8px 4px 8px;border-radius:6px;background:#bcd0dc;cursor:pointer;}
+.ui-kit pre[class*="language-"] .copy:hover,.ui-kit pre[class*="language-"] .copy:focus{background:#002847;}
+.ui-kit pre[class*="language-"][class*="-html"]:before{content:"HTML";}
+.ui-kit pre[class*="language-"][class*="-css"]:before{content:"CSS";}
+.ui-kit pre[class*="language-"][class*="-scss"]:before{content:"SCSS";}
+.ui-kit pre[class*="language-"][class*="-sass"]:before{content:"Sass";}
+.ui-kit pre[class*="language-"][class*="-js"]:before{content:"JS";}
+.ui-kit .token.comment,.ui-kit .token.prolog,.ui-kit .token.doctype,.ui-kit .token.cdata{color:slategray;}
+.ui-kit .token.punctuation{color:#999;}
+.ui-kit .token.property,.ui-kit .token.tag,.ui-kit .token.boolean,.ui-kit .token.number,.ui-kit .token.constant,.ui-kit .token.symbol,.ui-kit .token.deleted{color:#905;}
+.ui-kit .token.selector,.ui-kit .token.attr-name,.ui-kit .token.string,.ui-kit .token.char,.ui-kit .token.builtin,.ui-kit .token.inserted{color:#690;}
+.ui-kit .token.operator,.ui-kit .token.entity,.ui-kit .token.url{color:#a67f59;}
+.ui-kit .token.atrule,.ui-kit .token.attr-value,.ui-kit .token.keyword{color:#07a;}
+.ui-kit .token.function{color:#DD4A68;}
+.ui-kit .token.regex,.ui-kit .token.important,.ui-kit .token.variable{color:#e90;}
+.ui-kit .token.important,.ui-kit .token.bold{font-weight:bold;}
+.ui-kit .token.italic{font-style:italic;}
+.ui-kit .token.entity{cursor:help;}
+.ui-kit .language-css .token.string,.ui-kit .language-sass .token.string,.ui-kit .language-scss .token.string,.ui-kit .style .token.string{color:#a67f59;}
+.ui-kit .namespace{opacity:.7;}
+.code-box-copy{position:relative;}
+.code-box-copy .code-box-copy__btn{position:absolute;top:20px;right:20px;font-size:12px;color:#fff;text-shadow:0 0 1px #003359;padding:2px 10px 6px 10px;border:1px solid #003761;border-radius:8px;background:#003761;z-index:1000;}
+.code-box-copy .code-box-copy__btn:before{content:"Copy";text-align:center;}
+.color-set-message{color:#999;padding:0 0 10px 24px;border-bottom:1px solid #eee;margin-top:-10px;margin-bottom:24px;}
