@@ -15,7 +15,7 @@
 /* ====================================================================== */
 /* [Common] UI Kit 공통 */
 /* ====================================================================== */
-.ui-kit,pre,code{font-family:'Spoqa Han Sans',Arial,"Helvetica Neue",Helvetica,sans-serif!important;}
+.ui-kit pre, .ui-kit code{font-family:'Spoqa Han Sans',Arial,"Helvetica Neue",Helvetica,sans-serif!important;}
 .ui-kit .title{position:relative;color:#1566c1;letter-spacing:-0.03em;padding-bottom:1px;border-bottom:1px solid #cad4e0;margin-bottom:2px;}
 .ui-kit .markup-title{color:#aaa;margin-top:3px;margin-bottom:1px;clear:both;}
 .ui-kit .markup-group{min-width:320px;padding:24px;background:#fff;border:1px solid #e2e2e2;}
